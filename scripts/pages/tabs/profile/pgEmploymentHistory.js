@@ -30,7 +30,7 @@ function onLoad() {
 function onShow() {
     
 
-    this.listView.rowHeight = 200;
+    this.listView.rowHeight = 350;
     this.listView.itemCount = 100;
     
     this.listView.onRowCreate = function() {

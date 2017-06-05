@@ -4,11 +4,13 @@
 			"type": "Page",
 			"id": "1d77c4f1",
 			"themeProps": {},
-			"userProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 234, 234, 235, 1 )"
+			},
 			"className": ".page",
-			"version": "6.3.0-rc.16",
+			"version": "6.3.0-rc.19",
 			"props": {
-				"backgroundColor": "#EEEEEE",
+				"backgroundColor": "rgba( 234, 234, 235, 1 )",
 				"orientation": "PORTRAIT",
 				"flexProps": {
 					"alignContent": "STRETCH",
@@ -24,7 +26,10 @@
 					"headerBar",
 					"listView"
 				],
-				"layout": {},
+				"layout": {
+					"width": 93.75,
+					"height": 150.75
+				},
 				"flex": {
 					"alignContent": 4,
 					"alignItems": 4,
@@ -35,7 +40,7 @@
 				},
 				"font": {},
 				"width": 187.5,
-				"height": 291.1
+				"height": 301.5
 			}
 		},
 		{
@@ -50,10 +55,13 @@
 				"name": "statusBar",
 				"children": [],
 				"parent": "pgEmploymentHistory",
-				"layout": {},
+				"layout": {
+					"height": 10
+				},
 				"flex": {},
 				"font": {},
-				"flexProps": {}
+				"flexProps": {},
+				"height": 20
 			}
 		},
 		{
@@ -72,10 +80,13 @@
 				"name": "headerBar",
 				"children": [],
 				"parent": "pgEmploymentHistory",
-				"layout": {},
+				"layout": {
+					"height": 22
+				},
 				"flex": {},
 				"font": {},
-				"flexProps": {}
+				"flexProps": {},
+				"height": 44
 			}
 		},
 		{
@@ -83,9 +94,16 @@
 			"id": "b04b45dc",
 			"themeProps": {},
 			"userProps": {
-				"width": 375,
-				"height": 630.2000122070312,
+				"width": null,
+				"height": null,
 				"usePageVariable": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"marginLeft": 10,
+				"marginRight": 10,
+				"marginBottom": null,
+				"marginTop": null,
+				"right": null,
+				"left": null,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
@@ -93,18 +111,24 @@
 			},
 			"className": ".listView",
 			"props": {
-				"height": 630.2000122070312,
-				"width": 375,
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"multiline": false,
 				"rowHeight": 60,
 				"itemCount": 3,
 				"visible": true,
-				"backgroundColor": "#FFFFFF",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"marginBottom": null,
+				"marginTop": null,
+				"right": null,
+				"left": null,
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
@@ -114,8 +138,8 @@
 				"parent": "pgEmploymentHistory",
 				"children": [],
 				"layout": {
-					"width": 187.5,
-					"height": 315.1000061035156
+					"marginLeft": 5,
+					"marginRight": 5
 				},
 				"flex": {
 					"alignSelf": 4,
