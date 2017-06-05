@@ -1,0 +1,43 @@
+{
+  ".button": {
+    "width": 250,
+    "height": 70,
+    "touchEnabled": true,
+    "text": "Button",
+    "visible": true,
+    "backgroundColor": "#00A1F1",
+    "alpha": 1,
+    "borderColor": "rgba(0,0,0,1)",
+    "borderWidth": 0,
+    "textColor": "#FFFFFF",
+    "textAlignment": "MIDCENTER",
+    "font": {
+      "size": 16,
+      "bold": false,
+      "italic": false,
+      "family": "Arial"
+    },
+    "flexProps": {
+      "positionType": "RELATIVE",
+      "alignSelf": "AUTO"
+    },
+    "&-small": {
+      "width": 100
+    },
+    "&-medium": {
+      "width": 250
+    },
+    "&-large": {
+      "width": 350
+    },
+    "&-warning": {
+      "backgroundColor": "#9F6000"
+    },
+    "&-error": {
+      "backgroundColor": "#D8000C"
+    },
+    "&-success": {
+      "backgroundColor": "#4F8A10"
+    }
+  }
+}
