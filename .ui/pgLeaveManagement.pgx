@@ -1,0 +1,74 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "a5e9c4c0",
+			"userProps": {},
+			"version": "6.3.0-rc.16",
+			"props": {
+				"name": "pgLeaveManagement",
+				"children": [
+					"statusBar",
+					"headerBar"
+				],
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "FLEX_START"
+				},
+				"backgroundColor": "#FFFFFF",
+				"isRemovable": true,
+				"orientation": "PORTRAIT",
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"width": 187.5,
+				"height": 301.5
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "6d839582",
+			"userProps": {},
+			"props": {
+				"name": "statusBar",
+				"visible": true,
+				"children": [],
+				"parent": "pgLeaveManagement",
+				"color": "#00A1F1",
+				"isRemovable": false,
+				"layout": {
+					"height": 10
+				},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"height": 20
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "b2ac3f28",
+			"userProps": {
+				"title": "newPage001"
+			},
+			"props": {
+				"name": "headerBar",
+				"children": [],
+				"parent": "pgLeaveManagement",
+				"title": "newPage001",
+				"visible": true,
+				"layout": {
+					"height": 22
+				},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"height": 44
+			}
+		}
+	]
+}
