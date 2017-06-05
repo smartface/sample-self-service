@@ -1,6 +1,6 @@
 const extend = require('js-base/core/extend');
-const Page = require('nf-core/ui/page');
-const Color = require('nf-core/ui/color');
+const Page = require('sf-core/ui/page');
+const Color = require('sf-core/ui/color');
 
 const Page_ = extend(Page)(
 	// Constructor
