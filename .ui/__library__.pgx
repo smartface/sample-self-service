@@ -8,7 +8,7 @@
 				"backgroundColor": "rgba( 131, 52, 52, 1 )"
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.19",
+			"version": "6.3.0-rc.20",
 			"props": {
 				"backgroundColor": "rgba( 131, 52, 52, 1 )",
 				"orientation": "PORTRAIT",
@@ -27,7 +27,8 @@
 					"horizontalDivider",
 					"listItem1",
 					"itemEmploymentHistory",
-					"itemLeaveManagement"
+					"itemLeaveManagement",
+					"layoutHeaderBar"
 				],
 				"layout": {},
 				"flex": {
@@ -40,7 +41,7 @@
 				},
 				"font": {},
 				"width": 187.5,
-				"height": 301.5
+				"height": 333.5
 			}
 		},
 		{
@@ -51,7 +52,7 @@
 			"className": ".statusBar",
 			"props": {
 				"color": "#00A1F1",
-				"visible": true,
+				"visible": false,
 				"name": "statusBar",
 				"children": [],
 				"parent": "__library__",
@@ -73,7 +74,7 @@
 			"props": {
 				"title": "__library__",
 				"titleColor": "#000000",
-				"visible": true,
+				"visible": false,
 				"backgroundColor": "#FFFFFF",
 				"name": "headerBar",
 				"children": [],
@@ -93,6 +94,7 @@
 			"source": {
 				"page": "__library__"
 			},
+			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 15,
@@ -158,6 +160,7 @@
 			"source": {
 				"page": "__library__"
 			},
+			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 12,
@@ -340,6 +343,7 @@
 			"source": {
 				"page": "__library__"
 			},
+			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 9,
@@ -480,6 +484,7 @@
 			"source": {
 				"page": "__library__"
 			},
+			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 9,
@@ -513,8 +518,8 @@
 				"parent": "__library__",
 				"children": [
 					"flexlayout5",
-					"flexlayout6",
-					"flexlayout7"
+					"flexlayout7",
+					"flexlayout6"
 				],
 				"layout": {
 					"left": 4.5,
@@ -644,6 +649,67 @@
 		},
 		{
 			"type": "FlexLayout",
+			"id": "ab2fbca6",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Highlights": "HeaderBar"
+			},
+			"userProps": {
+				"left": 6,
+				"top": 38,
+				"width": 358,
+				"height": 144
+			},
+			"className": ".flexLayout .flexLayout-headerBar",
+			"props": {
+				"height": 144,
+				"width": 358,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#45495A",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 6,
+				"top": 38,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "ABSOLUTE"
+				},
+				"name": "layoutHeaderBar",
+				"parent": "__library__",
+				"children": [
+					"label108"
+				],
+				"layout": {
+					"left": 3,
+					"top": 19,
+					"width": 179,
+					"height": 72
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 1
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "FlexLayout",
 			"id": "f2583265",
 			"source": {
 				"page": "__library__",
@@ -689,8 +755,8 @@
 				"name": "firstRow",
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label36",
-					"label37"
+					"label96",
+					"label97"
 				],
 				"layout": {
 					"height": 25
@@ -750,7 +816,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "label36",
+				"name": "label96",
 				"parent": "firstRow",
 				"children": [],
 				"layout": {
@@ -812,7 +878,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "label37",
+				"name": "label97",
 				"parent": "firstRow",
 				"children": [],
 				"layout": {
@@ -946,8 +1012,8 @@
 				"name": "secondRow",
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label38",
-					"label39"
+					"label98",
+					"label99"
 				],
 				"layout": {
 					"height": 25
@@ -1007,7 +1073,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "label38",
+				"name": "label98",
 				"parent": "secondRow",
 				"children": [],
 				"layout": {
@@ -1069,7 +1135,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "label39",
+				"name": "label99",
 				"parent": "secondRow",
 				"children": [],
 				"layout": {
@@ -1203,8 +1269,8 @@
 				"name": "thirdRow",
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label40",
-					"label41"
+					"label100",
+					"label101"
 				],
 				"layout": {
 					"height": 25
@@ -1264,7 +1330,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "label40",
+				"name": "label100",
 				"parent": "thirdRow",
 				"children": [],
 				"layout": {
@@ -1326,7 +1392,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "label41",
+				"name": "label101",
 				"parent": "thirdRow",
 				"children": [],
 				"layout": {
@@ -1460,8 +1526,8 @@
 				"name": "fourthRow",
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label42",
-					"label43"
+					"label102",
+					"label103"
 				],
 				"layout": {
 					"height": 25
@@ -1521,7 +1587,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "label42",
+				"name": "label102",
 				"parent": "fourthRow",
 				"children": [],
 				"layout": {
@@ -1583,7 +1649,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "label43",
+				"name": "label103",
 				"parent": "fourthRow",
 				"children": [],
 				"layout": {
@@ -1717,8 +1783,8 @@
 				"name": "fifthRow",
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label44",
-					"label45"
+					"label104",
+					"label105"
 				],
 				"layout": {
 					"height": 25
@@ -1778,7 +1844,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "label44",
+				"name": "label104",
 				"parent": "fifthRow",
 				"children": [],
 				"layout": {
@@ -1840,7 +1906,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "label45",
+				"name": "label105",
 				"parent": "fifthRow",
 				"children": [],
 				"layout": {
@@ -1974,8 +2040,8 @@
 				"name": "sixthRow",
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label46",
-					"label47"
+					"label106",
+					"label107"
 				],
 				"layout": {
 					"height": 25
@@ -2035,7 +2101,7 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "label46",
+				"name": "label106",
 				"parent": "sixthRow",
 				"children": [],
 				"layout": {
@@ -2097,7 +2163,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "label47",
+				"name": "label107",
 				"parent": "sixthRow",
 				"children": [],
 				"layout": {
@@ -2181,6 +2247,64 @@
 					"flexGrow": null
 				},
 				"font": {}
+			}
+		},
+		{
+			"type": "Label",
+			"id": "87da769a",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"width": null,
+				"height": 40,
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"flexGrow": null
+				},
+				"font": {
+					"size": 24
+				}
+			},
+			"props": {
+				"name": "label108",
+				"isReady": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"width": null,
+				"height": 40,
+				"touchEnabled": true,
+				"text": "Label",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": null
+				},
+				"parent": "layoutHeaderBar",
+				"children": [],
+				"layout": {
+					"height": 20
+				}
 			}
 		}
 	]
