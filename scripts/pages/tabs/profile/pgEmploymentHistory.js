@@ -12,25 +12,17 @@ const Page_ = extend(PageDesign)(
 	function(_super){
 		// Initalizes super class for this page scope
 		_super(this, {
-			onLoad: onLoad.bind(this),
-			onShow : onShow.bind(this)
 			
 		});
+		this.onShow = onShow.bind(this, this.onShow.bind(this))
+
 });
 
-function onLoad() { 
-    this.headerBar.visible = true;
-    this.headerBar.title = "pgEmploymentHistory";
-    this.headerBar.titleColor = Color.create("#000000");
-    this.headerBar.backgroundColor = Color.create("#FFFFFF");
-    this.statusBar.visible = true;
-    this.statusBar.android && (this.statusBar.android.color = Color.create("#00A1F1"));
-}
 
-function onShow() {
-    
+function onShow(parentOnShow) {
+    parentOnShow()
 
-    this.listView.rowHeight = 350;
+    this.listView.rowHeight = 360;
     this.listView.itemCount = 100;
     
     this.listView.onRowCreate = function() {

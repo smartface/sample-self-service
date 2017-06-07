@@ -8,7 +8,7 @@ const ItemEmploymentHistory = require('library/ItemEmploymentHistory');
 const ItemEmploymentHistory_ = extend(ItemEmploymentHistory)(
 	//constructor
 	function(_super, props, pageName){
-		// initalizes super class for this scope
+		delete ItemEmploymentHistory.defaults.width
 		_super(this, props || ItemEmploymentHistory.defaults );
 		this.pageName = pageName;
 	}

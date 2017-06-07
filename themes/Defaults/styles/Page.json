@@ -8,8 +8,17 @@
       "flexWrap": "NOWRAP",
       "justifyContent": "FLEX_START"
     },
-    "backgroundColor": "#EEEEEE",
+    "backgroundColor": "#E2E2E4",
     "font": {},
-    "orientation": "PORTRAIT"
+    "orientation": "PORTRAIT",
+    "&-warning": {
+      "backgroundColor": "#9F6000"
+    },
+    "&-error": {
+      "backgroundColor": "#D8000C"
+    },
+    "&-success": {
+      "backgroundColor": "#4F8A10"
+    }
   }
 }

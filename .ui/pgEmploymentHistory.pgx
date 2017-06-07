@@ -5,12 +5,12 @@
 			"id": "1d77c4f1",
 			"themeProps": {},
 			"userProps": {
-				"backgroundColor": "rgba( 234, 234, 235, 1 )"
+				"backgroundColor": "rgba( 228, 228, 228, 1 )"
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.19",
+			"version": "6.3.0-rc.21",
 			"props": {
-				"backgroundColor": "rgba( 234, 234, 235, 1 )",
+				"backgroundColor": "rgba( 228, 228, 228, 1 )",
 				"orientation": "PORTRAIT",
 				"flexProps": {
 					"alignContent": "STRETCH",
@@ -24,11 +24,12 @@
 				"children": [
 					"statusBar",
 					"headerBar",
+					"layoutHeaderBar",
 					"listView"
 				],
 				"layout": {
 					"width": 93.75,
-					"height": 150.75
+					"height": 166.75
 				},
 				"flex": {
 					"alignContent": 4,
@@ -40,7 +41,7 @@
 				},
 				"font": {},
 				"width": 187.5,
-				"height": 301.5
+				"height": 333.5
 			}
 		},
 		{
@@ -69,13 +70,14 @@
 			"id": "074ef484",
 			"themeProps": {},
 			"userProps": {
-				"title": "newPage001"
+				"title": "newPage001",
+				"visible": false
 			},
 			"className": ".headerBar",
 			"props": {
 				"title": "newPage001",
 				"titleColor": "#000000",
-				"visible": true,
+				"visible": false,
 				"backgroundColor": "#FFFFFF",
 				"name": "headerBar",
 				"children": [],
@@ -147,6 +149,137 @@
 					"flexGrow": 1
 				},
 				"font": {}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "4677626a",
+			"source": {
+				"page": "__library__",
+				"id": "ab2fbca6"
+			},
+			"hiddenComponent": false,
+			"themeProps": {
+				"Highlights": "HeaderBar"
+			},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": null,
+				"height": 100,
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout .flexLayout-headerBar",
+			"props": {
+				"height": 100,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#45495A",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"top": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"name": "layoutHeaderBar",
+				"parent": "pgEmploymentHistory",
+				"children": [
+					"label108"
+				],
+				"layout": {
+					"left": 0,
+					"top": 0,
+					"height": 50
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0
+				},
+				"font": {},
+				"visibility": true
+			}
+		},
+		{
+			"type": "Label",
+			"id": "b09f8c12",
+			"source": {
+				"page": "__library__"
+			},
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"width": null,
+				"height": 40,
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"marginTop": 20,
+				"flexProps": {
+					"flexGrow": null
+				},
+				"font": {
+					"size": 24
+				}
+			},
+			"className": ".label",
+			"props": {
+				"width": null,
+				"height": 40,
+				"touchEnabled": true,
+				"text": "Label",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"textAlignment": "MIDCENTER",
+				"marginTop": 20,
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "label108",
+				"parent": "layoutHeaderBar",
+				"children": [],
+				"layout": {
+					"marginTop": 10,
+					"height": 20
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": null
+				}
 			}
 		}
 	]
