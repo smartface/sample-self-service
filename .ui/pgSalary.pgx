@@ -3,14 +3,13 @@
 		{
 			"type": "Page",
 			"id": "541389a8",
+			"themeProps": {},
 			"userProps": {},
-			"version": "6.3.0-rc.16",
+			"className": ".page",
+			"version": "6.3.0-rc.20",
 			"props": {
-				"name": "pgSalary",
-				"children": [
-					"statusBar",
-					"headerBar"
-				],
+				"backgroundColor": "#EEEEEE",
+				"orientation": "PORTRAIT",
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -19,26 +18,40 @@
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
-				"backgroundColor": "#FFFFFF",
+				"name": "pgSalary",
+				"children": [
+					"statusBar",
+					"headerBar",
+					"layoutHeaderBar",
+					"flexlayout1"
+				],
 				"isRemovable": true,
-				"orientation": "PORTRAIT",
 				"layout": {},
-				"flex": {},
+				"flex": {
+					"alignContent": 4,
+					"alignItems": 4,
+					"direction": 0,
+					"flexDirection": 0,
+					"flexWrap": 0,
+					"justifyContent": 0
+				},
 				"font": {},
 				"width": 187.5,
-				"height": 301.5
+				"height": 333.5
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "e81e7a61",
+			"themeProps": {},
 			"userProps": {},
+			"className": ".statusBar",
 			"props": {
-				"name": "statusBar",
+				"color": "#00A1F1",
 				"visible": true,
+				"name": "statusBar",
 				"children": [],
 				"parent": "pgSalary",
-				"color": "#00A1F1",
 				"isRemovable": false,
 				"layout": {
 					"height": 10
@@ -52,15 +65,20 @@
 		{
 			"type": "HeaderBar",
 			"id": "7ff03498",
+			"themeProps": {},
 			"userProps": {
-				"title": "newPage001"
+				"title": "newPage001",
+				"visible": false
 			},
+			"className": ".headerBar",
 			"props": {
+				"title": "newPage001",
+				"titleColor": "#000000",
+				"visible": false,
+				"backgroundColor": "#FFFFFF",
 				"name": "headerBar",
 				"children": [],
 				"parent": "pgSalary",
-				"title": "newPage001",
-				"visible": true,
 				"layout": {
 					"height": 22
 				},
@@ -68,6 +86,230 @@
 				"font": {},
 				"flexProps": {},
 				"height": 44
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "5cbd4ff6",
+			"source": {
+				"page": "__library__",
+				"id": "ab2fbca6"
+			},
+			"hiddenComponent": false,
+			"themeProps": {
+				"Highlights": "HeaderBar"
+			},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": null,
+				"height": 82,
+				"marginTop": 20,
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout .flexLayout-headerBar",
+			"props": {
+				"height": 82,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#45495A",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"top": 0,
+				"marginTop": 20,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0
+				},
+				"name": "layoutHeaderBar",
+				"parent": "pgSalary",
+				"children": [
+					"label108"
+				],
+				"layout": {
+					"marginTop": 10,
+					"left": 0,
+					"top": 0,
+					"height": 41
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "Label",
+			"id": "87da769a",
+			"source": {
+				"page": "__library__"
+			},
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"width": null,
+				"height": 40,
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"flexGrow": null
+				},
+				"font": {
+					"size": 24
+				}
+			},
+			"className": ".label",
+			"props": {
+				"width": null,
+				"height": 40,
+				"touchEnabled": true,
+				"text": "Label",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "label108",
+				"parent": "layoutHeaderBar",
+				"children": [],
+				"layout": {
+					"height": 20
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": null
+				}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "015ec331",
+			"themeProps": {
+				"Highlights": "HeaderBar"
+			},
+			"userProps": {
+				"height": 180,
+				"width": null
+			},
+			"className": ".flexLayout .flexLayout-headerBar",
+			"props": {
+				"height": 180,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#45495A",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"name": "flexlayout1",
+				"parent": "pgSalary",
+				"children": [
+					"imageview1"
+				],
+				"layout": {
+					"height": 90
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "67f2ff4e",
+			"themeProps": {},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"imageFillType": "ASPECTFIT",
+				"image": "graph.png",
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"props": {
+				"name": "imageview1",
+				"isReady": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"parent": "flexlayout1",
+				"children": [],
+				"layout": {},
+				"image": "graph.png",
+				"imageURL": "https://dispatcher.env.smartface.io/smartface14/self-service-new/ui-editor/img/graph.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.8781910919917879"
 			}
 		}
 	]

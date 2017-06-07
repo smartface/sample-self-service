@@ -23,5 +23,5 @@ stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
 stylerBuilder.setActiveTheme(settings.config.theme.currentTheme);
 
 // Define routes and go to initial page of application
-Router.add(PgConstants.PAGE_EMPLOYMENT_HISTORY, require("./pages/tabs/profile/pgEmploymentHistory"));
-Router.go(PgConstants.PAGE_EMPLOYMENT_HISTORY);
+Router.add(PgConstants.PAGE_PERFORMANCE, require("./pages/tabs/profile/pgPerformance"));
+Router.go(PgConstants.PAGE_PERFORMANCE);
