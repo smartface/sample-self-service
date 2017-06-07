@@ -23,6 +23,7 @@ stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
 stylerBuilder.setActiveTheme(settings.config.theme.currentTheme);
 
 // Define routes and go to initial page of application
+Router.add(PgConstants.PAGE_LOGIN, require("./pages/login/pgLogin"));
 //Router.add(PgConstants.PAGE_EMPLOYMENT_HISTORY, require("./pages/tabs/profile/pgEmploymentHistory"));
 //Router.add(PgConstants.PAGE_PERFORMANCE, require("./pages/tabs/profile/pgPerformance"));
 //Router.add(PgConstants.PAGE_LEAVE_MANAGEMENT, require("./pages/tabs/hr/pgLeaveManagement"));
@@ -30,4 +31,4 @@ Router.add(PgConstants.PAGE_NEW_LEAVE_REQUEST, require("./pages/tabs/hr/pgNewLea
 //Router.add(PgConstants.PAGE_SALARY, require("./pages/tabs/profile/pgSalary"));
 //Router.add(PgConstants.PAGE_HIERARCHY, require("./pages/tabs/profile/pgHierarchy"));
 //Router.add(PgConstants.PAGE_EXPENSE_MANAGEMENT, require("./pages/tabs/hr/pgExpenseManagement"));
-Router.go(PgConstants.PAGE_NEW_LEAVE_REQUEST);
+Router.go(PgConstants.PAGE_LOGIN);

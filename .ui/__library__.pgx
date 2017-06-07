@@ -8,7 +8,7 @@
 				"backgroundColor": "rgba( 131, 52, 52, 1 )"
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.23",
+			"version": "6.3.0-rc.24",
 			"props": {
 				"backgroundColor": "rgba( 131, 52, 52, 1 )",
 				"orientation": "PORTRAIT",
@@ -36,7 +36,8 @@
 					"itemExpense",
 					"dotIndicator",
 					"topTabBar",
-					"topTabItem"
+					"topTabItem",
+					"textboxWithLine"
 				],
 				"name": "__library__",
 				"layout": {},
@@ -895,16 +896,17 @@
 					"flexDirection": 2,
 					"positionType": 1
 				},
-				"name": "dotIndicator",
 				"parent": "__library__",
 				"children": [
 					"dot0",
 					"dot1",
 					"dot2"
 				],
+				"name": "dotIndicator",
 				"layout": {
 					"width": 21,
-					"height": 5
+					"height": 5,
+					"borderWidth": 0
 				},
 				"font": {}
 			}
@@ -942,14 +944,16 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"name": "dot0",
 				"parent": "dotIndicator",
 				"children": [],
+				"name": "dot0",
 				"layout": {
 					"marginLeft": 1,
 					"marginRight": 1,
 					"width": 5,
-					"height": 5
+					"height": 5,
+					"borderWidth": 0,
+					"borderRadius": 2.5
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -997,14 +1001,16 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"name": "dot1",
 				"parent": "dotIndicator",
 				"children": [],
+				"name": "dot1",
 				"layout": {
 					"marginLeft": 1,
 					"marginRight": 1,
 					"width": 5,
-					"height": 5
+					"height": 5,
+					"borderWidth": 0,
+					"borderRadius": 2.5
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -1052,14 +1058,16 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"name": "dot2",
 				"parent": "dotIndicator",
 				"children": [],
+				"name": "dot2",
 				"layout": {
 					"marginLeft": 1,
 					"marginRight": 1,
 					"width": 5,
-					"height": 5
+					"height": 5,
+					"borderWidth": 0,
+					"borderRadius": 2.5
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -2442,13 +2450,14 @@
 					"positionType": 1,
 					"right": 0
 				},
-				"name": "topTabBar",
 				"parent": "__library__",
 				"children": [],
+				"name": "topTabBar",
 				"layout": {
 					"right": 0,
 					"left": 0,
-					"height": 25
+					"height": 25,
+					"borderWidth": 0
 				},
 				"font": {}
 			}
@@ -2490,17 +2499,18 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"name": "topTabItem",
 				"parent": "__library__",
 				"children": [
 					"tabItemTitle",
 					"tabItemBottomLine"
 				],
+				"name": "topTabItem",
 				"layout": {
 					"left": 6,
 					"top": 125,
 					"width": 50,
-					"height": 25
+					"height": 25,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -2556,10 +2566,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "tabItemTitle",
 				"parent": "topTabItem",
 				"children": [],
-				"layout": {},
+				"name": "tabItemTitle",
+				"layout": {
+					"borderWidth": 0
+				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
@@ -2598,11 +2610,12 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"name": "tabItemBottomLine",
 				"parent": "topTabItem",
 				"children": [],
+				"name": "tabItemBottomLine",
 				"layout": {
-					"height": 2.5
+					"height": 2.5,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -3949,7 +3962,238 @@
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.env.smartface.io/smartface14/self-service-new/ui-editor/img/icon_attachment.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.4385829524213365"
+				"imageURL": "https://dispatcher.env.smartface.io/smartface57/ssn1/ui-editor/img/icon_attachment.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "b360d1dd",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"height": 60,
+				"left": 64,
+				"top": 378,
+				"width": 250,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": 60,
+				"width": 250,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 64,
+				"top": 378,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "ABSOLUTE"
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 1
+				},
+				"name": "textboxWithLine",
+				"parent": "__library__",
+				"children": [
+					"textboxInfo",
+					"innerTextbox",
+					"textboxBottomLine"
+				],
+				"layout": {
+					"left": 32,
+					"top": 189,
+					"width": 125,
+					"height": 30,
+					"borderWidth": 0
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "TextBox",
+			"id": "2e0306d9",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"height": null,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"text": "Anthony Bell",
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".textBox",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"text": "Anthony Bell",
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"textAlignment": "MIDLEFT",
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "innerTextbox",
+				"parent": "textboxWithLine",
+				"children": [],
+				"layout": {
+					"borderWidth": 0
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": 1
+				}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "3d1e4ee7",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"height": 2,
+				"flexProps": {
+					"flexGrow": null
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": 2,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "textboxBottomLine",
+				"parent": "textboxWithLine",
+				"children": [],
+				"layout": {
+					"height": 1,
+					"borderWidth": 0
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0,
+					"flexGrow": null
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "Label",
+			"id": "59980ce6",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Sizes": "Login-Small",
+				"Highlights": "Login-Info"
+			},
+			"userProps": {
+				"width": null,
+				"height": 20,
+				"text": "Username"
+			},
+			"className": ".label .label-login.small .label-login.info",
+			"props": {
+				"width": null,
+				"height": 20,
+				"touchEnabled": true,
+				"text": "Username",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "#00FFFFFF",
+				"alpha": 0.69,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDLEFT",
+				"font": {
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "textboxInfo",
+				"parent": "textboxWithLine",
+				"children": [],
+				"layout": {
+					"height": 10,
+					"borderWidth": 0
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0
+				}
 			}
 		},
 		{

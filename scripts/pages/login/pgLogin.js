@@ -1,23 +1,22 @@
 const extend = require('js-base/core/extend');
-const Page = require('sf-core/ui/page');
 const Color = require('sf-core/ui/color');
 
-const Page_ = extend(Page)(
+const PageDesign = require("../../ui/ui_pgLogin");
+
+const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super){
 		// Initalizes super class for this page scope
-		_super(this, {
-			onLoad: onLoad.bind(this)
-		});
-});
-
-function onLoad() { 
-    this.headerBar.visible = true;
-    this.headerBar.title = "pgLogin";
-    this.headerBar.titleColor = Color.create("#000000");
-    this.headerBar.backgroundColor = Color.create("#FFFFFF");
-    this.statusBar.visible = true;
-    this.statusBar.android && (this.statusBar.android.color = Color.create("#00A1F1"));
-}
+		_super(this);
+		
+		var _superOnLoad = this.onLoad;
+		this.onLoad = function() {
+			typeof _superOnLoad === "function" && _superOnLoad();
+			
+			this.passwordLayout.children.textboxInfo.text = "Password";
+			this.passwordLayout.children.innerTextbox.isPassword = true;
+		}
+	}
+);
 
 module && (module.exports = Page_);
