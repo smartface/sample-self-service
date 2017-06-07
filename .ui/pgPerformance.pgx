@@ -5,12 +5,12 @@
 			"id": "27b860ef",
 			"themeProps": {},
 			"userProps": {
-				"backgroundColor": "rgba( 162, 38, 38, 1 )"
+				"backgroundColor": "rgba( 228, 228, 228, 1 )"
 			},
 			"className": ".page",
 			"version": "6.3.0-rc.21",
 			"props": {
-				"backgroundColor": "rgba( 162, 38, 38, 1 )",
+				"backgroundColor": "rgba( 228, 228, 228, 1 )",
 				"orientation": "PORTRAIT",
 				"flexProps": {
 					"alignContent": "STRETCH",
@@ -25,13 +25,11 @@
 					"statusBar",
 					"headerBar",
 					"layoutHeaderBar",
-					"flexlayout1"
+					"flexlayout1",
+					"listView"
 				],
 				"isRemovable": true,
-				"layout": {
-					"width": 93.75,
-					"height": 166.75
-				},
+				"layout": {},
 				"flex": {
 					"alignContent": 4,
 					"alignItems": 4,
@@ -183,7 +181,58 @@
 					"flexGrow": 1
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.env.smartface.io/smartface14/slfsrvc/ui-editor/img/graph.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.3241823657503564"
+				"imageURL": "https://dispatcher.env.smartface.io/smartface14/slfsrvc/ui-editor/img/graph.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+			}
+		},
+		{
+			"type": "ListView",
+			"id": "94a44185",
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"usePageVariable": true,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".listView",
+			"props": {
+				"height": 200,
+				"width": null,
+				"touchEnabled": true,
+				"multiline": false,
+				"rowHeight": 60,
+				"itemCount": 3,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "listView",
+				"parent": "pgPerformance",
+				"children": [],
+				"layout": {
+					"marginLeft": 5,
+					"marginRight": 5,
+					"height": 100
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"font": {},
+				"usePageVariable": true
 			}
 		},
 		{

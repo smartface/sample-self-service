@@ -2,7 +2,7 @@ const extend = require('js-base/core/extend');
 const Page = require('sf-core/ui/page');
 const Color = require('sf-core/ui/color');
 const ListViewItem = require('sf-core/ui/listviewitem');
-const ItemSalary = require('../../../components/ItemSalary');
+const ItemPerformance = require('../../../components/ItemSalary');
 var PageDesign = require("../../../ui/ui_pgSalary");
 
 
@@ -21,12 +21,12 @@ const Page_ = extend(PageDesign)(
 function onShow(parentOnShow) {
     parentOnShow()
 
-    this.listView.rowHeight = 80;
+    this.listView.rowHeight = 195;
     this.listView.itemCount = 100;
     
     this.listView.onRowCreate = function() {
             var myListViewItem = new ListViewItem();
-            var item = new ItemSalary();
+            var item = new ItemPerformance();
             item.id = 200;
 
             myListViewItem.addChild(item);
