@@ -3,14 +3,13 @@
 		{
 			"type": "Page",
 			"id": "ff1be9ec",
+			"themeProps": {},
 			"userProps": {},
-			"version": "6.3.0-rc.16",
+			"className": ".page",
+			"version": "6.3.0-rc.23",
 			"props": {
-				"name": "pgExpanseManagement",
-				"children": [
-					"statusBar",
-					"headerBar"
-				],
+				"backgroundColor": "#EEEEEE",
+				"orientation": "PORTRAIT",
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -19,29 +18,45 @@
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
-				"backgroundColor": "#FFFFFF",
+				"children": [
+					"statusBar",
+					"headerBar",
+					"layoutHeaderBar",
+					"listView"
+				],
 				"isRemovable": true,
-				"orientation": "PORTRAIT",
+				"name": "pgExpanseManagement",
 				"layout": {},
-				"flex": {},
+				"flex": {
+					"alignContent": 4,
+					"alignItems": 4,
+					"direction": 0,
+					"flexDirection": 0,
+					"flexWrap": 0,
+					"justifyContent": 0
+				},
 				"font": {},
-				"width": 187.5,
-				"height": 301.5
+				"width": 375,
+				"height": 667
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "73a13f7f",
-			"userProps": {},
+			"themeProps": {},
+			"userProps": {
+				"color": "rgba( 69, 73, 90, 1 )"
+			},
+			"className": ".statusBar",
 			"props": {
-				"name": "statusBar",
+				"color": "rgba( 69, 73, 90, 1 )",
 				"visible": true,
 				"children": [],
 				"parent": "pgExpanseManagement",
-				"color": "#00A1F1",
 				"isRemovable": false,
+				"name": "statusBar",
 				"layout": {
-					"height": 10
+					"height": 20
 				},
 				"flex": {},
 				"font": {},
@@ -52,22 +67,211 @@
 		{
 			"type": "HeaderBar",
 			"id": "f849770b",
+			"themeProps": {},
 			"userProps": {
-				"title": "newPage001"
+				"title": "newPage001",
+				"visible": false
 			},
+			"className": ".headerBar",
 			"props": {
-				"name": "headerBar",
+				"title": "newPage001",
+				"titleColor": "#FFFFFF",
+				"visible": false,
+				"backgroundColor": "#45495A",
 				"children": [],
 				"parent": "pgExpanseManagement",
-				"title": "newPage001",
-				"visible": true,
+				"name": "headerBar",
 				"layout": {
-					"height": 22
+					"height": 44
 				},
 				"flex": {},
 				"font": {},
 				"flexProps": {},
 				"height": 44
+			}
+		},
+		{
+			"type": "ListView",
+			"id": "e84e1224",
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"usePageVariable": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".listView",
+			"props": {
+				"height": 200,
+				"width": null,
+				"touchEnabled": true,
+				"multiline": false,
+				"rowHeight": 60,
+				"itemCount": 3,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "listView",
+				"parent": "pgExpanseManagement",
+				"children": [],
+				"layout": {
+					"marginLeft": 10,
+					"marginRight": 10,
+					"height": 200,
+					"borderWidth": 0
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"font": {},
+				"usePageVariable": true
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "07383c63",
+			"source": {
+				"page": "__library__",
+				"id": "ab2fbca6"
+			},
+			"hiddenComponent": false,
+			"themeProps": {
+				"Highlights": "HeaderBar"
+			},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": null,
+				"height": 92,
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout .flexLayout-headerBar",
+			"props": {
+				"height": 92,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#45495A",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"top": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0
+				},
+				"name": "layoutHeaderBar",
+				"parent": "pgExpanseManagement",
+				"children": [
+					"label108"
+				],
+				"layout": {
+					"left": 0,
+					"top": 0,
+					"height": 92,
+					"borderWidth": 0
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "Label",
+			"id": "87da769a",
+			"source": {
+				"page": "__library__"
+			},
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"width": null,
+				"height": 40,
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"marginTop": 20,
+				"flexProps": {
+					"flexGrow": null
+				},
+				"font": {
+					"size": 24
+				}
+			},
+			"className": ".label",
+			"props": {
+				"width": null,
+				"height": 40,
+				"touchEnabled": true,
+				"text": "Label",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"textAlignment": "MIDCENTER",
+				"marginTop": 20,
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "label108",
+				"parent": "layoutHeaderBar",
+				"children": [],
+				"layout": {
+					"marginTop": 20,
+					"height": 40,
+					"borderWidth": 0
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": null
+				}
 			}
 		}
 	]

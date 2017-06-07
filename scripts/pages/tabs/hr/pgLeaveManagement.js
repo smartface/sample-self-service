@@ -13,7 +13,7 @@ const Page_ = extend(PageDesign)(
 		_super(this, {
 			//onLoad: onLoad.bind(this),
 		});
-		this.onShow = onShow.bind(this, this.onShow.bind(this))
+		this.onShow = onShow.bind(this, this.onShow.bind(this));
 
 });
 

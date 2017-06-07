@@ -28,6 +28,6 @@ stylerBuilder.setActiveTheme(settings.config.theme.currentTheme);
 //Router.add(PgConstants.PAGE_LEAVE_MANAGEMENT, require("./pages/tabs/hr/pgLeaveManagement"));
 //Router.add(PgConstants.PAGE_NEW_LEAVE_REQUEST, require("./pages/tabs/hr/pgNewLeaveRequest"));
 //Router.add(PgConstants.PAGE_SALARY, require("./pages/tabs/profile/pgSalary"));
-
-Router.add(PgConstants.PAGE_HIERARCHY, require("./pages/tabs/profile/pgHierarchy"));
-Router.go(PgConstants.PAGE_HIERARCHY);
+//Router.add(PgConstants.PAGE_HIERARCHY, require("./pages/tabs/profile/pgHierarchy"));
+Router.add(PgConstants.PAGE_EXPENSE_MANAGEMENT, require("./pages/tabs/hr/pgExpenseManagement"));
+Router.go(PgConstants.PAGE_EXPENSE_MANAGEMENT);

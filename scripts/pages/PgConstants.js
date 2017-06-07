@@ -2,7 +2,7 @@ const PgConstants = {}
 
 PgConstants.PAGE_LOGIN                  = "pgLogin"; 
 PgConstants.PAGE_SIGN_UP                = "pgSignUp"; 
-PgConstants.PAGE_EXPANSE_MANAGEMENT     = "pgExpenseManagement"; 
+PgConstants.PAGE_EXPENSE_MANAGEMENT     = "pgExpenseManagement"; 
 PgConstants.PAGE_NEW_EXPANSE            = "pgNewExpanse"; 
 PgConstants.PAGE_LEAVE_MANAGEMENT       = "pgLeaveManagement"; 
 PgConstants.PAGE_NEW_LEAVE_REQUEST      = "pgNewLeaveRequest"; 
