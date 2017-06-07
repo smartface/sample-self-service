@@ -1,0 +1,102 @@
+/* 
+		You can modify its contents.
+*/
+const extend = require('js-base/core/extend');
+const Color = require("sf-core/ui/color");
+const FlexLayout = require('sf-core/ui/flexlayout');
+
+const DotIndicatorDesign = require('library/DotIndicator');
+const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
+const ItemStyle = getCombinedStyle(".flexLayout .flexLayout-dotIndicator-item.active", {});
+
+const PREFIX = "dot";
+
+const DotIndicator = extend(DotIndicatorDesign)(
+	//constructor
+	function(_super, props, pageName){
+		// initalizes super class for this scope
+		_super(this, props || DotIndicatorDesign.defaults );
+		this.pageName = pageName;
+		
+		var _currentIndex = 0;
+		var _size = 3;
+		var _activeColor = Color.create("#1775D0");
+		var _inactiveColor = Color.create("#D8D8D8");
+		
+		Object.defineProperties(this, {
+			'currentIndex': {
+				get: function() {
+					return _currentIndex;
+				},
+				set: function(value) {
+					if (typeof value !== "number") {
+						throw new TypeError("currentIndex should be number");
+					}
+					if (value >= _size || value < 0) {
+						throw new Error("currentIndex is out of range");
+					}
+					
+					_currentIndex = value;
+					invalidate(this);
+				}
+			},
+			'size': {
+				get: function() {
+					return _size;
+				},
+				set: function(value) {
+					if (typeof value !== "number") {
+						throw new TypeError("size should be number");
+					}
+					
+					_size = value;
+					setSize(this, _size);
+				}
+			},
+			'activeColor': {
+				get: function() {
+					return _activeColor;
+				},
+				set: function(value) {
+					_activeColor = value;
+					invalidate(this);
+				}
+			},
+			'inactiveColor': {
+				get: function() {
+					return _inactiveColor;
+				},
+				set: function(value) {
+					_inactiveColor = value;
+					invalidate(this);
+				}
+			}
+		});
+	}
+);
+
+function invalidate(indicator) {
+	Object.keys(indicator.children).forEach(function(childName) {
+		if (childName === (PREFIX + indicator.currentIndex)) { //active
+			indicator.children[childName].backgroundColor = indicator.activeColor;
+		} else { // inactive
+			indicator.children[childName].backgroundColor = indicator.inactiveColor;
+		}
+	});
+}
+
+function setSize(indicator, newSize) {
+	indicator.width = newSize * 14;
+	indicator.applyLayout();
+	
+	indicator.removeAll();
+	indicator.children = {};
+	for (var i = 0; i < newSize; i++) {
+		indicator.children[PREFIX+i] = new FlexLayout(ItemStyle);
+		indicator.addChild(indicator.children[PREFIX+i]);
+	}
+	
+	invalidate(indicator);
+}
+
+module && (module.exports = DotIndicator);

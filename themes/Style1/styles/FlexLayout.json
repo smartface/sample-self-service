@@ -39,6 +39,29 @@
 		},
 		"&-headerBar": {
 			"backgroundColor": "#45495A"
+		},
+		"&-dotIndicator": {
+			"&-main": {
+				"height": 10,
+				"width": 42,
+				"backgroundColor": "#00FFFFFF",
+				"flexProps": {
+					"flexDirection": "ROW"
+				}
+			},
+			"&-item": {
+				"width": 10,
+				"height": 10,
+				"borderRadius": 5,
+				"marginLeft": 2,
+				"marginRight": 2,
+				".inactive": {
+					"backgroundColor": "#D8D8D8"
+				},
+				".active": {
+					"backgroundColor": "#1775D0"
+				}
+			}
 		}
 	}
 }
