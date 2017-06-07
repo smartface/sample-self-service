@@ -1,0 +1,400 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "7761adc8",
+			"themeProps": {},
+			"userProps": {
+				"width": 187.5,
+				"height": 301.5,
+				"isRemovable": true,
+				"orientation": "PORTRAIT",
+				"backgroundColor": "rgba( 197, 210, 28, 1 )",
+				"flexProps": {
+					"alignItems": "CENTER",
+					"justifyContent": "SPACE_AROUND",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"direction": "INHERIT"
+				},
+				"layout": {
+					"width": 93.75,
+					"height": 150.75
+				},
+				"flex": {
+					"alignItems": 2,
+					"justifyContent": 4,
+					"flexDirection": 0,
+					"flexWrap": 0,
+					"direction": 0
+				}
+			},
+			"className": ".page",
+			"version": "6.3.0-rc.12",
+			"props": {
+				"width": 187.5,
+				"height": 301.5,
+				"children": [
+					"statusBar",
+					"headerBar",
+					"img",
+					"lbl",
+					"btn"
+				],
+				"name": "page2",
+				"flexProps": {
+					"alignItems": "CENTER",
+					"justifyContent": "SPACE_AROUND",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH"
+				},
+				"isRemovable": true,
+				"layout": {
+					"width": 93.75,
+					"height": 150.75
+				},
+				"flex": {
+					"alignItems": 2,
+					"justifyContent": 4,
+					"flexDirection": 0,
+					"flexWrap": 0,
+					"direction": 0
+				},
+				"orientation": "PORTRAIT",
+				"backgroundColor": "rgba( 197, 210, 28, 1 )",
+				"font": {}
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "a829471c",
+			"themeProps": {},
+			"userProps": {
+				"height": 20,
+				"isRemovable": false,
+				"visible": true,
+				"layout": {
+					"height": 10
+				}
+			},
+			"className": ".statusBar",
+			"props": {
+				"height": 20,
+				"name": "statusBar",
+				"parent": "page2",
+				"flexProps": {},
+				"isRemovable": false,
+				"layout": {
+					"height": 10
+				},
+				"flex": {},
+				"font": {},
+				"visible": true,
+				"color": "#00A1F1"
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "35f1c1a1",
+			"themeProps": {},
+			"userProps": {
+				"height": 44,
+				"title": "page2",
+				"titleColor": "rgba( 0, 0, 0, 1 )",
+				"isRemovable": false,
+				"visible": true,
+				"layout": {
+					"height": 22
+				}
+			},
+			"className": ".headerBar",
+			"props": {
+				"height": 44,
+				"title": "page2",
+				"titleColor": "rgba( 0, 0, 0, 1 )",
+				"name": "headerBar",
+				"parent": "page2",
+				"flexProps": {},
+				"isRemovable": false,
+				"layout": {
+					"height": 22
+				},
+				"flex": {},
+				"font": {},
+				"visible": true,
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"type": "Button",
+			"id": "c5abb100",
+			"themeProps": {},
+			"userProps": {
+				"left": null,
+				"top": null,
+				"right": null,
+				"bottom": null,
+				"height": 60,
+				"text": "Back",
+				"backgroundColor": "rgba( 0, 161, 241, 1 )",
+				"visible": true,
+				"alpha": 1,
+				"width": null,
+				"borderWidth": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"usePageVariable": true,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"marginLeft": 20,
+					"marginRight": 20,
+					"alignSelf": "STRETCH"
+				},
+				"layout": {
+					"right": 12.5625,
+					"bottom": 121.35908508300781,
+					"left": 25.125,
+					"top": 242.71817016601562,
+					"height": 30
+				},
+				"flex": {
+					"positionType": 0,
+					"marginLeft": 10,
+					"marginRight": 10,
+					"alignSelf": 4
+				},
+				"font": {
+					"color": "rgba( 255, 255, 255, 1 )",
+					"size": 16,
+					"family": "Arial"
+				}
+			},
+			"className": ".button",
+			"props": {
+				"left": null,
+				"top": null,
+				"right": null,
+				"bottom": null,
+				"height": 60,
+				"name": "btn",
+				"parent": "page2",
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"marginLeft": 20,
+					"marginRight": 20,
+					"alignSelf": "STRETCH"
+				},
+				"layout": {
+					"marginLeft": 5,
+					"marginRight": 5,
+					"height": 30
+				},
+				"flex": {
+					"positionType": 0,
+					"marginLeft": 10,
+					"marginRight": 10,
+					"alignSelf": 4
+				},
+				"text": "Back",
+				"backgroundColor": "rgba( 0, 161, 241, 1 )",
+				"font": {
+					"color": "rgba( 255, 255, 255, 1 )",
+					"size": 16,
+					"family": "Arial",
+					"bold": false,
+					"italic": false
+				},
+				"visible": true,
+				"alpha": 1,
+				"width": null,
+				"borderWidth": null,
+				"borderColor": "rgba(0,0,0,1)",
+				"textColor": "#FFFFFF",
+				"textAlignment": "MIDCENTER",
+				"marginLeft": 10,
+				"marginRight": 10,
+				"touchEnabled": true,
+				"usePageVariable": true
+			}
+		},
+		{
+			"type": "Label",
+			"id": "980522a9",
+			"themeProps": {},
+			"userProps": {
+				"left": null,
+				"top": null,
+				"right": 0,
+				"bottom": 0,
+				"height": 90.45000000000002,
+				"text": "This is second page",
+				"borderColor": "rgba( 255, 255, 255, 1 )",
+				"borderRadius": 0,
+				"borderWidth": 0,
+				"backgroundColor": "rgba( 0, 0, 0, 0 )",
+				"visible": true,
+				"textAlignment": "MIDCENTER",
+				"alpha": 1,
+				"width": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH",
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"layout": {
+					"right": 0,
+					"bottom": 0,
+					"left": 27.125,
+					"top": 135.6750030517578,
+					"height": 45.22500000000001
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 4,
+					"marginLeft": 10,
+					"marginRight": 10
+				},
+				"font": {
+					"family": "Arial",
+					"size": 16
+				}
+			},
+			"className": ".label",
+			"props": {
+				"left": null,
+				"top": null,
+				"right": 0,
+				"bottom": 0,
+				"height": 90.45000000000002,
+				"name": "lbl",
+				"parent": "page2",
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH",
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"layout": {
+					"right": 0,
+					"bottom": 0,
+					"marginLeft": 5,
+					"marginRight": 5,
+					"height": 45.22500000000001
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 4,
+					"marginLeft": 10,
+					"marginRight": 10
+				},
+				"text": "This is second page",
+				"borderColor": "rgba( 255, 255, 255, 1 )",
+				"borderRadius": 0,
+				"borderWidth": 0,
+				"font": {
+					"family": "Arial",
+					"size": 16,
+					"bold": false,
+					"italic": false
+				},
+				"backgroundColor": "rgba( 0, 0, 0, 0 )",
+				"visible": true,
+				"textAlignment": "MIDCENTER",
+				"alpha": 1,
+				"width": null,
+				"multiline": false,
+				"textColor": "#000000",
+				"touchEnabled": true,
+				"marginLeft": 10,
+				"marginRight": 10
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "845d2004",
+			"themeProps": {},
+			"userProps": {
+				"left": null,
+				"top": null,
+				"right": 0,
+				"bottom": 0,
+				"height": 60.3,
+				"image": "smartface.png",
+				"imageFillType": "ASPECTFIT",
+				"visible": true,
+				"alpha": 1,
+				"imageURL": "https://ozcan-ide-ozcanovunc.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.7615585576130848",
+				"width": null,
+				"borderWidth": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH",
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"layout": {
+					"right": 0,
+					"bottom": 0,
+					"left": 30.125,
+					"top": 62.29999923706055,
+					"height": 30.15
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 4,
+					"marginLeft": 10,
+					"marginRight": 10
+				}
+			},
+			"className": ".imageView",
+			"props": {
+				"left": null,
+				"top": null,
+				"right": 0,
+				"bottom": 0,
+				"height": 60.3,
+				"name": "img",
+				"parent": "page2",
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH",
+					"marginLeft": 20,
+					"marginRight": 20
+				},
+				"layout": {
+					"right": 0,
+					"bottom": 0,
+					"marginLeft": 5,
+					"marginRight": 5,
+					"height": 30.15
+				},
+				"flex": {
+					"positionType": 0,
+					"alignSelf": 4,
+					"marginLeft": 10,
+					"marginRight": 10
+				},
+				"image": "smartface.png",
+				"imageFillType": "ASPECTFIT",
+				"font": {},
+				"visible": true,
+				"alpha": 1,
+				"imageURL": "https://ali-ide-alitugrul.c9users.io:8081/ui-editor/img/smartface.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.42795388525072897",
+				"width": null,
+				"borderWidth": null,
+				"backgroundColor": "rgba(0,0,0,0)",
+				"borderColor": "rgba(0,0,0,1)",
+				"touchEnabled": true,
+				"marginLeft": 10,
+				"marginRight": 10
+			}
+		}
+	]
+}

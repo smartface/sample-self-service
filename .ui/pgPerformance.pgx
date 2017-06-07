@@ -4,11 +4,13 @@
 			"type": "Page",
 			"id": "27b860ef",
 			"themeProps": {},
-			"userProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 162, 38, 38, 1 )"
+			},
 			"className": ".page",
-			"version": "6.3.0-rc.20",
+			"version": "6.3.0-rc.21",
 			"props": {
-				"backgroundColor": "#EEEEEE",
+				"backgroundColor": "rgba( 162, 38, 38, 1 )",
 				"orientation": "PORTRAIT",
 				"flexProps": {
 					"alignContent": "STRETCH",
@@ -26,7 +28,10 @@
 					"flexlayout1"
 				],
 				"isRemovable": true,
-				"layout": {},
+				"layout": {
+					"width": 93.75,
+					"height": 166.75
+				},
 				"flex": {
 					"alignContent": 4,
 					"alignItems": 4,
@@ -86,137 +91,6 @@
 				"font": {},
 				"flexProps": {},
 				"height": 44
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "607c5cb1",
-			"source": {
-				"page": "__library__",
-				"id": "ab2fbca6"
-			},
-			"hiddenComponent": false,
-			"themeProps": {
-				"Highlights": "HeaderBar"
-			},
-			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 82,
-				"marginTop": 20,
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"flex": {
-					"positionType": 0
-				}
-			},
-			"className": ".flexLayout .flexLayout-headerBar",
-			"props": {
-				"height": 82,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#45495A",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"left": 0,
-				"top": 0,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
-				"flex": {
-					"alignSelf": 0,
-					"direction": 0,
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
-				"name": "layoutHeaderBar",
-				"parent": "pgPerformance",
-				"children": [
-					"label108"
-				],
-				"layout": {
-					"marginTop": 10,
-					"left": 0,
-					"top": 0,
-					"height": 41
-				},
-				"font": {},
-				"visibility": true,
-				"marginTop": 20
-			}
-		},
-		{
-			"type": "Label",
-			"id": "8df54fda",
-			"source": {
-				"page": "__library__"
-			},
-			"hiddenComponent": false,
-			"themeProps": {},
-			"userProps": {
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"width": null,
-				"height": 40,
-				"textAlignment": "MIDCENTER",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"flexProps": {
-					"flexGrow": null
-				},
-				"font": {
-					"size": 24
-				}
-			},
-			"className": ".label",
-			"props": {
-				"width": null,
-				"height": 40,
-				"touchEnabled": true,
-				"text": "Label",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"textAlignment": "MIDCENTER",
-				"font": {
-					"size": 24,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
-				"name": "label108",
-				"parent": "layoutHeaderBar",
-				"children": [],
-				"layout": {
-					"height": 20
-				},
-				"flex": {
-					"alignSelf": 0,
-					"positionType": 0,
-					"flexGrow": null
-				}
 			}
 		},
 		{
@@ -282,14 +156,8 @@
 					"flexGrow": 1
 				}
 			},
+			"className": ".imageView",
 			"props": {
-				"name": "imageview1",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
@@ -299,17 +167,155 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"font": {},
+				"image": "graph.png",
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "imageview1",
+				"parent": "flexlayout1",
+				"children": [],
+				"layout": {},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": 1
 				},
-				"parent": "flexlayout1",
+				"font": {},
+				"imageURL": "https://dispatcher.env.smartface.io/smartface14/slfsrvc/ui-editor/img/graph.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.3241823657503564"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "607c5cb1",
+			"source": {
+				"page": "__library__",
+				"id": "ab2fbca6"
+			},
+			"hiddenComponent": false,
+			"themeProps": {
+				"Highlights": "HeaderBar"
+			},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": null,
+				"height": 102,
+				"marginTop": null,
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout .flexLayout-headerBar",
+			"props": {
+				"height": 102,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#45495A",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"top": 0,
+				"marginTop": null,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0
+				},
+				"name": "layoutHeaderBar",
+				"parent": "pgPerformance",
+				"children": [
+					"label108"
+				],
+				"layout": {
+					"left": 0,
+					"top": 0,
+					"height": 51
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "Label",
+			"id": "87da769a",
+			"source": {
+				"page": "__library__"
+			},
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"width": null,
+				"height": 40,
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"marginTop": 20,
+				"flexProps": {
+					"flexGrow": null
+				},
+				"font": {
+					"size": 24
+				}
+			},
+			"className": ".label",
+			"props": {
+				"width": null,
+				"height": 40,
+				"touchEnabled": true,
+				"text": "Label",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"textAlignment": "MIDCENTER",
+				"marginTop": 20,
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "label108",
+				"parent": "layoutHeaderBar",
 				"children": [],
-				"layout": {},
-				"image": "graph.png",
-				"imageURL": "https://dispatcher.env.smartface.io/smartface14/self-service-new/ui-editor/img/graph.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"layout": {
+					"marginTop": 10,
+					"height": 20
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": null
+				}
 			}
 		}
 	]

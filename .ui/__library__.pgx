@@ -28,7 +28,8 @@
 					"listItem1",
 					"itemEmploymentHistory",
 					"itemLeaveManagement",
-					"layoutHeaderBar"
+					"layoutHeaderBar",
+					"verticalDivider"
 				],
 				"layout": {},
 				"flex": {
@@ -40,8 +41,8 @@
 					"justifyContent": 0
 				},
 				"font": {},
-				"width": 375,
-				"height": 667
+				"width": 468.75,
+				"height": 833.75
 			}
 		},
 		{
@@ -57,7 +58,7 @@
 				"children": [],
 				"parent": "__library__",
 				"layout": {
-					"height": 20
+					"height": 25
 				},
 				"flex": {},
 				"font": {},
@@ -80,7 +81,7 @@
 				"children": [],
 				"parent": "__library__",
 				"layout": {
-					"height": 44
+					"height": 55
 				},
 				"flex": {},
 				"font": {},
@@ -106,6 +107,10 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"flexGrow": 1,
+					"positionType": 0
 				}
 			},
 			"className": ".flexLayout",
@@ -131,15 +136,6 @@
 					"positionType": "ABSOLUTE",
 					"flexGrow": 1
 				},
-				"name": "horizontalDivider",
-				"parent": "__library__",
-				"children": [],
-				"layout": {
-					"left": 15,
-					"top": 11,
-					"width": 200,
-					"height": 1
-				},
 				"flex": {
 					"alignSelf": 0,
 					"direction": 0,
@@ -151,6 +147,15 @@
 					"positionType": 1,
 					"flexGrow": 1
 				},
+				"name": "horizontalDivider",
+				"parent": "__library__",
+				"children": [],
+				"layout": {
+					"left": 18.75,
+					"top": 13.75,
+					"width": 250,
+					"height": 1.25
+				},
 				"font": {}
 			}
 		},
@@ -160,7 +165,7 @@
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"left": 12,
@@ -170,7 +175,12 @@
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"flexProps": {
 					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"alignItems": "CENTER"
+				},
+				"flex": {
+					"flexDirection": 2,
+					"positionType": 0
 				}
 			},
 			"className": ".flexLayout",
@@ -189,11 +199,21 @@
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
+					"alignItems": "CENTER",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 2,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 2,
+					"positionType": 1
 				},
 				"name": "listItem1",
 				"parent": "__library__",
@@ -202,20 +222,10 @@
 					"value"
 				],
 				"layout": {
-					"left": 12,
-					"top": 23,
-					"width": 326,
-					"height": 59
-				},
-				"flex": {
-					"alignSelf": 0,
-					"direction": 0,
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 1
+					"left": 15,
+					"top": 28.75,
+					"width": 407.5,
+					"height": 73.75
 				},
 				"font": {}
 			}
@@ -230,18 +240,21 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"marginLeft": 10,
-				"text": "Title",
-				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+				"text": "Text",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
-				"text": "Title",
+				"text": "Text",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -259,19 +272,20 @@
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
 				"name": "title",
 				"parent": "listItem1",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"width": 107,
-					"height": 50
+					"marginLeft": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
-					"positionType": 0
+					"positionType": 0,
+					"flexGrow": 1
 				}
 			}
 		},
@@ -285,21 +299,21 @@
 				"Highlights": "ListItemValue"
 			},
 			"userProps": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"textAlignment": "MIDRIGHT",
 				"marginRight": 10,
 				"text": "Value",
 				"textColor": "rgba( 155, 155, 155, 1 )",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
 				"text": "Value",
 				"visible": true,
@@ -320,20 +334,19 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 2
 				},
 				"name": "value",
 				"parent": "listItem1",
 				"children": [],
 				"layout": {
-					"marginRight": 10,
-					"width": 129,
-					"height": 50
+					"marginRight": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			}
 		},
@@ -403,10 +416,10 @@
 					"sixthRow"
 				],
 				"layout": {
-					"left": 9,
-					"top": 87,
-					"width": 350,
-					"height": 294
+					"left": 11.25,
+					"top": 108.75,
+					"width": 437.5,
+					"height": 367.5
 				},
 				"flex": {
 					"alignSelf": 4,
@@ -468,9 +481,9 @@
 				"parent": "itemEmploymentHistory",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"width": 341,
-					"height": 39
+					"marginLeft": 12.5,
+					"width": 426.25,
+					"height": 48.75
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -488,22 +501,29 @@
 			"themeProps": {},
 			"userProps": {
 				"left": 9,
-				"top": 389,
-				"width": 333,
-				"height": 108
+				"top": 310.2,
+				"width": 350,
+				"height": 124,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"paddingBottom": 10,
+				"flexProps": {
+					"flexGrow": 1,
+					"positionType": "RELATIVE"
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 108,
-				"width": 333,
+				"height": 124,
+				"width": 350,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#FFFFFF",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"left": 9,
-				"top": 389,
+				"top": 310.2,
+				"paddingBottom": 10,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -512,20 +532,22 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "ABSOLUTE"
+					"positionType": "ABSOLUTE",
+					"flexGrow": 1
 				},
 				"name": "itemLeaveManagement",
 				"parent": "__library__",
 				"children": [
-					"flexlayout5",
-					"flexlayout6",
-					"flexlayout7"
+					"dataContainer",
+					"dividerContainer",
+					"approveContainer"
 				],
 				"layout": {
-					"left": 9,
-					"top": 389,
-					"width": 333,
-					"height": 108
+					"left": 11.25,
+					"top": 387.75,
+					"width": 437.5,
+					"height": 155,
+					"paddingBottom": 12.5
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -535,7 +557,8 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 1
+					"positionType": 1,
+					"flexGrow": 1
 				},
 				"font": {}
 			}
@@ -548,16 +571,17 @@
 			},
 			"themeProps": {},
 			"userProps": {
-				"height": 30,
-				"width": 200,
+				"height": null,
+				"width": null,
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 1,
+					"flexDirection": "ROW"
 				}
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 30,
-				"width": 200,
+				"height": null,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "#FFFFFF",
@@ -571,17 +595,17 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "flexlayout5",
+				"name": "dataContainer",
 				"parent": "itemLeaveManagement",
-				"children": [],
-				"layout": {
-					"width": 200,
-					"height": 30
-				},
+				"children": [
+					"flexlayout1",
+					"flexlayout2"
+				],
+				"layout": {},
 				"flex": {
 					"alignSelf": 0,
 					"direction": 0,
@@ -589,7 +613,7 @@
 					"alignItems": 4,
 					"justifyContent": 0,
 					"flexWrap": 0,
-					"flexDirection": 0,
+					"flexDirection": 2,
 					"positionType": 0,
 					"flexGrow": 1
 				},
@@ -602,21 +626,30 @@
 			"source": {
 				"page": "__library__"
 			},
+			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"height": 50,
-				"width": 200
+				"width": null,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"flexProps": {
+					"flexDirection": "ROW"
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"height": 50,
-				"width": 200,
+				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#FFFFFF",
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"paddingLeft": 10,
+				"paddingRight": 10,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -624,15 +657,22 @@
 					"alignItems": "STRETCH",
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"name": "flexlayout7",
+				"name": "approveContainer",
 				"parent": "itemLeaveManagement",
-				"children": [],
+				"children": [
+					"cont1",
+					"flexlayout10",
+					"cont2",
+					"flexlayout10_1",
+					"cont3"
+				],
 				"layout": {
-					"width": 200,
-					"height": 50
+					"height": 62.5,
+					"paddingLeft": 12.5,
+					"paddingRight": 12.5
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -641,7 +681,7 @@
 					"alignItems": 4,
 					"justifyContent": 0,
 					"flexWrap": 0,
-					"flexDirection": 0,
+					"flexDirection": 2,
 					"positionType": 0
 				},
 				"font": {}
@@ -657,8 +697,8 @@
 				"Highlights": "HeaderBar"
 			},
 			"userProps": {
-				"left": 16,
-				"top": 126,
+				"left": 3,
+				"top": 127,
 				"width": 358,
 				"height": 144
 			},
@@ -672,8 +712,8 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"left": 16,
-				"top": 126,
+				"left": 3,
+				"top": 127,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -690,10 +730,10 @@
 					"label108"
 				],
 				"layout": {
-					"left": 16,
-					"top": 126,
-					"width": 358,
-					"height": 144
+					"left": 3.75,
+					"top": 158.75,
+					"width": 447.5,
+					"height": 180
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -721,6 +761,7 @@
 				"height": 40,
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 255, 255, 255, 1 )",
+				"marginTop": 20,
 				"flexProps": {
 					"flexGrow": null
 				},
@@ -742,6 +783,7 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 255, 255, 255, 1 )",
 				"textAlignment": "MIDCENTER",
+				"marginTop": 20,
 				"font": {
 					"size": 24,
 					"bold": false,
@@ -757,12 +799,845 @@
 				"parent": "layoutHeaderBar",
 				"children": [],
 				"layout": {
-					"height": 40
+					"marginTop": 25,
+					"height": 50
 				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": null
+				}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "4bc920c5",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "flexlayout1",
+				"parent": "dataContainer",
+				"children": [
+					"label205",
+					"label205_1"
+				],
+				"layout": {},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "90b589f6",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"flexProps": {
+					"flexGrow": 2
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 2
+				},
+				"name": "flexlayout2",
+				"parent": "dataContainer",
+				"children": [
+					"flexlayout3",
+					"flexlayout3_1"
+				],
+				"layout": {},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0,
+					"flexGrow": 2
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "Label",
+			"id": "9f14478c",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Highlights": "ListItemHeader"
+			},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"textAlignment": "BOTTOMCENTER",
+				"text": "3",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 22,
+					"bold": true
+				}
+			},
+			"className": ".label .label-list-item-header",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"text": "3",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#1775D0",
+				"textAlignment": "BOTTOMCENTER",
+				"font": {
+					"size": 22,
+					"bold": true,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "label205",
+				"parent": "flexlayout1",
+				"children": [],
+				"layout": {},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": 1
+				}
+			}
+		},
+		{
+			"type": "Label",
+			"id": "2d3bfbd6",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Highlights": "ListItemHeader"
+			},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"textAlignment": "MIDCENTER",
+				"text": "Days",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 18
+				}
+			},
+			"className": ".label .label-list-item-header",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"text": "Days",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#1775D0",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"size": 18,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "label205_1",
+				"parent": "flexlayout1",
+				"children": [],
+				"layout": {},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": 1
+				}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "dad4242b",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"alpha": 0.4,
+				"left": 27,
+				"top": 92,
+				"width": 1,
+				"height": 30,
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": 30,
+				"width": 1,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"alpha": 0.4,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 27,
+				"top": 92,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "ABSOLUTE"
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 1
+				},
+				"name": "verticalDivider",
+				"parent": "__library__",
+				"children": [],
+				"layout": {
+					"left": 33.75,
+					"top": 115,
+					"width": 1.25,
+					"height": 37.5
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "a3b44251",
+			"source": {
+				"page": "__library__"
+			},
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"flexProps": {
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "cont1",
+				"parent": "approveContainer",
+				"children": [
+					"imageview1",
+					"label414"
+				],
+				"layout": {},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 2,
+					"justifyContent": 1,
+					"flexWrap": 0,
+					"flexDirection": 2,
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "ddaec69f",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"height": 20,
+				"width": 20,
+				"imageFillType": "ASPECTFIT",
+				"image": "icon_approve_active.png"
+			},
+			"className": ".imageView",
+			"props": {
+				"width": 20,
+				"height": 20,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"image": "icon_approve_active.png",
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "imageview1",
+				"parent": "cont1",
+				"children": [],
+				"layout": {
+					"width": 25,
+					"height": 25
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0
+				},
+				"font": {},
+				"imageURL": "https://dispatcher.env.smartface.io/smartface14/slfsrvc/ui-editor/img/icon_approve_active.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "578272dd",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Highlights": "ApproveItemActive"
+			},
+			"userProps": {
+				"height": 30,
+				"width": null,
+				"marginLeft": 5,
+				"minWidth": 50,
+				"text": "Approve",
+				"maxWidth": 100,
+				"flexProps": {
+					"flexGrow": null
+				}
+			},
+			"className": ".label .label-approve-item-active",
+			"props": {
+				"width": null,
+				"height": 30,
+				"touchEnabled": true,
+				"text": "Approve",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#E7C355",
+				"textAlignment": "MIDLEFT",
+				"marginLeft": 5,
+				"minWidth": 50,
+				"maxWidth": 100,
+				"font": {
+					"size": 12,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"name": "label414",
+				"parent": "cont1",
+				"children": [],
+				"layout": {
+					"marginLeft": 6.25,
+					"height": 37.5,
+					"minWidth": 62.5,
+					"maxWidth": 125
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": null
+				}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "86114aa4",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"flexProps": {
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "cont2",
+				"parent": "approveContainer",
+				"children": [
+					"imageview1_1",
+					"label414_1"
+				],
+				"layout": {},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 2,
+					"justifyContent": 1,
+					"flexWrap": 0,
+					"flexDirection": 2,
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "f4f20359",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"height": 20,
+				"width": 20,
+				"imageFillType": "ASPECTFIT",
+				"image": "icon_edit_active.png"
+			},
+			"className": ".imageView",
+			"props": {
+				"width": 20,
+				"height": 20,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"image": "icon_edit_active.png",
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "imageview1_1",
+				"parent": "cont2",
+				"children": [],
+				"layout": {
+					"width": 25,
+					"height": 25
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0
+				},
+				"font": {},
+				"imageURL": "https://dispatcher.env.smartface.io/smartface14/slfsrvc/ui-editor/img/icon_edit_active.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "7513ceab",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Highlights": "EditItemActive"
+			},
+			"userProps": {
+				"height": 30,
+				"width": null,
+				"marginLeft": 5,
+				"minWidth": 30,
+				"text": "Edit"
+			},
+			"className": ".label .label-edit-item-active",
+			"props": {
+				"width": null,
+				"height": 30,
+				"touchEnabled": true,
+				"text": "Edit",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#9F9F9F",
+				"textAlignment": "MIDLEFT",
+				"marginLeft": 5,
+				"minWidth": 30,
+				"font": {
+					"size": 12,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "label414_1",
+				"parent": "cont2",
+				"children": [],
+				"layout": {
+					"marginLeft": 6.25,
+					"height": 37.5,
+					"minWidth": 37.5
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0
+				}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "ca70a899",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"height": null,
+				"width": null,
+				"flexProps": {
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexGrow": 1,
+					"flexDirection": "ROW"
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "cont3",
+				"parent": "approveContainer",
+				"children": [
+					"imageview1_1_1",
+					"label414_1_1"
+				],
+				"layout": {},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 2,
+					"justifyContent": 1,
+					"flexWrap": 0,
+					"flexDirection": 2,
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "cd36f086",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"height": 20,
+				"width": 20,
+				"imageFillType": "ASPECTFIT",
+				"image": "icon_delete.png"
+			},
+			"className": ".imageView",
+			"props": {
+				"width": 20,
+				"height": 20,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"image": "icon_delete.png",
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "imageview1_1_1",
+				"parent": "cont3",
+				"children": [],
+				"layout": {
+					"width": 25,
+					"height": 25
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0
+				},
+				"font": {},
+				"imageURL": "https://dispatcher.env.smartface.io/smartface14/slfsrvc/ui-editor/img/icon_delete.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "7e993895",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {
+				"Highlights": "DeleteItemActive"
+			},
+			"userProps": {
+				"height": 30,
+				"width": null,
+				"marginLeft": 5,
+				"minWidth": 40,
+				"text": "Delete"
+			},
+			"className": ".label .label-delete-item-active",
+			"props": {
+				"width": null,
+				"height": 30,
+				"touchEnabled": true,
+				"text": "Delete",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#D0021B",
+				"textAlignment": "MIDLEFT",
+				"marginLeft": 5,
+				"minWidth": 40,
+				"font": {
+					"size": 12,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"name": "label414_1_1",
+				"parent": "cont3",
+				"children": [],
+				"layout": {
+					"marginLeft": 6.25,
+					"height": 37.5,
+					"minWidth": 50
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0
+				}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "5c0cf9fc",
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"height": 1,
+				"borderColor": "rgba( 143, 17, 17, 1 )",
+				"width": null,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )"
+			},
+			"props": {
+				"name": "dividerContainer",
+				"isReady": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba( 143, 17, 17, 1 )",
+				"borderWidth": 0,
+				"font": {},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0
+				},
+				"parent": "itemLeaveManagement",
+				"children": [
+					"flexlayout5"
+				],
+				"layout": {
+					"height": 1.25
 				}
 			}
 		},
@@ -813,11 +1688,11 @@
 				"name": "firstRow",
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label24",
-					"label25"
+					"label177",
+					"label178"
 				],
 				"layout": {
-					"height": 50
+					"height": 62.5
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -843,18 +1718,21 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"marginLeft": 10,
-				"text": "Title",
-				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+				"text": "Text",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
-				"text": "Title",
+				"text": "Text",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -872,19 +1750,20 @@
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
-				"name": "label24",
+				"name": "label177",
 				"parent": "firstRow",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"width": 107,
-					"height": 50
+					"marginLeft": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
-					"positionType": 0
+					"positionType": 0,
+					"flexGrow": 1
 				}
 			}
 		},
@@ -899,21 +1778,21 @@
 				"Highlights": "ListItemValue"
 			},
 			"userProps": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"textAlignment": "MIDRIGHT",
 				"marginRight": 10,
 				"text": "Value",
 				"textColor": "rgba( 155, 155, 155, 1 )",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
 				"text": "Value",
 				"visible": true,
@@ -934,20 +1813,19 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 2
 				},
-				"name": "label25",
+				"name": "label178",
 				"parent": "firstRow",
 				"children": [],
 				"layout": {
-					"marginRight": 10,
-					"width": 129,
-					"height": 50
+					"marginRight": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			}
 		},
@@ -1005,9 +1883,9 @@
 				"parent": "itemEmploymentHistory",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 1
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"height": 1.25
 				},
 				"flex": {
 					"alignSelf": 4,
@@ -1070,11 +1948,11 @@
 				"name": "secondRow",
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label26",
-					"label27"
+					"label179",
+					"label180"
 				],
 				"layout": {
-					"height": 50
+					"height": 62.5
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -1100,18 +1978,21 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"marginLeft": 10,
-				"text": "Title",
-				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+				"text": "Text",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
-				"text": "Title",
+				"text": "Text",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -1129,19 +2010,20 @@
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
-				"name": "label26",
+				"name": "label179",
 				"parent": "secondRow",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"width": 107,
-					"height": 50
+					"marginLeft": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
-					"positionType": 0
+					"positionType": 0,
+					"flexGrow": 1
 				}
 			}
 		},
@@ -1156,21 +2038,21 @@
 				"Highlights": "ListItemValue"
 			},
 			"userProps": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"textAlignment": "MIDRIGHT",
 				"marginRight": 10,
 				"text": "Value",
 				"textColor": "rgba( 155, 155, 155, 1 )",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
 				"text": "Value",
 				"visible": true,
@@ -1191,20 +2073,19 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 2
 				},
-				"name": "label27",
+				"name": "label180",
 				"parent": "secondRow",
 				"children": [],
 				"layout": {
-					"marginRight": 10,
-					"width": 129,
-					"height": 50
+					"marginRight": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			}
 		},
@@ -1262,9 +2143,9 @@
 				"parent": "itemEmploymentHistory",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 1
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"height": 1.25
 				},
 				"flex": {
 					"alignSelf": 4,
@@ -1327,11 +2208,11 @@
 				"name": "thirdRow",
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label28",
-					"label29"
+					"label181",
+					"label182"
 				],
 				"layout": {
-					"height": 50
+					"height": 62.5
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -1357,18 +2238,21 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"marginLeft": 10,
-				"text": "Title",
-				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+				"text": "Text",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
-				"text": "Title",
+				"text": "Text",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -1386,19 +2270,20 @@
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
-				"name": "label28",
+				"name": "label181",
 				"parent": "thirdRow",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"width": 107,
-					"height": 50
+					"marginLeft": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
-					"positionType": 0
+					"positionType": 0,
+					"flexGrow": 1
 				}
 			}
 		},
@@ -1413,21 +2298,21 @@
 				"Highlights": "ListItemValue"
 			},
 			"userProps": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"textAlignment": "MIDRIGHT",
 				"marginRight": 10,
 				"text": "Value",
 				"textColor": "rgba( 155, 155, 155, 1 )",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
 				"text": "Value",
 				"visible": true,
@@ -1448,20 +2333,19 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 2
 				},
-				"name": "label29",
+				"name": "label182",
 				"parent": "thirdRow",
 				"children": [],
 				"layout": {
-					"marginRight": 10,
-					"width": 129,
-					"height": 50
+					"marginRight": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			}
 		},
@@ -1519,9 +2403,9 @@
 				"parent": "itemEmploymentHistory",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 1
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"height": 1.25
 				},
 				"flex": {
 					"alignSelf": 4,
@@ -1584,11 +2468,11 @@
 				"name": "fourthRow",
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label30",
-					"label31"
+					"label183",
+					"label184"
 				],
 				"layout": {
-					"height": 50
+					"height": 62.5
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -1614,18 +2498,21 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"marginLeft": 10,
-				"text": "Title",
-				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+				"text": "Text",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
-				"text": "Title",
+				"text": "Text",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -1643,19 +2530,20 @@
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
-				"name": "label30",
+				"name": "label183",
 				"parent": "fourthRow",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"width": 107,
-					"height": 50
+					"marginLeft": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
-					"positionType": 0
+					"positionType": 0,
+					"flexGrow": 1
 				}
 			}
 		},
@@ -1670,21 +2558,21 @@
 				"Highlights": "ListItemValue"
 			},
 			"userProps": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"textAlignment": "MIDRIGHT",
 				"marginRight": 10,
 				"text": "Value",
 				"textColor": "rgba( 155, 155, 155, 1 )",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
 				"text": "Value",
 				"visible": true,
@@ -1705,20 +2593,19 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 2
 				},
-				"name": "label31",
+				"name": "label184",
 				"parent": "fourthRow",
 				"children": [],
 				"layout": {
-					"marginRight": 10,
-					"width": 129,
-					"height": 50
+					"marginRight": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			}
 		},
@@ -1776,9 +2663,9 @@
 				"parent": "itemEmploymentHistory",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 1
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"height": 1.25
 				},
 				"flex": {
 					"alignSelf": 4,
@@ -1841,11 +2728,11 @@
 				"name": "fifthRow",
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label32",
-					"label33"
+					"label185",
+					"label186"
 				],
 				"layout": {
-					"height": 50
+					"height": 62.5
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -1871,18 +2758,21 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"marginLeft": 10,
-				"text": "Title",
-				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+				"text": "Text",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
-				"text": "Title",
+				"text": "Text",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -1900,19 +2790,20 @@
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
-				"name": "label32",
+				"name": "label185",
 				"parent": "fifthRow",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"width": 107,
-					"height": 50
+					"marginLeft": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
-					"positionType": 0
+					"positionType": 0,
+					"flexGrow": 1
 				}
 			}
 		},
@@ -1927,21 +2818,21 @@
 				"Highlights": "ListItemValue"
 			},
 			"userProps": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"textAlignment": "MIDRIGHT",
 				"marginRight": 10,
 				"text": "Value",
 				"textColor": "rgba( 155, 155, 155, 1 )",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
 				"text": "Value",
 				"visible": true,
@@ -1962,20 +2853,19 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 2
 				},
-				"name": "label33",
+				"name": "label186",
 				"parent": "fifthRow",
 				"children": [],
 				"layout": {
-					"marginRight": 10,
-					"width": 129,
-					"height": 50
+					"marginRight": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			}
 		},
@@ -2033,9 +2923,9 @@
 				"parent": "itemEmploymentHistory",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 1
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"height": 1.25
 				},
 				"flex": {
 					"alignSelf": 4,
@@ -2098,11 +2988,11 @@
 				"name": "sixthRow",
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label34",
-					"label35"
+					"label187",
+					"label188"
 				],
 				"layout": {
-					"height": 50
+					"height": 62.5
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -2128,18 +3018,21 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"marginLeft": 10,
-				"text": "Title",
-				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+				"text": "Text",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 107,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
-				"text": "Title",
+				"text": "Text",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -2157,19 +3050,20 @@
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
+					"positionType": "RELATIVE",
+					"flexGrow": 1
 				},
-				"name": "label34",
+				"name": "label187",
 				"parent": "sixthRow",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"width": 107,
-					"height": 50
+					"marginLeft": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
-					"positionType": 0
+					"positionType": 0,
+					"flexGrow": 1
 				}
 			}
 		},
@@ -2184,21 +3078,21 @@
 				"Highlights": "ListItemValue"
 			},
 			"userProps": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"textAlignment": "MIDRIGHT",
 				"marginRight": 10,
 				"text": "Value",
 				"textColor": "rgba( 155, 155, 155, 1 )",
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
-					"flexGrow": 1
+					"flexGrow": 2
 				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"width": 129,
-				"height": 50,
+				"width": null,
+				"height": 30,
 				"touchEnabled": true,
 				"text": "Value",
 				"visible": true,
@@ -2219,15 +3113,146 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
-					"flexGrow": 1
+					"flexGrow": 2
 				},
-				"name": "label35",
+				"name": "label188",
 				"parent": "sixthRow",
 				"children": [],
 				"layout": {
-					"marginRight": 10,
-					"width": 129,
-					"height": 50
+					"marginRight": 12.5,
+					"height": 37.5
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": 2
+				}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "34fb09a6",
+			"source": {
+				"page": "__library__",
+				"id": "f7afa96d"
+			},
+			"themeProps": {},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": 210,
+				"height": null,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"flex": {
+					"flexDirection": 2,
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": 210,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"top": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 2,
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"name": "flexlayout3",
+				"parent": "flexlayout2",
+				"children": [
+					"label189",
+					"label190"
+				],
+				"layout": {
+					"left": 0,
+					"top": 0,
+					"width": 262.5
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "Label",
+			"id": "01d7b639",
+			"source": {
+				"page": "__library__"
+			},
+			"hiddenComponent": false,
+			"themeProps": {
+				"Highlights": "ListItemTitle"
+			},
+			"userProps": {
+				"width": null,
+				"height": 30,
+				"marginLeft": 10,
+				"text": "Text",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".label .label-list-item-title",
+			"props": {
+				"width": null,
+				"height": 30,
+				"touchEnabled": true,
+				"text": "Text",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#4A4A4A",
+				"textAlignment": "MIDLEFT",
+				"marginLeft": 10,
+				"font": {
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "label189",
+				"parent": "flexlayout3",
+				"children": [],
+				"layout": {
+					"marginLeft": 12.5,
+					"height": 37.5
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -2237,44 +3262,445 @@
 			}
 		},
 		{
+			"type": "Label",
+			"id": "442af9e0",
+			"source": {
+				"page": "__library__"
+			},
+			"hiddenComponent": false,
+			"themeProps": {
+				"Highlights": "ListItemValue"
+			},
+			"userProps": {
+				"width": null,
+				"height": 30,
+				"textAlignment": "MIDRIGHT",
+				"marginRight": 10,
+				"text": "Value",
+				"textColor": "rgba( 155, 155, 155, 1 )",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 2
+				}
+			},
+			"className": ".label .label-list-item-value",
+			"props": {
+				"width": null,
+				"height": 30,
+				"touchEnabled": true,
+				"text": "Value",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 155, 155, 155, 1 )",
+				"textAlignment": "MIDRIGHT",
+				"marginRight": 10,
+				"font": {
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 2
+				},
+				"name": "label190",
+				"parent": "flexlayout3",
+				"children": [],
+				"layout": {
+					"marginRight": 12.5,
+					"height": 37.5
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": 2
+				}
+			}
+		},
+		{
 			"type": "FlexLayout",
-			"id": "b3f4e8ab",
+			"id": "d6811e86",
 			"source": {
 				"page": "__library__",
-				"id": "71efc172"
+				"id": "f7afa96d"
 			},
 			"themeProps": {},
 			"userProps": {
-				"left": null,
-				"top": null,
-				"width": 312,
-				"height": 1,
-				"backgroundColor": "rgba( 151, 151, 151, 1 )",
-				"alpha": 0.4,
-				"marginLeft": 10,
-				"marginRight": 10,
+				"left": 0,
+				"top": 0,
+				"width": 210,
+				"height": null,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"flexProps": {
-					"flexGrow": null,
+					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
-					"alignSelf": "STRETCH"
+					"flexGrow": 1
+				},
+				"flex": {
+					"flexDirection": 2,
+					"positionType": 0
 				}
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 1,
-				"width": 312,
+				"height": null,
+				"width": 210,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"top": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 2,
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"name": "flexlayout3_1",
+				"parent": "flexlayout2",
+				"children": [
+					"label191",
+					"label192"
+				],
+				"layout": {
+					"left": 0,
+					"top": 0,
+					"width": 262.5
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "Label",
+			"id": "01d7b639",
+			"source": {
+				"page": "__library__"
+			},
+			"hiddenComponent": false,
+			"themeProps": {
+				"Highlights": "ListItemTitle"
+			},
+			"userProps": {
+				"width": null,
+				"height": 30,
+				"marginLeft": 10,
+				"text": "Text",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".label .label-list-item-title",
+			"props": {
+				"width": null,
+				"height": 30,
+				"touchEnabled": true,
+				"text": "Text",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#4A4A4A",
+				"textAlignment": "MIDLEFT",
+				"marginLeft": 10,
+				"font": {
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "label191",
+				"parent": "flexlayout3_1",
+				"children": [],
+				"layout": {
+					"marginLeft": 12.5,
+					"height": 37.5
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": 1
+				}
+			}
+		},
+		{
+			"type": "Label",
+			"id": "442af9e0",
+			"source": {
+				"page": "__library__"
+			},
+			"hiddenComponent": false,
+			"themeProps": {
+				"Highlights": "ListItemValue"
+			},
+			"userProps": {
+				"width": null,
+				"height": 30,
+				"textAlignment": "MIDRIGHT",
+				"marginRight": 10,
+				"text": "Value",
+				"textColor": "rgba( 155, 155, 155, 1 )",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 2
+				}
+			},
+			"className": ".label .label-list-item-value",
+			"props": {
+				"width": null,
+				"height": 30,
+				"touchEnabled": true,
+				"text": "Value",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "rgba( 155, 155, 155, 1 )",
+				"textAlignment": "MIDRIGHT",
+				"marginRight": 10,
+				"font": {
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 2
+				},
+				"name": "label192",
+				"parent": "flexlayout3_1",
+				"children": [],
+				"layout": {
+					"marginRight": 12.5,
+					"height": 37.5
+				},
+				"flex": {
+					"alignSelf": 0,
+					"positionType": 0,
+					"flexGrow": 2
+				}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "19bad70b",
+			"source": {
+				"page": "__library__",
+				"id": "dad4242b"
+			},
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"alpha": 0.4,
+				"left": 0,
+				"top": 0,
+				"width": 1,
+				"height": null,
+				"marginTop": 10,
+				"marginBottom": 10,
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": 1,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"alpha": 0.4,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"left": null,
-				"top": null,
+				"left": 0,
+				"top": 0,
+				"marginTop": 10,
+				"marginBottom": 10,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0
+				},
+				"name": "flexlayout10",
+				"parent": "approveContainer",
+				"children": [],
+				"layout": {
+					"marginBottom": 12.5,
+					"marginTop": 12.5,
+					"left": 0,
+					"top": 0,
+					"width": 1.25
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "d8e35214",
+			"source": {
+				"page": "__library__",
+				"id": "dad4242b"
+			},
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"alpha": 0.4,
+				"left": 0,
+				"top": 0,
+				"width": 1,
+				"height": null,
+				"marginTop": 10,
+				"marginBottom": 10,
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": 1,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"alpha": 0.4,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"top": 0,
+				"marginTop": 10,
+				"marginBottom": 10,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"alignSelf": 0,
+					"direction": 0,
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0
+				},
+				"name": "flexlayout10_1",
+				"parent": "approveContainer",
+				"children": [],
+				"layout": {
+					"marginBottom": 12.5,
+					"marginTop": 12.5,
+					"left": 0,
+					"top": 0,
+					"width": 1.25
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "e42900c2",
+			"source": {
+				"page": "__library__",
+				"id": "71efc172"
+			},
+			"themeProps": {},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": null,
+				"height": 1,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"alpha": 0.4,
 				"marginLeft": 10,
 				"marginRight": 10,
 				"flexProps": {
-					"alignSelf": "STRETCH",
+					"flexGrow": 1,
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"flexGrow": 1,
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"alpha": 0.4,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"top": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -2282,19 +3708,10 @@
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
-				"name": "flexlayout6",
-				"parent": "itemLeaveManagement",
-				"children": [],
-				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"width": 312,
-					"height": 1
+					"flexGrow": 1
 				},
 				"flex": {
-					"alignSelf": 4,
+					"alignSelf": 0,
 					"direction": 0,
 					"alignContent": 4,
 					"alignItems": 4,
@@ -2302,9 +3719,22 @@
 					"flexWrap": 0,
 					"flexDirection": 0,
 					"positionType": 0,
-					"flexGrow": null
+					"flexGrow": 1
 				},
-				"font": {}
+				"name": "flexlayout5",
+				"parent": "dividerContainer",
+				"children": [],
+				"layout": {
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"left": 0,
+					"top": 0,
+					"height": 1.25
+				},
+				"font": {},
+				"visibility": true,
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		}
 	]

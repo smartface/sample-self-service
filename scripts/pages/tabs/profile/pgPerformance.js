@@ -9,7 +9,7 @@ const Page_ = extend(PageDesign)(
 	function(_super){
 		// Initalizes super class for this page scope
 		_super(this, {
-			onLoad: onLoad.bind(this)
+			//onLoad: onLoad.bind(this)
 		});
 });
 
