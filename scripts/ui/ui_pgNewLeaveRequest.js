@@ -12,7 +12,7 @@ const FlexLayout = require('sf-core/ui/flexlayout');
 
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 
-const PgNewLeaveRequest_ = extend(Page)(
+const NewPgL_ = extend(Page)(
 	//constructor
 	function(_super, props) {
 		// initalizes super class for this page scope
@@ -27,16 +27,31 @@ const PgNewLeaveRequest_ = extend(Page)(
 // Page.onShow -> This event is called when a page appears on the screen (everytime).
 function onShow() {
   //StatusBar props
-	Object.assign(this.statusBar, getCombinedStyle(".statusBar", {}));
+  const statusBarStyle = getCombinedStyle(".statusBar", {});
+	
+	Object.assign(this.statusBar, statusBarStyle);
+	
+	if(statusBarStyle.color)
+	  this.statusBar.android && (this.statusBar.android.color = statusBarStyle.color);
+	if(statusBarStyle.style)
+	  this.statusBar.ios && (this.statusBar.ios.style = statusBarStyle.style);
+
   //HeaderBar props
-	Object.assign(this.headerBar,	getCombinedStyle(".headerBar", {
+  const headerBarStyle = getCombinedStyle(".headerBar", {
 		title: "newPage001"
-	}));
+	});
+	
+	Object.assign(this.headerBar,	headerBarStyle);
+	
 }
 
 // Page.onLoad -> This event is called once when page is created.
 function onLoad() { 
-	Object.assign(this.layout, getCombinedStyle(".page", {}));
+
+  const pageStyle = getCombinedStyle(".page", {});
+	
+	Object.assign(this.layout, pageStyle);
+	
 }
 
-module && (module.exports = PgNewLeaveRequest_);
+module && (module.exports = NewPgL_);
