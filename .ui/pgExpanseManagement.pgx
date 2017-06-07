@@ -36,8 +36,8 @@
 					"justifyContent": 0
 				},
 				"font": {},
-				"width": 375,
-				"height": 667
+				"width": 187.5,
+				"height": 333.5
 			}
 		},
 		{
@@ -56,7 +56,7 @@
 				"isRemovable": false,
 				"name": "statusBar",
 				"layout": {
-					"height": 20
+					"height": 10
 				},
 				"flex": {},
 				"font": {},
@@ -82,7 +82,7 @@
 				"parent": "pgExpanseManagement",
 				"name": "headerBar",
 				"layout": {
-					"height": 44
+					"height": 22
 				},
 				"flex": {},
 				"font": {},
@@ -119,6 +119,7 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
@@ -128,9 +129,9 @@
 				"parent": "pgExpanseManagement",
 				"children": [],
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 200,
+					"marginLeft": 5,
+					"marginRight": 5,
+					"height": 100,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -138,8 +139,7 @@
 					"positionType": 0,
 					"flexGrow": 1
 				},
-				"font": {},
-				"usePageVariable": true
+				"font": {}
 			}
 		},
 		{
@@ -205,7 +205,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 92,
+					"height": 46,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -263,8 +263,8 @@
 				"parent": "layoutHeaderBar",
 				"children": [],
 				"layout": {
-					"marginTop": 20,
-					"height": 40,
+					"marginTop": 10,
+					"height": 20,
 					"borderWidth": 0
 				},
 				"flex": {

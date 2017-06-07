@@ -8,7 +8,7 @@
 				"backgroundColor": "rgba( 228, 228, 228, 1 )"
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.21",
+			"version": "6.3.0-rc.23",
 			"props": {
 				"backgroundColor": "rgba( 228, 228, 228, 1 )",
 				"orientation": "PORTRAIT",
@@ -20,13 +20,13 @@
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
-				"name": "pgHierarchy",
 				"children": [
 					"statusBar",
 					"headerBar",
 					"layoutHeaderBar",
 					"listView"
 				],
+				"name": "pgHierarchy",
 				"layout": {},
 				"flex": {
 					"alignContent": 4,
@@ -48,11 +48,11 @@
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#00A1F1",
+				"color": "#45495A",
 				"visible": true,
-				"name": "statusBar",
 				"children": [],
 				"parent": "pgHierarchy",
+				"name": "statusBar",
 				"layout": {
 					"height": 10
 				},
@@ -76,9 +76,9 @@
 				"titleColor": "#FFFFFF",
 				"visible": false,
 				"backgroundColor": "#45495A",
-				"name": "headerBar",
 				"children": [],
 				"parent": "pgHierarchy",
+				"name": "headerBar",
 				"layout": {
 					"height": 22
 				},
@@ -103,14 +103,8 @@
 					"flexGrow": 1
 				}
 			},
+			"className": ".listView",
 			"props": {
-				"name": "listView",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"height": 200,
 				"width": null,
 				"touchEnabled": true,
@@ -122,24 +116,31 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"font": {},
+				"left": null,
+				"right": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"usePageVariable": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"parent": "pgHierarchy",
+				"children": [],
+				"name": "listView",
+				"layout": {
+					"marginLeft": 5,
+					"marginRight": 5,
+					"height": 100,
+					"borderWidth": 0
+				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": 1
 				},
-				"parent": "pgHierarchy",
-				"children": [],
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"height": 100
-				},
-				"left": null,
-				"right": null,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"usePageVariable": true
+				"font": {}
 			}
 		},
 		{
@@ -197,15 +198,16 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"name": "layoutHeaderBar",
 				"parent": "pgHierarchy",
 				"children": [
 					"label108"
 				],
+				"name": "layoutHeaderBar",
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 46
+					"height": 46,
+					"borderWidth": 0
 				},
 				"font": {}
 			}
@@ -258,12 +260,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"name": "label108",
 				"parent": "layoutHeaderBar",
 				"children": [],
+				"name": "label108",
 				"layout": {
 					"marginTop": 10,
-					"height": 20
+					"height": 20,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,

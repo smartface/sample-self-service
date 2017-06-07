@@ -8,7 +8,7 @@
 				"backgroundColor": "rgba( 228, 228, 228, 1 )"
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.21",
+			"version": "6.3.0-rc.23",
 			"props": {
 				"backgroundColor": "rgba( 228, 228, 228, 1 )",
 				"orientation": "PORTRAIT",
@@ -20,17 +20,14 @@
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
-				"name": "pgEmploymentHistory",
 				"children": [
 					"statusBar",
 					"headerBar",
 					"layoutHeaderBar",
 					"listView"
 				],
-				"layout": {
-					"width": 93.75,
-					"height": 166.75
-				},
+				"name": "pgEmploymentHistory",
+				"layout": {},
 				"flex": {
 					"alignContent": 4,
 					"alignItems": 4,
@@ -51,11 +48,11 @@
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#00A1F1",
+				"color": "#45495A",
 				"visible": true,
-				"name": "statusBar",
 				"children": [],
 				"parent": "pgEmploymentHistory",
+				"name": "statusBar",
 				"layout": {
 					"height": 10
 				},
@@ -76,12 +73,12 @@
 			"className": ".headerBar",
 			"props": {
 				"title": "newPage001",
-				"titleColor": "#000000",
+				"titleColor": "#FFFFFF",
 				"visible": false,
-				"backgroundColor": "#FFFFFF",
-				"name": "headerBar",
+				"backgroundColor": "#45495A",
 				"children": [],
 				"parent": "pgEmploymentHistory",
+				"name": "headerBar",
 				"layout": {
 					"height": 22
 				},
@@ -136,12 +133,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "listView",
 				"parent": "pgEmploymentHistory",
 				"children": [],
+				"name": "listView",
 				"layout": {
 					"marginLeft": 5,
-					"marginRight": 5
+					"marginRight": 5,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 4,
@@ -196,16 +194,6 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"name": "layoutHeaderBar",
-				"parent": "pgEmploymentHistory",
-				"children": [
-					"label108"
-				],
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 50
-				},
 				"flex": {
 					"alignSelf": 0,
 					"direction": 0,
@@ -216,8 +204,18 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"font": {},
-				"visibility": true
+				"parent": "pgEmploymentHistory",
+				"children": [
+					"label108"
+				],
+				"name": "layoutHeaderBar",
+				"layout": {
+					"left": 0,
+					"top": 0,
+					"height": 50,
+					"borderWidth": 0
+				},
+				"font": {}
 			}
 		},
 		{
@@ -268,12 +266,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"name": "label108",
 				"parent": "layoutHeaderBar",
 				"children": [],
+				"name": "label108",
 				"layout": {
 					"marginTop": 10,
-					"height": 20
+					"height": 20,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,
