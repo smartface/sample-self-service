@@ -18,6 +18,12 @@ const HRIndex = extend(Page)(
             const pageStyle = getCombinedStyle(".page");
 	        Object.assign(this.layout, pageStyle);
         }.bind(this);
+        
+        var _superOnShow = this.onShow;
+        this.onShow = function() {
+            typeof _superOnShow === "function" && _superOnShow();
+            this.headerBar.visible = false;
+        }.bind(this);
 
         initSwipeView(this);
         initDotIndicator(this);

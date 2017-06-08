@@ -38,11 +38,17 @@ tabBar.add("profile", new TabBarItem({
     icon: Image.createFromFile("images://icon_tab_profile.png"),
     route: require("./pages/tabs/profile")
 }));
+
+var hrNavigator = new Navigator();
+hrNavigator.add("index", require("./pages/tabs/hr"));
+hrNavigator.add("newExpense", require("./pages/tabs/hr/pgNewExpense"));
+hrNavigator.go("index");
 tabBar.add("hr", new TabBarItem({
     title: "HR",
     icon: Image.createFromFile("images://icon_tab_hr.png"),
-    route: require("./pages/tabs/hr")
+    route: hrNavigator
 }));
+
 tabBar.add("approvals", new TabBarItem({
     title: "Approvals",
     icon: Image.createFromFile("images://icon_tab_approvals.png"),

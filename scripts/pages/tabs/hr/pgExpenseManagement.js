@@ -3,6 +3,7 @@ const Page = require('sf-core/ui/page');
 const PageDesign = require("../../../ui/ui_pgExpanseManagement");
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemExpense = require('../../../components/ItemExpense');
+const Router = require("sf-core/router");
 
 const TITLE = "EXPENSE MANAGEMENT";
 
@@ -35,8 +36,9 @@ function onShow(parentOnShow) {
             // myLabelTitle.text = myDataSet[index].title;
             // myLabelTitle.backgroundColor = myDataSet[index].backgroundColor;
         };
-
-    
+    this.listView.onRowSelected = function() {
+        Router.go("tabs/hr/newExpense");
+    }
 }
 
 function onLoad(parentOnLoad) {
