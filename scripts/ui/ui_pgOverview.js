@@ -51,13 +51,14 @@ const PgOverview_ = extend(Page)(
 		
 		const flexlayout500Style = getCombinedStyle(".flexLayout", {
 			width: null,
-			height: null,
+			height: 560,
 			backgroundColor: Color.create(0, 255, 255, 255),
-			flexGrow: 1
+			flexGrow: null
 		});
 		var flexlayout500 = new FlexLayout(flexlayout500Style);
 		this.layout.addChild(flexlayout500);
-		
+		this.flexlayout500 = flexlayout500;
+
 		const qualificationcontainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			left: null,
