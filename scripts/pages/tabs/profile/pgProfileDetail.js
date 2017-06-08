@@ -1,23 +1,31 @@
 const extend = require('js-base/core/extend');
-const Page = require('sf-core/ui/page');
-const Color = require('sf-core/ui/color');
+const ScrollView = require("sf-core/ui/scrollview");
 
-const Page_ = extend(Page)(
+const PageDesign = require("../../../ui/ui_pgProfileDetail");
+
+const TITLE = "PROFILE";
+
+const Page_ = extend(PageDesign)(
 	// Constructor
-	function(_super){
+	function(_super, params){
 		// Initalizes super class for this page scope
-		_super(this, {
-			onLoad: onLoad.bind(this)
-		});
+		_super(this, params);
+		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 });
 
-function onLoad() { 
-    this.headerBar.visible = true;
-    this.headerBar.title = "pgProfileDetail";
-    this.headerBar.titleColor = Color.create("#000000");
-    this.headerBar.backgroundColor = Color.create("#FFFFFF");
-    this.statusBar.visible = true;
-    this.statusBar.android && (this.statusBar.android.color = Color.create("#00A1F1"));
+function onLoad(superOnLoad) {
+	superOnLoad();
+	this.headerBar.title = TITLE;
+	wrapContentIntoScroll.call(this);
 }
+
+function wrapContentIntoScroll() {
+	this.scrollView = new ScrollView({
+		flexGrow: 1	
+	});
+	this.layout.removeChild(this.flexlayout500);
+	this.scrollView.addChild(this.flexlayout500);
+	this.layout.addChild(this.scrollView);
+} 
 
 module && (module.exports = Page_);

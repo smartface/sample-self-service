@@ -33,10 +33,15 @@ navigator.add("pgLogin", require("./pages/login/pgLogin"));
 var tabBar = new BottomTabBar({
     backgroundColor: Color.create("#EAEAEB")
 });
+
+var profileNavigator = new Navigator();
+profileNavigator.add("index", require("./pages/tabs/profile"));
+profileNavigator.add("profileDetail", require("./pages/tabs/profile/pgProfileDetail"));
+profileNavigator.go("index");
 tabBar.add("profile", new TabBarItem({
     title: "Profile",
     icon: Image.createFromFile("images://icon_tab_profile.png"),
-    route: require("./pages/tabs/profile")
+    route: profileNavigator
 }));
 
 var hrNavigator = new Navigator();

@@ -1,7 +1,7 @@
 const extend = require('js-base/core/extend');
-const Page = require('sf-core/ui/page');
-const Color = require('sf-core/ui/color');
 const ListViewItem = require('sf-core/ui/listviewitem');
+const Router = require("sf-core/router");
+
 const PageDesign = require("../../../ui/ui_pgHierarchy");
 const ItemUser = require('../../../components/ItemUser');
 
@@ -35,6 +35,9 @@ function onLoad(parentOnLoad) {
         myListViewItem.addChild(item);
         return myListViewItem;
     };
+    this.listView.onRowSelected = function() {
+        Router.go("tabs/profile/profileDetail");
+    }
 }
 
 module && (module.exports = Page_);
