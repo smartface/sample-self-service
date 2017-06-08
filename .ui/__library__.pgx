@@ -3010,6 +3010,7 @@
 			"userProps": {
 				"height": 40,
 				"width": null,
+				"id": 102,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "STRETCH",
@@ -3060,7 +3061,8 @@
 					"positionType": 0,
 					"flexGrow": 1
 				},
-				"font": {}
+				"font": {},
+				"id": 102
 			}
 		},
 		{
@@ -3075,7 +3077,8 @@
 				"height": 60,
 				"marginLeft": 15,
 				"imageFillType": "ASPECTFIT",
-				"image": "avatar1.png"
+				"image": "avatar1.png",
+				"id": 1023
 			},
 			"className": ".imageView",
 			"props": {
@@ -3108,7 +3111,8 @@
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.env.smartface.io/smartface14/self-service-new/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.env.smartface.io/smartface14/self-service-new/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207",
+				"id": 1023
 			}
 		},
 		{
@@ -3123,6 +3127,7 @@
 				"width": null,
 				"paddingLeft": 10,
 				"paddingTop": null,
+				"id": 1022,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -3172,7 +3177,8 @@
 					"positionType": 0,
 					"flexGrow": 1
 				},
-				"font": {}
+				"font": {},
+				"id": 1022
 			}
 		},
 		{
@@ -3186,7 +3192,8 @@
 				"width": 28,
 				"height": 14,
 				"imageFillType": "ASPECTFIT",
-				"image": "arrow_right.png"
+				"image": "arrow_right.png",
+				"id": 1021
 			},
 			"className": ".imageView",
 			"props": {
@@ -3217,7 +3224,8 @@
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.env.smartface.io/smartface14/self-service-new/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.env.smartface.io/smartface14/self-service-new/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207",
+				"id": 1021
 			}
 		},
 		{
@@ -3235,6 +3243,7 @@
 				"height": 30,
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"textAlignment": "BOTTOMLEFT",
+				"id": 10222,
 				"font": {
 					"bold": false,
 					"size": 18
@@ -3274,7 +3283,8 @@
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0
-				}
+				},
+				"id": 10222
 			}
 		},
 		{
@@ -3290,6 +3300,7 @@
 				"text": "Manager of Sales & Marketing",
 				"width": null,
 				"height": 30,
+				"id": 10221,
 				"font": {
 					"bold": false
 				}
@@ -3328,7 +3339,8 @@
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0
-				}
+				},
+				"id": 10221
 			}
 		},
 		{
@@ -4383,8 +4395,8 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label1069",
-					"label1070"
+					"label1153",
+					"label1154"
 				],
 				"name": "firstRow",
 				"layout": {
@@ -4452,7 +4464,7 @@
 				},
 				"parent": "firstRow",
 				"children": [],
-				"name": "label1069",
+				"name": "label1153",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -4515,7 +4527,7 @@
 				},
 				"parent": "firstRow",
 				"children": [],
-				"name": "label1070",
+				"name": "label1154",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -4580,7 +4592,7 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"flexlayout510"
+					"flexlayout549"
 				],
 				"name": "firstDivider",
 				"layout": {
@@ -4647,7 +4659,7 @@
 				},
 				"parent": "firstDivider",
 				"children": [],
-				"name": "flexlayout510",
+				"name": "flexlayout549",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -4713,8 +4725,8 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label1071",
-					"label1072"
+					"label1155",
+					"label1156"
 				],
 				"name": "secondRow",
 				"layout": {
@@ -4782,7 +4794,7 @@
 				},
 				"parent": "secondRow",
 				"children": [],
-				"name": "label1071",
+				"name": "label1155",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -4845,7 +4857,7 @@
 				},
 				"parent": "secondRow",
 				"children": [],
-				"name": "label1072",
+				"name": "label1156",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -4910,7 +4922,7 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"flexlayout511"
+					"flexlayout550"
 				],
 				"name": "secondDivider",
 				"layout": {
@@ -4977,7 +4989,7 @@
 				},
 				"parent": "secondDivider",
 				"children": [],
-				"name": "flexlayout511",
+				"name": "flexlayout550",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -5043,8 +5055,8 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label1073",
-					"label1074"
+					"label1157",
+					"label1158"
 				],
 				"name": "thirdRow",
 				"layout": {
@@ -5112,7 +5124,7 @@
 				},
 				"parent": "thirdRow",
 				"children": [],
-				"name": "label1073",
+				"name": "label1157",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -5175,7 +5187,7 @@
 				},
 				"parent": "thirdRow",
 				"children": [],
-				"name": "label1074",
+				"name": "label1158",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -5240,7 +5252,7 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"flexlayout512"
+					"flexlayout551"
 				],
 				"name": "thirdDivider",
 				"layout": {
@@ -5307,7 +5319,7 @@
 				},
 				"parent": "thirdDivider",
 				"children": [],
-				"name": "flexlayout512",
+				"name": "flexlayout551",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -5373,8 +5385,8 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label1075",
-					"label1076"
+					"label1159",
+					"label1160"
 				],
 				"name": "fourthRow",
 				"layout": {
@@ -5442,7 +5454,7 @@
 				},
 				"parent": "fourthRow",
 				"children": [],
-				"name": "label1075",
+				"name": "label1159",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -5505,7 +5517,7 @@
 				},
 				"parent": "fourthRow",
 				"children": [],
-				"name": "label1076",
+				"name": "label1160",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -5570,7 +5582,7 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"flexlayout513"
+					"flexlayout552"
 				],
 				"name": "fourthDivider",
 				"layout": {
@@ -5637,7 +5649,7 @@
 				},
 				"parent": "fourthDivider",
 				"children": [],
-				"name": "flexlayout513",
+				"name": "flexlayout552",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -5703,8 +5715,8 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label1077",
-					"label1078"
+					"label1161",
+					"label1162"
 				],
 				"name": "fifthRow",
 				"layout": {
@@ -5772,7 +5784,7 @@
 				},
 				"parent": "fifthRow",
 				"children": [],
-				"name": "label1077",
+				"name": "label1161",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -5835,7 +5847,7 @@
 				},
 				"parent": "fifthRow",
 				"children": [],
-				"name": "label1078",
+				"name": "label1162",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -5900,7 +5912,7 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"flexlayout514"
+					"flexlayout553"
 				],
 				"name": "fifthDivider",
 				"layout": {
@@ -5967,7 +5979,7 @@
 				},
 				"parent": "fifthDivider",
 				"children": [],
-				"name": "flexlayout514",
+				"name": "flexlayout553",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -6034,8 +6046,8 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label1079",
-					"label1080"
+					"label1163",
+					"label1164"
 				],
 				"name": "sixthRow",
 				"layout": {
@@ -6103,7 +6115,7 @@
 				},
 				"parent": "sixthRow",
 				"children": [],
-				"name": "label1079",
+				"name": "label1163",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -6166,7 +6178,7 @@
 				},
 				"parent": "sixthRow",
 				"children": [],
-				"name": "label1080",
+				"name": "label1164",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -6239,8 +6251,8 @@
 				},
 				"parent": "flexlayout2",
 				"children": [
-					"label1081",
-					"label1082"
+					"label1165",
+					"label1166"
 				],
 				"name": "flexlayout3",
 				"layout": {
@@ -6300,7 +6312,7 @@
 				},
 				"parent": "flexlayout3",
 				"children": [],
-				"name": "label1081",
+				"name": "label1165",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -6363,7 +6375,7 @@
 				},
 				"parent": "flexlayout3",
 				"children": [],
-				"name": "label1082",
+				"name": "label1166",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -6436,8 +6448,8 @@
 				},
 				"parent": "flexlayout2",
 				"children": [
-					"label1083",
-					"label1084"
+					"label1167",
+					"label1168"
 				],
 				"name": "flexlayout3_1",
 				"layout": {
@@ -6497,7 +6509,7 @@
 				},
 				"parent": "flexlayout3_1",
 				"children": [],
-				"name": "label1083",
+				"name": "label1167",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -6560,7 +6572,7 @@
 				},
 				"parent": "flexlayout3_1",
 				"children": [],
-				"name": "label1084",
+				"name": "label1168",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -6779,7 +6791,7 @@
 				},
 				"parent": "itemLeaveManagement",
 				"children": [
-					"flexlayout515"
+					"flexlayout554"
 				],
 				"name": "divider",
 				"layout": {
@@ -6835,7 +6847,7 @@
 				},
 				"parent": "divider",
 				"children": [],
-				"name": "flexlayout515",
+				"name": "flexlayout554",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -6918,7 +6930,7 @@
 				},
 				"parent": "itemSalary",
 				"children": [
-					"flexlayout516"
+					"flexlayout555"
 				],
 				"name": "flexlayout116",
 				"layout": {
@@ -6974,7 +6986,7 @@
 				},
 				"parent": "flexlayout116",
 				"children": [],
-				"name": "flexlayout516",
+				"name": "flexlayout555",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -7059,8 +7071,8 @@
 				},
 				"parent": "salaryContainer",
 				"children": [
-					"label1085",
-					"label1086"
+					"label1169",
+					"label1170"
 				],
 				"name": "flexlayout148",
 				"layout": {
@@ -7119,7 +7131,7 @@
 				},
 				"parent": "flexlayout148",
 				"children": [],
-				"name": "label1085",
+				"name": "label1169",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -7182,7 +7194,7 @@
 				},
 				"parent": "flexlayout148",
 				"children": [],
-				"name": "label1086",
+				"name": "label1170",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -7260,8 +7272,8 @@
 				},
 				"parent": "salaryContainer",
 				"children": [
-					"label1087",
-					"label1088"
+					"label1171",
+					"label1172"
 				],
 				"name": "flexlayout148_1",
 				"layout": {
@@ -7320,7 +7332,7 @@
 				},
 				"parent": "flexlayout148_1",
 				"children": [],
-				"name": "label1087",
+				"name": "label1171",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -7383,7 +7395,7 @@
 				},
 				"parent": "flexlayout148_1",
 				"children": [],
-				"name": "label1088",
+				"name": "label1172",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -7434,6 +7446,7 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
+				"id": 107,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -7456,8 +7469,8 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"label1089",
-					"label1090"
+					"label1173",
+					"label1174"
 				],
 				"name": "flexlayout309",
 				"layout": {
@@ -7466,8 +7479,7 @@
 					"height": 22.5,
 					"borderWidth": 0
 				},
-				"font": {},
-				"id": 107
+				"font": {}
 			}
 		},
 		{
@@ -7518,7 +7530,7 @@
 				},
 				"parent": "flexlayout309",
 				"children": [],
-				"name": "label1089",
+				"name": "label1173",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -7581,7 +7593,7 @@
 				},
 				"parent": "flexlayout309",
 				"children": [],
-				"name": "label1090",
+				"name": "label1174",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -7631,6 +7643,7 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
+				"id": 106,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -7655,7 +7668,7 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"flexlayout517"
+					"flexlayout556"
 				],
 				"name": "dividerperf",
 				"layout": {
@@ -7664,8 +7677,7 @@
 					"height": 0.5,
 					"borderWidth": 0
 				},
-				"font": {},
-				"id": 106
+				"font": {}
 			}
 		},
 		{
@@ -7712,7 +7724,7 @@
 				},
 				"parent": "dividerperf",
 				"children": [],
-				"name": "flexlayout517",
+				"name": "flexlayout556",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -7770,6 +7782,7 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
+				"id": 105,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -7792,8 +7805,8 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"label1091",
-					"label1092"
+					"label1175",
+					"label1176"
 				],
 				"name": "flexlayout309_1",
 				"layout": {
@@ -7802,8 +7815,7 @@
 					"height": 22.5,
 					"borderWidth": 0
 				},
-				"font": {},
-				"id": 105
+				"font": {}
 			}
 		},
 		{
@@ -7854,7 +7866,7 @@
 				},
 				"parent": "flexlayout309_1",
 				"children": [],
-				"name": "label1091",
+				"name": "label1175",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -7917,7 +7929,7 @@
 				},
 				"parent": "flexlayout309_1",
 				"children": [],
-				"name": "label1092",
+				"name": "label1176",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -7967,6 +7979,7 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
+				"id": 104,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -7991,7 +8004,7 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"flexlayout518"
+					"flexlayout557"
 				],
 				"name": "dividerperf_1",
 				"layout": {
@@ -8000,8 +8013,7 @@
 					"height": 0.5,
 					"borderWidth": 0
 				},
-				"font": {},
-				"id": 104
+				"font": {}
 			}
 		},
 		{
@@ -8048,7 +8060,7 @@
 				},
 				"parent": "dividerperf_1",
 				"children": [],
-				"name": "flexlayout518",
+				"name": "flexlayout557",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -8106,6 +8118,7 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
+				"id": 103,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -8128,8 +8141,8 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"label1093",
-					"label1094"
+					"label1177",
+					"label1178"
 				],
 				"name": "flexlayout309_1_1",
 				"layout": {
@@ -8138,8 +8151,7 @@
 					"height": 22.5,
 					"borderWidth": 0
 				},
-				"font": {},
-				"id": 103
+				"font": {}
 			}
 		},
 		{
@@ -8190,7 +8202,7 @@
 				},
 				"parent": "flexlayout309_1_1",
 				"children": [],
-				"name": "label1093",
+				"name": "label1177",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -8253,7 +8265,7 @@
 				},
 				"parent": "flexlayout309_1_1",
 				"children": [],
-				"name": "label1094",
+				"name": "label1178",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -8303,6 +8315,7 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
+				"id": 102,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -8327,7 +8340,7 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"flexlayout519"
+					"flexlayout558"
 				],
 				"name": "dividerperf_1_1",
 				"layout": {
@@ -8336,8 +8349,7 @@
 					"height": 0.5,
 					"borderWidth": 0
 				},
-				"font": {},
-				"id": 102
+				"font": {}
 			}
 		},
 		{
@@ -8384,7 +8396,7 @@
 				},
 				"parent": "dividerperf_1_1",
 				"children": [],
-				"name": "flexlayout519",
+				"name": "flexlayout558",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -8442,6 +8454,7 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
+				"id": 101,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -8464,8 +8477,8 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"label1095",
-					"label1096"
+					"label1179",
+					"label1180"
 				],
 				"name": "flexlayout309_1_1_1",
 				"layout": {
@@ -8474,8 +8487,7 @@
 					"height": 22.5,
 					"borderWidth": 0
 				},
-				"font": {},
-				"id": 101
+				"font": {}
 			}
 		},
 		{
@@ -8526,7 +8538,7 @@
 				},
 				"parent": "flexlayout309_1_1_1",
 				"children": [],
-				"name": "label1095",
+				"name": "label1179",
 				"layout": {
 					"marginLeft": 5,
 					"height": 15,
@@ -8589,7 +8601,7 @@
 				},
 				"parent": "flexlayout309_1_1_1",
 				"children": [],
-				"name": "label1096",
+				"name": "label1180",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -8662,7 +8674,7 @@
 				},
 				"parent": "pickerContainer",
 				"children": [
-					"flexlayout520"
+					"flexlayout559"
 				],
 				"name": "flexlayout430",
 				"layout": {
@@ -8718,7 +8730,7 @@
 				},
 				"parent": "flexlayout430",
 				"children": [],
-				"name": "flexlayout520",
+				"name": "flexlayout559",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -8753,6 +8765,7 @@
 				"height": 1,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"alpha": 1,
+				"id": 101,
 				"flexProps": {
 					"flexGrow": null,
 					"positionType": "RELATIVE",
@@ -8799,7 +8812,7 @@
 				},
 				"parent": "itemUser",
 				"children": [
-					"flexlayout521"
+					"flexlayout560"
 				],
 				"name": "flexlayout161",
 				"layout": {
@@ -8808,7 +8821,8 @@
 					"height": 0.5,
 					"borderWidth": 0
 				},
-				"font": {}
+				"font": {},
+				"id": 101
 			}
 		},
 		{
@@ -8855,7 +8869,7 @@
 				},
 				"parent": "flexlayout161",
 				"children": [],
-				"name": "flexlayout521",
+				"name": "flexlayout560",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -8936,7 +8950,7 @@
 				},
 				"parent": "itemExpense",
 				"children": [
-					"flexlayout522"
+					"flexlayout561"
 				],
 				"name": "flexlayout336",
 				"layout": {
@@ -8992,7 +9006,7 @@
 				},
 				"parent": "flexlayout336",
 				"children": [],
-				"name": "flexlayout522",
+				"name": "flexlayout561",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
