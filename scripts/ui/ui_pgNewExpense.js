@@ -33,13 +33,15 @@ const PgNewExpense_ = extend(Page)(
 		const mainContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
-			height: 150,
-			flexGrow: 1,
+			height: 610,
+			id: null,
+			flexGrow: null,
 			alignItems: FlexLayout.AlignItems.STRETCH
 		});
 		var mainContainer = new FlexLayout(mainContainerStyle);
 		this.layout.addChild(mainContainer);
-		
+		this.mainContainer = mainContainer;
+
 		const flexlayout190Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			marginLeft: 10,

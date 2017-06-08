@@ -47,7 +47,7 @@ function initSwipeView(page) {
 function initDotIndicator(page) {
     page.dotIndicator = new DotIndicator();
     page.dotIndicator.size = page.childPages.length;
-    page.dotIndicator.top = System.OS === "Android" ? 40 : 60;
+    page.dotIndicator.top = 60; //System.OS === "Android" ? 40 : 60;
     page.dotIndicator.alignSelf = FlexLayout.AlignSelf.CENTER;
     page.dotIndicator.positionType = FlexLayout.PositionType.ABSOLUTE;
     page.layout.addChild(page.dotIndicator);
