@@ -52,17 +52,17 @@ tabBar.add("hr", new TabBarItem({
 tabBar.add("approvals", new TabBarItem({
     title: "Approvals",
     icon: Image.createFromFile("images://icon_tab_approvals.png"),
-    route: require("./pages/tabs/profile/pgEmploymentHistory")
+    route: require("./pages/tabs/approvals/pgApprovals")
 }));
 tabBar.add("myCompany", new TabBarItem({
     title: "My Company",
     icon: Image.createFromFile("images://icon_tab_mycompany.png"),
-    route: require("./pages/tabs/profile/pgPerformance")
+    route: require("./pages/tabs/myCompany/pgMyCompany")
 }));
 tabBar.add("settings", new TabBarItem({
     title: "Settings",
     icon: Image.createFromFile("images://icon_tab_settings.png"),
-    route: require("./pages/tabs/profile/pgSalary")
+    route: require("./pages/tabs/settings/pgSettings")
 }));
 tabBar.setIndex("profile");
 
