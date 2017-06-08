@@ -18,31 +18,23 @@ const Page_ = extend(PageDesign)(
 );
 
 function onShow(parentOnShow) {
-    parentOnShow()
-
-    this.listView.rowHeight = 75;
-    this.listView.itemCount = 100;
-    
-    this.listView.onRowCreate = function() {
-            var myListViewItem = new ListViewItem();
-            var item = new ItemUser();
-            item.id = 200;
-
-            myListViewItem.addChild(item);
-            return myListViewItem;
-        };
-    this.listView.onRowBind = function(listViewItem, index) {
-            // var myLabelTitle = listViewItem.findChildById(102);
-            // myLabelTitle.text = myDataSet[index].title;
-            // myLabelTitle.backgroundColor = myDataSet[index].backgroundColor;
-        };
-
-    
+    parentOnShow();
 }
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
     this.layoutHeaderBar.children.headerBarTitle.text = TITLE;
+    
+    this.listView.rowHeight = 75;
+    this.listView.itemCount = 100;
+    this.listView.onRowCreate = function() {
+        var myListViewItem = new ListViewItem();
+        var item = new ItemUser();
+        item.id = 200;
+
+        myListViewItem.addChild(item);
+        return myListViewItem;
+    };
 }
 
 module && (module.exports = Page_);
