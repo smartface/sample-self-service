@@ -21,7 +21,7 @@ const Page_ = extend(PageDesign)(
 function onShow(parentOnShow) {
     parentOnShow()
 
-    this.listView.rowHeight = 195;
+    this.listView.rowHeight = 80;
     this.listView.itemCount = 100;
     
     this.listView.onRowCreate = function() {
