@@ -32,4 +32,6 @@ Router.add(PgConstants.PAGE_SALARY, require("./pages/tabs/profile/pgSalary"));
 Router.add(PgConstants.PAGE_HIERARCHY, require("./pages/tabs/profile/pgHierarchy"));
 Router.add(PgConstants.PAGE_EXPENSE_MANAGEMENT, require("./pages/tabs/hr/pgExpenseManagement"));
 Router.add(PgConstants.PAGE_NEW_WORK_LOG, require("./pages/tabs/hr/pgNewWorklog"));
-Router.go(PgConstants.PAGE_NEW_WORK_LOG);
+Router.add(PgConstants.PAGE_NEW_EXPENSE, require("./pages/tabs/hr/pgNewExpense"));
+
+Router.go(PgConstants.PAGE_NEW_EXPENSE);
