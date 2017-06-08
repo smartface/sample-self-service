@@ -8,7 +8,7 @@
 				"backgroundColor": "rgba( 228, 228, 228, 1 )"
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.21",
+			"version": "6.3.0-rc.24",
 			"props": {
 				"backgroundColor": "rgba( 228, 228, 228, 1 )",
 				"orientation": "PORTRAIT",
@@ -20,7 +20,6 @@
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
-				"name": "pgSalary",
 				"children": [
 					"statusBar",
 					"headerBar",
@@ -29,6 +28,7 @@
 					"listView"
 				],
 				"isRemovable": true,
+				"name": "pgSalary",
 				"layout": {},
 				"flex": {
 					"alignContent": 4,
@@ -39,8 +39,8 @@
 					"justifyContent": 0
 				},
 				"font": {},
-				"width": 375,
-				"height": 667
+				"width": 187.5,
+				"height": 333.5
 			}
 		},
 		{
@@ -50,14 +50,14 @@
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#00A1F1",
+				"color": "#45495A",
 				"visible": true,
-				"name": "statusBar",
 				"children": [],
 				"parent": "pgSalary",
 				"isRemovable": false,
+				"name": "statusBar",
 				"layout": {
-					"height": 20
+					"height": 10
 				},
 				"flex": {},
 				"font": {},
@@ -76,14 +76,14 @@
 			"className": ".headerBar",
 			"props": {
 				"title": "newPage001",
-				"titleColor": "#000000",
+				"titleColor": "#FFFFFF",
 				"visible": false,
-				"backgroundColor": "#FFFFFF",
-				"name": "headerBar",
+				"backgroundColor": "#45495A",
 				"children": [],
 				"parent": "pgSalary",
+				"name": "headerBar",
 				"layout": {
-					"height": 44
+					"height": 22
 				},
 				"flex": {},
 				"font": {},
@@ -121,13 +121,14 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"name": "flexlayout1",
 				"parent": "pgSalary",
 				"children": [
 					"imageview1"
 				],
+				"name": "flexlayout1",
 				"layout": {
-					"height": 180
+					"height": 90,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -172,17 +173,19 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "imageview1",
 				"parent": "flexlayout1",
 				"children": [],
-				"layout": {},
+				"name": "imageview1",
+				"layout": {
+					"borderWidth": 0
+				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": 1
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.env.smartface.io/smartface14/slfsrvc/ui-editor/img/graph.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.env.smartface.io/smartface57/ssn1/ui-editor/img/graph.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.048093026247465254"
 			}
 		},
 		{
@@ -219,13 +222,14 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "listView",
 				"parent": "pgSalary",
 				"children": [],
+				"name": "listView",
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 200
+					"marginLeft": 5,
+					"marginRight": 5,
+					"height": 100,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -252,6 +256,7 @@
 				"width": null,
 				"height": 82,
 				"marginTop": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE"
 				},
@@ -292,17 +297,19 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"name": "layoutHeaderBar",
 				"parent": "pgSalary",
 				"children": [
 					"label108"
 				],
+				"name": "layoutHeaderBar",
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 82
+					"height": 41,
+					"borderWidth": 0
 				},
-				"font": {}
+				"font": {},
+				"usePageVariable": true
 			}
 		},
 		{
@@ -353,12 +360,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"name": "label108",
 				"parent": "layoutHeaderBar",
 				"children": [],
+				"name": "label108",
 				"layout": {
-					"marginTop": 20,
-					"height": 40
+					"marginTop": 10,
+					"height": 20,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,

@@ -33,7 +33,8 @@ const PgExpanseManagement_ = extend(Page)(
 		});
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgExpanseManagement");
 		this.layout.addChild(layoutHeaderBar);
-		
+		this.layoutHeaderBar = layoutHeaderBar;
+
 		const listViewStyle = getCombinedStyle(".listView", {
 			width: null,
 			marginLeft: 10,

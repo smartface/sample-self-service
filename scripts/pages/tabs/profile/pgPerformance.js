@@ -6,15 +6,17 @@ var PageDesign = require("../../../ui/ui_pgPerformance");
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemSalary = require('../../../components/ItemPerformance');
 
+const TITLE = "PERFORMANCE";
+
 const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super){
 		// Initalizes super class for this page scope
-		_super(this, {
-		});
-				this.onShow = onShow.bind(this, this.onShow.bind(this))
-
-});
+		_super(this);
+		this.onShow = onShow.bind(this, this.onShow.bind(this));
+		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+    }
+);
 
 
 function onShow(parentOnShow) {
@@ -38,6 +40,11 @@ function onShow(parentOnShow) {
         };
 
     
+}
+
+function onLoad(parentOnLoad) {
+    parentOnLoad();
+    this.layoutHeaderBar.children.headerBarTitle.text = TITLE;
 }
 
 module && (module.exports = Page_);

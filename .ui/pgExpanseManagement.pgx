@@ -6,7 +6,7 @@
 			"themeProps": {},
 			"userProps": {},
 			"className": ".page",
-			"version": "6.3.0-rc.23",
+			"version": "6.3.0-rc.24",
 			"props": {
 				"backgroundColor": "#EEEEEE",
 				"orientation": "PORTRAIT",
@@ -125,9 +125,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "listView",
 				"parent": "pgExpanseManagement",
 				"children": [],
+				"name": "listView",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -158,6 +158,7 @@
 				"top": 0,
 				"width": null,
 				"height": 92,
+				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE"
 				},
@@ -197,18 +198,19 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"name": "layoutHeaderBar",
 				"parent": "pgExpanseManagement",
 				"children": [
 					"label108"
 				],
+				"name": "layoutHeaderBar",
 				"layout": {
 					"left": 0,
 					"top": 0,
 					"height": 46,
 					"borderWidth": 0
 				},
-				"font": {}
+				"font": {},
+				"usePageVariable": true
 			}
 		},
 		{
@@ -259,9 +261,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"name": "label108",
 				"parent": "layoutHeaderBar",
 				"children": [],
+				"name": "label108",
 				"layout": {
 					"marginTop": 10,
 					"height": 20,

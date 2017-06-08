@@ -36,7 +36,8 @@ const PgLeaveManagement_ = extend(Page)(
 		});
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgLeaveManagement");
 		this.layout.addChild(layoutHeaderBar);
-		
+		this.layoutHeaderBar = layoutHeaderBar;
+
 		const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
 			width: null,
 			alignItems: FlexLayout.AlignItems.CENTER,
