@@ -3,7 +3,7 @@ const Page = require('sf-core/ui/page');
 const Color = require('sf-core/ui/color');
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemPerformance = require('../../../components/ItemSalary');
-var PageDesign = require("../../../ui/ui_pgSalary");
+const PageDesign = require("../../../ui/ui_pgSalary");
 
 
 const Page_ = extend(PageDesign)(
