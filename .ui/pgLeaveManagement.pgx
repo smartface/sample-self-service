@@ -10,7 +10,7 @@
 				"backgroundColor": "rgba( 226, 226, 228, 1 )"
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.24",
+			"version": "6.3.0-rc.25",
 			"props": {
 				"backgroundColor": "rgba( 226, 226, 228, 1 )",
 				"orientation": "PORTRAIT",
@@ -33,16 +33,14 @@
 				"name": "pgLeaveManagement",
 				"layout": {},
 				"flex": {
-					"alignContent": 4,
 					"alignItems": 4,
-					"direction": 0,
 					"flexDirection": 0,
 					"flexWrap": 0,
 					"justifyContent": 0
 				},
 				"font": {},
-				"width": 187.5,
-				"height": 333.5
+				"width": 468.75,
+				"height": 833.75
 			}
 		},
 		{
@@ -59,7 +57,7 @@
 				"isRemovable": false,
 				"name": "statusBar",
 				"layout": {
-					"height": 10
+					"height": 25
 				},
 				"flex": {},
 				"font": {},
@@ -85,7 +83,7 @@
 				"parent": "pgLeaveManagement",
 				"name": "headerBar",
 				"layout": {
-					"height": 22
+					"height": 55
 				},
 				"flex": {},
 				"font": {},
@@ -129,17 +127,15 @@
 				"parent": "pgLeaveManagement",
 				"children": [
 					"imageview1",
-					"imageview2"
+					"imageview2",
+					"topTabBar"
 				],
 				"name": "flexlayout1",
 				"layout": {
-					"height": 100,
+					"height": 250,
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
-					"direction": 0,
-					"alignContent": 4,
 					"alignItems": 2,
 					"justifyContent": 1,
 					"flexWrap": 0,
@@ -179,16 +175,15 @@
 				"children": [],
 				"name": "imageview1",
 				"layout": {
-					"width": 75,
-					"height": 75,
+					"width": 187.5,
+					"height": 187.5,
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.env.smartface.io/smartface57/ssn1/ui-editor/img/graph2.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.7552807186550932"
+				"imageURL": "https://dispatcher.env.smartface.io/smartface57/ssn1/ui-editor/img/graph2.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -228,18 +223,17 @@
 				"children": [],
 				"name": "imageview2",
 				"layout": {
-					"left": 145.75,
-					"top": 33,
-					"width": 37,
-					"height": 30,
+					"left": 364.375,
+					"top": 82.5,
+					"width": 92.5,
+					"height": 75,
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
 					"positionType": 1
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.env.smartface.io/smartface57/ssn1/ui-editor/img/graphlegend.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.6282392931966747"
+				"imageURL": "https://dispatcher.env.smartface.io/smartface57/ssn1/ui-editor/img/graphlegend.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -281,13 +275,12 @@
 				"children": [],
 				"name": "listView",
 				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"height": 100,
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"height": 250,
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": 1
 				},
@@ -330,6 +323,7 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -341,9 +335,6 @@
 					"positionType": "RELATIVE"
 				},
 				"flex": {
-					"alignSelf": 0,
-					"direction": 0,
-					"alignContent": 4,
 					"alignItems": 4,
 					"justifyContent": 0,
 					"flexWrap": 0,
@@ -352,17 +343,16 @@
 				},
 				"parent": "pgLeaveManagement",
 				"children": [
-					"label108"
+					"headerBarTitle"
 				],
 				"name": "layoutHeaderBar",
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 51,
+					"height": 127.5,
 					"borderWidth": 0
 				},
-				"font": {},
-				"usePageVariable": true
+				"font": {}
 			}
 		},
 		{
@@ -384,7 +374,7 @@
 					"flexGrow": null
 				},
 				"font": {
-					"size": 24
+					"size": 16
 				}
 			},
 			"className": ".label",
@@ -403,7 +393,7 @@
 				"textAlignment": "MIDCENTER",
 				"marginTop": 20,
 				"font": {
-					"size": 24,
+					"size": 16,
 					"bold": false,
 					"italic": false,
 					"family": "Lato"
@@ -415,17 +405,100 @@
 				},
 				"parent": "layoutHeaderBar",
 				"children": [],
-				"name": "label108",
+				"name": "headerBarTitle",
 				"layout": {
-					"marginTop": 10,
-					"height": 20,
+					"marginTop": 25,
+					"height": 50,
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": null
 				}
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "d0501b23",
+			"source": {
+				"page": "__library__",
+				"id": "0c46ed74"
+			},
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"height": 50,
+				"left": 0,
+				"right": 0,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"top": 0,
+				"usePageVariable": true,
+				"flexProps": {
+					"right": 0,
+					"positionType": "RELATIVE",
+					"flexDirection": "ROW",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexGrow": null,
+					"alignSelf": "STRETCH"
+				},
+				"flex": {
+					"right": 0,
+					"positionType": 0,
+					"flexDirection": 2,
+					"justifyContent": 1,
+					"flexWrap": 0
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": 50,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"right": 0,
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"right": 0,
+					"flexGrow": null
+				},
+				"flex": {
+					"alignSelf": 4,
+					"alignItems": 4,
+					"justifyContent": 1,
+					"flexWrap": 0,
+					"flexDirection": 2,
+					"positionType": 0,
+					"right": 0,
+					"flexGrow": null
+				},
+				"parent": "flexlayout1",
+				"children": [],
+				"name": "topTabBar",
+				"layout": {
+					"right": 0,
+					"left": 0,
+					"top": 0,
+					"height": 62.5,
+					"borderWidth": 0
+				},
+				"font": {},
+				"visibility": true,
+				"top": 0,
+				"usePageVariable": true
 			}
 		}
 	]

@@ -15,6 +15,7 @@ const ImageFillType = require('sf-core/ui/imagefilltype');
 const Image = require('sf-core/ui/image');
 
 const LayoutHeaderBar = require("../components/LayoutHeaderBar");
+const TopTabBar = require("../components/TopTabBar");
 
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 
@@ -79,6 +80,24 @@ const PgLeaveManagement_ = extend(Page)(
 		var imageview2 = new ImageView(imageview2Style);
 		flexlayout1.addChild(imageview2);
 		
+		const topTabBarStyle = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: 50,
+			left: 0,
+			right: 0,
+			backgroundColor: Color.create(0, 255, 255, 255),
+			top: 0,
+			positionType: FlexLayout.PositionType.RELATIVE,
+			flexDirection: FlexLayout.FlexDirection.ROW,
+			justifyContent: FlexLayout.JustifyContent.CENTER,
+			flexWrap: FlexLayout.FlexWrap.NOWRAP,
+			flexGrow: null,
+			alignSelf: FlexLayout.AlignSelf.STRETCH
+		});
+		var topTabBar = new TopTabBar(topTabBarStyle, "pgLeaveManagement");
+		flexlayout1.addChild(topTabBar);
+		this.topTabBar = topTabBar;
+
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,
@@ -89,7 +108,8 @@ const PgLeaveManagement_ = extend(Page)(
 		//assign the children of flexlayout1
 		flexlayout1.children = Object.assign({}, {
 			imageview1: imageview1,
-			imageview2: imageview2
+			imageview2: imageview2,
+			topTabBar: topTabBar
 		});
 		
 	});

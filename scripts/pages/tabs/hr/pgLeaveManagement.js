@@ -36,6 +36,8 @@ function onLoad(parentOnLoad) {
         myListViewItem.addChild(item);
         return myListViewItem;
     };
+    
+    this.topTabBar.items = ["Approved", "Waiting", "Rejected"];
 }
 
 module && (module.exports = Page_);
