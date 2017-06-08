@@ -1,7 +1,7 @@
 const extend = require('js-base/core/extend');
 const Page = require('sf-core/ui/page');
 const Color = require('sf-core/ui/color');
-var PageDesign = require("../../../ui/ui_pgNewLeaveRequest");
+const PageDesign = require("../../../ui/ui_pgNewLeaveRequest");
 
 
 const Page_ = extend(PageDesign)(
