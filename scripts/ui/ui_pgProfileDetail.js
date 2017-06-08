@@ -14,6 +14,7 @@ const Image = require('sf-core/ui/image');
 const Label = require('sf-core/ui/label');
 const Font = require('sf-core/ui/font');
 
+const HierarchyController = require("../components/HierarchyController");
 const ListItem1 = require("../components/ListItem1");
 const HorizontalDivider = require("../components/HorizontalDivider");
 
@@ -39,7 +40,7 @@ const PgProfileDetail_ = extend(Page)(
 		
 		const flexlayout500Style = getCombinedStyle(".flexLayout", {
 			width: null,
-			height: 240,
+			height: 610,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: null
 		});
@@ -82,6 +83,23 @@ const PgProfileDetail_ = extend(Page)(
 		});
 		var label827 = new Label(label827Style);
 		flexlayout1.addChild(label827);
+		
+		const hierarchyControllerStyle = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: 360,
+			height: 345,
+			marginLeft: 10,
+			marginRight: 10,
+			marginTop: 10,
+			paddingLeft: 10,
+			paddingRight: 10,
+			paddingTop: 10,
+			paddingBottom: 10,
+			positionType: FlexLayout.PositionType.RELATIVE
+		});
+		var hierarchyController = new HierarchyController(hierarchyControllerStyle, "pgProfileDetail");
+		flexlayout500.addChild(hierarchyController);
 		
 		const label827_1Style = getCombinedStyle(".label .label-overview-title", {
 			width: 200,
@@ -217,7 +235,8 @@ const PgProfileDetail_ = extend(Page)(
 		
 		//assign the children of flexlayout500
 		flexlayout500.children = Object.assign({}, {
-			qualificationcontainer: qualificationcontainer
+			qualificationcontainer: qualificationcontainer,
+			hierarchyController: hierarchyController
 		});
 		
 		//assign the children of qualificationcontainer
