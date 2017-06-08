@@ -36,12 +36,12 @@ var tabBar = new BottomTabBar({
 tabBar.add("profile", new TabBarItem({
     title: "Profile",
     icon: Image.createFromFile("images://icon_tab_profile.png"),
-    route: require("./pages/tabs/profile/pgSalary")
+    route: require("./pages/tabs/profile")
 }));
 tabBar.add("hr", new TabBarItem({
     title: "HR",
     icon: Image.createFromFile("images://icon_tab_hr.png"),
-    route: require("./pages/tabs/hr/pgLeaveManagement")
+    route: require("./pages/tabs/hr")
 }));
 tabBar.add("approvals", new TabBarItem({
     title: "Approvals",
