@@ -33,7 +33,8 @@ const PgHierarchy_ = extend(Page)(
 		});
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgHierarchy");
 		this.layout.addChild(layoutHeaderBar);
-		
+		this.layoutHeaderBar = layoutHeaderBar;
+
 		const listViewStyle = getCombinedStyle(".listView", {
 			width: null,
 			left: null,

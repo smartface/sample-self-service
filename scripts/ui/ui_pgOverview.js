@@ -38,7 +38,8 @@ const PgOverview_ = extend(Page)(
 		});
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgOverview");
 		this.layout.addChild(layoutHeaderBar);
-		
+		this.layoutHeaderBar = layoutHeaderBar;
+
 		const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
 			width: null,
 			height: 170,

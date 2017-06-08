@@ -4,14 +4,17 @@ const PageDesign = require("../../../ui/ui_pgExpanseManagement");
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemExpense = require('../../../components/ItemExpense');
 
+const TITLE = "EXPENSE MANAGEMENT";
+
 const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super){
 		// Initalizes super class for this page scope
-		_super(this, {
-		});
-		this.onShow = onShow.bind(this, this.onShow.bind(this))
-});
+		_super(this);
+		this.onShow = onShow.bind(this, this.onShow.bind(this));
+		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+    }
+);
 
 function onShow(parentOnShow) {
     parentOnShow()
@@ -36,5 +39,9 @@ function onShow(parentOnShow) {
     
 }
 
+function onLoad(parentOnLoad) {
+    parentOnLoad();
+    this.layoutHeaderBar.children.headerBarTitle.text = TITLE;
+}
 
 module && (module.exports = Page_);

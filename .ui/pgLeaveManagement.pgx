@@ -10,7 +10,7 @@
 				"backgroundColor": "rgba( 226, 226, 228, 1 )"
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.21",
+			"version": "6.3.0-rc.24",
 			"props": {
 				"backgroundColor": "rgba( 226, 226, 228, 1 )",
 				"orientation": "PORTRAIT",
@@ -22,7 +22,6 @@
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
-				"name": "pgLeaveManagement",
 				"children": [
 					"statusBar",
 					"headerBar",
@@ -31,10 +30,8 @@
 					"listView"
 				],
 				"isRemovable": true,
-				"layout": {
-					"width": 375,
-					"height": 667
-				},
+				"name": "pgLeaveManagement",
+				"layout": {},
 				"flex": {
 					"alignContent": 4,
 					"alignItems": 4,
@@ -44,8 +41,8 @@
 					"justifyContent": 0
 				},
 				"font": {},
-				"width": 375,
-				"height": 667
+				"width": 187.5,
+				"height": 333.5
 			}
 		},
 		{
@@ -55,14 +52,14 @@
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#00A1F1",
+				"color": "#45495A",
 				"visible": true,
-				"name": "statusBar",
 				"children": [],
 				"parent": "pgLeaveManagement",
 				"isRemovable": false,
+				"name": "statusBar",
 				"layout": {
-					"height": 20
+					"height": 10
 				},
 				"flex": {},
 				"font": {},
@@ -81,14 +78,14 @@
 			"className": ".headerBar",
 			"props": {
 				"title": "newPage001",
-				"titleColor": "#000000",
+				"titleColor": "#FFFFFF",
 				"visible": false,
-				"backgroundColor": "#FFFFFF",
-				"name": "headerBar",
+				"backgroundColor": "#45495A",
 				"children": [],
 				"parent": "pgLeaveManagement",
+				"name": "headerBar",
 				"layout": {
-					"height": 44
+					"height": 22
 				},
 				"flex": {},
 				"font": {},
@@ -129,14 +126,15 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"name": "flexlayout1",
 				"parent": "pgLeaveManagement",
 				"children": [
 					"imageview1",
 					"imageview2"
 				],
+				"name": "flexlayout1",
 				"layout": {
-					"height": 200
+					"height": 100,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -177,19 +175,20 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "imageview1",
 				"parent": "flexlayout1",
 				"children": [],
+				"name": "imageview1",
 				"layout": {
-					"width": 150,
-					"height": 150
+					"width": 75,
+					"height": 75,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.env.smartface.io/smartface14/slfsrvc/ui-editor/img/graph2.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.env.smartface.io/smartface57/ssn1/ui-editor/img/graph2.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.7552807186550932"
 			}
 		},
 		{
@@ -225,21 +224,22 @@
 					"alignSelf": "AUTO",
 					"positionType": "ABSOLUTE"
 				},
-				"name": "imageview2",
 				"parent": "flexlayout1",
 				"children": [],
+				"name": "imageview2",
 				"layout": {
-					"left": 291.5,
-					"top": 66,
-					"width": 74,
-					"height": 60
+					"left": 145.75,
+					"top": 33,
+					"width": 37,
+					"height": 30,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 1
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.env.smartface.io/smartface14/slfsrvc/ui-editor/img/graphlegend.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.env.smartface.io/smartface57/ssn1/ui-editor/img/graphlegend.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.6282392931966747"
 			}
 		},
 		{
@@ -277,13 +277,14 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "listView",
 				"parent": "pgLeaveManagement",
 				"children": [],
+				"name": "listView",
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 200
+					"marginLeft": 5,
+					"marginRight": 5,
+					"height": 100,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -309,6 +310,7 @@
 				"top": 0,
 				"width": null,
 				"height": 102,
+				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE"
 				},
@@ -348,17 +350,19 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"name": "layoutHeaderBar",
 				"parent": "pgLeaveManagement",
 				"children": [
 					"label108"
 				],
+				"name": "layoutHeaderBar",
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 102
+					"height": 51,
+					"borderWidth": 0
 				},
-				"font": {}
+				"font": {},
+				"usePageVariable": true
 			}
 		},
 		{
@@ -409,12 +413,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"name": "label108",
 				"parent": "layoutHeaderBar",
 				"children": [],
+				"name": "label108",
 				"layout": {
-					"marginTop": 20,
-					"height": 40
+					"marginTop": 10,
+					"height": 20,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,

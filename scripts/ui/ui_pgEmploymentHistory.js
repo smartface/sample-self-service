@@ -33,7 +33,8 @@ const PgEmploymentHistory_ = extend(Page)(
 		});
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgEmploymentHistory");
 		this.layout.addChild(layoutHeaderBar);
-		
+		this.layoutHeaderBar = layoutHeaderBar;
+
 		const listViewStyle = getCombinedStyle(".listView", {
 			width: null,
 			height: null,

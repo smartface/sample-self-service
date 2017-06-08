@@ -37,7 +37,8 @@ const PgPerformance_ = extend(Page)(
 		});
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgPerformance");
 		this.layout.addChild(layoutHeaderBar);
-		
+		this.layoutHeaderBar = layoutHeaderBar;
+
 		const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
 			width: null
 		});

@@ -8,7 +8,7 @@
 				"backgroundColor": "rgba( 228, 228, 228, 1 )"
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.23",
+			"version": "6.3.0-rc.24",
 			"props": {
 				"backgroundColor": "rgba( 228, 228, 228, 1 )",
 				"orientation": "PORTRAIT",
@@ -159,6 +159,7 @@
 				"top": 0,
 				"width": null,
 				"height": 92,
+				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE"
 				},
@@ -209,7 +210,8 @@
 					"height": 46,
 					"borderWidth": 0
 				},
-				"font": {}
+				"font": {},
+				"usePageVariable": true
 			}
 		},
 		{

@@ -8,7 +8,7 @@
 				"backgroundColor": "rgba( 228, 228, 228, 1 )"
 			},
 			"className": ".page",
-			"version": "6.3.0-rc.21",
+			"version": "6.3.0-rc.24",
 			"props": {
 				"backgroundColor": "rgba( 228, 228, 228, 1 )",
 				"orientation": "PORTRAIT",
@@ -20,7 +20,6 @@
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
-				"name": "pgPerformance",
 				"children": [
 					"statusBar",
 					"headerBar",
@@ -29,6 +28,7 @@
 					"listView"
 				],
 				"isRemovable": true,
+				"name": "pgPerformance",
 				"layout": {},
 				"flex": {
 					"alignContent": 4,
@@ -50,12 +50,12 @@
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#00A1F1",
+				"color": "#45495A",
 				"visible": true,
-				"name": "statusBar",
 				"children": [],
 				"parent": "pgPerformance",
 				"isRemovable": false,
+				"name": "statusBar",
 				"layout": {
 					"height": 10
 				},
@@ -76,12 +76,12 @@
 			"className": ".headerBar",
 			"props": {
 				"title": "newPage001",
-				"titleColor": "#000000",
+				"titleColor": "#FFFFFF",
 				"visible": false,
-				"backgroundColor": "#FFFFFF",
-				"name": "headerBar",
+				"backgroundColor": "#45495A",
 				"children": [],
 				"parent": "pgPerformance",
+				"name": "headerBar",
 				"layout": {
 					"height": 22
 				},
@@ -120,13 +120,14 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"name": "flexlayout1",
 				"parent": "pgPerformance",
 				"children": [
 					"imageview1"
 				],
+				"name": "flexlayout1",
 				"layout": {
-					"height": 100
+					"height": 100,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,
@@ -171,17 +172,19 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "imageview1",
 				"parent": "flexlayout1",
 				"children": [],
-				"layout": {},
+				"name": "imageview1",
+				"layout": {
+					"borderWidth": 0
+				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": 1
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.env.smartface.io/smartface14/slfsrvc/ui-editor/img/graph.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.env.smartface.io/smartface57/ssn1/ui-editor/img/graph.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.048093026247465254"
 			}
 		},
 		{
@@ -213,26 +216,27 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "listView",
 				"parent": "pgPerformance",
 				"children": [],
+				"name": "listView",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
-					"height": 100
+					"height": 100,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": 1
 				},
-				"font": {},
-				"usePageVariable": true
+				"font": {}
 			}
 		},
 		{
@@ -252,6 +256,7 @@
 				"width": null,
 				"height": 102,
 				"marginTop": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE"
 				},
@@ -292,17 +297,19 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"name": "layoutHeaderBar",
 				"parent": "pgPerformance",
 				"children": [
 					"label108"
 				],
+				"name": "layoutHeaderBar",
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 51
+					"height": 51,
+					"borderWidth": 0
 				},
-				"font": {}
+				"font": {},
+				"usePageVariable": true
 			}
 		},
 		{
@@ -353,12 +360,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"name": "label108",
 				"parent": "layoutHeaderBar",
 				"children": [],
+				"name": "label108",
 				"layout": {
 					"marginTop": 10,
-					"height": 20
+					"height": 20,
+					"borderWidth": 0
 				},
 				"flex": {
 					"alignSelf": 0,

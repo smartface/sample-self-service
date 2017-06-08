@@ -4,6 +4,7 @@ const Color = require('sf-core/ui/color');
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemEmploymentHistory = require('../../../components/ItemEmploymentHistory');
 
+const TITLE = "EMPLOYMENT HISTORY";
 
 var PageDesign = require("../../../ui/ui_pgEmploymentHistory");
 
@@ -11,16 +12,14 @@ const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super){
 		// Initalizes super class for this page scope
-		_super(this, {
-			
-		});
-		this.onShow = onShow.bind(this, this.onShow.bind(this))
-
-});
-
+		_super(this);
+		this.onShow = onShow.bind(this, this.onShow.bind(this));
+		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+	}
+);
 
 function onShow(parentOnShow) {
-    parentOnShow()
+    parentOnShow();
 
     this.listView.rowHeight = 360;
     this.listView.itemCount = 100;
@@ -40,6 +39,11 @@ function onShow(parentOnShow) {
         };
 
     
+}
+
+function onLoad(parentOnLoad) {
+    parentOnLoad();
+    this.layoutHeaderBar.children.headerBarTitle.text = TITLE;
 }
 
 module && (module.exports = Page_);
