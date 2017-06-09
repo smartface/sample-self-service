@@ -35,7 +35,7 @@ const PgLogin_ = extend(Page)(
 			top: 0,
 			width: null,
 			height: null,
-			imageFillType: ImageFillType.ASPECTFIT,
+			imageFillType: ImageFillType.STRETCH,
 			image: Image.createFromFile("images://background.png"),
 			positionType: FlexLayout.PositionType.ABSOLUTE
 		});

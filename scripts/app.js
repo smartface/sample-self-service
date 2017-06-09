@@ -25,15 +25,19 @@ const settings = require("./.settings.json");
 const PgConstants = require("pages/PgConstants");
 const Data = require('sf-core/data');
 
-
 stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
 stylerBuilder.setActiveTheme(Data.getStringVariable("theme") || settings.config.theme.currentTheme  );
 
 var navigator = new Navigator();
 navigator.add("pgLogin", require("./pages/login/pgLogin"));
 
+var itemColor = Color.create((settings.config.theme.currentTheme === "Style1" ? "#1775D0" : "#00B9FF"));
 var tabBar = new BottomTabBar({
-    backgroundColor: Color.create("#EAEAEB")
+    backgroundColor: Color.create("#EAEAEB"),
+    itemColor: {
+        normal: Color.create("#9C9DA6"),
+        checked: itemColor
+    }
 });
 
 var profileNavigator = new Navigator();

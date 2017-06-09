@@ -6,6 +6,7 @@ const Page = require("sf-core/ui/page");
 const SwipeView = require("sf-core/ui/swipeview");
 const System = require("sf-core/device/system");
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
+const statusbarStyle = getCombinedStyle(".statusBar");
 
 const HRIndex = extend(Page)(
     function(_super, params) {
@@ -24,7 +25,13 @@ const HRIndex = extend(Page)(
         this.onShow = function() {
             typeof _superOnShow === "function" && _superOnShow();
             this.headerBar.visible = false;
-            this.statusBar.android.color = Color.create("#45495A");
+            
+            if (statusbarStyle.color) {
+                this.statusBar.android.color = statusbarStyle.color;
+            }
+            if (statusbarStyle.style) {
+                this.statusBar.ios.style = statusbarStyle.style;
+            }
         }.bind(this);
 
         initSwipeView(this);
