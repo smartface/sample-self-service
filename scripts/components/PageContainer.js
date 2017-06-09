@@ -1,4 +1,5 @@
 const extend = require("js-base/core/extend");
+const Color = require("sf-core/ui/color");
 const DotIndicator = require("components/DotIndicator");
 const FlexLayout = require("sf-core/ui/flexlayout");
 const Page = require("sf-core/ui/page");
@@ -23,6 +24,7 @@ const HRIndex = extend(Page)(
         this.onShow = function() {
             typeof _superOnShow === "function" && _superOnShow();
             this.headerBar.visible = false;
+            this.statusBar.android.color = Color.create("#45495A");
         }.bind(this);
 
         initSwipeView(this);
