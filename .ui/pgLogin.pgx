@@ -13,7 +13,7 @@
 				}
 			},
 			"className": ".page .page-login",
-			"version": "6.3.0-rc.24",
+			"version": "6.3.0-rc.26",
 			"props": {
 				"backgroundColor": "#1775CF",
 				"orientation": "PORTRAIT",
@@ -28,6 +28,7 @@
 				"children": [
 					"statusBar",
 					"headerBar",
+					"imageview156",
 					"appName",
 					"inputLayout",
 					"buttonLayout",
@@ -36,16 +37,14 @@
 				"name": "pgLogin",
 				"layout": {},
 				"flex": {
-					"alignContent": 4,
 					"alignItems": 4,
-					"direction": 0,
 					"flexDirection": 0,
 					"flexWrap": 0,
 					"justifyContent": 4
 				},
 				"font": {},
-				"width": 375,
-				"height": 667
+				"width": 187.5,
+				"height": 333.5
 			}
 		},
 		{
@@ -63,7 +62,7 @@
 				"parent": "pgLogin",
 				"name": "statusBar",
 				"layout": {
-					"height": 20
+					"height": 10
 				},
 				"flex": {},
 				"font": {},
@@ -90,7 +89,7 @@
 				"parent": "pgLogin",
 				"name": "headerBar",
 				"layout": {
-					"height": 44
+					"height": 22
 				},
 				"flex": {},
 				"font": {},
@@ -139,14 +138,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 5
 				},
-				"name": "appName",
 				"parent": "pgLogin",
 				"children": [],
+				"name": "appName",
 				"layout": {
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": 5
 				}
@@ -187,19 +185,16 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 3
 				},
-				"name": "inputLayout",
 				"parent": "pgLogin",
 				"children": [
 					"usernameLayout",
 					"passwordLayout"
 				],
+				"name": "inputLayout",
 				"layout": {
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
-					"direction": 0,
-					"alignContent": 4,
 					"alignItems": 2,
 					"justifyContent": 1,
 					"flexWrap": 0,
@@ -246,19 +241,16 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "bottomLayout",
 				"parent": "pgLogin",
 				"children": [
 					"dontHaveAccount",
 					"signupLabel"
 				],
+				"name": "bottomLayout",
 				"layout": {
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
-					"direction": 0,
-					"alignContent": 4,
 					"alignItems": 3,
 					"justifyContent": 1,
 					"flexWrap": 0,
@@ -310,15 +302,14 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 10
 				},
-				"name": "dontHaveAccount",
 				"parent": "bottomLayout",
 				"children": [],
+				"name": "dontHaveAccount",
 				"layout": {
-					"height": 30,
+					"height": 15,
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": 10
 				}
@@ -368,16 +359,15 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 5
 				},
-				"name": "signupLabel",
 				"parent": "bottomLayout",
 				"children": [],
+				"name": "signupLabel",
 				"layout": {
-					"marginLeft": 5,
-					"height": 30,
+					"marginLeft": 2.5,
+					"height": 15,
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": 5
 				}
@@ -418,18 +408,15 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 3
 				},
-				"name": "buttonLayout",
 				"parent": "pgLogin",
 				"children": [
 					"signinButton"
 				],
+				"name": "buttonLayout",
 				"layout": {
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
-					"direction": 0,
-					"alignContent": 4,
 					"alignItems": 2,
 					"justifyContent": 1,
 					"flexWrap": 0,
@@ -479,19 +466,72 @@
 					"positionType": "RELATIVE",
 					"alignSelf": "AUTO"
 				},
-				"name": "signinButton",
 				"parent": "buttonLayout",
 				"children": [],
+				"name": "signinButton",
 				"layout": {
-					"width": 250,
-					"height": 50,
-					"borderWidth": 1,
-					"borderRadius": 25
+					"width": 125,
+					"height": 25,
+					"borderWidth": 0.5,
+					"borderRadius": 12.5
 				},
 				"flex": {
-					"positionType": 0,
-					"alignSelf": 0
+					"positionType": 0
 				}
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "55e6a1cf",
+			"themeProps": {},
+			"userProps": {
+				"left": 0,
+				"right": 0,
+				"bottom": 0,
+				"top": 0,
+				"width": null,
+				"height": null,
+				"imageFillType": "ASPECTFIT",
+				"image": "background.png",
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				}
+			},
+			"className": ".imageView",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"right": 0,
+				"bottom": 0,
+				"top": 0,
+				"image": "background.png",
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "ABSOLUTE"
+				},
+				"name": "imageview156",
+				"parent": "pgLogin",
+				"children": [],
+				"layout": {
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"top": 0,
+					"borderWidth": 0
+				},
+				"flex": {
+					"positionType": 1
+				},
+				"font": {},
+				"imageURL": "https://dispatcher.env.smartface.io/smartface14/self-service-new/ui-editor/img/background.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.36127051202435667"
 			}
 		},
 		{
@@ -543,28 +583,25 @@
 					"positionType": "RELATIVE"
 				},
 				"flex": {
-					"alignSelf": 0,
-					"direction": 0,
-					"alignContent": 4,
 					"alignItems": 4,
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"name": "usernameLayout",
 				"parent": "inputLayout",
 				"children": [
 					"textboxInfo",
 					"innerTextbox",
 					"textboxBottomLine"
 				],
+				"name": "usernameLayout",
 				"layout": {
-					"marginBottom": 5,
+					"marginBottom": 2.5,
 					"left": 0,
 					"top": 0,
-					"width": 250,
-					"height": 60,
+					"width": 125,
+					"height": 30,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -610,15 +647,14 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "textboxInfo",
 				"parent": "usernameLayout",
 				"children": [],
+				"name": "textboxInfo",
 				"layout": {
-					"height": 20,
+					"height": 10,
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
 					"positionType": 0
 				}
 			}
@@ -665,14 +701,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "innerTextbox",
 				"parent": "usernameLayout",
 				"children": [],
+				"name": "innerTextbox",
 				"layout": {
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": 1
 				}
@@ -714,17 +749,14 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"name": "textboxBottomLine",
 				"parent": "usernameLayout",
 				"children": [],
+				"name": "textboxBottomLine",
 				"layout": {
-					"height": 2,
+					"height": 1,
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
-					"direction": 0,
-					"alignContent": 4,
 					"alignItems": 4,
 					"justifyContent": 0,
 					"flexWrap": 0,
@@ -784,28 +816,25 @@
 					"positionType": "RELATIVE"
 				},
 				"flex": {
-					"alignSelf": 0,
-					"direction": 0,
-					"alignContent": 4,
 					"alignItems": 4,
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"name": "passwordLayout",
 				"parent": "inputLayout",
 				"children": [
-					"label144",
+					"label36",
 					"textbox1",
-					"flexlayout73"
+					"flexlayout31"
 				],
+				"name": "passwordLayout",
 				"layout": {
-					"marginTop": 5,
+					"marginTop": 2.5,
 					"left": 0,
 					"top": 0,
-					"width": 250,
-					"height": 60,
+					"width": 125,
+					"height": 30,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -851,15 +880,14 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "label144",
 				"parent": "passwordLayout",
 				"children": [],
+				"name": "label36",
 				"layout": {
-					"height": 20,
+					"height": 10,
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
 					"positionType": 0
 				}
 			}
@@ -906,14 +934,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "textbox1",
 				"parent": "passwordLayout",
 				"children": [],
+				"name": "textbox1",
 				"layout": {
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
 					"positionType": 0,
 					"flexGrow": 1
 				}
@@ -955,17 +982,14 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"name": "flexlayout73",
 				"parent": "passwordLayout",
 				"children": [],
+				"name": "flexlayout31",
 				"layout": {
-					"height": 2,
+					"height": 1,
 					"borderWidth": 0
 				},
 				"flex": {
-					"alignSelf": 0,
-					"direction": 0,
-					"alignContent": 4,
 					"alignItems": 4,
 					"justifyContent": 0,
 					"flexWrap": 0,

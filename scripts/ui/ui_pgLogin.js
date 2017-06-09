@@ -6,9 +6,12 @@
 
 const extend = require('js-base/core/extend');
 const Page = require('sf-core/ui/page');
+const ImageView = require('sf-core/ui/imageview');
+const ImageFillType = require('sf-core/ui/imagefilltype');
+const Image = require('sf-core/ui/image');
+const FlexLayout = require('sf-core/ui/flexlayout');
 const Label = require('sf-core/ui/label');
 const TextAlignment = require('sf-core/ui/textalignment');
-const FlexLayout = require('sf-core/ui/flexlayout');
 const Color = require('sf-core/ui/color');
 const Button = require('sf-core/ui/button');
 
@@ -25,6 +28,20 @@ const PgLogin_ = extend(Page)(
 			onLoad: onLoad.bind(this)
 		}, props || {}));
 
+		const imageview156Style = getCombinedStyle(".imageView", {
+			left: 0,
+			right: 0,
+			bottom: 0,
+			top: 0,
+			width: null,
+			height: null,
+			imageFillType: ImageFillType.ASPECTFIT,
+			image: Image.createFromFile("images://background.png"),
+			positionType: FlexLayout.PositionType.ABSOLUTE
+		});
+		var imageview156 = new ImageView(imageview156Style);
+		this.layout.addChild(imageview156);
+		
 		const appNameStyle = getCombinedStyle(".label .label-login.large .label-login", {
 			text: "SELF SERVICE",
 			textAlignment: TextAlignment.MIDCENTER,
@@ -69,19 +86,6 @@ const PgLogin_ = extend(Page)(
 		var bottomLayout = new FlexLayout(bottomLayoutStyle);
 		this.layout.addChild(bottomLayout);
 		
-		const usernameLayoutStyle = getCombinedStyle(".flexLayout", {
-			height: 60,
-			left: 0,
-			top: 0,
-			width: 250,
-			backgroundColor: Color.create(0, 255, 255, 255),
-			marginBottom: 5,
-			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var usernameLayout = new TextboxWithLine(usernameLayoutStyle, "pgLogin");
-		inputLayout.addChild(usernameLayout);
-		this.usernameLayout = usernameLayout;
-
 		const signinButtonStyle = getCombinedStyle(".button", {
 			text: "SIGN IN",
 			width: 250,
@@ -105,6 +109,19 @@ const PgLogin_ = extend(Page)(
 		var dontHaveAccount = new Label(dontHaveAccountStyle);
 		bottomLayout.addChild(dontHaveAccount);
 		
+		const usernameLayoutStyle = getCombinedStyle(".flexLayout", {
+			height: 60,
+			left: 0,
+			top: 0,
+			width: 250,
+			backgroundColor: Color.create(0, 255, 255, 255),
+			marginBottom: 5,
+			positionType: FlexLayout.PositionType.RELATIVE
+		});
+		var usernameLayout = new TextboxWithLine(usernameLayoutStyle, "pgLogin");
+		inputLayout.addChild(usernameLayout);
+		this.usernameLayout = usernameLayout;
+
 		const signupLabelStyle = getCombinedStyle(".label .label-login.small .label-login", {
 			text: "Sign Up",
 			width: null,
@@ -131,6 +148,7 @@ const PgLogin_ = extend(Page)(
 
 		//assign the children to page 
 		this.children = Object.assign({}, {
+			imageview156: imageview156,
 			appName: appName,
 			inputLayout: inputLayout,
 			buttonLayout: buttonLayout,
