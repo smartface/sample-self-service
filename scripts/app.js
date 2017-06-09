@@ -23,9 +23,11 @@ const Navigator = require("sf-core/ui/navigator");
 const stylerBuilder = require("library/styler-builder");
 const settings = require("./.settings.json");
 const PgConstants = require("pages/PgConstants");
+const Data = require('sf-core/data');
+
 
 stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
-stylerBuilder.setActiveTheme(settings.config.theme.currentTheme);
+stylerBuilder.setActiveTheme(Data.getStringVariable("theme") || settings.config.theme.currentTheme  );
 
 var navigator = new Navigator();
 navigator.add("pgLogin", require("./pages/login/pgLogin"));
@@ -64,10 +66,14 @@ tabBar.add("myCompany", new TabBarItem({
     icon: Image.createFromFile("images://icon_tab_mycompany.png"),
     route: require("./pages/tabs/myCompany/pgMyCompany")
 }));
+
+var settingsNavigator = new Navigator();
+settingsNavigator.add("index", require("./pages/tabs/settings/pgSettings"));
+settingsNavigator.go("index");
 tabBar.add("settings", new TabBarItem({
     title: "Settings",
     icon: Image.createFromFile("images://icon_tab_settings.png"),
-    route: require("./pages/tabs/settings/pgSettings")
+    route: settingsNavigator
 }));
 tabBar.setIndex("profile");
 
