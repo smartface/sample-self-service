@@ -20,8 +20,8 @@ const DotIndicator = extend(DotIndicatorDesign)(
 		
 		var _currentIndex = 0;
 		var _size = 3;
-		var _activeColor = Color.create("#1775D0");
-		var _inactiveColor = Color.create("#D8D8D8");
+		var _activeColor = null;
+		var _inactiveColor = null;
 		
 		Object.defineProperties(this, {
 			'currentIndex': {
@@ -76,11 +76,20 @@ const DotIndicator = extend(DotIndicatorDesign)(
 );
 
 function invalidate(indicator) {
+	var activeSettings = getCombinedStyle(".flexLayout-dotIndicator-item.active");
+	var inactiveSettings = getCombinedStyle(".flexLayout-dotIndicator-item.inactive");
+	if (indicator.activeColor !== null) {
+		activeSettings.backgroundColor = indicator.activeColor;
+	}
+	if (indicator.inactiveColor !== null) {
+		inactiveSettings.backgroundColor = indicator.inactiveColor;
+	}
+
 	Object.keys(indicator.children).forEach(function(childName) {
 		if (childName === (PREFIX + indicator.currentIndex)) { //active
-			indicator.children[childName].backgroundColor = indicator.activeColor;
+			Object.assign(indicator.children[childName], activeSettings);
 		} else { // inactive
-			indicator.children[childName].backgroundColor = indicator.inactiveColor;
+			Object.assign(indicator.children[childName], inactiveSettings);
 		}
 	});
 }
