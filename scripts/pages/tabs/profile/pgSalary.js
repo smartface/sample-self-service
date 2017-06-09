@@ -2,15 +2,13 @@ const extend = require('js-base/core/extend');
 const Page = require('sf-core/ui/page');
 const Color = require('sf-core/ui/color');
 const ListViewItem = require('sf-core/ui/listviewitem');
-const ItemPerformance = require('../../../components/ItemSalary');
+const MockService = require('../../../objects/MockService');
+const Salary = require('../../../objects/Salary');
+const ItemSalary = require('../../../components/ItemSalary');
 const PageDesign = require("../../../ui/ui_pgSalary");
 
-const TITLE = "SALARY";
-
 const Page_ = extend(PageDesign)(
-	// Constructor
 	function(_super){
-		// Initalizes super class for this page scope
 		_super(this);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
@@ -24,18 +22,24 @@ function onShow(parentOnShow) {
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
-    this.layoutHeaderBar.children.headerBarTitle.text = TITLE;
+	this.layoutHeaderBar.children.headerBarTitle.text = lang["pgSalary.pageTitle"];
     
+    this.salaryList = MockService.getSalaryList();
     this.listView.rowHeight = 80;
-    this.listView.itemCount = 100;
+    this.listView.itemCount = this.salaryList.length;
+
     this.listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
-        var item = new ItemPerformance();
-        item.id = 200;
-
-        myListViewItem.addChild(item);
+        var salaryItem = new ItemSalary();
+        salaryItem.id = 200;
+        myListViewItem.item = salaryItem;
+        myListViewItem.addChild(salaryItem);
         return myListViewItem;
     };
+    
+    this.listView.onRowBind = function(listViewItem, index) {
+            listViewItem.item.salary = this.salaryList[index];
+    }.bind(this);
 }
 
 module && (module.exports = Page_);

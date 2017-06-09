@@ -3,8 +3,8 @@ const Page = require('sf-core/ui/page');
 const Color = require('sf-core/ui/color');
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemEmploymentHistory = require('../../../components/ItemEmploymentHistory');
-
-const TITLE = "EMPLOYMENT HISTORY";
+const MockService = require('../../../objects/MockService');
+const Employment = require('../../../objects/Employment');
 
 var PageDesign = require("../../../ui/ui_pgEmploymentHistory");
 
@@ -24,18 +24,24 @@ function onShow(parentOnShow) {
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
-    this.layoutHeaderBar.children.headerBarTitle.text = TITLE;
+	this.layoutHeaderBar.children.headerBarTitle.text = lang["pgEmploymentHistory.pageTitle"];
     
+    this.employmentHistoryList = MockService.getEmploymentHistory();
+
     this.listView.rowHeight = 360;
-    this.listView.itemCount = 100;
+    this.listView.itemCount = this.employmentHistoryList.length;
     this.listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
-        var item = new ItemEmploymentHistory();
-        item.id = 200;
-
-        myListViewItem.addChild(item);
+        var employmentItem = new ItemEmploymentHistory();
+        employmentItem.id = 200;
+        myListViewItem.item = employmentItem;
+        myListViewItem.addChild(employmentItem);
         return myListViewItem;
     };
+    
+    this.listView.onRowBind = function(listViewItem, index) {
+            listViewItem.item.employment = this.employmentHistoryList[index];
+    }.bind(this);
 }
 
 module && (module.exports = Page_);

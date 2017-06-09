@@ -147,25 +147,27 @@ const PgOverview_ = extend(Page)(
 		var label536_2 = new Label(label536_2Style);
 		qualificationcontainer_1.addChild(label536_2);
 		
-		const label536Style = getCombinedStyle(".label .label-list-item-header", {
+		const qualificationTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
 			text: "QUALIFICATION",
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
-		var label536 = new Label(label536Style);
-		qualificationcontainer.addChild(label536);
-		
-		const label536_1Style = getCombinedStyle(".label .label-list-item-header", {
+		var qualificationTitle = new Label(qualificationTitleStyle);
+		qualificationcontainer.addChild(qualificationTitle);
+		this.qualificationTitle = qualificationTitle;
+
+		const salaryTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
 			text: "SALARY",
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
-		var label536_1 = new Label(label536_1Style);
-		salarycontainer.addChild(label536_1);
-		
-		const listitem1_2Style = getCombinedStyle(".flexLayout", {
+		var salaryTitle = new Label(salaryTitleStyle);
+		salarycontainer.addChild(salaryTitle);
+		this.salaryTitle = salaryTitle;
+
+		const containerBasicStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: 326,
@@ -175,9 +177,10 @@ const PgOverview_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
-		var listitem1_2 = new ListItem1(listitem1_2Style, "pgOverview");
-		salarycontainer.addChild(listitem1_2);
-		
+		var containerBasic = new ListItem1(containerBasicStyle, "pgOverview");
+		salarycontainer.addChild(containerBasic);
+		this.containerBasic = containerBasic;
+
 		const listitem1_3Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -191,7 +194,7 @@ const PgOverview_ = extend(Page)(
 		var listitem1_3 = new ListItem1(listitem1_3Style, "pgOverview");
 		qualificationcontainer_1.addChild(listitem1_3);
 		
-		const listItem1Style = getCombinedStyle(".flexLayout", {
+		const containerTypeStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: 326,
@@ -201,9 +204,10 @@ const PgOverview_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
-		var listItem1 = new ListItem1(listItem1Style, "pgOverview");
-		qualificationcontainer.addChild(listItem1);
-		
+		var containerType = new ListItem1(containerTypeStyle, "pgOverview");
+		qualificationcontainer.addChild(containerType);
+		this.containerType = containerType;
+
 		const horizontaldivider_2Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -252,7 +256,7 @@ const PgOverview_ = extend(Page)(
 		var horizontaldivider_3 = new HorizontalDivider(horizontaldivider_3Style, "pgOverview");
 		qualificationcontainer_1.addChild(horizontaldivider_3);
 		
-		const listitem1_1Style = getCombinedStyle(".flexLayout", {
+		const containerTitleStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: 326,
@@ -263,10 +267,11 @@ const PgOverview_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
-		var listitem1_1 = new ListItem1(listitem1_1Style, "pgOverview");
-		qualificationcontainer.addChild(listitem1_1);
-		
-		const listitem1_1_2Style = getCombinedStyle(".flexLayout", {
+		var containerTitle = new ListItem1(containerTitleStyle, "pgOverview");
+		qualificationcontainer.addChild(containerTitle);
+		this.containerTitle = containerTitle;
+
+		const containerVariableStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: 326,
@@ -277,9 +282,10 @@ const PgOverview_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
-		var listitem1_1_2 = new ListItem1(listitem1_1_2Style, "pgOverview");
-		salarycontainer.addChild(listitem1_1_2);
-		
+		var containerVariable = new ListItem1(containerVariableStyle, "pgOverview");
+		salarycontainer.addChild(containerVariable);
+		this.containerVariable = containerVariable;
+
 		const listitem1_1_3Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -324,7 +330,7 @@ const PgOverview_ = extend(Page)(
 		var horizontaldivider_1_1 = new HorizontalDivider(horizontaldivider_1_1Style, "pgOverview");
 		qualificationcontainer_1.addChild(horizontaldivider_1_1);
 		
-		const listitem1_1_1Style = getCombinedStyle(".flexLayout", {
+		const containerAwardedDateStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: 326,
@@ -335,9 +341,10 @@ const PgOverview_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
-		var listitem1_1_1 = new ListItem1(listitem1_1_1Style, "pgOverview");
-		qualificationcontainer.addChild(listitem1_1_1);
-		
+		var containerAwardedDate = new ListItem1(containerAwardedDateStyle, "pgOverview");
+		qualificationcontainer.addChild(containerAwardedDate);
+		this.containerAwardedDate = containerAwardedDate;
+
 		const performancecontainerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -375,20 +382,20 @@ const PgOverview_ = extend(Page)(
 		
 		//assign the children of qualificationcontainer
 		qualificationcontainer.children = Object.assign({}, {
-			label536: label536,
-			listItem1: listItem1,
+			qualificationTitle: qualificationTitle,
+			containerType: containerType,
 			horizontalDivider: horizontalDivider,
-			listitem1_1: listitem1_1,
+			containerTitle: containerTitle,
 			horizontaldivider_1: horizontaldivider_1,
-			listitem1_1_1: listitem1_1_1
+			containerAwardedDate: containerAwardedDate
 		});
 		
 		//assign the children of salarycontainer
 		salarycontainer.children = Object.assign({}, {
-			label536_1: label536_1,
-			listitem1_2: listitem1_2,
+			salaryTitle: salaryTitle,
+			containerBasic: containerBasic,
 			horizontaldivider_2: horizontaldivider_2,
-			listitem1_1_2: listitem1_1_2
+			containerVariable: containerVariable
 		});
 		
 		//assign the children of qualificationcontainer_1

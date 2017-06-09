@@ -33,7 +33,7 @@ SMF.i18n.defineLanguage('en', {
 	"pgEmploymentHistory.manager"		: "Manager",
 	"pgEmploymentHistory.grade"			: "Grade",
 	"pgEmploymentHistory.startDate"		: "Start Date",
-	"pgEmploymentHistory.EndDate"		: "End Date",
+	"pgEmploymentHistory.endDate"		: "End Date",
 	"pgPerformance.pageTitle"			: "PERFORMANCE",
 	"pgPerformance.reviewDate"			: "Review Date",
 	"pgPerformance.nextReview"			: "Next Review",
