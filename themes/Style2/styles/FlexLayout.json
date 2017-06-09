@@ -1,0 +1,67 @@
+{
+	".flexLayout": {
+		"height": 200,
+		"width": 200,
+		"touchEnabled": true,
+		"visible": true,
+		"backgroundColor": "#FFFFFF",
+		"alpha": 1,
+		"borderColor": "rgba(0,0,0,1)",
+		"borderWidth": 0,
+		"font": {},
+		"flexProps": {
+			"alignSelf": "AUTO",
+			"direction": "INHERIT",
+			"alignContent": "STRETCH",
+			"alignItems": "STRETCH",
+			"justifyContent": "FLEX_START",
+			"flexWrap": "NOWRAP",
+			"flexDirection": "COLUMN",
+			"positionType": "RELATIVE"
+		},
+		"&-small": {
+			"width": 100
+		},
+		"&-medium": {
+			"width": 250
+		},
+		"&-large": {
+			"width": 350
+		},
+		"&-warning": {
+			"backgroundColor": "#9F6000"
+		},
+		"&-error": {
+			"backgroundColor": "#D8000C"
+		},
+		"&-success": {
+			"backgroundColor": "#4F8A10"
+		},
+		"&-headerBar": {
+			"backgroundColor": "#7C73C0"
+		},
+		"&-dotIndicator": {
+			"&-main": {
+				"height": 10,
+				"width": 42,
+				"backgroundColor": "#00FFFFFF",
+				"flexProps": {
+					"flexDirection": "ROW"
+				}
+			},
+			"&-item": {
+				"width": 10,
+				"height": 10,
+				"borderRadius": 5,
+				"marginLeft": 2,
+				"marginRight": 2,
+				".inactive": {
+					"backgroundColor": "#FFFFFF"
+				},
+				".active": {
+					"backgroundColor": "#00B9FF"
+				}
+			}
+		}
+	}
+}

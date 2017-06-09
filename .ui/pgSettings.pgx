@@ -1,0 +1,193 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "2629bb93",
+			"themeProps": {},
+			"userProps": {},
+			"className": ".page",
+			"version": "6.3.0-rc.27",
+			"props": {
+				"backgroundColor": "#EEEEEE",
+				"orientation": "PORTRAIT",
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "FLEX_START"
+				},
+				"parent": null,
+				"children": [
+					"statusBar",
+					"headerBar",
+					"flexlayout84"
+				],
+				"name": "pgSettings",
+				"layout": {},
+				"flex": {
+					"alignItems": 4,
+					"flexDirection": 0,
+					"flexWrap": 0,
+					"justifyContent": 0
+				},
+				"font": {},
+				"width": 375,
+				"height": 603
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "cd22fc1d",
+			"themeProps": {},
+			"userProps": {},
+			"className": ".statusBar",
+			"props": {
+				"color": "#7C73C0",
+				"visible": true,
+				"parent": "pgSettings",
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"layout": {
+					"height": 20
+				},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"height": 20
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "3fea5af5",
+			"themeProps": {},
+			"userProps": {
+				"title": "newPage001"
+			},
+			"className": ".headerBar",
+			"props": {
+				"title": "newPage001",
+				"titleColor": "#FFFFFF",
+				"visible": true,
+				"backgroundColor": "#7C73C0",
+				"parent": "pgSettings",
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"layout": {
+					"height": 44
+				},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"height": 44
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "4ea442e6",
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"marginTop": 10
+			},
+			"props": {
+				"name": "flexlayout84",
+				"isReady": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"height": 200,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flex": {
+					"alignItems": 4,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0
+				},
+				"parent": "pgSettings",
+				"children": [
+					"flexlayout85"
+				],
+				"layout": {
+					"marginLeft": 10,
+					"marginTop": 10,
+					"marginRight": 10,
+					"height": 200,
+					"borderWidth": 0
+				},
+				"marginLeft": 10,
+				"marginRight": 10,
+				"marginTop": 10
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "d830154e",
+			"themeProps": {},
+			"userProps": {
+				"height": 40,
+				"width": null,
+				"flexProps": {
+					"flexDirection": "ROW",
+					"alignItems": "CENTER"
+				}
+			},
+			"props": {
+				"name": "flexlayout85",
+				"isReady": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"height": 40,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flex": {
+					"alignItems": 2,
+					"justifyContent": 0,
+					"flexWrap": 0,
+					"flexDirection": 2,
+					"positionType": 0
+				},
+				"parent": "flexlayout84",
+				"children": [],
+				"layout": {
+					"height": 40,
+					"borderWidth": 0
+				}
+			}
+		}
+	]
+}
