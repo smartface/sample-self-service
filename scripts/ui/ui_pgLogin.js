@@ -73,7 +73,8 @@ const PgLogin_ = extend(Page)(
 		});
 		var buttonLayout = new FlexLayout(buttonLayoutStyle);
 		this.layout.addChild(buttonLayout);
-		
+		this.buttonLayout = buttonLayout;
+
 		const bottomLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -86,19 +87,6 @@ const PgLogin_ = extend(Page)(
 		var bottomLayout = new FlexLayout(bottomLayoutStyle);
 		this.layout.addChild(bottomLayout);
 		
-		const signinButtonStyle = getCombinedStyle(".button", {
-			text: "SIGN IN",
-			width: 250,
-			height: 50,
-			borderRadius: 25,
-			borderColor: Color.create(255, 233, 233, 233),
-			borderWidth: 1,
-			backgroundColor: Color.create(0, 23, 117, 208)
-		});
-		var signinButton = new Button(signinButtonStyle);
-		buttonLayout.addChild(signinButton);
-		this.signinButton = signinButton;
-
 		const dontHaveAccountStyle = getCombinedStyle(".label .label-login.small .label-login.info", {
 			text: "Don't have an account yet?",
 			width: null,
@@ -121,6 +109,31 @@ const PgLogin_ = extend(Page)(
 		var usernameLayout = new TextboxWithLine(usernameLayoutStyle, "pgLogin");
 		inputLayout.addChild(usernameLayout);
 		this.usernameLayout = usernameLayout;
+
+		const loadingImageViewStyle = getCombinedStyle(".imageView", {
+			width: null,
+			height: 50,
+			left: 0,
+			right: 0,
+			imageFillType: ImageFillType.NORMAL,
+			positionType: FlexLayout.PositionType.ABSOLUTE
+		});
+		var loadingImageView = new ImageView(loadingImageViewStyle);
+		buttonLayout.addChild(loadingImageView);
+		this.loadingImageView = loadingImageView;
+
+		const signinButtonStyle = getCombinedStyle(".button", {
+			text: "SIGN IN",
+			width: 250,
+			height: 50,
+			borderRadius: 25,
+			borderColor: Color.create(255, 233, 233, 233),
+			borderWidth: 1,
+			backgroundColor: Color.create(0, 23, 117, 208)
+		});
+		var signinButton = new Button(signinButtonStyle);
+		buttonLayout.addChild(signinButton);
+		this.signinButton = signinButton;
 
 		const signupLabelStyle = getCombinedStyle(".label .label-login.small .label-login", {
 			text: "Sign Up",
@@ -163,6 +176,7 @@ const PgLogin_ = extend(Page)(
 		
 		//assign the children of buttonLayout
 		buttonLayout.children = Object.assign({}, {
+			loadingImageView: loadingImageView,
 			signinButton: signinButton
 		});
 		

@@ -387,6 +387,7 @@
 				"width": null,
 				"height": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 3,
 					"alignItems": "CENTER",
@@ -403,6 +404,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -416,6 +418,7 @@
 				},
 				"parent": "pgLogin",
 				"children": [
+					"loadingImageView",
 					"signinButton"
 				],
 				"name": "buttonLayout",
@@ -1007,6 +1010,54 @@
 					"flexDirection": 0,
 					"positionType": 0,
 					"flexGrow": null
+				},
+				"font": {}
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "1debca79",
+			"themeProps": {},
+			"userProps": {
+				"usePageVariable": true,
+				"width": null,
+				"height": 50,
+				"left": 0,
+				"right": 0,
+				"imageFillType": "NORMAL",
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				}
+			},
+			"className": ".imageView",
+			"props": {
+				"width": null,
+				"height": 50,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "NORMAL",
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"usePageVariable": true,
+				"left": 0,
+				"right": 0,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "ABSOLUTE"
+				},
+				"name": "loadingImageView",
+				"parent": "buttonLayout",
+				"children": [],
+				"layout": {
+					"right": 0,
+					"left": 0,
+					"height": 25,
+					"borderWidth": 0
+				},
+				"flex": {
+					"positionType": 1
 				},
 				"font": {}
 			}
