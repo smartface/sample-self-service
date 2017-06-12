@@ -71,6 +71,10 @@ SMF.i18n.defineLanguage('en', {
 	"pgNewLeaveRequest.selectTime"	: "Select Time",
 	"pgNewLeaveRequest.description"	: "Description",
 	"pgNewLeaveRequest.request"		: "Request",
-	
-
+	"pgLogin.inputs.username.info"  : "Username",
+	"pgLogin.inputs.username.hint"  : "",
+	"pgLogin.inputs.username.error" : "Username can not be empty.",
+	"pgLogin.inputs.password.info"  : "Password",
+	"pgLogin.inputs.password.hint"  : "",
+	"pgLogin.inputs.password.error" : "Password can not be empty.",
 });
