@@ -1,6 +1,7 @@
 const extend = require('js-base/core/extend');
 const ListViewItem = require('sf-core/ui/listviewitem');
 const Router = require("sf-core/router");
+const MockService = require('../../../objects/MockService');
 
 const PageDesign = require("../../../ui/ui_pgHierarchy");
 const ItemUser = require('../../../components/ItemUser');
@@ -23,15 +24,21 @@ function onLoad(parentOnLoad) {
     parentOnLoad();
     this.layoutHeaderBar.children.headerBarTitle.text = lang["pgHierarchy.pageTitle"];
     
+    this.users = MockService.getUsers();
     this.listView.rowHeight = 75;
-    this.listView.itemCount = 100;
+    this.listView.itemCount = this.users.length;
     this.listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemUser();
         item.id = 200;
+        myListViewItem.item = item;
         myListViewItem.addChild(item);
         return myListViewItem;
     };
+    this.listView.onRowBind = function(listViewItem, index) {
+        listViewItem.item.user = this.users[index];
+    }.bind(this);
+    
     this.listView.onRowSelected = function() {
         Router.go("tabs/profile/profileDetail");
     }

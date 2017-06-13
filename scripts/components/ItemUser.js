@@ -11,9 +11,25 @@ const ItemUser = extend(ItemUserDesign)(
 		delete ItemUserDesign.defaults.width
 		_super(this, props || ItemUserDesign.defaults );
 		this.pageName = pageName;
+		
+		var user;
+		Object.defineProperty(this, 'user', {
+			get: function() {
+				return user;
+			},
+			set: function(value) {
+				user = value;
+				invalidate(this);
+			}
+		})
 	}
-	
 );
+
+function invalidate(item) {
+	item.userImage.image = item.user.image;
+	item.userName.text = item.user.name;
+	item.userPosition.text = item.user.position;
+}
 
 module && (module.exports = ItemUser);
 

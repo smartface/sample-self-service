@@ -1,6 +1,7 @@
 const Salary = require("./Salary")
 const Employment = require("./Employment")
 const moment = require("moment");
+const Image = require("sf-core/ui/image");
 
 const MockService = {}
 
@@ -64,5 +65,35 @@ MockService.getPerformanceReviews = function()
     }
     return result;
 };
+
+MockService.getUsers = function() {
+    var usernames = ["Adam Stewart", "Anna Wolker", "Anthony Bell", "Bath County", "Belly Edwards", "Brett Morris"];
+    var positions = [
+        "Manager of Sales and Marketing",
+        "Sales Responsible",
+        "Director of Sales and Marketing",
+        "Junior Developer",
+        "Sales Responsible",
+        "Director of Human Resources"
+    ];
+    var images = [
+        Image.createFromFile("images://avatar1.png"),
+        Image.createFromFile("images://avatar2.png"),
+        Image.createFromFile("images://myavatar.png"),
+        Image.createFromFile("images://avatar3.png"),
+        Image.createFromFile("images://avatar4.png"),
+        Image.createFromFile("images://avatar5.png")
+    ];
+    
+    var users = [];
+    for (var i = 0; i < usernames.length; ++i) {
+        users.push({
+            name: usernames[i],
+            position: positions[i],
+            image: images[i]
+        });
+    }
+    return users;
+}
 
 module.exports = MockService;
