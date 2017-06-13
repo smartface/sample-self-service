@@ -1,5 +1,7 @@
 const Salary = require("./Salary")
 const Employment = require("./Employment")
+const moment = require("moment");
+
 const MockService = {}
 
 MockService.getSalaryList = function ()
@@ -20,12 +22,14 @@ MockService.getSalaryList = function ()
 MockService.getEmploymentHistory = function ()
 {
     var list = [];
+    var companies = ["COMPANY 1", "COMPANY 2", "COMPANY 3"];
     var jobTitleList = ['Director of Sales & Marketing', "VP of Sales", "Project Coordinator"];
     var people = ["Adam Stewart", "Anna Wolker", "Bath County"];
     var startDate = ["03.02.2016", "07.08.2010", "05.06.2004"];
     var endDate = ["03.02.2017", "07.08.2015", "05.06.2009"];
     for (var i = 0; i<jobTitleList.length;i++ ) {
         var employment = new Employment();
+        employment.companyName = companies[i];
         employment.jobTitle = jobTitleList[i];
         employment.payroll = (i+1)*1000;
         employment.manager = 2017;
@@ -36,5 +40,29 @@ MockService.getEmploymentHistory = function ()
     }
     return list;
 }
+
+MockService.getPerformanceReviews = function()
+{
+    var dates = [];
+    for (var i = 0; i < 6; ++i) {
+        dates[i] = {
+            reviewDate: moment().subtract(i+1, 'month').format("DD.MM.YYYY"),
+            nextReview: moment().subtract(i, 'month').format("DD.MM.YYYY")
+        };
+    }
+    var ratings = ["4,5", "4", "4,7", "3,6", "3,8", "4,0"];
+    var overallScores = ["", "", "", "", "", ""];
+    
+    var result = [];
+    for (var i = 0; i < ratings.length; ++i) {
+        result.push({
+            reviewDate: dates[i].reviewDate,
+            nextReview: dates[i].nextReview,
+            rating: ratings[i],
+            overallScore: overallScores[i]
+        });
+    }
+    return result;
+};
 
 module.exports = MockService;

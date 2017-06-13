@@ -38,6 +38,7 @@ const ItemEmploymentHistory_ = extend(ItemEmploymentHistory)(
 
 function invalidate(item)
 {
+	item.headertitle.text = "  " + item.employment.companyName;
 	item.row1.value.text = item.employment.jobTitle;
 	item.row2.value.text = item.employment.payroll;
 	item.row3.value.text = item.employment.manager;

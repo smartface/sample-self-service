@@ -40,7 +40,7 @@ function onLoad(parentOnLoad) {
     };
     
     this.listView.onRowBind = function(listViewItem, index) {
-            listViewItem.item.employment = this.employmentHistoryList[index];
+        listViewItem.item.employment = this.employmentHistoryList[index];
     }.bind(this);
 }
 
