@@ -16,6 +16,7 @@ const ImageView = require('sf-core/ui/imageview');
 const Image = require('sf-core/ui/image');
 const ImageFillType = require('sf-core/ui/imagefilltype');
 
+const TextboxWithLine = require("../components/TextboxWithLine");
 const PickerContainer = require("../components/PickerContainer");
 const ItemFile = require("../components/ItemFile");
 
@@ -42,15 +43,15 @@ const PgNewExpense_ = extend(Page)(
 		this.layout.addChild(mainContainer);
 		this.mainContainer = mainContainer;
 
-		const flexlayout190Style = getCombinedStyle(".flexLayout", {
+		const detailsContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			marginLeft: 10,
 			marginRight: 10,
 			marginBottom: 10,
 			marginTop: 10
 		});
-		var flexlayout190 = new FlexLayout(flexlayout190Style);
-		mainContainer.addChild(flexlayout190);
+		var detailsContainer = new FlexLayout(detailsContainerStyle);
+		mainContainer.addChild(detailsContainer);
 		
 		const flexlayout66Style = getCombinedStyle(".flexLayout", {
 			width: null,
@@ -82,17 +83,42 @@ const PgNewExpense_ = extend(Page)(
 		var flexlayout66_1 = new FlexLayout(flexlayout66_1Style);
 		mainContainer.addChild(flexlayout66_1);
 		
-		const button1Style = getCombinedStyle(".button", {
+		const requestButtonStyle = getCombinedStyle(".button", {
 			height: 60,
 			top: 10,
 			width: null,
-			text: "SUBMIT",
+			text: "REQUEST",
 			marginLeft: 10,
 			marginRight: 10,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
 		});
-		var button1 = new Button(button1Style);
-		mainContainer.addChild(button1);
+		var requestButton = new Button(requestButtonStyle);
+		mainContainer.addChild(requestButton);
+		this.requestButton = requestButton;
+
+		const detailsTitleStyle = getCombinedStyle(".label .label-list-item-header", {
+			height: 25,
+			width: null,
+			left: null,
+			text: "DETAILS",
+			top: null,
+			marginLeft: 10,
+			marginTop: 5,
+			font: Font.create("Arial", 16, Font.NORMAL)
+		});
+		var detailsTitle = new Label(detailsTitleStyle);
+		detailsContainer.addChild(detailsTitle);
+		this.detailsTitle = detailsTitle;
+
+		const flexlayout76_1Style = getCombinedStyle(".flexLayout", {
+			height: 30,
+			width: null,
+			marginBottom: 5,
+			flexDirection: FlexLayout.FlexDirection.ROW,
+			alignItems: FlexLayout.AlignItems.CENTER
+		});
+		var flexlayout76_1 = new FlexLayout(flexlayout76_1Style);
+		flexlayout66_1.addChild(flexlayout76_1);
 		
 		const flexlayout76Style = getCombinedStyle(".flexLayout", {
 			height: 30,
@@ -104,29 +130,33 @@ const PgNewExpense_ = extend(Page)(
 		var flexlayout76 = new FlexLayout(flexlayout76Style);
 		flexlayout66.addChild(flexlayout76);
 		
-		const label139Style = getCombinedStyle(".label .label-list-item-header", {
-			height: 25,
-			width: null,
+		const titleInputStyle = getCombinedStyle(".flexLayout", {
+			height: 50,
 			left: null,
-			text: "DETAILS",
 			top: null,
-			marginLeft: 10,
-			marginTop: 5,
-			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var label139 = new Label(label139Style);
-		flexlayout190.addChild(label139);
-		
-		const flexlayout76_1Style = getCombinedStyle(".flexLayout", {
-			height: 30,
 			width: null,
-			marginBottom: 5,
-			flexDirection: FlexLayout.FlexDirection.ROW,
-			alignItems: FlexLayout.AlignItems.CENTER
+			backgroundColor: Color.create(0, 255, 255, 255),
+			visible: true,
+			positionType: FlexLayout.PositionType.RELATIVE
 		});
-		var flexlayout76_1 = new FlexLayout(flexlayout76_1Style);
-		flexlayout66_1.addChild(flexlayout76_1);
-		
+		var titleInput = new TextboxWithLine(titleInputStyle, "pgNewExpense");
+		detailsContainer.addChild(titleInput);
+		this.titleInput = titleInput;
+
+		const descriptionStyle = getCombinedStyle(".textBox", {
+			width: null,
+			height: null,
+			borderWidth: 0.5,
+			backgroundColor: Color.create(255, 255, 255, 255),
+			borderColor: Color.create(255, 203, 204, 208),
+			text: null,
+			textColor: Color.create(71, 0, 0, 0),
+			flexGrow: 1
+		});
+		var description = new TextBox(descriptionStyle);
+		flexlayout66.addChild(description);
+		this.description = description;
+
 		const flexlayout437Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -139,41 +169,21 @@ const PgNewExpense_ = extend(Page)(
 		var flexlayout437 = new FlexLayout(flexlayout437Style);
 		flexlayout66_1.addChild(flexlayout437);
 		
-		const pickerContainerStyle = getCombinedStyle(".flexLayout", {
+		const expenseInputStyle = getCombinedStyle(".flexLayout", {
+			height: 50,
 			left: 0,
 			top: 0,
 			width: null,
-			height: 45,
+			backgroundColor: Color.create(0, 255, 255, 255),
+			paddingLeft: null,
+			paddingRight: null,
 			marginTop: 5,
 			positionType: FlexLayout.PositionType.RELATIVE
 		});
-		var pickerContainer = new PickerContainer(pickerContainerStyle, "pgNewExpense");
-		flexlayout190.addChild(pickerContainer);
-		
-		const textbox1Style = getCombinedStyle(".textBox", {
-			width: null,
-			height: null,
-			borderWidth: 0.5,
-			backgroundColor: Color.create(255, 255, 255, 255),
-			borderColor: Color.create(255, 203, 204, 208),
-			text: "Description",
-			textColor: Color.create(71, 0, 0, 0),
-			flexGrow: 1
-		});
-		var textbox1 = new TextBox(textbox1Style);
-		flexlayout66.addChild(textbox1);
-		
-		const pickercontainer_1Style = getCombinedStyle(".flexLayout", {
-			left: 0,
-			top: 0,
-			width: null,
-			height: 45,
-			marginTop: 5,
-			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var pickercontainer_1 = new PickerContainer(pickercontainer_1Style, "pgNewExpense");
-		flexlayout190.addChild(pickercontainer_1);
-		
+		var expenseInput = new TextboxWithLine(expenseInputStyle, "pgNewExpense");
+		detailsContainer.addChild(expenseInput);
+		this.expenseInput = expenseInput;
+
 		const flexlayout191Style = getCombinedStyle(".flexLayout", {
 			height: 50,
 			width: null,
@@ -182,19 +192,20 @@ const PgNewExpense_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW
 		});
 		var flexlayout191 = new FlexLayout(flexlayout191Style);
-		flexlayout190.addChild(flexlayout191);
+		detailsContainer.addChild(flexlayout191);
 		
-		const label85Style = getCombinedStyle(".label .label-list-item-header", {
+		const typePickerStyle = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
 			width: null,
-			height: null,
-			text: "NOTE",
-			flexGrow: 1,
-			alignSelf: FlexLayout.AlignSelf.STRETCH,
-			font: Font.create("Arial", 16, Font.NORMAL)
+			height: 45,
+			positionType: FlexLayout.PositionType.RELATIVE,
+			flexGrow: 1
 		});
-		var label85 = new Label(label85Style);
-		flexlayout76.addChild(label85);
-		
+		var typePicker = new PickerContainer(typePickerStyle, "pgNewExpense");
+		flexlayout191.addChild(typePicker);
+		this.typePicker = typePicker;
+
 		const itemFileStyle = getCombinedStyle(".flexLayout", {
 			width: 65,
 			height: 65,
@@ -211,7 +222,19 @@ const PgNewExpense_ = extend(Page)(
 		var itemFile = new ItemFile(itemFileStyle, "pgNewExpense");
 		flexlayout437.addChild(itemFile);
 		
-		const label85_1Style = getCombinedStyle(".label .label-list-item-header", {
+		const noteTitleStyle = getCombinedStyle(".label .label-list-item-header", {
+			width: null,
+			height: null,
+			text: "NOTE",
+			flexGrow: 1,
+			alignSelf: FlexLayout.AlignSelf.STRETCH,
+			font: Font.create("Arial", 16, Font.NORMAL)
+		});
+		var noteTitle = new Label(noteTitleStyle);
+		flexlayout76.addChild(noteTitle);
+		this.noteTitle = noteTitle;
+
+		const fileAttachmentTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			width: null,
 			height: null,
 			text: "FILE ATTACHMENT",
@@ -219,20 +242,23 @@ const PgNewExpense_ = extend(Page)(
 			alignSelf: FlexLayout.AlignSelf.STRETCH,
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
-		var label85_1 = new Label(label85_1Style);
-		flexlayout76_1.addChild(label85_1);
-		
-		const flexlayout192Style = getCombinedStyle(".flexLayout", {
+		var fileAttachmentTitle = new Label(fileAttachmentTitleStyle);
+		flexlayout76_1.addChild(fileAttachmentTitle);
+		this.fileAttachmentTitle = fileAttachmentTitle;
+
+		const expenseDatePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: null,
 			height: 45,
+			marginLeft: 20,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: 1
 		});
-		var flexlayout192 = new PickerContainer(flexlayout192Style, "pgNewExpense");
-		flexlayout191.addChild(flexlayout192);
-		
+		var expenseDatePicker = new PickerContainer(expenseDatePickerStyle, "pgNewExpense");
+		flexlayout191.addChild(expenseDatePicker);
+		this.expenseDatePicker = expenseDatePicker;
+
 		const imageview17Style = getCombinedStyle(".imageView", {
 			width: 14,
 			height: 25,
@@ -242,18 +268,6 @@ const PgNewExpense_ = extend(Page)(
 		var imageview17 = new ImageView(imageview17Style);
 		flexlayout76.addChild(imageview17);
 		
-		const flexlayout192_1Style = getCombinedStyle(".flexLayout", {
-			left: 0,
-			top: 0,
-			width: null,
-			height: 45,
-			marginLeft: 20,
-			positionType: FlexLayout.PositionType.RELATIVE,
-			flexGrow: 1
-		});
-		var flexlayout192_1 = new PickerContainer(flexlayout192_1Style, "pgNewExpense");
-		flexlayout191.addChild(flexlayout192_1);
-		
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			mainContainer: mainContainer
@@ -261,24 +275,24 @@ const PgNewExpense_ = extend(Page)(
 		
 		//assign the children of mainContainer
 		mainContainer.children = Object.assign({}, {
-			flexlayout190: flexlayout190,
+			detailsContainer: detailsContainer,
 			flexlayout66: flexlayout66,
 			flexlayout66_1: flexlayout66_1,
-			button1: button1
+			requestButton: requestButton
 		});
 		
-		//assign the children of flexlayout190
-		flexlayout190.children = Object.assign({}, {
-			label139: label139,
-			pickerContainer: pickerContainer,
-			pickercontainer_1: pickercontainer_1,
+		//assign the children of detailsContainer
+		detailsContainer.children = Object.assign({}, {
+			detailsTitle: detailsTitle,
+			titleInput: titleInput,
+			expenseInput: expenseInput,
 			flexlayout191: flexlayout191
 		});
 		
 		//assign the children of flexlayout66
 		flexlayout66.children = Object.assign({}, {
 			flexlayout76: flexlayout76,
-			textbox1: textbox1
+			description: description
 		});
 		
 		//assign the children of flexlayout66_1
@@ -287,15 +301,15 @@ const PgNewExpense_ = extend(Page)(
 			flexlayout437: flexlayout437
 		});
 		
-		//assign the children of flexlayout76
-		flexlayout76.children = Object.assign({}, {
-			label85: label85,
-			imageview17: imageview17
-		});
-		
 		//assign the children of flexlayout76_1
 		flexlayout76_1.children = Object.assign({}, {
-			label85_1: label85_1
+			fileAttachmentTitle: fileAttachmentTitle
+		});
+		
+		//assign the children of flexlayout76
+		flexlayout76.children = Object.assign({}, {
+			noteTitle: noteTitle,
+			imageview17: imageview17
 		});
 		
 		//assign the children of flexlayout437
@@ -305,8 +319,8 @@ const PgNewExpense_ = extend(Page)(
 		
 		//assign the children of flexlayout191
 		flexlayout191.children = Object.assign({}, {
-			flexlayout192: flexlayout192,
-			flexlayout192_1: flexlayout192_1
+			typePicker: typePicker,
+			expenseDatePicker: expenseDatePicker
 		});
 		
 	});
@@ -325,7 +339,7 @@ function onShow() {
 
   //HeaderBar props
   const headerBarStyle = getCombinedStyle(".headerBar", {
-		title: "EXPENSE ENTRY"
+		title: null
 	});
 	
 	Object.assign(this.headerBar,	headerBarStyle);

@@ -72,13 +72,25 @@ SMF.i18n.defineLanguage('en', {
 	"pgNewLeaveRequest.selectTime"	: "Select Time",
 	"pgNewLeaveRequest.description"	: "Description",
 	"pgNewLeaveRequest.request"		: "Request",
+	
+	"pgNewExpense.pageTitle"			: "EXPENSE ENTRY",
+	"pgNewExpense.details"				: "DETAILS",
+	"pgNewExpense.details.title"		: "Title",
+	"pgNewExpense.details.expense"		: "Expense",
+	"pgNewExpense.details.type"			: "Type",
+	"pgNewExpense.details.expenseDate"	: "Expense Date",
+	"pgNewExpense.note"					: "NOTE",
+	"pgNewExpense.note.description" 	: "Description...",
+	"pgNewExpense.fileAttachment"		: "FILE ATTACHMENT",
+	"pgNewExpense.request"				: "REQUEST",
+	
 	"pgLogin.inputs.username.info"  : "Username",
 	"pgLogin.inputs.username.hint"  : "",
 	"pgLogin.inputs.username.error" : "Username can not be empty.",
 	"pgLogin.inputs.password.info"  : "Password",
 	"pgLogin.inputs.password.hint"  : "",
 	"pgLogin.inputs.password.error" : "Password can not be empty.",
-	"pgLogin.signinButton" : "SIGN IN",
+	"pgLogin.signin" : "SIGN IN",
 	"pgLogin.dontHaveAccount": "Don't have an account yet?",
-	"pgLogin.signupButton": "Sign Up"
+	"pgLogin.signup": "Sign Up"
 });
