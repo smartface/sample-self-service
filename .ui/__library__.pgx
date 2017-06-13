@@ -2934,7 +2934,7 @@
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 4,
@@ -3087,6 +3087,7 @@
 				"marginLeft": 15,
 				"image": "avatar1.png",
 				"id": 1023,
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
@@ -3104,8 +3105,7 @@
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207",
-				"usePageVariable": true
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3255,6 +3255,7 @@
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"textAlignment": "BOTTOMLEFT",
 				"id": 10222,
+				"usePageVariable": true,
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -3274,8 +3275,7 @@
 				},
 				"flex": {
 					"positionType": 0
-				},
-				"usePageVariable": true
+				}
 			}
 		},
 		{
@@ -3312,6 +3312,7 @@
 				"textColor": "#9B9B9B",
 				"textAlignment": "MIDLEFT",
 				"id": 10221,
+				"usePageVariable": true,
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -3331,8 +3332,7 @@
 				},
 				"flex": {
 					"positionType": 0
-				},
-				"usePageVariable": true
+				}
 			}
 		},
 		{
@@ -3341,7 +3341,7 @@
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"left": 16,
@@ -3445,7 +3445,7 @@
 				},
 				"parent": "itemExpense",
 				"children": [
-					"imageview42",
+					"expenseStatusImage",
 					"flexlayout32_1",
 					"flexlayout32",
 					"flexlayout33"
@@ -3481,7 +3481,8 @@
 				"height": 30,
 				"image": "icon_accepted.png",
 				"imageFillType": "ASPECTFIT",
-				"id": 106
+				"id": 106,
+				"usePageVariable": true
 			},
 			"className": ".imageView",
 			"props": {
@@ -3502,7 +3503,7 @@
 				},
 				"parent": "flexlayout334",
 				"children": [],
-				"name": "imageview42",
+				"name": "expenseStatusImage",
 				"layout": {
 					"width": 15,
 					"height": 15,
@@ -3512,7 +3513,8 @@
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/icon_accepted.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/icon_accepted.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207",
+				"usePageVariable": true
 			}
 		},
 		{
@@ -3557,8 +3559,8 @@
 				},
 				"parent": "flexlayout334",
 				"children": [
-					"label57",
-					"label57_1"
+					"expenseId",
+					"expenseDate"
 				],
 				"name": "flexlayout32",
 				"layout": {
@@ -3654,6 +3656,7 @@
 				"textAlignment": "BOTTOMRIGHT",
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"id": 1042,
+				"usePageVariable": true,
 				"font": {
 					"size": 14
 				},
@@ -3689,14 +3692,15 @@
 				},
 				"parent": "flexlayout32",
 				"children": [],
-				"name": "label57",
+				"name": "expenseId",
 				"layout": {
 					"borderWidth": 0
 				},
 				"flex": {
 					"positionType": 0,
 					"flexGrow": 1
-				}
+				},
+				"usePageVariable": true
 			}
 		},
 		{
@@ -3714,6 +3718,7 @@
 				"text": " 07.05.2017",
 				"textAlignment": "MIDRIGHT",
 				"id": 1041,
+				"usePageVariable": true,
 				"font": {
 					"size": 14
 				},
@@ -3749,14 +3754,15 @@
 				},
 				"parent": "flexlayout32",
 				"children": [],
-				"name": "label57_1",
+				"name": "expenseDate",
 				"layout": {
 					"borderWidth": 0
 				},
 				"flex": {
 					"positionType": 0,
 					"flexGrow": 1
-				}
+				},
+				"usePageVariable": true
 			}
 		},
 		{
@@ -3801,8 +3807,8 @@
 				},
 				"parent": "flexlayout334",
 				"children": [
-					"label57_2",
-					"label57_1_1"
+					"expenseAmount",
+					"expenseType"
 				],
 				"name": "flexlayout32_1",
 				"layout": {
@@ -3839,6 +3845,7 @@
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"textAlignment": "BOTTOMLEFT",
 				"id": 1052,
+				"usePageVariable": true,
 				"font": {
 					"size": 22
 				},
@@ -3874,14 +3881,15 @@
 				},
 				"parent": "flexlayout32_1",
 				"children": [],
-				"name": "label57_2",
+				"name": "expenseAmount",
 				"layout": {
 					"borderWidth": 0
 				},
 				"flex": {
 					"positionType": 0,
 					"flexGrow": 1
-				}
+				},
+				"usePageVariable": true
 			}
 		},
 		{
@@ -3898,6 +3906,7 @@
 				"height": null,
 				"text": "Travel",
 				"id": 1051,
+				"usePageVariable": true,
 				"font": {
 					"size": 14
 				},
@@ -3933,14 +3942,15 @@
 				},
 				"parent": "flexlayout32_1",
 				"children": [],
-				"name": "label57_1_1",
+				"name": "expenseType",
 				"layout": {
 					"borderWidth": 0
 				},
 				"flex": {
 					"positionType": 0,
 					"flexGrow": 1
-				}
+				},
+				"usePageVariable": true
 			}
 		},
 		{

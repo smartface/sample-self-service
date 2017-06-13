@@ -96,4 +96,22 @@ MockService.getUsers = function() {
     return users;
 }
 
+MockService.getExpenses = function() {
+    var types = ["Travel", "Taxi", "Food", "Taxi", "Travel", "Taxi"];
+    var amounts = ["$230", "$20", "$88,50", "$20", "$450", "$520"];
+    var ids = ["998230084535", "998230084536", "998230084537", "998230084538", "998230084539", "998230084540"];
+    var dates = ["11.05.2017", "10.05.2017", "07.05.2017", "07.05.2017", "06.05.2017", "04.05.2017"];
+
+    var result = [];
+    for (var i = 0; i < types.length; ++i) {
+        result.push({
+            type: types[i],
+            amount: amounts[i],
+            id: ids[i],
+            date: dates[i]
+        });
+    }
+    return result;
+}
+
 module.exports = MockService;

@@ -4,6 +4,7 @@ const PageDesign = require("../../../ui/ui_pgExpanseManagement");
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemExpense = require('../../../components/ItemExpense');
 const Router = require("sf-core/router");
+const MockService = require("../../../objects/MockService");
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -23,16 +24,20 @@ function onLoad(parentOnLoad) {
     parentOnLoad();
     this.layoutHeaderBar.children.headerBarTitle.text = lang["pgExpenseManagement.pageTitle"];
     
+    this.expenseList = MockService.getExpenses();
     this.listView.rowHeight = 75;
-    this.listView.itemCount = 100;
+    this.listView.itemCount = this.expenseList.length;
     this.listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemExpense();
         item.id = 200;
-
+        myListViewItem.item = item;
         myListViewItem.addChild(item);
         return myListViewItem;
     };
+    this.listView.onRowBind = function(listViewItem, index) {
+        listViewItem.item.expense = this.expenseList[index];
+    }.bind(this);
     this.listView.onRowSelected = function() {
         Router.go("tabs/hr/newExpense");
     };
