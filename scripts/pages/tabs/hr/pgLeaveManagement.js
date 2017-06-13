@@ -1,11 +1,7 @@
 const extend = require('js-base/core/extend');
-const Page = require('sf-core/ui/page');
-const Color = require('sf-core/ui/color');
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemLeaveManagement = require('../../../components/ItemLeaveManagement');
 var PageDesign = require("../../../ui/ui_pgLeaveManagement");
-
-const TITLE = "LEAVE MANAGEMENT";
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -17,14 +13,13 @@ const Page_ = extend(PageDesign)(
     }
 );
 
-
 function onShow(parentOnShow) {
     parentOnShow();
 }
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
-    this.layoutHeaderBar.children.headerBarTitle.text = TITLE;
+    this.layoutHeaderBar.children.headerBarTitle.text = lang["pgLeaveManagement.pageTitle"];
 
     this.listView.rowHeight = 125;
     this.listView.itemCount = 100;
@@ -37,7 +32,11 @@ function onLoad(parentOnLoad) {
         return myListViewItem;
     };
     
-    this.topTabBar.items = ["Approved", "Waiting", "Rejected"];
+    this.topTabBar.items = [
+        lang["pgLeaveManagement.approved"],
+        lang["pgLeaveManagement.waiting"],
+        lang["pgLeaveManagement.rejected"]
+    ];
 }
 
 module && (module.exports = Page_);

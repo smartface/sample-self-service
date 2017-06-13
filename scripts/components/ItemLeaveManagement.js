@@ -12,6 +12,12 @@ const ItemLeaveManagement_ = extend(ItemLeaveManagement)(
 		delete ItemLeaveManagement.defaults.width 
 		_super(this, props || ItemLeaveManagement.defaults );
 		this.pageName = pageName;
+		
+		this.startDate.title.text = lang["pgLeaveManagement.startDate"];
+		this.endDate.title.text = lang["pgLeaveManagement.endDate"];
+		this.approveLabel.text = lang["pgLeaveManagement.approve"];
+		this.editLabel.text = lang["pgLeaveManagement.edit"];
+		this.deleteLabel.text = lang["pgLeaveManagement.delete"];
 	}
 	
 );
