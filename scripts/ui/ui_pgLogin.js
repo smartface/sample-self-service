@@ -96,7 +96,8 @@ const PgLogin_ = extend(Page)(
 		});
 		var dontHaveAccount = new Label(dontHaveAccountStyle);
 		bottomLayout.addChild(dontHaveAccount);
-		
+		this.dontHaveAccount = dontHaveAccount;
+
 		const usernameLayoutStyle = getCombinedStyle(".flexLayout", {
 			height: 60,
 			left: 0,

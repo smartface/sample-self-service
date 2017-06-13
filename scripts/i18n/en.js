@@ -77,4 +77,7 @@ SMF.i18n.defineLanguage('en', {
 	"pgLogin.inputs.password.info"  : "Password",
 	"pgLogin.inputs.password.hint"  : "",
 	"pgLogin.inputs.password.error" : "Password can not be empty.",
+	"pgLogin.signinButton" : "SIGN IN",
+	"pgLogin.dontHaveAccount": "Don't have an account yet?",
+	"pgLogin.signupButton": "Sign Up"
 });

@@ -30,6 +30,9 @@ const Page_ = extend(PageDesign)(
 function initTexts(page) {
 	page.usernameLayout.textboxInfo.text = lang["pgLogin.inputs.username.info"];
 	page.passwordLayout.textboxInfo.text = lang["pgLogin.inputs.password.info"];
+	page.dontHaveAccount.text = lang["pgLogin.dontHaveAccount"];
+	page.signupLabel.text = lang["pgLogin.signup"];
+	page.signinButton.text = lang["pgLogin.signin"];
 }
 
 function signin(page) {
