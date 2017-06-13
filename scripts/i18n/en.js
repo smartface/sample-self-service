@@ -39,7 +39,7 @@ SMF.i18n.defineLanguage('en', {
 	"pgPerformance.nextReview"			: "Next Review",
 	"pgPerformance.rating"				: "Rating",
 	"pgPerformance.overallScore"		: "Overall Score",
-	"pgHierarchy.pageTitle"				: "Hierarchy",
+	"pgHierarchy.pageTitle"				: "HIERARCHY",
 	"pgProfileDetail.pageTitle"			: "PROFILE",
 	"pgProfileDetail.information"		: "INFORMATION",
 	"pgProfileDetail.company"			: "Company",

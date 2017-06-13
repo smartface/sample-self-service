@@ -5,8 +5,6 @@ const Router = require("sf-core/router");
 const PageDesign = require("../../../ui/ui_pgHierarchy");
 const ItemUser = require('../../../components/ItemUser');
 
-const TITLE = "HIERARCHY";
-
 const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super){
@@ -23,7 +21,7 @@ function onShow(parentOnShow) {
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
-    this.layoutHeaderBar.children.headerBarTitle.text = TITLE;
+    this.layoutHeaderBar.children.headerBarTitle.text = lang["pgHierarchy.pageTitle"];
     
     this.listView.rowHeight = 75;
     this.listView.itemCount = 100;
@@ -31,7 +29,6 @@ function onLoad(parentOnLoad) {
         var myListViewItem = new ListViewItem();
         var item = new ItemUser();
         item.id = 200;
-
         myListViewItem.addChild(item);
         return myListViewItem;
     };
