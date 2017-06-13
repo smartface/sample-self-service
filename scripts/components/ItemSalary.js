@@ -31,8 +31,7 @@ const ItemSalary = extend(ItemSalaryDesign)(
 	}
 );
 
-function invalidate(item)
-{
+function invalidate(item) {
 	item.month.text 					= item.salary.month;
 	item.year.text						= item.year.text;
 	item.containerBasic.value.text		= item.salary.basic;

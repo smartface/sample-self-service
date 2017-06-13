@@ -32,13 +32,13 @@ function onLoad(parentOnLoad) {
         var myListViewItem = new ListViewItem();
         var salaryItem = new ItemSalary();
         salaryItem.id = 200;
-        myListViewItem.item = salaryItem;
         myListViewItem.addChild(salaryItem);
         return myListViewItem;
     };
     
     this.listView.onRowBind = function(listViewItem, index) {
-        listViewItem.item.salary = this.salaryList[index];
+        var salaryItem = listViewItem.findChildById(200);
+        salaryItem.salary = this.salaryList[index];
     }.bind(this);
 }
 

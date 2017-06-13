@@ -19,11 +19,14 @@ const HRIndex = extend(Page)(
             typeof _superOnLoad === "function" && _superOnLoad();
             const pageStyle = getCombinedStyle(".page");
 	        Object.assign(this.layout, pageStyle);
+	        
+	        initSwipeView(this);
+            initDotIndicator(this);
         }.bind(this);
         
         var _superOnShow = this.onShow;
-        this.onShow = function() {
-            typeof _superOnShow === "function" && _superOnShow();
+        this.onShow = function(user) {
+            typeof _superOnShow === "function" && _superOnShow(user);
             this.headerBar.visible = false;
             
             if (statusbarStyle.color) {
@@ -33,9 +36,8 @@ const HRIndex = extend(Page)(
                 this.statusBar.ios.style = statusbarStyle.style;
             }
         }.bind(this);
-
-        initSwipeView(this);
-        initDotIndicator(this);
+        
+        
     }
 );
 
