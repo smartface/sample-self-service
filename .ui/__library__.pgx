@@ -4793,7 +4793,7 @@
 				"imageFillType": "ASPECTFIT",
 				"borderRadius": 30,
 				"borderWidth": 1,
-				"borderColor": "rgba( 151, 151, 151, 1 )"
+				"borderColor": "rgba( 23, 117, 208, 1 )"
 			},
 			"className": ".imageView",
 			"props": {
@@ -4804,7 +4804,7 @@
 				"imageFillType": "ASPECTFIT",
 				"backgroundColor": "rgba(0,0,0,0)",
 				"alpha": 1,
-				"borderColor": "rgba( 151, 151, 151, 1 )",
+				"borderColor": "rgba( 23, 117, 208, 1 )",
 				"borderWidth": 1,
 				"marginLeft": 75,
 				"image": "myavatar.png",
@@ -4902,7 +4902,7 @@
 			"userProps": {
 				"width": null,
 				"height": 30,
-				"textColor": "rgba( 0, 0, 0, 1 )",
+				"textColor": "rgba( 23, 117, 208, 1 )",
 				"text": "Anthony Bell",
 				"font": {
 					"size": 18
@@ -4920,7 +4920,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "rgba( 0, 0, 0, 1 )",
+				"textColor": "rgba( 23, 117, 208, 1 )",
 				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 18,
@@ -4956,7 +4956,8 @@
 			"userProps": {
 				"width": null,
 				"height": 30,
-				"text": "Director of Sales and Marketing"
+				"text": "Director of Sales and Marketing",
+				"textColor": "rgba( 23, 117, 208, 0.5 )"
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
@@ -4970,7 +4971,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "#9B9B9B",
+				"textColor": "rgba( 23, 117, 208, 0.5 )",
 				"textAlignment": "MIDLEFT",
 				"font": {
 					"size": 14,
@@ -6149,6 +6150,7 @@
 				"borderWidth": 0,
 				"textColor": "#00B9FF",
 				"textAlignment": "MIDLEFT",
+				"usePageVariable": true,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -6168,8 +6170,7 @@
 				},
 				"flex": {
 					"positionType": 0
-				},
-				"usePageVariable": true
+				}
 			}
 		},
 		{
