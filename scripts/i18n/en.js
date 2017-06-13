@@ -64,6 +64,7 @@ SMF.i18n.defineLanguage('en', {
 	"pgLeaveManagement.approve"			: "Approve",
 	"pgLeaveManagement.edit"			: "Edit",
 	"pgLeaveManagement.delete"			: "Delete",
+	"pgExpenseManagement.pageTitle"		: "EXPENSE MANAGEMENT",
 	"pgNewLeaveRequest.workInformation"	: "WORK INFORMATION",
 	"pgNewLeaveRequest.leaveType"	: "Leave Type",
 	"pgNewLeaveRequest.timeType"	: "Time Type",

@@ -5,8 +5,6 @@ const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemExpense = require('../../../components/ItemExpense');
 const Router = require("sf-core/router");
 
-const TITLE = "EXPENSE MANAGEMENT";
-
 const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super){
@@ -23,7 +21,7 @@ function onShow(parentOnShow) {
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
-    this.layoutHeaderBar.children.headerBarTitle.text = TITLE;
+    this.layoutHeaderBar.children.headerBarTitle.text = lang["pgExpenseManagement.pageTitle"];
     
     this.listView.rowHeight = 75;
     this.listView.itemCount = 100;
