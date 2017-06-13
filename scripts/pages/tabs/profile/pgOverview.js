@@ -10,12 +10,13 @@ const Page_ = extend(PageDesign)(
 		// Initalizes super class for this page scope
 		_super(this, params);
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-});
+	}
+);
 
 function onLoad(superOnLoad) {
 	superOnLoad();
-	this.layoutHeaderBar.children.headerBarTitle.text = lang["pgOverview.pageTitle"];
 	wrapContentIntoScroll.call(this);
+	this.layoutHeaderBar.children.headerBarTitle.text = lang["pgOverview.pageTitle"];
 	this.qualificationTitle.text = lang["pgOverview.qualification"];
 	this.containerType.title.text = lang["pgOverview.type"];
 	this.containerType.value.text = "Diploma"

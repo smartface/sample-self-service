@@ -8,7 +8,7 @@ const ItemSalary = require('../../../components/ItemSalary');
 const PageDesign = require("../../../ui/ui_pgSalary");
 
 const Page_ = extend(PageDesign)(
-	function(_super){
+	function(_super) {
 		_super(this);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
@@ -38,7 +38,7 @@ function onLoad(parentOnLoad) {
     };
     
     this.listView.onRowBind = function(listViewItem, index) {
-            listViewItem.item.salary = this.salaryList[index];
+        listViewItem.item.salary = this.salaryList[index];
     }.bind(this);
 }
 

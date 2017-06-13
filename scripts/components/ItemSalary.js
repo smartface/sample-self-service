@@ -9,8 +9,8 @@ const Salary = require("../objects/Salary")
 const ItemSalary = extend(ItemSalaryDesign)(
 	//constructor
 	function(_super, props, pageName){
-		delete ItemSalaryDesign.defaults.width 
-		_super(this, props || ItemSalaryDesign.defaults );
+		delete ItemSalaryDesign.defaults.width;
+		_super(this, props || ItemSalaryDesign.defaults);
 		this.pageName = pageName;
 		this.containerBasic.title.text = lang["pgSalary.basic"];
 		this.containerProposal.title.text = lang["pgSalary.proposalReason"];
@@ -28,9 +28,7 @@ const ItemSalary = extend(ItemSalaryDesign)(
 				}
 			}
 		});
-		
 	}
-	
 );
 
 function invalidate(item)
@@ -39,7 +37,6 @@ function invalidate(item)
 	item.year.text						= item.year.text;
 	item.containerBasic.value.text		= item.salary.basic;
 	item.containerProposal.value.text	= item.salary.proposalReason;
-
 }
 
 module && (module.exports = ItemSalary);

@@ -183,7 +183,7 @@
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 12,
@@ -2334,7 +2334,7 @@
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"left": 17,
@@ -2369,13 +2369,13 @@
 				},
 				"parent": "__library__",
 				"children": [
-					"flexlayout309",
+					"reviewDate",
 					"dividerperf",
-					"flexlayout309_1",
+					"nextReview",
 					"dividerperf_1",
-					"flexlayout309_1_1",
+					"rating",
 					"dividerperf_1_1",
-					"flexlayout309_1_1_1"
+					"overallScore"
 				],
 				"name": "itemPerformance",
 				"layout": {
@@ -4177,7 +4177,7 @@
 				"alpha": 0.69,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "#F22613",
+				"textColor": "#FFFFFF",
 				"textAlignment": "MIDLEFT",
 				"usePageVariable": true,
 				"font": {
@@ -6186,8 +6186,8 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label1305",
-					"label1306"
+					"label109",
+					"label110"
 				],
 				"name": "row1",
 				"layout": {
@@ -6216,7 +6216,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -6230,7 +6230,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -6259,10 +6259,10 @@
 				},
 				"parent": "row1",
 				"children": [],
-				"name": "label1305",
+				"name": "label109",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -6324,7 +6324,7 @@
 				},
 				"parent": "row1",
 				"children": [],
-				"name": "label1306",
+				"name": "label110",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -6388,7 +6388,7 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"flexlayout880"
+					"flexlayout85"
 				],
 				"name": "firstDivider",
 				"layout": {
@@ -6454,7 +6454,7 @@
 				},
 				"parent": "firstDivider",
 				"children": [],
-				"name": "flexlayout880",
+				"name": "flexlayout85",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -6520,8 +6520,8 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label1307",
-					"label1308"
+					"label111",
+					"label112"
 				],
 				"name": "row2",
 				"layout": {
@@ -6550,7 +6550,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -6564,7 +6564,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -6593,10 +6593,10 @@
 				},
 				"parent": "row2",
 				"children": [],
-				"name": "label1307",
+				"name": "label111",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -6658,7 +6658,7 @@
 				},
 				"parent": "row2",
 				"children": [],
-				"name": "label1308",
+				"name": "label112",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -6722,7 +6722,7 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"flexlayout881"
+					"flexlayout86"
 				],
 				"name": "secondDivider",
 				"layout": {
@@ -6788,7 +6788,7 @@
 				},
 				"parent": "secondDivider",
 				"children": [],
-				"name": "flexlayout881",
+				"name": "flexlayout86",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -6854,8 +6854,8 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label1309",
-					"label1310"
+					"label113",
+					"label114"
 				],
 				"name": "row3",
 				"layout": {
@@ -6884,7 +6884,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -6898,7 +6898,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -6927,10 +6927,10 @@
 				},
 				"parent": "row3",
 				"children": [],
-				"name": "label1309",
+				"name": "label113",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -6992,7 +6992,7 @@
 				},
 				"parent": "row3",
 				"children": [],
-				"name": "label1310",
+				"name": "label114",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -7056,7 +7056,7 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"flexlayout882"
+					"flexlayout87"
 				],
 				"name": "thirdDivider",
 				"layout": {
@@ -7122,7 +7122,7 @@
 				},
 				"parent": "thirdDivider",
 				"children": [],
-				"name": "flexlayout882",
+				"name": "flexlayout87",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -7188,8 +7188,8 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label1311",
-					"label1312"
+					"label115",
+					"label116"
 				],
 				"name": "row4",
 				"layout": {
@@ -7218,7 +7218,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -7232,7 +7232,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -7261,10 +7261,10 @@
 				},
 				"parent": "row4",
 				"children": [],
-				"name": "label1311",
+				"name": "label115",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -7326,7 +7326,7 @@
 				},
 				"parent": "row4",
 				"children": [],
-				"name": "label1312",
+				"name": "label116",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -7390,7 +7390,7 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"flexlayout883"
+					"flexlayout88"
 				],
 				"name": "fourthDivider",
 				"layout": {
@@ -7456,7 +7456,7 @@
 				},
 				"parent": "fourthDivider",
 				"children": [],
-				"name": "flexlayout883",
+				"name": "flexlayout88",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -7522,8 +7522,8 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label1313",
-					"label1314"
+					"label117",
+					"label118"
 				],
 				"name": "row5",
 				"layout": {
@@ -7552,7 +7552,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -7566,7 +7566,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -7595,10 +7595,10 @@
 				},
 				"parent": "row5",
 				"children": [],
-				"name": "label1313",
+				"name": "label117",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -7660,7 +7660,7 @@
 				},
 				"parent": "row5",
 				"children": [],
-				"name": "label1314",
+				"name": "label118",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -7724,7 +7724,7 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"flexlayout884"
+					"flexlayout89"
 				],
 				"name": "fifthDivider",
 				"layout": {
@@ -7790,7 +7790,7 @@
 				},
 				"parent": "fifthDivider",
 				"children": [],
-				"name": "flexlayout884",
+				"name": "flexlayout89",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -7857,8 +7857,8 @@
 				},
 				"parent": "itemEmploymentHistory",
 				"children": [
-					"label1315",
-					"label1316"
+					"label119",
+					"label120"
 				],
 				"name": "row6",
 				"layout": {
@@ -7887,7 +7887,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -7901,7 +7901,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -7930,10 +7930,10 @@
 				},
 				"parent": "row6",
 				"children": [],
-				"name": "label1315",
+				"name": "label119",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -7995,7 +7995,7 @@
 				},
 				"parent": "row6",
 				"children": [],
-				"name": "label1316",
+				"name": "label120",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -8067,8 +8067,8 @@
 				},
 				"parent": "flexlayout2",
 				"children": [
-					"label1317",
-					"label1318"
+					"label121",
+					"label122"
 				],
 				"name": "flexlayout3",
 				"layout": {
@@ -8091,7 +8091,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -8105,7 +8105,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -8134,10 +8134,10 @@
 				},
 				"parent": "flexlayout3",
 				"children": [],
-				"name": "label1317",
+				"name": "label121",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -8199,7 +8199,7 @@
 				},
 				"parent": "flexlayout3",
 				"children": [],
-				"name": "label1318",
+				"name": "label122",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -8271,8 +8271,8 @@
 				},
 				"parent": "flexlayout2",
 				"children": [
-					"label1319",
-					"label1320"
+					"label123",
+					"label124"
 				],
 				"name": "flexlayout3_1",
 				"layout": {
@@ -8295,7 +8295,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -8309,7 +8309,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -8338,10 +8338,10 @@
 				},
 				"parent": "flexlayout3_1",
 				"children": [],
-				"name": "label1319",
+				"name": "label123",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -8403,7 +8403,7 @@
 				},
 				"parent": "flexlayout3_1",
 				"children": [],
-				"name": "label1320",
+				"name": "label124",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -8621,7 +8621,7 @@
 				},
 				"parent": "itemLeaveManagement",
 				"children": [
-					"flexlayout885"
+					"flexlayout90"
 				],
 				"name": "divider",
 				"layout": {
@@ -8677,7 +8677,7 @@
 				},
 				"parent": "divider",
 				"children": [],
-				"name": "flexlayout885",
+				"name": "flexlayout90",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -8757,7 +8757,7 @@
 				},
 				"parent": "itemSalary",
 				"children": [
-					"flexlayout886"
+					"flexlayout91"
 				],
 				"name": "flexlayout116",
 				"layout": {
@@ -8813,7 +8813,7 @@
 				},
 				"parent": "flexlayout116",
 				"children": [],
-				"name": "flexlayout886",
+				"name": "flexlayout91",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -8897,8 +8897,8 @@
 				},
 				"parent": "salaryContainer",
 				"children": [
-					"label1321",
-					"label1322"
+					"label125",
+					"label126"
 				],
 				"name": "containerBasic",
 				"layout": {
@@ -8920,7 +8920,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -8934,7 +8934,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -8963,10 +8963,10 @@
 				},
 				"parent": "containerBasic",
 				"children": [],
-				"name": "label1321",
+				"name": "label125",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -9028,7 +9028,7 @@
 				},
 				"parent": "containerBasic",
 				"children": [],
-				"name": "label1322",
+				"name": "label126",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -9106,8 +9106,8 @@
 				},
 				"parent": "salaryContainer",
 				"children": [
-					"label1323",
-					"label1324"
+					"label127",
+					"label128"
 				],
 				"name": "containerProposal",
 				"layout": {
@@ -9129,7 +9129,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -9143,7 +9143,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -9172,10 +9172,10 @@
 				},
 				"parent": "containerProposal",
 				"children": [],
-				"name": "label1323",
+				"name": "label127",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -9237,7 +9237,7 @@
 				},
 				"parent": "containerProposal",
 				"children": [],
-				"name": "label1324",
+				"name": "label128",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -9264,6 +9264,7 @@
 				"height": 45,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"id": 107,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -9308,17 +9309,18 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"label1325",
-					"label1326"
+					"label129",
+					"label130"
 				],
-				"name": "flexlayout309",
+				"name": "reviewDate",
 				"layout": {
 					"left": 0,
 					"top": 0,
 					"height": 22.5,
 					"borderWidth": 0
 				},
-				"font": {}
+				"font": {},
+				"usePageVariable": true
 			}
 		},
 		{
@@ -9332,7 +9334,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -9346,7 +9348,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -9373,12 +9375,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"parent": "flexlayout309",
+				"parent": "reviewDate",
 				"children": [],
-				"name": "label1325",
+				"name": "label129",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -9438,9 +9440,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
-				"parent": "flexlayout309",
+				"parent": "reviewDate",
 				"children": [],
-				"name": "label1326",
+				"name": "label130",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -9512,7 +9514,7 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"flexlayout887"
+					"flexlayout92"
 				],
 				"name": "dividerperf",
 				"layout": {
@@ -9568,7 +9570,7 @@
 				},
 				"parent": "dividerperf",
 				"children": [],
-				"name": "flexlayout887",
+				"name": "flexlayout92",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -9601,6 +9603,7 @@
 				"height": 45,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"id": 105,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -9645,17 +9648,18 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"label1327",
-					"label1328"
+					"label131",
+					"label132"
 				],
-				"name": "flexlayout309_1",
+				"name": "nextReview",
 				"layout": {
 					"left": 0,
 					"top": 0,
 					"height": 22.5,
 					"borderWidth": 0
 				},
-				"font": {}
+				"font": {},
+				"usePageVariable": true
 			}
 		},
 		{
@@ -9669,7 +9673,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -9683,7 +9687,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -9710,12 +9714,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"parent": "flexlayout309_1",
+				"parent": "nextReview",
 				"children": [],
-				"name": "label1327",
+				"name": "label131",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -9775,9 +9779,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
-				"parent": "flexlayout309_1",
+				"parent": "nextReview",
 				"children": [],
-				"name": "label1328",
+				"name": "label132",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -9849,7 +9853,7 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"flexlayout888"
+					"flexlayout93"
 				],
 				"name": "dividerperf_1",
 				"layout": {
@@ -9905,7 +9909,7 @@
 				},
 				"parent": "dividerperf_1",
 				"children": [],
-				"name": "flexlayout888",
+				"name": "flexlayout93",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -9938,6 +9942,7 @@
 				"height": 45,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"id": 103,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -9982,17 +9987,18 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"label1329",
-					"label1330"
+					"label133",
+					"label134"
 				],
-				"name": "flexlayout309_1_1",
+				"name": "rating",
 				"layout": {
 					"left": 0,
 					"top": 0,
 					"height": 22.5,
 					"borderWidth": 0
 				},
-				"font": {}
+				"font": {},
+				"usePageVariable": true
 			}
 		},
 		{
@@ -10006,7 +10012,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -10020,7 +10026,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -10047,12 +10053,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"parent": "flexlayout309_1_1",
+				"parent": "rating",
 				"children": [],
-				"name": "label1329",
+				"name": "label133",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -10112,9 +10118,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
-				"parent": "flexlayout309_1_1",
+				"parent": "rating",
 				"children": [],
-				"name": "label1330",
+				"name": "label134",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -10186,7 +10192,7 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"flexlayout889"
+					"flexlayout94"
 				],
 				"name": "dividerperf_1_1",
 				"layout": {
@@ -10242,7 +10248,7 @@
 				},
 				"parent": "dividerperf_1_1",
 				"children": [],
-				"name": "flexlayout889",
+				"name": "flexlayout94",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -10275,6 +10281,7 @@
 				"height": 45,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"id": 101,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -10319,17 +10326,18 @@
 				},
 				"parent": "itemPerformance",
 				"children": [
-					"label1331",
-					"label1332"
+					"label135",
+					"label136"
 				],
-				"name": "flexlayout309_1_1_1",
+				"name": "overallScore",
 				"layout": {
 					"left": 0,
 					"top": 0,
 					"height": 22.5,
 					"borderWidth": 0
 				},
-				"font": {}
+				"font": {},
+				"usePageVariable": true
 			}
 		},
 		{
@@ -10343,7 +10351,7 @@
 				"Highlights": "ListItemTitle"
 			},
 			"userProps": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
@@ -10357,7 +10365,7 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"width": 140,
+				"width": 120,
 				"height": 30,
 				"touchEnabled": true,
 				"text": "Text",
@@ -10384,12 +10392,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"parent": "flexlayout309_1_1_1",
+				"parent": "overallScore",
 				"children": [],
-				"name": "label1331",
+				"name": "label135",
 				"layout": {
 					"marginLeft": 5,
-					"width": 70,
+					"width": 60,
 					"height": 15,
 					"borderWidth": 0
 				},
@@ -10449,9 +10457,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
-				"parent": "flexlayout309_1_1_1",
+				"parent": "overallScore",
 				"children": [],
-				"name": "label1332",
+				"name": "label136",
 				"layout": {
 					"marginRight": 5,
 					"height": 15,
@@ -10521,7 +10529,7 @@
 				},
 				"parent": "pickerContainer",
 				"children": [
-					"flexlayout890"
+					"flexlayout95"
 				],
 				"name": "flexlayout430",
 				"layout": {
@@ -10577,7 +10585,7 @@
 				},
 				"parent": "flexlayout430",
 				"children": [],
-				"name": "flexlayout890",
+				"name": "flexlayout95",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -10657,7 +10665,7 @@
 				},
 				"parent": "itemUser",
 				"children": [
-					"flexlayout891"
+					"flexlayout96"
 				],
 				"name": "flexlayout161",
 				"layout": {
@@ -10713,7 +10721,7 @@
 				},
 				"parent": "flexlayout161",
 				"children": [],
-				"name": "flexlayout891",
+				"name": "flexlayout96",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -10793,7 +10801,7 @@
 				},
 				"parent": "itemExpense",
 				"children": [
-					"flexlayout892"
+					"flexlayout97"
 				],
 				"name": "flexlayout336",
 				"layout": {
@@ -10849,7 +10857,7 @@
 				},
 				"parent": "flexlayout336",
 				"children": [],
-				"name": "flexlayout892",
+				"name": "flexlayout97",
 				"layout": {
 					"marginLeft": 5,
 					"marginRight": 5,
@@ -10924,9 +10932,9 @@
 				},
 				"parent": "hierarchyController",
 				"children": [
-					"imageview133",
-					"flexlayout893",
-					"flexlayout894"
+					"imageview19",
+					"flexlayout98",
+					"flexlayout99"
 				],
 				"name": "hc_level1",
 				"layout": {
@@ -10977,7 +10985,7 @@
 				},
 				"parent": "hc_level1",
 				"children": [],
-				"name": "imageview133",
+				"name": "imageview19",
 				"layout": {
 					"marginLeft": 7.5,
 					"width": 30,
@@ -11032,10 +11040,10 @@
 				},
 				"parent": "hc_level1",
 				"children": [
-					"label1333",
-					"label1334"
+					"label137",
+					"label138"
 				],
-				"name": "flexlayout893",
+				"name": "flexlayout98",
 				"layout": {
 					"height": 30,
 					"paddingLeft": 5,
@@ -11096,9 +11104,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout893",
+				"parent": "flexlayout98",
 				"children": [],
-				"name": "label1333",
+				"name": "label137",
 				"layout": {
 					"height": 15,
 					"borderWidth": 0
@@ -11147,9 +11155,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout893",
+				"parent": "flexlayout98",
 				"children": [],
-				"name": "label1334",
+				"name": "label138",
 				"layout": {
 					"height": 15,
 					"borderWidth": 0
@@ -11201,7 +11209,7 @@
 				},
 				"parent": "hc_level1",
 				"children": [],
-				"name": "flexlayout894",
+				"name": "flexlayout99",
 				"layout": {
 					"bottom": 0,
 					"left": 22.5,
@@ -11277,11 +11285,11 @@
 				},
 				"parent": "hierarchyController",
 				"children": [
-					"imageview134",
-					"flexlayout895",
-					"flexlayout896",
-					"flexlayout897",
-					"flexlayout898"
+					"imageview20",
+					"flexlayout100",
+					"flexlayout101",
+					"flexlayout102",
+					"flexlayout103"
 				],
 				"name": "hc_level2",
 				"layout": {
@@ -11332,7 +11340,7 @@
 				},
 				"parent": "hc_level2",
 				"children": [],
-				"name": "imageview134",
+				"name": "imageview20",
 				"layout": {
 					"marginLeft": 37.5,
 					"width": 30,
@@ -11387,10 +11395,10 @@
 				},
 				"parent": "hc_level2",
 				"children": [
-					"label1335",
-					"label1336"
+					"label139",
+					"label140"
 				],
-				"name": "flexlayout895",
+				"name": "flexlayout100",
 				"layout": {
 					"height": 30,
 					"paddingLeft": 5,
@@ -11451,9 +11459,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout895",
+				"parent": "flexlayout100",
 				"children": [],
-				"name": "label1335",
+				"name": "label139",
 				"layout": {
 					"height": 15,
 					"borderWidth": 0
@@ -11502,9 +11510,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout895",
+				"parent": "flexlayout100",
 				"children": [],
-				"name": "label1336",
+				"name": "label140",
 				"layout": {
 					"height": 15,
 					"borderWidth": 0
@@ -11556,7 +11564,7 @@
 				},
 				"parent": "hc_level2",
 				"children": [],
-				"name": "flexlayout896",
+				"name": "flexlayout101",
 				"layout": {
 					"left": 22.5,
 					"top": 0,
@@ -11617,7 +11625,7 @@
 				},
 				"parent": "hc_level2",
 				"children": [],
-				"name": "flexlayout897",
+				"name": "flexlayout102",
 				"layout": {
 					"left": 22.5,
 					"top": 18.5,
@@ -11678,7 +11686,7 @@
 				},
 				"parent": "hc_level2",
 				"children": [],
-				"name": "flexlayout898",
+				"name": "flexlayout103",
 				"layout": {
 					"bottom": 0,
 					"left": 52.5,
@@ -11754,11 +11762,11 @@
 				},
 				"parent": "hierarchyController",
 				"children": [
-					"imageview135",
-					"flexlayout899",
-					"flexlayout900",
-					"flexlayout901",
-					"flexlayout902"
+					"imageview21",
+					"flexlayout104",
+					"flexlayout105",
+					"flexlayout106",
+					"flexlayout107"
 				],
 				"name": "hc_level3",
 				"layout": {
@@ -11809,7 +11817,7 @@
 				},
 				"parent": "hc_level3",
 				"children": [],
-				"name": "imageview135",
+				"name": "imageview21",
 				"layout": {
 					"marginLeft": 67.5,
 					"width": 30,
@@ -11864,10 +11872,10 @@
 				},
 				"parent": "hc_level3",
 				"children": [
-					"label1337",
-					"label1338"
+					"label141",
+					"label142"
 				],
-				"name": "flexlayout899",
+				"name": "flexlayout104",
 				"layout": {
 					"height": 30,
 					"paddingLeft": 5,
@@ -11928,9 +11936,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout899",
+				"parent": "flexlayout104",
 				"children": [],
-				"name": "label1337",
+				"name": "label141",
 				"layout": {
 					"height": 15,
 					"borderWidth": 0
@@ -11979,9 +11987,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout899",
+				"parent": "flexlayout104",
 				"children": [],
-				"name": "label1338",
+				"name": "label142",
 				"layout": {
 					"height": 15,
 					"borderWidth": 0
@@ -12033,7 +12041,7 @@
 				},
 				"parent": "hc_level3",
 				"children": [],
-				"name": "flexlayout900",
+				"name": "flexlayout105",
 				"layout": {
 					"left": 52.5,
 					"top": 0,
@@ -12092,7 +12100,7 @@
 				},
 				"parent": "hc_level3",
 				"children": [],
-				"name": "flexlayout901",
+				"name": "flexlayout106",
 				"layout": {
 					"left": 52.5,
 					"width": 15,
@@ -12152,7 +12160,7 @@
 				},
 				"parent": "hc_level3",
 				"children": [],
-				"name": "flexlayout902",
+				"name": "flexlayout107",
 				"layout": {
 					"bottom": 0,
 					"left": 82.5,
@@ -12228,10 +12236,10 @@
 				},
 				"parent": "hierarchyController",
 				"children": [
-					"imageview136",
-					"flexlayout903",
-					"flexlayout904",
-					"flexlayout905"
+					"imageview22",
+					"flexlayout108",
+					"flexlayout109",
+					"flexlayout110"
 				],
 				"name": "hc_level3_1",
 				"layout": {
@@ -12282,7 +12290,7 @@
 				},
 				"parent": "hc_level3_1",
 				"children": [],
-				"name": "imageview136",
+				"name": "imageview22",
 				"layout": {
 					"marginLeft": 67.5,
 					"width": 30,
@@ -12337,10 +12345,10 @@
 				},
 				"parent": "hc_level3_1",
 				"children": [
-					"label1339",
-					"label1340"
+					"label143",
+					"label144"
 				],
-				"name": "flexlayout903",
+				"name": "flexlayout108",
 				"layout": {
 					"height": 30,
 					"paddingLeft": 5,
@@ -12401,9 +12409,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout903",
+				"parent": "flexlayout108",
 				"children": [],
-				"name": "label1339",
+				"name": "label143",
 				"layout": {
 					"height": 15,
 					"borderWidth": 0
@@ -12452,9 +12460,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout903",
+				"parent": "flexlayout108",
 				"children": [],
-				"name": "label1340",
+				"name": "label144",
 				"layout": {
 					"height": 15,
 					"borderWidth": 0
@@ -12506,7 +12514,7 @@
 				},
 				"parent": "hc_level3_1",
 				"children": [],
-				"name": "flexlayout904",
+				"name": "flexlayout109",
 				"layout": {
 					"left": 82.5,
 					"top": 0,
@@ -12567,7 +12575,7 @@
 				},
 				"parent": "hc_level3_1",
 				"children": [],
-				"name": "flexlayout905",
+				"name": "flexlayout110",
 				"layout": {
 					"bottom": 0,
 					"left": 82.5,

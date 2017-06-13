@@ -44,7 +44,6 @@ function invalidate(item)
 	item.row4.value.text = item.employment.grade;
 	item.row5.value.text = item.employment.startDate;
 	item.row6.value.text = item.employment.endDate;
-
 }
 
 module && (module.exports = ItemEmploymentHistory_);

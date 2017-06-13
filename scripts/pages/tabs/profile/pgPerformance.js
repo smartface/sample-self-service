@@ -6,8 +6,6 @@ var PageDesign = require("../../../ui/ui_pgPerformance");
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemSalary = require('../../../components/ItemPerformance');
 
-const TITLE = "PERFORMANCE";
-
 const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super){
@@ -18,14 +16,13 @@ const Page_ = extend(PageDesign)(
     }
 );
 
-
 function onShow(parentOnShow) {
     parentOnShow();
 }
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
-    this.layoutHeaderBar.children.headerBarTitle.text = TITLE;
+    this.layoutHeaderBar.children.headerBarTitle.text = lang["pgPerformance.pageTitle"];
 
     this.listView.rowHeight = 195;
     this.listView.itemCount = 100;
