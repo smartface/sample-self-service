@@ -1,6 +1,9 @@
 const extend = require("js-base/core/extend");
 const Color = require("sf-core/ui/color");
+const HeaderBarItem = require("sf-core/ui/headerbaritem");
+const Image = require("sf-core/ui/image");
 const PageDesign = require("../../../ui/ui_pgNewExpense");
+const Router = require("sf-core/router");
 const ScrollView = require("sf-core/ui/scrollview");
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 
@@ -39,10 +42,24 @@ function initTexts() {
 	this.requestButton.text = lang["pgNewExpense.request"];
 }
 
+function initHeaderBarButtons() {
+	var leftItem = new HeaderBarItem({
+		color: Color.WHITE,
+		title: "",
+		image: Image.createFromFile("images://arrow_left.png"),
+		onPress: function() {
+			Router.goBack();
+		}
+	});
+	this.headerBar.setLeftItem(leftItem);
+}
+
 function onLoad(superOnLoad) {
 	typeof superOnLoad === "function" && superOnLoad();
 	wrapContentIntoScroll.call(this);
+	
 	initTexts.call(this);
+	// initHeaderBarButtons.call(this);
 }
 
 function wrapContentIntoScroll() {
