@@ -1,23 +1,27 @@
 const extend = require('js-base/core/extend');
-const Page = require('sf-core/ui/page');
-const Color = require('sf-core/ui/color');
+const Image = require("sf-core/ui/image");
+const PageDesign = require("../../../ui/ui_pgApprovals");
+const Data = require('sf-core/data');
 
-const Page_ = extend(Page)(
+const Page_ = extend(PageDesign)(
 	// Constructor
-	function(_super){
+	function(_super, params) {
 		// Initalizes super class for this page scope
-		_super(this, {
-			onLoad: onLoad.bind(this)
-		});
-});
-
-function onLoad() { 
-    this.headerBar.visible = true;
-    this.headerBar.title = "pgSettings";
-    this.headerBar.titleColor = Color.create("#000000");
-    this.headerBar.backgroundColor = Color.create("#FFFFFF");
-    this.statusBar.visible = true;
-    this.statusBar.android && (this.statusBar.android.color = Color.create("#00A1F1"));
-}
+		_super(this, params);
+		
+		var _superOnLoad = this.onLoad;
+		this.onLoad = function() {
+			typeof _superOnLoad === "function" && _superOnLoad();
+			
+			console.log(Data.getStringVariable("theme"));
+			this.layoutHeaderBar.children.headerBarTitle.text = lang["pgApprovals.pageTitle"];
+			if (Data.getStringVariable("theme") === "Style1") {
+				this.comingSoon.image = Image.createFromFile("images://coming_soon.png");
+			} else {
+				this.comingSoon.image = Image.createFromFile("images://coming_soon_style2.png");
+			}
+		}.bind(this);
+    }
+);
 
 module && (module.exports = Page_);

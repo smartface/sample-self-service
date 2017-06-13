@@ -85,5 +85,7 @@ SMF.i18n.defineLanguage('tr', {
 	"pgLogin.inputs.password.error" : "Password can not be empty.",
 	"pgLogin.signin" : "SIGN IN",
 	"pgLogin.dontHaveAccount": "Don't have an account yet?",
-	"pgLogin.signup": "Sign Up"
+	"pgLogin.signup": "Sign Up",
+	"pgMyCompany.pageTitle"			: "MY COMPANY",
+	"pgApprovals.pageTitle"			: "LEAVE APPROVALS"
 });
