@@ -45,7 +45,7 @@ profileNavigator.add("index", require("./pages/tabs/profile"));
 profileNavigator.add("profileDetail", require("./pages/tabs/profile/pgProfileDetail"));
 profileNavigator.go("index");
 tabBar.add("profile", new TabBarItem({
-    title: "Profile",
+    title: lang["tab.profile"],
     icon: Image.createFromFile("images://icon_tab_profile.png"),
     route: profileNavigator
 }));
@@ -55,18 +55,18 @@ hrNavigator.add("index", require("./pages/tabs/hr"));
 hrNavigator.add("newExpense", require("./pages/tabs/hr/pgNewExpense"));
 hrNavigator.go("index");
 tabBar.add("hr", new TabBarItem({
-    title: "HR",
+    title: lang["tab.HR"],
     icon: Image.createFromFile("images://icon_tab_hr.png"),
     route: hrNavigator
 }));
 
 tabBar.add("approvals", new TabBarItem({
-    title: "Approvals",
+    title: lang["tab.Approvals"],
     icon: Image.createFromFile("images://icon_tab_approvals.png"),
     route: require("./pages/tabs/approvals/pgApprovals")
 }));
 tabBar.add("myCompany", new TabBarItem({
-    title: "My Company",
+    title: lang["tab.myCompany"],
     icon: Image.createFromFile("images://icon_tab_mycompany.png"),
     route: require("./pages/tabs/myCompany/pgMyCompany")
 }));
@@ -75,7 +75,7 @@ var settingsNavigator = new Navigator();
 settingsNavigator.add("index", require("./pages/tabs/settings/pgSettings"));
 settingsNavigator.go("index");
 tabBar.add("settings", new TabBarItem({
-    title: "Settings",
+    title: lang["tab.settings"],
     icon: Image.createFromFile("images://icon_tab_settings.png"),
     route: settingsNavigator
 }));

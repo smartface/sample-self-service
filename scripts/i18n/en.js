@@ -9,11 +9,6 @@ SMF.i18n.defineLanguage('en', {
 	"tab.Approvals" 					: "Approvals",
 	"tab.myCompany" 					: "My Company",
 	"tab.settings"						: "Settings",
-	"pgLogin.username"					: "Username",
-	"pgLogin.password"					: "Password",
-	"pgLogin.signIn"					: "SIGN IN",
-	"pgLogin.signUp"					: "Sign Up",
-	"pgLogin.accountText"				: "Don\'t have an account yet?",
 	"pgOverview.pageTitle"				: "OVERVIEW",
 	"pgOverview.qualification"			: "QUALIFICATION",
 	"pgOverview.type"					: "Type",
@@ -72,7 +67,6 @@ SMF.i18n.defineLanguage('en', {
 	"pgNewLeaveRequest.selectTime"	: "Select Time",
 	"pgNewLeaveRequest.description"	: "Description",
 	"pgNewLeaveRequest.request"		: "Request",
-	
 	"pgNewExpense.pageTitle"			: "EXPENSE ENTRY",
 	"pgNewExpense.details"				: "DETAILS",
 	"pgNewExpense.details.title"		: "Title",
@@ -83,7 +77,6 @@ SMF.i18n.defineLanguage('en', {
 	"pgNewExpense.note.description" 	: "Description...",
 	"pgNewExpense.fileAttachment"		: "FILE ATTACHMENT",
 	"pgNewExpense.request"				: "REQUEST",
-	
 	"pgLogin.inputs.username.info"  : "Username",
 	"pgLogin.inputs.username.hint"  : "",
 	"pgLogin.inputs.username.error" : "Username can not be empty.",
