@@ -100,7 +100,8 @@ const PgProfileDetail_ = extend(Page)(
 		});
 		var hierarchyController = new HierarchyController(hierarchyControllerStyle, "pgProfileDetail");
 		flexlayout500.addChild(hierarchyController);
-		
+		this.hierarchyController = hierarchyController;
+
 		const label827_1Style = getCombinedStyle(".label .label-overview-title", {
 			width: 200,
 			height: 25,
@@ -110,16 +111,17 @@ const PgProfileDetail_ = extend(Page)(
 		var label827_1 = new Label(label827_1Style);
 		flexlayout1.addChild(label827_1);
 		
-		const label536Style = getCombinedStyle(".label .label-list-item-header", {
+		const informationTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
 			text: "INFORMATION",
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
-		var label536 = new Label(label536Style);
-		qualificationcontainer.addChild(label536);
-		
-		const listItem1Style = getCombinedStyle(".flexLayout", {
+		var informationTitle = new Label(informationTitleStyle);
+		qualificationcontainer.addChild(informationTitle);
+		this.informationTitle = informationTitle;
+
+		const companyStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: 326,
@@ -129,9 +131,10 @@ const PgProfileDetail_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
-		var listItem1 = new ListItem1(listItem1Style, "pgProfileDetail");
-		qualificationcontainer.addChild(listItem1);
-		
+		var company = new ListItem1(companyStyle, "pgProfileDetail");
+		qualificationcontainer.addChild(company);
+		this.company = company;
+
 		const horizontalDividerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -148,7 +151,7 @@ const PgProfileDetail_ = extend(Page)(
 		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgProfileDetail");
 		qualificationcontainer.addChild(horizontalDivider);
 		
-		const listitem1_1Style = getCombinedStyle(".flexLayout", {
+		const emailStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: 326,
@@ -159,9 +162,10 @@ const PgProfileDetail_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
-		var listitem1_1 = new ListItem1(listitem1_1Style, "pgProfileDetail");
-		qualificationcontainer.addChild(listitem1_1);
-		
+		var email = new ListItem1(emailStyle, "pgProfileDetail");
+		qualificationcontainer.addChild(email);
+		this.email = email;
+
 		const horizontaldivider_1Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -177,7 +181,7 @@ const PgProfileDetail_ = extend(Page)(
 		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgProfileDetail");
 		qualificationcontainer.addChild(horizontaldivider_1);
 		
-		const listitem1_1_1Style = getCombinedStyle(".flexLayout", {
+		const workPhoneStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: 326,
@@ -188,9 +192,10 @@ const PgProfileDetail_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
-		var listitem1_1_1 = new ListItem1(listitem1_1_1Style, "pgProfileDetail");
-		qualificationcontainer.addChild(listitem1_1_1);
-		
+		var workPhone = new ListItem1(workPhoneStyle, "pgProfileDetail");
+		qualificationcontainer.addChild(workPhone);
+		this.workPhone = workPhone;
+
 		const horizontaldivider_1_1Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -206,7 +211,7 @@ const PgProfileDetail_ = extend(Page)(
 		var horizontaldivider_1_1 = new HorizontalDivider(horizontaldivider_1_1Style, "pgProfileDetail");
 		qualificationcontainer.addChild(horizontaldivider_1_1);
 		
-		const listitem1_1_1_1Style = getCombinedStyle(".flexLayout", {
+		const mobilePhoneStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: 326,
@@ -217,9 +222,10 @@ const PgProfileDetail_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
-		var listitem1_1_1_1 = new ListItem1(listitem1_1_1_1Style, "pgProfileDetail");
-		qualificationcontainer.addChild(listitem1_1_1_1);
-		
+		var mobilePhone = new ListItem1(mobilePhoneStyle, "pgProfileDetail");
+		qualificationcontainer.addChild(mobilePhone);
+		this.mobilePhone = mobilePhone;
+
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			flexlayout1: flexlayout1,
@@ -241,14 +247,14 @@ const PgProfileDetail_ = extend(Page)(
 		
 		//assign the children of qualificationcontainer
 		qualificationcontainer.children = Object.assign({}, {
-			label536: label536,
-			listItem1: listItem1,
+			informationTitle: informationTitle,
+			company: company,
 			horizontalDivider: horizontalDivider,
-			listitem1_1: listitem1_1,
+			email: email,
 			horizontaldivider_1: horizontaldivider_1,
-			listitem1_1_1: listitem1_1_1,
+			workPhone: workPhone,
 			horizontaldivider_1_1: horizontaldivider_1_1,
-			listitem1_1_1_1: listitem1_1_1_1
+			mobilePhone: mobilePhone
 		});
 		
 	});
@@ -269,7 +275,7 @@ function onShow() {
 
   //HeaderBar props
   const headerBarStyle = getCombinedStyle(".headerBar", {
-		title: "PROFILE",
+		title: null,
 		visible: true
 	});
 	

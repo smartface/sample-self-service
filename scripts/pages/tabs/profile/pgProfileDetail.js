@@ -13,10 +13,20 @@ const Page_ = extend(PageDesign)(
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 });
 
+function initTexts() {
+	this.headerBar.title = lang["pgProfileDetail.pageTitle"];
+	this.informationTitle.text = lang["pgProfileDetail.information"];
+	this.company.title.text = lang["pgProfileDetail.company"];
+	this.email.title.text = lang["pgProfileDetail.email"];
+	this.workPhone.title.text = lang["pgProfileDetail.workPhone"];
+	this.mobilePhone.title.text = lang["pgProfileDetail.mobilePhone"];
+	this.hierarchyController.hc_header.text = lang["pgProfileDetail.organization"];
+}
+
 function onLoad(superOnLoad) {
 	superOnLoad();
-	this.headerBar.title = TITLE;
 	wrapContentIntoScroll.call(this);
+	initTexts.call(this);
 }
 
 function wrapContentIntoScroll() {
