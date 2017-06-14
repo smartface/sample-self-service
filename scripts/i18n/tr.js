@@ -86,6 +86,11 @@ SMF.i18n.defineLanguage('tr', {
 	"pgLogin.signin" : "SIGN IN",
 	"pgLogin.dontHaveAccount": "Don't have an account yet?",
 	"pgLogin.signup": "Sign Up",
-	"pgMyCompany.pageTitle"			: "MY COMPANY",
-	"pgApprovals.pageTitle"			: "LEAVE APPROVALS"
+	"pgSettings.pageTitle"					: "SETTINGS",
+	"pgSettings.themeChangeMessage"	: "Do you really want to change the theme of the application? This will cause the application to restart.",
+	"pgMyCompany.pageTitle"					: "MY COMPANY",
+	"pgApprovals.pageTitle"					: "LEAVE APPROVALS",
+	"alertView.confirmation"				: "Confirmation",
+	"alertView.warning"							: "Warning",
+	"alertView.error"								: "Error"
 });

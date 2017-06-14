@@ -10,9 +10,9 @@ const PageDesign = require("../../ui/ui_pgLogin");
 
 const Page_ = extend(PageDesign)(
 	// Constructor
-	function(_super){
+	function(_super, params){
 		// Initalizes super class for this page scope
-		_super(this);
+		_super(this, params);
 		
 		var _superOnLoad = this.onLoad;
 		this.onLoad = function() {
