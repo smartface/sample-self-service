@@ -4,6 +4,7 @@ const FlexLayout = require("sf-core/ui/flexlayout");
 const Image = require("sf-core/ui/image");
 const ImageView = require("sf-core/ui/imageview");
 const Router = require("sf-core/router");
+const System = require("sf-core/device/system");
 const Timer = require("sf-core/timer");
 
 const PageDesign = require("../../ui/ui_pgLogin");
@@ -43,18 +44,19 @@ function signin(page) {
 		return alert(lang["pgLogin.inputs.password.error"]);
 	}
 	
-	loading(page, function() {
-		Router.go("tabs");
-	});
+	startLoading(page);
+    stopLoading();
+    Router.go("tabs");
 }
 
-function loading(uiComponents, onFinish){
+var loadingTimer = null;
+function startLoading(uiComponents){
     var imageView = uiComponents.loadingImageView;
 
     uiComponents.signinButton.text = "";
 
     var layout;
-    if(Device.deviceOS == 'Android'){
+    if(System.OS == 'Android'){
        layout = uiComponents.buttonLayout;
     }else{
        layout = uiComponents.layout;
@@ -65,34 +67,35 @@ function loading(uiComponents, onFinish){
         uiComponents.signinButton.alpha = 0.2;
     }).complete(function() {
         uiComponents.signinButton.alpha = 0;
-        rotateImage(imageView, uiComponents, onFinish);
+        rotateImage(imageView, uiComponents);
         Animator.animate(uiComponents.layout, 300, function() {
             imageView.alpha = 1;
         });
     });
+
+    function rotateImage(imageView, page, onFinish){
+        var image;
+        if(System.OS == "Android"){
+            const AndroidUnitConverter = require('sf-core/util/Android/unitconverter');
+            var pixel = AndroidUnitConverter.dpToPixel(50);
+            image = Image.createFromFile("images://loading.png").resize(pixel,pixel);
+        } else {
+            image = Image.createFromFile("images://loading.png").resize(50, 50);
+        }
+        
+        var counter = 0;
+        loadingTimer = Timer.setInterval({
+            task: function(){
+                imageView.image = image.rotate(++counter*7);
+            },
+            delay: 20
+        });
+    }
 }
 
-function rotateImage(imageView, page, onFinish){
-    var image;
-    if(Device.deviceOS == "Android"){
-        const AndroidUnitConverter = require('sf-core/util/Android/unitconverter');
-        var pixel = AndroidUnitConverter.dpToPixel(50);
-        image = Image.createFromFile("images://loading.png").resize(pixel,pixel);
-    } else {
-        image = Image.createFromFile("images://loading.png").resize(50, 50);
-    }
-    
-    var counter = 0;
-    var myTimer = Timer.setInterval({
-        task: function(){
-            imageView.image = image.rotate(++counter*7);
-            if(counter === 100){
-                Timer.clearTimer(myTimer);
-                onFinish();
-            }
-        },
-        delay: 20
-    });
+function stopLoading() {
+    Timer.clearTimer(loadingTimer);
+    loadingTimer = null;
 }
 
 module && (module.exports = Page_);
