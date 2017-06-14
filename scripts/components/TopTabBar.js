@@ -49,7 +49,7 @@ const TopTabBar = extend(TopTabBarDesign)(
 					
 					_currentIndex = value;
 					invalidate(this);
-					typeof this.onChanged === "function" && this.onChanged();
+					typeof this.onChanged === "function" && this.onChanged(_currentIndex);
 				}
 			},
 			'activeTextColor': {

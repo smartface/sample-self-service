@@ -94,7 +94,7 @@ MockService.getUsers = function() {
         });
     }
     return users;
-}
+};
 
 MockService.getExpenses = function() {
     var types = ["Travel", "Taxi", "Food", "Taxi", "Travel", "Taxi"];
@@ -112,6 +112,63 @@ MockService.getExpenses = function() {
         });
     }
     return result;
-}
+};
+
+MockService.getApprovedLeaveRequests = function() {
+    var result = [
+        {
+            days: 3,
+            startDate: "11.05.2017",
+            endDate: "14.05.2017",
+            active: true
+        },
+        {
+            days: 5,
+            startDate: "20.02.2017",
+            endDate: "25.02.2017",
+            active: false
+        }
+    ];
+    
+    return result;
+};
+
+MockService.getWaitingLeaveRequests = function() {
+    var result = [
+        {
+            days: 2,
+            startDate: "13.07.2017",
+            endDate: "15.07.2017",
+            active: true
+        },
+        {
+            days: 3,
+            startDate: "20.09.2017",
+            endDate: "23.02.2017",
+            active: true
+        },
+        {
+            days: 1,
+            startDate: "02.01.2018",
+            endDate: "03.01.2018",
+            active: true
+        }
+    ];
+    
+    return result;
+};
+
+MockService.getRejectedLeaveRequests = function() {
+    var result = [
+        {
+            days: 7,
+            startDate: "10.03.2017",
+            endDate: "17.03.2017",
+            active: true
+        }
+    ];
+    
+    return result;
+};
 
 module.exports = MockService;

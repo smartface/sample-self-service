@@ -150,7 +150,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
+					"positionType": "ABSOLUTE",
 					"flexGrow": 1
 				},
 				"flex": {
@@ -159,7 +159,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0,
+					"positionType": 1,
 					"flexGrow": 1
 				},
 				"parent": "__library__",
@@ -222,7 +222,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"flex": {
 					"alignContent": 4,
@@ -230,7 +230,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 2,
-					"positionType": 0
+					"positionType": 1
 				},
 				"parent": "__library__",
 				"children": [
@@ -432,7 +432,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
+					"positionType": "ABSOLUTE",
 					"flexGrow": 1
 				},
 				"flex": {
@@ -442,7 +442,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0,
+					"positionType": 1,
 					"flexGrow": 1
 				},
 				"parent": "__library__",
@@ -535,7 +535,7 @@
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"left": 9,
@@ -570,7 +570,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
+					"positionType": "ABSOLUTE",
 					"flexGrow": 1
 				},
 				"parent": "__library__",
@@ -594,7 +594,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0,
+					"positionType": 1,
 					"flexGrow": 1
 				},
 				"font": {}
@@ -769,7 +769,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"flex": {
 					"alignContent": 4,
@@ -777,7 +777,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0
+					"positionType": 1
 				},
 				"parent": "__library__",
 				"children": [
@@ -893,7 +893,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"flex": {
 					"alignContent": 4,
@@ -901,7 +901,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 2,
-					"positionType": 0
+					"positionType": 1
 				},
 				"parent": "__library__",
 				"children": [
@@ -1122,7 +1122,7 @@
 				},
 				"parent": "dataContainer",
 				"children": [
-					"label205",
+					"daysCount",
 					"label205_1"
 				],
 				"name": "flexlayout1",
@@ -1214,6 +1214,7 @@
 				"textAlignment": "BOTTOMCENTER",
 				"text": "3",
 				"id": 10322,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -1237,6 +1238,7 @@
 				"textColor": "#00B9FF",
 				"textAlignment": "BOTTOMCENTER",
 				"id": 10322,
+				"usePageVariable": true,
 				"font": {
 					"size": 22,
 					"bold": true,
@@ -1250,7 +1252,7 @@
 				},
 				"parent": "flexlayout1",
 				"children": [],
-				"name": "label205",
+				"name": "daysCount",
 				"layout": {
 					"borderWidth": 0
 				},
@@ -1362,7 +1364,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"flex": {
 					"alignContent": 4,
@@ -1370,7 +1372,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0
+					"positionType": 1
 				},
 				"parent": "__library__",
 				"children": [],
@@ -1996,7 +1998,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"parent": "__library__",
 				"children": [
@@ -2017,7 +2019,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0
+					"positionType": 1
 				},
 				"font": {}
 			}
@@ -2373,7 +2375,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"parent": "__library__",
 				"children": [
@@ -2400,7 +2402,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0
+					"positionType": 1
 				},
 				"font": {}
 			}
@@ -2454,7 +2456,7 @@
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
+					"positionType": "ABSOLUTE",
 					"right": 0
 				},
 				"flex": {
@@ -2463,7 +2465,7 @@
 					"justifyContent": 1,
 					"flexWrap": 0,
 					"flexDirection": 2,
-					"positionType": 0,
+					"positionType": 1,
 					"right": 0
 				},
 				"parent": "__library__",
@@ -2513,7 +2515,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"parent": "__library__",
 				"children": [
@@ -2534,7 +2536,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0
+					"positionType": 1
 				},
 				"font": {}
 			}
@@ -2681,7 +2683,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"flex": {
 					"alignContent": 4,
@@ -2689,7 +2691,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0
+					"positionType": 1
 				},
 				"parent": "__library__",
 				"children": [
@@ -2966,7 +2968,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"parent": "__library__",
 				"children": [
@@ -2987,7 +2989,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0
+					"positionType": 1
 				},
 				"font": {}
 			}
@@ -3373,7 +3375,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"parent": "__library__",
 				"children": [
@@ -3394,7 +3396,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0
+					"positionType": 1
 				},
 				"font": {}
 			}
@@ -4044,7 +4046,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"flex": {
 					"alignContent": 4,
@@ -4052,7 +4054,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0
+					"positionType": 1
 				},
 				"parent": "__library__",
 				"children": [
@@ -4296,7 +4298,7 @@
 					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"parent": "__library__",
 				"children": [
@@ -4316,7 +4318,7 @@
 					"justifyContent": 1,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0
+					"positionType": 1
 				},
 				"font": {}
 			}
@@ -4421,7 +4423,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"flex": {
 					"alignContent": 4,
@@ -4429,7 +4431,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 2,
-					"positionType": 0
+					"positionType": 1
 				},
 				"parent": "__library__",
 				"children": [
@@ -4768,7 +4770,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"flex": {
 					"alignContent": 4,
@@ -4776,7 +4778,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 2,
-					"positionType": 0
+					"positionType": 1
 				},
 				"parent": "__library__",
 				"children": [
@@ -5178,7 +5180,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"flex": {
 					"alignContent": 4,
@@ -5186,7 +5188,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 2,
-					"positionType": 0
+					"positionType": 1
 				},
 				"parent": "__library__",
 				"children": [
@@ -5704,7 +5706,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"flex": {
 					"alignContent": 4,
@@ -5712,7 +5714,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 2,
-					"positionType": 0
+					"positionType": 1
 				},
 				"parent": "__library__",
 				"children": [
@@ -6108,7 +6110,7 @@
 					"justifyContent": "FLEX_START",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
+					"positionType": "ABSOLUTE"
 				},
 				"flex": {
 					"alignContent": 4,
@@ -6116,7 +6118,7 @@
 					"justifyContent": 0,
 					"flexWrap": 0,
 					"flexDirection": 0,
-					"positionType": 0
+					"positionType": 1
 				},
 				"parent": "__library__",
 				"children": [
@@ -8084,7 +8086,7 @@
 			"userProps": {
 				"left": 0,
 				"top": 0,
-				"width": 210,
+				"width": 220,
 				"height": null,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"id": 10312,
@@ -8102,7 +8104,7 @@
 			"className": ".flexLayout",
 			"props": {
 				"height": null,
-				"width": 210,
+				"width": 220,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
@@ -8142,7 +8144,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"width": 105,
+					"width": 110,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -8292,7 +8294,7 @@
 			"userProps": {
 				"left": 0,
 				"top": 0,
-				"width": 210,
+				"width": 220,
 				"height": null,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"id": 10311,
@@ -8310,7 +8312,7 @@
 			"className": ".flexLayout",
 			"props": {
 				"height": null,
-				"width": 210,
+				"width": 220,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
@@ -8350,7 +8352,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"width": 105,
+					"width": 110,
 					"borderWidth": 0
 				},
 				"font": {}
