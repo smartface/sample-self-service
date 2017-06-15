@@ -5,7 +5,9 @@ const Color = require("sf-core/ui/color");
 const Data = require("sf-core/data");
 const Page = require("sf-core/ui/page");
 const PageDesign = require("../../../ui/ui_pgSettings");
-const settings = require("../../../.settings.json");
+const settings = require("../../../settings.json");
+const Application = require("sf-core/application");
+const Data = require('sf-core/data');
 
 const Page_ = extend(PageDesign)(
 	// Constructor

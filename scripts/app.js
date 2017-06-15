@@ -21,7 +21,7 @@ const TabBarItem = require("sf-core/ui/tabbaritem");
 const Image = require("sf-core/ui/image");
 const Navigator = require("sf-core/ui/navigator");
 const stylerBuilder = require("library/styler-builder");
-const settings = require("./.settings.json");
+const settings = require("./settings.json");
 const PgConstants = require("pages/PgConstants");
 const Data = require('sf-core/data');
 
