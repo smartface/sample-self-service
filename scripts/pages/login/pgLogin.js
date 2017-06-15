@@ -45,8 +45,13 @@ function signin(page) {
 	}
 	
 	startLoading(page);
-    stopLoading();
-    Router.go("tabs");
+	Timer.setTimeout({
+	    task: function() {
+            stopLoading();
+            Router.go("tabs"); 
+	    },
+	    delay: 2000
+	});
 }
 
 var loadingTimer = null;

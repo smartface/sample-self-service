@@ -3,7 +3,6 @@ require("i18n/i18n.js"); // Generates global lang object
 
 const Application = require("sf-core/application");
 
-
 // Set uncaught exception handler, all exceptions that are not caught will
 // trigger onUnhandledError callback.
 Application.onUnhandledError = function(e) {
@@ -12,7 +11,6 @@ Application.onUnhandledError = function(e) {
         message: e.message + "\n\n*" + e.sourceURL + "\n*" + e.line + "\n*" + e.stack
     });
 };
-
 
 const Router = require("sf-core/ui/router");
 const BottomTabBar = require("sf-core/ui/bottomtabbar");
@@ -26,7 +24,9 @@ const PgConstants = require("pages/PgConstants");
 const Data = require('sf-core/data');
 
 stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
-stylerBuilder.setActiveTheme(Data.getStringVariable("theme") || settings.config.theme.currentTheme  );
+if (Data.getStringVariable("theme") === null)
+    Data.setStringVariable("theme", settings.config.theme.currentTheme);
+stylerBuilder.setActiveTheme(Data.getStringVariable("theme"));
 
 var navigator = new Navigator();
 navigator.add("pgLogin", require("./pages/login/pgLogin"));
