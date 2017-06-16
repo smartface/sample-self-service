@@ -1,34 +1,55 @@
+/*globals lang*/
 const extend = require('js-base/core/extend');
-const Page = require('sf-core/ui/page');
-const Color = require('sf-core/ui/color');
 const ListViewItem = require('sf-core/ui/listviewitem');
 const MockService = require('../../../objects/MockService');
-const Salary = require('../../../objects/Salary');
 const ItemSalary = require('../../../components/ItemSalary');
 const PageDesign = require("../../../ui/ui_pgSalary");
+const DialogsLib = require("lib/ui/dialogs");
+const Timer = require("sf-core/timer");
 
 const Page_ = extend(PageDesign)(
 	function(_super) {
 		_super(this);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+        
+        // Don't change array object, you may alter it
+        this.salaryList = [];
+        initListView(this.listView, this.salaryList);
     }
 );
 
-
+var firstOnShow = true;
 function onShow(parentOnShow) {
     parentOnShow();
+    
+    if (firstOnShow) {
+        DialogsLib.showLoadingDialog();
+        Timer.setTimeout({
+            task: function() {
+                this.salaryList.slice(0);
+                Array.prototype.push.apply(this.salaryList, MockService.getSalaryList());
+                this.listView.rowHeight = 80;
+                this.listView.itemCount = this.salaryList.length;
+                this.listView.refreshData();
+                DialogsLib.hideLoadingDialog();
+            }.bind(this),
+            delay: 3000
+        });
+        firstOnShow = false;
+    }
 }
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
-	this.layoutHeaderBar.children.headerBarTitle.text = lang["pgSalary.pageTitle"];
-    
-    this.salaryList = MockService.getSalaryList();
-    this.listView.rowHeight = 80;
-    this.listView.itemCount = this.salaryList.length;
+    this.layoutHeaderBar.children.headerBarTitle.text = lang["pgSalary.pageTitle"];
+}
 
-    this.listView.onRowCreate = function() {
+function initListView(listView, data) {
+    listView.itemCount = 0;
+    listView.refreshEnabled = false;
+
+    listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var salaryItem = new ItemSalary();
         salaryItem.id = 200;
@@ -36,10 +57,10 @@ function onLoad(parentOnLoad) {
         return myListViewItem;
     };
     
-    this.listView.onRowBind = function(listViewItem, index) {
+    listView.onRowBind = function(listViewItem, index) {
         var salaryItem = listViewItem.findChildById(200);
-        salaryItem.salary = this.salaryList[index];
-    }.bind(this);
+        salaryItem.salary = data[index];
+    };
 }
 
 module && (module.exports = Page_);
