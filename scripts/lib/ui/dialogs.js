@@ -18,24 +18,14 @@ myDialog.layout.applyLayout();
 
 module.exports = {
     createLoadingDialog: function() {
-        var layout = new FlexLayout({
-            positionType: FlexLayout.PositionType.ABSOLUTE,
-            width: 150,
-            height: 100,
-            left: Screen.width/2 - 75,
-            top: Screen.height/2 - 100,
-            backgroundColor: Color.create(200, 0, 0, 0),
-            borderRadius: 20,
-            alignItems: FlexLayout.AlignItems.CENTER,
-            justifyContent: FlexLayout.JustifyContent.CENTER
-        });
         var activityIndicator = new ActivityIndicator({
+            positionType: FlexLayout.PositionType.ABSOLUTE,
+            alignSelf: FlexLayout.AlignSelf.CENTER,
             ios: {
-                type: ActivityIndicator.iOS.Type.WHITELARGE
+                type: ActivityIndicator.iOS.Type.GRAY
             }
         });
-        layout.addChild(activityIndicator);
-        return layout;
+        return activityIndicator;
     },
     startLoading: function(indicator, layout) {
         if (indicator && layout) {

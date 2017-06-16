@@ -7,13 +7,25 @@
 				"Highlights": "Default"
 			},
 			"userProps": {
-				"backgroundColor": "rgba( 226, 226, 228, 1 )"
+				"backgroundColor": "rgba( 226, 226, 228, 1 )",
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.3.6",
+			"version": "6.3.9",
 			"props": {
 				"backgroundColor": "rgba( 226, 226, 228, 1 )",
 				"orientation": "PORTRAIT",
+				"children": [
+					"statusBar",
+					"headerBar",
+					"layoutHeaderBar",
+					"flexlayout1",
+					"listViewContainer"
+				],
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -22,13 +34,6 @@
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
-				"children": [
-					"statusBar",
-					"headerBar",
-					"layoutHeaderBar",
-					"flexlayout1",
-					"listView"
-				],
 				"isRemovable": true,
 				"name": "pgLeaveManagement",
 				"layout": {
@@ -51,10 +56,16 @@
 			"type": "StatusBar",
 			"id": "6d839582",
 			"themeProps": {},
-			"userProps": {},
+			"userProps": {
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"defaults": {}
+			},
 			"className": ".statusBar",
 			"props": {
-				"color": "#7C73C0",
+				"color": "#45495A",
 				"visible": true,
 				"children": [],
 				"parent": "pgLeaveManagement",
@@ -75,14 +86,19 @@
 			"themeProps": {},
 			"userProps": {
 				"title": "newPage001",
-				"visible": false
+				"visible": false,
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"defaults": {}
 			},
 			"className": ".headerBar",
 			"props": {
 				"title": "newPage001",
 				"titleColor": "#FFFFFF",
 				"visible": false,
-				"backgroundColor": "#7C73C0",
+				"backgroundColor": "#45495A",
 				"children": [],
 				"parent": "pgLeaveManagement",
 				"name": "headerBar",
@@ -106,7 +122,11 @@
 				"flexProps": {
 					"alignItems": "CENTER",
 					"justifyContent": "CENTER"
-				}
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
 			},
 			"className": ".flexLayout .flexLayout-headerBar",
 			"props": {
@@ -114,10 +134,15 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#7C73C0",
+				"backgroundColor": "#45495A",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"children": [
+					"imageview1",
+					"imageview2",
+					"topTabBar"
+				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -129,11 +154,6 @@
 					"positionType": "RELATIVE"
 				},
 				"parent": "pgLeaveManagement",
-				"children": [
-					"imageview1",
-					"imageview2",
-					"topTabBar"
-				],
 				"name": "flexlayout1",
 				"layout": {
 					"height": 100,
@@ -158,7 +178,12 @@
 				"height": 150,
 				"imageFillType": "ASPECTFIT",
 				"image": "graph2.png",
-				"width": 150
+				"width": 150,
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"flexProps": {},
+				"defaults": {}
 			},
 			"className": ".imageView",
 			"props": {
@@ -172,12 +197,12 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"image": "graph2.png",
+				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
 				"parent": "flexlayout1",
-				"children": [],
 				"name": "imageview1",
 				"layout": {
 					"width": 75,
@@ -188,7 +213,7 @@
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/graph2.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.7731094558548153"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/graph2.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.9303052321635139"
 			}
 		},
 		{
@@ -204,7 +229,11 @@
 				"image": "graphlegend.png",
 				"flexProps": {
 					"positionType": "ABSOLUTE"
-				}
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
 			},
 			"className": ".imageView",
 			"props": {
@@ -220,12 +249,12 @@
 				"left": 291.5,
 				"top": 66,
 				"image": "graphlegend.png",
+				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "ABSOLUTE"
 				},
 				"parent": "flexlayout1",
-				"children": [],
 				"name": "imageview2",
 				"layout": {
 					"left": 145.75,
@@ -238,58 +267,123 @@
 					"positionType": 1
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/graphlegend.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.14900161160873449"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/graphlegend.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.9327907529579711"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "add92a7b",
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"usePageVariable": true,
+				"width": null,
+				"height": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"flexProps": {
+					"flexGrow": 1,
+					"justifyContent": "CENTER"
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"props": {
+				"name": "listViewContainer",
+				"isReady": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "CENTER",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
+				"flex": {
+					"alignContent": 4,
+					"alignItems": 4,
+					"justifyContent": 1,
+					"flexWrap": 0,
+					"flexDirection": 0,
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"parent": "pgLeaveManagement",
+				"children": [
+					"listView"
+				],
+				"layout": {
+					"marginLeft": 5,
+					"marginRight": 5,
+					"borderWidth": 0
+				},
+				"usePageVariable": true,
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		},
 		{
 			"type": "ListView",
-			"id": "20ad8e5f",
+			"id": "c59fa243",
 			"themeProps": {},
 			"userProps": {
 				"width": null,
+				"height": null,
 				"usePageVariable": true,
-				"backgroundColor": "rgba( 204, 39, 39, 0 )",
-				"marginLeft": 10,
-				"marginRight": 10,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"itemCount": 0,
 				"flexProps": {
 					"flexGrow": 1
-				}
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
 			},
-			"className": ".listView",
 			"props": {
-				"height": 200,
-				"width": null,
-				"touchEnabled": true,
-				"multiline": false,
-				"rowHeight": 60,
-				"itemCount": 3,
-				"visible": true,
-				"backgroundColor": "rgba( 204, 39, 39, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
+				"name": "listView",
+				"isReady": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"parent": "pgLeaveManagement",
-				"children": [],
-				"name": "listView",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"height": 100,
-					"borderWidth": 0
-				},
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"multiline": false,
+				"rowHeight": 60,
+				"itemCount": 0,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"font": {},
 				"flex": {
 					"positionType": 0,
 					"flexGrow": 1
 				},
-				"font": {}
+				"parent": "listViewContainer",
+				"children": [],
+				"layout": {
+					"borderWidth": 0
+				},
+				"usePageVariable": true
 			}
 		},
 		{
@@ -314,7 +408,10 @@
 				},
 				"flex": {
 					"positionType": 0
-				}
+				},
+				"layout": {},
+				"font": {},
+				"defaults": {}
 			},
 			"className": ".flexLayout .flexLayout-headerBar",
 			"props": {
@@ -322,13 +419,16 @@
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#7C73C0",
+				"backgroundColor": "#45495A",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
 				"usePageVariable": true,
+				"children": [
+					"headerBarTitle"
+				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -348,9 +448,6 @@
 					"positionType": 0
 				},
 				"parent": "pgLeaveManagement",
-				"children": [
-					"headerBarTitle"
-				],
 				"name": "layoutHeaderBar",
 				"layout": {
 					"left": 0,
@@ -381,7 +478,10 @@
 				},
 				"font": {
 					"size": 16
-				}
+				},
+				"layout": {},
+				"flex": {},
+				"defaults": {}
 			},
 			"className": ".label",
 			"props": {
@@ -398,6 +498,7 @@
 				"textColor": "rgba( 255, 255, 255, 1 )",
 				"textAlignment": "MIDCENTER",
 				"marginTop": 20,
+				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -410,7 +511,6 @@
 					"flexGrow": null
 				},
 				"parent": "layoutHeaderBar",
-				"children": [],
 				"name": "headerBarTitle",
 				"layout": {
 					"marginTop": 10,
@@ -455,7 +555,10 @@
 					"flexDirection": 2,
 					"justifyContent": 1,
 					"flexWrap": 0
-				}
+				},
+				"layout": {},
+				"font": {},
+				"defaults": {}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -471,6 +574,7 @@
 				"right": 0,
 				"top": 0,
 				"usePageVariable": true,
+				"children": [],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -495,7 +599,6 @@
 					"flexGrow": null
 				},
 				"parent": "flexlayout1",
-				"children": [],
 				"name": "topTabBar",
 				"layout": {
 					"right": 0,

@@ -1,12 +1,16 @@
 const extend = require('js-base/core/extend');
 const Page = require('sf-core/ui/page');
 const Color = require('sf-core/ui/color');
+const DialogsLib = require("lib/ui/dialogs");
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemEmploymentHistory = require('../../../components/ItemEmploymentHistory');
 const MockService = require('../../../objects/MockService');
 const Employment = require('../../../objects/Employment');
+const Timer = require("sf-core/timer");
 
 var PageDesign = require("../../../ui/ui_pgEmploymentHistory");
+
+var loadingIndicator = DialogsLib.createLoadingDialog();
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -15,22 +19,42 @@ const Page_ = extend(PageDesign)(
 		_super(this);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+		
+		this.employmentHistoryList = [];
+		initListView(this.listView, this.employmentHistoryList);
 	}
 );
 
+var firstOnShow = true;
 function onShow(parentOnShow) {
     parentOnShow();
+    
+    if (firstOnShow) {
+        DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
+        Timer.setTimeout({
+            task: function() {
+                this.employmentHistoryList.slice(0);
+                Array.prototype.push.apply(this.employmentHistoryList,
+                    MockService.getEmploymentHistory());
+                this.listView.itemCount = this.employmentHistoryList.length;
+                this.listView.refreshData();
+                DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
+            }.bind(this),
+            delay: 2000
+        });
+        firstOnShow = false;
+    }
 }
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
 	this.layoutHeaderBar.children.headerBarTitle.text = lang["pgEmploymentHistory.pageTitle"];
-    
-    this.employmentHistoryList = MockService.getEmploymentHistory();
+}
 
-    this.listView.rowHeight = 360;
-    this.listView.itemCount = this.employmentHistoryList.length;
-    this.listView.onRowCreate = function() {
+function initListView(listView, data) {
+    listView.rowHeight = 360;
+    listView.itemCount = 0;
+    listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var employmentItem = new ItemEmploymentHistory();
         employmentItem.id = 200;
@@ -39,9 +63,9 @@ function onLoad(parentOnLoad) {
         return myListViewItem;
     };
     
-    this.listView.onRowBind = function(listViewItem, index) {
-        listViewItem.item.employment = this.employmentHistoryList[index];
-    }.bind(this);
+    listView.onRowBind = function(listViewItem, index) {
+        listViewItem.item.employment = data[index];
+    };
 }
 
 module && (module.exports = Page_);

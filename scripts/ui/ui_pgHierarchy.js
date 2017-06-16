@@ -35,22 +35,36 @@ const PgHierarchy_ = extend(Page)(
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
-		const listViewStyle = getCombinedStyle(".listView", {
+		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
-			left: null,
-			right: null,
+			height: null,
 			marginLeft: 10,
 			marginRight: 10,
+			flexGrow: 1,
+			justifyContent: FlexLayout.JustifyContent.CENTER
+		});
+		var listViewContainer = new FlexLayout(listViewContainerStyle);
+		this.layout.addChild(listViewContainer);
+		this.listViewContainer = listViewContainer;
+
+		const listViewStyle = getCombinedStyle(".listView", {
+			width: null,
+			height: null,
 			flexGrow: 1
 		});
 		var listView = new ListView(listViewStyle);
 		listView.onRowCreate = function(){ return new ListViewItem(); };
-		this.layout.addChild(listView);
+		listViewContainer.addChild(listView);
 		this.listView = listView;
 
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,
+			listViewContainer: listViewContainer
+		});
+		
+		//assign the children of listViewContainer
+		listViewContainer.children = Object.assign({}, {
 			listView: listView
 		});
 		

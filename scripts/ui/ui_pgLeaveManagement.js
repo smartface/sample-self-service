@@ -7,12 +7,12 @@
 const extend = require('js-base/core/extend');
 const Page = require('sf-core/ui/page');
 const FlexLayout = require('sf-core/ui/flexlayout');
-const ListView = require('sf-core/ui/listview');
-const ListViewItem = require('sf-core/ui/listviewitem');
 const Color = require('sf-core/ui/color');
 const ImageView = require('sf-core/ui/imageview');
 const ImageFillType = require('sf-core/ui/imagefilltype');
 const Image = require('sf-core/ui/image');
+const ListView = require('sf-core/ui/listview');
+const ListViewItem = require('sf-core/ui/listviewitem');
 
 const LayoutHeaderBar = require("../components/LayoutHeaderBar");
 const TopTabBar = require("../components/TopTabBar");
@@ -47,17 +47,18 @@ const PgLeaveManagement_ = extend(Page)(
 		var flexlayout1 = new FlexLayout(flexlayout1Style);
 		this.layout.addChild(flexlayout1);
 		
-		const listViewStyle = getCombinedStyle(".listView", {
+		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
+			backgroundColor: Color.create(0, 255, 255, 255),
 			width: null,
-			backgroundColor: Color.create(0, 204, 39, 39),
+			height: null,
 			marginLeft: 10,
 			marginRight: 10,
-			flexGrow: 1
+			flexGrow: 1,
+			justifyContent: FlexLayout.JustifyContent.CENTER
 		});
-		var listView = new ListView(listViewStyle);
-		listView.onRowCreate = function(){ return new ListViewItem(); };
-		this.layout.addChild(listView);
-		this.listView = listView;
+		var listViewContainer = new FlexLayout(listViewContainerStyle);
+		this.layout.addChild(listViewContainer);
+		this.listViewContainer = listViewContainer;
 
 		const imageview1Style = getCombinedStyle(".imageView", {
 			height: 150,
@@ -68,6 +69,18 @@ const PgLeaveManagement_ = extend(Page)(
 		var imageview1 = new ImageView(imageview1Style);
 		flexlayout1.addChild(imageview1);
 		
+		const listViewStyle = getCombinedStyle(".listView", {
+			width: null,
+			height: null,
+			backgroundColor: Color.create(0, 255, 255, 255),
+			itemCount: 0,
+			flexGrow: 1
+		});
+		var listView = new ListView(listViewStyle);
+		listView.onRowCreate = function(){ return new ListViewItem(); };
+		listViewContainer.addChild(listView);
+		this.listView = listView;
+
 		const imageview2Style = getCombinedStyle(".imageView", {
 			left: 291.5,
 			top: 66,
@@ -102,7 +115,7 @@ const PgLeaveManagement_ = extend(Page)(
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,
 			flexlayout1: flexlayout1,
-			listView: listView
+			listViewContainer: listViewContainer
 		});
 		
 		//assign the children of flexlayout1
@@ -110,6 +123,11 @@ const PgLeaveManagement_ = extend(Page)(
 			imageview1: imageview1,
 			imageview2: imageview2,
 			topTabBar: topTabBar
+		});
+		
+		//assign the children of listViewContainer
+		listViewContainer.children = Object.assign({}, {
+			listView: listView
 		});
 		
 	});

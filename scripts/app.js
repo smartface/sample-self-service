@@ -26,7 +26,7 @@ const Data = require('sf-core/data');
 stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
 if (Data.getStringVariable("theme") === null)
     Data.setStringVariable("theme", settings.config.theme.currentTheme);
-stylerBuilder.setActiveTheme(Data.getStringVariable("theme"));
+stylerBuilder.setActiveTheme(Data.getStringVariable("theme") || settings.config.theme.currentTheme);
 
 var navigator = new Navigator();
 navigator.add("pgLogin", require("./pages/login/pgLogin"));

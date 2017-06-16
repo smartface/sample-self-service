@@ -7,6 +7,8 @@ const PageDesign = require("../../../ui/ui_pgSalary");
 const DialogsLib = require("lib/ui/dialogs");
 const Timer = require("sf-core/timer");
 
+var loadingIndicator = DialogsLib.createLoadingDialog();
+
 const Page_ = extend(PageDesign)(
 	function(_super) {
 		_super(this);
@@ -24,15 +26,14 @@ function onShow(parentOnShow) {
     parentOnShow();
     
     if (firstOnShow) {
-        DialogsLib.showLoadingDialog();
+        DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
         Timer.setTimeout({
             task: function() {
                 this.salaryList.slice(0);
                 Array.prototype.push.apply(this.salaryList, MockService.getSalaryList());
-                this.listView.rowHeight = 80;
                 this.listView.itemCount = this.salaryList.length;
                 this.listView.refreshData();
-                DialogsLib.hideLoadingDialog();
+                DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
             }.bind(this),
             delay: 3000
         });
@@ -47,6 +48,7 @@ function onLoad(parentOnLoad) {
 
 function initListView(listView, data) {
     listView.itemCount = 0;
+    listView.rowHeight = 80;
     listView.refreshEnabled = false;
 
     listView.onRowCreate = function() {

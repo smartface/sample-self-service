@@ -7,9 +7,9 @@
 const extend = require('js-base/core/extend');
 const Page = require('sf-core/ui/page');
 const FlexLayout = require('sf-core/ui/flexlayout');
+const Color = require('sf-core/ui/color');
 const ListView = require('sf-core/ui/listview');
 const ListViewItem = require('sf-core/ui/listviewitem');
-const Color = require('sf-core/ui/color');
 
 const LayoutHeaderBar = require("../components/LayoutHeaderBar");
 
@@ -35,21 +35,38 @@ const PgExpanseManagement_ = extend(Page)(
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
-		const listViewStyle = getCombinedStyle(".listView", {
+		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
+			height: null,
+			backgroundColor: Color.create(0, 255, 255, 255),
 			marginLeft: 10,
 			marginRight: 10,
+			flexGrow: 1,
+			justifyContent: FlexLayout.JustifyContent.CENTER
+		});
+		var listViewContainer = new FlexLayout(listViewContainerStyle);
+		this.layout.addChild(listViewContainer);
+		this.listViewContainer = listViewContainer;
+
+		const listViewStyle = getCombinedStyle(".listView", {
+			width: null,
+			height: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: 1
 		});
 		var listView = new ListView(listViewStyle);
 		listView.onRowCreate = function(){ return new ListViewItem(); };
-		this.layout.addChild(listView);
+		listViewContainer.addChild(listView);
 		this.listView = listView;
 
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,
+			listViewContainer: listViewContainer
+		});
+		
+		//assign the children of listViewContainer
+		listViewContainer.children = Object.assign({}, {
 			listView: listView
 		});
 		
