@@ -1,11 +1,10 @@
 const extend = require("js-base/core/extend");
 const Animator = require("sf-core/ui/animator");
-const FlexLayout = require("sf-core/ui/flexlayout");
 const Image = require("sf-core/ui/image");
-const ImageView = require("sf-core/ui/imageview");
 const Router = require("sf-core/router");
 const System = require("sf-core/device/system");
 const Timer = require("sf-core/timer");
+const updater = require("lib/updater");
 
 const PageDesign = require("../../ui/ui_pgLogin");
 
@@ -15,22 +14,27 @@ const Page_ = extend(PageDesign)(
 		// Initalizes super class for this page scope
 		_super(this, params);
 		
-		var _superOnLoad = this.onLoad;
-		this.onLoad = function() {
-			typeof _superOnLoad === "function" && _superOnLoad();
-			
-			this.passwordLayout.textboxInfo.text = "Password";
-			this.passwordLayout.innerTextbox.isPassword = true;
-			this.signinButton.onPress = signin.bind(this.signinButton, this);
-			
-			initTexts(this);
-		}
+		this.onLoad = onLoad.bind(this, this.onLoad);
+		this.onShow = onShow.bind(this, this.onShow);
+		this.signinButton.onPress = signin.bind(this.signinButton, this);
+		
+		initTexts(this);
 	}
 );
+
+function onShow(parentOnShow, params) {
+    if (typeof parentOnShow === "function") parentOnShow(params);
+    updater.checkUpdate();
+}
+
+function onLoad(parentOnLoad) {
+    if (typeof parentOnLoad === "function") parentOnLoad();
+}
 
 function initTexts(page) {
 	page.usernameLayout.textboxInfo.text = lang["pgLogin.inputs.username.info"];
 	page.passwordLayout.textboxInfo.text = lang["pgLogin.inputs.password.info"];
+	page.passwordLayout.innerTextbox.isPassword = true;
 	page.dontHaveAccount.text = lang["pgLogin.dontHaveAccount"];
 	page.signupLabel.text = lang["pgLogin.signup"];
 	page.signinButton.text = lang["pgLogin.signin"];

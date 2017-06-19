@@ -1,8 +1,9 @@
 const FlexLayout = require("sf-core/ui/flexlayout");
 const ActivityIndicator = require("sf-core/ui/activityindicator");
 const Color = require("sf-core/ui/color");
-const Screen = require('sf-core/device/screen');
+const Label = require("sf-core/ui/label");
 const Dialog = require("sf-core/ui/dialog");
+const TextAlignment = require("sf-core/ui/textalignment");
 
 var myActivityIndicator = new ActivityIndicator({
     ios:{
@@ -10,10 +11,19 @@ var myActivityIndicator = new ActivityIndicator({
     }
 });
 
+var info = new Label({
+    text: "Selam",
+    textColor: Color.WHITE,
+    alignSelf: FlexLayout.AlignSelf.STRETCH,
+    textAlignment: TextAlignment.MIDCENTER,
+    marginTop: 10
+});
+
 var myDialog = new Dialog();
 myDialog.layout.alignItems = FlexLayout.AlignItems.CENTER;
 myDialog.layout.justifyContent = FlexLayout.JustifyContent.CENTER;
-myDialog.layout.addChild(myActivityIndicator);  
+myDialog.layout.addChild(myActivityIndicator);
+myDialog.layout.addChild(info);
 myDialog.layout.applyLayout();
 
 module.exports = {
@@ -37,8 +47,12 @@ module.exports = {
             layout.removeChild(indicator);
         }
     },
-    showLoadingDialog: function() {
+    showLoadingDialog: function(text) {
+        info.text = text ? text.toString() : "";
         myDialog.show();
+    },
+    updateLoadingDialog: function(text) {
+        info.text = text ? text.toString() : "";
     },
     hideLoadingDialog: function() {
         myDialog.hide();
