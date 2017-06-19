@@ -78,7 +78,6 @@ function initTopTabBar() {
         lang["pgLeaveManagement.rejected"]
     ];
     this.topTabBar.onChanged = function(index) {
-        console.log("" + index);
         var lists = [this.approvedList, this.waitingList, this.rejectedList];
         this.data = lists[index];
         this.listView.itemCount = this.data.length;

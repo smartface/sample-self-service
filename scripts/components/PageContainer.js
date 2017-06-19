@@ -44,11 +44,7 @@ const HRIndex = extend(Page)(
 function initSwipeView(page) {
     page.swipeView = new SwipeView({
         page: page,
-        positionType: FlexLayout.PositionType.ABSOLUTE,
-        left: 0,
-        right: 0,
-        top: 0,
-        bottom: 0,
+        flexGrow: 1,
         pages: page.childPages,
         onPageSelected: onChildPageChanged.bind(page)
     });

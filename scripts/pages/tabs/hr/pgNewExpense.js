@@ -42,24 +42,12 @@ function initTexts() {
 	this.requestButton.text = lang["pgNewExpense.request"];
 }
 
-function initHeaderBarButtons() {
-	var leftItem = new HeaderBarItem({
-		color: Color.WHITE,
-		title: "",
-		image: Image.createFromFile("images://arrow_left.png"),
-		onPress: function() {
-			Router.goBack();
-		}
-	});
-	this.headerBar.setLeftItem(leftItem);
-}
-
 function onLoad(superOnLoad) {
 	typeof superOnLoad === "function" && superOnLoad();
 	wrapContentIntoScroll.call(this);
 	
 	initTexts.call(this);
-	// initHeaderBarButtons.call(this);
+	this.headerBar.itemColor = Color.WHITE;
 }
 
 function wrapContentIntoScroll() {

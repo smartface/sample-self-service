@@ -115,7 +115,7 @@
 			"userProps": {
 				"width": null,
 				"height": null,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"marginLeft": 10,
 				"marginRight": 10,
 				"usePageVariable": true,
@@ -128,9 +128,22 @@
 				"font": {},
 				"defaults": {}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "listViewContainer",
-				"isReady": true,
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"usePageVariable": true,
+				"children": [
+					"listView"
+				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -142,15 +155,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "listViewContainer",
+				"parent": "pgExpanseManagement",
+				"layout": {
+					"marginLeft": 5,
+					"marginRight": 5,
+					"borderWidth": 0
+				},
 				"flex": {
 					"alignContent": 4,
 					"alignItems": 4,
@@ -160,18 +171,56 @@
 					"positionType": 0,
 					"flexGrow": 1
 				},
-				"parent": "pgExpanseManagement",
-				"children": [
-					"listView"
-				],
+				"font": {}
+			}
+		},
+		{
+			"type": "ListView",
+			"id": "d73b24ce",
+			"themeProps": {},
+			"userProps": {
+				"usePageVariable": true,
+				"width": null,
+				"height": null,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".listView",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"multiline": false,
+				"rowHeight": 60,
+				"itemCount": 3,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"usePageVariable": true,
+				"children": [],
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "listView",
+				"parent": "listViewContainer",
 				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
 					"borderWidth": 0
 				},
-				"marginLeft": 10,
-				"marginRight": 10,
-				"usePageVariable": true
+				"flex": {
+					"positionType": 0,
+					"flexGrow": 1
+				},
+				"font": {}
 			}
 		},
 		{
@@ -309,55 +358,6 @@
 					"positionType": 0,
 					"flexGrow": null
 				}
-			}
-		},
-		{
-			"type": "ListView",
-			"id": "d73b24ce",
-			"themeProps": {},
-			"userProps": {
-				"usePageVariable": true,
-				"width": null,
-				"height": null,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
-			},
-			"props": {
-				"name": "listView",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"multiline": false,
-				"rowHeight": 60,
-				"itemCount": 3,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"parent": "listViewContainer",
-				"children": [],
-				"layout": {
-					"borderWidth": 0
-				},
-				"usePageVariable": true
 			}
 		}
 	]

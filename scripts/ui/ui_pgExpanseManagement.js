@@ -38,7 +38,7 @@ const PgExpanseManagement_ = extend(Page)(
 		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
-			backgroundColor: Color.create(0, 255, 255, 255),
+			backgroundColor: Color.create(255, 255, 255, 255),
 			marginLeft: 10,
 			marginRight: 10,
 			flexGrow: 1,
