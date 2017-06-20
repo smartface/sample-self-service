@@ -130,6 +130,7 @@ SMF.i18n.defineLanguage('en', {
 	"pgExpenseApprovalDetail.reject"	: "REJECT",
 	"pgExpenseApprovalDetail.approve"	: "APPROVE",
 	"pgAnnouncement.pageTitle"			: "ANNOUNCEMENT",
+	"pgEmployeeDirectory.pageTitle"		: "EMPLOYEE DIRECTORY",
 	"alertView.confirmation"			: "Confirmation",
 	"alertView.warning"					: "Warning",
 	"alertView.error"					: "Error"
