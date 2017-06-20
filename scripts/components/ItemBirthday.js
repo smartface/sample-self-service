@@ -3,13 +3,13 @@
 */
 const extend = require('js-base/core/extend');
 
-const ItemUserDesign = require('library/ItemUser');
+const ItemBirthdayDesign = require('library/ItemBirthday');
 
-const ItemUser = extend(ItemUserDesign)(
+const ItemBirthday = extend(ItemBirthdayDesign)(
 	//constructor
 	function(_super, props, pageName){
-		delete ItemUserDesign.defaults.width;
-		_super(this, props || ItemUserDesign.defaults );
+		// initalizes super class for this scope
+		_super(this, props || ItemBirthdayDesign.defaults );
 		this.pageName = pageName;
 		
 		var user;
@@ -26,10 +26,10 @@ const ItemUser = extend(ItemUserDesign)(
 );
 
 function invalidate(item) {
-	item.userImage.image = item.user.image;
-	item.userName.text = item.user.name;
-	item.userPosition.text = item.user.position;
+	item.ibUserImage.image = item.user.image;
+	item.ibUserName.text = item.user.name;
+	item.ibUserPosition.text = item.user.position;
 }
 
-module && (module.exports = ItemUser);
+module && (module.exports = ItemBirthday);
 
