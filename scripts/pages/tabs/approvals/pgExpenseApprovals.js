@@ -4,6 +4,7 @@ const Color = require("sf-core/ui/color");
 const ItemApproval = require("components/ItemApproval");
 const ListViewItem = require("sf-core/ui/listviewitem");
 const PageDesign = require("../../../ui/ui_pgExpenseApprovals");
+const Router = require("sf-core/router");
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -27,11 +28,16 @@ function initTexts() {
 function initListView() {
 	this.listView.rowHeight = 90;
 	this.listView.refreshEnabled = false;
+	
 	this.listView.onRowCreate = function() {
 		var listViewItem = new ListViewItem();
 		var item = new ItemApproval();
 		listViewItem.addChild(item);
 		return listViewItem;
+	}
+	
+	this.listView.onRowSelected = function() {
+		Router.go("tabs/approvals/expenseApprovalDetail");
 	}
 }
 
