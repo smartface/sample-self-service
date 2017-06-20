@@ -61,11 +61,16 @@ tabBar.add("hr", new TabBarItem({
     route: hrNavigator
 }));
 
+var approvalNavigator = new Navigator();
+approvalNavigator.add("index", require("./pages/tabs/approvals"));
+approvalNavigator.add("leaveApprovalDetail", require("./pages/tabs/approvals/pgLeaveApprovalDetail"));
+approvalNavigator.go("index");
 tabBar.add("approvals", new TabBarItem({
     title: lang["tab.Approvals"],
     icon: Image.createFromFile("images://icon_tab_approvals.png"),
-    route: require("./pages/tabs/approvals")
+    route: approvalNavigator
 }));
+
 tabBar.add("myCompany", new TabBarItem({
     title: lang["tab.myCompany"],
     icon: Image.createFromFile("images://icon_tab_mycompany.png"),
