@@ -33,8 +33,8 @@
 				"parent": null,
 				"name": "pgAnnouncement",
 				"layout": {
-					"width": 187.5,
-					"height": 333.5
+					"width": 585.9375,
+					"height": 1042.1875
 				},
 				"flex": {
 					"alignContent": 4,
@@ -44,8 +44,8 @@
 					"justifyContent": 0
 				},
 				"font": {},
-				"width": 375,
-				"height": 667
+				"width": 468.75,
+				"height": 833.75
 			}
 		},
 		{
@@ -68,7 +68,7 @@
 				"isRemovable": false,
 				"name": "statusBar",
 				"layout": {
-					"height": 20
+					"height": 25
 				},
 				"flex": {},
 				"font": {},
@@ -100,7 +100,7 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"layout": {
-					"height": 44
+					"height": 55
 				},
 				"flex": {},
 				"font": {},
@@ -118,6 +118,8 @@
 				"height": null,
 				"marginLeft": 10,
 				"marginRight": 10,
+				"paddingLeft": null,
+				"paddingRight": null,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -126,9 +128,24 @@
 				"font": {},
 				"defaults": {}
 			},
+			"className": ".flexLayout",
 			"props": {
-				"name": "listViewContainer",
-				"isReady": true,
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"usePageVariable": true,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"children": [
+					"listView"
+				],
+				"paddingLeft": null,
+				"paddingRight": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -140,15 +157,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
+				"name": "listViewContainer",
+				"parent": "pgAnnouncement",
+				"layout": {
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"borderWidth": 0
+				},
 				"flex": {
 					"alignContent": 4,
 					"alignItems": 4,
@@ -158,18 +173,7 @@
 					"positionType": 0,
 					"flexGrow": 1
 				},
-				"parent": "pgAnnouncement",
-				"children": [
-					"listView"
-				],
-				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"borderWidth": 0
-				},
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10
+				"font": {}
 			}
 		},
 		{
@@ -180,6 +184,8 @@
 				"width": null,
 				"height": null,
 				"usePageVariable": true,
+				"marginLeft": 10,
+				"marginRight": 10,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -188,14 +194,8 @@
 				"font": {},
 				"defaults": {}
 			},
+			"className": ".listView",
 			"props": {
-				"name": "listView",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"height": null,
 				"width": null,
 				"touchEnabled": true,
@@ -207,17 +207,27 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"font": {},
+				"usePageVariable": true,
+				"children": [],
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "listView",
+				"parent": "listViewContainer",
+				"layout": {
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"borderWidth": 0
+				},
 				"flex": {
 					"positionType": 0,
 					"flexGrow": 1
 				},
-				"parent": "listViewContainer",
-				"children": [],
-				"layout": {
-					"borderWidth": 0
-				},
-				"usePageVariable": true
+				"font": {},
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		},
 		{
@@ -259,6 +269,7 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
+				"usePageVariable": true,
 				"children": [
 					"flexlayout118"
 				],
@@ -285,12 +296,10 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 92,
+					"height": 115,
 					"borderWidth": 0
 				},
-				"font": {},
-				"visibility": true,
-				"usePageVariable": true
+				"font": {}
 			}
 		},
 		{
@@ -345,8 +354,8 @@
 				"name": "flexlayout118",
 				"parent": "layoutHeaderBar",
 				"layout": {
-					"top": 20,
-					"height": 40,
+					"top": 25,
+					"height": 50,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -407,7 +416,7 @@
 				"name": "leftItems",
 				"parent": "flexlayout118",
 				"layout": {
-					"width": 68,
+					"width": 85,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -536,7 +545,7 @@
 				"name": "rightItems",
 				"parent": "flexlayout118",
 				"layout": {
-					"width": 68,
+					"width": 85,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -594,8 +603,8 @@
 				"name": "rightItem2",
 				"parent": "rightItems",
 				"layout": {
-					"width": 24,
-					"height": 24,
+					"width": 30,
+					"height": 30,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -650,8 +659,8 @@
 				"name": "rightItem1",
 				"parent": "rightItems",
 				"layout": {
-					"width": 24,
-					"height": 24,
+					"width": 30,
+					"height": 30,
 					"borderWidth": 0
 				},
 				"flex": {

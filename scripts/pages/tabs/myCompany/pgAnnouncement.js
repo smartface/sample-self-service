@@ -17,11 +17,11 @@ const Page_ = extend(PageDesign)(
 );
 
 function initTexts() {
-	this.layoutHeaderBar.headerBarTitle.text = lang["pgLeaveApprovals.pageTitle"];
+	this.layoutHeaderBar.headerBarTitle.text = lang["pgAnnouncement.pageTitle"];
 }
 
 function initListView() {
-	this.listView.rowHeight = 110;
+	this.listView.rowHeight = 120;
 	this.listView.refreshEnabled = false;
 	
 	this.listView.onRowCreate = function() {

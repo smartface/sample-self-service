@@ -39,6 +39,8 @@ const PgAnnouncement_ = extend(Page)(
 			height: null,
 			marginLeft: 10,
 			marginRight: 10,
+			paddingLeft: null,
+			paddingRight: null,
 			flexGrow: 1
 		});
 		var listViewContainer = new FlexLayout(listViewContainerStyle);
@@ -48,6 +50,8 @@ const PgAnnouncement_ = extend(Page)(
 		const listViewStyle = getCombinedStyle(".listView", {
 			width: null,
 			height: null,
+			marginLeft: 10,
+			marginRight: 10,
 			flexGrow: 1
 		});
 		var listView = new ListView(listViewStyle);

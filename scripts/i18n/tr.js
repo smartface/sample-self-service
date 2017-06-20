@@ -129,6 +129,7 @@ SMF.i18n.defineLanguage('tr', {
 	"pgExpenseApprovalDetail.file"		: "FILE",
 	"pgExpenseApprovalDetail.reject"	: "REJECT",
 	"pgExpenseApprovalDetail.approve"	: "APPROVE",
+	"pgAnnouncement.pageTitle"			: "ANNOUNCEMENT",
 	"alertView.confirmation"			: "Confirmation",
 	"alertView.warning"					: "Warning",
 	"alertView.error"					: "Error"
