@@ -25,7 +25,7 @@ function initTexts() {
 
 function initHeaderBar() {
 	this.headerBar.itemColor = Color.WHITE;
-	this.headerBar.title = lang["pgLeaveApprovalDetail.pageTitle"];
+	this.headerBar.title = lang["pgExpenseApprovalDetail.pageTitle"];
 }
 
 function wrapContentIntoScroll() {
