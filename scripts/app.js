@@ -36,7 +36,7 @@ var tabBar = new BottomTabBar({
     backgroundColor: Color.create("#EAEAEB"),
     itemColor: {
         normal: Color.create("#9C9DA6"),
-        checked: itemColor
+        selected: itemColor
     }
 });
 
