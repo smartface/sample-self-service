@@ -4,7 +4,8 @@ const PageContainer = require("components/PageContainer");
 const HRIndex = extend(PageContainer)(
     function(_super, params) {
         this.childPages = [
-                require("./pgLeaveApprovals")
+                require("./pgLeaveApprovals"),
+                require("./pgExpenseApprovals")
             ];
         _super(this, params);
     }

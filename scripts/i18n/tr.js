@@ -107,6 +107,9 @@ SMF.i18n.defineLanguage('tr', {
 	"pgLeaveApprovals.pageTitle"		: "LEAVE APPROVALS",
 	"pgLeaveApprovals.waitingTab"		: "Waiting",
 	"pgLeaveApprovals.approvedTab"		: "Approved",
+	"pgExpenseApprovals.pageTitle"		: "EXPENSE APPROVALS",
+	"pgExpenseApprovals.waitingTab"		: "Waiting",
+	"pgExpenseApprovals.approvedTab"	: "Approved",
 	"alertView.confirmation"			: "Confirmation",
 	"alertView.warning"					: "Warning",
 	"alertView.error"					: "Error"
