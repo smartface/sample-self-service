@@ -1,5 +1,6 @@
 /*globals lang*/
 const extend = require('js-base/core/extend');
+const Image = require("sf-core/ui/image");
 const ListViewItem = require('sf-core/ui/listviewitem');
 const Router = require("sf-core/router");
 const MockService = require('../../../objects/MockService');
@@ -16,10 +17,10 @@ const Page_ = extend(PageDesign)(
 		// Initalizes super class for this page scope
 		_super(this);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
-		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-		
+
 		this.users = [];
 		initListView(this.listView, this.users);
+		initHeaderBar.call(this);
     }
 );
 
@@ -43,11 +44,6 @@ function onShow(parentOnShow) {
     }
 }
 
-function onLoad(parentOnLoad) {
-    parentOnLoad();
-    this.layoutHeaderBar.headerBarTitle.text = lang["pgEmployeeDirectory.pageTitle"];
-}
-
 function initListView(listView, data) {
     listView.rowHeight = 75;
     listView.itemCount = data.length;
@@ -65,6 +61,16 @@ function initListView(listView, data) {
     
     listView.onRowSelected = function() {
     }
+}
+
+function initHeaderBar() {
+    this.layoutHeaderBar.headerBarTitle.text = lang["pgEmployeeDirectory.pageTitle"];
+    this.layoutHeaderBar.setRightItem1({
+        image: Image.createFromFile("images://icon_header_dots.png")
+    });
+    this.layoutHeaderBar.setRightItem2({
+        image: Image.createFromFile("images://icon_header_search.png")
+    });
 }
 
 module && (module.exports = Page_);
