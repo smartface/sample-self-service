@@ -11,8 +11,8 @@ const Color = require('sf-core/ui/color');
 const ImageView = require('sf-core/ui/imageview');
 const Image = require('sf-core/ui/image');
 const ImageFillType = require('sf-core/ui/imagefilltype');
-const Button = require('sf-core/ui/button');
 const Label = require('sf-core/ui/label');
+const Button = require('sf-core/ui/button');
 const Font = require('sf-core/ui/font');
 const TextAlignment = require('sf-core/ui/textalignment');
 
@@ -31,7 +31,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 
 		const mainContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
-			height: 510,
+			height: 520,
 			marginLeft: 10,
 			marginRight: 10,
 			paddingLeft: null,
@@ -47,9 +47,10 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 
 		const userInformationStyle = getCombinedStyle(".flexLayout", {
 			width: null,
-			height: 90,
+			height: 100,
 			paddingLeft: 10,
 			paddingRight: 10,
+			paddingBottom: 10,
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
@@ -102,25 +103,6 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		userInformation.addChild(avatar);
 		this.avatar = avatar;
 
-		const rejectStyle = getCombinedStyle(".button", {
-			width: null,
-			height: null,
-			text: "REJECT",
-			backgroundColor: Color.create(255, 255, 50, 75),
-			flexGrow: 10
-		});
-		var reject = new Button(rejectStyle);
-		buttonsLayout.addChild(reject);
-		
-		const flexlayout1105Style = getCombinedStyle(".flexLayout", {
-			width: null,
-			height: null,
-			flexGrow: 1,
-			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var flexlayout1105 = new FlexLayout(flexlayout1105Style);
-		flexlayout1104.addChild(flexlayout1105);
-		
 		const descriptionStyle = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -133,6 +115,25 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		descriptionLayout.addChild(description);
 		this.description = description;
 
+		const flexlayout1105Style = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: null,
+			flexGrow: 1,
+			alignSelf: FlexLayout.AlignSelf.STRETCH
+		});
+		var flexlayout1105 = new FlexLayout(flexlayout1105Style);
+		flexlayout1104.addChild(flexlayout1105);
+		
+		const rejectStyle = getCombinedStyle(".button", {
+			width: null,
+			height: null,
+			text: "REJECT",
+			backgroundColor: Color.create(255, 255, 50, 75),
+			flexGrow: 10
+		});
+		var reject = new Button(rejectStyle);
+		buttonsLayout.addChild(reject);
+		
 		const flexlayout3Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -146,7 +147,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			height: 60,
 			width: null,
 			marginLeft: 10,
-			flexGrow: 1
+			flexGrow: 2
 		});
 		var flexlayout1103 = new FlexLayout(flexlayout1103Style);
 		userInformation.addChild(flexlayout1103);
@@ -172,6 +173,16 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var imageview171 = new ImageView(imageview171Style);
 		flexlayout1104.addChild(imageview171);
 		
+		const flexlayout408Style = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: 60,
+			flexGrow: 1,
+			alignItems: FlexLayout.AlignItems.CENTER,
+			justifyContent: FlexLayout.JustifyContent.CENTER
+		});
+		var flexlayout408 = new FlexLayout(flexlayout408Style);
+		userInformation.addChild(flexlayout408);
+		
 		const approveStyle = getCombinedStyle(".button", {
 			width: null,
 			height: null,
@@ -191,6 +202,18 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var flexlayout1108 = new FlexLayout(flexlayout1108Style);
 		flexlayout1105.addChild(flexlayout1108);
 		
+		const nameStyle = getCombinedStyle(".label", {
+			width: null,
+			height: null,
+			text: "Adam Stewart",
+			textColor: Color.create(255, 74, 74, 74),
+			flexGrow: 1,
+			font: Font.create("Arial", 18, Font.NORMAL)
+		});
+		var name = new Label(nameStyle);
+		flexlayout1103.addChild(name);
+		this.name = name;
+
 		const flexlayout1Style = getCombinedStyle(".flexLayout", {
 			backgroundColor: Color.create(0, 255, 255, 255),
 			width: null,
@@ -205,18 +228,38 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var flexlayout1 = new FlexLayout(flexlayout1Style);
 		flexlayout1106.addChild(flexlayout1);
 		
-		const nameStyle = getCombinedStyle(".label", {
+		const imageview66Style = getCombinedStyle(".imageView", {
+			width: null,
+			height: 20,
+			imageFillType: ImageFillType.ASPECTFIT,
+			image: Image.createFromFile("images://icon_sick_leave.png"),
+			flexGrow: null,
+			alignSelf: FlexLayout.AlignSelf.STRETCH
+		});
+		var imageview66 = new ImageView(imageview66Style);
+		flexlayout408.addChild(imageview66);
+		
+		const label541Style = getCombinedStyle(".label .label-list-item-header", {
+			width: null,
+			height: 20,
+			textAlignment: TextAlignment.MIDCENTER,
+			text: "Sick Leave",
+			flexGrow: null,
+			alignSelf: FlexLayout.AlignSelf.STRETCH,
+			font: Font.create("Arial", 12, Font.NORMAL)
+		});
+		var label541 = new Label(label541Style);
+		flexlayout408.addChild(label541);
+		
+		const flexlayout1108_1Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
-			text: "Adam Stewart",
-			textColor: Color.create(255, 74, 74, 74),
 			flexGrow: 1,
-			font: Font.create("Arial", 18, Font.NORMAL)
+			flexDirection: FlexLayout.FlexDirection.ROW
 		});
-		var name = new Label(nameStyle);
-		flexlayout1103.addChild(name);
-		this.name = name;
-
+		var flexlayout1108_1 = new FlexLayout(flexlayout1108_1Style);
+		flexlayout1105.addChild(flexlayout1108_1);
+		
 		const positionStyle = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -229,15 +272,6 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		flexlayout1103.addChild(position);
 		this.position = position;
 
-		const flexlayout1108_1Style = getCombinedStyle(".flexLayout", {
-			width: null,
-			height: null,
-			flexGrow: 1,
-			flexDirection: FlexLayout.FlexDirection.ROW
-		});
-		var flexlayout1108_1 = new FlexLayout(flexlayout1108_1Style);
-		flexlayout1105.addChild(flexlayout1108_1);
-		
 		const imageview170Style = getCombinedStyle(".imageView", {
 			width: 30,
 			height: 30,
@@ -249,15 +283,6 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});
 		var imageview170 = new ImageView(imageview170Style);
 		flexlayout1105.addChild(imageview170);
-		
-		const flexlayout2Style = getCombinedStyle(".flexLayout", {
-			width: null,
-			height: null,
-			backgroundColor: Color.create(0, 255, 255, 255),
-			flexGrow: 1
-		});
-		var flexlayout2 = new FlexLayout(flexlayout2Style);
-		flexlayout1.addChild(flexlayout2);
 		
 		const label1_1Style = getCombinedStyle(".label", {
 			width: null,
@@ -274,6 +299,15 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var label1_1 = new Label(label1_1Style);
 		flexlayout1108_1.addChild(label1_1);
 		
+		const flexlayout2Style = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: null,
+			backgroundColor: Color.create(0, 255, 255, 255),
+			flexGrow: 1
+		});
+		var flexlayout2 = new FlexLayout(flexlayout2Style);
+		flexlayout1.addChild(flexlayout2);
+		
 		const flexlayout1111Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -285,6 +319,15 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});
 		var flexlayout1111 = new FlexLayout(flexlayout1111Style);
 		flexlayout1108.addChild(flexlayout1111);
+		
+		const flexlayout2_1Style = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: null,
+			backgroundColor: Color.create(0, 255, 255, 255),
+			flexGrow: 1
+		});
+		var flexlayout2_1 = new FlexLayout(flexlayout2_1Style);
+		flexlayout1.addChild(flexlayout2_1);
 		
 		const flexlayout1114Style = getCombinedStyle(".flexLayout", {
 			width: 1,
@@ -304,27 +347,6 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var flexlayout1115 = new FlexLayout(flexlayout1115Style);
 		flexlayout1108.addChild(flexlayout1115);
 		
-		const flexlayout2_1Style = getCombinedStyle(".flexLayout", {
-			width: null,
-			height: null,
-			backgroundColor: Color.create(0, 255, 255, 255),
-			flexGrow: 1
-		});
-		var flexlayout2_1 = new FlexLayout(flexlayout2_1Style);
-		flexlayout1.addChild(flexlayout2_1);
-		
-		const flexlayout1111_2Style = getCombinedStyle(".flexLayout", {
-			width: null,
-			height: null,
-			paddingRight: 30,
-			paddingTop: 5,
-			paddingBottom: 5,
-			paddingLeft: 5,
-			flexGrow: 1
-		});
-		var flexlayout1111_2 = new FlexLayout(flexlayout1111_2Style);
-		flexlayout1108.addChild(flexlayout1111_2);
-		
 		const label1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -339,6 +361,18 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var label1 = new Label(label1Style);
 		flexlayout1108_1.addChild(label1);
 		
+		const flexlayout1111_2Style = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: null,
+			paddingRight: 30,
+			paddingTop: 5,
+			paddingBottom: 5,
+			paddingLeft: 5,
+			flexGrow: 1
+		});
+		var flexlayout1111_2 = new FlexLayout(flexlayout1111_2Style);
+		flexlayout1108.addChild(flexlayout1111_2);
+		
 		const flexlayout2_1_1Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -347,54 +381,6 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});
 		var flexlayout2_1_1 = new FlexLayout(flexlayout2_1_1Style);
 		flexlayout1.addChild(flexlayout2_1_1);
-		
-		const label2_3Style = getCombinedStyle(".label", {
-			width: null,
-			height: null,
-			textAlignment: TextAlignment.BOTTOMCENTER,
-			backgroundColor: Color.create(0, 255, 255, 255),
-			textColor: Color.create(255, 255, 255, 255),
-			text: "5",
-			flexGrow: 2,
-			font: Font.create("Arial", 24, Font.NORMAL)
-		});
-		var label2_3 = new Label(label2_3Style);
-		flexlayout2_1.addChild(label2_3);
-		
-		const label1572_2Style = getCombinedStyle(".label", {
-			width: null,
-			height: null,
-			textAlignment: TextAlignment.MIDCENTER,
-			text: "12:30",
-			textColor: Color.create(255, 74, 74, 74),
-			flexGrow: 1
-		});
-		var label1572_2 = new Label(label1572_2Style);
-		flexlayout1111_2.addChild(label1572_2);
-		
-		const label1572Style = getCombinedStyle(".label", {
-			width: null,
-			height: null,
-			textAlignment: TextAlignment.MIDCENTER,
-			text: "9:30",
-			textColor: Color.create(255, 74, 74, 74),
-			flexGrow: 1
-		});
-		var label1572 = new Label(label1572Style);
-		flexlayout1111.addChild(label1572);
-		
-		const label2Style = getCombinedStyle(".label", {
-			width: null,
-			height: null,
-			textAlignment: TextAlignment.BOTTOMCENTER,
-			backgroundColor: Color.create(0, 255, 255, 255),
-			textColor: Color.create(255, 255, 255, 255),
-			text: "19",
-			flexGrow: 2,
-			font: Font.create("Arial", 24, Font.NORMAL)
-		});
-		var label2 = new Label(label2Style);
-		flexlayout2.addChild(label2);
 		
 		const label2_3_1Style = getCombinedStyle(".label", {
 			width: null,
@@ -409,18 +395,65 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var label2_3_1 = new Label(label2_3_1Style);
 		flexlayout2_1_1.addChild(label2_3_1);
 		
-		const label2_1_1_1Style = getCombinedStyle(".label", {
+		const label2Style = getCombinedStyle(".label", {
+			width: null,
+			height: null,
+			textAlignment: TextAlignment.BOTTOMCENTER,
+			backgroundColor: Color.create(0, 255, 255, 255),
+			textColor: Color.create(255, 255, 255, 255),
+			text: "19",
+			flexGrow: 2,
+			font: Font.create("Arial", 24, Font.NORMAL)
+		});
+		var label2 = new Label(label2Style);
+		flexlayout2.addChild(label2);
+		
+		const label2_3Style = getCombinedStyle(".label", {
+			width: null,
+			height: null,
+			textAlignment: TextAlignment.BOTTOMCENTER,
+			backgroundColor: Color.create(0, 255, 255, 255),
+			textColor: Color.create(255, 255, 255, 255),
+			text: "5",
+			flexGrow: 2,
+			font: Font.create("Arial", 24, Font.NORMAL)
+		});
+		var label2_3 = new Label(label2_3Style);
+		flexlayout2_1.addChild(label2_3);
+		
+		const label1572Style = getCombinedStyle(".label", {
+			width: null,
+			height: null,
+			textAlignment: TextAlignment.MIDCENTER,
+			text: "9:30",
+			textColor: Color.create(255, 74, 74, 74),
+			flexGrow: 1
+		});
+		var label1572 = new Label(label1572Style);
+		flexlayout1111.addChild(label1572);
+		
+		const label1572_2Style = getCombinedStyle(".label", {
+			width: null,
+			height: null,
+			textAlignment: TextAlignment.MIDCENTER,
+			text: "12:30",
+			textColor: Color.create(255, 74, 74, 74),
+			flexGrow: 1
+		});
+		var label1572_2 = new Label(label1572_2Style);
+		flexlayout1111_2.addChild(label1572_2);
+		
+		const label1572_1_1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
 			textAlignment: TextAlignment.TOPCENTER,
-			backgroundColor: Color.create(0, 255, 255, 255),
-			textColor: Color.create(128, 255, 255, 255),
-			text: "Days",
+			text: "End Time",
+			textColor: Color.create(128, 74, 74, 74),
 			flexGrow: 1,
-			font: Font.create("Arial", 12, Font.NORMAL)
+			font: Font.create("Arial", 14, Font.NORMAL)
 		});
-		var label2_1_1_1 = new Label(label2_1_1_1Style);
-		flexlayout2_1_1.addChild(label2_1_1_1);
+		var label1572_1_1 = new Label(label1572_1_1Style);
+		flexlayout1111_2.addChild(label1572_1_1);
 		
 		const label2_1_1Style = getCombinedStyle(".label", {
 			width: null,
@@ -435,17 +468,18 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var label2_1_1 = new Label(label2_1_1Style);
 		flexlayout2_1.addChild(label2_1_1);
 		
-		const label1572_1Style = getCombinedStyle(".label", {
+		const label2_1_1_1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
 			textAlignment: TextAlignment.TOPCENTER,
-			text: "Start Time",
-			textColor: Color.create(128, 74, 74, 74),
+			backgroundColor: Color.create(0, 255, 255, 255),
+			textColor: Color.create(128, 255, 255, 255),
+			text: "Days",
 			flexGrow: 1,
-			font: Font.create("Arial", 14, Font.NORMAL)
+			font: Font.create("Arial", 12, Font.NORMAL)
 		});
-		var label1572_1 = new Label(label1572_1Style);
-		flexlayout1111.addChild(label1572_1);
+		var label2_1_1_1 = new Label(label2_1_1_1Style);
+		flexlayout2_1_1.addChild(label2_1_1_1);
 		
 		const label2_1Style = getCombinedStyle(".label", {
 			width: null,
@@ -460,17 +494,30 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var label2_1 = new Label(label2_1Style);
 		flexlayout2.addChild(label2_1);
 		
-		const label1572_1_1Style = getCombinedStyle(".label", {
+		const label1572_1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
 			textAlignment: TextAlignment.TOPCENTER,
-			text: "End Time",
+			text: "Start Time",
 			textColor: Color.create(128, 74, 74, 74),
 			flexGrow: 1,
 			font: Font.create("Arial", 14, Font.NORMAL)
 		});
-		var label1572_1_1 = new Label(label1572_1_1Style);
-		flexlayout1111_2.addChild(label1572_1_1);
+		var label1572_1 = new Label(label1572_1Style);
+		flexlayout1111.addChild(label1572_1);
+		
+		const label2_2Style = getCombinedStyle(".label", {
+			width: null,
+			height: null,
+			textAlignment: TextAlignment.MIDCENTER,
+			backgroundColor: Color.create(0, 255, 255, 255),
+			textColor: Color.create(191, 255, 255, 255),
+			text: "TOTAL",
+			flexGrow: 1,
+			font: Font.create("Arial", 16, Font.NORMAL)
+		});
+		var label2_2 = new Label(label2_2Style);
+		flexlayout2.addChild(label2_2);
 		
 		const label2_2_1_1Style = getCombinedStyle(".label", {
 			width: null,
@@ -498,19 +545,6 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var label2_2_1 = new Label(label2_2_1Style);
 		flexlayout2_1.addChild(label2_2_1);
 		
-		const label2_2Style = getCombinedStyle(".label", {
-			width: null,
-			height: null,
-			textAlignment: TextAlignment.MIDCENTER,
-			backgroundColor: Color.create(0, 255, 255, 255),
-			textColor: Color.create(191, 255, 255, 255),
-			text: "TOTAL",
-			flexGrow: 1,
-			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var label2_2 = new Label(label2_2Style);
-		flexlayout2.addChild(label2_2);
-		
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			mainContainer: mainContainer
@@ -527,7 +561,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		//assign the children of userInformation
 		userInformation.children = Object.assign({}, {
 			avatar: avatar,
-			flexlayout1103: flexlayout1103
+			flexlayout1103: flexlayout1103,
+			flexlayout408: flexlayout408
 		});
 		
 		//assign the children of flexlayout1104
@@ -565,6 +600,12 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		//assign the children of flexlayout1106
 		flexlayout1106.children = Object.assign({}, {
 			flexlayout1: flexlayout1
+		});
+		
+		//assign the children of flexlayout408
+		flexlayout408.children = Object.assign({}, {
+			imageview66: imageview66,
+			label541: label541
 		});
 		
 		//assign the children of flexlayout1108
