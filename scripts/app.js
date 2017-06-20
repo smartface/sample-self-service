@@ -53,6 +53,7 @@ tabBar.add("profile", new TabBarItem({
 var hrNavigator = new Navigator();
 hrNavigator.add("index", require("./pages/tabs/hr"));
 hrNavigator.add("newExpense", require("./pages/tabs/hr/pgNewExpense"));
+hrNavigator.add("newLeaveRequest", require("./pages/tabs/hr/pgNewLeaveRequest"));
 hrNavigator.go("index");
 tabBar.add("hr", new TabBarItem({
     title: lang["tab.HR"],

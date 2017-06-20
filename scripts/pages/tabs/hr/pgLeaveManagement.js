@@ -1,9 +1,11 @@
 const extend = require('js-base/core/extend');
-const ListViewItem = require('sf-core/ui/listviewitem');
-const ItemLeaveManagement = require('../../../components/ItemLeaveManagement');
-const PageDesign = require("../../../ui/ui_pgLeaveManagement");
-const MockService = require("../../../objects/MockService");
 const DialogsLib = require("lib/ui/dialogs");
+const ListViewItem = require('sf-core/ui/listviewitem');
+const Image = require("sf-core/ui/image");
+const ItemLeaveManagement = require('../../../components/ItemLeaveManagement');
+const MockService = require("../../../objects/MockService");
+const PageDesign = require("../../../ui/ui_pgLeaveManagement");
+const Router = require("sf-core/router");
 const Timer = require("sf-core/timer");
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
@@ -23,6 +25,7 @@ const Page_ = extend(PageDesign)(
         
         initListView(this.listView, this);
         initTopTabBar.call(this);
+        initHeaderBar.call(this);
     }
 );
 
@@ -51,7 +54,6 @@ function onShow(parentOnShow) {
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
-    this.layoutHeaderBar.headerBarTitle.text = lang["pgLeaveManagement.pageTitle"];
 }
 
 function initListView(listView, dataHolder) {
@@ -83,6 +85,16 @@ function initTopTabBar() {
         this.listView.itemCount = this.data.length;
         this.listView.refreshData();
     }.bind(this);
+}
+
+function initHeaderBar() {
+    this.layoutHeaderBar.headerBarTitle.text = lang["pgLeaveManagement.pageTitle"];
+    this.layoutHeaderBar.setRightItem1({
+        image: Image.createFromFile("images://icon_header_add.png"),
+        onPress: function() {
+            Router.go("tabs/hr/newLeaveRequest");
+        }
+    });
 }
 
 module && (module.exports = Page_);
