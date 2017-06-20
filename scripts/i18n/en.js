@@ -104,6 +104,9 @@ SMF.i18n.defineLanguage('en', {
 	"pgOutOfOffice.external"			: "External",
 	"pgOutOfOffice.noteTitle"			: "NOTE",
 	"pgOutOfOffice.description"			: "Description...",
+	"pgLeaveApprovals.pageTitle"		: "LEAVE APPROVALS",
+	"pgLeaveApprovals.waitingTab"		: "Waiting",
+	"pgLeaveApprovals.approvedTab"		: "Approved",
 	"alertView.confirmation"			: "Confirmation",
 	"alertView.warning"					: "Warning",
 	"alertView.error"					: "Error"

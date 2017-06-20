@@ -64,7 +64,7 @@ tabBar.add("hr", new TabBarItem({
 tabBar.add("approvals", new TabBarItem({
     title: lang["tab.Approvals"],
     icon: Image.createFromFile("images://icon_tab_approvals.png"),
-    route: require("./pages/tabs/approvals/pgApprovals")
+    route: require("./pages/tabs/approvals")
 }));
 tabBar.add("myCompany", new TabBarItem({
     title: lang["tab.myCompany"],

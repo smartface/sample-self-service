@@ -35,7 +35,10 @@ const PgNewWorklog_ = extend(Page)(
 			marginTop: 10,
 			marginBottom: 10,
 			width: null,
-			height: 240
+			height: 240,
+			paddingLeft: 10,
+			paddingRight: 10,
+			paddingTop: 10
 		});
 		var flexlayout35 = new FlexLayout(flexlayout35Style);
 		this.layout.addChild(flexlayout35);
