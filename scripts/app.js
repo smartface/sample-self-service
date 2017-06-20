@@ -75,7 +75,7 @@ tabBar.add("approvals", new TabBarItem({
 tabBar.add("myCompany", new TabBarItem({
     title: lang["tab.myCompany"],
     icon: Image.createFromFile("images://icon_tab_mycompany.png"),
-    route: require("./pages/tabs/myCompany/pgMyCompany")
+    route: require("./pages/tabs/myCompany")
 }));
 
 var settingsNavigator = new Navigator();
