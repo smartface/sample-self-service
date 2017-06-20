@@ -13,8 +13,7 @@ const Page_ = extend(PageDesign)(
 		this.onLoad = function() {
 			typeof _superOnLoad === "function" && _superOnLoad();
 			
-			console.log(Data.getStringVariable("theme"));
-			this.layoutHeaderBar.children.headerBarTitle.text = lang["pgApprovals.pageTitle"];
+			this.layoutHeaderBar.headerBarTitle.text = lang["pgApprovals.pageTitle"];
 			if (Data.getStringVariable("theme") === "Style1") {
 				this.comingSoon.image = Image.createFromFile("images://coming_soon.png");
 			} else {

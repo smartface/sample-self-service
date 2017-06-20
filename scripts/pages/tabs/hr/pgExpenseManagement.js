@@ -48,7 +48,7 @@ function onShow(parentOnShow) {
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
-    this.layoutHeaderBar.children.headerBarTitle.text = lang["pgExpenseManagement.pageTitle"];
+    this.layoutHeaderBar.headerBarTitle.text = lang["pgExpenseManagement.pageTitle"];
 }
 
 function initListView() {

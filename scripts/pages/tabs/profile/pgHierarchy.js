@@ -44,7 +44,7 @@ function onShow(parentOnShow) {
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
-    this.layoutHeaderBar.children.headerBarTitle.text = lang["pgHierarchy.pageTitle"];
+    this.layoutHeaderBar.headerBarTitle.text = lang["pgHierarchy.pageTitle"];
 }
 
 function initListView(listView, data) {

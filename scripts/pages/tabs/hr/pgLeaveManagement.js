@@ -51,7 +51,7 @@ function onShow(parentOnShow) {
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
-    this.layoutHeaderBar.children.headerBarTitle.text = lang["pgLeaveManagement.pageTitle"];
+    this.layoutHeaderBar.headerBarTitle.text = lang["pgLeaveManagement.pageTitle"];
 }
 
 function initListView(listView, dataHolder) {

@@ -10,19 +10,8 @@ const Page_ = extend(PageDesign)(
 		// Initalizes super class for this page scope
 		_super(this, params);
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-		this.layoutHeaderBar.children.headerBarTitle.text = lang["pgOverview.pageTitle"];
-		this.qualificationTitle.text = lang["pgOverview.qualification"];
-		this.containerType.title.text = lang["pgOverview.type"];
-		this.containerType.value.text = "Diploma"
-		this.containerTitle.title.text = lang["pgOverview.title"];
-		this.containerTitle.value.text = "Certificate Diploma in Office"
-		this.containerAwardedDate.title.text = lang["pgOverview.awardedDate"];
-		this.containerAwardedDate.value.text = "May,31 2017"
-		this.salaryTitle.text = lang["pgOverview.salary"];
-		this.containerBasic.title.text = lang["pgOverview.basic"];
-		this.containerBasic.value.text = "$1500"
-		this.containerVariable.title.text = lang["pgOverview.variable"];
-		this.containerVariable.value.text = "$1000"
+		
+		initTexts.call(this);
 	}
 );
 
@@ -38,6 +27,22 @@ function wrapContentIntoScroll() {
 	this.layout.removeChild(this.flexlayout500);
 	this.scrollView.addChild(this.flexlayout500);
 	this.layout.addChild(this.scrollView);
-} 
+}
+
+function initTexts() {
+	this.layoutHeaderBar.headerBarTitle.text = lang["pgOverview.pageTitle"];
+	this.qualificationTitle.text = lang["pgOverview.qualification"];
+	this.containerType.title.text = lang["pgOverview.type"];
+	this.containerType.value.text = "Diploma"
+	this.containerTitle.title.text = lang["pgOverview.title"];
+	this.containerTitle.value.text = "Certificate Diploma in Office"
+	this.containerAwardedDate.title.text = lang["pgOverview.awardedDate"];
+	this.containerAwardedDate.value.text = "May,31 2017"
+	this.salaryTitle.text = lang["pgOverview.salary"];
+	this.containerBasic.title.text = lang["pgOverview.basic"];
+	this.containerBasic.value.text = "$1500"
+	this.containerVariable.title.text = lang["pgOverview.variable"];
+	this.containerVariable.value.text = "$1000"
+}
 
 module && (module.exports = Page_);
