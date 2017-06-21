@@ -51,8 +51,8 @@ const PgThisMonthsBirthdays_ = extend(Page)(
 		const listViewStyle = getCombinedStyle(".listView", {
 			width: null,
 			height: null,
-			marginLeft: 10,
-			marginRight: 10,
+			marginLeft: null,
+			marginRight: null,
 			rowHeight: 80,
 			flexGrow: 1,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
