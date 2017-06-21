@@ -24,7 +24,7 @@ const Page_ = extend(PageDesign)(
 
 function onShow(parentOnShow, params) {
     if (typeof parentOnShow === "function") parentOnShow(params);
-    updater.checkUpdate();
+    // updater.checkUpdate();
 }
 
 function onLoad(parentOnLoad) {
