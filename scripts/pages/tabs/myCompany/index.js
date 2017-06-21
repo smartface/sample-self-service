@@ -6,7 +6,8 @@ const HRIndex = extend(PageContainer)(
         this.childPages = [
                 require("./pgAnnouncement"),
                 require("./pgEmployeeDirectory"),
-                require("./pgThisMonthsBirthdays")
+                require("./pgThisMonthsBirthdays"),
+                require("./pgMeetingRoomReservations")
             ];
         _super(this, params);
     }
