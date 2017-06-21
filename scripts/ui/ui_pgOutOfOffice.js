@@ -100,23 +100,6 @@ const PgOutOfOffice_ = extend(Page)(
 		var noteContainer = new FlexLayout(noteContainerStyle);
 		mainContainer.addChild(noteContainer);
 		
-		const intExtTitleStyle = getCombinedStyle(".label .label-list-item-header", {
-			height: 25,
-			width: null,
-			text: "LOREM IPSUM"
-		});
-		var intExtTitle = new Label(intExtTitleStyle);
-		intExtContainer.addChild(intExtTitle);
-		this.intExtTitle = intExtTitle;
-
-		const flexlayout97Style = getCombinedStyle(".flexLayout", {
-			width: null,
-			height: 25,
-			flexDirection: FlexLayout.FlexDirection.ROW
-		});
-		var flexlayout97 = new FlexLayout(flexlayout97Style);
-		noteContainer.addChild(flexlayout97);
-		
 		const outOfOfficeStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 59,
@@ -132,6 +115,23 @@ const PgOutOfOffice_ = extend(Page)(
 		flexlayout48.addChild(outOfOffice);
 		this.outOfOffice = outOfOffice;
 
+		const flexlayout97Style = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: 25,
+			flexDirection: FlexLayout.FlexDirection.ROW
+		});
+		var flexlayout97 = new FlexLayout(flexlayout97Style);
+		noteContainer.addChild(flexlayout97);
+		
+		const intExtTitleStyle = getCombinedStyle(".label .label-list-item-header", {
+			height: 25,
+			width: null,
+			text: "LOREM IPSUM"
+		});
+		var intExtTitle = new Label(intExtTitleStyle);
+		intExtContainer.addChild(intExtTitle);
+		this.intExtTitle = intExtTitle;
+
 		const startTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
@@ -141,16 +141,6 @@ const PgOutOfOffice_ = extend(Page)(
 		dateContainer.addChild(startTitle);
 		this.startTitle = startTitle;
 
-		const flexlayout742Style = getCombinedStyle(".flexLayout", {
-			width: null,
-			height: 45,
-			marginTop: 10,
-			flexDirection: FlexLayout.FlexDirection.ROW,
-			justifyContent: FlexLayout.JustifyContent.SPACE_BETWEEN
-		});
-		var flexlayout742 = new FlexLayout(flexlayout742Style);
-		dateContainer.addChild(flexlayout742);
-		
 		const internalStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 59,
@@ -179,6 +169,27 @@ const PgOutOfOffice_ = extend(Page)(
 		noteContainer.addChild(description);
 		this.description = description;
 
+		const flexlayout742Style = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: 45,
+			marginTop: 10,
+			flexDirection: FlexLayout.FlexDirection.ROW,
+			justifyContent: FlexLayout.JustifyContent.SPACE_BETWEEN
+		});
+		var flexlayout742 = new FlexLayout(flexlayout742Style);
+		dateContainer.addChild(flexlayout742);
+		
+		const endTitleStyle = getCombinedStyle(".label .label-list-item-header", {
+			height: 25,
+			width: null,
+			marginLeft: null,
+			marginTop: 10,
+			text: "END"
+		});
+		var endTitle = new Label(endTitleStyle);
+		dateContainer.addChild(endTitle);
+		this.endTitle = endTitle;
+
 		const horizontalDividerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -192,17 +203,6 @@ const PgOutOfOffice_ = extend(Page)(
 		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgOutOfOffice");
 		intExtContainer.addChild(horizontalDivider);
 		
-		const endTitleStyle = getCombinedStyle(".label .label-list-item-header", {
-			height: 25,
-			width: null,
-			marginLeft: null,
-			marginTop: 10,
-			text: "END"
-		});
-		var endTitle = new Label(endTitleStyle);
-		dateContainer.addChild(endTitle);
-		this.endTitle = endTitle;
-
 		const externalStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 59,
@@ -228,6 +228,18 @@ const PgOutOfOffice_ = extend(Page)(
 		var flexlayout742_1 = new FlexLayout(flexlayout742_1Style);
 		dateContainer.addChild(flexlayout742_1);
 		
+		const startDatePickerStyle = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: 140,
+			height: 45,
+			positionType: FlexLayout.PositionType.RELATIVE,
+			flexGrow: null
+		});
+		var startDatePicker = new PickerContainer(startDatePickerStyle, "pgOutOfOffice");
+		flexlayout742.addChild(startDatePicker);
+		this.startDatePicker = startDatePicker;
+
 		const noteTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			width: null,
 			height: null,
@@ -238,22 +250,10 @@ const PgOutOfOffice_ = extend(Page)(
 		flexlayout97.addChild(noteTitle);
 		this.noteTitle = noteTitle;
 
-		const startDatePickerStyle = getCombinedStyle(".flexLayout", {
-			left: 0,
-			top: 0,
-			width: 120,
-			height: 45,
-			positionType: FlexLayout.PositionType.RELATIVE,
-			flexGrow: null
-		});
-		var startDatePicker = new PickerContainer(startDatePickerStyle, "pgOutOfOffice");
-		flexlayout742.addChild(startDatePicker);
-		this.startDatePicker = startDatePicker;
-
 		const endDatePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 120,
+			width: 140,
 			height: 45,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: null
@@ -262,22 +262,10 @@ const PgOutOfOffice_ = extend(Page)(
 		flexlayout742_1.addChild(endDatePicker);
 		this.endDatePicker = endDatePicker;
 
-		const startTimePickerStyle = getCombinedStyle(".flexLayout", {
-			left: 0,
-			top: 0,
-			width: 120,
-			height: 45,
-			positionType: FlexLayout.PositionType.RELATIVE,
-			flexGrow: null
-		});
-		var startTimePicker = new PickerContainer(startTimePickerStyle, "pgOutOfOffice");
-		flexlayout742.addChild(startTimePicker);
-		this.startTimePicker = startTimePicker;
-
 		const endTimePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 120,
+			width: 140,
 			height: 45,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: null
@@ -295,6 +283,18 @@ const PgOutOfOffice_ = extend(Page)(
 		var imageview44 = new ImageView(imageview44Style);
 		flexlayout97.addChild(imageview44);
 		
+		const startTimePickerStyle = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: 140,
+			height: 45,
+			positionType: FlexLayout.PositionType.RELATIVE,
+			flexGrow: null
+		});
+		var startTimePicker = new PickerContainer(startTimePickerStyle, "pgOutOfOffice");
+		flexlayout742.addChild(startTimePicker);
+		this.startTimePicker = startTimePicker;
+
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,

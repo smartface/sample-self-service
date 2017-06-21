@@ -99,7 +99,7 @@ SMF.i18n.defineLanguage('en', {
 	"pgOutOfOffice.endTitle"			: "END",
 	"pgOutOfOffice.endDate"				: "End Date",
 	"pgOutOfOffice.endTime"				: "End Time",
-	"pgOutOfOffice.intExtTitle"			: "LOREM IPSUM",
+	"pgOutOfOffice.intExtTitle"			: "OUT OF OFFICE STATUS TYPE",
 	"pgOutOfOffice.internal"			: "Internal",
 	"pgOutOfOffice.external"			: "External",
 	"pgOutOfOffice.noteTitle"			: "NOTE",
