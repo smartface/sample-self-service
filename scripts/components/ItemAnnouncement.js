@@ -11,6 +11,7 @@ const ItemAnnouncement = extend(ItemAnnouncementDesign)(
 		// initalizes super class for this scope
 		_super(this, props || ItemAnnouncementDesign.defaults );
 		this.pageName = pageName;
+		this.width = NaN;
 	}
 	
 );
