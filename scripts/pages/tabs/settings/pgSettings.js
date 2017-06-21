@@ -1,3 +1,4 @@
+/*globals lang*/
 const extend = require("js-base/core/extend");
 const AlertView = require("sf-core/ui/alertview");
 const Application = require("sf-core/application");
@@ -19,12 +20,14 @@ const Page_ = extend(PageDesign)(
 			this.headerBar.title = lang["pgSettings.pageTitle"];
 		};
 
-		this.btnBlue.onPress = function() {
+		this.themeBlueLayout.onTouchEnded = function() {
 		    changeTheme("Style1");
 		}
-		this.btnPurple.onPress = function() {
+		this.themePurpleLayout.onTouchEnded = function() {
 		    changeTheme("Style2");
 		}
+		
+		initCurrentTheme.call(this);
 	}
 );
 
@@ -50,6 +53,13 @@ function changeTheme(styleName) {
 		type: AlertView.Android.ButtonType.NEGATIVE
 	});
 	confirmationAlert.show();
+}
+
+function initCurrentTheme() {
+	if (Data.getStringVariable("theme") !== "Style1") {
+		this.themeBlueLayout.borderWidth = 0;
+		this.themePurpleLayout.borderWidth = 1;
+	}
 }
 
 module && (module.exports = Page_);
