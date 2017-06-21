@@ -134,6 +134,8 @@ SMF.i18n.defineLanguage('tr', {
 	"pgThisMonthsBirthdays.pageTitle"	: "THIS MONTH'S BIRTDAYS",
 	"pgMeetingRoomReservations.pageTitle":"MEETING ROOM RESERVATIONS",
 	"pgCompanyDocuments.pageTitle"		: "COMPANY DOCUMENTS",
+	"pgDocumentDetail.pageTitle"		: "DOCUMENT DETAIL",
+	"pgDocumentDetail.uploadText"		: "Please Upload Your Document",
 	"alertView.confirmation"			: "Confirmation",
 	"alertView.warning"					: "Warning",
 	"alertView.error"					: "Error"

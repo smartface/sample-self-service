@@ -72,10 +72,14 @@ tabBar.add("approvals", new TabBarItem({
     route: approvalNavigator
 }));
 
+var myCompanyNavigator = new Navigator();
+myCompanyNavigator.add("index", require("./pages/tabs/myCompany"));
+myCompanyNavigator.add("documentDetail", require("./pages/tabs/myCompany/pgDocumentDetail"));
+myCompanyNavigator.go("index");
 tabBar.add("myCompany", new TabBarItem({
     title: lang["tab.myCompany"],
     icon: Image.createFromFile("images://icon_tab_mycompany.png"),
-    route: require("./pages/tabs/myCompany")
+    route: myCompanyNavigator
 }));
 
 var settingsNavigator = new Navigator();

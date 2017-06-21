@@ -1,6 +1,5 @@
 /*globals lang*/
 const extend = require('js-base/core/extend');
-const Image = require("sf-core/ui/image");
 const ListViewItem = require('sf-core/ui/listviewitem');
 const Router = require("sf-core/router");
 const MockService = require('../../../objects/MockService');
@@ -56,6 +55,10 @@ function initListView(listView, data) {
         myListViewItem.addChild(item);
         return myListViewItem;
     };
+    
+    listView.onRowSelected = function() {
+        Router.go("tabs/myCompany/documentDetail");
+    }
 }
 
 function initHeaderBar() {

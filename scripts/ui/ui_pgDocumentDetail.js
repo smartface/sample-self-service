@@ -7,14 +7,18 @@
 const extend = require('js-base/core/extend');
 const Page = require('sf-core/ui/page');
 const FlexLayout = require('sf-core/ui/flexlayout');
-const ListView = require('sf-core/ui/listview');
-const ListViewItem = require('sf-core/ui/listviewitem');
+const ImageView = require('sf-core/ui/imageview');
+const Image = require('sf-core/ui/image');
+const ImageFillType = require('sf-core/ui/imagefilltype');
+const Label = require('sf-core/ui/label');
+const TextAlignment = require('sf-core/ui/textalignment');
+const Color = require('sf-core/ui/color');
 
-const LayoutHeaderBar = require("../components/LayoutHeaderBar");
+
 
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 
-const PgCompanyDocuments_ = extend(Page)(
+const PgDocumentDetail_ = extend(Page)(
 	//constructor
 	function(_super, props) {
 		// initalizes super class for this page scope
@@ -23,45 +27,42 @@ const PgCompanyDocuments_ = extend(Page)(
 			onLoad: onLoad.bind(this)
 		}, props || {}));
 
-		const layoutHeaderBarStyle = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
-			left: 0,
-			top: 0,
-			width: null,
-			height: 92,
-			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgCompanyDocuments");
-		this.layout.addChild(layoutHeaderBar);
-		this.layoutHeaderBar = layoutHeaderBar;
-
-		const listViewContainerStyle = getCombinedStyle(".flexLayout .flexLayout-main", {
+		const mainLayoutStyle = getCombinedStyle(".flexLayout .flexLayout-main", {
 			width: null,
 			height: null,
+			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.CENTER
 		});
-		var listViewContainer = new FlexLayout(listViewContainerStyle);
-		this.layout.addChild(listViewContainer);
-		this.listViewContainer = listViewContainer;
+		var mainLayout = new FlexLayout(mainLayoutStyle);
+		this.layout.addChild(mainLayout);
+		this.mainLayout = mainLayout;
 
-		const listViewStyle = getCombinedStyle(".listView", {
-			width: null,
-			height: null,
-			flexGrow: 1
+		const imageview42Style = getCombinedStyle(".imageView", {
+			image: Image.createFromFile("images://add_photo.png"),
+			height: 100,
+			width: 100,
+			imageFillType: ImageFillType.ASPECTFIT
 		});
-		var listView = new ListView(listViewStyle);
-		listView.onRowCreate = function(){ return new ListViewItem(); };
-		listViewContainer.addChild(listView);
-		this.listView = listView;
-
+		var imageview42 = new ImageView(imageview42Style);
+		mainLayout.addChild(imageview42);
+		
+		const label322Style = getCombinedStyle(".label", {
+			textAlignment: TextAlignment.MIDCENTER,
+			text: "Please Upload Your Document",
+			textColor: Color.create(255, 155, 155, 155)
+		});
+		var label322 = new Label(label322Style);
+		mainLayout.addChild(label322);
+		
 		//assign the children to page 
 		this.children = Object.assign({}, {
-			layoutHeaderBar: layoutHeaderBar,
-			listViewContainer: listViewContainer
+			mainLayout: mainLayout
 		});
 		
-		//assign the children of listViewContainer
-		listViewContainer.children = Object.assign({}, {
-			listView: listView
+		//assign the children of mainLayout
+		mainLayout.children = Object.assign({}, {
+			imageview42: imageview42,
+			label322: label322
 		});
 		
 	});
@@ -80,8 +81,7 @@ function onShow() {
 
   //HeaderBar props
   const headerBarStyle = getCombinedStyle(".headerBar", {
-		title: "newPage001",
-		visible: false
+		title: "newPage001"
 	});
 	
 	Object.assign(this.headerBar,	headerBarStyle);
@@ -97,4 +97,4 @@ function onLoad() {
 	
 }
 
-module && (module.exports = PgCompanyDocuments_);
+module && (module.exports = PgDocumentDetail_);
