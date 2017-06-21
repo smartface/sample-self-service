@@ -7,7 +7,8 @@ const HRIndex = extend(PageContainer)(
                 require("./pgAnnouncement"),
                 require("./pgEmployeeDirectory"),
                 require("./pgThisMonthsBirthdays"),
-                require("./pgMeetingRoomReservations")
+                require("./pgMeetingRoomReservations"),
+                require("./pgCompanyDocuments")
             ];
         _super(this, params);
     }

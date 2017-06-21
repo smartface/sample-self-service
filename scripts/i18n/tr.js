@@ -133,6 +133,7 @@ SMF.i18n.defineLanguage('tr', {
 	"pgEmployeeDirectory.pageTitle"		: "EMPLOYEE DIRECTORY",
 	"pgThisMonthsBirthdays.pageTitle"	: "THIS MONTH'S BIRTDAYS",
 	"pgMeetingRoomReservations.pageTitle":"MEETING ROOM RESERVATIONS",
+	"pgCompanyDocuments.pageTitle"		: "COMPANY DOCUMENTS",
 	"alertView.confirmation"			: "Confirmation",
 	"alertView.warning"					: "Warning",
 	"alertView.error"					: "Error"
