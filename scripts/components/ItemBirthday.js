@@ -11,6 +11,7 @@ const ItemBirthday = extend(ItemBirthdayDesign)(
 		// initalizes super class for this scope
 		_super(this, props || ItemBirthdayDesign.defaults );
 		this.pageName = pageName;
+		this.width = NaN;
 		
 		var user;
 		Object.defineProperty(this, 'user', {
