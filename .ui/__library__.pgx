@@ -1387,7 +1387,7 @@
 				"borderWidth": 0,
 				"id": 1015,
 				"children": [
-					"imageview1",
+					"approveIcon",
 					"approveLabel"
 				],
 				"flexProps": {
@@ -1431,6 +1431,7 @@
 				"imageFillType": "ASPECTFIT",
 				"image": "icon_approve_active.png",
 				"id": 10152,
+				"usePageVariable": true,
 				"layout": {},
 				"flex": {},
 				"font": {},
@@ -1451,12 +1452,13 @@
 				"image": "icon_approve_active.png",
 				"id": 10152,
 				"children": [],
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
 				"parent": "cont1",
-				"name": "imageview1",
+				"name": "approveIcon",
 				"layout": {
 					"width": 25,
 					"height": 25,
@@ -1575,7 +1577,7 @@
 				"borderWidth": 0,
 				"id": 1013,
 				"children": [
-					"imageview1_1",
+					"editIcon",
 					"editLabel"
 				],
 				"flexProps": {
@@ -1619,6 +1621,7 @@
 				"imageFillType": "ASPECTFIT",
 				"image": "icon_edit_active.png",
 				"id": 10132,
+				"usePageVariable": true,
 				"layout": {},
 				"flex": {},
 				"font": {},
@@ -1639,12 +1642,13 @@
 				"image": "icon_edit_active.png",
 				"id": 10132,
 				"children": [],
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
 				"parent": "cont2",
-				"name": "imageview1_1",
+				"name": "editIcon",
 				"layout": {
 					"width": 25,
 					"height": 25,
@@ -1756,7 +1760,7 @@
 				"borderWidth": 0,
 				"id": 1011,
 				"children": [
-					"imageview1_1_1",
+					"deleteIcon",
 					"deleteLabel"
 				],
 				"flexProps": {
@@ -1800,6 +1804,7 @@
 				"imageFillType": "ASPECTFIT",
 				"image": "icon_delete.png",
 				"id": 10112,
+				"usePageVariable": true,
 				"layout": {},
 				"flex": {},
 				"font": {},
@@ -1820,12 +1825,13 @@
 				"image": "icon_delete.png",
 				"id": 10112,
 				"children": [],
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
 				"parent": "cont3",
-				"name": "imageview1_1_1",
+				"name": "deleteIcon",
 				"layout": {
 					"width": 25,
 					"height": 25,

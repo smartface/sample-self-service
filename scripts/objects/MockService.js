@@ -120,13 +120,15 @@ MockService.getApprovedLeaveRequests = function() {
             days: 3,
             startDate: "11.05.2017",
             endDate: "14.05.2017",
-            active: true
+            active: true,
+            status: "approved"
         },
         {
             days: 5,
             startDate: "20.02.2017",
             endDate: "25.02.2017",
-            active: false
+            active: false,
+            status: "approved"
         }
     ];
     
@@ -139,19 +141,22 @@ MockService.getWaitingLeaveRequests = function() {
             days: 2,
             startDate: "13.07.2017",
             endDate: "15.07.2017",
-            active: true
+            active: true,
+            status: "pending"
         },
         {
             days: 3,
             startDate: "20.09.2017",
             endDate: "23.02.2017",
-            active: true
+            active: true,
+            status: "pending"
         },
         {
             days: 1,
             startDate: "02.01.2018",
             endDate: "03.01.2018",
-            active: true
+            active: true,
+            status: "pending"
         }
     ];
     
@@ -164,7 +169,8 @@ MockService.getRejectedLeaveRequests = function() {
             days: 7,
             startDate: "10.03.2017",
             endDate: "17.03.2017",
-            active: true
+            active: true,
+            status: "rejected"
         }
     ];
     

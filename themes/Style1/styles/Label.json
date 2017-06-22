@@ -138,10 +138,30 @@
       "backgroundColor": "#00FFFFFF",
       "textAlignment": "MIDCENTER"
     },
-    "&-topTabBar": {
-      "textColor": "#1775D0",
-      "&-onHeader": {
-        "textColor": "#FFFFFF"
+    "&-leaveRequestListItem": {
+      "&-approve": {
+        "&-active": {
+          "textColor": "#E7C355"
+        },
+        "&-inactive": {
+          "textColor": "#D0D0D4"
+        }
+      },
+      "&-edit": {
+        "&-active": {
+          "textColor": "#9F9F9F"
+        },
+        "&-inactive": {
+          "textColor": "#D0D0D4"
+        }
+      },
+      "&-delete": {
+        "&-active": {
+          "textColor": "#D0021B"
+        },
+        "&-inactive": {
+          "textColor": "#D0D0D4"
+        }
       }
     }
   }

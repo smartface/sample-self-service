@@ -137,7 +137,32 @@
       "textColor": "#DADBDE",
       "backgroundColor": "#00FFFFFF",
       "textAlignment": "MIDCENTER"
+    },
+    "&-leaveRequestListItem": {
+      "&-approve": {
+        "&-active": {
+          "textColor": "#FCAB53"
+        },
+        "&-inactive": {
+          "textColor": "#D0D0D4"
+        }
+      },
+      "&-edit": {
+        "&-active": {
+          "textColor": "#6D6D6D"
+        },
+        "&-inactive": {
+          "textColor": "#D0D0D4"
+        }
+      },
+      "&-delete": {
+        "&-active": {
+          "textColor": "#D0021B"
+        },
+        "&-inactive": {
+          "textColor": "#D0D0D4"
+        }
+      }
     }
-    
   }
 }
