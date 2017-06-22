@@ -34,8 +34,8 @@
 				"isRemovable": true,
 				"name": "pgOutOfOffice",
 				"layout": {
-					"width": 187.5,
-					"height": 333.5
+					"width": 649.0384615384614,
+					"height": 1062.3461538461538
 				},
 				"flex": {
 					"alignContent": 4,
@@ -45,8 +45,8 @@
 					"justifyContent": 0
 				},
 				"font": {},
-				"width": 375,
-				"height": 667
+				"width": 519.2307692307692,
+				"height": 831.8269230769231
 			}
 		},
 		{
@@ -69,12 +69,12 @@
 				"isRemovable": false,
 				"name": "statusBar",
 				"layout": {
-					"height": 20
+					"height": 31.25
 				},
 				"flex": {},
 				"font": {},
 				"flexProps": {},
-				"height": 20
+				"height": 25
 			}
 		},
 		{
@@ -100,12 +100,12 @@
 				"parent": "pgOutOfOffice",
 				"name": "headerBar",
 				"layout": {
-					"height": 44
+					"height": 70.75
 				},
 				"flex": {},
 				"font": {},
 				"flexProps": {},
-				"height": 44
+				"height": 56.6
 			}
 		},
 		{
@@ -116,8 +116,8 @@
 				"usePageVariable": true,
 				"width": null,
 				"height": 610,
-				"marginLeft": 10,
-				"marginRight": 10,
+				"marginLeft": null,
+				"marginRight": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": null
@@ -138,8 +138,8 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
+				"marginLeft": null,
+				"marginRight": null,
 				"children": [
 					"flexlayout48",
 					"dateContainer",
@@ -160,9 +160,7 @@
 				"name": "mainContainer",
 				"parent": "pgOutOfOffice",
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 610,
+					"height": 762.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -189,6 +187,8 @@
 				"paddingRight": 10,
 				"height": 190,
 				"marginTop": 10,
+				"marginLeft": 10,
+				"marginRight": 10,
 				"layout": {},
 				"flex": {},
 				"font": {},
@@ -229,11 +229,13 @@
 				"name": "dateContainer",
 				"parent": "mainContainer",
 				"layout": {
-					"marginTop": 10,
-					"height": 190,
-					"paddingLeft": 10,
-					"paddingTop": 10,
-					"paddingRight": 10,
+					"marginLeft": 12.5,
+					"marginTop": 12.5,
+					"marginRight": 12.5,
+					"height": 237.5,
+					"paddingLeft": 12.5,
+					"paddingTop": 12.5,
+					"paddingRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -244,7 +246,9 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"font": {}
+				"font": {},
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		},
 		{
@@ -293,7 +297,7 @@
 				"name": "startTitle",
 				"parent": "dateContainer",
 				"layout": {
-					"height": 25,
+					"height": 31.25,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -346,8 +350,8 @@
 				"name": "flexlayout742",
 				"parent": "dateContainer",
 				"layout": {
-					"marginTop": 10,
-					"height": 45,
+					"marginTop": 12.5,
+					"height": 56.25,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -411,8 +415,8 @@
 				"name": "endTitle",
 				"parent": "dateContainer",
 				"layout": {
-					"marginTop": 10,
-					"height": 25,
+					"marginTop": 12.5,
+					"height": 31.25,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -465,8 +469,8 @@
 				"name": "flexlayout742_1",
 				"parent": "dateContainer",
 				"layout": {
-					"marginTop": 10,
-					"height": 45,
+					"marginTop": 12.5,
+					"height": 56.25,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -488,11 +492,12 @@
 				"width": null,
 				"height": 160,
 				"top": null,
-				"marginLeft": null,
+				"marginLeft": 10,
 				"marginTop": 10,
 				"paddingLeft": 10,
 				"paddingTop": 10,
 				"paddingRight": 10,
+				"marginRight": 10,
 				"layout": {},
 				"flex": {},
 				"font": {},
@@ -510,7 +515,7 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"top": null,
-				"marginLeft": null,
+				"marginLeft": 10,
 				"marginTop": 10,
 				"paddingLeft": 10,
 				"paddingTop": 10,
@@ -534,11 +539,13 @@
 				"name": "intExtContainer",
 				"parent": "mainContainer",
 				"layout": {
-					"marginTop": 10,
-					"height": 160,
-					"paddingLeft": 10,
-					"paddingTop": 10,
-					"paddingRight": 10,
+					"marginLeft": 12.5,
+					"marginTop": 12.5,
+					"marginRight": 12.5,
+					"height": 200,
+					"paddingLeft": 12.5,
+					"paddingTop": 12.5,
+					"paddingRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -549,7 +556,8 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"font": {}
+				"font": {},
+				"marginRight": 10
 			}
 		},
 		{
@@ -598,7 +606,7 @@
 				"name": "intExtTitle",
 				"parent": "intExtContainer",
 				"layout": {
-					"height": 25,
+					"height": 31.25,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -649,9 +657,9 @@
 				"name": "flexlayout48",
 				"parent": "mainContainer",
 				"layout": {
-					"height": 59,
-					"paddingLeft": 10,
-					"paddingRight": 10,
+					"height": 73.75,
+					"paddingLeft": 12.5,
+					"paddingRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -677,6 +685,8 @@
 				"paddingTop": 10,
 				"height": 160,
 				"paddingBottom": 10,
+				"marginLeft": 10,
+				"marginRight": 10,
 				"layout": {},
 				"flex": {},
 				"font": {},
@@ -715,12 +725,14 @@
 				"name": "noteContainer",
 				"parent": "mainContainer",
 				"layout": {
-					"marginTop": 10,
-					"height": 160,
-					"paddingBottom": 10,
-					"paddingLeft": 10,
-					"paddingTop": 10,
-					"paddingRight": 10,
+					"marginLeft": 12.5,
+					"marginTop": 12.5,
+					"marginRight": 12.5,
+					"height": 200,
+					"paddingBottom": 12.5,
+					"paddingLeft": 12.5,
+					"paddingTop": 12.5,
+					"paddingRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -731,7 +743,9 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"font": {}
+				"font": {},
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		},
 		{
@@ -776,7 +790,7 @@
 				"name": "flexlayout97",
 				"parent": "noteContainer",
 				"layout": {
-					"height": 25,
+					"height": 31.25,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -882,14 +896,14 @@
 				"name": "imageview44",
 				"parent": "flexlayout97",
 				"layout": {
-					"width": 14,
+					"width": 17.5,
 					"borderWidth": 0
 				},
 				"flex": {
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/icon_microphone.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/icon_microphone.png?os=Android&osVersion=7&density=423&densityRatio=0.3846153846153846&zoomLevel=1.25&brandModel=Nexus%205X&resourceFolderOrder=drawable-xxhdpi%2Cdrawable-xxxhdpi%2Cdrawable-xhdpi%2Cdrawable-hdpi%2Cdrawable-mdpi%2Cdrawable-ldpi%2Cdrawable?random=0.9801557363591185"
 			}
 		},
 		{
@@ -942,8 +956,8 @@
 				"name": "description",
 				"parent": "noteContainer",
 				"layout": {
-					"marginTop": 10,
-					"borderWidth": 0.5
+					"marginTop": 12.5,
+					"borderWidth": 0.625
 				},
 				"flex": {
 					"positionType": 0,
@@ -1017,7 +1031,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 92,
+					"height": 115,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -1075,8 +1089,8 @@
 				"name": "flexlayout118",
 				"parent": "layoutHeaderBar",
 				"layout": {
-					"top": 20,
-					"height": 40,
+					"top": 25,
+					"height": 50,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1137,7 +1151,7 @@
 				"name": "leftItems",
 				"parent": "flexlayout118",
 				"layout": {
-					"width": 75,
+					"width": 93.75,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1266,7 +1280,7 @@
 				"name": "rightItems",
 				"parent": "flexlayout118",
 				"layout": {
-					"width": 75,
+					"width": 93.75,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1324,8 +1338,8 @@
 				"name": "rightItem2",
 				"parent": "rightItems",
 				"layout": {
-					"width": 20,
-					"height": 20,
+					"width": 25,
+					"height": 25,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1380,8 +1394,8 @@
 				"name": "rightItem1",
 				"parent": "rightItems",
 				"layout": {
-					"width": 20,
-					"height": 20,
+					"width": 25,
+					"height": 25,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1389,7 +1403,7 @@
 					"flexGrow": null
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1433,7 +1447,7 @@
 				"usePageVariable": true,
 				"children": [
 					"flexlayout429",
-					"label1402",
+					"pickerText",
 					"flexlayout430"
 				],
 				"flexProps": {
@@ -1461,8 +1475,8 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"width": 140,
-					"height": 45,
+					"width": 175,
+					"height": 56.25,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -1502,11 +1516,11 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"paddingLeft": 10,
+				"paddingRight": 10,
 				"children": [
 					"pickerTitle",
 					"imageview2"
 				],
-				"paddingRight": 10,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1521,9 +1535,9 @@
 				"parent": "startDatePicker",
 				"name": "flexlayout429",
 				"layout": {
-					"height": 20,
-					"paddingLeft": 10,
-					"paddingRight": 10,
+					"height": 25,
+					"paddingLeft": 12.5,
+					"paddingRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1591,7 +1605,7 @@
 				"parent": "flexlayout429",
 				"name": "pickerTitle",
 				"layout": {
-					"height": 30,
+					"height": 37.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1639,15 +1653,15 @@
 				"parent": "flexlayout429",
 				"name": "imageview2",
 				"layout": {
-					"width": 10,
-					"height": 5,
+					"width": 12.5,
+					"height": 6.25,
 					"borderWidth": 0
 				},
 				"flex": {
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1666,6 +1680,8 @@
 				"marginLeft": 10,
 				"marginRight": 10,
 				"text": "",
+				"usePageVariable": true,
+				"textColor": "rgba( 74, 74, 74, 1 )",
 				"flexProps": {
 					"flexGrow": null
 				},
@@ -1686,10 +1702,11 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "#9B9B9B",
+				"textColor": "rgba( 74, 74, 74, 1 )",
 				"textAlignment": "MIDLEFT",
 				"marginLeft": 10,
 				"marginRight": 10,
+				"usePageVariable": true,
 				"children": [],
 				"font": {
 					"size": 14,
@@ -1703,11 +1720,11 @@
 					"flexGrow": null
 				},
 				"parent": "startDatePicker",
-				"name": "label1402",
+				"name": "pickerText",
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 24,
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"height": 30,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1756,7 +1773,7 @@
 				"left": 0,
 				"top": 0,
 				"children": [
-					"flexlayout181"
+					"flexlayout68"
 				],
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1783,7 +1800,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 1,
+					"height": 1.25,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -1837,10 +1854,10 @@
 					"flexGrow": 1
 				},
 				"parent": "flexlayout430",
-				"name": "flexlayout181",
+				"name": "flexlayout68",
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1895,9 +1912,9 @@
 				"top": 0,
 				"usePageVariable": true,
 				"children": [
-					"flexlayout214",
-					"label268",
-					"flexlayout215"
+					"flexlayout162",
+					"label214",
+					"flexlayout163"
 				],
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1924,8 +1941,8 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"width": 140,
-					"height": 45,
+					"width": 175,
+					"height": 56.25,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -1965,11 +1982,11 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"paddingLeft": 10,
-				"children": [
-					"label267",
-					"imageview40"
-				],
 				"paddingRight": 10,
+				"children": [
+					"label213",
+					"imageview39"
+				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1982,11 +1999,11 @@
 					"flexGrow": null
 				},
 				"parent": "startTimePicker",
-				"name": "flexlayout214",
+				"name": "flexlayout162",
 				"layout": {
-					"height": 20,
-					"paddingLeft": 10,
-					"paddingRight": 10,
+					"height": 25,
+					"paddingLeft": 12.5,
+					"paddingRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2051,10 +2068,10 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"parent": "flexlayout214",
-				"name": "label267",
+				"parent": "flexlayout162",
+				"name": "label213",
 				"layout": {
-					"height": 30,
+					"height": 37.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2099,18 +2116,18 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout214",
-				"name": "imageview40",
+				"parent": "flexlayout162",
+				"name": "imageview39",
 				"layout": {
-					"width": 10,
-					"height": 5,
+					"width": 12.5,
+					"height": 6.25,
 					"borderWidth": 0
 				},
 				"flex": {
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2129,6 +2146,8 @@
 				"marginLeft": 10,
 				"marginRight": 10,
 				"text": "",
+				"usePageVariable": true,
+				"textColor": "rgba( 74, 74, 74, 1 )",
 				"flexProps": {
 					"flexGrow": null
 				},
@@ -2149,10 +2168,11 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "#9B9B9B",
+				"textColor": "rgba( 74, 74, 74, 1 )",
 				"textAlignment": "MIDLEFT",
 				"marginLeft": 10,
 				"marginRight": 10,
+				"usePageVariable": true,
 				"children": [],
 				"font": {
 					"size": 14,
@@ -2166,11 +2186,11 @@
 					"flexGrow": null
 				},
 				"parent": "startTimePicker",
-				"name": "label268",
+				"name": "label214",
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 24,
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"height": 30,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2219,7 +2239,7 @@
 				"left": 0,
 				"top": 0,
 				"children": [
-					"flexlayout216"
+					"flexlayout164"
 				],
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -2242,11 +2262,11 @@
 					"flexGrow": null
 				},
 				"parent": "startTimePicker",
-				"name": "flexlayout215",
+				"name": "flexlayout163",
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 1,
+					"height": 1.25,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -2299,11 +2319,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"parent": "flexlayout215",
-				"name": "flexlayout216",
+				"parent": "flexlayout163",
+				"name": "flexlayout164",
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2358,9 +2378,9 @@
 				"top": 0,
 				"usePageVariable": true,
 				"children": [
-					"flexlayout217",
-					"label270",
-					"flexlayout218"
+					"flexlayout165",
+					"label216",
+					"flexlayout166"
 				],
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -2387,8 +2407,8 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"width": 140,
-					"height": 45,
+					"width": 175,
+					"height": 56.25,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -2428,11 +2448,11 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"paddingLeft": 10,
-				"children": [
-					"label269",
-					"imageview41"
-				],
 				"paddingRight": 10,
+				"children": [
+					"label215",
+					"imageview40"
+				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -2445,11 +2465,11 @@
 					"flexGrow": null
 				},
 				"parent": "endDatePicker",
-				"name": "flexlayout217",
+				"name": "flexlayout165",
 				"layout": {
-					"height": 20,
-					"paddingLeft": 10,
-					"paddingRight": 10,
+					"height": 25,
+					"paddingLeft": 12.5,
+					"paddingRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2514,10 +2534,10 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"parent": "flexlayout217",
-				"name": "label269",
+				"parent": "flexlayout165",
+				"name": "label215",
 				"layout": {
-					"height": 30,
+					"height": 37.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2562,18 +2582,18 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout217",
-				"name": "imageview41",
+				"parent": "flexlayout165",
+				"name": "imageview40",
 				"layout": {
-					"width": 10,
-					"height": 5,
+					"width": 12.5,
+					"height": 6.25,
 					"borderWidth": 0
 				},
 				"flex": {
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2592,6 +2612,8 @@
 				"marginLeft": 10,
 				"marginRight": 10,
 				"text": "",
+				"usePageVariable": true,
+				"textColor": "rgba( 74, 74, 74, 1 )",
 				"flexProps": {
 					"flexGrow": null
 				},
@@ -2612,10 +2634,11 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "#9B9B9B",
+				"textColor": "rgba( 74, 74, 74, 1 )",
 				"textAlignment": "MIDLEFT",
 				"marginLeft": 10,
 				"marginRight": 10,
+				"usePageVariable": true,
 				"children": [],
 				"font": {
 					"size": 14,
@@ -2629,11 +2652,11 @@
 					"flexGrow": null
 				},
 				"parent": "endDatePicker",
-				"name": "label270",
+				"name": "label216",
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 24,
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"height": 30,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2682,7 +2705,7 @@
 				"left": 0,
 				"top": 0,
 				"children": [
-					"flexlayout219"
+					"flexlayout167"
 				],
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -2705,11 +2728,11 @@
 					"flexGrow": null
 				},
 				"parent": "endDatePicker",
-				"name": "flexlayout218",
+				"name": "flexlayout166",
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 1,
+					"height": 1.25,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -2762,11 +2785,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"parent": "flexlayout218",
-				"name": "flexlayout219",
+				"parent": "flexlayout166",
+				"name": "flexlayout167",
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2821,9 +2844,9 @@
 				"top": 0,
 				"usePageVariable": true,
 				"children": [
-					"flexlayout220",
-					"label272",
-					"flexlayout221"
+					"flexlayout168",
+					"label218",
+					"flexlayout169"
 				],
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -2850,8 +2873,8 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"width": 140,
-					"height": 45,
+					"width": 175,
+					"height": 56.25,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -2891,11 +2914,11 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"paddingLeft": 10,
-				"children": [
-					"label271",
-					"imageview42"
-				],
 				"paddingRight": 10,
+				"children": [
+					"label217",
+					"imageview41"
+				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -2908,11 +2931,11 @@
 					"flexGrow": null
 				},
 				"parent": "endTimePicker",
-				"name": "flexlayout220",
+				"name": "flexlayout168",
 				"layout": {
-					"height": 20,
-					"paddingLeft": 10,
-					"paddingRight": 10,
+					"height": 25,
+					"paddingLeft": 12.5,
+					"paddingRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2977,10 +3000,10 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"parent": "flexlayout220",
-				"name": "label271",
+				"parent": "flexlayout168",
+				"name": "label217",
 				"layout": {
-					"height": 30,
+					"height": 37.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -3025,18 +3048,18 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout220",
-				"name": "imageview42",
+				"parent": "flexlayout168",
+				"name": "imageview41",
 				"layout": {
-					"width": 10,
-					"height": 5,
+					"width": 12.5,
+					"height": 6.25,
 					"borderWidth": 0
 				},
 				"flex": {
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3055,6 +3078,8 @@
 				"marginLeft": 10,
 				"marginRight": 10,
 				"text": "",
+				"usePageVariable": true,
+				"textColor": "rgba( 74, 74, 74, 1 )",
 				"flexProps": {
 					"flexGrow": null
 				},
@@ -3075,10 +3100,11 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "#9B9B9B",
+				"textColor": "rgba( 74, 74, 74, 1 )",
 				"textAlignment": "MIDLEFT",
 				"marginLeft": 10,
 				"marginRight": 10,
+				"usePageVariable": true,
 				"children": [],
 				"font": {
 					"size": 14,
@@ -3092,11 +3118,11 @@
 					"flexGrow": null
 				},
 				"parent": "endTimePicker",
-				"name": "label272",
+				"name": "label218",
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
-					"height": 24,
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
+					"height": 30,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -3145,7 +3171,7 @@
 				"left": 0,
 				"top": 0,
 				"children": [
-					"flexlayout222"
+					"flexlayout170"
 				],
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -3168,11 +3194,11 @@
 					"flexGrow": null
 				},
 				"parent": "endTimePicker",
-				"name": "flexlayout221",
+				"name": "flexlayout169",
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 1,
+					"height": 1.25,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -3225,11 +3251,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"parent": "flexlayout221",
-				"name": "flexlayout222",
+				"parent": "flexlayout169",
+				"name": "flexlayout170",
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -3317,7 +3343,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 59,
+					"height": 73.75,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -3373,9 +3399,9 @@
 				"name": "titleSwitch",
 				"parent": "internal",
 				"layout": {
-					"marginLeft": 10,
-					"width": 120,
-					"height": 30,
+					"marginLeft": 12.5,
+					"width": 150,
+					"height": 37.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -3425,9 +3451,9 @@
 				"name": "switchItem",
 				"parent": "internal",
 				"layout": {
-					"marginRight": 10,
-					"minWidth": 51,
-					"minHeight": 31,
+					"marginRight": 12.5,
+					"minWidth": 63.75,
+					"minHeight": 38.75,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -3487,8 +3513,8 @@
 				"marginLeft": null,
 				"usePageVariable": true,
 				"children": [
-					"label273",
-					"switch5"
+					"label219",
+					"switch15"
 				],
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -3513,7 +3539,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 59,
+					"height": 73.75,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -3566,12 +3592,12 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "label273",
+				"name": "label219",
 				"parent": "external",
 				"layout": {
-					"marginLeft": 10,
-					"width": 120,
-					"height": 30,
+					"marginLeft": 12.5,
+					"width": 150,
+					"height": 37.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -3618,12 +3644,12 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "switch5",
+				"name": "switch15",
 				"parent": "external",
 				"layout": {
-					"marginRight": 10,
-					"minWidth": 51,
-					"minHeight": 31,
+					"marginRight": 12.5,
+					"minWidth": 63.75,
+					"minHeight": 38.75,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -3704,7 +3730,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 1,
+					"height": 1.25,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -3760,8 +3786,8 @@
 				"parent": "horizontalDivider",
 				"name": "flexlayout6",
 				"layout": {
-					"marginLeft": 10,
-					"marginRight": 10,
+					"marginLeft": 12.5,
+					"marginRight": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -3788,8 +3814,8 @@
 			"userProps": {
 				"width": null,
 				"height": 59,
-				"left": 0,
-				"top": 0,
+				"left": null,
+				"top": null,
 				"marginLeft": null,
 				"usePageVariable": true,
 				"flexProps": {
@@ -3818,13 +3844,13 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"left": 0,
-				"top": 0,
+				"left": null,
+				"top": null,
 				"marginLeft": null,
 				"usePageVariable": true,
 				"children": [
-					"label274",
-					"switch6"
+					"label220",
+					"switch16"
 				],
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -3847,9 +3873,7 @@
 				"name": "outOfOffice",
 				"parent": "flexlayout48",
 				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 59,
+					"height": 73.75,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -3902,12 +3926,12 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "label274",
+				"name": "label220",
 				"parent": "outOfOffice",
 				"layout": {
-					"marginLeft": 10,
-					"width": 120,
-					"height": 30,
+					"marginLeft": 12.5,
+					"width": 150,
+					"height": 37.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -3954,12 +3978,12 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"name": "switch6",
+				"name": "switch16",
 				"parent": "outOfOffice",
 				"layout": {
-					"marginRight": 10,
-					"minWidth": 51,
-					"minHeight": 31,
+					"marginRight": 12.5,
+					"minWidth": 63.75,
+					"minHeight": 38.75,
 					"borderWidth": 0
 				},
 				"flex": {

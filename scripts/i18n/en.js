@@ -23,7 +23,7 @@ SMF.i18n.defineLanguage('en', {
 	"pgSalary.proposalReason"			: "Proposal Reason",
 	"pgEmploymentHistory.pageTitle"		: "EMPLOYMENT HISTORY",
 	"pgEmploymentHistory.companyName"	: "COMPANY NAME",
-	"pgEmploymentHistory.jobTitle"		: "Jobtitle",
+	"pgEmploymentHistory.jobTitle"		: "Job Title",
 	"pgEmploymentHistory.payroll"		: "Payroll",
 	"pgEmploymentHistory.manager"		: "Manager",
 	"pgEmploymentHistory.grade"			: "Grade",

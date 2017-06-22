@@ -45,8 +45,8 @@ const PgOutOfOffice_ = extend(Page)(
 		const mainContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 610,
-			marginLeft: 10,
-			marginRight: 10,
+			marginLeft: null,
+			marginRight: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: null
 		});
@@ -70,7 +70,9 @@ const PgOutOfOffice_ = extend(Page)(
 			paddingTop: 10,
 			paddingRight: 10,
 			height: 190,
-			marginTop: 10
+			marginTop: 10,
+			marginLeft: 10,
+			marginRight: 10
 		});
 		var dateContainer = new FlexLayout(dateContainerStyle);
 		mainContainer.addChild(dateContainer);
@@ -79,11 +81,12 @@ const PgOutOfOffice_ = extend(Page)(
 			width: null,
 			height: 160,
 			top: null,
-			marginLeft: null,
+			marginLeft: 10,
 			marginTop: 10,
 			paddingLeft: 10,
 			paddingTop: 10,
-			paddingRight: 10
+			paddingRight: 10,
+			marginRight: 10
 		});
 		var intExtContainer = new FlexLayout(intExtContainerStyle);
 		mainContainer.addChild(intExtContainer);
@@ -95,7 +98,9 @@ const PgOutOfOffice_ = extend(Page)(
 			paddingRight: 10,
 			paddingTop: 10,
 			height: 160,
-			paddingBottom: 10
+			paddingBottom: 10,
+			marginLeft: 10,
+			marginRight: 10
 		});
 		var noteContainer = new FlexLayout(noteContainerStyle);
 		mainContainer.addChild(noteContainer);
@@ -103,8 +108,8 @@ const PgOutOfOffice_ = extend(Page)(
 		const outOfOfficeStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 59,
-			left: 0,
-			top: 0,
+			left: null,
+			top: null,
 			marginLeft: null,
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			alignItems: FlexLayout.AlignItems.CENTER,

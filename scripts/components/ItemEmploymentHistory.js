@@ -1,6 +1,4 @@
-/* 
-		You can modify its contents.
-*/
+/*global lang*/
 const extend = require('js-base/core/extend');
 
 const ItemEmploymentHistory = require('library/ItemEmploymentHistory');
@@ -8,10 +6,9 @@ const ItemEmploymentHistory = require('library/ItemEmploymentHistory');
 const ItemEmploymentHistory_ = extend(ItemEmploymentHistory)(
 	//constructor
 	function(_super, props, pageName){
-		delete ItemEmploymentHistory.defaults.width
+		delete ItemEmploymentHistory.defaults.width;
 		_super(this, props || ItemEmploymentHistory.defaults );
 		this.pageName = pageName;
-		this.headertitle.text = lang["pgEmploymentHistory.companyName"];
 		this.row1.title.text = lang["pgEmploymentHistory.jobTitle"];
 		this.row2.title.text = lang["pgEmploymentHistory.payroll"];
 		this.row3.title.text = lang["pgEmploymentHistory.manager"];
@@ -38,7 +35,7 @@ const ItemEmploymentHistory_ = extend(ItemEmploymentHistory)(
 
 function invalidate(item)
 {
-	item.headertitle.text = "  " + item.employment.companyName;
+	item.headerTitle.text = item.employment.companyName;
 	item.row1.value.text = item.employment.jobTitle;
 	item.row2.value.text = item.employment.payroll;
 	item.row3.value.text = item.employment.manager;

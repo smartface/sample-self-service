@@ -14,12 +14,12 @@ const LayoutHeaderBar_ = extend(LayoutHeaderBar)(
 		
 		this.setRightItem1 = function(params) {
 			this.rightItem1.image = params.image;
-			this.rightItem1.onTouchEnded = params.onPress;
+			if (params.onPress) this.rightItem1.onTouchEnded = params.onPress;
 		}.bind(this);
 		
 		this.setRightItem2 = function(params) {
 			this.rightItem2.image = params.image;
-			this.rightItem2.onTouchEnded = params.onPress;
+			if (params.onPress) this.rightItem2.onTouchEnded = params.onPress;
 		}.bind(this);
 	}
 	

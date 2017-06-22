@@ -52,7 +52,7 @@ function onLoad(parentOnLoad) {
 }
 
 function initListView(listView, data) {
-    listView.rowHeight = 360;
+    listView.rowHeight = 350;
     listView.itemCount = 0;
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
@@ -64,7 +64,8 @@ function initListView(listView, data) {
     };
     
     listView.onRowBind = function(listViewItem, index) {
-        listViewItem.item.employment = data[index];
+        var item = listViewItem.findChildById(200);
+        item.employment = data[index];
     };
 }
 

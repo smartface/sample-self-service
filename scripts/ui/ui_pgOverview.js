@@ -51,7 +51,7 @@ const PgOverview_ = extend(Page)(
 		
 		const flexlayout500Style = getCombinedStyle(".flexLayout", {
 			width: null,
-			height: 560,
+			height: 490,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: null
 		});
@@ -66,7 +66,7 @@ const PgOverview_ = extend(Page)(
 			top: null,
 			marginLeft: 10,
 			marginRight: 10,
-			marginTop: 10,
+			marginTop: null,
 			paddingLeft: 10,
 			paddingRight: 10,
 			paddingTop: 10,
@@ -138,25 +138,6 @@ const PgOverview_ = extend(Page)(
 		var label827_1 = new Label(label827_1Style);
 		flexlayout1.addChild(label827_1);
 		
-		const label536_2Style = getCombinedStyle(".label .label-list-item-header", {
-			height: 25,
-			width: null,
-			text: "PERFORMANCE OBJECTIVE",
-			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var label536_2 = new Label(label536_2Style);
-		qualificationcontainer_1.addChild(label536_2);
-		
-		const qualificationTitleStyle = getCombinedStyle(".label .label-list-item-header", {
-			height: 25,
-			width: null,
-			text: "QUALIFICATION",
-			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var qualificationTitle = new Label(qualificationTitleStyle);
-		qualificationcontainer.addChild(qualificationTitle);
-		this.qualificationTitle = qualificationTitle;
-
 		const salaryTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
@@ -167,32 +148,24 @@ const PgOverview_ = extend(Page)(
 		salarycontainer.addChild(salaryTitle);
 		this.salaryTitle = salaryTitle;
 
-		const containerBasicStyle = getCombinedStyle(".flexLayout", {
-			left: 0,
-			top: 0,
-			width: 326,
-			height: 35,
-			backgroundColor: Color.create(255, 255, 255, 255),
-			flexDirection: FlexLayout.FlexDirection.ROW,
-			positionType: FlexLayout.PositionType.RELATIVE,
-			alignItems: FlexLayout.AlignItems.CENTER
+		const qualificationTitleStyle = getCombinedStyle(".label .label-list-item-header", {
+			height: 25,
+			width: null,
+			text: "QUALIFICATION",
+			font: Font.create("Arial", 16, Font.NORMAL)
 		});
-		var containerBasic = new ListItem1(containerBasicStyle, "pgOverview");
-		salarycontainer.addChild(containerBasic);
-		this.containerBasic = containerBasic;
+		var qualificationTitle = new Label(qualificationTitleStyle);
+		qualificationcontainer.addChild(qualificationTitle);
+		this.qualificationTitle = qualificationTitle;
 
-		const listitem1_3Style = getCombinedStyle(".flexLayout", {
-			left: 0,
-			top: 0,
-			width: 326,
-			height: 35,
-			backgroundColor: Color.create(255, 255, 255, 255),
-			flexDirection: FlexLayout.FlexDirection.ROW,
-			positionType: FlexLayout.PositionType.RELATIVE,
-			alignItems: FlexLayout.AlignItems.CENTER
+		const label536_2Style = getCombinedStyle(".label .label-list-item-header", {
+			height: 25,
+			width: null,
+			text: "PERFORMANCE OBJECTIVE",
+			font: Font.create("Arial", 16, Font.NORMAL)
 		});
-		var listitem1_3 = new ListItem1(listitem1_3Style, "pgOverview");
-		qualificationcontainer_1.addChild(listitem1_3);
+		var label536_2 = new Label(label536_2Style);
+		qualificationcontainer_1.addChild(label536_2);
 		
 		const containerTypeStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
@@ -208,7 +181,34 @@ const PgOverview_ = extend(Page)(
 		qualificationcontainer.addChild(containerType);
 		this.containerType = containerType;
 
-		const horizontaldivider_2Style = getCombinedStyle(".flexLayout", {
+		const listitem1_3Style = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: 326,
+			height: 35,
+			backgroundColor: Color.create(255, 255, 255, 255),
+			flexDirection: FlexLayout.FlexDirection.ROW,
+			positionType: FlexLayout.PositionType.RELATIVE,
+			alignItems: FlexLayout.AlignItems.CENTER
+		});
+		var listitem1_3 = new ListItem1(listitem1_3Style, "pgOverview");
+		qualificationcontainer_1.addChild(listitem1_3);
+		
+		const containerBasicStyle = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: 326,
+			height: 35,
+			backgroundColor: Color.create(255, 255, 255, 255),
+			flexDirection: FlexLayout.FlexDirection.ROW,
+			positionType: FlexLayout.PositionType.RELATIVE,
+			alignItems: FlexLayout.AlignItems.CENTER
+		});
+		var containerBasic = new ListItem1(containerBasicStyle, "pgOverview");
+		salarycontainer.addChild(containerBasic);
+		this.containerBasic = containerBasic;
+
+		const horizontaldivider_3Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: null,
@@ -221,8 +221,8 @@ const PgOverview_ = extend(Page)(
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
 		});
-		var horizontaldivider_2 = new HorizontalDivider(horizontaldivider_2Style, "pgOverview");
-		salarycontainer.addChild(horizontaldivider_2);
+		var horizontaldivider_3 = new HorizontalDivider(horizontaldivider_3Style, "pgOverview");
+		qualificationcontainer_1.addChild(horizontaldivider_3);
 		
 		const horizontalDividerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
@@ -240,7 +240,7 @@ const PgOverview_ = extend(Page)(
 		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgOverview");
 		qualificationcontainer.addChild(horizontalDivider);
 		
-		const horizontaldivider_3Style = getCombinedStyle(".flexLayout", {
+		const horizontaldivider_2Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: null,
@@ -253,8 +253,22 @@ const PgOverview_ = extend(Page)(
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
 		});
-		var horizontaldivider_3 = new HorizontalDivider(horizontaldivider_3Style, "pgOverview");
-		qualificationcontainer_1.addChild(horizontaldivider_3);
+		var horizontaldivider_2 = new HorizontalDivider(horizontaldivider_2Style, "pgOverview");
+		salarycontainer.addChild(horizontaldivider_2);
+		
+		const listitem1_1_3Style = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: 326,
+			height: 35,
+			backgroundColor: Color.create(255, 255, 255, 255),
+			marginTop: null,
+			flexDirection: FlexLayout.FlexDirection.ROW,
+			positionType: FlexLayout.PositionType.RELATIVE,
+			alignItems: FlexLayout.AlignItems.CENTER
+		});
+		var listitem1_1_3 = new ListItem1(listitem1_1_3Style, "pgOverview");
+		qualificationcontainer_1.addChild(listitem1_1_3);
 		
 		const containerTitleStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
@@ -286,20 +300,6 @@ const PgOverview_ = extend(Page)(
 		salarycontainer.addChild(containerVariable);
 		this.containerVariable = containerVariable;
 
-		const listitem1_1_3Style = getCombinedStyle(".flexLayout", {
-			left: 0,
-			top: 0,
-			width: 326,
-			height: 35,
-			backgroundColor: Color.create(255, 255, 255, 255),
-			marginTop: null,
-			flexDirection: FlexLayout.FlexDirection.ROW,
-			positionType: FlexLayout.PositionType.RELATIVE,
-			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var listitem1_1_3 = new ListItem1(listitem1_1_3Style, "pgOverview");
-		qualificationcontainer_1.addChild(listitem1_1_3);
-		
 		const horizontaldivider_1Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -330,6 +330,20 @@ const PgOverview_ = extend(Page)(
 		var horizontaldivider_1_1 = new HorizontalDivider(horizontaldivider_1_1Style, "pgOverview");
 		qualificationcontainer_1.addChild(horizontaldivider_1_1);
 		
+		const performancecontainerStyle = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: 326,
+			height: 35,
+			backgroundColor: Color.create(255, 255, 255, 255),
+			marginTop: null,
+			flexDirection: FlexLayout.FlexDirection.ROW,
+			positionType: FlexLayout.PositionType.RELATIVE,
+			alignItems: FlexLayout.AlignItems.CENTER
+		});
+		var performancecontainer = new ListItem1(performancecontainerStyle, "pgOverview");
+		qualificationcontainer_1.addChild(performancecontainer);
+		
 		const containerAwardedDateStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -345,20 +359,6 @@ const PgOverview_ = extend(Page)(
 		qualificationcontainer.addChild(containerAwardedDate);
 		this.containerAwardedDate = containerAwardedDate;
 
-		const performancecontainerStyle = getCombinedStyle(".flexLayout", {
-			left: 0,
-			top: 0,
-			width: 326,
-			height: 35,
-			backgroundColor: Color.create(255, 255, 255, 255),
-			marginTop: null,
-			flexDirection: FlexLayout.FlexDirection.ROW,
-			positionType: FlexLayout.PositionType.RELATIVE,
-			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var performancecontainer = new ListItem1(performancecontainerStyle, "pgOverview");
-		qualificationcontainer_1.addChild(performancecontainer);
-		
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,

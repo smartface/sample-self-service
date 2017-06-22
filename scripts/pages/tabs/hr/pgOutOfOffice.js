@@ -20,7 +20,7 @@ function onLoad(parentOnLoad) {
 
 function wrapContentIntoScroll() {
 	this.scrollView = new ScrollView({
-		flexGrow: 1	
+		flexGrow: 1
 	});
 	this.layout.removeChild(this.mainContainer);
 	this.scrollView.addChild(this.mainContainer);
