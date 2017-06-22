@@ -114,6 +114,34 @@ const PgSettings_ = extend(Page)(
 		var label322_1 = new Label(label322_1Style);
 		flexlayout84.addChild(label322_1);
 		
+		const signoutLayoutStyle = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: 61,
+			marginLeft: null,
+			marginRight: null,
+			marginBottom: null,
+			left: 0,
+			right: 0,
+			bottom: 0,
+			positionType: FlexLayout.PositionType.ABSOLUTE
+		});
+		var signoutLayout = new FlexLayout(signoutLayoutStyle);
+		flexlayout84.addChild(signoutLayout);
+		this.signoutLayout = signoutLayout;
+
+		const flexlayout731Style = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: null,
+			height: 1,
+			backgroundColor: Color.create(255, 255, 255, 255),
+			alpha: 1,
+			flexGrow: null,
+			positionType: FlexLayout.PositionType.RELATIVE
+		});
+		var flexlayout731 = new HorizontalDivider(flexlayout731Style, "pgSettings");
+		signoutLayout.addChild(flexlayout731);
+		
 		const label108Style = getCombinedStyle(".label .label-list-item-title", {
 			text: "Theme",
 			width: null,
@@ -133,6 +161,17 @@ const PgSettings_ = extend(Page)(
 		});
 		var label108_1 = new Label(label108_1Style);
 		flexlayout85_1.addChild(label108_1);
+		
+		const label1089Style = getCombinedStyle(".label", {
+			width: null,
+			height: null,
+			text: "Sign out",
+			textAlignment: TextAlignment.MIDCENTER,
+			textColor: Color.create(255, 255, 50, 75),
+			flexGrow: 1
+		});
+		var label1089 = new Label(label1089Style);
+		signoutLayout.addChild(label1089);
 		
 		const themeBlueLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: 35,
@@ -169,21 +208,6 @@ const PgSettings_ = extend(Page)(
 		flexlayout85.addChild(themePurpleLayout);
 		this.themePurpleLayout = themePurpleLayout;
 
-		const flexlayout247Style = getCombinedStyle(".flexLayout", {
-			width: null,
-			height: null,
-			marginLeft: 4,
-			marginTop: 4,
-			marginRight: 4,
-			marginBottom: 4,
-			borderColor: Color.create(255, 69, 73, 90),
-			backgroundColor: Color.create(255, 69, 73, 90),
-			borderRadius: 6,
-			flexGrow: 1
-		});
-		var flexlayout247 = new FlexLayout(flexlayout247Style);
-		themeBlueLayout.addChild(flexlayout247);
-		
 		const flexlayout247_1Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -199,6 +223,21 @@ const PgSettings_ = extend(Page)(
 		var flexlayout247_1 = new FlexLayout(flexlayout247_1Style);
 		themePurpleLayout.addChild(flexlayout247_1);
 		
+		const flexlayout247Style = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: null,
+			marginLeft: 4,
+			marginTop: 4,
+			marginRight: 4,
+			marginBottom: 4,
+			borderColor: Color.create(255, 69, 73, 90),
+			backgroundColor: Color.create(255, 69, 73, 90),
+			borderRadius: 6,
+			flexGrow: 1
+		});
+		var flexlayout247 = new FlexLayout(flexlayout247Style);
+		themeBlueLayout.addChild(flexlayout247);
+		
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			flexlayout84: flexlayout84
@@ -211,7 +250,8 @@ const PgSettings_ = extend(Page)(
 			flexlayout85_1: flexlayout85_1,
 			horizontaldivider_1: horizontaldivider_1,
 			label322: label322,
-			label322_1: label322_1
+			label322_1: label322_1,
+			signoutLayout: signoutLayout
 		});
 		
 		//assign the children of flexlayout85
@@ -225,6 +265,12 @@ const PgSettings_ = extend(Page)(
 		flexlayout85_1.children = Object.assign({}, {
 			label108_1: label108_1,
 			switch1: switch1
+		});
+		
+		//assign the children of signoutLayout
+		signoutLayout.children = Object.assign({}, {
+			flexlayout731: flexlayout731,
+			label1089: label1089
 		});
 		
 		//assign the children of themeBlueLayout

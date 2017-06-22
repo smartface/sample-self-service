@@ -2,11 +2,9 @@
 const extend = require("js-base/core/extend");
 const AlertView = require("sf-core/ui/alertview");
 const Application = require("sf-core/application");
-const Color = require("sf-core/ui/color");
 const Data = require("sf-core/data");
-const Page = require("sf-core/ui/page");
 const PageDesign = require("../../../ui/ui_pgSettings");
-const settings = require("../../../settings.json");
+const Router = require("sf-core/ui/router");
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -23,8 +21,13 @@ const Page_ = extend(PageDesign)(
 		this.themeBlueLayout.onTouchEnded = function() {
 		    changeTheme("Style1");
 		}
+		
 		this.themePurpleLayout.onTouchEnded = function() {
 		    changeTheme("Style2");
+		}
+		
+		this.signoutLayout.onTouchEnded = function() {
+			Router.goBack("login");
 		}
 		
 		initCurrentTheme.call(this);
