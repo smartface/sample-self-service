@@ -1,10 +1,10 @@
+/*global lang*/
 const extend = require("js-base/core/extend");
 const Animator = require("sf-core/ui/animator");
 const Image = require("sf-core/ui/image");
 const Router = require("sf-core/router");
 const System = require("sf-core/device/system");
 const Timer = require("sf-core/timer");
-const updater = require("lib/updater");
 
 const PageDesign = require("../../ui/ui_pgLogin");
 
@@ -14,7 +14,6 @@ const Page_ = extend(PageDesign)(
 		// Initalizes super class for this page scope
 		_super(this, params);
 		
-		this.onLoad = onLoad.bind(this, this.onLoad);
 		this.onShow = onShow.bind(this, this.onShow);
 		this.signinButton.onPress = signin.bind(this.signinButton, this);
 		
@@ -24,13 +23,17 @@ const Page_ = extend(PageDesign)(
 
 function onShow(parentOnShow, params) {
     if (typeof parentOnShow === "function") parentOnShow(params);
-    // updater.checkUpdate();
+
+    // Reset sign in button status because if sign in animation ran it changes
+    // button properties
+    this.signinButton.text = lang["pgLogin.signin"];
+    this.signinButton.width = 250;
+    this.signinButton.alpha = 1;
+    this.loadingImageView.alpha = 0;
 }
 
-function onLoad(parentOnLoad) {
-    if (typeof parentOnLoad === "function") parentOnLoad();
-}
 
+// Loads texts from language file
 function initTexts(page) {
 	page.usernameLayout.textboxInfo.text = lang["pgLogin.inputs.username.info"];
 	page.passwordLayout.textboxInfo.text = lang["pgLogin.inputs.password.info"];
@@ -40,10 +43,12 @@ function initTexts(page) {
 	page.signinButton.text = lang["pgLogin.signin"];
 }
 
+// Runs sign in animation and calls sign in service
 function signin(page) {
 	if (page.usernameLayout.innerTextbox.text === "") {
 		return alert(lang["pgLogin.inputs.username.error"]);
 	}
+
 	if (page.passwordLayout.innerTextbox.text === "") {
 		return alert(lang["pgLogin.inputs.password.error"]);
 	}
