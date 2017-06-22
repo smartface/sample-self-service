@@ -8,11 +8,11 @@ const extend = require('js-base/core/extend');
 const Page = require('sf-core/ui/page');
 const FlexLayout = require('sf-core/ui/flexlayout');
 const Color = require('sf-core/ui/color');
+const ListView = require('sf-core/ui/listview');
+const ListViewItem = require('sf-core/ui/listviewitem');
 const ImageView = require('sf-core/ui/imageview');
 const ImageFillType = require('sf-core/ui/imagefilltype');
 const Image = require('sf-core/ui/image');
-const ListView = require('sf-core/ui/listview');
-const ListViewItem = require('sf-core/ui/listviewitem');
 
 const LayoutHeaderBar = require("../components/LayoutHeaderBar");
 const TopTabBar = require("../components/TopTabBar");
@@ -60,15 +60,6 @@ const PgLeaveManagement_ = extend(Page)(
 		this.layout.addChild(listViewContainer);
 		this.listViewContainer = listViewContainer;
 
-		const imageview1Style = getCombinedStyle(".imageView", {
-			height: 150,
-			imageFillType: ImageFillType.ASPECTFIT,
-			image: Image.createFromFile("images://graph2.png"),
-			width: 150
-		});
-		var imageview1 = new ImageView(imageview1Style);
-		flexlayout1.addChild(imageview1);
-		
 		const listViewStyle = getCombinedStyle(".listView", {
 			width: null,
 			height: null,
@@ -81,17 +72,17 @@ const PgLeaveManagement_ = extend(Page)(
 		listViewContainer.addChild(listView);
 		this.listView = listView;
 
-		const imageview2Style = getCombinedStyle(".imageView", {
-			left: 291.5,
-			top: 66,
-			width: 74,
-			height: 60,
-			imageFillType: ImageFillType.ASPECTFIT,
-			image: Image.createFromFile("images://graphlegend.png"),
-			positionType: FlexLayout.PositionType.ABSOLUTE
+		const flexlayout30Style = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: null,
+			backgroundColor: Color.create(0, 255, 255, 255),
+			flexGrow: 1,
+			alignSelf: FlexLayout.AlignSelf.STRETCH,
+			flexDirection: FlexLayout.FlexDirection.ROW,
+			alignItems: FlexLayout.AlignItems.STRETCH
 		});
-		var imageview2 = new ImageView(imageview2Style);
-		flexlayout1.addChild(imageview2);
+		var flexlayout30 = new FlexLayout(flexlayout30Style);
+		flexlayout1.addChild(flexlayout30);
 		
 		const topTabBarStyle = getCombinedStyle(".flexLayout", {
 			width: null,
@@ -111,6 +102,36 @@ const PgLeaveManagement_ = extend(Page)(
 		flexlayout1.addChild(topTabBar);
 		this.topTabBar = topTabBar;
 
+		const imageview11Style = getCombinedStyle(".imageView", {
+			width: null,
+			height: null,
+			imageFillType: ImageFillType.ASPECTFIT,
+			flexGrow: 1
+		});
+		var imageview11 = new ImageView(imageview11Style);
+		flexlayout30.addChild(imageview11);
+		
+		const imageview11_1Style = getCombinedStyle(".imageView", {
+			width: null,
+			height: null,
+			imageFillType: ImageFillType.ASPECTFIT,
+			image: Image.createFromFile("images://graph2.png"),
+			flexGrow: 1
+		});
+		var imageview11_1 = new ImageView(imageview11_1Style);
+		flexlayout30.addChild(imageview11_1);
+		
+		const imageview11_1_1Style = getCombinedStyle(".imageView", {
+			width: null,
+			height: 60,
+			imageFillType: ImageFillType.ASPECTFIT,
+			image: Image.createFromFile("images://graphlegend.png"),
+			flexGrow: 1,
+			alignSelf: FlexLayout.AlignSelf.CENTER
+		});
+		var imageview11_1_1 = new ImageView(imageview11_1_1Style);
+		flexlayout30.addChild(imageview11_1_1);
+		
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,
@@ -120,14 +141,20 @@ const PgLeaveManagement_ = extend(Page)(
 		
 		//assign the children of flexlayout1
 		flexlayout1.children = Object.assign({}, {
-			imageview1: imageview1,
-			imageview2: imageview2,
+			flexlayout30: flexlayout30,
 			topTabBar: topTabBar
 		});
 		
 		//assign the children of listViewContainer
 		listViewContainer.children = Object.assign({}, {
 			listView: listView
+		});
+		
+		//assign the children of flexlayout30
+		flexlayout30.children = Object.assign({}, {
+			imageview11: imageview11,
+			imageview11_1: imageview11_1,
+			imageview11_1_1: imageview11_1_1
 		});
 		
 	});

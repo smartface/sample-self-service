@@ -57,7 +57,7 @@ function onLoad(parentOnLoad) {
 }
 
 function initListView(listView, dataHolder) {
-    listView.rowHeight = 125;
+    listView.rowHeight = 135;
     listView.itemCount = dataHolder.data.length;
     listView.refreshEnabled = false;
     listView.onRowCreate = function() {

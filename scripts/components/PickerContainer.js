@@ -12,7 +12,6 @@ const PickerContainer = extend(PickerContainerDesign)(
 		_super(this, props || PickerContainerDesign.defaults );
 		this.pageName = pageName;
 	}
-	
 );
 
 module && (module.exports = PickerContainer);

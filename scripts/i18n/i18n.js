@@ -42,5 +42,6 @@ SMF.i18n = {
 
 require('i18n/en.js');
 require('i18n/tr.js');
+require('i18n/ar.js');
 
 SMF.i18n.switchLanguage(Device.language);

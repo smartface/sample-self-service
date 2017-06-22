@@ -87,7 +87,7 @@ const PgProfileDetail_ = extend(Page)(
 		const hierarchyControllerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 360,
+			width: null,
 			height: 345,
 			marginLeft: 10,
 			marginRight: 10,
@@ -124,7 +124,7 @@ const PgProfileDetail_ = extend(Page)(
 		const companyStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 326,
+			width: null,
 			height: 35,
 			backgroundColor: Color.create(255, 255, 255, 255),
 			flexDirection: FlexLayout.FlexDirection.ROW,
@@ -154,7 +154,7 @@ const PgProfileDetail_ = extend(Page)(
 		const emailStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 326,
+			width: null,
 			height: 35,
 			backgroundColor: Color.create(255, 255, 255, 255),
 			marginTop: null,
@@ -184,7 +184,7 @@ const PgProfileDetail_ = extend(Page)(
 		const workPhoneStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 326,
+			width: null,
 			height: 35,
 			backgroundColor: Color.create(255, 255, 255, 255),
 			marginTop: null,
@@ -214,7 +214,7 @@ const PgProfileDetail_ = extend(Page)(
 		const mobilePhoneStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 326,
+			width: null,
 			height: 35,
 			backgroundColor: Color.create(255, 255, 255, 255),
 			marginTop: null,

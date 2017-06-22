@@ -1,4 +1,4 @@
-SMF.i18n.defineLanguage('en', {
+SMF.i18n.defineLanguage('ar', {
 	"appName": "Self Service",
 	"cancel": "Cancel",
 	"done": "Done",

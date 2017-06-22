@@ -1,3 +1,4 @@
+/*global lang*/
 const extend = require('js-base/core/extend');
 const Color = require("sf-core/ui/color");
 const DialogsLib = require("lib/ui/dialogs");
@@ -69,7 +70,7 @@ function initListView() {
     }.bind(this);
     
     this.listView.onRowSelected = function() {
-        Router.go("tabs/hr/newExpense");
+        
     };
 }
 
@@ -78,23 +79,46 @@ function initFloatingMenu() {
     var items = [
         new FloatingMenu.Item({
             title: "Food",
-            titleColor: titleColor
+            titleColor: titleColor,
+            icon: Image.createFromFile("images://icon_food.png"),
+            onClick: addNewExpense
+        }),
+        new FloatingMenu.Item({
+            title: "Hotel",
+            titleColor: titleColor,
+            icon: Image.createFromFile("images://icon_hotel.png"),
+            onClick: addNewExpense
         }),
         new FloatingMenu.Item({
             title: "Travel",
-            titleColor: titleColor
+            titleColor: titleColor,
+            icon: Image.createFromFile("images://icon_airplane.png"),
+            onClick: addNewExpense
         }),
         new FloatingMenu.Item({
             title: "Taxi",
-            titleColor: titleColor
+            titleColor: titleColor,
+            icon: Image.createFromFile("images://icon_taxi.png"),
+            onClick: addNewExpense
+        }),
+        new FloatingMenu.Item({
+            title: "Health",
+            titleColor: titleColor,
+            icon: Image.createFromFile("images://icon_health_bag.png"),
+            onClick: addNewExpense
         })
     ];
         
     this.floatingMenu = new FloatingMenu({
         items: items,
-        icon: Image.createFromFile("images://icon_add_white.png")
+        icon: Image.createFromFile("images://icon_add_blue.png"),
+        color: Color.WHITE
     });
     this.layout.addChild(this.floatingMenu);
+}
+
+function addNewExpense(type) {
+    Router.go("tabs/hr/newExpense");
 }
 
 module && (module.exports = Page_);
