@@ -32,8 +32,8 @@
 				"parent": null,
 				"name": "pgExpenseApprovalDetail",
 				"layout": {
-					"width": 585.9375,
-					"height": 989.1874999999999
+					"width": 93.75,
+					"height": 145.55
 				},
 				"flex": {
 					"alignContent": 4,
@@ -43,8 +43,8 @@
 					"justifyContent": 0
 				},
 				"font": {},
-				"width": 468.75,
-				"height": 753.75
+				"width": 187.5,
+				"height": 301.5
 			}
 		},
 		{
@@ -67,7 +67,7 @@
 				"isRemovable": false,
 				"name": "statusBar",
 				"layout": {
-					"height": 25
+					"height": 10
 				},
 				"flex": {},
 				"font": {},
@@ -98,7 +98,7 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"layout": {
-					"height": 55
+					"height": 22
 				},
 				"flex": {},
 				"font": {},
@@ -113,8 +113,8 @@
 			"userProps": {
 				"width": null,
 				"height": 810,
-				"marginLeft": 10,
-				"marginRight": 10,
+				"marginLeft": null,
+				"marginRight": null,
 				"paddingLeft": null,
 				"paddingRight": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -138,6 +138,12 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"marginLeft": null,
+				"marginRight": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"top": null,
+				"usePageVariable": true,
 				"children": [
 					"userInformation",
 					"detailsLayout",
@@ -145,11 +151,6 @@
 					"fileLayout",
 					"buttonsLayout"
 				],
-				"marginLeft": 10,
-				"marginRight": 10,
-				"paddingLeft": null,
-				"paddingRight": null,
-				"top": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -164,9 +165,7 @@
 				"name": "mainLayout",
 				"parent": "pgExpenseApprovalDetail",
 				"layout": {
-					"marginLeft": 12.5,
-					"marginRight": 12.5,
-					"height": 1012.5,
+					"height": 405,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -178,8 +177,7 @@
 					"positionType": 0,
 					"flexGrow": null
 				},
-				"font": {},
-				"usePageVariable": true
+				"font": {}
 			}
 		},
 		{
@@ -191,6 +189,8 @@
 				"height": 90,
 				"paddingLeft": 10,
 				"paddingRight": 10,
+				"marginLeft": 10,
+				"marginRight": 10,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"alignItems": "CENTER"
@@ -210,12 +210,12 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"paddingLeft": 10,
+				"paddingRight": 10,
 				"children": [
 					"avatar",
 					"flexlayout109"
 				],
-				"paddingLeft": 10,
-				"paddingRight": 10,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -229,9 +229,11 @@
 				"name": "userInformation",
 				"parent": "mainLayout",
 				"layout": {
-					"height": 112.5,
-					"paddingLeft": 12.5,
-					"paddingRight": 12.5,
+					"marginLeft": 5,
+					"marginRight": 5,
+					"height": 45,
+					"paddingLeft": 5,
+					"paddingRight": 5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -242,7 +244,9 @@
 					"flexDirection": 2,
 					"positionType": 0
 				},
-				"font": {}
+				"font": {},
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		},
 		{
@@ -272,9 +276,9 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [],
 				"usePageVariable": true,
 				"image": "avatar1.png",
+				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
@@ -282,15 +286,15 @@
 				"name": "avatar",
 				"parent": "userInformation",
 				"layout": {
-					"width": 75,
-					"height": 75,
+					"width": 30,
+					"height": 30,
 					"borderWidth": 0
 				},
 				"flex": {
 					"positionType": 0
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -319,11 +323,11 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"marginLeft": 10,
 				"children": [
 					"name",
 					"position"
 				],
-				"marginLeft": 10,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -338,8 +342,8 @@
 				"name": "flexlayout109",
 				"parent": "userInformation",
 				"layout": {
-					"marginLeft": 12.5,
-					"height": 75,
+					"marginLeft": 5,
+					"height": 30,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -388,8 +392,8 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 74, 74, 74, 1 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"usePageVariable": true,
+				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -446,8 +450,8 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 74, 74, 74, 0.5 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"usePageVariable": true,
+				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -480,6 +484,8 @@
 				"paddingTop": 10,
 				"paddingRight": 10,
 				"height": 210,
+				"marginLeft": 10,
+				"marginRight": 10,
 				"layout": {},
 				"flex": {},
 				"font": {},
@@ -496,6 +502,9 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"paddingLeft": 10,
+				"paddingTop": 10,
+				"paddingRight": 10,
 				"children": [
 					"detailsTitle",
 					"titleItem",
@@ -506,9 +515,6 @@
 					"horizontaldivider_2",
 					"expenseDateItem"
 				],
-				"paddingLeft": 10,
-				"paddingTop": 10,
-				"paddingRight": 10,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -522,10 +528,12 @@
 				"name": "detailsLayout",
 				"parent": "mainLayout",
 				"layout": {
-					"height": 262.5,
-					"paddingLeft": 12.5,
-					"paddingTop": 12.5,
-					"paddingRight": 12.5,
+					"marginLeft": 5,
+					"marginRight": 5,
+					"height": 105,
+					"paddingLeft": 5,
+					"paddingTop": 5,
+					"paddingRight": 5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -536,7 +544,9 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"font": {}
+				"font": {},
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		},
 		{
@@ -570,8 +580,8 @@
 				"borderWidth": 0,
 				"textColor": "#1775D0",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"usePageVariable": true,
+				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -585,7 +595,7 @@
 				"name": "detailsTitle",
 				"parent": "detailsLayout",
 				"layout": {
-					"height": 31.25,
+					"height": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -605,6 +615,8 @@
 				"paddingRight": 10,
 				"paddingTop": 10,
 				"paddingBottom": 10,
+				"marginLeft": 10,
+				"marginRight": 10,
 				"layout": {},
 				"flex": {},
 				"font": {},
@@ -621,15 +633,15 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [
-					"noteTitle",
-					"note"
-				],
 				"marginTop": 10,
 				"paddingLeft": 10,
 				"paddingRight": 10,
 				"paddingTop": 10,
 				"paddingBottom": 10,
+				"children": [
+					"noteTitle",
+					"note"
+				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -643,12 +655,14 @@
 				"name": "noteLayout",
 				"parent": "mainLayout",
 				"layout": {
-					"marginTop": 12.5,
-					"height": 150,
-					"paddingBottom": 12.5,
-					"paddingLeft": 12.5,
-					"paddingTop": 12.5,
-					"paddingRight": 12.5,
+					"marginLeft": 5,
+					"marginTop": 5,
+					"marginRight": 5,
+					"height": 60,
+					"paddingBottom": 5,
+					"paddingLeft": 5,
+					"paddingTop": 5,
+					"paddingRight": 5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -659,7 +673,9 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"font": {}
+				"font": {},
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		},
 		{
@@ -693,8 +709,8 @@
 				"borderWidth": 0,
 				"textColor": "#1775D0",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"usePageVariable": true,
+				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -708,7 +724,7 @@
 				"name": "noteTitle",
 				"parent": "noteLayout",
 				"layout": {
-					"height": 31.25,
+					"height": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -748,9 +764,9 @@
 				"borderWidth": 0,
 				"textColor": "#4A4A4A",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"usePageVariable": true,
 				"marginTop": 10,
+				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -765,7 +781,7 @@
 				"name": "note",
 				"parent": "noteLayout",
 				"layout": {
-					"marginTop": 12.5,
+					"marginTop": 5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -787,6 +803,8 @@
 				"paddingRight": 10,
 				"paddingTop": 10,
 				"paddingBottom": 10,
+				"marginLeft": 10,
+				"marginRight": 10,
 				"layout": {},
 				"flex": {},
 				"font": {},
@@ -803,16 +821,16 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [
-					"fileTitle",
-					"imageview22"
-				],
 				"usePageVariable": true,
 				"marginTop": 10,
 				"paddingLeft": 10,
 				"paddingRight": 10,
 				"paddingTop": 10,
 				"paddingBottom": 10,
+				"children": [
+					"fileTitle",
+					"imageview22"
+				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -826,12 +844,14 @@
 				"name": "fileLayout",
 				"parent": "mainLayout",
 				"layout": {
-					"marginTop": 12.5,
-					"height": 375,
-					"paddingBottom": 12.5,
-					"paddingLeft": 12.5,
-					"paddingTop": 12.5,
-					"paddingRight": 12.5,
+					"marginLeft": 5,
+					"marginTop": 5,
+					"marginRight": 5,
+					"height": 150,
+					"paddingBottom": 5,
+					"paddingLeft": 5,
+					"paddingTop": 5,
+					"paddingRight": 5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -842,7 +862,9 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"font": {}
+				"font": {},
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		},
 		{
@@ -876,8 +898,8 @@
 				"borderWidth": 0,
 				"textColor": "#1775D0",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"usePageVariable": true,
+				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -891,7 +913,7 @@
 				"name": "fileTitle",
 				"parent": "fileLayout",
 				"layout": {
-					"height": 31.25,
+					"height": 12.5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -928,9 +950,9 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [],
 				"image": "invoice.png",
 				"marginTop": 10,
+				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
@@ -939,7 +961,7 @@
 				"name": "imageview22",
 				"parent": "fileLayout",
 				"layout": {
-					"marginTop": 12.5,
+					"marginTop": 5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -947,7 +969,7 @@
 					"flexGrow": 1
 				},
 				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/invoice.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207?random=0.7075114483871265"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/invoice.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.683190155561411"
 			}
 		},
 		{
@@ -959,6 +981,8 @@
 				"height": 60,
 				"marginTop": 10,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"marginLeft": 10,
+				"marginRight": 10,
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
@@ -977,12 +1001,12 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"marginTop": 10,
 				"children": [
 					"reject",
 					"flexlayout191",
 					"approve"
 				],
-				"marginTop": 10,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -996,8 +1020,10 @@
 				"name": "buttonsLayout",
 				"parent": "mainLayout",
 				"layout": {
-					"marginTop": 12.5,
-					"height": 75,
+					"marginLeft": 5,
+					"marginTop": 5,
+					"marginRight": 5,
+					"height": 30,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1008,7 +1034,9 @@
 					"flexDirection": 2,
 					"positionType": 0
 				},
-				"font": {}
+				"font": {},
+				"marginLeft": 10,
+				"marginRight": 10
 			}
 		},
 		{
@@ -1042,8 +1070,8 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
-				"children": [],
 				"usePageVariable": true,
+				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -1097,8 +1125,8 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
-				"children": [],
 				"usePageVariable": true,
+				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -1218,11 +1246,11 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
+				"usePageVariable": true,
 				"children": [
 					"title",
 					"value"
 				],
-				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1246,7 +1274,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 50,
+					"height": 20,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -1312,9 +1340,9 @@
 				"parent": "titleItem",
 				"name": "title",
 				"layout": {
-					"marginLeft": 12.5,
-					"width": 150,
-					"height": 37.5,
+					"marginLeft": 5,
+					"width": 60,
+					"height": 15,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1383,8 +1411,8 @@
 				"parent": "titleItem",
 				"name": "value",
 				"layout": {
-					"marginRight": 12.5,
-					"height": 37.5,
+					"marginRight": 5,
+					"height": 15,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1461,7 +1489,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 1.25,
+					"height": 0.5,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -1517,8 +1545,8 @@
 				"parent": "horizontalDivider",
 				"name": "flexlayout6",
 				"layout": {
-					"marginLeft": 12.5,
-					"marginRight": 12.5,
+					"marginLeft": 5,
+					"marginRight": 5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1575,11 +1603,11 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
-				"children": [
-					"label417",
-					"label418"
-				],
 				"usePageVariable": true,
+				"children": [
+					"label718",
+					"label719"
+				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1603,7 +1631,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 50,
+					"height": 20,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -1667,11 +1695,11 @@
 					"flexGrow": null
 				},
 				"parent": "typeItem",
-				"name": "label417",
+				"name": "label718",
 				"layout": {
-					"marginLeft": 12.5,
-					"width": 150,
-					"height": 37.5,
+					"marginLeft": 5,
+					"width": 60,
+					"height": 15,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1738,10 +1766,10 @@
 					"flexGrow": 2
 				},
 				"parent": "typeItem",
-				"name": "label418",
+				"name": "label719",
 				"layout": {
-					"marginRight": 12.5,
-					"height": 37.5,
+					"marginRight": 5,
+					"height": 15,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1791,7 +1819,7 @@
 				"left": 0,
 				"top": 0,
 				"children": [
-					"flexlayout200"
+					"flexlayout530"
 				],
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1818,7 +1846,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 1.25,
+					"height": 0.5,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -1872,10 +1900,10 @@
 					"flexGrow": 1
 				},
 				"parent": "horizontaldivider_1",
-				"name": "flexlayout200",
+				"name": "flexlayout530",
 				"layout": {
-					"marginLeft": 12.5,
-					"marginRight": 12.5,
+					"marginLeft": 5,
+					"marginRight": 5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -1932,11 +1960,11 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
-				"children": [
-					"label419",
-					"label420"
-				],
 				"usePageVariable": true,
+				"children": [
+					"label720",
+					"label721"
+				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1960,7 +1988,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 50,
+					"height": 20,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -2024,11 +2052,11 @@
 					"flexGrow": null
 				},
 				"parent": "expenseItem",
-				"name": "label419",
+				"name": "label720",
 				"layout": {
-					"marginLeft": 12.5,
-					"width": 150,
-					"height": 37.5,
+					"marginLeft": 5,
+					"width": 60,
+					"height": 15,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2095,10 +2123,10 @@
 					"flexGrow": 2
 				},
 				"parent": "expenseItem",
-				"name": "label420",
+				"name": "label721",
 				"layout": {
-					"marginRight": 12.5,
-					"height": 37.5,
+					"marginRight": 5,
+					"height": 15,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2148,7 +2176,7 @@
 				"left": 0,
 				"top": 0,
 				"children": [
-					"flexlayout201"
+					"flexlayout531"
 				],
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -2175,7 +2203,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 1.25,
+					"height": 0.5,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -2229,10 +2257,10 @@
 					"flexGrow": 1
 				},
 				"parent": "horizontaldivider_2",
-				"name": "flexlayout201",
+				"name": "flexlayout531",
 				"layout": {
-					"marginLeft": 12.5,
-					"marginRight": 12.5,
+					"marginLeft": 5,
+					"marginRight": 5,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2289,11 +2317,11 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
-				"children": [
-					"label421",
-					"label422"
-				],
 				"usePageVariable": true,
+				"children": [
+					"label722",
+					"label723"
+				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -2317,7 +2345,7 @@
 				"layout": {
 					"left": 0,
 					"top": 0,
-					"height": 50,
+					"height": 20,
 					"borderWidth": 0
 				},
 				"font": {}
@@ -2381,11 +2409,11 @@
 					"flexGrow": null
 				},
 				"parent": "expenseDateItem",
-				"name": "label421",
+				"name": "label722",
 				"layout": {
-					"marginLeft": 12.5,
-					"width": 150,
-					"height": 37.5,
+					"marginLeft": 5,
+					"width": 60,
+					"height": 15,
 					"borderWidth": 0
 				},
 				"flex": {
@@ -2452,10 +2480,10 @@
 					"flexGrow": 2
 				},
 				"parent": "expenseDateItem",
-				"name": "label422",
+				"name": "label723",
 				"layout": {
-					"marginRight": 12.5,
-					"height": 37.5,
+					"marginRight": 5,
+					"height": 15,
 					"borderWidth": 0
 				},
 				"flex": {

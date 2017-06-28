@@ -32,8 +32,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		const mainLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 810,
-			marginLeft: 10,
-			marginRight: 10,
+			marginLeft: null,
+			marginRight: null,
 			paddingLeft: null,
 			paddingRight: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
@@ -49,6 +49,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			height: 90,
 			paddingLeft: 10,
 			paddingRight: 10,
+			marginLeft: 10,
+			marginRight: 10,
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
@@ -60,7 +62,9 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			paddingLeft: 10,
 			paddingTop: 10,
 			paddingRight: 10,
-			height: 210
+			height: 210,
+			marginLeft: 10,
+			marginRight: 10
 		});
 		var detailsLayout = new FlexLayout(detailsLayoutStyle);
 		mainLayout.addChild(detailsLayout);
@@ -72,7 +76,9 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			paddingLeft: 10,
 			paddingRight: 10,
 			paddingTop: 10,
-			paddingBottom: 10
+			paddingBottom: 10,
+			marginLeft: 10,
+			marginRight: 10
 		});
 		var noteLayout = new FlexLayout(noteLayoutStyle);
 		mainLayout.addChild(noteLayout);
@@ -84,7 +90,9 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			paddingLeft: 10,
 			paddingRight: 10,
 			paddingTop: 10,
-			paddingBottom: 10
+			paddingBottom: 10,
+			marginLeft: 10,
+			marginRight: 10
 		});
 		var fileLayout = new FlexLayout(fileLayoutStyle);
 		mainLayout.addChild(fileLayout);
@@ -95,6 +103,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			height: 60,
 			marginTop: 10,
 			backgroundColor: Color.create(0, 255, 255, 255),
+			marginLeft: 10,
+			marginRight: 10,
 			flexDirection: FlexLayout.FlexDirection.ROW
 		});
 		var buttonsLayout = new FlexLayout(buttonsLayoutStyle);

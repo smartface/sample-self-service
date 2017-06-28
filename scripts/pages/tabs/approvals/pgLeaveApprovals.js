@@ -32,13 +32,18 @@ function initListView() {
 	this.listView.onRowCreate = function() {
 		var listViewItem = new ListViewItem();
 		var item = new ItemApproval();
+		item.id = 200;
 		listViewItem.addChild(item);
 		return listViewItem;
 	};
 	
+	this.listView.onRowBind = function() {
+		
+	};
+	
 	this.listView.onRowSelected = function() {
 		Router.go("tabs/approvals/leaveApprovalDetail");
-	}
+	};
 }
 
 function initTopTabBar() {

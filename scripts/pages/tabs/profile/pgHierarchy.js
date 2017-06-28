@@ -50,6 +50,7 @@ function onLoad(parentOnLoad) {
 function initListView(listView, data) {
     listView.rowHeight = 75;
     listView.itemCount = data.length;
+    
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemUser();
@@ -58,6 +59,7 @@ function initListView(listView, data) {
         myListViewItem.addChild(item);
         return myListViewItem;
     };
+    
     listView.onRowBind = function(listViewItem, index) {
         listViewItem.item.user = data[index];
     };

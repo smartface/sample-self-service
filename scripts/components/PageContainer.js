@@ -36,8 +36,6 @@ const HRIndex = extend(Page)(
                 this.statusBar.ios.style = statusbarStyle.style;
             }
         }.bind(this);
-        
-        
     }
 );
 
