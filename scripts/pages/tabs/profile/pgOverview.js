@@ -37,7 +37,7 @@ function initTexts() {
 	this.containerTitle.title.text = lang["pgOverview.title"];
 	this.containerTitle.value.text = "Certificate Diploma in Office"
 	this.containerAwardedDate.title.text = lang["pgOverview.awardedDate"];
-	this.containerAwardedDate.value.text = "May,31 2017"
+	this.containerAwardedDate.value.text = "03 May 2017"
 	this.salaryTitle.text = lang["pgOverview.salary"];
 	this.containerBasic.title.text = lang["pgOverview.basic"];
 	this.containerBasic.value.text = "$1500"

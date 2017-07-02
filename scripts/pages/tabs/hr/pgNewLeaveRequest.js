@@ -8,14 +8,24 @@ const Page_ = extend(PageDesign)(
 	function(_super, params){
 		// Initalizes super class for this page scope
 		_super(this, params);
-		this.onLoad = onLoad.bind(this, this.onLoad);
+		this.onShow = onShow.bind(this, this.onShow);
+		
+		initTexts.call(this);
 	}
 );
 
-function onLoad(parentOnLoad) {
-	if (typeof parentOnLoad === "function") parentOnLoad();
+function onShow(parentOnShow) {
+	if (typeof parentOnShow === "function") parentOnShow();
 	this.headerBar.title = lang["pgNewLeaveRequest.pageTitle"];
 	this.headerBar.itemColor = Color.WHITE;
+}
+
+function initTexts() {
+	this.informationTitle.text = lang["pgNewLeaveRequest.workInformation"];
+	this.leaveTypePicker.pickerTitle.text = lang["pgNewLeaveRequest.leaveType"];
+	this.timeTypePicker.pickerTitle.text = lang["pgNewLeaveRequest.timeType"];
+	this.selectDatePicker.pickerTitle.text = lang["pgNewLeaveRequest.selectDate"];
+	this.selectTimePicker.pickerTitle.text = lang["pgNewLeaveRequest.selectTime"];
 }
 
 module && (module.exports = Page_);

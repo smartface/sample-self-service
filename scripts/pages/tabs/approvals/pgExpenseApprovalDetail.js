@@ -21,6 +21,19 @@ function onShow(parentOnShow) {
 }
 
 function initTexts() {
+	this.titleItem.title.text = lang["pgExpenseApprovalDetail.title"];
+	this.titleItem.value.text = "";
+	this.typeItem.title.text = lang["pgExpenseApprovalDetail.type"];
+	this.typeItem.value.text = "";
+	this.expenseItem.title.text = lang["pgExpenseApprovalDetail.expense"];
+	this.expenseItem.value.text = "$1,500.30";
+	this.expenseDateItem.title.text = lang["pgExpenseApprovalDetail.expenseDate"];
+	this.expenseDateItem.value.text = "03 May 2017";
+	this.fileTitle.text = lang["pgExpenseApprovalDetail.file"];
+	this.noteTitle.text = lang["pgExpenseApprovalDetail.note"];
+	this.detailsTitle.text = lang["pgExpenseApprovalDetail.details"];
+	this.approve.text = lang["pgExpenseApprovalDetail.approve"];
+	this.reject.text = lang["pgExpenseApprovalDetail.reject"];
 }
 
 function initHeaderBar() {

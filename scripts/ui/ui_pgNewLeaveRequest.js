@@ -73,16 +73,17 @@ const PgNewLeaveRequest_ = extend(Page)(
 		var button1 = new Button(button1Style);
 		this.layout.addChild(button1);
 		
-		const label1Style = getCombinedStyle(".label .label-list-item-header", {
+		const informationTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			text: "WORK INFORMATION",
 			width: 250,
 			marginLeft: 10,
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
-		var label1 = new Label(label1Style);
-		flexlayout1.addChild(label1);
-		
+		var informationTitle = new Label(informationTitleStyle);
+		flexlayout1.addChild(informationTitle);
+		this.informationTitle = informationTitle;
+
 		const flexlayout76Style = getCombinedStyle(".flexLayout", {
 			height: 30,
 			width: null,
@@ -155,7 +156,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		var imageview17 = new ImageView(imageview17Style);
 		flexlayout76.addChild(imageview17);
 		
-		const pickerContainerStyle = getCombinedStyle(".flexLayout", {
+		const leaveTypePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: null,
@@ -163,10 +164,11 @@ const PgNewLeaveRequest_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: 1
 		});
-		var pickerContainer = new PickerContainer(pickerContainerStyle, "pgNewLeaveRequest");
-		flexlayout3.addChild(pickerContainer);
-		
-		const pickercontainer_2Style = getCombinedStyle(".flexLayout", {
+		var leaveTypePicker = new PickerContainer(leaveTypePickerStyle, "pgNewLeaveRequest");
+		flexlayout3.addChild(leaveTypePicker);
+		this.leaveTypePicker = leaveTypePicker;
+
+		const selectDatePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: null,
@@ -174,22 +176,11 @@ const PgNewLeaveRequest_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: 1
 		});
-		var pickercontainer_2 = new PickerContainer(pickercontainer_2Style, "pgNewLeaveRequest");
-		flexlayout3_1.addChild(pickercontainer_2);
-		
-		const pickercontainer_1Style = getCombinedStyle(".flexLayout", {
-			left: 0,
-			top: 0,
-			width: null,
-			height: 45,
-			marginLeft: 20,
-			positionType: FlexLayout.PositionType.RELATIVE,
-			flexGrow: 1
-		});
-		var pickercontainer_1 = new PickerContainer(pickercontainer_1Style, "pgNewLeaveRequest");
-		flexlayout3.addChild(pickercontainer_1);
-		
-		const pickercontainer_2_1Style = getCombinedStyle(".flexLayout", {
+		var selectDatePicker = new PickerContainer(selectDatePickerStyle, "pgNewLeaveRequest");
+		flexlayout3_1.addChild(selectDatePicker);
+		this.selectDatePicker = selectDatePicker;
+
+		const timeTypePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: null,
@@ -198,9 +189,23 @@ const PgNewLeaveRequest_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: 1
 		});
-		var pickercontainer_2_1 = new PickerContainer(pickercontainer_2_1Style, "pgNewLeaveRequest");
-		flexlayout3_1.addChild(pickercontainer_2_1);
-		
+		var timeTypePicker = new PickerContainer(timeTypePickerStyle, "pgNewLeaveRequest");
+		flexlayout3.addChild(timeTypePicker);
+		this.timeTypePicker = timeTypePicker;
+
+		const selectTimePickerStyle = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: null,
+			height: 45,
+			marginLeft: 20,
+			positionType: FlexLayout.PositionType.RELATIVE,
+			flexGrow: 1
+		});
+		var selectTimePicker = new PickerContainer(selectTimePickerStyle, "pgNewLeaveRequest");
+		flexlayout3_1.addChild(selectTimePicker);
+		this.selectTimePicker = selectTimePicker;
+
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			flexlayout1: flexlayout1,
@@ -210,7 +215,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		
 		//assign the children of flexlayout1
 		flexlayout1.children = Object.assign({}, {
-			label1: label1,
+			informationTitle: informationTitle,
 			flexlayout2: flexlayout2
 		});
 		
@@ -234,14 +239,14 @@ const PgNewLeaveRequest_ = extend(Page)(
 		
 		//assign the children of flexlayout3
 		flexlayout3.children = Object.assign({}, {
-			pickerContainer: pickerContainer,
-			pickercontainer_1: pickercontainer_1
+			leaveTypePicker: leaveTypePicker,
+			timeTypePicker: timeTypePicker
 		});
 		
 		//assign the children of flexlayout3_1
 		flexlayout3_1.children = Object.assign({}, {
-			pickercontainer_2: pickercontainer_2,
-			pickercontainer_2_1: pickercontainer_2_1
+			selectDatePicker: selectDatePicker,
+			selectTimePicker: selectTimePicker
 		});
 		
 	});
