@@ -38,9 +38,8 @@ function initTexts(page) {
 	page.usernameLayout.textboxInfo.text = lang["pgLogin.inputs.username.info"];
 	page.passwordLayout.textboxInfo.text = lang["pgLogin.inputs.password.info"];
 	page.passwordLayout.innerTextbox.isPassword = true;
-	page.dontHaveAccount.text = lang["pgLogin.dontHaveAccount"];
-	page.signupLabel.text = lang["pgLogin.signup"];
 	page.signinButton.text = lang["pgLogin.signin"];
+	page.appName.text = lang["pgLogin.appName"];
 }
 
 // Runs sign in animation and calls sign in service

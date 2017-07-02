@@ -43,15 +43,17 @@ const PgLogin_ = extend(Page)(
 		this.layout.addChild(imageview156);
 		
 		const appNameStyle = getCombinedStyle(".label .label-login.large .label-login", {
-			text: "SELF SERVICE",
+			text: "EMPLOYEE\nSELF SERVICE",
 			textAlignment: TextAlignment.MIDCENTER,
 			width: null,
 			height: null,
+			multiline: true,
 			flexGrow: 5
 		});
 		var appName = new Label(appNameStyle);
 		this.layout.addChild(appName);
-		
+		this.appName = appName;
+
 		const inputLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
@@ -67,7 +69,7 @@ const PgLogin_ = extend(Page)(
 			width: null,
 			height: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
-			flexGrow: 3,
+			flexGrow: 5,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.CENTER
 		});
@@ -75,28 +77,17 @@ const PgLogin_ = extend(Page)(
 		this.layout.addChild(buttonLayout);
 		this.buttonLayout = buttonLayout;
 
-		const bottomLayoutStyle = getCombinedStyle(".flexLayout", {
+		const loadingImageViewStyle = getCombinedStyle(".imageView", {
 			width: null,
-			height: null,
-			backgroundColor: Color.create(0, 255, 255, 255),
-			flexDirection: FlexLayout.FlexDirection.ROW,
-			alignItems: FlexLayout.AlignItems.FLEX_END,
-			justifyContent: FlexLayout.JustifyContent.CENTER,
-			flexGrow: 1
+			height: 50,
+			left: 0,
+			right: 0,
+			imageFillType: ImageFillType.NORMAL,
+			positionType: FlexLayout.PositionType.ABSOLUTE
 		});
-		var bottomLayout = new FlexLayout(bottomLayoutStyle);
-		this.layout.addChild(bottomLayout);
-		
-		const dontHaveAccountStyle = getCombinedStyle(".label .label-login.small .label-login.info", {
-			text: "Don't have an account yet?",
-			width: null,
-			height: 30,
-			textAlignment: TextAlignment.MIDRIGHT,
-			flexGrow: 10
-		});
-		var dontHaveAccount = new Label(dontHaveAccountStyle);
-		bottomLayout.addChild(dontHaveAccount);
-		this.dontHaveAccount = dontHaveAccount;
+		var loadingImageView = new ImageView(loadingImageViewStyle);
+		buttonLayout.addChild(loadingImageView);
+		this.loadingImageView = loadingImageView;
 
 		const usernameLayoutStyle = getCombinedStyle(".flexLayout", {
 			height: 60,
@@ -111,18 +102,6 @@ const PgLogin_ = extend(Page)(
 		inputLayout.addChild(usernameLayout);
 		this.usernameLayout = usernameLayout;
 
-		const loadingImageViewStyle = getCombinedStyle(".imageView", {
-			width: null,
-			height: 50,
-			left: 0,
-			right: 0,
-			imageFillType: ImageFillType.NORMAL,
-			positionType: FlexLayout.PositionType.ABSOLUTE
-		});
-		var loadingImageView = new ImageView(loadingImageViewStyle);
-		buttonLayout.addChild(loadingImageView);
-		this.loadingImageView = loadingImageView;
-
 		const signinButtonStyle = getCombinedStyle(".button", {
 			text: "SIGN IN",
 			width: 250,
@@ -135,17 +114,6 @@ const PgLogin_ = extend(Page)(
 		var signinButton = new Button(signinButtonStyle);
 		buttonLayout.addChild(signinButton);
 		this.signinButton = signinButton;
-
-		const signupLabelStyle = getCombinedStyle(".label .label-login.small .label-login", {
-			text: "Sign Up",
-			width: null,
-			height: 30,
-			marginLeft: 5,
-			flexGrow: 5
-		});
-		var signupLabel = new Label(signupLabelStyle);
-		bottomLayout.addChild(signupLabel);
-		this.signupLabel = signupLabel;
 
 		const passwordLayoutStyle = getCombinedStyle(".flexLayout", {
 			height: 60,
@@ -165,8 +133,7 @@ const PgLogin_ = extend(Page)(
 			imageview156: imageview156,
 			appName: appName,
 			inputLayout: inputLayout,
-			buttonLayout: buttonLayout,
-			bottomLayout: bottomLayout
+			buttonLayout: buttonLayout
 		});
 		
 		//assign the children of inputLayout
@@ -179,12 +146,6 @@ const PgLogin_ = extend(Page)(
 		buttonLayout.children = Object.assign({}, {
 			loadingImageView: loadingImageView,
 			signinButton: signinButton
-		});
-		
-		//assign the children of bottomLayout
-		bottomLayout.children = Object.assign({}, {
-			dontHaveAccount: dontHaveAccount,
-			signupLabel: signupLabel
 		});
 		
 	});

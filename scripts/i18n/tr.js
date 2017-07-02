@@ -1,5 +1,5 @@
 SMF.i18n.defineLanguage('tr', {
-	"appName": "Self Service",
+	"appName": "Employee Self Service",
 	"cancel": "Cancel",
 	"done": "Done",
 	"no": "No",
@@ -78,6 +78,7 @@ SMF.i18n.defineLanguage('tr', {
 	"pgNewExpense.note.description" 	: "Description...",
 	"pgNewExpense.fileAttachment"		: "ATTACHMENTS",
 	"pgNewExpense.request"				: "REQUEST",
+	"pgLogin.appName"					: "EMPLOYEE\nSELF SERVICE",
 	"pgLogin.inputs.username.info"  	: "Username",
 	"pgLogin.inputs.username.hint"  	: "",
 	"pgLogin.inputs.username.error" 	: "Username can not be empty.",
