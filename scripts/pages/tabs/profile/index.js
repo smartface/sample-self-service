@@ -1,5 +1,4 @@
 const extend = require("js-base/core/extend");
-const Layouts = require("lib/ui/layouts");
 const PageContainer = require("components/PageContainer");
 
 const ProfileIndex = extend(PageContainer)(
@@ -11,7 +10,6 @@ const ProfileIndex = extend(PageContainer)(
                 require("./pgPerformance"),
                 require("./pgHierarchy")
             ];
-        this.loadingLayout = Layouts.createLoadingLayout(262); 
         _super(this, params);
     }
 );
