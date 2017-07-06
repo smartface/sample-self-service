@@ -461,11 +461,11 @@
 				},
 				"children": [
 					"label536_2",
-					"listitem1_3",
+					"objectiveContainer",
 					"horizontaldivider_3",
-					"listitem1_1_3",
+					"dueDateContainer",
 					"horizontaldivider_1_1",
-					"performancecontainer"
+					"resultContainer"
 				],
 				"parent": "flexlayout500",
 				"name": "qualificationcontainer_1"
@@ -1000,8 +1000,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label139",
-					"label140"
+					"label337",
+					"label338"
 				],
 				"parent": "qualificationcontainer",
 				"name": "containerTitle"
@@ -1065,7 +1065,7 @@
 				},
 				"children": [],
 				"parent": "containerTitle",
-				"name": "label139"
+				"name": "label337"
 			}
 		},
 		{
@@ -1126,7 +1126,7 @@
 				},
 				"children": [],
 				"parent": "containerTitle",
-				"name": "label140"
+				"name": "label338"
 			}
 		},
 		{
@@ -1185,7 +1185,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout125"
+					"flexlayout247"
 				],
 				"parent": "qualificationcontainer",
 				"name": "horizontaldivider_1"
@@ -1239,7 +1239,7 @@
 				},
 				"children": [],
 				"parent": "horizontaldivider_1",
-				"name": "flexlayout125"
+				"name": "flexlayout247"
 			}
 		},
 		{
@@ -1295,8 +1295,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label141",
-					"label142"
+					"label339",
+					"label340"
 				],
 				"parent": "qualificationcontainer",
 				"name": "containerAwardedDate"
@@ -1360,7 +1360,7 @@
 				},
 				"children": [],
 				"parent": "containerAwardedDate",
-				"name": "label141"
+				"name": "label339"
 			}
 		},
 		{
@@ -1421,7 +1421,7 @@
 				},
 				"children": [],
 				"parent": "containerAwardedDate",
-				"name": "label142"
+				"name": "label340"
 			}
 		},
 		{
@@ -1475,8 +1475,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label143",
-					"label144"
+					"label341",
+					"label342"
 				],
 				"parent": "salarycontainer",
 				"name": "containerBasic"
@@ -1540,7 +1540,7 @@
 				},
 				"children": [],
 				"parent": "containerBasic",
-				"name": "label143"
+				"name": "label341"
 			}
 		},
 		{
@@ -1601,7 +1601,7 @@
 				},
 				"children": [],
 				"parent": "containerBasic",
-				"name": "label144"
+				"name": "label342"
 			}
 		},
 		{
@@ -1662,7 +1662,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout126"
+					"flexlayout248"
 				],
 				"parent": "salarycontainer",
 				"name": "horizontaldivider_2"
@@ -1716,7 +1716,7 @@
 				},
 				"children": [],
 				"parent": "horizontaldivider_2",
-				"name": "flexlayout126"
+				"name": "flexlayout248"
 			}
 		},
 		{
@@ -1772,8 +1772,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label145",
-					"label146"
+					"label343",
+					"label344"
 				],
 				"parent": "salarycontainer",
 				"name": "containerVariable"
@@ -1837,7 +1837,7 @@
 				},
 				"children": [],
 				"parent": "containerVariable",
-				"name": "label145"
+				"name": "label343"
 			}
 		},
 		{
@@ -1898,7 +1898,7 @@
 				},
 				"children": [],
 				"parent": "containerVariable",
-				"name": "label146"
+				"name": "label344"
 			}
 		},
 		{
@@ -1916,6 +1916,7 @@
 				"width": null,
 				"height": 35,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"usePageVariable": true,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -1950,11 +1951,12 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label147",
-					"label148"
+					"label345",
+					"label346"
 				],
 				"parent": "qualificationcontainer_1",
-				"name": "listitem1_3"
+				"name": "objectiveContainer",
+				"usePageVariable": true
 			}
 		},
 		{
@@ -2014,8 +2016,8 @@
 					"flexGrow": null
 				},
 				"children": [],
-				"parent": "listitem1_3",
-				"name": "label147"
+				"parent": "objectiveContainer",
+				"name": "label345"
 			}
 		},
 		{
@@ -2075,8 +2077,8 @@
 					"flexGrow": 2
 				},
 				"children": [],
-				"parent": "listitem1_3",
-				"name": "label148"
+				"parent": "objectiveContainer",
+				"name": "label346"
 			}
 		},
 		{
@@ -2137,7 +2139,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout127"
+					"flexlayout249"
 				],
 				"parent": "qualificationcontainer_1",
 				"name": "horizontaldivider_3"
@@ -2191,7 +2193,7 @@
 				},
 				"children": [],
 				"parent": "horizontaldivider_3",
-				"name": "flexlayout127"
+				"name": "flexlayout249"
 			}
 		},
 		{
@@ -2210,6 +2212,7 @@
 				"height": 35,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"marginTop": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -2245,11 +2248,12 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label149",
-					"label150"
+					"label347",
+					"label348"
 				],
 				"parent": "qualificationcontainer_1",
-				"name": "listitem1_1_3"
+				"name": "dueDateContainer",
+				"usePageVariable": true
 			}
 		},
 		{
@@ -2309,8 +2313,8 @@
 					"flexGrow": null
 				},
 				"children": [],
-				"parent": "listitem1_1_3",
-				"name": "label149"
+				"parent": "dueDateContainer",
+				"name": "label347"
 			}
 		},
 		{
@@ -2370,8 +2374,8 @@
 					"flexGrow": 2
 				},
 				"children": [],
-				"parent": "listitem1_1_3",
-				"name": "label150"
+				"parent": "dueDateContainer",
+				"name": "label348"
 			}
 		},
 		{
@@ -2430,7 +2434,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout128"
+					"flexlayout250"
 				],
 				"parent": "qualificationcontainer_1",
 				"name": "horizontaldivider_1_1"
@@ -2484,7 +2488,7 @@
 				},
 				"children": [],
 				"parent": "horizontaldivider_1_1",
-				"name": "flexlayout128"
+				"name": "flexlayout250"
 			}
 		},
 		{
@@ -2503,6 +2507,7 @@
 				"height": 35,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"marginTop": null,
+				"usePageVariable": true,
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -2538,11 +2543,12 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label151",
-					"label152"
+					"label349",
+					"label350"
 				],
 				"parent": "qualificationcontainer_1",
-				"name": "performancecontainer"
+				"name": "resultContainer",
+				"usePageVariable": true
 			}
 		},
 		{
@@ -2602,8 +2608,8 @@
 					"flexGrow": null
 				},
 				"children": [],
-				"parent": "performancecontainer",
-				"name": "label151"
+				"parent": "resultContainer",
+				"name": "label349"
 			}
 		},
 		{
@@ -2663,8 +2669,8 @@
 					"flexGrow": 2
 				},
 				"children": [],
-				"parent": "performancecontainer",
-				"name": "label152"
+				"parent": "resultContainer",
+				"name": "label350"
 			}
 		},
 		{

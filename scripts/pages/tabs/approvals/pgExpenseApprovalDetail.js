@@ -22,9 +22,9 @@ function onShow(parentOnShow) {
 
 function initTexts() {
 	this.titleItem.title.text = lang["pgExpenseApprovalDetail.title"];
-	this.titleItem.value.text = "";
+	this.titleItem.value.text = "-";
 	this.typeItem.title.text = lang["pgExpenseApprovalDetail.type"];
-	this.typeItem.value.text = "";
+	this.typeItem.value.text = "-";
 	this.expenseItem.title.text = lang["pgExpenseApprovalDetail.expense"];
 	this.expenseItem.value.text = "$1,500.30";
 	this.expenseDateItem.title.text = lang["pgExpenseApprovalDetail.expenseDate"];
@@ -34,6 +34,7 @@ function initTexts() {
 	this.detailsTitle.text = lang["pgExpenseApprovalDetail.details"];
 	this.approve.text = lang["pgExpenseApprovalDetail.approve"];
 	this.reject.text = lang["pgExpenseApprovalDetail.reject"];
+	this.note.text = "-";
 }
 
 function initHeaderBar() {

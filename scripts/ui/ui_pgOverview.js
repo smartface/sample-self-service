@@ -181,7 +181,7 @@ const PgOverview_ = extend(Page)(
 		qualificationcontainer.addChild(containerType);
 		this.containerType = containerType;
 
-		const listitem1_3Style = getCombinedStyle(".flexLayout", {
+		const objectiveContainerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: null,
@@ -191,9 +191,10 @@ const PgOverview_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
-		var listitem1_3 = new ListItem1(listitem1_3Style, "pgOverview");
-		qualificationcontainer_1.addChild(listitem1_3);
-		
+		var objectiveContainer = new ListItem1(objectiveContainerStyle, "pgOverview");
+		qualificationcontainer_1.addChild(objectiveContainer);
+		this.objectiveContainer = objectiveContainer;
+
 		const containerBasicStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -256,7 +257,7 @@ const PgOverview_ = extend(Page)(
 		var horizontaldivider_2 = new HorizontalDivider(horizontaldivider_2Style, "pgOverview");
 		salarycontainer.addChild(horizontaldivider_2);
 		
-		const listitem1_1_3Style = getCombinedStyle(".flexLayout", {
+		const dueDateContainerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: null,
@@ -267,9 +268,10 @@ const PgOverview_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
-		var listitem1_1_3 = new ListItem1(listitem1_1_3Style, "pgOverview");
-		qualificationcontainer_1.addChild(listitem1_1_3);
-		
+		var dueDateContainer = new ListItem1(dueDateContainerStyle, "pgOverview");
+		qualificationcontainer_1.addChild(dueDateContainer);
+		this.dueDateContainer = dueDateContainer;
+
 		const containerTitleStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -330,7 +332,7 @@ const PgOverview_ = extend(Page)(
 		var horizontaldivider_1_1 = new HorizontalDivider(horizontaldivider_1_1Style, "pgOverview");
 		qualificationcontainer_1.addChild(horizontaldivider_1_1);
 		
-		const performancecontainerStyle = getCombinedStyle(".flexLayout", {
+		const resultContainerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
 			width: null,
@@ -341,9 +343,10 @@ const PgOverview_ = extend(Page)(
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
 		});
-		var performancecontainer = new ListItem1(performancecontainerStyle, "pgOverview");
-		qualificationcontainer_1.addChild(performancecontainer);
-		
+		var resultContainer = new ListItem1(resultContainerStyle, "pgOverview");
+		qualificationcontainer_1.addChild(resultContainer);
+		this.resultContainer = resultContainer;
+
 		const containerAwardedDateStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -401,11 +404,11 @@ const PgOverview_ = extend(Page)(
 		//assign the children of qualificationcontainer_1
 		qualificationcontainer_1.children = Object.assign({}, {
 			label536_2: label536_2,
-			listitem1_3: listitem1_3,
+			objectiveContainer: objectiveContainer,
 			horizontaldivider_3: horizontaldivider_3,
-			listitem1_1_3: listitem1_1_3,
+			dueDateContainer: dueDateContainer,
 			horizontaldivider_1_1: horizontaldivider_1_1,
-			performancecontainer: performancecontainer
+			resultContainer: resultContainer
 		});
 		
 	});

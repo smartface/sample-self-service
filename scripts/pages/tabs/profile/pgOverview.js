@@ -43,6 +43,12 @@ function initTexts() {
 	this.containerBasic.value.text = "$1500"
 	this.containerVariable.title.text = lang["pgOverview.variable"];
 	this.containerVariable.value.text = "$1000"
+	this.objectiveContainer.title.text = lang["pgOverview.objective"];
+	this.objectiveContainer.value.text = "-";
+	this.dueDateContainer.title.text = lang["pgOverview.dueDate"];
+	this.dueDateContainer.value.text = "-";
+	this.resultContainer.title.text = lang["pgOverview.successPercentage"];
+	this.resultContainer.value.text = "-";
 }
 
 module && (module.exports = Page_);
