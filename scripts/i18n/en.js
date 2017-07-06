@@ -120,6 +120,7 @@ SMF.i18n.defineLanguage('en', {
 	"pgLeaveApprovalDetail.remains"		: "REMAINS",
 	"pgLeaveApprovalDetail.reject"		: "REJECT",
 	"pgLeaveApprovalDetail.approve"		: "APPROVE",
+	"pgLeaveApprovalDetail.description"	: "Description",
 	"pgExpenseApprovalDetail.pageTitle"	: "EXPENSE  APPROVAL DETAIL",
 	"pgExpenseApprovalDetail.details"	: "DETAILS",
 	"pgExpenseApprovalDetail.title"		: "Title",

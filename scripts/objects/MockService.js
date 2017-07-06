@@ -9,9 +9,17 @@ MockService.getSalaryList = function ()
 {
     var list = [];
     var mS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-    for (var i = mS.length; i--; ) {
+    // for (var i = mS.length; i--; ) {
+    //     var salary = new Salary();
+    //     salary.basic = i*1000;
+    //     salary.proposalReason = "Performance";
+    //     salary.year = 2017;
+    //     salary.month = mS[i];
+    //     list.push(salary)
+    // }
+    for (var i=0;i<3;i++ ) {
         var salary = new Salary();
-        salary.basic = i*1000;
+        salary.basic = (parseInt((i/2)) + 1)*1000;
         salary.proposalReason = "Performance";
         salary.year = 2017;
         salary.month = mS[i];

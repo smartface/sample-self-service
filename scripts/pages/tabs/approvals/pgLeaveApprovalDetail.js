@@ -19,6 +19,7 @@ function onShow(parentOnShow) {
 }
 
 function initTexts() {
+	this.description.hint = lang["pgLeaveApprovalDetail.description"];
 }
 
 function initHeaderBar() {
