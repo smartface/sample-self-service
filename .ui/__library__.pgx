@@ -13,10 +13,18 @@
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.3.9",
+			"version": "6.3.19",
 			"props": {
 				"backgroundColor": "rgba( 131, 52, 52, 1 )",
 				"orientation": "PORTRAIT",
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "FLEX_START"
+				},
 				"children": [
 					"statusBar",
 					"headerBar",
@@ -47,27 +55,7 @@
 					"itemBirthday",
 					"itemDocument"
 				],
-				"flexProps": {
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"direction": "INHERIT",
-					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
-					"justifyContent": "FLEX_START"
-				},
 				"name": "__library__",
-				"layout": {
-					"width": 93.75,
-					"height": 166.75
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"flexDirection": 0,
-					"flexWrap": 0,
-					"justifyContent": 0
-				},
-				"font": {},
 				"width": 187.5,
 				"height": 333.5
 			}
@@ -90,12 +78,6 @@
 				"children": [],
 				"parent": "__library__",
 				"name": "statusBar",
-				"layout": {
-					"height": 10
-				},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
 				"height": 20
 			}
 		},
@@ -119,12 +101,6 @@
 				"children": [],
 				"parent": "__library__",
 				"name": "headerBar",
-				"layout": {
-					"height": 22
-				},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
 				"height": 44
 			}
 		},
@@ -150,10 +126,7 @@
 				"flex": {
 					"flexGrow": 1,
 					"positionType": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -167,9 +140,6 @@
 				"borderWidth": 0,
 				"left": 15,
 				"top": 11,
-				"children": [
-					"flexlayout6"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -181,25 +151,11 @@
 					"positionType": "ABSOLUTE",
 					"flexGrow": 1
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1,
-					"flexGrow": 1
-				},
+				"children": [
+					"flexlayout6"
+				],
 				"parent": "__library__",
-				"name": "horizontalDivider",
-				"layout": {
-					"left": 7.5,
-					"top": 5.5,
-					"width": 100,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "horizontalDivider"
 			}
 		},
 		{
@@ -225,10 +181,7 @@
 					"flexDirection": 2,
 					"positionType": 0,
 					"alignItems": 2
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -242,10 +195,6 @@
 				"borderWidth": 0,
 				"left": 12,
 				"top": 23,
-				"children": [
-					"title",
-					"value"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -256,24 +205,12 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 1
-				},
+				"children": [
+					"title",
+					"value"
+				],
 				"parent": "__library__",
-				"name": "listItem1",
-				"layout": {
-					"left": 6,
-					"top": 11.5,
-					"width": 163,
-					"height": 29.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "listItem1"
 			}
 		},
 		{
@@ -320,7 +257,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -332,18 +268,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "listItem1",
-				"name": "title",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "title"
 			}
 		},
 		{
@@ -390,7 +317,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -402,17 +328,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "listItem1",
-				"name": "value",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "value"
 			}
 		},
 		{
@@ -444,10 +362,7 @@
 					"flexGrow": 1,
 					"alignSelf": 4,
 					"positionType": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -465,9 +380,6 @@
 				"paddingBottom": 10,
 				"paddingLeft": null,
 				"paddingRight": null,
-				"children": [
-					"flexlayout289"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -479,27 +391,11 @@
 					"positionType": "ABSOLUTE",
 					"flexGrow": 1
 				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1,
-					"flexGrow": 1
-				},
+				"children": [
+					"flexlayout289"
+				],
 				"parent": "__library__",
-				"name": "itemEmploymentHistory",
-				"layout": {
-					"left": 2,
-					"top": 72,
-					"width": 182,
-					"height": 175,
-					"paddingBottom": 5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "itemEmploymentHistory"
 			}
 		},
 		{
@@ -520,11 +416,7 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"positionType": "RELATIVE"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -539,11 +431,6 @@
 				"left": 9,
 				"top": 310.2,
 				"paddingBottom": 10,
-				"children": [
-					"dataContainer",
-					"divider",
-					"approveContainer"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -555,26 +442,13 @@
 					"positionType": "ABSOLUTE",
 					"flexGrow": 1
 				},
+				"children": [
+					"dataContainer",
+					"divider",
+					"approveContainer"
+				],
 				"parent": "__library__",
-				"name": "itemLeaveManagement",
-				"layout": {
-					"left": 4.5,
-					"top": 155.1,
-					"width": 175,
-					"height": 62,
-					"paddingBottom": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "itemLeaveManagement"
 			}
 		},
 		{
@@ -608,10 +482,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"id": 103,
-				"children": [
-					"flexlayout1",
-					"flexlayout2"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -623,21 +493,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"flexlayout1",
+					"flexlayout2"
+				],
 				"parent": "itemLeaveManagement",
-				"name": "dataContainer",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "dataContainer"
 			}
 		},
 		{
@@ -676,13 +537,6 @@
 				"paddingLeft": 10,
 				"paddingRight": 10,
 				"id": 101,
-				"children": [
-					"cont1",
-					"flexlayout10",
-					"cont2",
-					"flexlayout10_1",
-					"cont3"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -693,23 +547,15 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
+				"children": [
+					"cont1",
+					"flexlayout10",
+					"cont2",
+					"flexlayout10_1",
+					"cont3"
+				],
 				"parent": "itemLeaveManagement",
-				"name": "approveContainer",
-				"layout": {
-					"height": 25,
-					"paddingLeft": 5,
-					"paddingRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
-				"font": {}
+				"name": "approveContainer"
 			}
 		},
 		{
@@ -732,10 +578,7 @@
 				},
 				"flex": {
 					"positionType": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout .flexLayout-headerBar",
 			"props": {
@@ -749,9 +592,6 @@
 				"borderWidth": 0,
 				"left": 3,
 				"top": 127,
-				"children": [
-					"flexlayout118"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -762,24 +602,11 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
+				"children": [
+					"flexlayout118"
+				],
 				"parent": "__library__",
-				"name": "layoutHeaderBar",
-				"layout": {
-					"left": 1.5,
-					"top": 63.5,
-					"width": 179,
-					"height": 72,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "layoutHeaderBar"
 			}
 		},
 		{
@@ -800,10 +627,7 @@
 				},
 				"flex": {
 					"positionType": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout .flexLayout-dotIndicator-main",
 			"props": {
@@ -815,11 +639,6 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [
-					"dot0",
-					"dot1",
-					"dot2"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -830,22 +649,13 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 1
-				},
+				"children": [
+					"dot0",
+					"dot1",
+					"dot2"
+				],
 				"parent": "__library__",
-				"name": "dotIndicator",
-				"layout": {
-					"width": 21,
-					"height": 5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "dotIndicator"
 			}
 		},
 		{
@@ -877,7 +687,6 @@
 				"borderRadius": 5,
 				"marginLeft": 2,
 				"marginRight": 2,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -888,25 +697,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "dotIndicator",
-				"name": "dot0",
-				"layout": {
-					"marginLeft": 1,
-					"marginRight": 1,
-					"width": 5,
-					"height": 5,
-					"borderWidth": 0,
-					"borderRadius": 2.5
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
-				"font": {}
+				"name": "dot0"
 			}
 		},
 		{
@@ -938,7 +731,6 @@
 				"borderRadius": 5,
 				"marginLeft": 2,
 				"marginRight": 2,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -949,25 +741,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "dotIndicator",
-				"name": "dot1",
-				"layout": {
-					"marginLeft": 1,
-					"marginRight": 1,
-					"width": 5,
-					"height": 5,
-					"borderWidth": 0,
-					"borderRadius": 2.5
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
-				"font": {}
+				"name": "dot1"
 			}
 		},
 		{
@@ -999,7 +775,6 @@
 				"borderRadius": 5,
 				"marginLeft": 2,
 				"marginRight": 2,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1010,25 +785,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "dotIndicator",
-				"name": "dot2",
-				"layout": {
-					"marginLeft": 1,
-					"marginRight": 1,
-					"width": 5,
-					"height": 5,
-					"borderWidth": 0,
-					"borderRadius": 2.5
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
-				"font": {}
+				"name": "dot2"
 			}
 		},
 		{
@@ -1061,10 +820,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"id": 1032,
-				"children": [
-					"daysCount",
-					"label205_1"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1076,21 +831,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"daysCount",
+					"label205_1"
+				],
 				"parent": "dataContainer",
-				"name": "flexlayout1",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout1"
 			}
 		},
 		{
@@ -1123,10 +869,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"id": 1031,
-				"children": [
-					"startDate",
-					"endDate"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1138,21 +880,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [
+					"startDate",
+					"endDate"
+				],
 				"parent": "dataContainer",
-				"name": "flexlayout2",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 2
-				},
-				"font": {}
+				"name": "flexlayout2"
 			}
 		},
 		{
@@ -1198,7 +931,6 @@
 				"textAlignment": "BOTTOMCENTER",
 				"id": 10322,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 22,
 					"bold": true,
@@ -1210,15 +942,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout1",
-				"name": "daysCount",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"name": "daysCount"
 			}
 		},
 		{
@@ -1261,7 +987,6 @@
 				"textColor": "#1775D0",
 				"textAlignment": "MIDCENTER",
 				"id": 10321,
-				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -1273,15 +998,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout1",
-				"name": "label205_1",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"name": "label205_1"
 			}
 		},
 		{
@@ -1304,10 +1023,7 @@
 				},
 				"flex": {
 					"positionType": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -1321,7 +1037,6 @@
 				"borderWidth": 0,
 				"left": 27,
 				"top": 92,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1332,24 +1047,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
+				"children": [],
 				"parent": "__library__",
-				"name": "verticalDivider",
-				"layout": {
-					"left": 13.5,
-					"top": 46,
-					"width": 0.5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "verticalDivider"
 			}
 		},
 		{
@@ -1386,10 +1086,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"id": 1015,
-				"children": [
-					"approveIcon",
-					"approveLabel"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1401,21 +1097,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"approveIcon",
+					"approveLabel"
+				],
 				"parent": "approveContainer",
-				"name": "cont1",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 1,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "cont1"
 			}
 		},
 		{
@@ -1452,23 +1139,14 @@
 				"image": "icon_approve_active.png",
 				"id": 10152,
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "cont1",
 				"name": "approveIcon",
-				"layout": {
-					"width": 10,
-					"height": 10,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/icon_approve_active.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/icon_approve_active.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1516,7 +1194,6 @@
 				"maxWidth": 100,
 				"id": 10151,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -1528,19 +1205,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "cont1",
-				"name": "approveLabel",
-				"layout": {
-					"marginLeft": 2.5,
-					"height": 15,
-					"minWidth": 25,
-					"maxWidth": 50,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "approveLabel"
 			}
 		},
 		{
@@ -1576,10 +1243,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"id": 1013,
-				"children": [
-					"editIcon",
-					"editLabel"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1591,21 +1254,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"editIcon",
+					"editLabel"
+				],
 				"parent": "approveContainer",
-				"name": "cont2",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 1,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "cont2"
 			}
 		},
 		{
@@ -1642,23 +1296,14 @@
 				"image": "icon_edit_active.png",
 				"id": 10132,
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "cont2",
 				"name": "editIcon",
-				"layout": {
-					"width": 10,
-					"height": 10,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/icon_edit_active.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/icon_edit_active.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1702,7 +1347,6 @@
 				"minWidth": 30,
 				"id": 10131,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -1713,17 +1357,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "cont2",
-				"name": "editLabel",
-				"layout": {
-					"marginLeft": 2.5,
-					"height": 15,
-					"minWidth": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "editLabel"
 			}
 		},
 		{
@@ -1759,10 +1395,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"id": 1011,
-				"children": [
-					"deleteIcon",
-					"deleteLabel"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1774,21 +1406,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"deleteIcon",
+					"deleteLabel"
+				],
 				"parent": "approveContainer",
-				"name": "cont3",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 1,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "cont3"
 			}
 		},
 		{
@@ -1825,23 +1448,14 @@
 				"image": "icon_delete.png",
 				"id": 10112,
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "cont3",
 				"name": "deleteIcon",
-				"layout": {
-					"width": 10,
-					"height": 10,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/icon_delete.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/icon_delete.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1885,7 +1499,6 @@
 				"minWidth": 40,
 				"id": 10111,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -1896,17 +1509,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "cont3",
-				"name": "deleteLabel",
-				"layout": {
-					"marginLeft": 2.5,
-					"height": 15,
-					"minWidth": 20,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "deleteLabel"
 			}
 		},
 		{
@@ -1943,7 +1548,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1955,23 +1559,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "horizontalDivider",
-				"name": "flexlayout6",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout6"
 			}
 		},
 		{
@@ -1991,11 +1581,7 @@
 				"flexProps": {
 					"flexDirection": "COLUMN",
 					"alignItems": "CENTER"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2010,10 +1596,6 @@
 				"left": 5,
 				"top": 25,
 				"usePageVariable": true,
-				"children": [
-					"flexlayout115",
-					"flexlayout116"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -2024,24 +1606,12 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [
+					"flexlayout115",
+					"flexlayout116"
+				],
 				"parent": "__library__",
-				"name": "itemSalary",
-				"layout": {
-					"left": 2.5,
-					"top": 12.5,
-					"width": 150,
-					"height": 40,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "itemSalary"
 			}
 		},
 		{
@@ -2076,10 +1646,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"id": 102,
-				"children": [
-					"dateContainer",
-					"salaryContainer"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -2091,23 +1657,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"dateContainer",
+					"salaryContainer"
+				],
 				"parent": "itemSalary",
-				"name": "flexlayout115",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout115"
 			}
 		},
 		{
@@ -2141,10 +1696,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"id": 1022,
-				"children": [
-					"month",
-					"year"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -2156,22 +1707,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [
+					"month",
+					"year"
+				],
 				"parent": "flexlayout115",
-				"name": "dateContainer",
-				"layout": {
-					"width": 35,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"name": "dateContainer"
 			}
 		},
 		{
@@ -2205,10 +1746,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"id": 1021,
-				"children": [
-					"containerBasic",
-					"containerProposal"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -2220,21 +1757,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"containerBasic",
+					"containerProposal"
+				],
 				"parent": "flexlayout115",
-				"name": "salaryContainer",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "salaryContainer"
 			}
 		},
 		{
@@ -2282,7 +1810,6 @@
 				"marginBottom": 5,
 				"id": 10222,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -2294,18 +1821,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "dateContainer",
-				"name": "month",
-				"layout": {
-					"marginBottom": 2.5,
-					"height": 20,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"name": "month"
 			}
 		},
 		{
@@ -2351,7 +1869,6 @@
 				"textAlignment": "TOPCENTER",
 				"id": 10221,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -2363,17 +1880,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "dateContainer",
-				"name": "year",
-				"layout": {
-					"height": 20,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"name": "year"
 			}
 		},
 		{
@@ -2390,12 +1899,7 @@
 				"width": 309,
 				"height": 195,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"paddingBottom": 10,
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"paddingBottom": 10
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2410,15 +1914,6 @@
 				"left": 17,
 				"top": 24,
 				"paddingBottom": 10,
-				"children": [
-					"reviewDate",
-					"dividerperf",
-					"nextReview",
-					"dividerperf_1",
-					"rating",
-					"dividerperf_1_1",
-					"overallScore"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -2429,25 +1924,17 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [
+					"reviewDate",
+					"dividerperf",
+					"nextReview",
+					"dividerperf_1",
+					"rating",
+					"dividerperf_1_1",
+					"overallScore"
+				],
 				"parent": "__library__",
-				"name": "itemPerformance",
-				"layout": {
-					"left": 8.5,
-					"top": 12,
-					"width": 154.5,
-					"height": 97.5,
-					"paddingBottom": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "itemPerformance"
 			}
 		},
 		{
@@ -2477,10 +1964,7 @@
 					"flexDirection": 2,
 					"justifyContent": 1,
 					"flexWrap": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2494,7 +1978,6 @@
 				"borderWidth": 0,
 				"left": 0,
 				"right": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -2506,24 +1989,9 @@
 					"positionType": "ABSOLUTE",
 					"right": 0
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 1,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 1,
-					"right": 0
-				},
+				"children": [],
 				"parent": "__library__",
-				"name": "topTabBar",
-				"layout": {
-					"right": 0,
-					"left": 0,
-					"height": 25,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "topTabBar"
 			}
 		},
 		{
@@ -2539,12 +2007,7 @@
 				"top": 250,
 				"width": 100,
 				"height": 50,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"backgroundColor": "rgba( 255, 255, 255, 0 )"
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2558,10 +2021,6 @@
 				"borderWidth": 0,
 				"left": 12,
 				"top": 250,
-				"children": [
-					"tabItemTitle",
-					"tabItemBottomLine"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -2572,24 +2031,12 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [
+					"tabItemTitle",
+					"tabItemBottomLine"
+				],
 				"parent": "__library__",
-				"name": "topTabItem",
-				"layout": {
-					"left": 6,
-					"top": 125,
-					"width": 50,
-					"height": 25,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "topTabItem"
 			}
 		},
 		{
@@ -2626,7 +2073,6 @@
 				"borderWidth": 0,
 				"textColor": "#4A4A4A",
 				"textAlignment": "MIDCENTER",
-				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -2638,15 +2084,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "topTabItem",
-				"name": "tabItemTitle",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"name": "tabItemTitle"
 			}
 		},
 		{
@@ -2675,7 +2115,6 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -2686,21 +2125,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "topTabItem",
-				"name": "tabItemBottomLine",
-				"layout": {
-					"height": 2.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
-				"font": {}
+				"name": "tabItemBottomLine"
 			}
 		},
 		{
@@ -2721,10 +2148,7 @@
 				},
 				"flex": {
 					"positionType": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2738,11 +2162,6 @@
 				"borderWidth": 0,
 				"left": 11,
 				"top": 15,
-				"children": [
-					"flexlayout429",
-					"pickerText",
-					"flexlayout430"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -2753,24 +2172,13 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
+				"children": [
+					"flexlayout429",
+					"pickerText",
+					"flexlayout430"
+				],
 				"parent": "__library__",
-				"name": "pickerContainer",
-				"layout": {
-					"left": 5.5,
-					"top": 7.5,
-					"width": 103.5,
-					"height": 22.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "pickerContainer"
 			}
 		},
 		{
@@ -2807,10 +2215,6 @@
 				"borderWidth": 0,
 				"paddingLeft": 10,
 				"paddingRight": 10,
-				"children": [
-					"pickerTitle",
-					"imageview2"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -2822,24 +2226,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [
+					"pickerTitle",
+					"imageview2"
+				],
 				"parent": "pickerContainer",
-				"name": "flexlayout429",
-				"layout": {
-					"height": 10,
-					"paddingLeft": 5,
-					"paddingRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"name": "flexlayout429"
 			}
 		},
 		{
@@ -2884,7 +2276,6 @@
 				"marginLeft": 10,
 				"marginRight": 10,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -2896,18 +2287,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "pickerContainer",
-				"name": "pickerText",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"height": 12,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "pickerText"
 			}
 		},
 		{
@@ -2947,7 +2329,6 @@
 				"textColor": "#4A4A4A",
 				"textAlignment": "MIDLEFT",
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -2959,16 +2340,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout429",
-				"name": "pickerTitle",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"name": "pickerTitle"
 			}
 		},
 		{
@@ -3001,23 +2375,14 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"image": "arrow_down.png",
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout429",
 				"name": "imageview2",
-				"layout": {
-					"width": 5,
-					"height": 2.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3036,11 +2401,7 @@
 				"flexProps": {
 					"flexDirection": "COLUMN",
 					"alignItems": "CENTER"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -3054,10 +2415,6 @@
 				"borderWidth": 0,
 				"left": 4,
 				"top": 56,
-				"children": [
-					"flexlayout160",
-					"flexlayout161"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -3068,24 +2425,12 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [
+					"flexlayout160",
+					"flexlayout161"
+				],
 				"parent": "__library__",
-				"name": "itemUser",
-				"layout": {
-					"left": 2,
-					"top": 28,
-					"width": 180,
-					"height": 37.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "itemUser"
 			}
 		},
 		{
@@ -3122,11 +2467,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"id": 102,
-				"children": [
-					"userImage",
-					"flexlayout163",
-					"imageview41"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -3138,23 +2478,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"userImage",
+					"flexlayout163",
+					"imageview41"
+				],
 				"parent": "itemUser",
-				"name": "flexlayout160",
-				"layout": {
-					"height": 20,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout160"
 			}
 		},
 		{
@@ -3193,24 +2523,14 @@
 				"image": "avatar1.png",
 				"id": 1023,
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout160",
 				"name": "userImage",
-				"layout": {
-					"marginLeft": 7.5,
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3247,10 +2567,6 @@
 				"paddingLeft": 10,
 				"paddingTop": null,
 				"id": 1022,
-				"children": [
-					"userName",
-					"userPosition"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -3262,23 +2578,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"userName",
+					"userPosition"
+				],
 				"parent": "flexlayout160",
-				"name": "flexlayout163",
-				"layout": {
-					"height": 30,
-					"paddingLeft": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout163"
 			}
 		},
 		{
@@ -3313,23 +2618,14 @@
 				"borderWidth": 0,
 				"image": "arrow_right.png",
 				"id": 1021,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout160",
 				"name": "imageview41",
-				"layout": {
-					"width": 14,
-					"height": 7,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3374,7 +2670,6 @@
 				"textAlignment": "BOTTOMLEFT",
 				"id": 10222,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -3385,15 +2680,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout163",
-				"name": "userName",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "userName"
 			}
 		},
 		{
@@ -3435,7 +2724,6 @@
 				"textAlignment": "MIDLEFT",
 				"id": 10221,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -3446,15 +2734,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout163",
-				"name": "userPosition",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "userPosition"
 			}
 		},
 		{
@@ -3473,11 +2755,7 @@
 				"flexProps": {
 					"flexDirection": "COLUMN",
 					"alignItems": "CENTER"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -3491,10 +2769,6 @@
 				"borderWidth": 0,
 				"left": 16,
 				"top": 343.6666666666667,
-				"children": [
-					"flexlayout334",
-					"flexlayout336"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -3505,24 +2779,12 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [
+					"flexlayout334",
+					"flexlayout336"
+				],
 				"parent": "__library__",
-				"name": "itemExpense",
-				"layout": {
-					"left": 8,
-					"top": 171.83333333333334,
-					"width": 171,
-					"height": 37.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "itemExpense"
 			}
 		},
 		{
@@ -3562,12 +2824,6 @@
 				"paddingLeft": 10,
 				"paddingRight": 10,
 				"id": 102,
-				"children": [
-					"expenseStatusImage",
-					"flexlayout32_1",
-					"flexlayout32",
-					"flexlayout33"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -3579,24 +2835,14 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"expenseStatusImage",
+					"flexlayout32_1",
+					"flexlayout32",
+					"flexlayout33"
+				],
 				"parent": "itemExpense",
-				"name": "flexlayout334",
-				"layout": {
-					"paddingLeft": 5,
-					"paddingRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout334"
 			}
 		},
 		{
@@ -3633,23 +2879,14 @@
 				"image": "icon_accepted.png",
 				"id": 106,
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout334",
 				"name": "expenseStatusImage",
-				"layout": {
-					"width": 15,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/icon_accepted.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/icon_accepted.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3685,10 +2922,6 @@
 				"borderWidth": 0,
 				"paddingLeft": null,
 				"id": 104,
-				"children": [
-					"expenseId",
-					"expenseDate"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -3700,22 +2933,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"expenseId",
+					"expenseDate"
+				],
 				"parent": "flexlayout334",
-				"name": "flexlayout32",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout32"
 			}
 		},
 		{
@@ -3750,9 +2973,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"id": 103,
-				"children": [
-					"imageview3"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -3764,23 +2984,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [
+					"imageview3"
+				],
 				"parent": "flexlayout334",
-				"name": "flexlayout33",
-				"layout": {
-					"width": 12.5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 2,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"name": "flexlayout33"
 			}
 		},
 		{
@@ -3826,7 +3034,6 @@
 				"textAlignment": "BOTTOMRIGHT",
 				"id": 1042,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -3838,15 +3045,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout32",
-				"name": "expenseId",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"name": "expenseId"
 			}
 		},
 		{
@@ -3891,7 +3092,6 @@
 				"textAlignment": "MIDRIGHT",
 				"id": 1041,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -3903,15 +3103,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout32",
-				"name": "expenseDate",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"name": "expenseDate"
 			}
 		},
 		{
@@ -3947,10 +3141,6 @@
 				"borderWidth": 0,
 				"paddingLeft": 20,
 				"id": 105,
-				"children": [
-					"expenseAmount",
-					"expenseType"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -3962,23 +3152,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"expenseAmount",
+					"expenseType"
+				],
 				"parent": "flexlayout334",
-				"name": "flexlayout32_1",
-				"layout": {
-					"paddingLeft": 10,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout32_1"
 			}
 		},
 		{
@@ -4025,7 +3204,6 @@
 				"textAlignment": "BOTTOMLEFT",
 				"id": 1052,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 22,
 					"bold": false,
@@ -4037,15 +3215,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout32_1",
-				"name": "expenseAmount",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"name": "expenseAmount"
 			}
 		},
 		{
@@ -4089,7 +3261,6 @@
 				"textAlignment": "MIDLEFT",
 				"id": 1051,
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -4101,15 +3272,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout32_1",
-				"name": "expenseType",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"name": "expenseType"
 			}
 		},
 		{
@@ -4144,23 +3309,14 @@
 				"borderWidth": 0,
 				"image": "icon_attachment.png",
 				"id": 1031,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout33",
 				"name": "imageview3",
-				"layout": {
-					"width": 7.5,
-					"height": 7.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/icon_attachment.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/icon_attachment.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4169,12 +3325,12 @@
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"height": 60,
 				"left": 64,
-				"top": 378,
+				"top": 554,
 				"width": 250,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"paddingLeft": null,
@@ -4184,10 +3340,7 @@
 				},
 				"flex": {
 					"positionType": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4200,14 +3353,9 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"left": 64,
-				"top": 378,
+				"top": 554,
 				"paddingLeft": null,
 				"paddingRight": null,
-				"children": [
-					"textboxInfo",
-					"innerTextbox",
-					"textboxBottomLine"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -4218,24 +3366,13 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
+				"children": [
+					"textboxInfo",
+					"innerTextbox",
+					"textboxBottomLine"
+				],
 				"parent": "__library__",
-				"name": "textboxWithLine",
-				"layout": {
-					"left": 32,
-					"top": 189,
-					"width": 125,
-					"height": 30,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "textboxWithLine"
 			}
 		},
 		{
@@ -4250,24 +3387,20 @@
 				"height": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 1 )",
-				"text": "Anthony Bell",
+				"text": "",
 				"usePageVariable": true,
 				"marginLeft": 10,
 				"marginRight": 10,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".textBox",
 			"props": {
 				"height": null,
 				"width": null,
 				"touchEnabled": true,
-				"text": "Anthony Bell",
+				"text": "",
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -4278,7 +3411,6 @@
 				"usePageVariable": true,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -4290,17 +3422,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "textboxWithLine",
-				"name": "innerTextbox",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"name": "innerTextbox"
 			}
 		},
 		{
@@ -4337,7 +3461,6 @@
 				"usePageVariable": true,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -4349,24 +3472,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "textboxWithLine",
-				"name": "textboxBottomLine",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"name": "textboxBottomLine"
 			}
 		},
 		{
@@ -4380,24 +3488,19 @@
 				"Highlights": "InputLayoutNormal"
 			},
 			"userProps": {
-				"text": "Username",
+				"text": "",
 				"usePageVariable": true,
 				"width": null,
 				"height": 20,
 				"marginLeft": 10,
-				"marginRight": 10,
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"marginRight": 10
 			},
 			"className": ".label .label-login.small .label-textboxWithLine.normal",
 			"props": {
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
-				"text": "Username",
+				"text": "",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "#00FFFFFF",
@@ -4409,7 +3512,6 @@
 				"usePageVariable": true,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -4420,17 +3522,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "textboxWithLine",
-				"name": "textboxInfo",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"height": 10,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "textboxInfo"
 			}
 		},
 		{
@@ -4453,11 +3547,7 @@
 				"flexProps": {
 					"alignItems": "CENTER",
 					"justifyContent": "CENTER"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4472,9 +3562,6 @@
 				"left": 22,
 				"top": 94,
 				"borderRadius": null,
-				"children": [
-					"filePreview"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -4485,24 +3572,11 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [
+					"filePreview"
+				],
 				"parent": "__library__",
-				"name": "itemFile",
-				"layout": {
-					"left": 11,
-					"top": 47,
-					"width": 32.5,
-					"height": 32.5,
-					"borderWidth": 0.25
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 1,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "itemFile"
 			}
 		},
 		{
@@ -4527,10 +3601,7 @@
 					"alignItems": 2,
 					"flexDirection": 2,
 					"positionType": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4544,11 +3615,6 @@
 				"borderWidth": 0,
 				"left": 5,
 				"top": 135,
-				"children": [
-					"imageview7",
-					"flexlayout178",
-					"flexlayout323"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -4559,24 +3625,13 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 1
-				},
+				"children": [
+					"imageview7",
+					"flexlayout178",
+					"flexlayout323"
+				],
 				"parent": "__library__",
-				"name": "hierarchyLevel1",
-				"layout": {
-					"left": 2.5,
-					"top": 67.5,
-					"width": 180,
-					"height": 37.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "hierarchyLevel1"
 			}
 		},
 		{
@@ -4615,25 +3670,14 @@
 				"marginLeft": 15,
 				"image": "avatar1.png",
 				"borderRadius": 30,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "hierarchyLevel1",
 				"name": "imageview7",
-				"layout": {
-					"marginLeft": 7.5,
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0.5,
-					"borderRadius": 15
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4666,10 +3710,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"paddingLeft": 10,
-				"children": [
-					"label493",
-					"label494"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -4681,23 +3721,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"label493",
+					"label494"
+				],
 				"parent": "hierarchyLevel1",
-				"name": "flexlayout178",
-				"layout": {
-					"height": 30,
-					"paddingLeft": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout178"
 			}
 		},
 		{
@@ -4736,7 +3765,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -4747,15 +3775,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout178",
-				"name": "label493",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "label493"
 			}
 		},
 		{
@@ -4791,7 +3813,6 @@
 				"borderWidth": 0,
 				"textColor": "#9B9B9B",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -4802,15 +3823,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout178",
-				"name": "label494",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "label494"
 			}
 		},
 		{
@@ -4846,7 +3861,6 @@
 				"borderWidth": 0,
 				"left": 45,
 				"bottom": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -4857,24 +3871,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hierarchyLevel1",
-				"name": "flexlayout323",
-				"layout": {
-					"bottom": 0,
-					"left": 22.5,
-					"width": 0.5,
-					"height": 4,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout323"
 			}
 		},
 		{
@@ -4899,10 +3898,7 @@
 					"alignItems": 2,
 					"flexDirection": 2,
 					"positionType": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4916,13 +3912,6 @@
 				"borderWidth": 0,
 				"left": 5,
 				"top": 210,
-				"children": [
-					"imageview8",
-					"flexlayout510",
-					"flexlayout667",
-					"flexlayout707",
-					"flexlayout813"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -4933,24 +3922,15 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 1
-				},
+				"children": [
+					"imageview8",
+					"flexlayout510",
+					"flexlayout667",
+					"flexlayout707",
+					"flexlayout813"
+				],
 				"parent": "__library__",
-				"name": "hierarchyLevel2",
-				"layout": {
-					"left": 2.5,
-					"top": 105,
-					"width": 180,
-					"height": 37.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "hierarchyLevel2"
 			}
 		},
 		{
@@ -4989,25 +3969,14 @@
 				"marginLeft": 75,
 				"image": "myavatar.png",
 				"borderRadius": 30,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "hierarchyLevel2",
 				"name": "imageview8",
-				"layout": {
-					"marginLeft": 37.5,
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0.5,
-					"borderRadius": 15
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/myavatar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/myavatar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5040,10 +4009,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"paddingLeft": 10,
-				"children": [
-					"label1140",
-					"label1141"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -5055,23 +4020,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"label1140",
+					"label1141"
+				],
 				"parent": "hierarchyLevel2",
-				"name": "flexlayout510",
-				"layout": {
-					"height": 30,
-					"paddingLeft": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout510"
 			}
 		},
 		{
@@ -5110,7 +4064,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 23, 117, 208, 1 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -5121,15 +4074,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout510",
-				"name": "label1140",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "label1140"
 			}
 		},
 		{
@@ -5166,7 +4113,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 23, 117, 208, 0.5 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -5177,15 +4123,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout510",
-				"name": "label1141",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "label1141"
 			}
 		},
 		{
@@ -5221,7 +4161,6 @@
 				"borderWidth": 0,
 				"left": 45,
 				"top": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -5232,24 +4171,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hierarchyLevel2",
-				"name": "flexlayout667",
-				"layout": {
-					"left": 22.5,
-					"top": 0,
-					"width": 0.5,
-					"height": 18.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout667"
 			}
 		},
 		{
@@ -5285,7 +4209,6 @@
 				"borderWidth": 0,
 				"left": 45,
 				"top": 37,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -5296,24 +4219,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hierarchyLevel2",
-				"name": "flexlayout707",
-				"layout": {
-					"left": 22.5,
-					"top": 18.5,
-					"width": 15,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout707"
 			}
 		},
 		{
@@ -5338,10 +4246,7 @@
 					"alignItems": 2,
 					"flexDirection": 2,
 					"positionType": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -5355,13 +4260,6 @@
 				"borderWidth": 0,
 				"left": 5,
 				"top": 285,
-				"children": [
-					"imageview9",
-					"flexlayout827",
-					"flexlayout919",
-					"flexlayout933",
-					"flexlayout960"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -5372,24 +4270,15 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 1
-				},
+				"children": [
+					"imageview9",
+					"flexlayout827",
+					"flexlayout919",
+					"flexlayout933",
+					"flexlayout960"
+				],
 				"parent": "__library__",
-				"name": "hierarchyLevel3First",
-				"layout": {
-					"left": 2.5,
-					"top": 142.5,
-					"width": 180,
-					"height": 37.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "hierarchyLevel3First"
 			}
 		},
 		{
@@ -5428,25 +4317,14 @@
 				"image": "avatar3.png",
 				"marginLeft": 135,
 				"borderRadius": 30,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "hierarchyLevel3First",
 				"name": "imageview9",
-				"layout": {
-					"marginLeft": 67.5,
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0.5,
-					"borderRadius": 15
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar3.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/avatar3.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5482,7 +4360,6 @@
 				"borderWidth": 0,
 				"bottom": 0,
 				"left": 105,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -5493,24 +4370,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hierarchyLevel2",
-				"name": "flexlayout813",
-				"layout": {
-					"bottom": 0,
-					"left": 52.5,
-					"width": 0.5,
-					"height": 4,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout813"
 			}
 		},
 		{
@@ -5543,10 +4405,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"paddingLeft": 10,
-				"children": [
-					"label1816",
-					"label1817"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -5558,23 +4416,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"label1816",
+					"label1817"
+				],
 				"parent": "hierarchyLevel3First",
-				"name": "flexlayout827",
-				"layout": {
-					"height": 30,
-					"paddingLeft": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout827"
 			}
 		},
 		{
@@ -5613,7 +4460,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -5624,15 +4470,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout827",
-				"name": "label1816",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "label1816"
 			}
 		},
 		{
@@ -5668,7 +4508,6 @@
 				"borderWidth": 0,
 				"textColor": "#9B9B9B",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -5679,15 +4518,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout827",
-				"name": "label1817",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "label1817"
 			}
 		},
 		{
@@ -5723,7 +4556,6 @@
 				"borderWidth": 0,
 				"top": 0,
 				"left": 105,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -5734,24 +4566,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hierarchyLevel3First",
-				"name": "flexlayout919",
-				"layout": {
-					"left": 52.5,
-					"top": 0,
-					"width": 0.5,
-					"height": 18.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout919"
 			}
 		},
 		{
@@ -5785,7 +4602,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"left": 105,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -5796,23 +4612,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hierarchyLevel3First",
-				"name": "flexlayout933",
-				"layout": {
-					"left": 52.5,
-					"width": 15,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout933"
 			}
 		},
 		{
@@ -5848,7 +4650,6 @@
 				"borderWidth": 0,
 				"left": 165,
 				"bottom": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -5859,24 +4660,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hierarchyLevel3First",
-				"name": "flexlayout960",
-				"layout": {
-					"bottom": 0,
-					"left": 82.5,
-					"width": 0.5,
-					"height": 4,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout960"
 			}
 		},
 		{
@@ -5901,10 +4687,7 @@
 					"flexDirection": 2,
 					"alignItems": 2,
 					"positionType": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -5918,12 +4701,6 @@
 				"borderWidth": 0,
 				"top": 360,
 				"left": 5,
-				"children": [
-					"imageview10",
-					"flexlayout1092",
-					"flexlayout1171",
-					"flexlayout1185"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -5934,24 +4711,14 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 1
-				},
+				"children": [
+					"imageview10",
+					"flexlayout1092",
+					"flexlayout1171",
+					"flexlayout1185"
+				],
 				"parent": "__library__",
-				"name": "hiearchyLevel3Remaining",
-				"layout": {
-					"left": 2.5,
-					"top": 180,
-					"width": 180,
-					"height": 37.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "hiearchyLevel3Remaining"
 			}
 		},
 		{
@@ -5990,25 +4757,14 @@
 				"marginLeft": 135,
 				"borderRadius": 30,
 				"image": "avatar4.png",
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "hiearchyLevel3Remaining",
 				"name": "imageview10",
-				"layout": {
-					"marginLeft": 67.5,
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0.5,
-					"borderRadius": 15
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar4.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/avatar4.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -6041,10 +4797,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"paddingLeft": 10,
-				"children": [
-					"label2378",
-					"label2379"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -6056,23 +4808,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"label2378",
+					"label2379"
+				],
 				"parent": "hiearchyLevel3Remaining",
-				"name": "flexlayout1092",
-				"layout": {
-					"height": 30,
-					"paddingLeft": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout1092"
 			}
 		},
 		{
@@ -6111,7 +4852,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -6122,15 +4862,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout1092",
-				"name": "label2378",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "label2378"
 			}
 		},
 		{
@@ -6166,7 +4900,6 @@
 				"borderWidth": 0,
 				"textColor": "#9B9B9B",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -6177,15 +4910,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "flexlayout1092",
-				"name": "label2379",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "label2379"
 			}
 		},
 		{
@@ -6221,7 +4948,6 @@
 				"borderWidth": 0,
 				"top": 0,
 				"left": 165,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -6232,24 +4958,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hiearchyLevel3Remaining",
-				"name": "flexlayout1171",
-				"layout": {
-					"left": 82.5,
-					"top": 0,
-					"width": 0.5,
-					"height": 4,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout1171"
 			}
 		},
 		{
@@ -6285,7 +4996,6 @@
 				"borderWidth": 0,
 				"left": 165,
 				"bottom": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -6296,24 +5006,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hiearchyLevel3Remaining",
-				"name": "flexlayout1185",
-				"layout": {
-					"bottom": 0,
-					"left": 82.5,
-					"width": 0.5,
-					"height": 4,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout1185"
 			}
 		},
 		{
@@ -6334,10 +5029,7 @@
 				},
 				"flex": {
 					"positionType": 0
-				},
-				"layout": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -6351,13 +5043,6 @@
 				"borderWidth": 0,
 				"left": 5,
 				"top": 192,
-				"children": [
-					"hc_header",
-					"hc_level1",
-					"hc_level2",
-					"hc_level3",
-					"hc_level3_1"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -6368,24 +5053,15 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
+				"children": [
+					"hc_header",
+					"hc_level1",
+					"hc_level2",
+					"hc_level3",
+					"hc_level3_1"
+				],
 				"parent": "__library__",
-				"name": "hierarchyController",
-				"layout": {
-					"left": 2.5,
-					"top": 96,
-					"width": 180,
-					"height": 172.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "hierarchyController"
 			}
 		},
 		{
@@ -6425,7 +5101,6 @@
 				"textColor": "#1775D0",
 				"textAlignment": "MIDLEFT",
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -6436,15 +5111,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "hierarchyController",
-				"name": "hc_header",
-				"layout": {
-					"height": 12.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"name": "hc_header"
 			}
 		},
 		{
@@ -6465,11 +5134,7 @@
 					"flexDirection": "ROW",
 					"alignItems": "CENTER",
 					"justifyContent": "SPACE_BETWEEN"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -6484,10 +5149,6 @@
 				"left": 11,
 				"top": 102,
 				"marginLeft": null,
-				"children": [
-					"titleSwitch",
-					"switchItem"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -6498,24 +5159,12 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [
+					"titleSwitch",
+					"switchItem"
+				],
 				"name": "listItemSwitch",
-				"parent": "__library__",
-				"layout": {
-					"left": 5.5,
-					"top": 51,
-					"width": 163,
-					"height": 29.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 3,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 1
-				},
-				"font": {}
+				"parent": "__library__"
 			}
 		},
 		{
@@ -6553,7 +5202,6 @@
 				"textColor": "#4A4A4A",
 				"textAlignment": "MIDLEFT",
 				"marginLeft": 10,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -6564,17 +5212,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "titleSwitch",
-				"parent": "listItemSwitch",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"parent": "listItemSwitch"
 			}
 		},
 		{
@@ -6610,23 +5250,13 @@
 				"minHeight": 31,
 				"minWidth": 51,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "switchItem",
 				"parent": "listItemSwitch",
-				"layout": {
-					"marginRight": 5,
-					"minWidth": 25.5,
-					"minHeight": 15.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
 				"input": {
 					"height": 31,
 					"width": 51
@@ -6666,11 +5296,6 @@
 				"borderWidth": 0,
 				"marginTop": null,
 				"top": 20,
-				"children": [
-					"leftItems",
-					"headerBarTitle",
-					"rightItems"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -6681,22 +5306,13 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
+				"children": [
+					"leftItems",
+					"headerBarTitle",
+					"rightItems"
+				],
 				"name": "flexlayout118",
-				"parent": "layoutHeaderBar",
-				"layout": {
-					"top": 10,
-					"height": 20,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
-				"font": {}
+				"parent": "layoutHeaderBar"
 			}
 		},
 		{
@@ -6736,7 +5352,6 @@
 				"textColor": "rgba( 255, 255, 255, 1 )",
 				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -6748,15 +5363,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"name": "headerBarTitle",
-				"parent": "flexlayout118",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"parent": "flexlayout118"
 			}
 		},
 		{
@@ -6790,7 +5399,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -6802,22 +5410,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"name": "leftItems",
-				"parent": "flexlayout118",
-				"layout": {
-					"width": 37.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"parent": "flexlayout118"
 			}
 		},
 		{
@@ -6854,10 +5449,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"children": [
-					"rightItem2",
-					"rightItem1"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -6869,22 +5460,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [
+					"rightItem2",
+					"rightItem1"
+				],
 				"name": "rightItems",
-				"parent": "flexlayout118",
-				"layout": {
-					"width": 37.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 4,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"parent": "flexlayout118"
 			}
 		},
 		{
@@ -6920,24 +5501,14 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"name": "rightItem2",
-				"parent": "rightItems",
-				"layout": {
-					"width": 10,
-					"height": 10,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"parent": "rightItems"
 			}
 		},
 		{
@@ -6975,25 +5546,15 @@
 				"borderWidth": 0,
 				"usePageVariable": true,
 				"image": null,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"name": "rightItem1",
 				"parent": "rightItems",
-				"layout": {
-					"width": 10,
-					"height": 10,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -7008,12 +5569,7 @@
 				"left": 4,
 				"top": 145.6,
 				"width": 360,
-				"height": 90,
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"height": 90
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -7027,11 +5583,6 @@
 				"borderWidth": 0,
 				"left": 4,
 				"top": 145.6,
-				"children": [
-					"flexlayout119",
-					"flexlayout120",
-					"approvedDate"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -7042,24 +5593,13 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [
+					"flexlayout119",
+					"flexlayout120",
+					"approvedDate"
+				],
 				"name": "itemApproval",
-				"parent": "__library__",
-				"layout": {
-					"left": 2,
-					"top": 72.8,
-					"width": 180,
-					"height": 45,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"parent": "__library__"
 			}
 		},
 		{
@@ -7093,11 +5633,6 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [
-					"apUserImage",
-					"flexlayout255",
-					"apRightArrow"
-				],
 				"id": 30,
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -7110,21 +5645,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"apUserImage",
+					"flexlayout255",
+					"apRightArrow"
+				],
 				"name": "flexlayout119",
-				"parent": "itemApproval",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "itemApproval"
 			}
 		},
 		{
@@ -7159,7 +5686,6 @@
 				"borderWidth": 0,
 				"marginLeft": null,
 				"marginRight": null,
-				"children": [],
 				"id": 20,
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -7171,21 +5697,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "flexlayout120",
-				"parent": "itemApproval",
-				"layout": {
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
-				"font": {}
+				"parent": "itemApproval"
 			}
 		},
 		{
@@ -7223,25 +5737,15 @@
 				"marginLeft": 15,
 				"usePageVariable": true,
 				"image": "avatar1.png",
-				"children": [],
 				"id": 90,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "apUserImage",
 				"parent": "flexlayout119",
-				"layout": {
-					"marginLeft": 7.5,
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -7275,11 +5779,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"marginLeft": 10,
-				"children": [
-					"label570",
-					"label571",
-					"label572"
-				],
 				"id": 50,
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -7292,23 +5791,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"label570",
+					"label571",
+					"label572"
+				],
 				"name": "flexlayout255",
-				"parent": "flexlayout119",
-				"layout": {
-					"marginLeft": 5,
-					"height": 32.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "flexlayout119"
 			}
 		},
 		{
@@ -7342,24 +5831,15 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"image": "arrow_right.png",
-				"children": [],
 				"id": 40,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "apRightArrow",
 				"parent": "flexlayout119",
-				"layout": {
-					"width": 14,
-					"height": 7,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -7401,7 +5881,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 74, 74, 74, 1 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"id": 80,
 				"font": {
 					"size": 18,
@@ -7414,15 +5893,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"name": "label570",
-				"parent": "flexlayout255",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"parent": "flexlayout255"
 			}
 		},
 		{
@@ -7461,7 +5934,6 @@
 				"borderWidth": 0,
 				"textColor": "#9B9B9B",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"id": 70,
 				"font": {
 					"size": 14,
@@ -7474,15 +5946,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"name": "label571",
-				"parent": "flexlayout255",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"parent": "flexlayout255"
 			}
 		},
 		{
@@ -7522,7 +5988,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 74, 74, 74, 1 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"id": 60,
 				"font": {
 					"size": 14,
@@ -7535,15 +6000,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"name": "label572",
-				"parent": "flexlayout255",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"parent": "flexlayout255"
 			}
 		},
 		{
@@ -7593,7 +6052,6 @@
 				"right": 0,
 				"usePageVariable": true,
 				"marginRight": null,
-				"children": [],
 				"id": 10,
 				"font": {
 					"size": 12,
@@ -7605,18 +6063,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"name": "approvedDate",
-				"parent": "itemApproval",
-				"layout": {
-					"right": 0,
-					"top": 0,
-					"width": 35,
-					"height": 10,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 1
-				}
+				"parent": "itemApproval"
 			}
 		},
 		{
@@ -7634,11 +6083,7 @@
 				"height": 120,
 				"flexProps": {
 					"flexDirection": "ROW"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -7652,11 +6097,6 @@
 				"borderWidth": 0,
 				"left": 4.800000190734863,
 				"top": 143.1999969482422,
-				"children": [
-					"flexlayout284",
-					"flexlayout284_1",
-					"flexlayout284_2"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -7667,24 +6107,13 @@
 					"flexDirection": "ROW",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [
+					"flexlayout284",
+					"flexlayout284_1",
+					"flexlayout284_2"
+				],
 				"name": "itemAnnouncement",
-				"parent": "__library__",
-				"layout": {
-					"left": 2.4000000953674316,
-					"top": 71.5999984741211,
-					"width": 180,
-					"height": 60,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 1
-				},
-				"font": {}
+				"parent": "__library__"
 			}
 		},
 		{
@@ -7721,10 +6150,6 @@
 				"borderWidth": 0,
 				"paddingTop": null,
 				"paddingBottom": null,
-				"children": [
-					"label1197",
-					"flexlayout1342"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -7736,22 +6161,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [
+					"label1197",
+					"flexlayout1342"
+				],
 				"name": "flexlayout284",
-				"parent": "itemAnnouncement",
-				"layout": {
-					"width": 40,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 1,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"parent": "itemAnnouncement"
 			}
 		},
 		{
@@ -7785,11 +6200,6 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [
-					"flexlayout446",
-					"circleLayout",
-					"flexlayout446_1"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -7801,22 +6211,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [
+					"flexlayout446",
+					"circleLayout",
+					"flexlayout446_1"
+				],
 				"name": "flexlayout284_1",
-				"parent": "itemAnnouncement",
-				"layout": {
-					"width": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 1,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"parent": "itemAnnouncement"
 			}
 		},
 		{
@@ -7849,10 +6250,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"marginLeft": 10,
-				"children": [
-					"label1595",
-					"label1596"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -7864,22 +6261,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"label1595",
+					"label1596"
+				],
 				"name": "flexlayout284_2",
-				"parent": "itemAnnouncement",
-				"layout": {
-					"marginLeft": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "itemAnnouncement"
 			}
 		},
 		{
@@ -7918,7 +6305,6 @@
 				"left": null,
 				"top": 0,
 				"bottom": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -7929,23 +6315,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"name": "flexlayout446",
-				"parent": "flexlayout284_1",
-				"layout": {
-					"bottom": 0,
-					"top": 0,
-					"width": 0.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"parent": "flexlayout284_1"
 			}
 		},
 		{
@@ -7978,7 +6350,6 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -7990,21 +6361,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 6
 				},
+				"children": [],
 				"name": "flexlayout446_1",
-				"parent": "flexlayout284_1",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 6
-				},
-				"font": {}
+				"parent": "flexlayout284_1"
 			}
 		},
 		{
@@ -8038,9 +6397,6 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [
-					"circle"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -8052,22 +6408,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 4
 				},
+				"children": [
+					"circle"
+				],
 				"name": "circleLayout",
-				"parent": "flexlayout284_1",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 1,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 4
-				},
-				"font": {}
+				"parent": "flexlayout284_1"
 			}
 		},
 		{
@@ -8103,7 +6448,6 @@
 				"borderWidth": 0,
 				"usePageVariable": true,
 				"borderRadius": 5,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "CENTER",
 					"direction": "INHERIT",
@@ -8114,24 +6458,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "circle",
-				"parent": "circleLayout",
-				"layout": {
-					"width": 5,
-					"height": 5,
-					"borderWidth": 0,
-					"borderRadius": 2.5
-				},
-				"flex": {
-					"alignSelf": 2,
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
-				"font": {}
+				"parent": "circleLayout"
 			}
 		},
 		{
@@ -8174,7 +6503,6 @@
 				"textColor": "rgba( 39, 39, 49, 1 )",
 				"textAlignment": "MIDCENTER",
 				"marginTop": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -8186,16 +6514,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 4
 				},
+				"children": [],
 				"name": "label1197",
-				"parent": "flexlayout284",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"positionType": 0,
-					"flexGrow": 4
-				}
+				"parent": "flexlayout284"
 			}
 		},
 		{
@@ -8234,7 +6555,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 39, 39, 49, 1 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -8246,15 +6566,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 4
 				},
+				"children": [],
 				"name": "label1595",
-				"parent": "flexlayout284_2",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 4
-				}
+				"parent": "flexlayout284_2"
 			}
 		},
 		{
@@ -8295,7 +6609,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 155, 155, 155, 1 )",
 				"textAlignment": "TOPLEFT",
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -8307,15 +6620,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 6
 				},
+				"children": [],
 				"name": "label1596",
-				"parent": "flexlayout284_2",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 6
-				}
+				"parent": "flexlayout284_2"
 			}
 		},
 		{
@@ -8347,9 +6654,6 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [
-					"imageview200"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -8361,22 +6665,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 6
 				},
+				"children": [
+					"imageview200"
+				],
 				"name": "flexlayout1342",
-				"parent": "flexlayout284",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 6
-				},
-				"font": {}
+				"parent": "flexlayout284"
 			}
 		},
 		{
@@ -8413,24 +6706,15 @@
 				"borderWidth": 0,
 				"marginBottom": 5,
 				"image": "avatar1.png",
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"name": "imageview200",
 				"parent": "flexlayout1342",
-				"layout": {
-					"marginBottom": 2.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -8447,12 +6731,7 @@
 				"width": 360,
 				"height": 75,
 				"paddingLeft": 10,
-				"paddingRight": 10,
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"paddingRight": 10
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -8468,10 +6747,6 @@
 				"top": 246.4,
 				"paddingLeft": 10,
 				"paddingRight": 10,
-				"children": [
-					"flexlayout489",
-					"ibDivider"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -8482,26 +6757,12 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [
+					"flexlayout489",
+					"ibDivider"
+				],
 				"name": "itemBirthday",
-				"parent": "__library__",
-				"layout": {
-					"left": 2,
-					"top": 123.2,
-					"width": 180,
-					"height": 37.5,
-					"paddingLeft": 5,
-					"paddingRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"parent": "__library__"
 			}
 		},
 		{
@@ -8540,10 +6801,6 @@
 				"id": 8,
 				"paddingLeft": null,
 				"paddingRight": null,
-				"children": [
-					"ibUserImage",
-					"flexlayout754"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -8555,21 +6812,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"ibUserImage",
+					"flexlayout754"
+				],
 				"name": "flexlayout489",
-				"parent": "itemBirthday",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "itemBirthday"
 			}
 		},
 		{
@@ -8605,7 +6853,6 @@
 				"marginLeft": null,
 				"marginRight": null,
 				"id": 9,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -8616,21 +6863,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "ibDivider",
-				"parent": "itemBirthday",
-				"layout": {
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
-				"font": {}
+				"parent": "itemBirthday"
 			}
 		},
 		{
@@ -8669,24 +6904,14 @@
 				"image": "avatar1.png",
 				"usePageVariable": true,
 				"id": 7,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "ibUserImage",
 				"parent": "flexlayout489",
-				"layout": {
-					"marginLeft": 2.5,
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -8721,10 +6946,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"id": 6,
-				"children": [
-					"flexlayout861",
-					"ibUserPosition"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -8736,23 +6957,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"flexlayout861",
+					"ibUserPosition"
+				],
 				"name": "flexlayout754",
-				"parent": "flexlayout489",
-				"layout": {
-					"marginLeft": 5,
-					"height": 30,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "flexlayout489"
 			}
 		},
 		{
@@ -8797,7 +7007,6 @@
 				"textAlignment": "MIDLEFT",
 				"usePageVariable": true,
 				"id": 5,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -8809,15 +7018,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"name": "ibUserPosition",
-				"parent": "flexlayout754",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"parent": "flexlayout754"
 			}
 		},
 		{
@@ -8852,11 +7055,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"id": 4,
-				"children": [
-					"ibUserName",
-					"ibUserBirthday",
-					"imageview159"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -8868,21 +7066,13 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"ibUserName",
+					"ibUserBirthday",
+					"imageview159"
+				],
 				"name": "flexlayout861",
-				"parent": "flexlayout754",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "flexlayout754"
 			}
 		},
 		{
@@ -8926,7 +7116,6 @@
 				"textAlignment": "MIDLEFT",
 				"usePageVariable": true,
 				"id": 3,
-				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -8938,15 +7127,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"name": "ibUserName",
-				"parent": "flexlayout861",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"parent": "flexlayout861"
 			}
 		},
 		{
@@ -8991,7 +7174,6 @@
 				"textAlignment": "MIDRIGHT",
 				"usePageVariable": true,
 				"id": 2,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -9003,15 +7185,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"name": "ibUserBirthday",
-				"parent": "flexlayout861",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"parent": "flexlayout861"
 			}
 		},
 		{
@@ -9048,24 +7224,14 @@
 				"borderWidth": 0,
 				"image": "icon_birthday.png",
 				"id": 1,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "CENTER",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "imageview159",
 				"parent": "flexlayout861",
-				"layout": {
-					"width": 15,
-					"height": 9,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 2,
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/icon_birthday.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/icon_birthday.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -9082,12 +7248,7 @@
 				"left": 2,
 				"top": 152.66666666666666,
 				"paddingLeft": 10,
-				"paddingRight": 10,
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"paddingRight": 10
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -9103,10 +7264,6 @@
 				"top": 152.66666666666666,
 				"paddingLeft": 10,
 				"paddingRight": 10,
-				"children": [
-					"flexlayout276",
-					"flexlayout277"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -9117,26 +7274,12 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [
+					"flexlayout276",
+					"flexlayout277"
+				],
 				"name": "itemDocument",
-				"parent": "__library__",
-				"layout": {
-					"left": 1,
-					"top": 76.33333333333333,
-					"width": 180,
-					"height": 37.5,
-					"paddingLeft": 5,
-					"paddingRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"parent": "__library__"
 			}
 		},
 		{
@@ -9170,12 +7313,6 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [
-					"imageview63",
-					"label506",
-					"imageview64",
-					"label762"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -9187,21 +7324,14 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"imageview63",
+					"label506",
+					"imageview64",
+					"label762"
+				],
 				"name": "flexlayout276",
-				"parent": "itemDocument",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 1,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "itemDocument"
 			}
 		},
 		{
@@ -9231,7 +7361,6 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -9242,21 +7371,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "flexlayout277",
-				"parent": "itemDocument",
-				"layout": {
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
-				"font": {}
+				"parent": "itemDocument"
 			}
 		},
 		{
@@ -9289,23 +7406,14 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"image": "icon_accepted.png",
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "imageview63",
 				"parent": "flexlayout276",
-				"layout": {
-					"width": 15,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/icon_accepted.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/icon_accepted.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -9343,7 +7451,6 @@
 				"textColor": "#4A4A4A",
 				"textAlignment": "MIDLEFT",
 				"marginLeft": 10,
-				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -9355,17 +7462,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"name": "label506",
-				"parent": "flexlayout276",
-				"layout": {
-					"marginLeft": 5,
-					"height": 30,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				}
+				"parent": "flexlayout276"
 			}
 		},
 		{
@@ -9398,23 +7497,14 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"image": "arrow_right.png",
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "imageview64",
 				"parent": "flexlayout276",
-				"layout": {
-					"width": 14,
-					"height": 7,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -9463,7 +7553,6 @@
 				"marginTop": null,
 				"right": 0,
 				"top": 0,
-				"children": [],
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -9474,18 +7563,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"name": "label762",
-				"parent": "flexlayout276",
-				"layout": {
-					"right": 0,
-					"top": 0,
-					"width": 45,
-					"height": 10,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 1
-				}
+				"parent": "flexlayout276"
 			}
 		},
 		{
@@ -9532,28 +7612,15 @@
 				"marginRight": 10,
 				"image": "icon_add_file.png",
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"name": "filePreview",
 				"parent": "itemFile",
-				"layout": {
-					"marginBottom": 2.5,
-					"marginLeft": 5,
-					"marginTop": 2.5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignSelf": 4,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/icon_add_file.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/icon_add_file.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -9590,6 +7657,17 @@
 				"paddingLeft": 10,
 				"paddingRight": 10,
 				"id": 8,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
 				"children": [
 					"headerTitle",
 					"row1",
@@ -9604,34 +7682,8 @@
 					"flexlayout606",
 					"row6"
 				],
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flexlayout289",
-				"parent": "itemEmploymentHistory",
-				"layout": {
-					"paddingLeft": 5,
-					"paddingRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "itemEmploymentHistory"
 			}
 		},
 		{
@@ -9671,7 +7723,6 @@
 				"textAlignment": "MIDLEFT",
 				"usePageVariable": true,
 				"id": 1,
-				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -9682,15 +7733,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "headerTitle",
-				"parent": "flexlayout289",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"parent": "flexlayout289"
 			}
 		},
 		{
@@ -9736,10 +7781,6 @@
 				"top": 0,
 				"id": 10312,
 				"usePageVariable": true,
-				"children": [
-					"label617",
-					"label618"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -9751,24 +7792,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
+				"children": [
+					"label202",
+					"label203"
+				],
 				"parent": "flexlayout2",
-				"name": "startDate",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"width": 110,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "startDate"
 			}
 		},
 		{
@@ -9816,7 +7845,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -9828,18 +7856,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "startDate",
-				"name": "label617",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label202"
 			}
 		},
 		{
@@ -9887,7 +7906,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -9899,17 +7917,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "startDate",
-				"name": "label618",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label203"
 			}
 		},
 		{
@@ -9955,10 +7965,6 @@
 				"top": 0,
 				"id": 10311,
 				"usePageVariable": true,
-				"children": [
-					"label619",
-					"label620"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -9970,24 +7976,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
+				"children": [
+					"label204",
+					"label205"
+				],
 				"parent": "flexlayout2",
-				"name": "endDate",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"width": 110,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "endDate"
 			}
 		},
 		{
@@ -10035,7 +8029,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -10047,18 +8040,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "endDate",
-				"name": "label619",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label204"
 			}
 		},
 		{
@@ -10106,7 +8090,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -10118,17 +8101,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "endDate",
-				"name": "label620",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label205"
 			}
 		},
 		{
@@ -10175,7 +8150,6 @@
 				"marginTop": 10,
 				"marginBottom": 10,
 				"id": 1014,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -10186,25 +8160,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
+				"children": [],
 				"parent": "approveContainer",
-				"name": "flexlayout10",
-				"layout": {
-					"marginBottom": 5,
-					"marginTop": 5,
-					"left": 0,
-					"top": 0,
-					"width": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "flexlayout10"
 			}
 		},
 		{
@@ -10251,7 +8209,6 @@
 				"marginTop": 10,
 				"marginBottom": 10,
 				"id": 1012,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -10262,25 +8219,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
+				"children": [],
 				"parent": "approveContainer",
-				"name": "flexlayout10_1",
-				"layout": {
-					"marginBottom": 5,
-					"marginTop": 5,
-					"left": 0,
-					"top": 0,
-					"width": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "flexlayout10_1"
 			}
 		},
 		{
@@ -10324,9 +8265,6 @@
 				"left": 0,
 				"top": 0,
 				"id": 102,
-				"children": [
-					"flexlayout469"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -10338,24 +8276,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout158"
+				],
 				"parent": "itemLeaveManagement",
-				"name": "divider",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "divider"
 			}
 		},
 		{
@@ -10393,7 +8318,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -10405,23 +8329,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "divider",
-				"name": "flexlayout469",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout158"
 			}
 		},
 		{
@@ -10466,9 +8376,6 @@
 				"left": 0,
 				"top": 0,
 				"id": 101,
-				"children": [
-					"flexlayout470"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -10480,25 +8387,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout159"
+				],
 				"parent": "itemSalary",
-				"name": "flexlayout116",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "flexlayout116"
 			}
 		},
 		{
@@ -10536,7 +8429,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -10548,23 +8440,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout116",
-				"name": "flexlayout470",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout159"
 			}
 		},
 		{
@@ -10613,10 +8491,6 @@
 				"top": 0,
 				"id": 10222,
 				"usePageVariable": true,
-				"children": [
-					"label621",
-					"label622"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -10628,24 +8502,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
+				"children": [
+					"label206",
+					"label207"
+				],
 				"parent": "salaryContainer",
-				"name": "containerBasic",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "containerBasic"
 			}
 		},
 		{
@@ -10693,7 +8555,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -10705,18 +8566,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "containerBasic",
-				"name": "label621",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label206"
 			}
 		},
 		{
@@ -10764,7 +8616,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -10776,17 +8627,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "containerBasic",
-				"name": "label622",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label207"
 			}
 		},
 		{
@@ -10835,10 +8678,6 @@
 				"top": 0,
 				"id": 10221,
 				"usePageVariable": true,
-				"children": [
-					"label623",
-					"label624"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -10850,24 +8689,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": 1
-				},
+				"children": [
+					"label208",
+					"label209"
+				],
 				"parent": "salaryContainer",
-				"name": "containerProposal",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "containerProposal"
 			}
 		},
 		{
@@ -10915,7 +8742,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -10927,18 +8753,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "containerProposal",
-				"name": "label623",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label208"
 			}
 		},
 		{
@@ -10986,7 +8803,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -10998,17 +8814,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "containerProposal",
-				"name": "label624",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label209"
 			}
 		},
 		{
@@ -11055,10 +8863,6 @@
 				"top": 0,
 				"id": 107,
 				"usePageVariable": true,
-				"children": [
-					"label625",
-					"label626"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -11069,23 +8873,12 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"label210",
+					"label211"
+				],
 				"parent": "itemPerformance",
-				"name": "reviewDate",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 22.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "reviewDate"
 			}
 		},
 		{
@@ -11133,7 +8926,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -11145,18 +8937,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "reviewDate",
-				"name": "label625",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label210"
 			}
 		},
 		{
@@ -11204,7 +8987,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -11216,17 +8998,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "reviewDate",
-				"name": "label626",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label211"
 			}
 		},
 		{
@@ -11270,9 +9044,6 @@
 				"left": 0,
 				"top": 0,
 				"id": 106,
-				"children": [
-					"flexlayout471"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -11284,24 +9055,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout162"
+				],
 				"parent": "itemPerformance",
-				"name": "dividerperf",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "dividerperf"
 			}
 		},
 		{
@@ -11339,7 +9097,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -11351,23 +9108,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "dividerperf",
-				"name": "flexlayout471",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout162"
 			}
 		},
 		{
@@ -11414,10 +9157,6 @@
 				"top": 0,
 				"id": 105,
 				"usePageVariable": true,
-				"children": [
-					"label627",
-					"label628"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -11428,23 +9167,12 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"label212",
+					"label213"
+				],
 				"parent": "itemPerformance",
-				"name": "nextReview",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 22.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "nextReview"
 			}
 		},
 		{
@@ -11492,7 +9220,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -11504,18 +9231,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "nextReview",
-				"name": "label627",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label212"
 			}
 		},
 		{
@@ -11563,7 +9281,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -11575,17 +9292,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "nextReview",
-				"name": "label628",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label213"
 			}
 		},
 		{
@@ -11629,9 +9338,6 @@
 				"left": 0,
 				"top": 0,
 				"id": 104,
-				"children": [
-					"flexlayout472"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -11643,24 +9349,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout164"
+				],
 				"parent": "itemPerformance",
-				"name": "dividerperf_1",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "dividerperf_1"
 			}
 		},
 		{
@@ -11698,7 +9391,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -11710,23 +9402,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "dividerperf_1",
-				"name": "flexlayout472",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout164"
 			}
 		},
 		{
@@ -11773,10 +9451,6 @@
 				"top": 0,
 				"id": 103,
 				"usePageVariable": true,
-				"children": [
-					"label629",
-					"label630"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -11787,23 +9461,12 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"label214",
+					"label215"
+				],
 				"parent": "itemPerformance",
-				"name": "rating",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 22.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "rating"
 			}
 		},
 		{
@@ -11851,7 +9514,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -11863,18 +9525,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "rating",
-				"name": "label629",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label214"
 			}
 		},
 		{
@@ -11922,7 +9575,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -11934,17 +9586,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "rating",
-				"name": "label630",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label215"
 			}
 		},
 		{
@@ -11988,9 +9632,6 @@
 				"left": 0,
 				"top": 0,
 				"id": 102,
-				"children": [
-					"flexlayout473"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -12002,24 +9643,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout165"
+				],
 				"parent": "itemPerformance",
-				"name": "dividerperf_1_1",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "dividerperf_1_1"
 			}
 		},
 		{
@@ -12057,7 +9685,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -12069,23 +9696,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "dividerperf_1_1",
-				"name": "flexlayout473",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout165"
 			}
 		},
 		{
@@ -12132,10 +9745,6 @@
 				"top": 0,
 				"id": 101,
 				"usePageVariable": true,
-				"children": [
-					"label631",
-					"label632"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -12146,23 +9755,12 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"label216",
+					"label217"
+				],
 				"parent": "itemPerformance",
-				"name": "overallScore",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 22.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "overallScore"
 			}
 		},
 		{
@@ -12210,7 +9808,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -12222,18 +9819,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "overallScore",
-				"name": "label631",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label216"
 			}
 		},
 		{
@@ -12281,7 +9869,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -12293,17 +9880,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "overallScore",
-				"name": "label632",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label217"
 			}
 		},
 		{
@@ -12345,9 +9924,6 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
-				"children": [
-					"flexlayout474"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -12359,24 +9935,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout166"
+				],
 				"parent": "pickerContainer",
-				"name": "flexlayout430",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "flexlayout430"
 			}
 		},
 		{
@@ -12414,7 +9977,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -12426,23 +9988,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout430",
-				"name": "flexlayout474",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout166"
 			}
 		},
 		{
@@ -12487,9 +10035,6 @@
 				"left": 0,
 				"top": 0,
 				"id": 101,
-				"children": [
-					"flexlayout475"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -12501,25 +10046,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout167"
+				],
 				"parent": "itemUser",
-				"name": "flexlayout161",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "flexlayout161"
 			}
 		},
 		{
@@ -12557,7 +10088,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -12569,23 +10099,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout161",
-				"name": "flexlayout475",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout167"
 			}
 		},
 		{
@@ -12630,9 +10146,6 @@
 				"left": 0,
 				"top": 0,
 				"id": 101,
-				"children": [
-					"flexlayout476"
-				],
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"direction": "INHERIT",
@@ -12644,25 +10157,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignSelf": 4,
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout168"
+				],
 				"parent": "itemExpense",
-				"name": "flexlayout336",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "flexlayout336"
 			}
 		},
 		{
@@ -12700,7 +10199,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -12712,23 +10210,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout336",
-				"name": "flexlayout476",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout168"
 			}
 		},
 		{
@@ -12771,11 +10255,6 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
-				"children": [
-					"imageview76",
-					"flexlayout477",
-					"flexlayout478"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -12786,24 +10265,13 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"imageview21",
+					"flexlayout169",
+					"flexlayout170"
+				],
 				"parent": "hierarchyController",
-				"name": "hc_level1",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"width": 180,
-					"height": 37.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "hc_level1"
 			}
 		},
 		{
@@ -12843,25 +10311,14 @@
 				"marginLeft": 15,
 				"image": "avatar1.png",
 				"borderRadius": 30,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "hc_level1",
-				"name": "imageview76",
-				"layout": {
-					"marginLeft": 7.5,
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0.5,
-					"borderRadius": 15
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"name": "imageview21",
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -12895,10 +10352,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"paddingLeft": 10,
-				"children": [
-					"label633",
-					"label634"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -12910,23 +10363,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"label218",
+					"label219"
+				],
 				"parent": "hc_level1",
-				"name": "flexlayout477",
-				"layout": {
-					"height": 30,
-					"paddingLeft": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout169"
 			}
 		},
 		{
@@ -12966,7 +10408,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -12977,15 +10418,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout477",
-				"name": "label633",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"children": [],
+				"parent": "flexlayout169",
+				"name": "label218"
 			}
 		},
 		{
@@ -13022,7 +10457,6 @@
 				"borderWidth": 0,
 				"textColor": "#9B9B9B",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -13033,15 +10467,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout477",
-				"name": "label634",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"children": [],
+				"parent": "flexlayout169",
+				"name": "label219"
 			}
 		},
 		{
@@ -13078,7 +10506,6 @@
 				"borderWidth": 0,
 				"left": 45,
 				"bottom": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -13089,24 +10516,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hc_level1",
-				"name": "flexlayout478",
-				"layout": {
-					"bottom": 0,
-					"left": 22.5,
-					"width": 0.5,
-					"height": 4,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout170"
 			}
 		},
 		{
@@ -13149,13 +10561,6 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
-				"children": [
-					"imageview77",
-					"flexlayout479",
-					"flexlayout480",
-					"flexlayout481",
-					"flexlayout482"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -13166,24 +10571,15 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"imageview22",
+					"flexlayout171",
+					"flexlayout172",
+					"flexlayout173",
+					"flexlayout174"
+				],
 				"parent": "hierarchyController",
-				"name": "hc_level2",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"width": 180,
-					"height": 37.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "hc_level2"
 			}
 		},
 		{
@@ -13223,25 +10619,14 @@
 				"marginLeft": 75,
 				"image": "myavatar.png",
 				"borderRadius": 30,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "hc_level2",
-				"name": "imageview77",
-				"layout": {
-					"marginLeft": 37.5,
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0.5,
-					"borderRadius": 15
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/myavatar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"name": "imageview22",
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/myavatar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -13275,10 +10660,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"paddingLeft": 10,
-				"children": [
-					"label635",
-					"label636"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -13290,23 +10671,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"label220",
+					"label221"
+				],
 				"parent": "hc_level2",
-				"name": "flexlayout479",
-				"layout": {
-					"height": 30,
-					"paddingLeft": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout171"
 			}
 		},
 		{
@@ -13346,7 +10716,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 23, 117, 208, 1 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -13357,15 +10726,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout479",
-				"name": "label635",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"children": [],
+				"parent": "flexlayout171",
+				"name": "label220"
 			}
 		},
 		{
@@ -13403,7 +10766,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 23, 117, 208, 0.5 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -13414,15 +10776,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout479",
-				"name": "label636",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"children": [],
+				"parent": "flexlayout171",
+				"name": "label221"
 			}
 		},
 		{
@@ -13459,7 +10815,6 @@
 				"borderWidth": 0,
 				"left": 45,
 				"top": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -13470,24 +10825,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hc_level2",
-				"name": "flexlayout480",
-				"layout": {
-					"left": 22.5,
-					"top": 0,
-					"width": 0.5,
-					"height": 18.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout172"
 			}
 		},
 		{
@@ -13524,7 +10864,6 @@
 				"borderWidth": 0,
 				"left": 45,
 				"top": 37,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -13535,24 +10874,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hc_level2",
-				"name": "flexlayout481",
-				"layout": {
-					"left": 22.5,
-					"top": 18.5,
-					"width": 15,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout173"
 			}
 		},
 		{
@@ -13589,7 +10913,6 @@
 				"borderWidth": 0,
 				"bottom": 0,
 				"left": 105,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -13600,24 +10923,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hc_level2",
-				"name": "flexlayout482",
-				"layout": {
-					"bottom": 0,
-					"left": 52.5,
-					"width": 0.5,
-					"height": 4,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout174"
 			}
 		},
 		{
@@ -13660,13 +10968,6 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
-				"children": [
-					"imageview78",
-					"flexlayout483",
-					"flexlayout484",
-					"flexlayout485",
-					"flexlayout486"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -13677,24 +10978,15 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"imageview23",
+					"flexlayout175",
+					"flexlayout176",
+					"flexlayout177",
+					"flexlayout179"
+				],
 				"parent": "hierarchyController",
-				"name": "hc_level3",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"width": 180,
-					"height": 37.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "hc_level3"
 			}
 		},
 		{
@@ -13734,25 +11026,14 @@
 				"image": "avatar3.png",
 				"marginLeft": 135,
 				"borderRadius": 30,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "hc_level3",
-				"name": "imageview78",
-				"layout": {
-					"marginLeft": 67.5,
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0.5,
-					"borderRadius": 15
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar3.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"name": "imageview23",
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/avatar3.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -13786,10 +11067,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"paddingLeft": 10,
-				"children": [
-					"label637",
-					"label638"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -13801,23 +11078,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"label222",
+					"label223"
+				],
 				"parent": "hc_level3",
-				"name": "flexlayout483",
-				"layout": {
-					"height": 30,
-					"paddingLeft": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout175"
 			}
 		},
 		{
@@ -13857,7 +11123,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -13868,15 +11133,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout483",
-				"name": "label637",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"children": [],
+				"parent": "flexlayout175",
+				"name": "label222"
 			}
 		},
 		{
@@ -13913,7 +11172,6 @@
 				"borderWidth": 0,
 				"textColor": "#9B9B9B",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -13924,15 +11182,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout483",
-				"name": "label638",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"children": [],
+				"parent": "flexlayout175",
+				"name": "label223"
 			}
 		},
 		{
@@ -13969,7 +11221,6 @@
 				"borderWidth": 0,
 				"top": 0,
 				"left": 105,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -13980,24 +11231,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hc_level3",
-				"name": "flexlayout484",
-				"layout": {
-					"left": 52.5,
-					"top": 0,
-					"width": 0.5,
-					"height": 18.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout176"
 			}
 		},
 		{
@@ -14032,7 +11268,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"left": 105,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -14043,23 +11278,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hc_level3",
-				"name": "flexlayout485",
-				"layout": {
-					"left": 52.5,
-					"width": 15,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout177"
 			}
 		},
 		{
@@ -14096,7 +11317,6 @@
 				"borderWidth": 0,
 				"left": 165,
 				"bottom": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -14107,24 +11327,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hc_level3",
-				"name": "flexlayout486",
-				"layout": {
-					"bottom": 0,
-					"left": 82.5,
-					"width": 0.5,
-					"height": 4,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout179"
 			}
 		},
 		{
@@ -14167,12 +11372,6 @@
 				"borderWidth": 0,
 				"top": 0,
 				"left": 0,
-				"children": [
-					"imageview79",
-					"flexlayout487",
-					"flexlayout488",
-					"flexlayout490"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -14183,24 +11382,14 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"imageview24",
+					"flexlayout180",
+					"flexlayout181",
+					"flexlayout182"
+				],
 				"parent": "hierarchyController",
-				"name": "hc_level3_1",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"width": 180,
-					"height": 37.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "hc_level3_1"
 			}
 		},
 		{
@@ -14240,25 +11429,14 @@
 				"marginLeft": 135,
 				"borderRadius": 30,
 				"image": "avatar4.png",
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"parent": "hc_level3_1",
-				"name": "imageview79",
-				"layout": {
-					"marginLeft": 67.5,
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0.5,
-					"borderRadius": 15
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/avatar4.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"name": "imageview24",
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/avatar4.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -14292,10 +11470,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"paddingLeft": 10,
-				"children": [
-					"label639",
-					"label640"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -14307,23 +11481,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"label224",
+					"label225"
+				],
 				"parent": "hc_level3_1",
-				"name": "flexlayout487",
-				"layout": {
-					"height": 30,
-					"paddingLeft": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout180"
 			}
 		},
 		{
@@ -14363,7 +11526,6 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 18,
 					"bold": false,
@@ -14374,15 +11536,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout487",
-				"name": "label639",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"children": [],
+				"parent": "flexlayout180",
+				"name": "label224"
 			}
 		},
 		{
@@ -14419,7 +11575,6 @@
 				"borderWidth": 0,
 				"textColor": "#9B9B9B",
 				"textAlignment": "MIDLEFT",
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -14430,15 +11585,9 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"parent": "flexlayout487",
-				"name": "label640",
-				"layout": {
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0
-				}
+				"children": [],
+				"parent": "flexlayout180",
+				"name": "label225"
 			}
 		},
 		{
@@ -14475,7 +11624,6 @@
 				"borderWidth": 0,
 				"top": 0,
 				"left": 165,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -14486,24 +11634,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hc_level3_1",
-				"name": "flexlayout488",
-				"layout": {
-					"left": 82.5,
-					"top": 0,
-					"width": 0.5,
-					"height": 4,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout181"
 			}
 		},
 		{
@@ -14540,7 +11673,6 @@
 				"borderWidth": 0,
 				"left": 165,
 				"bottom": 0,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -14551,24 +11683,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "ABSOLUTE"
 				},
+				"children": [],
 				"parent": "hc_level3_1",
-				"name": "flexlayout490",
-				"layout": {
-					"bottom": 0,
-					"left": 82.5,
-					"width": 0.5,
-					"height": 4,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 1
-				},
-				"font": {}
+				"name": "flexlayout182"
 			}
 		},
 		{
@@ -14615,10 +11732,6 @@
 				"top": 0,
 				"usePageVariable": true,
 				"id": 2,
-				"children": [
-					"label641",
-					"label642"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -14629,23 +11742,12 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"label226",
+					"label227"
+				],
 				"parent": "flexlayout289",
-				"name": "row1",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 25,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "row1"
 			}
 		},
 		{
@@ -14693,7 +11795,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -14705,18 +11806,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "row1",
-				"name": "label641",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label226"
 			}
 		},
 		{
@@ -14764,7 +11856,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -14776,17 +11867,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "row1",
-				"name": "label642",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label227"
 			}
 		},
 		{
@@ -14833,10 +11916,6 @@
 				"top": 0,
 				"usePageVariable": true,
 				"id": 3,
-				"children": [
-					"label643",
-					"label644"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -14847,23 +11926,12 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"label228",
+					"label229"
+				],
 				"parent": "flexlayout289",
-				"name": "row2",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 25,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "row2"
 			}
 		},
 		{
@@ -14911,7 +11979,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -14923,18 +11990,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "row2",
-				"name": "label643",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label228"
 			}
 		},
 		{
@@ -14982,7 +12040,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -14994,17 +12051,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "row2",
-				"name": "label644",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label229"
 			}
 		},
 		{
@@ -15051,10 +12100,6 @@
 				"top": 0,
 				"usePageVariable": true,
 				"id": 4,
-				"children": [
-					"label645",
-					"label646"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -15065,23 +12110,12 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"label230",
+					"label231"
+				],
 				"parent": "flexlayout289",
-				"name": "row3",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 25,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "row3"
 			}
 		},
 		{
@@ -15129,7 +12163,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -15141,18 +12174,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "row3",
-				"name": "label645",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label230"
 			}
 		},
 		{
@@ -15200,7 +12224,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -15212,17 +12235,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "row3",
-				"name": "label646",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label231"
 			}
 		},
 		{
@@ -15269,10 +12284,6 @@
 				"top": 0,
 				"usePageVariable": true,
 				"id": 5,
-				"children": [
-					"label647",
-					"label648"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -15283,23 +12294,12 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"label232",
+					"label233"
+				],
 				"parent": "flexlayout289",
-				"name": "row4",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 25,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "row4"
 			}
 		},
 		{
@@ -15347,7 +12347,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -15359,18 +12358,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "row4",
-				"name": "label647",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label232"
 			}
 		},
 		{
@@ -15418,7 +12408,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -15430,17 +12419,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "row4",
-				"name": "label648",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label233"
 			}
 		},
 		{
@@ -15487,10 +12468,6 @@
 				"top": 0,
 				"usePageVariable": true,
 				"id": 6,
-				"children": [
-					"label649",
-					"label650"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -15501,23 +12478,12 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"label234",
+					"label235"
+				],
 				"parent": "flexlayout289",
-				"name": "row5",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 25,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "row5"
 			}
 		},
 		{
@@ -15565,7 +12531,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -15577,18 +12542,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "row5",
-				"name": "label649",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label234"
 			}
 		},
 		{
@@ -15636,7 +12592,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -15648,17 +12603,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "row5",
-				"name": "label650",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label235"
 			}
 		},
 		{
@@ -15705,10 +12652,6 @@
 				"top": 0,
 				"usePageVariable": true,
 				"id": 7,
-				"children": [
-					"label651",
-					"label652"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -15719,23 +12662,12 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
+				"children": [
+					"label236",
+					"label237"
+				],
 				"parent": "flexlayout289",
-				"name": "row6",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 25,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "row6"
 			}
 		},
 		{
@@ -15783,7 +12715,6 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -15795,18 +12726,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"parent": "row6",
-				"name": "label651",
-				"layout": {
-					"marginLeft": 5,
-					"width": 60,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				}
+				"name": "label236"
 			}
 		},
 		{
@@ -15854,7 +12776,6 @@
 				"marginRight": 10,
 				"usePageVariable": true,
 				"id": 100,
-				"children": [],
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -15866,17 +12787,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"parent": "row6",
-				"name": "label652",
-				"layout": {
-					"marginRight": 5,
-					"height": 15,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"name": "label237"
 			}
 		},
 		{
@@ -15918,9 +12831,6 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
-				"children": [
-					"flexlayout491"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -15932,24 +12842,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout183"
+				],
 				"parent": "flexlayout289",
-				"name": "flexlayout606",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "flexlayout606"
 			}
 		},
 		{
@@ -15987,7 +12884,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -15999,23 +12895,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout606",
-				"name": "flexlayout491",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout183"
 			}
 		},
 		{
@@ -16057,9 +12939,6 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
-				"children": [
-					"flexlayout492"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -16071,24 +12950,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout184"
+				],
 				"parent": "flexlayout289",
-				"name": "flexlayout606_1",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "flexlayout606_1"
 			}
 		},
 		{
@@ -16126,7 +12992,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -16138,23 +13003,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout606_1",
-				"name": "flexlayout492",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout184"
 			}
 		},
 		{
@@ -16196,9 +13047,6 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
-				"children": [
-					"flexlayout493"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -16210,24 +13058,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout185"
+				],
 				"parent": "flexlayout289",
-				"name": "flexlayout606_2",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "flexlayout606_2"
 			}
 		},
 		{
@@ -16265,7 +13100,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -16277,23 +13111,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout606_2",
-				"name": "flexlayout493",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout185"
 			}
 		},
 		{
@@ -16335,9 +13155,6 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
-				"children": [
-					"flexlayout494"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -16349,24 +13166,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout186"
+				],
 				"parent": "flexlayout289",
-				"name": "flexlayout606_3",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "flexlayout606_3"
 			}
 		},
 		{
@@ -16404,7 +13208,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -16416,23 +13219,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout606_3",
-				"name": "flexlayout494",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout186"
 			}
 		},
 		{
@@ -16474,9 +13263,6 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
-				"children": [
-					"flexlayout495"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -16488,24 +13274,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
+				"children": [
+					"flexlayout187"
+				],
 				"parent": "flexlayout289",
-				"name": "flexlayout606_4",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "flexlayout606_4"
 			}
 		},
 		{
@@ -16543,7 +13316,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -16555,23 +13327,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"parent": "flexlayout606_4",
-				"name": "flexlayout495",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"name": "flexlayout187"
 			}
 		}
 	]

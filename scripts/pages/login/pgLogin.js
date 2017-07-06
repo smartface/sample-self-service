@@ -16,6 +16,11 @@ const Page_ = extend(PageDesign)(
 		
 		this.onShow = onShow.bind(this, this.onShow);
 		this.signinButton.onPress = signin.bind(this.signinButton, this);
+		this.appName.onTouchEnded = function()
+		{
+		    this.usernameLayout.innerTextbox.text = "Anthony Bell";
+	        this.passwordLayout.innerTextbox.text = "123456";
+		}.bind(this);
 		
 		initTexts(this);
 	}
@@ -23,7 +28,11 @@ const Page_ = extend(PageDesign)(
 
 function onShow(parentOnShow, params) {
     if (typeof parentOnShow === "function") parentOnShow(params);
-
+    
+    this.usernameLayout.innerTextbox.ios.clearButtonEnabled = true;
+	this.passwordLayout.innerTextbox.ios.clearButtonEnabled = true;
+	this.usernameLayout.textboxInfo.text = lang["pgLogin.inputs.username.info"];
+	this.passwordLayout.textboxInfo.text = lang["pgLogin.inputs.password.info"];
     // Reset sign in button status because if sign in animation ran it changes
     // button properties
     this.signinButton.text = lang["pgLogin.signin"];
@@ -35,8 +44,7 @@ function onShow(parentOnShow, params) {
 
 // Loads texts from language file
 function initTexts(page) {
-	page.usernameLayout.textboxInfo.text = lang["pgLogin.inputs.username.info"];
-	page.passwordLayout.textboxInfo.text = lang["pgLogin.inputs.password.info"];
+	
 	page.passwordLayout.innerTextbox.isPassword = true;
 	page.signinButton.text = lang["pgLogin.signin"];
 	page.appName.text = lang["pgLogin.appName"];
