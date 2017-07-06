@@ -87,7 +87,7 @@ const PgSettings_ = extend(Page)(
 		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgSettings");
 		flexlayout84.addChild(horizontaldivider_1);
 		
-		const label322Style = getCombinedStyle(".label", {
+		const txtAboutStyle = getCombinedStyle(".label", {
 			width: null,
 			height: 50,
 			marginLeft: 15,
@@ -96,24 +96,26 @@ const PgSettings_ = extend(Page)(
 			text: "About    V1.0.1",
 			font: Font.create("Arial", 14, Font.NORMAL)
 		});
-		var label322 = new Label(label322Style);
-		flexlayout84.addChild(label322);
-		
-		const label322_1Style = getCombinedStyle(".label", {
+		var txtAbout = new Label(txtAboutStyle);
+		flexlayout84.addChild(txtAbout);
+		this.txtAbout = txtAbout;
+
+		const txtAboutDescStyle = getCombinedStyle(".label", {
 			width: null,
 			height: 100,
 			marginLeft: 15,
 			marginRight: 10,
 			marginTop: null,
-			text: "Lorem ipsum dolor sit amet, veniam melius duo ei, ea his esse sonet, eu rebum tation vituperatoribus  his. Lorem ipsum dolor sit amet, veniam melius duo ei eu rebum tation vituperatoribus his.",
+			text: "",
 			multiline: true,
 			textColor: Color.create(255, 155, 155, 155),
 			textAlignment: TextAlignment.TOPLEFT,
 			font: Font.create("Arial", 14, Font.NORMAL)
 		});
-		var label322_1 = new Label(label322_1Style);
-		flexlayout84.addChild(label322_1);
-		
+		var txtAboutDesc = new Label(txtAboutDescStyle);
+		flexlayout84.addChild(txtAboutDesc);
+		this.txtAboutDesc = txtAboutDesc;
+
 		const signoutLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 61,
@@ -142,26 +144,28 @@ const PgSettings_ = extend(Page)(
 		var flexlayout731 = new HorizontalDivider(flexlayout731Style, "pgSettings");
 		signoutLayout.addChild(flexlayout731);
 		
-		const label108Style = getCombinedStyle(".label .label-list-item-title", {
+		const txtThemeStyle = getCombinedStyle(".label .label-list-item-title", {
 			text: "Theme",
 			width: null,
 			height: 70,
 			left: 5,
 			flexGrow: 1
 		});
-		var label108 = new Label(label108Style);
-		flexlayout85.addChild(label108);
-		
-		const label108_1Style = getCombinedStyle(".label .label-list-item-title", {
+		var txtTheme = new Label(txtThemeStyle);
+		flexlayout85.addChild(txtTheme);
+		this.txtTheme = txtTheme;
+
+		const txtNotificationStyle = getCombinedStyle(".label .label-list-item-title", {
 			text: "Notification",
 			width: null,
 			height: 70,
 			left: 5,
 			flexGrow: 1
 		});
-		var label108_1 = new Label(label108_1Style);
-		flexlayout85_1.addChild(label108_1);
-		
+		var txtNotification = new Label(txtNotificationStyle);
+		flexlayout85_1.addChild(txtNotification);
+		this.txtNotification = txtNotification;
+
 		const label1089Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -188,7 +192,7 @@ const PgSettings_ = extend(Page)(
 
 		const switch1Style = getCombinedStyle(".switch", {
 			width: null,
-			toggle: true
+			toggle: false
 		});
 		var switch1 = new Switch(switch1Style);
 		if(switch1Style.toggleOffColor)
@@ -249,21 +253,21 @@ const PgSettings_ = extend(Page)(
 			horizontalDivider: horizontalDivider,
 			flexlayout85_1: flexlayout85_1,
 			horizontaldivider_1: horizontaldivider_1,
-			label322: label322,
-			label322_1: label322_1,
+			txtAbout: txtAbout,
+			txtAboutDesc: txtAboutDesc,
 			signoutLayout: signoutLayout
 		});
 		
 		//assign the children of flexlayout85
 		flexlayout85.children = Object.assign({}, {
-			label108: label108,
+			txtTheme: txtTheme,
 			themeBlueLayout: themeBlueLayout,
 			themePurpleLayout: themePurpleLayout
 		});
 		
 		//assign the children of flexlayout85_1
 		flexlayout85_1.children = Object.assign({}, {
-			label108_1: label108_1,
+			txtNotification: txtNotification,
 			switch1: switch1
 		});
 		

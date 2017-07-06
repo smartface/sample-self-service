@@ -10,12 +10,16 @@ const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super, params) {
 		// Initalizes super class for this page scope
-		_super(this, params);
+		_super(this, params); 
 
 		var _superOnLoad = this.onLoad;
 		this.onLoad = function() {
 			if (typeof _superOnLoad === "function") _superOnLoad.call(this);
 			this.headerBar.title = lang["pgSettings.pageTitle"];
+			this.txtTheme.text = lang["pgSettings.theme"];
+			this.txtNotification.text = lang["pgSettings.notifications"];
+			this.txtAbout.text = lang["pgSettings.about"] + " v." + Application.version ;
+			this.txtAboutDesc.text = lang["pgSettings.aboutDesc"];
 		};
 
 		this.themeBlueLayout.onTouchEnded = function() {

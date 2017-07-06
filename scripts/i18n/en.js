@@ -139,5 +139,9 @@ SMF.i18n.defineLanguage('en', {
 	"pgDocumentDetail.uploadText"		: "Please Upload Your Document",
 	"alertView.confirmation"			: "Confirmation",
 	"alertView.warning"					: "Warning",
-	"alertView.error"					: "Error"
+	"alertView.error"					: "Error",
+	"pgSettings.theme"					: "Theme",
+	"pgSettings.notifications"			: "Notifications",
+	"pgSettings.about"					: "About",
+	"pgSettings.aboutDesc"				: "This is a general purpose field service app with the following functions: Customer Management, Customer Service Entry, Customer Timeline and Customer Notifications."
 });
