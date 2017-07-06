@@ -31,7 +31,7 @@ MockService.getSalaryList = function ()
 MockService.getEmploymentHistory = function ()
 {
     var list = [];
-    var companies = ["COMPANY 1", "COMPANY 2", "COMPANY 3"];
+    var companies = ["SPECIALIST", "MANAGER", "DIRECTOR"];
     var jobTitleList = ['Director of Sales & Marketing', "VP of Sales", "Project Coordinator"];
     var people = ["Adam Stewart", "Anna Wolker", "Bath County"];
     var startDate = ["03.02.2016", "07.08.2010", "05.06.2004"];
@@ -40,9 +40,9 @@ MockService.getEmploymentHistory = function ()
         var employment = new Employment();
         employment.companyName = companies[i];
         employment.jobTitle = jobTitleList[i];
-        employment.payroll = (i+1)*1000;
-        employment.manager = 2017;
-        employment.grade = (i+1)*2;
+        employment.payroll = 6000 - i*1000;
+        employment.manager = people[i];
+        employment.grade = 7-i;
         employment.startDate = startDate[i];
         employment.endDate = endDate[i];
         list.push(employment)

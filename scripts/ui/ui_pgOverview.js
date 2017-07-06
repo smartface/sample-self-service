@@ -170,7 +170,7 @@ const PgOverview_ = extend(Page)(
 		const containerTypeStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 326,
+			width: null,
 			height: 35,
 			backgroundColor: Color.create(255, 255, 255, 255),
 			flexDirection: FlexLayout.FlexDirection.ROW,
@@ -184,7 +184,7 @@ const PgOverview_ = extend(Page)(
 		const listitem1_3Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 326,
+			width: null,
 			height: 35,
 			backgroundColor: Color.create(255, 255, 255, 255),
 			flexDirection: FlexLayout.FlexDirection.ROW,
@@ -197,7 +197,7 @@ const PgOverview_ = extend(Page)(
 		const containerBasicStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 326,
+			width: null,
 			height: 35,
 			backgroundColor: Color.create(255, 255, 255, 255),
 			flexDirection: FlexLayout.FlexDirection.ROW,
@@ -259,7 +259,7 @@ const PgOverview_ = extend(Page)(
 		const listitem1_1_3Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 326,
+			width: null,
 			height: 35,
 			backgroundColor: Color.create(255, 255, 255, 255),
 			marginTop: null,
@@ -273,7 +273,7 @@ const PgOverview_ = extend(Page)(
 		const containerTitleStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 326,
+			width: null,
 			height: 35,
 			backgroundColor: Color.create(255, 255, 255, 255),
 			marginTop: null,
@@ -288,7 +288,7 @@ const PgOverview_ = extend(Page)(
 		const containerVariableStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 326,
+			width: null,
 			height: 35,
 			backgroundColor: Color.create(255, 255, 255, 255),
 			marginTop: null,
@@ -333,7 +333,7 @@ const PgOverview_ = extend(Page)(
 		const performancecontainerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 326,
+			width: null,
 			height: 35,
 			backgroundColor: Color.create(255, 255, 255, 255),
 			marginTop: null,
@@ -347,7 +347,7 @@ const PgOverview_ = extend(Page)(
 		const containerAwardedDateStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
-			width: 326,
+			width: null,
 			height: 35,
 			backgroundColor: Color.create(255, 255, 255, 255),
 			marginTop: null,
