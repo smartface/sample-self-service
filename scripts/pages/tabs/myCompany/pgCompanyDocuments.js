@@ -46,6 +46,7 @@ function onShow(parentOnShow) {
 function initListView(listView, data) {
     listView.rowHeight = 75;
     listView.itemCount = data.length;
+    listView.refreshEnabled = false;
     
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();

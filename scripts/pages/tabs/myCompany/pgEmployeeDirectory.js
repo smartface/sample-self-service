@@ -47,6 +47,7 @@ function onShow(parentOnShow) {
 function initListView(listView, data) {
     listView.rowHeight = 75;
     listView.itemCount = data.length;
+    listView.refreshEnabled = false;
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemUser();
@@ -66,11 +67,11 @@ function initListView(listView, data) {
 function initHeaderBar() {
     this.layoutHeaderBar.headerBarTitle.text = lang["pgEmployeeDirectory.pageTitle"];
     this.layoutHeaderBar.setRightItem1({
-        image: Image.createFromFile("images://icon_header_dots.png")
-    });
-    this.layoutHeaderBar.setRightItem2({
         image: Image.createFromFile("images://icon_header_search.png")
     });
+    // this.layoutHeaderBar.setRightItem2({
+    //     image: Image.createFromFile("images://icon_header_dots.png")
+    // });
 }
 
 module && (module.exports = Page_);
