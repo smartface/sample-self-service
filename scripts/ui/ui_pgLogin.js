@@ -13,6 +13,7 @@ const FlexLayout = require('sf-core/ui/flexlayout');
 const Label = require('sf-core/ui/label');
 const TextAlignment = require('sf-core/ui/textalignment');
 const Color = require('sf-core/ui/color');
+const Font = require('sf-core/ui/font');
 const Button = require('sf-core/ui/button');
 
 const TextboxWithLine = require("../components/TextboxWithLine");
@@ -77,6 +78,20 @@ const PgLogin_ = extend(Page)(
 		this.layout.addChild(buttonLayout);
 		this.buttonLayout = buttonLayout;
 
+		const labelClearStyle = getCombinedStyle(".label", {
+			bottom: 0,
+			right: 0,
+			backgroundColor: Color.create(0, 255, 255, 255),
+			textColor: Color.create(255, 255, 255, 255),
+			textAlignment: TextAlignment.MIDRIGHT,
+			text: "Clear",
+			positionType: FlexLayout.PositionType.ABSOLUTE,
+			font: Font.create("Arial", 14, Font.NORMAL)
+		});
+		var labelClear = new Label(labelClearStyle);
+		this.layout.addChild(labelClear);
+		this.labelClear = labelClear;
+
 		const loadingImageViewStyle = getCombinedStyle(".imageView", {
 			width: null,
 			height: 50,
@@ -133,7 +148,8 @@ const PgLogin_ = extend(Page)(
 			imageview156: imageview156,
 			appName: appName,
 			inputLayout: inputLayout,
-			buttonLayout: buttonLayout
+			buttonLayout: buttonLayout,
+			labelClear: labelClear
 		});
 		
 		//assign the children of inputLayout

@@ -8,6 +8,7 @@ const Timer = require("sf-core/timer");
 const FingerPrintLib = require("lib/util/fingerprint");
 const Data = require("sf-core/data");
 const rau = require("lib/util/rau");
+const Application = require("sf-core/application");
 
 
 const PageDesign = require("../../ui/ui_pgLogin");
@@ -20,6 +21,17 @@ const Page_ = extend(PageDesign)(
 		
 		this.onShow = onShow.bind(this, this.onShow);
 		this.signinButton.onPress = signin.bind(this.signinButton, this);
+		this.labelClear.onTouchEnded = function(){
+		    
+			Data.removeVariable("isUserAuthenticated");
+			Data.removeVariable("userName");
+			Data.removeVariable("password");
+			Data.removeVariable("isRejectedFingerprint");
+			Data.removeVariable("isVerifiedFingerprint");
+			Data.removeVariable("isAuthenticated");
+			Data.removeVariable("isAllowedFingerprint");
+		    Application.restart();
+		}
 		this.appName.onTouchEnded = function()
 		{
 		    this.usernameLayout.innerTextbox.text = "Anthony Bell";
