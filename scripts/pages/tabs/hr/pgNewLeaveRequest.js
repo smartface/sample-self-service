@@ -18,6 +18,8 @@ function onShow(parentOnShow) {
 	if (typeof parentOnShow === "function") parentOnShow();
 	this.headerBar.title = lang["pgNewLeaveRequest.pageTitle"];
 	this.headerBar.itemColor = Color.WHITE;
+	this.itemSpeech.page = this;
+	this.itemSpeech.inputField = this.textbox1;
 }
 
 function initTexts() {

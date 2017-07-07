@@ -8,7 +8,7 @@ const ProfileIndex = extend(PageContainer)(
                 require("./pgSalary"),
                 require("./pgEmploymentHistory"),
                 require("./pgPerformance"),
-                //require("./pgProfileDetail")
+                require("./pgHierarchy")
             ];
         _super(this, params);
     }

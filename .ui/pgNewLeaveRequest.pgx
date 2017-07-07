@@ -27,8 +27,8 @@
 					"button1"
 				],
 				"name": "pgNewLeaveRequest",
-				"width": 187.5,
-				"height": 301.5
+				"width": 375,
+				"height": 603
 			}
 		},
 		{
@@ -150,6 +150,7 @@
 				"textColor": "#1775D0",
 				"textAlignment": "MIDLEFT",
 				"marginLeft": 10,
+				"usePageVariable": true,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -162,8 +163,7 @@
 				},
 				"parent": "flexlayout1",
 				"children": [],
-				"name": "informationTitle",
-				"usePageVariable": true
+				"name": "informationTitle"
 			}
 		},
 		{
@@ -434,7 +434,7 @@
 				"parent": "flexlayout66",
 				"children": [
 					"label85",
-					"imageview17"
+					"itemSpeech"
 				],
 				"name": "flexlayout76"
 			}
@@ -488,38 +488,6 @@
 			}
 		},
 		{
-			"type": "ImageView",
-			"id": "152cfb62",
-			"themeProps": {},
-			"userProps": {
-				"width": 14,
-				"height": 25,
-				"image": "icon_microphone.png",
-				"imageFillType": "ASPECTFIT"
-			},
-			"className": ".imageView",
-			"props": {
-				"width": 14,
-				"height": 25,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"image": "icon_microphone.png",
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"parent": "flexlayout76",
-				"children": [],
-				"name": "imageview17",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/icon_microphone.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.9822066386742958"
-			}
-		},
-		{
 			"type": "TextBox",
 			"id": "d9087b0b",
 			"themeProps": {},
@@ -531,6 +499,7 @@
 				"borderColor": "rgba( 203, 204, 208, 1 )",
 				"text": "Description",
 				"textColor": "rgba( 0, 0, 0, 0.28 )",
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -548,6 +517,7 @@
 				"borderWidth": 0.5,
 				"textColor": "rgba( 0, 0, 0, 0.28 )",
 				"textAlignment": "MIDLEFT",
+				"usePageVariable": true,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -766,7 +736,7 @@
 				"children": [],
 				"parent": "flexlayout429",
 				"name": "imageview2",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -879,7 +849,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout9"
+					"flexlayout148"
 				],
 				"parent": "leaveTypePicker",
 				"name": "flexlayout430"
@@ -933,7 +903,7 @@
 				},
 				"children": [],
 				"parent": "flexlayout430",
-				"name": "flexlayout9"
+				"name": "flexlayout148"
 			}
 		},
 		{
@@ -987,9 +957,9 @@
 				},
 				"parent": "flexlayout3",
 				"children": [
-					"flexlayout105",
-					"label123",
-					"flexlayout106"
+					"flexlayout216",
+					"label259",
+					"flexlayout217"
 				],
 				"name": "timeTypePicker"
 			}
@@ -1041,11 +1011,11 @@
 					"flexGrow": null
 				},
 				"children": [
-					"label122",
-					"imageview26"
+					"label258",
+					"imageview45"
 				],
 				"parent": "timeTypePicker",
-				"name": "flexlayout105"
+				"name": "flexlayout216"
 			}
 		},
 		{
@@ -1098,8 +1068,8 @@
 					"flexGrow": 1
 				},
 				"children": [],
-				"parent": "flexlayout105",
-				"name": "label122"
+				"parent": "flexlayout216",
+				"name": "label258"
 			}
 		},
 		{
@@ -1138,9 +1108,9 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout105",
-				"name": "imageview26",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"parent": "flexlayout216",
+				"name": "imageview45",
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1199,7 +1169,7 @@
 				},
 				"children": [],
 				"parent": "timeTypePicker",
-				"name": "label123"
+				"name": "label259"
 			}
 		},
 		{
@@ -1253,10 +1223,10 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout107"
+					"flexlayout218"
 				],
 				"parent": "timeTypePicker",
-				"name": "flexlayout106"
+				"name": "flexlayout217"
 			}
 		},
 		{
@@ -1306,8 +1276,8 @@
 					"flexGrow": 1
 				},
 				"children": [],
-				"parent": "flexlayout106",
-				"name": "flexlayout107"
+				"parent": "flexlayout217",
+				"name": "flexlayout218"
 			}
 		},
 		{
@@ -1359,9 +1329,9 @@
 				},
 				"parent": "flexlayout3_1",
 				"children": [
-					"flexlayout108",
-					"label125",
-					"flexlayout109"
+					"flexlayout219",
+					"label261",
+					"flexlayout220"
 				],
 				"name": "selectDatePicker"
 			}
@@ -1413,11 +1383,11 @@
 					"flexGrow": null
 				},
 				"children": [
-					"label124",
-					"imageview27"
+					"label260",
+					"imageview46"
 				],
 				"parent": "selectDatePicker",
-				"name": "flexlayout108"
+				"name": "flexlayout219"
 			}
 		},
 		{
@@ -1470,8 +1440,8 @@
 					"flexGrow": 1
 				},
 				"children": [],
-				"parent": "flexlayout108",
-				"name": "label124"
+				"parent": "flexlayout219",
+				"name": "label260"
 			}
 		},
 		{
@@ -1510,9 +1480,9 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout108",
-				"name": "imageview27",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"parent": "flexlayout219",
+				"name": "imageview46",
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1571,7 +1541,7 @@
 				},
 				"children": [],
 				"parent": "selectDatePicker",
-				"name": "label125"
+				"name": "label261"
 			}
 		},
 		{
@@ -1625,10 +1595,10 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout110"
+					"flexlayout221"
 				],
 				"parent": "selectDatePicker",
-				"name": "flexlayout109"
+				"name": "flexlayout220"
 			}
 		},
 		{
@@ -1678,8 +1648,8 @@
 					"flexGrow": 1
 				},
 				"children": [],
-				"parent": "flexlayout109",
-				"name": "flexlayout110"
+				"parent": "flexlayout220",
+				"name": "flexlayout221"
 			}
 		},
 		{
@@ -1733,9 +1703,9 @@
 				},
 				"parent": "flexlayout3_1",
 				"children": [
-					"flexlayout111",
-					"label127",
-					"flexlayout112"
+					"flexlayout222",
+					"label263",
+					"flexlayout223"
 				],
 				"name": "selectTimePicker"
 			}
@@ -1787,11 +1757,11 @@
 					"flexGrow": null
 				},
 				"children": [
-					"label126",
-					"imageview28"
+					"label262",
+					"imageview47"
 				],
 				"parent": "selectTimePicker",
-				"name": "flexlayout111"
+				"name": "flexlayout222"
 			}
 		},
 		{
@@ -1844,8 +1814,8 @@
 					"flexGrow": 1
 				},
 				"children": [],
-				"parent": "flexlayout111",
-				"name": "label126"
+				"parent": "flexlayout222",
+				"name": "label262"
 			}
 		},
 		{
@@ -1884,9 +1854,9 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout111",
-				"name": "imageview28",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"parent": "flexlayout222",
+				"name": "imageview47",
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1945,7 +1915,7 @@
 				},
 				"children": [],
 				"parent": "selectTimePicker",
-				"name": "label127"
+				"name": "label263"
 			}
 		},
 		{
@@ -1999,10 +1969,10 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout113"
+					"flexlayout224"
 				],
 				"parent": "selectTimePicker",
-				"name": "flexlayout112"
+				"name": "flexlayout223"
 			}
 		},
 		{
@@ -2052,8 +2022,101 @@
 					"flexGrow": 1
 				},
 				"children": [],
-				"parent": "flexlayout112",
-				"name": "flexlayout113"
+				"parent": "flexlayout223",
+				"name": "flexlayout224"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "5c06e32e",
+			"source": {
+				"page": "__library__",
+				"id": "10bf73cf"
+			},
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"left": 0,
+				"top": 0,
+				"width": 14,
+				"height": 25,
+				"usePageVariable": true,
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": 25,
+				"width": 14,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE"
+				},
+				"name": "itemSpeech",
+				"parent": "flexlayout76",
+				"children": [
+					"imageview18"
+				]
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "2fe6f754",
+			"source": {
+				"page": "__library__"
+			},
+			"hiddenComponent": false,
+			"themeProps": {},
+			"userProps": {
+				"width": null,
+				"height": null,
+				"imageFillType": "ASPECTFIT",
+				"image": "icon_microphone.png",
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".imageView",
+			"props": {
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"visible": true,
+				"imageFillType": "ASPECTFIT",
+				"backgroundColor": "rgba(0,0,0,0)",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"image": "icon_microphone.png",
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "imageview18",
+				"parent": "itemSpeech",
+				"children": [],
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface4433/self-service/ui-editor/img/icon_microphone.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
 			}
 		}
 	]

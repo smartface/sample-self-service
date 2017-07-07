@@ -84,6 +84,15 @@ MockService.getUsers = function() {
         "Sales Responsible",
         "Director of Human Resources"
     ];
+    
+    var positions = [
+        "Manager of Sales and Marketing",
+        "Sales Responsible",
+        "Director of Sales and Marketing",
+        "Junior Developer",
+        "Sales Responsible",
+        "Director of Human Resources"
+    ];
     var images = [
         Image.createFromFile("images://avatar1.png"),
         Image.createFromFile("images://avatar2.png"),

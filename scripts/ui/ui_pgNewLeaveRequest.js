@@ -12,10 +12,8 @@ const Label = require('sf-core/ui/label');
 const Font = require('sf-core/ui/font');
 const TextBox = require('sf-core/ui/textbox');
 const Color = require('sf-core/ui/color');
-const ImageView = require('sf-core/ui/imageview');
-const Image = require('sf-core/ui/image');
-const ImageFillType = require('sf-core/ui/imagefilltype');
 
+const ItemSpeech = require("../components/ItemSpeech");
 const PickerContainer = require("../components/PickerContainer");
 
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
@@ -115,7 +113,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 		});
 		var textbox1 = new TextBox(textbox1Style);
 		flexlayout66.addChild(textbox1);
-		
+		this.textbox1 = textbox1;
+
 		const flexlayout3Style = getCombinedStyle(".flexLayout", {
 			height: null,
 			width: null,
@@ -147,26 +146,17 @@ const PgNewLeaveRequest_ = extend(Page)(
 		var flexlayout3_1 = new FlexLayout(flexlayout3_1Style);
 		flexlayout2.addChild(flexlayout3_1);
 		
-		const imageview17Style = getCombinedStyle(".imageView", {
-			width: 14,
-			height: 25,
-			image: Image.createFromFile("images://icon_microphone.png"),
-			imageFillType: ImageFillType.ASPECTFIT
-		});
-		var imageview17 = new ImageView(imageview17Style);
-		flexlayout76.addChild(imageview17);
-		
-		const leaveTypePickerStyle = getCombinedStyle(".flexLayout", {
+		const itemSpeechStyle = getCombinedStyle(".flexLayout", {
+			backgroundColor: Color.create(255, 255, 255, 255),
 			left: 0,
 			top: 0,
-			width: null,
-			height: 45,
-			positionType: FlexLayout.PositionType.RELATIVE,
-			flexGrow: 1
+			width: 14,
+			height: 25,
+			positionType: FlexLayout.PositionType.RELATIVE
 		});
-		var leaveTypePicker = new PickerContainer(leaveTypePickerStyle, "pgNewLeaveRequest");
-		flexlayout3.addChild(leaveTypePicker);
-		this.leaveTypePicker = leaveTypePicker;
+		var itemSpeech = new ItemSpeech(itemSpeechStyle, "pgNewLeaveRequest");
+		flexlayout76.addChild(itemSpeech);
+		this.itemSpeech = itemSpeech;
 
 		const selectDatePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
@@ -179,6 +169,18 @@ const PgNewLeaveRequest_ = extend(Page)(
 		var selectDatePicker = new PickerContainer(selectDatePickerStyle, "pgNewLeaveRequest");
 		flexlayout3_1.addChild(selectDatePicker);
 		this.selectDatePicker = selectDatePicker;
+
+		const leaveTypePickerStyle = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: null,
+			height: 45,
+			positionType: FlexLayout.PositionType.RELATIVE,
+			flexGrow: 1
+		});
+		var leaveTypePicker = new PickerContainer(leaveTypePickerStyle, "pgNewLeaveRequest");
+		flexlayout3.addChild(leaveTypePicker);
+		this.leaveTypePicker = leaveTypePicker;
 
 		const timeTypePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
@@ -228,7 +230,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		//assign the children of flexlayout76
 		flexlayout76.children = Object.assign({}, {
 			label85: label85,
-			imageview17: imageview17
+			itemSpeech: itemSpeech
 		});
 		
 		//assign the children of flexlayout2

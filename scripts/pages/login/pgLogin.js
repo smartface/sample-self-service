@@ -5,6 +5,9 @@ const Image = require("sf-core/ui/image");
 const Router = require("sf-core/router");
 const System = require("sf-core/device/system");
 const Timer = require("sf-core/timer");
+const FingerPrintLib = require("lib/util/fingerprint");
+const rau = require("lib/util/rau");
+
 
 const PageDesign = require("../../ui/ui_pgLogin");
 
@@ -39,6 +42,9 @@ function onShow(parentOnShow, params) {
     this.signinButton.width = 250;
     this.signinButton.alpha = 1;
     this.loadingImageView.alpha = 0;
+    //FingerPrintLib.checkFingerPrint();
+    //rau.checkUpdate();
+    
 }
 
 
@@ -60,6 +66,10 @@ function signin(page) {
 		return alert(lang["pgLogin.inputs.password.error"]);
 	}
 	
+// 	if(!FingerPrintLib.userRegisteredBefore)
+// 	{
+// 	   FingerPrintLib.registerFingerPrint();
+// 	}
 	startLoading(page);
 	Timer.setTimeout({
 	    task: function() {
