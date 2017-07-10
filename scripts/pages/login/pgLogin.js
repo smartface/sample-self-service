@@ -9,7 +9,7 @@ const FingerPrintLib = require("lib/util/fingerprint");
 const Data = require("sf-core/data");
 const rau = require("lib/util/rau");
 const Application = require("sf-core/application");
-
+const AlertUtil = require("lib/util/alert");
 
 const PageDesign = require("../../ui/ui_pgLogin");
 
@@ -74,54 +74,69 @@ function initTexts(page) {
 function signin(page) {
     
     if (page.usernameLayout.innerTextbox.text === "") {
-		alert(lang["pgLogin.inputs.username.error"]);
+    	AlertUtil.showAlert(lang["pgLogin.inputs.username.error"]);
 		return;
 	}
 	
     if(!Data.getBooleanVariable('isNotFirstLogin')){
         if (page.passwordLayout.innerTextbox.text === "") {
             // Validate fingerPrint
-    		alert(lang["pgLogin.inputs.password.error"]);
+    		AlertUtil.showAlert(lang["pgLogin.inputs.password.error"]);
     		return; 
     	}
     }
     
-	if(FingerPrintLib.isUserAllowedFingerprint){
-	    FingerPrintLib.validateFingerPrint(function(){
-	        doLogin(page);
-	    }, function() {
-	        if (page.passwordLayout.innerTextbox.text === "") {
-                // Validate fingerPrint
-        		alert(lang["pgLogin.inputs.password.error"]);
-        		return; 
-        	}
-        	doLogin(page);
-	    });
-	    return;
+	if(FingerPrintLib.isUserVerifiedFingerprint){
+		// Second+ logging. No need to register fingerprint user already do it before.
+		if (page.passwordLayout.innerTextbox.text !== "") {
+            // Validate fingerPrint
+    		doLogin(page);
+    	}
+		else{
+		    FingerPrintLib.validateFingerPrint(function(){
+		        doLogin(page);
+		    }, function() {
+		        if (page.passwordLayout.innerTextbox.text === "") {
+	                // Validate fingerPrint
+	        		AlertUtil.showAlert(lang["pgLogin.inputs.password.error"]);
+	        		return; 
+	        	}
+	        	doLogin(page);
+		    });
+		    return;
+		}
 	}
 	else if(FingerPrintLib.isFingerprintAvailable){
-	    if(FingerPrintLib.isUserVerifiedFingerprint){
-	        FingerPrintLib.validateFingerPrint(function(){
-    	        doLogin(page);
-    	    }, function(){
-    	        alert("Fingerprint failed to validate.");
-	            if (page.passwordLayout.innerTextbox.text === "") {
-                    // Validate fingerPrint
-            		alert(lang["pgLogin.inputs.password.error"]);
-            		return; 
-            	}
-            	doLogin(page);
-    	    });
-    	    return;
+	    if(FingerPrintLib.isUserAllowedFingerprint){
+	    	// Second+ logging. But user not registered fingerprint. But password supplied skip fingerprint
+			if (page.passwordLayout.innerTextbox.text !== "") {
+	            // Validate fingerPrint
+	    		doLogin(page);
+	    	}
+			else{
+		        FingerPrintLib.validateFingerPrint(function(){
+	    	        doLogin(page);
+	    	    }, function(){
+	    	        AlertUtil.showAlert("Fingerprint failed to validate.");
+		            if (page.passwordLayout.innerTextbox.text === "") {
+	                    // Validate fingerPrint
+	            		AlertUtil.showAlert(lang["pgLogin.inputs.password.error"]);
+	            		return; 
+	            	}
+	            	doLogin(page);
+	    	    });
+	    	    return;
+			}
 	    }
+	    // first logging and ask user to register fingerprint
 	    else if(!FingerPrintLib.isUserRejectedFingerprint){
 	        FingerPrintLib.registerFingerPrint(function(){
     	        doLogin(page);
     	    }, function(){
-    	        alert("Fingerprint failed to register.");
+    	        AlertUtil.showAlert("Fingerprint failed to register.");
 	            if (page.passwordLayout.innerTextbox.text === "") {
                     // Validate fingerPrint
-            		alert(lang["pgLogin.inputs.password.error"]);
+            		AlertUtil.showAlert(lang["pgLogin.inputs.password.error"]);
             		return; 
             	}
             	doLogin(page);
@@ -133,7 +148,7 @@ function signin(page) {
 	
 	if (page.passwordLayout.innerTextbox.text === "") {
         // Validate fingerPrint
-		alert(lang["pgLogin.inputs.password.error"]);
+		AlertUtil.showAlert(lang["pgLogin.inputs.password.error"]);
 		return; 
 	}
 	

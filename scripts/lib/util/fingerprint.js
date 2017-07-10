@@ -62,7 +62,10 @@ Object.defineProperties(FingerPrintUtil, {
                 onFailure && onFailure();
                 return false;
             }
-            else {
+            else if(FingerPrintUtil.isUserVerifiedFingerprint){
+                FingerPrintUtil.validateFingerPrint(onSuccess, onFailure);
+            }
+            else if(!FingerPrintUtil.isUserRejectedFingerprint){
                 // user not allowed fingerprint before but want to allow. we will ask on confirmation popup
                 var myAlertView = new AlertView({
                     title: "Finger Print Access",
@@ -102,6 +105,7 @@ Object.defineProperties(FingerPrintUtil, {
                 });
                 myAlertView.show();
             }
+            onFailure && onFailure();
         },
         enumarable: true
     },
