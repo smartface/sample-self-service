@@ -21,17 +21,6 @@ const Page_ = extend(PageDesign)(
 		
 		this.onShow = onShow.bind(this, this.onShow);
 		this.signinButton.onPress = signin.bind(this.signinButton, this);
-		this.labelClear.onTouchEnded = function(){
-		    
-			Data.removeVariable("isUserAuthenticated");
-			Data.removeVariable("userName");
-			Data.removeVariable("password");
-			Data.removeVariable("isRejectedFingerprint");
-			Data.removeVariable("isVerifiedFingerprint");
-			Data.removeVariable("isAuthenticated");
-			Data.removeVariable("isAllowedFingerprint");
-		    Application.restart();
-		}
 		this.appName.onTouchEnded = function()
 		{
 		    this.usernameLayout.innerTextbox.text = "Anthony Bell";
@@ -72,7 +61,6 @@ function initTexts(page) {
 
 // Runs sign in animation and calls sign in service
 function signin(page) {
-    
     if (page.usernameLayout.innerTextbox.text === "") {
     	AlertUtil.showAlert(lang["pgLogin.inputs.username.error"]);
 		return;

@@ -31,8 +31,7 @@
 					"imageview156",
 					"appName",
 					"inputLayout",
-					"buttonLayout",
-					"labelClear"
+					"buttonLayout"
 				],
 				"name": "pgLogin",
 				"width": 187.5,
@@ -302,7 +301,7 @@
 				"parent": "pgLogin",
 				"children": [],
 				"name": "imageview156",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface3217/self-service/ui-editor/img/background.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.4277882562370805"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/background.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.6132074055043455"
 			}
 		},
 		{
@@ -412,24 +411,19 @@
 				"Highlights": "InputLayoutNormal"
 			},
 			"userProps": {
-				"text": "Username",
+				"text": "",
 				"usePageVariable": true,
 				"width": null,
 				"height": 20,
 				"marginLeft": 10,
-				"marginRight": 10,
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"marginRight": 10
 			},
 			"className": ".label .label-login.small .label-textboxWithLine.normal",
 			"props": {
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
-				"text": "Username",
+				"text": "",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "#00FFFFFF",
@@ -469,24 +463,20 @@
 				"height": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 1 )",
-				"text": "Anthony Bell",
+				"text": "",
 				"usePageVariable": true,
 				"marginLeft": 10,
 				"marginRight": 10,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".textBox",
 			"props": {
 				"height": null,
 				"width": null,
 				"touchEnabled": true,
-				"text": "Anthony Bell",
+				"text": "",
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -614,9 +604,9 @@
 				},
 				"parent": "inputLayout",
 				"children": [
-					"label77",
+					"label274",
 					"textbox1",
-					"flexlayout41"
+					"flexlayout201"
 				],
 				"name": "passwordLayout"
 			}
@@ -633,24 +623,19 @@
 				"Highlights": "InputLayoutNormal"
 			},
 			"userProps": {
-				"text": "Username",
+				"text": "",
 				"usePageVariable": true,
 				"width": null,
 				"height": 20,
 				"marginLeft": 10,
-				"marginRight": 10,
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"marginRight": 10
 			},
 			"className": ".label .label-login.small .label-textboxWithLine.normal",
 			"props": {
 				"width": null,
 				"height": 20,
 				"touchEnabled": true,
-				"text": "Username",
+				"text": "",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "#00FFFFFF",
@@ -674,7 +659,7 @@
 				},
 				"children": [],
 				"parent": "passwordLayout",
-				"name": "label77"
+				"name": "label274"
 			}
 		},
 		{
@@ -690,24 +675,20 @@
 				"height": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 1 )",
-				"text": "Anthony Bell",
+				"text": "",
 				"usePageVariable": true,
 				"marginLeft": 10,
 				"marginRight": 10,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".textBox",
 			"props": {
 				"height": null,
 				"width": null,
 				"touchEnabled": true,
-				"text": "Anthony Bell",
+				"text": "",
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"alpha": 1,
@@ -782,58 +763,7 @@
 				},
 				"children": [],
 				"parent": "passwordLayout",
-				"name": "flexlayout41"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "f1dca836",
-			"themeProps": {},
-			"userProps": {
-				"bottom": 0,
-				"right": 0,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"textAlignment": "MIDRIGHT",
-				"usePageVariable": true,
-				"text": "Clear",
-				"flexProps": {
-					"positionType": "ABSOLUTE"
-				},
-				"font": {
-					"size": 14
-				}
-			},
-			"className": ".label",
-			"props": {
-				"width": 250,
-				"height": 70,
-				"touchEnabled": true,
-				"text": "Clear",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"textAlignment": "MIDRIGHT",
-				"bottom": 0,
-				"right": 0,
-				"usePageVariable": true,
-				"font": {
-					"size": 14,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "ABSOLUTE"
-				},
-				"name": "labelClear",
-				"parent": "pgLogin",
-				"children": []
+				"name": "flexlayout201"
 			}
 		}
 	]
