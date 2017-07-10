@@ -52,15 +52,22 @@ MockService.getEmploymentHistory = function ()
 
 MockService.getPerformanceReviews = function()
 {
-    var dates = [];
-    for (var i = 0; i < 6; ++i) {
-        dates[i] = {
-            reviewDate: moment().subtract(i+1, 'month').format("DD.MM.YYYY"),
-            nextReview: moment().subtract(i, 'month').format("DD.MM.YYYY")
-        };
-    }
-    var ratings = ["4,5", "4", "4,7", "3,6", "3,8", "4,0"];
-    var overallScores = ["", "", "", "", "", ""];
+    var dates = [
+        {
+            reviewDate: "31.01.2017",
+            nextReview: "28.02.2017"
+        },
+        {
+            reviewDate: "28.02.2017",
+            nextReview: "31.03.2017"
+        },
+        {
+            reviewDate: "31.03.2017",
+            nextReview: "30.04.2017"
+        }
+    ];
+    var ratings = ["2,5", "2,5", "5,0"];
+    var overallScores = ["2,5", "2,5", "3,33"];
     
     var result = [];
     for (var i = 0; i < ratings.length; ++i) {
