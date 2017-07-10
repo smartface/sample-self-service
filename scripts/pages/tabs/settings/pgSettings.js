@@ -31,6 +31,10 @@ const Page_ = extend(PageDesign)(
 		}
 		
 		this.signoutLayout.onTouchEnded = function() {
+			Data.setBooleanVariable("isUserAuthenticated", false);
+			Data.setStringVariable("userName", null);
+			Data.setStringVariable("password", null);
+			
 			Router.goBack("login");
 		}
 		
