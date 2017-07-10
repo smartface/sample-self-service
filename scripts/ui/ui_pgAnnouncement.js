@@ -52,6 +52,7 @@ const PgAnnouncement_ = extend(Page)(
 			height: null,
 			marginLeft: 10,
 			marginRight: 10,
+			itemCount: 0,
 			flexGrow: 1
 		});
 		var listView = new ListView(listViewStyle);

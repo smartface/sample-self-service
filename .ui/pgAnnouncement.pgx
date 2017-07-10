@@ -12,16 +12,10 @@
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.3.9",
+			"version": "6.3.19",
 			"props": {
 				"backgroundColor": "#EEEEEE",
 				"orientation": "PORTRAIT",
-				"children": [
-					"statusBar",
-					"headerBar",
-					"layoutHeaderBar",
-					"listViewContainer"
-				],
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -30,22 +24,16 @@
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
+				"children": [
+					"statusBar",
+					"headerBar",
+					"layoutHeaderBar",
+					"listViewContainer"
+				],
 				"parent": null,
 				"name": "pgAnnouncement",
-				"layout": {
-					"width": 585.9375,
-					"height": 1042.1875
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"flexDirection": 0,
-					"flexWrap": 0,
-					"justifyContent": 0
-				},
-				"font": {},
-				"width": 468.75,
-				"height": 833.75
+				"width": 187.5,
+				"height": 333.5
 			}
 		},
 		{
@@ -67,12 +55,6 @@
 				"parent": "pgAnnouncement",
 				"isRemovable": false,
 				"name": "statusBar",
-				"layout": {
-					"height": 25
-				},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
 				"height": 20
 			}
 		},
@@ -99,12 +81,6 @@
 				"parent": "pgAnnouncement",
 				"isRemovable": false,
 				"name": "headerBar",
-				"layout": {
-					"height": 55
-				},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
 				"height": 44
 			}
 		},
@@ -141,9 +117,6 @@
 				"usePageVariable": true,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [
-					"listView"
-				],
 				"paddingLeft": null,
 				"paddingRight": null,
 				"flexProps": {
@@ -157,23 +130,11 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"listView"
+				],
 				"name": "listViewContainer",
-				"parent": "pgAnnouncement",
-				"layout": {
-					"marginLeft": 12.5,
-					"marginRight": 12.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "pgAnnouncement"
 			}
 		},
 		{
@@ -186,13 +147,10 @@
 				"usePageVariable": true,
 				"marginLeft": 10,
 				"marginRight": 10,
+				"itemCount": 0,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".listView",
 			"props": {
@@ -201,33 +159,23 @@
 				"touchEnabled": true,
 				"multiline": false,
 				"rowHeight": 60,
-				"itemCount": 3,
+				"itemCount": 0,
 				"visible": true,
 				"backgroundColor": "#FFFFFF",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"children": [],
+				"marginLeft": 10,
+				"marginRight": 10,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"name": "listView",
-				"parent": "listViewContainer",
-				"layout": {
-					"marginLeft": 12.5,
-					"marginRight": 12.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {},
-				"marginLeft": 10,
-				"marginRight": 10
+				"parent": "listViewContainer"
 			}
 		},
 		{
@@ -270,9 +218,6 @@
 				"left": 0,
 				"top": 0,
 				"usePageVariable": true,
-				"children": [
-					"flexlayout118"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -283,23 +228,11 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
+				"children": [
+					"flexlayout118"
+				],
 				"parent": "pgAnnouncement",
-				"name": "layoutHeaderBar",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 115,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "layoutHeaderBar"
 			}
 		},
 		{
@@ -336,11 +269,6 @@
 				"borderWidth": 0,
 				"marginTop": null,
 				"top": 20,
-				"children": [
-					"leftItems",
-					"headerBarTitle",
-					"rightItems"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -351,22 +279,13 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
+				"children": [
+					"leftItems",
+					"headerBarTitle",
+					"rightItems"
+				],
 				"name": "flexlayout118",
-				"parent": "layoutHeaderBar",
-				"layout": {
-					"top": 25,
-					"height": 50,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
-				"font": {}
+				"parent": "layoutHeaderBar"
 			}
 		},
 		{
@@ -401,7 +320,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -413,22 +331,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"name": "leftItems",
-				"parent": "flexlayout118",
-				"layout": {
-					"width": 85,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"parent": "flexlayout118"
 			}
 		},
 		{
@@ -469,7 +374,6 @@
 				"textColor": "rgba( 255, 255, 255, 1 )",
 				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -481,15 +385,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"name": "headerBarTitle",
-				"parent": "flexlayout118",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"parent": "flexlayout118"
 			}
 		},
 		{
@@ -527,10 +425,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"children": [
-					"rightItem2",
-					"rightItem1"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -542,22 +436,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [
+					"rightItem2",
+					"rightItem1"
+				],
 				"name": "rightItems",
-				"parent": "flexlayout118",
-				"layout": {
-					"width": 85,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 4,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"parent": "flexlayout118"
 			}
 		},
 		{
@@ -594,24 +478,14 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"name": "rightItem2",
-				"parent": "rightItems",
-				"layout": {
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"parent": "rightItems"
 			}
 		},
 		{
@@ -650,25 +524,15 @@
 				"borderWidth": 0,
 				"usePageVariable": true,
 				"image": null,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"name": "rightItem1",
 				"parent": "rightItems",
-				"layout": {
-					"width": 30,
-					"height": 30,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		}
 	]

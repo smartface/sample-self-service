@@ -337,4 +337,28 @@ MockService.getApprovedExpenseApprovals = function() {
     return result;
 };
 
+MockService.getAnnouncements = function() {
+    var result = [
+        {
+            date: "10.07.2017",
+            image: Image.createFromFile("images://smartface.png"),
+            title: "New Self-Service App",
+            message: "We are happy to announce the release of our new Employee Self-Service App. Now you can access all HR processes from your mobile device."
+        },
+        {
+            date: "24.06.2017",
+            image: Image.createFromFile("images://smartface.png"),
+            title: "Happy Holidays",
+            message: "We wish everyone happy holidays. We hope you have a wonderful time with your loved ones."
+        },
+        {
+            date: "01.04.2017",
+            image: Image.createFromFile("images://smartface.png"),
+            title: "A Successful Quarter",
+            message: "This quarter, we exceeded our sales targets and I would like to thank you all for your hard work."
+        }
+    ];
+    return result;
+}
+
 module.exports = MockService;
