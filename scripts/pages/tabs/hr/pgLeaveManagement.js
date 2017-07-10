@@ -1,3 +1,4 @@
+/*globals lang*/
 const extend = require('js-base/core/extend');
 const DialogsLib = require("lib/ui/dialogs");
 const ListViewItem = require('sf-core/ui/listviewitem');
@@ -66,6 +67,10 @@ function initListView(listView, dataHolder) {
         item.id = 200;
         myListViewItem.item = item;
         myListViewItem.addChild(item);
+        item.updateCallback = function() {
+            listView.itemCount = dataHolder.data.length;
+            listView.refreshData();  
+        };
         return myListViewItem;
     };
     listView.onRowBind = function(listViewItem, index) {

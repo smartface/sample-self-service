@@ -1,5 +1,6 @@
 /*global lang*/
 const extend = require('js-base/core/extend');
+const AlertView = require("sf-core/ui/alertview");
 const Color = require("sf-core/ui/color");
 const ItemLeaveManagement = require('library/ItemLeaveManagement');
 const FlexLayout = require('sf-core/ui/flexlayout');
@@ -17,6 +18,8 @@ const EditIconActiveStyle = getCombinedStyle(".imageView-leaveRequestListItem-ed
 const EditIconInactiveStyle = getCombinedStyle(".imageView-leaveRequestListItem-edit-inactive");
 const DeleteIconActiveStyle = getCombinedStyle(".imageView-leaveRequestListItem-delete-active");
 
+const MockService = require("../objects/MockService");
+
 const ItemLeaveManagement_ = extend(ItemLeaveManagement)(
 	//constructor
 	function(_super, props, pageName){
@@ -29,6 +32,8 @@ const ItemLeaveManagement_ = extend(ItemLeaveManagement)(
 		this.approveLabel.text = lang["pgLeaveManagement.approve"];
 		this.editLabel.text = lang["pgLeaveManagement.edit"];
 		this.deleteLabel.text = lang["pgLeaveManagement.delete"];
+		
+		this.approveLabel.onTouchEnded = approveCallback.bind(this);
 		
 		var request;
 		Object.defineProperty(this, 'request', {
@@ -54,6 +59,12 @@ function invalidate(item) {
 	index !== -1 && functions[index].call(item);
 	
 	function setApproved() {
+		this.approveLabel.onTouchEnded = approveCallback.bind(item.request, item.updateCallback);
+		this.editLabel.onTouchEnded = emptyCallback;
+		this.deleteLabel.onTouchEnded = deleteCallback.bind(item.request, function() {
+			MockService.deleteApprovedLeaveRequest(this);
+			item.updateCallback();
+		}.bind(item.request));
 		Object.assign(this.approveLabel, ApproveLabelActiveStyle);
 		Object.assign(this.approveIcon, ApproveIconActiveStyle);
 		Object.assign(this.editLabel, EditLabelInactiveStyle);
@@ -63,6 +74,12 @@ function invalidate(item) {
 	}
 	
 	function setPending() {
+		this.approveLabel.onTouchEnded = emptyCallback;
+		this.editLabel.onTouchEnded = editCallback.bind(item.request, item.updateCallback);
+		this.deleteLabel.onTouchEnded = deleteCallback.bind(item.request, function() {
+			MockService.deleteWaitingLeaveRequest(this);
+			item.updateCallback();
+		}.bind(item.request));
 		Object.assign(this.approveLabel, ApproveLabelInactiveStyle);
 		Object.assign(this.approveIcon, ApproveIconInactiveStyle);
 		Object.assign(this.editLabel, EditLabelActiveStyle);
@@ -72,6 +89,12 @@ function invalidate(item) {
 	}
 	
 	function setRejected() {
+		this.approveLabel.onTouchEnded = emptyCallback;
+		this.editLabel.onTouchEnded = emptyCallback;
+		this.deleteLabel.onTouchEnded = deleteCallback.bind(item.request, function() {
+			MockService.deleteRejectedLeaveRequest(this);
+			item.updateCallback();
+		}.bind(item.request));
 		Object.assign(this.approveLabel, ApproveLabelInactiveStyle);
 		Object.assign(this.approveIcon, ApproveIconInactiveStyle);
 		Object.assign(this.editLabel, EditLabelInactiveStyle);
@@ -79,6 +102,57 @@ function invalidate(item) {
 		Object.assign(this.deleteLabel, DeleteLabelActiveStyle);
 		Object.assign(this.deleteIcon, DeleteIconActiveStyle);
 	}
+}
+
+function emptyCallback() {}
+
+function approveCallback(updateCallback) {
+	var alertView = new AlertView({
+	    title: lang["pgLeaveManagement.approve"],
+	    message: "Do you want to save " + this.days + " days leave to your calendar?"
+	});
+	alertView.addButton({
+	    type: AlertView.Android.ButtonType.NEGATIVE,
+	    text: "No"
+	});
+	alertView.addButton({
+	    type: AlertView.Android.ButtonType.POSITIVE,
+	    text: "Yes"
+	});
+	alertView.show();
+}
+
+function editCallback(updateCallback) {
+	var alertView = new AlertView({
+	    title: lang["pgLeaveManagement.edit"],
+	    message: "Do you want to edit " + this.days + " days leave?"
+	});
+	alertView.addButton({
+	    type: AlertView.Android.ButtonType.NEGATIVE,
+	    text: "No"
+	});
+	alertView.addButton({
+	    type: AlertView.Android.ButtonType.POSITIVE,
+	    text: "Yes"
+	});
+	alertView.show();
+}
+
+function deleteCallback(successCallback) {
+	var alertView = new AlertView({
+	    title: lang["pgLeaveManagement.delete"],
+	    message: "Do you want to delete " + this.days + " days leave?"
+	});
+	alertView.addButton({
+	    type: AlertView.Android.ButtonType.NEGATIVE,
+	    text: "No"
+	});
+	alertView.addButton({
+	    type: AlertView.Android.ButtonType.POSITIVE,
+	    text: "Yes",
+	    onClick: successCallback
+	});
+	alertView.show();
 }
 
 module && (module.exports = ItemLeaveManagement_);
