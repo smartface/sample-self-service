@@ -14,6 +14,7 @@ const Image = require('sf-core/ui/image');
 const Label = require('sf-core/ui/label');
 const Font = require('sf-core/ui/font');
 
+const LayoutHeaderBar = require("../components/LayoutHeaderBar");
 const HierarchyController = require("../components/HierarchyController");
 const ListItem1 = require("../components/ListItem1");
 const HorizontalDivider = require("../components/HorizontalDivider");
@@ -28,6 +29,17 @@ const PgProfileDetail_ = extend(Page)(
 			onShow: onShow.bind(this),
 			onLoad: onLoad.bind(this)
 		}, props || {}));
+
+		const layoutHeaderBarStyle = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
+			left: 0,
+			top: 0,
+			width: null,
+			height: 92,
+			positionType: FlexLayout.PositionType.RELATIVE
+		});
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgProfileDetail");
+		this.layout.addChild(layoutHeaderBar);
+		this.layoutHeaderBar = layoutHeaderBar;
 
 		const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
 			width: null,
@@ -228,6 +240,7 @@ const PgProfileDetail_ = extend(Page)(
 
 		//assign the children to page 
 		this.children = Object.assign({}, {
+			layoutHeaderBar: layoutHeaderBar,
 			flexlayout1: flexlayout1,
 			flexlayout500: flexlayout500
 		});
@@ -276,7 +289,7 @@ function onShow() {
   //HeaderBar props
   const headerBarStyle = getCombinedStyle(".headerBar", {
 		title: null,
-		visible: true
+		visible: false
 	});
 	
 	Object.assign(this.headerBar,	headerBarStyle);

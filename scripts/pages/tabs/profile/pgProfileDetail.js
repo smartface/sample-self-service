@@ -1,13 +1,9 @@
+/*globals lang*/
 const extend = require("js-base/core/extend");
 const Color = require("sf-core/ui/color");
-const HeaderBarItem = require("sf-core/ui/headerbaritem");
-const Image = require("sf-core/ui/image");
-const Router = require("sf-core/router");
 const ScrollView = require("sf-core/ui/scrollview");
 
 const PageDesign = require("../../../ui/ui_pgProfileDetail");
-
-const TITLE = "PROFILE";
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -18,7 +14,7 @@ const Page_ = extend(PageDesign)(
 });
 
 function initTexts() {
-	this.headerBar.title = lang["pgProfileDetail.pageTitle"];
+	this.layoutHeaderBar.headerBarTitle.text = lang["pgProfileDetail.pageTitle"];
 	this.informationTitle.text = lang["pgProfileDetail.information"];
 	this.company.title.text = lang["pgProfileDetail.company"];
 	this.email.title.text = lang["pgProfileDetail.email"];
