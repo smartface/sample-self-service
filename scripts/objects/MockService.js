@@ -217,4 +217,124 @@ MockService.deleteRejectedLeaveRequest = function(request) {
     }
 };
 
+MockService.getPendingLeaveApprovals = function() {
+    var result = [
+        {
+            name: "Adam Stewart",
+            position: "Manager of Sales and Marketing",
+            description: "Personal Leave, 10 days requested",
+            approvedDate: "1 day ago",
+            image: Image.createFromFile("images://avatar1.png"),
+            isApproved: false
+        },
+        {
+            name: "Anna Wolker",
+            position: "Sales Responsible",
+            description: "Sick Leave, 2 days requested",
+            approvedDate: "3 day ago",
+            image: Image.createFromFile("images://avatar2.png"),
+            isApproved: false
+        },
+        {
+            name: "Anthony Bell",
+            position: "Manager of Sales and Marketing",
+            description: "Personal Leave, 4 days requested",
+            approvedDate: "1 mn ago",
+            image: Image.createFromFile("images://myavatar.png"),
+            isApproved: false
+        }
+    ];
+    return result;
+};
+
+MockService.getApprovedLeaveApprovals = function() {
+    var result = [
+        {
+            name: "Adam Stewart",
+            position: "Manager of Sales and Marketing",
+            description: "Personal Leave, 10 days approved",
+            approvedDate: "1 day ago",
+            image: Image.createFromFile("images://avatar1.png"),
+            isApproved: true
+        },
+        {
+            name: "Anna Wolker",
+            position: "Sales Responsible",
+            description: "Sick Leave, 2 days approved",
+            approvedDate: "3 day ago",
+            image: Image.createFromFile("images://avatar2.png"),
+            isApproved: true
+        },
+        {
+            name: "Anthony Bell",
+            position: "Manager of Sales and Marketing",
+            description: "Personal Leave, 4 days approved",
+            approvedDate: "1 mn ago",
+            image: Image.createFromFile("images://myavatar.png"),
+            isApproved: true
+        }
+    ];
+    return result;
+};
+
+MockService.getPendingExpenseApprovals = function() {
+    var result = [
+        {
+            name: "Adam Stewart",
+            position: "Manager of Sales and Marketing",
+            description: "Personal Leave, 10 days requested",
+            approvedDate: "1 day ago",
+            image: Image.createFromFile("images://avatar1.png"),
+            isApproved: false
+        },
+        {
+            name: "Anna Wolker",
+            position: "Sales Responsible",
+            description: "Sick Leave, 2 days requested",
+            approvedDate: "3 day ago",
+            image: Image.createFromFile("images://avatar2.png"),
+            isApproved: false
+        },
+        {
+            name: "Anthony Bell",
+            position: "Manager of Sales and Marketing",
+            description: "Personal Leave, 4 days requested",
+            approvedDate: "1 mn ago",
+            image: Image.createFromFile("images://myavatar.png"),
+            isApproved: false
+        }
+    ];
+    return result;
+};
+
+MockService.getApprovedExpenseApprovals = function() {
+    var result = [
+        {
+            name: "Adam Stewart",
+            position: "Manager of Sales and Marketing",
+            description: "Personal Leave, 10 days approved",
+            approvedDate: "1 day ago",
+            image: Image.createFromFile("images://avatar1.png"),
+            isApproved: true
+        },
+        {
+            name: "Anna Wolker",
+            position: "Sales Responsible",
+            description: "Sick Leave, 2 days approved",
+            approvedDate: "3 day ago",
+            image: Image.createFromFile("images://avatar2.png"),
+            isApproved: true
+        },
+        {
+            name: "Anthony Bell",
+            position: "Manager of Sales and Marketing",
+            description: "Personal Leave, 4 days approved",
+            approvedDate: "1 mn ago",
+            image: Image.createFromFile("images://myavatar.png"),
+            isApproved: true
+        }
+    ];
+    return result;
+};
+
 module.exports = MockService;

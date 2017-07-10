@@ -12,18 +12,10 @@
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.3.9",
+			"version": "6.3.19",
 			"props": {
 				"backgroundColor": "#EEEEEE",
 				"orientation": "PORTRAIT",
-				"children": [
-					"statusBar",
-					"headerBar",
-					"layoutHeaderBar",
-					"topTabBar",
-					"flexlayout1102",
-					"listViewContainer"
-				],
 				"flexProps": {
 					"alignContent": "STRETCH",
 					"alignItems": "STRETCH",
@@ -32,20 +24,16 @@
 					"flexWrap": "NOWRAP",
 					"justifyContent": "FLEX_START"
 				},
+				"children": [
+					"statusBar",
+					"headerBar",
+					"layoutHeaderBar",
+					"topTabBar",
+					"flexlayout1102",
+					"listViewContainer"
+				],
 				"parent": null,
 				"name": "pgExpenseApprovals",
-				"layout": {
-					"width": 93.75,
-					"height": 166.75
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"flexDirection": 0,
-					"flexWrap": 0,
-					"justifyContent": 0
-				},
-				"font": {},
 				"width": 187.5,
 				"height": 333.5
 			}
@@ -69,12 +57,6 @@
 				"parent": "pgExpenseApprovals",
 				"isRemovable": false,
 				"name": "statusBar",
-				"layout": {
-					"height": 10
-				},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
 				"height": 20
 			}
 		},
@@ -101,12 +83,6 @@
 				"parent": "pgExpenseApprovals",
 				"isRemovable": false,
 				"name": "headerBar",
-				"layout": {
-					"height": 22
-				},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
 				"height": 44
 			}
 		},
@@ -138,7 +114,6 @@
 				"borderWidth": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -149,23 +124,9 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
+				"children": [],
 				"name": "flexlayout1102",
-				"parent": "pgExpenseApprovals",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"height": 0.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
-				"font": {}
+				"parent": "pgExpenseApprovals"
 			}
 		},
 		{
@@ -181,12 +142,10 @@
 				"paddingLeft": 10,
 				"paddingRight": 10,
 				"flexProps": {
-					"flexGrow": 1
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+					"flexGrow": 1,
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER"
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -203,39 +162,22 @@
 				"marginRight": 10,
 				"paddingLeft": 10,
 				"paddingRight": 10,
-				"children": [
-					"listView"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
 					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER",
 					"flexWrap": "NOWRAP",
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [
+					"listView"
+				],
 				"name": "listViewContainer",
-				"parent": "pgExpenseApprovals",
-				"layout": {
-					"marginLeft": 5,
-					"marginRight": 5,
-					"paddingLeft": 5,
-					"paddingRight": 5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "pgExpenseApprovals"
 			}
 		},
 		{
@@ -246,13 +188,11 @@
 				"width": null,
 				"height": null,
 				"usePageVariable": true,
+				"itemCount": 0,
 				"flexProps": {
-					"flexGrow": 1
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				}
 			},
 			"className": ".listView",
 			"props": {
@@ -261,29 +201,21 @@
 				"touchEnabled": true,
 				"multiline": false,
 				"rowHeight": 60,
-				"itemCount": 3,
+				"itemCount": 0,
 				"visible": true,
 				"backgroundColor": "#FFFFFF",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
-					"alignSelf": "AUTO",
+					"alignSelf": "STRETCH",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
+				"children": [],
 				"name": "listView",
-				"parent": "listViewContainer",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "listViewContainer"
 			}
 		},
 		{
@@ -326,9 +258,6 @@
 				"left": 0,
 				"top": 0,
 				"usePageVariable": true,
-				"children": [
-					"flexlayout118"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -339,23 +268,11 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0
-				},
+				"children": [
+					"flexlayout118"
+				],
 				"parent": "pgExpenseApprovals",
-				"name": "layoutHeaderBar",
-				"layout": {
-					"left": 0,
-					"top": 0,
-					"height": 46,
-					"borderWidth": 0
-				},
-				"font": {}
+				"name": "layoutHeaderBar"
 			}
 		},
 		{
@@ -392,11 +309,6 @@
 				"borderWidth": 0,
 				"marginTop": null,
 				"top": 20,
-				"children": [
-					"leftItems",
-					"headerBarTitle",
-					"rightItems"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -407,22 +319,13 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
 				},
+				"children": [
+					"leftItems",
+					"headerBarTitle",
+					"rightItems"
+				],
 				"name": "flexlayout118",
-				"parent": "layoutHeaderBar",
-				"layout": {
-					"top": 10,
-					"height": 20,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0
-				},
-				"font": {}
+				"parent": "layoutHeaderBar"
 			}
 		},
 		{
@@ -435,7 +338,7 @@
 			"themeProps": {},
 			"userProps": {
 				"height": null,
-				"width": 68,
+				"width": 75,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"usePageVariable": true,
 				"flexProps": {
@@ -449,7 +352,7 @@
 			"className": ".flexLayout",
 			"props": {
 				"height": null,
-				"width": 68,
+				"width": 75,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -457,7 +360,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -469,22 +371,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"name": "leftItems",
-				"parent": "flexlayout118",
-				"layout": {
-					"width": 34,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 0,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"parent": "flexlayout118"
 			}
 		},
 		{
@@ -525,7 +414,6 @@
 				"textColor": "rgba( 255, 255, 255, 1 )",
 				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
-				"children": [],
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -537,15 +425,9 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 2
 				},
+				"children": [],
 				"name": "headerBarTitle",
-				"parent": "flexlayout118",
-				"layout": {
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": 2
-				}
+				"parent": "flexlayout118"
 			}
 		},
 		{
@@ -558,7 +440,7 @@
 			"themeProps": {},
 			"userProps": {
 				"height": null,
-				"width": 68,
+				"width": 75,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"usePageVariable": true,
 				"flexProps": {
@@ -575,7 +457,7 @@
 			"className": ".flexLayout",
 			"props": {
 				"height": null,
-				"width": 68,
+				"width": 75,
 				"touchEnabled": true,
 				"visible": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -583,10 +465,6 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"children": [
-					"rightItem2",
-					"rightItem1"
-				],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -598,22 +476,12 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [
+					"rightItem2",
+					"rightItem1"
+				],
 				"name": "rightItems",
-				"parent": "flexlayout118",
-				"layout": {
-					"width": 34,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 4,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"parent": "flexlayout118"
 			}
 		},
 		{
@@ -625,8 +493,8 @@
 			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
-				"height": 24,
-				"width": 24,
+				"height": 20,
+				"width": 20,
 				"usePageVariable": true,
 				"imageFillType": "ASPECTFIT",
 				"flexProps": {
@@ -640,8 +508,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": 24,
-				"height": 24,
+				"width": 20,
+				"height": 20,
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "ASPECTFIT",
@@ -650,24 +518,14 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"usePageVariable": true,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"name": "rightItem2",
-				"parent": "rightItems",
-				"layout": {
-					"width": 12,
-					"height": 12,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {}
+				"parent": "rightItems"
 			}
 		},
 		{
@@ -679,8 +537,8 @@
 			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
-				"height": 24,
-				"width": 24,
+				"height": 20,
+				"width": 20,
 				"usePageVariable": true,
 				"imageFillType": "ASPECTFIT",
 				"image": null,
@@ -695,8 +553,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": 24,
-				"height": 24,
+				"width": 20,
+				"height": 20,
 				"touchEnabled": true,
 				"visible": true,
 				"imageFillType": "ASPECTFIT",
@@ -706,25 +564,15 @@
 				"borderWidth": 0,
 				"usePageVariable": true,
 				"image": null,
-				"children": [],
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
+				"children": [],
 				"name": "rightItem1",
 				"parent": "rightItems",
-				"layout": {
-					"width": 12,
-					"height": 12,
-					"borderWidth": 0
-				},
-				"flex": {
-					"positionType": 0,
-					"flexGrow": null
-				},
-				"font": {},
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -779,7 +627,7 @@
 				"top": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"children": [],
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -791,28 +639,9 @@
 					"positionType": "RELATIVE",
 					"right": 0
 				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"justifyContent": 1,
-					"flexWrap": 0,
-					"flexDirection": 2,
-					"positionType": 0,
-					"right": 0
-				},
+				"children": [],
 				"parent": "pgExpenseApprovals",
-				"name": "topTabBar",
-				"layout": {
-					"right": 0,
-					"marginLeft": 5,
-					"marginRight": 5,
-					"left": 0,
-					"top": 0,
-					"height": 25,
-					"borderWidth": 0
-				},
-				"font": {},
-				"usePageVariable": true
+				"name": "topTabBar"
 			}
 		}
 	]

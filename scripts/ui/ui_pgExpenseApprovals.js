@@ -71,7 +71,9 @@ const PgExpenseApprovals_ = extend(Page)(
 			marginRight: 10,
 			paddingLeft: 10,
 			paddingRight: 10,
-			flexGrow: 1
+			flexGrow: 1,
+			alignItems: FlexLayout.AlignItems.CENTER,
+			justifyContent: FlexLayout.JustifyContent.CENTER
 		});
 		var listViewContainer = new FlexLayout(listViewContainerStyle);
 		this.layout.addChild(listViewContainer);
@@ -80,7 +82,9 @@ const PgExpenseApprovals_ = extend(Page)(
 		const listViewStyle = getCombinedStyle(".listView", {
 			width: null,
 			height: null,
-			flexGrow: 1
+			itemCount: 0,
+			flexGrow: 1,
+			alignSelf: FlexLayout.AlignSelf.STRETCH
 		});
 		var listView = new ListView(listViewStyle);
 		listView.onRowCreate = function(){ return new ListViewItem(); };
