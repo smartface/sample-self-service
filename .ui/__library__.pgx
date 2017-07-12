@@ -13,7 +13,7 @@
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.3.19",
+			"version": "6.4.0",
 			"props": {
 				"backgroundColor": "rgba( 131, 52, 52, 1 )",
 				"orientation": "PORTRAIT",
@@ -57,9 +57,10 @@
 					"itemSpeech"
 				],
 				"name": "__library__",
-				"width": 468.75,
-				"height": 833.75
-			}
+				"width": 187.5,
+				"height": 333.5
+			},
+			"initialized": true
 		},
 		{
 			"type": "StatusBar",
@@ -108,10 +109,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "71efc172",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 15,
@@ -162,10 +163,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "f7afa96d",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 12,
@@ -337,10 +338,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "d4087961",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"left": 4,
@@ -402,10 +403,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "3ed11f24",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 9,
@@ -505,10 +506,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "ed73e704",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"height": 50,
@@ -562,10 +563,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "ab2fbca6",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {
 				"Highlights": "HeaderBar"
 			},
@@ -613,10 +614,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "a6f8073b",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {
 				"Highlights": "DotIndicator"
 			},
@@ -1007,10 +1008,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "dad4242b",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -1056,10 +1057,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "a3b44251",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"height": null,
@@ -1147,7 +1148,7 @@
 				"children": [],
 				"parent": "cont1",
 				"name": "approveIcon",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/icon_approve_active.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/icon_approve_active.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1304,7 +1305,7 @@
 				"children": [],
 				"parent": "cont2",
 				"name": "editIcon",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/icon_edit_active.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/icon_edit_active.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1456,7 +1457,7 @@
 				"children": [],
 				"parent": "cont3",
 				"name": "deleteIcon",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/icon_delete.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/icon_delete.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1568,10 +1569,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "26326615",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 5,
@@ -1889,10 +1890,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "e38a89aa",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 17,
@@ -1941,10 +1942,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "0c46ed74",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"width": null,
@@ -1998,10 +1999,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "cd9c995c",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 12,
@@ -2134,10 +2135,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "d5909711",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 11,
@@ -2383,16 +2384,16 @@
 				"children": [],
 				"parent": "flexlayout429",
 				"name": "imageview2",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/arrow_down.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "3c9aa5de",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 4,
@@ -2437,10 +2438,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "2b63fd98",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"height": 40,
@@ -2531,7 +2532,7 @@
 				"children": [],
 				"parent": "flexlayout160",
 				"name": "userImage",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2626,7 +2627,7 @@
 				"children": [],
 				"parent": "flexlayout160",
 				"name": "imageview41",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2743,10 +2744,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "00b2c545",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 16,
@@ -2887,7 +2888,7 @@
 				"children": [],
 				"parent": "flexlayout334",
 				"name": "expenseStatusImage",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/icon_accepted.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/icon_accepted.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3317,16 +3318,16 @@
 				"children": [],
 				"parent": "flexlayout33",
 				"name": "imageview3",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/icon_attachment.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/icon_attachment.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "b360d1dd",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"height": 60,
@@ -3531,10 +3532,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "2e8c10df",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"width": 65,
@@ -3583,10 +3584,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "016f01c5",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"height": 75,
@@ -3678,7 +3679,7 @@
 				"children": [],
 				"parent": "hierarchyLevel1",
 				"name": "imageview7",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -3880,10 +3881,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "68dcc30f",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 5,
@@ -3977,7 +3978,7 @@
 				"children": [],
 				"parent": "hierarchyLevel2",
 				"name": "imageview8",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/myavatar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/myavatar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4228,10 +4229,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "29987917",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"width": 360,
@@ -4325,7 +4326,7 @@
 				"children": [],
 				"parent": "hierarchyLevel3First",
 				"name": "imageview9",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar3.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/avatar3.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -4669,10 +4670,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "3df1faa8",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"width": 360,
@@ -4765,7 +4766,7 @@
 				"children": [],
 				"parent": "hiearchyLevel3Remaining",
 				"name": "imageview10",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar4.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/avatar4.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5015,10 +5016,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "ce432fce",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 5,
@@ -5120,10 +5121,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "f03c8a00",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"width": 326,
@@ -5233,7 +5234,13 @@
 				"flex": {},
 				"font": {},
 				"flexProps": {},
-				"defaults": {}
+				"defaults": {},
+				"input": {
+					"height": 31,
+					"width": 51
+				},
+				"minHeight": 31,
+				"minWidth": 51
 			},
 			"className": ".switch",
 			"props": {
@@ -5255,13 +5262,13 @@
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
-				"children": [],
-				"name": "switchItem",
-				"parent": "listItemSwitch",
 				"input": {
 					"height": 31,
 					"width": 51
-				}
+				},
+				"children": [],
+				"name": "switchItem",
+				"parent": "listItemSwitch"
 			}
 		},
 		{
@@ -5555,16 +5562,16 @@
 				"children": [],
 				"name": "rightItem1",
 				"parent": "rightItems",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "0dc793ff",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 4,
@@ -5746,7 +5753,7 @@
 				"children": [],
 				"name": "apUserImage",
 				"parent": "flexlayout119",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -5840,7 +5847,7 @@
 				"children": [],
 				"name": "apRightArrow",
 				"parent": "flexlayout119",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -6067,10 +6074,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "68390c80",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"left": 4.800000190734863,
@@ -6268,10 +6275,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "586e0980",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 1,
@@ -6319,10 +6326,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "d22f2a66",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": null,
@@ -6497,6 +6504,7 @@
 				"textColor": "rgba( 39, 39, 49, 1 )",
 				"textAlignment": "MIDCENTER",
 				"marginTop": null,
+				"usePageVariable": true,
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -6510,8 +6518,7 @@
 				},
 				"children": [],
 				"name": "anDate",
-				"parent": "flexlayout284",
-				"usePageVariable": true
+				"parent": "flexlayout284"
 			}
 		},
 		{
@@ -6548,6 +6555,7 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 39, 39, 49, 1 )",
 				"textAlignment": "MIDLEFT",
+				"usePageVariable": true,
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -6561,8 +6569,7 @@
 				},
 				"children": [],
 				"name": "anTitle",
-				"parent": "flexlayout284_2",
-				"usePageVariable": true
+				"parent": "flexlayout284_2"
 			}
 		},
 		{
@@ -6601,6 +6608,7 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 155, 155, 155, 1 )",
 				"textAlignment": "TOPLEFT",
+				"usePageVariable": true,
 				"font": {
 					"size": 14,
 					"bold": false,
@@ -6614,8 +6622,7 @@
 				},
 				"children": [],
 				"name": "anMessage",
-				"parent": "flexlayout284_2",
-				"usePageVariable": true
+				"parent": "flexlayout284_2"
 			}
 		},
 		{
@@ -6696,6 +6703,7 @@
 				"borderWidth": 0,
 				"marginBottom": 5,
 				"image": "avatar1.png",
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE",
@@ -6704,17 +6712,16 @@
 				"children": [],
 				"name": "anImage",
 				"parent": "flexlayout1342",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207",
-				"usePageVariable": true
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "d5b509d0",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"left": 4,
@@ -6902,7 +6909,7 @@
 				"children": [],
 				"name": "ibUserImage",
 				"parent": "flexlayout489",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -7222,16 +7229,16 @@
 				"children": [],
 				"name": "imageview159",
 				"parent": "flexlayout861",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/icon_birthday.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/icon_birthday.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "70daaa20",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": true,
 			"themeProps": {},
 			"userProps": {
 				"width": 360,
@@ -7283,16 +7290,13 @@
 			"userProps": {
 				"width": null,
 				"height": null,
+				"id": 2,
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW",
 					"justifyContent": "CENTER",
 					"alignItems": "CENTER"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -7316,13 +7320,14 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"imageview63",
-					"label506",
+					"itemDocumentImage",
+					"itemDocumentTitle",
 					"imageview64",
-					"label762"
+					"itemDocumentAcceptance"
 				],
 				"name": "flexlayout276",
-				"parent": "itemDocument"
+				"parent": "itemDocument",
+				"id": 2
 			}
 		},
 		{
@@ -7336,11 +7341,7 @@
 				"width": null,
 				"height": 1,
 				"backgroundColor": "rgba( 151, 151, 151, 0.4 )",
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"id": 1
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -7364,7 +7365,8 @@
 				},
 				"children": [],
 				"name": "flexlayout277",
-				"parent": "itemDocument"
+				"parent": "itemDocument",
+				"id": 1
 			}
 		},
 		{
@@ -7379,11 +7381,8 @@
 				"height": 30,
 				"image": "icon_accepted.png",
 				"imageFillType": "ASPECTFIT",
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"usePageVariable": true,
+				"id": 6
 			},
 			"className": ".imageView",
 			"props": {
@@ -7397,14 +7396,16 @@
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
 				"image": "icon_accepted.png",
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"name": "imageview63",
+				"name": "itemDocumentImage",
 				"parent": "flexlayout276",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/icon_accepted.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/icon_accepted.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207",
+				"id": 6
 			}
 		},
 		{
@@ -7419,13 +7420,11 @@
 				"width": null,
 				"height": 60,
 				"marginLeft": 10,
+				"usePageVariable": true,
+				"id": 5,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".label",
 			"props": {
@@ -7442,6 +7441,7 @@
 				"textColor": "#4A4A4A",
 				"textAlignment": "MIDLEFT",
 				"marginLeft": 10,
+				"usePageVariable": true,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -7454,8 +7454,9 @@
 					"flexGrow": 1
 				},
 				"children": [],
-				"name": "label506",
-				"parent": "flexlayout276"
+				"name": "itemDocumentTitle",
+				"parent": "flexlayout276",
+				"id": 5
 			}
 		},
 		{
@@ -7470,11 +7471,7 @@
 				"height": 14,
 				"image": "arrow_right.png",
 				"imageFillType": "ASPECTFIT",
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"id": 4
 			},
 			"className": ".imageView",
 			"props": {
@@ -7495,7 +7492,8 @@
 				"children": [],
 				"name": "imageview64",
 				"parent": "flexlayout276",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/arrow_right.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207",
+				"id": 4
 			}
 		},
 		{
@@ -7516,15 +7514,14 @@
 				"right": 0,
 				"top": 0,
 				"text": "ACCEPTED",
+				"usePageVariable": true,
+				"id": 3,
 				"flexProps": {
 					"positionType": "ABSOLUTE"
 				},
 				"font": {
 					"size": 12
-				},
-				"layout": {},
-				"flex": {},
-				"defaults": {}
+				}
 			},
 			"className": ".label",
 			"props": {
@@ -7544,6 +7541,7 @@
 				"marginTop": null,
 				"right": 0,
 				"top": 0,
+				"usePageVariable": true,
 				"font": {
 					"size": 12,
 					"bold": false,
@@ -7555,8 +7553,9 @@
 					"positionType": "ABSOLUTE"
 				},
 				"children": [],
-				"name": "label762",
-				"parent": "flexlayout276"
+				"name": "itemDocumentAcceptance",
+				"parent": "flexlayout276",
+				"id": 3
 			}
 		},
 		{
@@ -7611,7 +7610,7 @@
 				"children": [],
 				"name": "filePreview",
 				"parent": "itemFile",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/icon_add_file.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/icon_add_file.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -7732,6 +7731,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "10bf73cf",
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -7810,7 +7810,7 @@
 				"name": "icon",
 				"parent": "itemSpeech",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/icon_microphone.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/icon_microphone.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -7868,8 +7868,8 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"label346",
-					"label347"
+					"label108",
+					"label109"
 				],
 				"parent": "flexlayout2",
 				"name": "startDate"
@@ -7878,10 +7878,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -7933,16 +7933,16 @@
 				},
 				"children": [],
 				"parent": "startDate",
-				"name": "label346"
+				"name": "label108"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -7994,7 +7994,7 @@
 				},
 				"children": [],
 				"parent": "startDate",
-				"name": "label347"
+				"name": "label109"
 			}
 		},
 		{
@@ -8052,8 +8052,8 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"label348",
-					"label349"
+					"label110",
+					"label111"
 				],
 				"parent": "flexlayout2",
 				"name": "endDate"
@@ -8062,10 +8062,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -8117,16 +8117,16 @@
 				},
 				"children": [],
 				"parent": "endDate",
-				"name": "label348"
+				"name": "label110"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -8178,17 +8178,17 @@
 				},
 				"children": [],
 				"parent": "endDate",
-				"name": "label349"
+				"name": "label111"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "19bad70b",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
 				"id": "dad4242b"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -8243,11 +8243,11 @@
 		{
 			"type": "FlexLayout",
 			"id": "d8e35214",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
 				"id": "dad4242b"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -8352,7 +8352,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout253"
+					"flexLayout78"
 				],
 				"parent": "itemLeaveManagement",
 				"name": "divider"
@@ -8361,10 +8361,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -8406,7 +8406,7 @@
 				},
 				"children": [],
 				"parent": "divider",
-				"name": "flexlayout253"
+				"name": "flexLayout78"
 			}
 		},
 		{
@@ -8463,7 +8463,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout254"
+					"flexLayout79"
 				],
 				"parent": "itemSalary",
 				"name": "flexlayout116"
@@ -8472,10 +8472,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -8517,7 +8517,7 @@
 				},
 				"children": [],
 				"parent": "flexlayout116",
-				"name": "flexlayout254"
+				"name": "flexLayout79"
 			}
 		},
 		{
@@ -8578,8 +8578,8 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"label350",
-					"label351"
+					"label112",
+					"label113"
 				],
 				"parent": "salaryContainer",
 				"name": "containerBasic"
@@ -8588,10 +8588,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -8643,16 +8643,16 @@
 				},
 				"children": [],
 				"parent": "containerBasic",
-				"name": "label350"
+				"name": "label112"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -8704,7 +8704,7 @@
 				},
 				"children": [],
 				"parent": "containerBasic",
-				"name": "label351"
+				"name": "label113"
 			}
 		},
 		{
@@ -8765,8 +8765,8 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"label352",
-					"label353"
+					"label114",
+					"label115"
 				],
 				"parent": "salaryContainer",
 				"name": "containerProposal"
@@ -8775,10 +8775,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -8830,16 +8830,16 @@
 				},
 				"children": [],
 				"parent": "containerProposal",
-				"name": "label352"
+				"name": "label114"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -8891,7 +8891,7 @@
 				},
 				"children": [],
 				"parent": "containerProposal",
-				"name": "label353"
+				"name": "label115"
 			}
 		},
 		{
@@ -8949,8 +8949,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label354",
-					"label355"
+					"label116",
+					"label117"
 				],
 				"parent": "itemPerformance",
 				"name": "reviewDate"
@@ -8959,10 +8959,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -9014,16 +9014,16 @@
 				},
 				"children": [],
 				"parent": "reviewDate",
-				"name": "label354"
+				"name": "label116"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -9075,7 +9075,7 @@
 				},
 				"children": [],
 				"parent": "reviewDate",
-				"name": "label355"
+				"name": "label117"
 			}
 		},
 		{
@@ -9131,7 +9131,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout256"
+					"flexLayout80"
 				],
 				"parent": "itemPerformance",
 				"name": "dividerperf"
@@ -9140,10 +9140,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -9185,7 +9185,7 @@
 				},
 				"children": [],
 				"parent": "dividerperf",
-				"name": "flexlayout256"
+				"name": "flexLayout80"
 			}
 		},
 		{
@@ -9243,8 +9243,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label356",
-					"label357"
+					"label118",
+					"label119"
 				],
 				"parent": "itemPerformance",
 				"name": "nextReview"
@@ -9253,10 +9253,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -9308,16 +9308,16 @@
 				},
 				"children": [],
 				"parent": "nextReview",
-				"name": "label356"
+				"name": "label118"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -9369,7 +9369,7 @@
 				},
 				"children": [],
 				"parent": "nextReview",
-				"name": "label357"
+				"name": "label119"
 			}
 		},
 		{
@@ -9425,7 +9425,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout257"
+					"flexLayout81"
 				],
 				"parent": "itemPerformance",
 				"name": "dividerperf_1"
@@ -9434,10 +9434,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -9479,7 +9479,7 @@
 				},
 				"children": [],
 				"parent": "dividerperf_1",
-				"name": "flexlayout257"
+				"name": "flexLayout81"
 			}
 		},
 		{
@@ -9537,8 +9537,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label358",
-					"label359"
+					"label120",
+					"label121"
 				],
 				"parent": "itemPerformance",
 				"name": "rating"
@@ -9547,10 +9547,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -9602,16 +9602,16 @@
 				},
 				"children": [],
 				"parent": "rating",
-				"name": "label358"
+				"name": "label120"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -9663,7 +9663,7 @@
 				},
 				"children": [],
 				"parent": "rating",
-				"name": "label359"
+				"name": "label121"
 			}
 		},
 		{
@@ -9719,7 +9719,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout258"
+					"flexLayout82"
 				],
 				"parent": "itemPerformance",
 				"name": "dividerperf_1_1"
@@ -9728,10 +9728,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -9773,7 +9773,7 @@
 				},
 				"children": [],
 				"parent": "dividerperf_1_1",
-				"name": "flexlayout258"
+				"name": "flexLayout82"
 			}
 		},
 		{
@@ -9831,8 +9831,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label360",
-					"label361"
+					"label122",
+					"label123"
 				],
 				"parent": "itemPerformance",
 				"name": "overallScore"
@@ -9841,10 +9841,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -9896,16 +9896,16 @@
 				},
 				"children": [],
 				"parent": "overallScore",
-				"name": "label360"
+				"name": "label122"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -9957,7 +9957,7 @@
 				},
 				"children": [],
 				"parent": "overallScore",
-				"name": "label361"
+				"name": "label123"
 			}
 		},
 		{
@@ -10011,7 +10011,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout259"
+					"flexLayout83"
 				],
 				"parent": "pickerContainer",
 				"name": "flexlayout430"
@@ -10020,10 +10020,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -10065,7 +10065,7 @@
 				},
 				"children": [],
 				"parent": "flexlayout430",
-				"name": "flexlayout259"
+				"name": "flexLayout83"
 			}
 		},
 		{
@@ -10122,7 +10122,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout260"
+					"flexLayout84"
 				],
 				"parent": "itemUser",
 				"name": "flexlayout161"
@@ -10131,10 +10131,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -10176,7 +10176,7 @@
 				},
 				"children": [],
 				"parent": "flexlayout161",
-				"name": "flexlayout260"
+				"name": "flexLayout84"
 			}
 		},
 		{
@@ -10233,7 +10233,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout261"
+					"flexLayout85"
 				],
 				"parent": "itemExpense",
 				"name": "flexlayout336"
@@ -10242,10 +10242,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -10287,17 +10287,17 @@
 				},
 				"children": [],
 				"parent": "flexlayout336",
-				"name": "flexlayout261"
+				"name": "flexLayout85"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "0d4102d7",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
 				"id": "016f01c5"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"height": 75,
@@ -10341,9 +10341,9 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"imageview42",
-					"flexlayout262",
-					"flexlayout263"
+					"imageView12",
+					"flexLayout86",
+					"flexLayout87"
 				],
 				"parent": "hierarchyController",
 				"name": "hc_level1"
@@ -10352,10 +10352,10 @@
 		{
 			"type": "ImageView",
 			"id": "277a7d76",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 60,
@@ -10392,17 +10392,17 @@
 				},
 				"children": [],
 				"parent": "hc_level1",
-				"name": "imageview42",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"name": "imageView12",
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "8f105e0b",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": null,
@@ -10439,20 +10439,20 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"label362",
-					"label363"
+					"label124",
+					"label125"
 				],
 				"parent": "hc_level1",
-				"name": "flexlayout262"
+				"name": "flexLayout86"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "34b615d1",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -10494,17 +10494,17 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout262",
-				"name": "label362"
+				"parent": "flexLayout86",
+				"name": "label124"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "32231610",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -10543,17 +10543,17 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout262",
-				"name": "label363"
+				"parent": "flexLayout86",
+				"name": "label125"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "28fdbff4",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 1,
@@ -10593,17 +10593,17 @@
 				},
 				"children": [],
 				"parent": "hc_level1",
-				"name": "flexlayout263"
+				"name": "flexLayout87"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "9bab0fd2",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
 				"id": "68dcc30f"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"left": 0,
@@ -10647,11 +10647,11 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"imageview43",
-					"flexlayout264",
-					"flexlayout265",
-					"flexlayout266",
-					"flexlayout267"
+					"imageView13",
+					"flexLayout88",
+					"flexLayout89",
+					"flexLayout90",
+					"flexLayout91"
 				],
 				"parent": "hierarchyController",
 				"name": "hc_level2"
@@ -10660,10 +10660,10 @@
 		{
 			"type": "ImageView",
 			"id": "ec1a287c",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 60,
@@ -10700,17 +10700,17 @@
 				},
 				"children": [],
 				"parent": "hc_level2",
-				"name": "imageview43",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/myavatar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"name": "imageView13",
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/myavatar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "e3a3b596",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": null,
@@ -10747,20 +10747,20 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"label364",
-					"label365"
+					"label126",
+					"label127"
 				],
 				"parent": "hc_level2",
-				"name": "flexlayout264"
+				"name": "flexLayout88"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "546658c5",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -10802,17 +10802,17 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout264",
-				"name": "label364"
+				"parent": "flexLayout88",
+				"name": "label126"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "3dd3c2c9",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -10852,17 +10852,17 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout264",
-				"name": "label365"
+				"parent": "flexLayout88",
+				"name": "label127"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "d5cb5dee",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 1,
@@ -10902,16 +10902,16 @@
 				},
 				"children": [],
 				"parent": "hc_level2",
-				"name": "flexlayout265"
+				"name": "flexLayout89"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "0d0839a7",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"height": 1,
@@ -10951,16 +10951,16 @@
 				},
 				"children": [],
 				"parent": "hc_level2",
-				"name": "flexlayout266"
+				"name": "flexLayout90"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "02423dba",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 1,
@@ -11000,17 +11000,17 @@
 				},
 				"children": [],
 				"parent": "hc_level2",
-				"name": "flexlayout267"
+				"name": "flexLayout91"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "e31415ac",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
 				"id": "29987917"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 360,
@@ -11054,11 +11054,11 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"imageview44",
-					"flexlayout268",
-					"flexlayout269",
-					"flexlayout270",
-					"flexlayout271"
+					"imageView14",
+					"flexLayout92",
+					"flexLayout93",
+					"flexLayout94",
+					"flexLayout95"
 				],
 				"parent": "hierarchyController",
 				"name": "hc_level3"
@@ -11067,10 +11067,10 @@
 		{
 			"type": "ImageView",
 			"id": "00541bee",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 60,
@@ -11107,17 +11107,17 @@
 				},
 				"children": [],
 				"parent": "hc_level3",
-				"name": "imageview44",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar3.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"name": "imageView14",
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/avatar3.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "e0c6dd64",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": null,
@@ -11154,20 +11154,20 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"label366",
-					"label367"
+					"label128",
+					"label129"
 				],
 				"parent": "hc_level3",
-				"name": "flexlayout268"
+				"name": "flexLayout92"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "3a471ffc",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -11209,17 +11209,17 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout268",
-				"name": "label366"
+				"parent": "flexLayout92",
+				"name": "label128"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "d0747635",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -11258,17 +11258,17 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout268",
-				"name": "label367"
+				"parent": "flexLayout92",
+				"name": "label129"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "024a669c",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 1,
@@ -11308,16 +11308,16 @@
 				},
 				"children": [],
 				"parent": "hc_level3",
-				"name": "flexlayout269"
+				"name": "flexLayout93"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "cf0f63cc",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 30,
@@ -11355,16 +11355,16 @@
 				},
 				"children": [],
 				"parent": "hc_level3",
-				"name": "flexlayout270"
+				"name": "flexLayout94"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "515027cb",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 1,
@@ -11404,17 +11404,17 @@
 				},
 				"children": [],
 				"parent": "hc_level3",
-				"name": "flexlayout271"
+				"name": "flexLayout95"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "ae4a4c13",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
 				"id": "3df1faa8"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 360,
@@ -11458,10 +11458,10 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"imageview45",
-					"flexlayout272",
-					"flexlayout273",
-					"flexlayout274"
+					"imageView15",
+					"flexLayout96",
+					"flexLayout97",
+					"flexLayout98"
 				],
 				"parent": "hierarchyController",
 				"name": "hc_level3_1"
@@ -11470,10 +11470,10 @@
 		{
 			"type": "ImageView",
 			"id": "a47793e3",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 60,
@@ -11510,17 +11510,17 @@
 				},
 				"children": [],
 				"parent": "hc_level3_1",
-				"name": "imageview45",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar4.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207"
+				"name": "imageView15",
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/selfservice/ui-editor/img/avatar4.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "272aa013",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"height": 60,
@@ -11557,20 +11557,20 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"label368",
-					"label369"
+					"label130",
+					"label131"
 				],
 				"parent": "hc_level3_1",
-				"name": "flexlayout272"
+				"name": "flexLayout96"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "8f7e6041",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -11612,17 +11612,17 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout272",
-				"name": "label368"
+				"parent": "flexLayout96",
+				"name": "label130"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "8bf47542",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -11661,17 +11661,17 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout272",
-				"name": "label369"
+				"parent": "flexLayout96",
+				"name": "label131"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "d52fbad3",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 1,
@@ -11711,16 +11711,16 @@
 				},
 				"children": [],
 				"parent": "hc_level3_1",
-				"name": "flexlayout273"
+				"name": "flexLayout97"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "e0a9ab9a",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"width": 1,
@@ -11760,7 +11760,7 @@
 				},
 				"children": [],
 				"parent": "hc_level3_1",
-				"name": "flexlayout274"
+				"name": "flexLayout98"
 			}
 		},
 		{
@@ -11818,8 +11818,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label370",
-					"label371"
+					"label132",
+					"label133"
 				],
 				"parent": "flexlayout289",
 				"name": "row1"
@@ -11828,10 +11828,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -11883,16 +11883,16 @@
 				},
 				"children": [],
 				"parent": "row1",
-				"name": "label370"
+				"name": "label132"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -11944,7 +11944,7 @@
 				},
 				"children": [],
 				"parent": "row1",
-				"name": "label371"
+				"name": "label133"
 			}
 		},
 		{
@@ -12002,8 +12002,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label372",
-					"label373"
+					"label134",
+					"label135"
 				],
 				"parent": "flexlayout289",
 				"name": "row2"
@@ -12012,10 +12012,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -12067,16 +12067,16 @@
 				},
 				"children": [],
 				"parent": "row2",
-				"name": "label372"
+				"name": "label134"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -12128,7 +12128,7 @@
 				},
 				"children": [],
 				"parent": "row2",
-				"name": "label373"
+				"name": "label135"
 			}
 		},
 		{
@@ -12186,8 +12186,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label374",
-					"label375"
+					"label136",
+					"label137"
 				],
 				"parent": "flexlayout289",
 				"name": "row3"
@@ -12196,10 +12196,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -12251,16 +12251,16 @@
 				},
 				"children": [],
 				"parent": "row3",
-				"name": "label374"
+				"name": "label136"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -12312,7 +12312,7 @@
 				},
 				"children": [],
 				"parent": "row3",
-				"name": "label375"
+				"name": "label137"
 			}
 		},
 		{
@@ -12370,8 +12370,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label376",
-					"label377"
+					"label138",
+					"label139"
 				],
 				"parent": "flexlayout289",
 				"name": "row4"
@@ -12380,10 +12380,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -12435,16 +12435,16 @@
 				},
 				"children": [],
 				"parent": "row4",
-				"name": "label376"
+				"name": "label138"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -12496,7 +12496,7 @@
 				},
 				"children": [],
 				"parent": "row4",
-				"name": "label377"
+				"name": "label139"
 			}
 		},
 		{
@@ -12554,8 +12554,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label378",
-					"label379"
+					"label140",
+					"label141"
 				],
 				"parent": "flexlayout289",
 				"name": "row5"
@@ -12564,10 +12564,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -12619,16 +12619,16 @@
 				},
 				"children": [],
 				"parent": "row5",
-				"name": "label378"
+				"name": "label140"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -12680,7 +12680,7 @@
 				},
 				"children": [],
 				"parent": "row5",
-				"name": "label379"
+				"name": "label141"
 			}
 		},
 		{
@@ -12738,8 +12738,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label380",
-					"label381"
+					"label142",
+					"label143"
 				],
 				"parent": "flexlayout289",
 				"name": "row6"
@@ -12748,10 +12748,10 @@
 		{
 			"type": "Label",
 			"id": "01d7b639",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemTitle"
 			},
@@ -12803,16 +12803,16 @@
 				},
 				"children": [],
 				"parent": "row6",
-				"name": "label380"
+				"name": "label142"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "442af9e0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {
 				"Highlights": "ListItemValue"
 			},
@@ -12864,7 +12864,7 @@
 				},
 				"children": [],
 				"parent": "row6",
-				"name": "label381"
+				"name": "label143"
 			}
 		},
 		{
@@ -12918,7 +12918,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout275"
+					"flexLayout99"
 				],
 				"parent": "flexlayout289",
 				"name": "flexlayout606"
@@ -12927,10 +12927,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -12972,7 +12972,7 @@
 				},
 				"children": [],
 				"parent": "flexlayout606",
-				"name": "flexlayout275"
+				"name": "flexLayout99"
 			}
 		},
 		{
@@ -13026,7 +13026,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout278"
+					"flexLayout100"
 				],
 				"parent": "flexlayout289",
 				"name": "flexlayout606_1"
@@ -13035,10 +13035,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -13080,7 +13080,7 @@
 				},
 				"children": [],
 				"parent": "flexlayout606_1",
-				"name": "flexlayout278"
+				"name": "flexLayout100"
 			}
 		},
 		{
@@ -13134,7 +13134,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout279"
+					"flexLayout101"
 				],
 				"parent": "flexlayout289",
 				"name": "flexlayout606_2"
@@ -13143,10 +13143,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -13188,7 +13188,7 @@
 				},
 				"children": [],
 				"parent": "flexlayout606_2",
-				"name": "flexlayout279"
+				"name": "flexLayout101"
 			}
 		},
 		{
@@ -13242,7 +13242,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout280"
+					"flexLayout102"
 				],
 				"parent": "flexlayout289",
 				"name": "flexlayout606_3"
@@ -13251,10 +13251,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -13296,7 +13296,7 @@
 				},
 				"children": [],
 				"parent": "flexlayout606_3",
-				"name": "flexlayout280"
+				"name": "flexLayout102"
 			}
 		},
 		{
@@ -13350,7 +13350,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout281"
+					"flexLayout103"
 				],
 				"parent": "flexlayout289",
 				"name": "flexlayout606_4"
@@ -13359,10 +13359,10 @@
 		{
 			"type": "FlexLayout",
 			"id": "85e62dda",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"hiddenComponent": false,
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
@@ -13404,7 +13404,7 @@
 				},
 				"children": [],
 				"parent": "flexlayout606_4",
-				"name": "flexlayout281"
+				"name": "flexLayout103"
 			}
 		}
 	]

@@ -17,8 +17,8 @@ const Page_ = extend(PageDesign)(
 		_super(this);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 
-		this.users = [];
-		initListView(this.listView, this.users);
+		this.documents = [];
+		initListView(this.listView, this.documents);
 		initHeaderBar.call(this);
     }
 );
@@ -31,9 +31,9 @@ function onShow(parentOnShow) {
         DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
         Timer.setTimeout({
             task: function() {
-                this.users.slice(0);
-                Array.prototype.push.apply(this.users, MockService.getUsers());
-                this.listView.itemCount = this.users.length;
+                this.documents.slice(0);
+                Array.prototype.push.apply(this.documents, MockService.getCompanyDocuments());
+                this.listView.itemCount = this.documents.length;
                 this.listView.refreshData();
                 DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
             }.bind(this),
@@ -52,9 +52,13 @@ function initListView(listView, data) {
         var myListViewItem = new ListViewItem();
         var item = new ItemDocument();
         item.id = 200;
-        myListViewItem.item = item;
         myListViewItem.addChild(item);
         return myListViewItem;
+    };
+    
+    listView.onRowBind = function(listViewItem, index) {
+        var item = listViewItem.findChildById(200);
+        item.data = data[index];
     };
     
     listView.onRowSelected = function() {

@@ -361,4 +361,26 @@ MockService.getAnnouncements = function() {
     return result;
 }
 
+MockService.getCompanyDocuments = function() {
+    var result = [
+        {
+            title: "ID",
+            condition: "accepted"
+        },
+        {
+            title: "Passport",
+            condition: "rejected"
+        },
+        {
+            title: "Visa",
+            condition: "upload"
+        },
+        {
+            title: "Certificate",
+            condition: "accepted"
+        }
+    ];
+    return result;
+};
+
 module.exports = MockService;
