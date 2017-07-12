@@ -92,13 +92,13 @@ MockService.getUsers = function() {
         "Director of Human Resources"
     ];
     
-    var positions = [
-        "Manager of Sales and Marketing",
-        "Sales Responsible",
-        "Director of Sales and Marketing",
-        "Junior Developer",
-        "Sales Responsible",
-        "Director of Human Resources"
+    var upcomingBirth = [
+        "May 16",
+        "May 23",
+        "May 30",
+        "Jun 4",
+        "Jun 7",
+        "Jun 11"
     ];
     var images = [
         Image.createFromFile("images://avatar1.png"),
@@ -114,7 +114,8 @@ MockService.getUsers = function() {
         users.push({
             name: usernames[i],
             position: positions[i],
-            image: images[i]
+            image: images[i],
+            birth: upcomingBirth[i]
         });
     }
     return users;

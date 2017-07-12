@@ -30,6 +30,7 @@ function invalidate(item) {
 	item.ibUserImage.image = item.user.image;
 	item.ibUserName.text = item.user.name;
 	item.ibUserPosition.text = item.user.position;
+	item.ibUserBirthday.text = item.user.birth;
 }
 
 module && (module.exports = ItemBirthday);
