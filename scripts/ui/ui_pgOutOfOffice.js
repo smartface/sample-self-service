@@ -134,6 +134,8 @@ const PgOutOfOffice_ = extend(Page)(
 			text: "LOREM IPSUM"
 		});
 		var intExtTitle = new Label(intExtTitleStyle);
+		if(intExtTitleStyle.scrollEnabled === false)
+			intExtTitle.ios && (intExtTitle.ios.scrollEnabled = false);
 		intExtContainer.addChild(intExtTitle);
 		this.intExtTitle = intExtTitle;
 
@@ -143,6 +145,8 @@ const PgOutOfOffice_ = extend(Page)(
 			text: "START"
 		});
 		var startTitle = new Label(startTitleStyle);
+		if(startTitleStyle.scrollEnabled === false)
+			startTitle.ios && (startTitle.ios.scrollEnabled = false);
 		dateContainer.addChild(startTitle);
 		this.startTitle = startTitle;
 
@@ -171,6 +175,18 @@ const PgOutOfOffice_ = extend(Page)(
 			flexGrow: 1
 		});
 		var description = new TextBox(descriptionStyle);
+		if(descriptionStyle.hintTextColor)
+			description.android && (description.android.hintTextColor = descriptionStyle.hintTextColor);
+		if(descriptionStyle.elevation)
+			description.android && (description.android.elevation = descriptionStyle.elevation);
+		if(descriptionStyle.keyboardAppearance)
+			description.ios && (description.ios.keyboardAppearance = descriptionStyle.keyboardAppearance);
+		if(descriptionStyle.clearButtonEnabled)
+			description.ios && (description.ios.clearButtonEnabled = descriptionStyle.clearButtonEnabled);
+		if(descriptionStyle.minimumFontSize)
+			description.ios && (description.ios.minimumFontSize = descriptionStyle.minimumFontSize);
+		if(descriptionStyle.adjustFontSizeToFit)
+			description.ios && (description.ios.adjustFontSizeToFit = descriptionStyle.adjustFontSizeToFit);
 		noteContainer.addChild(description);
 		this.description = description;
 
@@ -192,6 +208,8 @@ const PgOutOfOffice_ = extend(Page)(
 			text: "END"
 		});
 		var endTitle = new Label(endTitleStyle);
+		if(endTitleStyle.scrollEnabled === false)
+			endTitle.ios && (endTitle.ios.scrollEnabled = false);
 		dateContainer.addChild(endTitle);
 		this.endTitle = endTitle;
 
@@ -252,6 +270,8 @@ const PgOutOfOffice_ = extend(Page)(
 			flexGrow: 1
 		});
 		var noteTitle = new Label(noteTitleStyle);
+		if(noteTitleStyle.scrollEnabled === false)
+			noteTitle.ios && (noteTitle.ios.scrollEnabled = false);
 		flexlayout97.addChild(noteTitle);
 		this.noteTitle = noteTitle;
 

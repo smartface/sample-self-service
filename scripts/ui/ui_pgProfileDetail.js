@@ -94,6 +94,8 @@ const PgProfileDetail_ = extend(Page)(
 			font: Font.create("Arial", 18, Font.NORMAL)
 		});
 		var label827 = new Label(label827Style);
+		if(label827Style.scrollEnabled === false)
+			label827.ios && (label827.ios.scrollEnabled = false);
 		flexlayout1.addChild(label827);
 		
 		const hierarchyControllerStyle = getCombinedStyle(".flexLayout", {
@@ -121,6 +123,8 @@ const PgProfileDetail_ = extend(Page)(
 			font: Font.create("Arial", 14, Font.NORMAL)
 		});
 		var label827_1 = new Label(label827_1Style);
+		if(label827_1Style.scrollEnabled === false)
+			label827_1.ios && (label827_1.ios.scrollEnabled = false);
 		flexlayout1.addChild(label827_1);
 		
 		const informationTitleStyle = getCombinedStyle(".label .label-list-item-header", {
@@ -130,6 +134,8 @@ const PgProfileDetail_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var informationTitle = new Label(informationTitleStyle);
+		if(informationTitleStyle.scrollEnabled === false)
+			informationTitle.ios && (informationTitle.ios.scrollEnabled = false);
 		qualificationcontainer.addChild(informationTitle);
 		this.informationTitle = informationTitle;
 

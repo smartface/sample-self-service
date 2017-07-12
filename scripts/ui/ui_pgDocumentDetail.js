@@ -52,6 +52,8 @@ const PgDocumentDetail_ = extend(Page)(
 			textColor: Color.create(255, 155, 155, 155)
 		});
 		var label322 = new Label(label322Style);
+		if(label322Style.scrollEnabled === false)
+			label322.ios && (label322.ios.scrollEnabled = false);
 		mainLayout.addChild(label322);
 		
 		//assign the children to page 

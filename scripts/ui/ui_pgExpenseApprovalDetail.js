@@ -116,6 +116,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			text: "FILE"
 		});
 		var fileTitle = new Label(fileTitleStyle);
+		if(fileTitleStyle.scrollEnabled === false)
+			fileTitle.ios && (fileTitle.ios.scrollEnabled = false);
 		fileLayout.addChild(fileTitle);
 		this.fileTitle = fileTitle;
 
@@ -125,6 +127,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			text: "NOTE"
 		});
 		var noteTitle = new Label(noteTitleStyle);
+		if(noteTitleStyle.scrollEnabled === false)
+			noteTitle.ios && (noteTitle.ios.scrollEnabled = false);
 		noteLayout.addChild(noteTitle);
 		this.noteTitle = noteTitle;
 
@@ -134,6 +138,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			text: "DETAILS"
 		});
 		var detailsTitle = new Label(detailsTitleStyle);
+		if(detailsTitleStyle.scrollEnabled === false)
+			detailsTitle.ios && (detailsTitle.ios.scrollEnabled = false);
 		detailsLayout.addChild(detailsTitle);
 		this.detailsTitle = detailsTitle;
 
@@ -177,6 +183,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			flexGrow: 1
 		});
 		var note = new Label(noteStyle);
+		if(noteStyle.scrollEnabled === false)
+			note.ios && (note.ios.scrollEnabled = false);
 		noteLayout.addChild(note);
 		this.note = note;
 
@@ -313,6 +321,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 18, Font.NORMAL)
 		});
 		var name = new Label(nameStyle);
+		if(nameStyle.scrollEnabled === false)
+			name.ios && (name.ios.scrollEnabled = false);
 		flexlayout109.addChild(name);
 		this.name = name;
 
@@ -325,6 +335,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 14, Font.NORMAL)
 		});
 		var position = new Label(positionStyle);
+		if(positionStyle.scrollEnabled === false)
+			position.ios && (position.ios.scrollEnabled = false);
 		flexlayout109.addChild(position);
 		this.position = position;
 

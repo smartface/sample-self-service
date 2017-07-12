@@ -79,6 +79,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var informationTitle = new Label(informationTitleStyle);
+		if(informationTitleStyle.scrollEnabled === false)
+			informationTitle.ios && (informationTitle.ios.scrollEnabled = false);
 		flexlayout1.addChild(informationTitle);
 		this.informationTitle = informationTitle;
 
@@ -112,6 +114,18 @@ const PgNewLeaveRequest_ = extend(Page)(
 			flexGrow: 1
 		});
 		var textbox1 = new TextBox(textbox1Style);
+		if(textbox1Style.hintTextColor)
+			textbox1.android && (textbox1.android.hintTextColor = textbox1Style.hintTextColor);
+		if(textbox1Style.elevation)
+			textbox1.android && (textbox1.android.elevation = textbox1Style.elevation);
+		if(textbox1Style.keyboardAppearance)
+			textbox1.ios && (textbox1.ios.keyboardAppearance = textbox1Style.keyboardAppearance);
+		if(textbox1Style.clearButtonEnabled)
+			textbox1.ios && (textbox1.ios.clearButtonEnabled = textbox1Style.clearButtonEnabled);
+		if(textbox1Style.minimumFontSize)
+			textbox1.ios && (textbox1.ios.minimumFontSize = textbox1Style.minimumFontSize);
+		if(textbox1Style.adjustFontSizeToFit)
+			textbox1.ios && (textbox1.ios.adjustFontSizeToFit = textbox1Style.adjustFontSizeToFit);
 		flexlayout66.addChild(textbox1);
 		this.textbox1 = textbox1;
 
@@ -134,6 +148,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var label85 = new Label(label85Style);
+		if(label85Style.scrollEnabled === false)
+			label85.ios && (label85.ios.scrollEnabled = false);
 		flexlayout76.addChild(label85);
 		
 		const flexlayout3_1Style = getCombinedStyle(".flexLayout", {

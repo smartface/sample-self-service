@@ -108,6 +108,8 @@ const PgNewExpense_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var detailsTitle = new Label(detailsTitleStyle);
+		if(detailsTitleStyle.scrollEnabled === false)
+			detailsTitle.ios && (detailsTitle.ios.scrollEnabled = false);
 		detailsLayout.addChild(detailsTitle);
 		this.detailsTitle = detailsTitle;
 
@@ -156,6 +158,18 @@ const PgNewExpense_ = extend(Page)(
 			flexGrow: 1
 		});
 		var description = new TextBox(descriptionStyle);
+		if(descriptionStyle.hintTextColor)
+			description.android && (description.android.hintTextColor = descriptionStyle.hintTextColor);
+		if(descriptionStyle.elevation)
+			description.android && (description.android.elevation = descriptionStyle.elevation);
+		if(descriptionStyle.keyboardAppearance)
+			description.ios && (description.ios.keyboardAppearance = descriptionStyle.keyboardAppearance);
+		if(descriptionStyle.clearButtonEnabled)
+			description.ios && (description.ios.clearButtonEnabled = descriptionStyle.clearButtonEnabled);
+		if(descriptionStyle.minimumFontSize)
+			description.ios && (description.ios.minimumFontSize = descriptionStyle.minimumFontSize);
+		if(descriptionStyle.adjustFontSizeToFit)
+			description.ios && (description.ios.adjustFontSizeToFit = descriptionStyle.adjustFontSizeToFit);
 		noteLayout.addChild(description);
 		this.description = description;
 
@@ -235,6 +249,8 @@ const PgNewExpense_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var noteTitle = new Label(noteTitleStyle);
+		if(noteTitleStyle.scrollEnabled === false)
+			noteTitle.ios && (noteTitle.ios.scrollEnabled = false);
 		flexlayout76.addChild(noteTitle);
 		this.noteTitle = noteTitle;
 
@@ -247,6 +263,8 @@ const PgNewExpense_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var fileAttachmentTitle = new Label(fileAttachmentTitleStyle);
+		if(fileAttachmentTitleStyle.scrollEnabled === false)
+			fileAttachmentTitle.ios && (fileAttachmentTitle.ios.scrollEnabled = false);
 		flexlayout76_1.addChild(fileAttachmentTitle);
 		this.fileAttachmentTitle = fileAttachmentTitle;
 

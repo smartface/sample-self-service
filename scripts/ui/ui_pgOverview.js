@@ -110,6 +110,8 @@ const PgOverview_ = extend(Page)(
 			font: Font.create("Arial", 18, Font.NORMAL)
 		});
 		var label827 = new Label(label827Style);
+		if(label827Style.scrollEnabled === false)
+			label827.ios && (label827.ios.scrollEnabled = false);
 		flexlayout1.addChild(label827);
 		
 		const qualificationcontainer_1Style = getCombinedStyle(".flexLayout", {
@@ -136,6 +138,8 @@ const PgOverview_ = extend(Page)(
 			font: Font.create("Arial", 14, Font.NORMAL)
 		});
 		var label827_1 = new Label(label827_1Style);
+		if(label827_1Style.scrollEnabled === false)
+			label827_1.ios && (label827_1.ios.scrollEnabled = false);
 		flexlayout1.addChild(label827_1);
 		
 		const salaryTitleStyle = getCombinedStyle(".label .label-list-item-header", {
@@ -145,6 +149,8 @@ const PgOverview_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var salaryTitle = new Label(salaryTitleStyle);
+		if(salaryTitleStyle.scrollEnabled === false)
+			salaryTitle.ios && (salaryTitle.ios.scrollEnabled = false);
 		salarycontainer.addChild(salaryTitle);
 		this.salaryTitle = salaryTitle;
 
@@ -155,6 +161,8 @@ const PgOverview_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var qualificationTitle = new Label(qualificationTitleStyle);
+		if(qualificationTitleStyle.scrollEnabled === false)
+			qualificationTitle.ios && (qualificationTitle.ios.scrollEnabled = false);
 		qualificationcontainer.addChild(qualificationTitle);
 		this.qualificationTitle = qualificationTitle;
 
@@ -165,6 +173,8 @@ const PgOverview_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var label536_2 = new Label(label536_2Style);
+		if(label536_2Style.scrollEnabled === false)
+			label536_2.ios && (label536_2.ios.scrollEnabled = false);
 		qualificationcontainer_1.addChild(label536_2);
 		
 		const containerTypeStyle = getCombinedStyle(".flexLayout", {

@@ -131,6 +131,18 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Lato", "12", Font.NORMAL)
 		});
 		var description = new TextBox(descriptionStyle);
+		if(descriptionStyle.hintTextColor)
+			description.android && (description.android.hintTextColor = descriptionStyle.hintTextColor);
+		if(descriptionStyle.elevation)
+			description.android && (description.android.elevation = descriptionStyle.elevation);
+		if(descriptionStyle.keyboardAppearance)
+			description.ios && (description.ios.keyboardAppearance = descriptionStyle.keyboardAppearance);
+		if(descriptionStyle.clearButtonEnabled)
+			description.ios && (description.ios.clearButtonEnabled = descriptionStyle.clearButtonEnabled);
+		if(descriptionStyle.minimumFontSize)
+			description.ios && (description.ios.minimumFontSize = descriptionStyle.minimumFontSize);
+		if(descriptionStyle.adjustFontSizeToFit)
+			description.ios && (description.ios.adjustFontSizeToFit = descriptionStyle.adjustFontSizeToFit);
 		descriptionLayout.addChild(description);
 		this.description = description;
 
@@ -222,6 +234,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 18, Font.NORMAL)
 		});
 		var name = new Label(nameStyle);
+		if(nameStyle.scrollEnabled === false)
+			name.ios && (name.ios.scrollEnabled = false);
 		flexlayout1103.addChild(name);
 		this.name = name;
 
@@ -258,6 +272,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 12, Font.NORMAL)
 		});
 		var label541 = new Label(label541Style);
+		if(label541Style.scrollEnabled === false)
+			label541.ios && (label541.ios.scrollEnabled = false);
 		flexlayout408.addChild(label541);
 		
 		const positionStyle = getCombinedStyle(".label", {
@@ -269,6 +285,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 14, Font.NORMAL)
 		});
 		var position = new Label(positionStyle);
+		if(positionStyle.scrollEnabled === false)
+			position.ios && (position.ios.scrollEnabled = false);
 		flexlayout1103.addChild(position);
 		this.position = position;
 
@@ -297,6 +315,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 18, Font.NORMAL)
 		});
 		var label1_1 = new Label(label1_1Style);
+		if(label1_1Style.scrollEnabled === false)
+			label1_1.ios && (label1_1.ios.scrollEnabled = false);
 		flexlayout1108_1.addChild(label1_1);
 		
 		const flexlayout2Style = getCombinedStyle(".flexLayout", {
@@ -359,6 +379,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 18, Font.NORMAL)
 		});
 		var label1 = new Label(label1Style);
+		if(label1Style.scrollEnabled === false)
+			label1.ios && (label1.ios.scrollEnabled = false);
 		flexlayout1108_1.addChild(label1);
 		
 		const flexlayout1111_2Style = getCombinedStyle(".flexLayout", {
@@ -393,6 +415,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 24, Font.NORMAL)
 		});
 		var label2_3 = new Label(label2_3Style);
+		if(label2_3Style.scrollEnabled === false)
+			label2_3.ios && (label2_3.ios.scrollEnabled = false);
 		flexlayout2_1.addChild(label2_3);
 		
 		const label2_3_1Style = getCombinedStyle(".label", {
@@ -406,6 +430,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 24, Font.NORMAL)
 		});
 		var label2_3_1 = new Label(label2_3_1Style);
+		if(label2_3_1Style.scrollEnabled === false)
+			label2_3_1.ios && (label2_3_1.ios.scrollEnabled = false);
 		flexlayout2_1_1.addChild(label2_3_1);
 		
 		const label2Style = getCombinedStyle(".label", {
@@ -419,6 +445,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 24, Font.NORMAL)
 		});
 		var label2 = new Label(label2Style);
+		if(label2Style.scrollEnabled === false)
+			label2.ios && (label2.ios.scrollEnabled = false);
 		flexlayout2.addChild(label2);
 		
 		const label1572_2Style = getCombinedStyle(".label", {
@@ -430,6 +458,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			flexGrow: 1
 		});
 		var label1572_2 = new Label(label1572_2Style);
+		if(label1572_2Style.scrollEnabled === false)
+			label1572_2.ios && (label1572_2.ios.scrollEnabled = false);
 		flexlayout1111_2.addChild(label1572_2);
 		
 		const label1572Style = getCombinedStyle(".label", {
@@ -441,6 +471,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			flexGrow: 1
 		});
 		var label1572 = new Label(label1572Style);
+		if(label1572Style.scrollEnabled === false)
+			label1572.ios && (label1572.ios.scrollEnabled = false);
 		flexlayout1111.addChild(label1572);
 		
 		const label2_1Style = getCombinedStyle(".label", {
@@ -454,6 +486,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 12, Font.NORMAL)
 		});
 		var label2_1 = new Label(label2_1Style);
+		if(label2_1Style.scrollEnabled === false)
+			label2_1.ios && (label2_1.ios.scrollEnabled = false);
 		flexlayout2.addChild(label2_1);
 		
 		const label2_1_1_1Style = getCombinedStyle(".label", {
@@ -467,6 +501,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 12, Font.NORMAL)
 		});
 		var label2_1_1_1 = new Label(label2_1_1_1Style);
+		if(label2_1_1_1Style.scrollEnabled === false)
+			label2_1_1_1.ios && (label2_1_1_1.ios.scrollEnabled = false);
 		flexlayout2_1_1.addChild(label2_1_1_1);
 		
 		const label2_1_1Style = getCombinedStyle(".label", {
@@ -480,6 +516,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 12, Font.NORMAL)
 		});
 		var label2_1_1 = new Label(label2_1_1Style);
+		if(label2_1_1Style.scrollEnabled === false)
+			label2_1_1.ios && (label2_1_1.ios.scrollEnabled = false);
 		flexlayout2_1.addChild(label2_1_1);
 		
 		const label1572_1_1Style = getCombinedStyle(".label", {
@@ -492,6 +530,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 14, Font.NORMAL)
 		});
 		var label1572_1_1 = new Label(label1572_1_1Style);
+		if(label1572_1_1Style.scrollEnabled === false)
+			label1572_1_1.ios && (label1572_1_1.ios.scrollEnabled = false);
 		flexlayout1111_2.addChild(label1572_1_1);
 		
 		const label1572_1Style = getCombinedStyle(".label", {
@@ -504,6 +544,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 14, Font.NORMAL)
 		});
 		var label1572_1 = new Label(label1572_1Style);
+		if(label1572_1Style.scrollEnabled === false)
+			label1572_1.ios && (label1572_1.ios.scrollEnabled = false);
 		flexlayout1111.addChild(label1572_1);
 		
 		const label2_2_1Style = getCombinedStyle(".label", {
@@ -517,6 +559,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var label2_2_1 = new Label(label2_2_1Style);
+		if(label2_2_1Style.scrollEnabled === false)
+			label2_2_1.ios && (label2_2_1.ios.scrollEnabled = false);
 		flexlayout2_1.addChild(label2_2_1);
 		
 		const label2_2_1_1Style = getCombinedStyle(".label", {
@@ -530,6 +574,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var label2_2_1_1 = new Label(label2_2_1_1Style);
+		if(label2_2_1_1Style.scrollEnabled === false)
+			label2_2_1_1.ios && (label2_2_1_1.ios.scrollEnabled = false);
 		flexlayout2_1_1.addChild(label2_2_1_1);
 		
 		const label2_2Style = getCombinedStyle(".label", {
@@ -543,6 +589,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var label2_2 = new Label(label2_2Style);
+		if(label2_2Style.scrollEnabled === false)
+			label2_2.ios && (label2_2.ios.scrollEnabled = false);
 		flexlayout2.addChild(label2_2);
 		
 		//assign the children to page 

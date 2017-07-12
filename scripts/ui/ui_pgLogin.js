@@ -51,6 +51,8 @@ const PgLogin_ = extend(Page)(
 			flexGrow: 5
 		});
 		var appName = new Label(appNameStyle);
+		if(appNameStyle.scrollEnabled === false)
+			appName.ios && (appName.ios.scrollEnabled = false);
 		this.layout.addChild(appName);
 		this.appName = appName;
 

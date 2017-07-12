@@ -97,6 +97,8 @@ const PgSettings_ = extend(Page)(
 			font: Font.create("Arial", 14, Font.NORMAL)
 		});
 		var txtAbout = new Label(txtAboutStyle);
+		if(txtAboutStyle.scrollEnabled === false)
+			txtAbout.ios && (txtAbout.ios.scrollEnabled = false);
 		flexlayout84.addChild(txtAbout);
 		this.txtAbout = txtAbout;
 
@@ -113,6 +115,8 @@ const PgSettings_ = extend(Page)(
 			font: Font.create("Arial", 14, Font.NORMAL)
 		});
 		var txtAboutDesc = new Label(txtAboutDescStyle);
+		if(txtAboutDescStyle.scrollEnabled === false)
+			txtAboutDesc.ios && (txtAboutDesc.ios.scrollEnabled = false);
 		flexlayout84.addChild(txtAboutDesc);
 		this.txtAboutDesc = txtAboutDesc;
 
@@ -152,6 +156,8 @@ const PgSettings_ = extend(Page)(
 			flexGrow: 1
 		});
 		var txtTheme = new Label(txtThemeStyle);
+		if(txtThemeStyle.scrollEnabled === false)
+			txtTheme.ios && (txtTheme.ios.scrollEnabled = false);
 		flexlayout85.addChild(txtTheme);
 		this.txtTheme = txtTheme;
 
@@ -163,6 +169,8 @@ const PgSettings_ = extend(Page)(
 			flexGrow: 1
 		});
 		var txtNotification = new Label(txtNotificationStyle);
+		if(txtNotificationStyle.scrollEnabled === false)
+			txtNotification.ios && (txtNotification.ios.scrollEnabled = false);
 		flexlayout85_1.addChild(txtNotification);
 		this.txtNotification = txtNotification;
 
@@ -175,6 +183,8 @@ const PgSettings_ = extend(Page)(
 			flexGrow: 1
 		});
 		var label1089 = new Label(label1089Style);
+		if(label1089Style.scrollEnabled === false)
+			label1089.ios && (label1089.ios.scrollEnabled = false);
 		signoutLayout.addChild(label1089);
 		
 		const themeBlueLayoutStyle = getCombinedStyle(".flexLayout", {

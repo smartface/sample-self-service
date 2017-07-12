@@ -79,6 +79,8 @@ const PgNewWorklog_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var label39 = new Label(label39Style);
+		if(label39Style.scrollEnabled === false)
+			label39.ios && (label39.ios.scrollEnabled = false);
 		flexlayout35.addChild(label39);
 		
 		const flexlayout76Style = getCombinedStyle(".flexLayout", {
@@ -102,6 +104,18 @@ const PgNewWorklog_ = extend(Page)(
 			flexGrow: 1
 		});
 		var textbox1 = new TextBox(textbox1Style);
+		if(textbox1Style.hintTextColor)
+			textbox1.android && (textbox1.android.hintTextColor = textbox1Style.hintTextColor);
+		if(textbox1Style.elevation)
+			textbox1.android && (textbox1.android.elevation = textbox1Style.elevation);
+		if(textbox1Style.keyboardAppearance)
+			textbox1.ios && (textbox1.ios.keyboardAppearance = textbox1Style.keyboardAppearance);
+		if(textbox1Style.clearButtonEnabled)
+			textbox1.ios && (textbox1.ios.clearButtonEnabled = textbox1Style.clearButtonEnabled);
+		if(textbox1Style.minimumFontSize)
+			textbox1.ios && (textbox1.ios.minimumFontSize = textbox1Style.minimumFontSize);
+		if(textbox1Style.adjustFontSizeToFit)
+			textbox1.ios && (textbox1.ios.adjustFontSizeToFit = textbox1Style.adjustFontSizeToFit);
 		flexlayout66.addChild(textbox1);
 		
 		const pickerContainerStyle = getCombinedStyle(".flexLayout", {
@@ -155,6 +169,8 @@ const PgNewWorklog_ = extend(Page)(
 			font: Font.create("Arial", 16, Font.NORMAL)
 		});
 		var label85 = new Label(label85Style);
+		if(label85Style.scrollEnabled === false)
+			label85.ios && (label85.ios.scrollEnabled = false);
 		flexlayout76.addChild(label85);
 		
 		const imageview17Style = getCombinedStyle(".imageView", {
