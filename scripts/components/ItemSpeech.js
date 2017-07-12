@@ -4,10 +4,7 @@ const System			= require("sf-core/device/system");
 const Application		= require("sf-core/application");
 const ItemSpeechDesign  = require('library/ItemSpeech');
 const Image             = require('sf-core/ui/image');
-const Animator          = require('sf-core/ui/animator');
 const Timer             = require("sf-core/timer");
-
-
 
 const ItemSpeech = extend(ItemSpeechDesign)(
 	//constructor
@@ -54,6 +51,7 @@ function invalidate(item)
 {
 	if (!SpeechRecognizer.isRunning()) 
 		{
+		    item.inputField.text = "";
             if (System.OS === "iOS") {
                 startSpeechRecognizer(item);
             }
@@ -78,38 +76,19 @@ function invalidate(item)
 function startSpeechRecognizer(item) 
 {
     item.icon.image = Image.createFromFile("images://icon_microphone_red.png");
-    var myTimer = Timer.setInterval({
-        task: function() {
-            animate(item);
-
-        },
-        delay: 500
-    });
-    
     SpeechRecognizer.start({
         onResult: function(result) {
             item.inputField.text = result;
         },
         onFinish: function(result) {
             Timer.clearAllTimer();
+            item.icon.image = Image.createFromFile("images://icon_microphone.png");
         },
         onError: function(error) {
             Timer.clearAllTimer();
+            item.icon.image = Image.createFromFile("images://icon_microphone.png");
         }
     });
 }
-
-function animate(item)
-{
-    Animator.animate(item.page.layout, 200, function() {
-        item.icon.alpha = 0;
-    }).then(200, function() {
-        item.icon.alpha = 1;
-    }).complete(function() {
-        item.icon.alpha = 1;
-    });
-}
-
-
 
 module && (module.exports = ItemSpeech);
