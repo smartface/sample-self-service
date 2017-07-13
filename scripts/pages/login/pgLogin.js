@@ -5,11 +5,10 @@ const Image = require("sf-core/ui/image");
 const Router = require("sf-core/router");
 const System = require("sf-core/device/system");
 const Timer = require("sf-core/timer");
-const FingerPrintLib = require("lib/util/fingerprint");
+const FingerPrintLib = require("sf-extension-utils/fingerprint");
 const Data = require("sf-core/data");
-const rau = require("lib/util/rau");
-const Application = require("sf-core/application");
 const AlertUtil = require("lib/util/alert");
+const rau = require("sf-extension-utils/rau");
 
 const PageDesign = require("../../ui/ui_pgLogin");
 
@@ -41,7 +40,7 @@ function onShow(parentOnShow, params) {
     this.signinButton.width = 250;
     this.signinButton.alpha = 1;
     this.loadingImageView.alpha = 0;
-    //FingerPrintLib.checkFingerPrint();
+    // FingerPrintLib.checkFingerPrint();
     rau.checkUpdate();
 }
 
