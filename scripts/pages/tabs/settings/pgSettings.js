@@ -5,6 +5,9 @@ const Application = require("sf-core/application");
 const Data = require("sf-core/data");
 const PageDesign = require("../../../ui/ui_pgSettings");
 const Router = require("sf-core/ui/router");
+const FingerPrintLib = require("sf-extension-utils/fingerprint");
+
+var savedStateFingerprint, savedStateApplication;
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -20,6 +23,22 @@ const Page_ = extend(PageDesign)(
 			this.txtNotification.text = lang["pgSettings.notifications"];
 			this.txtAbout.text = lang["pgSettings.about"] + " v." + Application.version ;
 			this.txtAboutDesc.text = lang["pgSettings.aboutDesc"];
+			
+			initFingerPrint.call(this);
+		};
+		
+		this.onShow = function() {
+			savedStateFingerprint = {
+			    isUserAuthenticated:        FingerPrintLib.isUserAuthenticated,
+			    isUserRejectedFingerprint:  FingerPrintLib.isUserRejectedFingerprint,
+			    isUserVerifiedFingerprint:  FingerPrintLib.isUserVerifiedFingerprint,
+			    isUserAllowedFingerprint:   FingerPrintLib.isUserAllowedFingerprint,
+			}
+			savedStateApplication = {
+			    userName: Data.getStringVariable("userName"),
+			    password: Data.getStringVariable("password"),
+			    isNotFirstLogin: Data.getBooleanVariable("isNotFirstLogin")
+			}
 		};
 
 		this.themeBlueLayout.onTouchEnded = function() {
@@ -72,5 +91,41 @@ function initCurrentTheme() {
 		this.themePurpleLayout.borderWidth = 1;
 	}
 }
+
+function initFingerPrint() {
+	if(FingerPrintLib.isFingerprintAvailable){
+		this.switchFinger.toggle = ((FingerPrintLib.isUserRejectedFingerprint === false) && (FingerPrintLib.isUserVerifiedFingerprint === true)) ;
+	} else {
+	    this.layoutFinger.height = Number.NaN;
+	    this.layoutFinger.maxHeight = 0;
+	    this.layoutFinger.flexGrow = 0;
+	    this.layoutFinger.visible = false;
+	    this.horizontalDividerFingerprint.height = Number.NaN;
+	    this.horizontalDividerFingerprint.flexGrow = 0;
+	    this.horizontalDividerFingerprint.maxHeight = 0;
+	    this.horizontalDividerFingerprint.visible = false;
+	}
+	this.switchFinger.onToggleChanged = function( ){
+	    FingerPrintLib.isUserRejectedFingerprint = (this.switchFinger.toggle === false);
+	    // this.switchFinger.toggle ? restoreAuthPreferences() : resetAuthPreferences();
+	}.bind(this);
+}
+
+// function restoreAuthPreferences(){
+//     FingerPrintLib.isUserAuthenticated       = savedStateFingerprint.isUserAuthenticated;
+//     FingerPrintLib.isUserRejectedFingerprint = savedStateFingerprint.isUserRejectedFingerprint;
+//     FingerPrintLib.isUserVerifiedFingerprint = savedStateFingerprint.isUserVerifiedFingerprint;
+//     FingerPrintLib.isUserAllowedFingerprint  = savedStateFingerprint.isUserAllowedFingerprint;
+    
+//     Data.setStringVariable("userName",savedStateApplication.userName);
+//     Data.setStringVariable("password",savedStateApplication.password);
+//     Data.setBooleanVariable("isNotFirstLogin",savedStateApplication.isNotFirstLogin);
+// }
+
+// function resetAuthPreferences(){
+//     FingerPrintLib.reset();
+// 	Data.removeVariable("userName");
+//     Data.removeVariable("password");
+// }
 
 module && (module.exports = Page_);

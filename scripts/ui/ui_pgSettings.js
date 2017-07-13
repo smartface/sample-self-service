@@ -87,6 +87,34 @@ const PgSettings_ = extend(Page)(
 		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgSettings");
 		flexlayout84.addChild(horizontaldivider_1);
 		
+		const layoutFingerStyle = getCombinedStyle(".flexLayout", {
+			height: 60,
+			width: null,
+			marginRight: 10,
+			marginLeft: 10,
+			flexDirection: FlexLayout.FlexDirection.ROW,
+			alignItems: FlexLayout.AlignItems.CENTER,
+			flexGrow: null,
+			alignSelf: FlexLayout.AlignSelf.STRETCH
+		});
+		var layoutFinger = new FlexLayout(layoutFingerStyle);
+		flexlayout84.addChild(layoutFinger);
+		this.layoutFinger = layoutFinger;
+
+		const horizontalDividerFingerprintStyle = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: null,
+			height: 1,
+			backgroundColor: Color.create(255, 255, 255, 255),
+			alpha: 1,
+			flexGrow: null,
+			positionType: FlexLayout.PositionType.RELATIVE
+		});
+		var horizontalDividerFingerprint = new HorizontalDivider(horizontalDividerFingerprintStyle, "pgSettings");
+		flexlayout84.addChild(horizontalDividerFingerprint);
+		this.horizontalDividerFingerprint = horizontalDividerFingerprint;
+
 		const txtAboutStyle = getCombinedStyle(".label", {
 			width: null,
 			height: 50,
@@ -135,6 +163,19 @@ const PgSettings_ = extend(Page)(
 		flexlayout84.addChild(signoutLayout);
 		this.signoutLayout = signoutLayout;
 
+		const txtNotificationStyle = getCombinedStyle(".label .label-list-item-title", {
+			text: "Notification",
+			width: null,
+			height: 70,
+			left: 5,
+			flexGrow: 1
+		});
+		var txtNotification = new Label(txtNotificationStyle);
+		if(txtNotificationStyle.scrollEnabled === false)
+			txtNotification.ios && (txtNotification.ios.scrollEnabled = false);
+		flexlayout85_1.addChild(txtNotification);
+		this.txtNotification = txtNotification;
+
 		const flexlayout731Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -161,18 +202,30 @@ const PgSettings_ = extend(Page)(
 		flexlayout85.addChild(txtTheme);
 		this.txtTheme = txtTheme;
 
-		const txtNotificationStyle = getCombinedStyle(".label .label-list-item-title", {
-			text: "Notification",
+		const txtFingerPrintStyle = getCombinedStyle(".label .label-list-item-title", {
+			text: "FingerPrint",
 			width: null,
 			height: 70,
 			left: 5,
 			flexGrow: 1
 		});
-		var txtNotification = new Label(txtNotificationStyle);
-		if(txtNotificationStyle.scrollEnabled === false)
-			txtNotification.ios && (txtNotification.ios.scrollEnabled = false);
-		flexlayout85_1.addChild(txtNotification);
-		this.txtNotification = txtNotification;
+		var txtFingerPrint = new Label(txtFingerPrintStyle);
+		if(txtFingerPrintStyle.scrollEnabled === false)
+			txtFingerPrint.ios && (txtFingerPrint.ios.scrollEnabled = false);
+		layoutFinger.addChild(txtFingerPrint);
+		this.txtFingerPrint = txtFingerPrint;
+
+		const switchFingerStyle = getCombinedStyle(".switch", {
+			width: null,
+			toggle: false,
+			minHeight: 31,
+			minWidth: 51
+		});
+		var switchFinger = new Switch(switchFingerStyle);
+		if(switchFingerStyle.toggleOffColor)
+			switchFinger.android && (switchFinger.android.toggleOffColor = switchFingerStyle.toggleOffColor);
+		layoutFinger.addChild(switchFinger);
+		this.switchFinger = switchFinger;
 
 		const label1089Style = getCombinedStyle(".label", {
 			width: null,
@@ -187,6 +240,17 @@ const PgSettings_ = extend(Page)(
 			label1089.ios && (label1089.ios.scrollEnabled = false);
 		signoutLayout.addChild(label1089);
 		
+		const switch1Style = getCombinedStyle(".switch", {
+			width: null,
+			toggle: false,
+			minHeight: 31,
+			minWidth: 51
+		});
+		var switch1 = new Switch(switch1Style);
+		if(switch1Style.toggleOffColor)
+			switch1.android && (switch1.android.toggleOffColor = switch1Style.toggleOffColor);
+		flexlayout85_1.addChild(switch1);
+		
 		const themeBlueLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: 35,
 			height: 35,
@@ -200,15 +264,6 @@ const PgSettings_ = extend(Page)(
 		flexlayout85.addChild(themeBlueLayout);
 		this.themeBlueLayout = themeBlueLayout;
 
-		const switch1Style = getCombinedStyle(".switch", {
-			width: null,
-			toggle: false
-		});
-		var switch1 = new Switch(switch1Style);
-		if(switch1Style.toggleOffColor)
-			switch1.android && (switch1.android.toggleOffColor = switch1Style.toggleOffColor);
-		flexlayout85_1.addChild(switch1);
-		
 		const themePurpleLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: 35,
 			height: 35,
@@ -222,21 +277,6 @@ const PgSettings_ = extend(Page)(
 		flexlayout85.addChild(themePurpleLayout);
 		this.themePurpleLayout = themePurpleLayout;
 
-		const flexlayout247_1Style = getCombinedStyle(".flexLayout", {
-			width: null,
-			height: null,
-			marginLeft: 4,
-			marginTop: 4,
-			marginRight: 4,
-			marginBottom: 4,
-			borderColor: Color.create(255, 69, 73, 90),
-			backgroundColor: Color.create(255, 124, 115, 192),
-			borderRadius: 6,
-			flexGrow: 1
-		});
-		var flexlayout247_1 = new FlexLayout(flexlayout247_1Style);
-		themePurpleLayout.addChild(flexlayout247_1);
-		
 		const flexlayout247Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -252,6 +292,21 @@ const PgSettings_ = extend(Page)(
 		var flexlayout247 = new FlexLayout(flexlayout247Style);
 		themeBlueLayout.addChild(flexlayout247);
 		
+		const flexlayout247_1Style = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: null,
+			marginLeft: 4,
+			marginTop: 4,
+			marginRight: 4,
+			marginBottom: 4,
+			borderColor: Color.create(255, 69, 73, 90),
+			backgroundColor: Color.create(255, 124, 115, 192),
+			borderRadius: 6,
+			flexGrow: 1
+		});
+		var flexlayout247_1 = new FlexLayout(flexlayout247_1Style);
+		themePurpleLayout.addChild(flexlayout247_1);
+		
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			flexlayout84: flexlayout84
@@ -263,6 +318,8 @@ const PgSettings_ = extend(Page)(
 			horizontalDivider: horizontalDivider,
 			flexlayout85_1: flexlayout85_1,
 			horizontaldivider_1: horizontaldivider_1,
+			layoutFinger: layoutFinger,
+			horizontalDividerFingerprint: horizontalDividerFingerprint,
 			txtAbout: txtAbout,
 			txtAboutDesc: txtAboutDesc,
 			signoutLayout: signoutLayout
@@ -279,6 +336,12 @@ const PgSettings_ = extend(Page)(
 		flexlayout85_1.children = Object.assign({}, {
 			txtNotification: txtNotification,
 			switch1: switch1
+		});
+		
+		//assign the children of layoutFinger
+		layoutFinger.children = Object.assign({}, {
+			txtFingerPrint: txtFingerPrint,
+			switchFinger: switchFinger
 		});
 		
 		//assign the children of signoutLayout

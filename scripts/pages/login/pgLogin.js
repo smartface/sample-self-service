@@ -40,7 +40,7 @@ function onShow(parentOnShow, params) {
     this.signinButton.width = 250;
     this.signinButton.alpha = 1;
     this.loadingImageView.alpha = 0;
-    // FingerPrintLib.checkFingerPrint();
+
     rau.checkUpdate();
 }
 
