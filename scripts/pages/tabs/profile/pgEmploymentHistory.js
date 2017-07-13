@@ -40,7 +40,7 @@ function onShow(parentOnShow) {
                 this.listView.refreshData();
                 DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
             }.bind(this),
-            delay: 2000
+            delay: 1500
         });
         firstOnShow = false;
     }
