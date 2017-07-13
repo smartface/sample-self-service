@@ -25,8 +25,6 @@ const Page_ = extend(PageDesign)(
 		    this.usernameLayout.innerTextbox.text = "Anthony Bell";
 	        this.passwordLayout.innerTextbox.text = "123456";
 		}.bind(this);
-		
-		initTexts(this);
 	}
 );
 
@@ -40,7 +38,8 @@ function onShow(parentOnShow, params) {
     this.signinButton.width = 250;
     this.signinButton.alpha = 1;
     this.loadingImageView.alpha = 0;
-
+	
+	initTexts(this);
     rau.checkUpdate();
 }
 
