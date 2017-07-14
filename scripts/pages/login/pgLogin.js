@@ -149,16 +149,8 @@ function doLogin(page){
 	}
 	
     startLoading(page);
-	Timer.setTimeout({
-	    task: function() {
-            stopLoading();
-            Router.go("tabs"); 
-	    },
-	    delay: 2000
-	});
 }
 
-var loadingTimer = null;
 function startLoading(uiComponents){
     var imageView = uiComponents.loadingImageView;
 
@@ -193,17 +185,18 @@ function startLoading(uiComponents){
         }
         
         var counter = 0;
-        loadingTimer = Timer.setInterval({
+        var timer = Timer.setInterval({
             task: function(){
                 imageView.image = image.rotate(++counter*7);
+
+                if (counter > 100) {
+                	Timer.clearTimer(timer);
+            		Router.go("tabs"); 
+                }
             },
             delay: 20
         });
     }
-}
-
-function stopLoading() {
-    Timer.clearTimer(loadingTimer);
 }
 
 module && (module.exports = Page_);
