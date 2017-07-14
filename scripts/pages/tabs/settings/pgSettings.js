@@ -6,6 +6,7 @@ const Data = require("sf-core/data");
 const PageDesign = require("../../../ui/ui_pgSettings");
 const Router = require("sf-core/ui/router");
 const FingerPrintLib = require("sf-extension-utils/fingerprint");
+const System = require('sf-core/device/system');
 
 var savedStateFingerprint, savedStateApplication;
 
@@ -54,7 +55,11 @@ const Page_ = extend(PageDesign)(
 			Data.setStringVariable("userName", null);
 			Data.setStringVariable("password", null);
 			
-			Router.goBack("login");
+			if (System.OS === "Android") {
+				Router.go("login/pgLogin"); // TODO: remove after AND-2900
+			} else {
+				Router.goBack("login");
+			}
 		}
 		
 		initCurrentTheme.call(this);
