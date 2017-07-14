@@ -8,8 +8,6 @@ const Router = require("sf-core/ui/router");
 const FingerPrintLib = require("sf-extension-utils/fingerprint");
 const System = require('sf-core/device/system');
 
-// var savedStateFingerprint, savedStateApplication;
-
 const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super, params) {
@@ -28,21 +26,8 @@ const Page_ = extend(PageDesign)(
 			initFingerPrint.call(this);
 		};
 		
-		this.onShow = function() {
-			// savedStateFingerprint = {
-			//     isUserAuthenticated:        FingerPrintLib.isUserAuthenticated,
-			//     isUserRejectedFingerprint:  FingerPrintLib.isUserRejectedFingerprint,
-			//     isUserVerifiedFingerprint:  FingerPrintLib.isUserVerifiedFingerprint,
-			//     isUserAllowedFingerprint:   FingerPrintLib.isUserAllowedFingerprint,
-			// }
-			// savedStateApplication = {
-			//     userName: Data.getStringVariable("userName"),
-			//     password: Data.getStringVariable("password"),
-			//     isNotFirstLogin: Data.getBooleanVariable("isNotFirstLogin")
-			// }
-		};
-
 		this.themeBlueLayout.onTouchEnded = function() {
+			log("remove me later");
 		    changeTheme("Style1");
 		}
 		
@@ -120,25 +105,7 @@ function initFingerPrint() {
 	}
 	this.switchFinger.onToggleChanged = function( ){
 	    FingerPrintLib.isUserRejectedFingerprint = (this.switchFinger.toggle === false);
-	    // this.switchFinger.toggle ? restoreAuthPreferences() : resetAuthPreferences();
 	}.bind(this);
 }
-
-// function restoreAuthPreferences(){
-//     FingerPrintLib.isUserAuthenticated       = savedStateFingerprint.isUserAuthenticated;
-//     FingerPrintLib.isUserRejectedFingerprint = savedStateFingerprint.isUserRejectedFingerprint;
-//     FingerPrintLib.isUserVerifiedFingerprint = savedStateFingerprint.isUserVerifiedFingerprint;
-//     FingerPrintLib.isUserAllowedFingerprint  = savedStateFingerprint.isUserAllowedFingerprint;
-    
-//     Data.setStringVariable("userName",savedStateApplication.userName);
-//     Data.setStringVariable("password",savedStateApplication.password);
-//     Data.setBooleanVariable("isNotFirstLogin",savedStateApplication.isNotFirstLogin);
-// }
-
-// function resetAuthPreferences(){
-//     FingerPrintLib.reset();
-// 	Data.removeVariable("userName");
-//     Data.removeVariable("password");
-// }
 
 module && (module.exports = Page_);
