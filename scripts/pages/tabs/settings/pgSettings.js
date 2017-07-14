@@ -8,7 +8,7 @@ const Router = require("sf-core/ui/router");
 const FingerPrintLib = require("sf-extension-utils/fingerprint");
 const System = require('sf-core/device/system');
 
-var savedStateFingerprint, savedStateApplication;
+// var savedStateFingerprint, savedStateApplication;
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -29,17 +29,17 @@ const Page_ = extend(PageDesign)(
 		};
 		
 		this.onShow = function() {
-			savedStateFingerprint = {
-			    isUserAuthenticated:        FingerPrintLib.isUserAuthenticated,
-			    isUserRejectedFingerprint:  FingerPrintLib.isUserRejectedFingerprint,
-			    isUserVerifiedFingerprint:  FingerPrintLib.isUserVerifiedFingerprint,
-			    isUserAllowedFingerprint:   FingerPrintLib.isUserAllowedFingerprint,
-			}
-			savedStateApplication = {
-			    userName: Data.getStringVariable("userName"),
-			    password: Data.getStringVariable("password"),
-			    isNotFirstLogin: Data.getBooleanVariable("isNotFirstLogin")
-			}
+			// savedStateFingerprint = {
+			//     isUserAuthenticated:        FingerPrintLib.isUserAuthenticated,
+			//     isUserRejectedFingerprint:  FingerPrintLib.isUserRejectedFingerprint,
+			//     isUserVerifiedFingerprint:  FingerPrintLib.isUserVerifiedFingerprint,
+			//     isUserAllowedFingerprint:   FingerPrintLib.isUserAllowedFingerprint,
+			// }
+			// savedStateApplication = {
+			//     userName: Data.getStringVariable("userName"),
+			//     password: Data.getStringVariable("password"),
+			//     isNotFirstLogin: Data.getBooleanVariable("isNotFirstLogin")
+			// }
 		};
 
 		this.themeBlueLayout.onTouchEnded = function() {
@@ -61,6 +61,14 @@ const Page_ = extend(PageDesign)(
 				Router.goBack("login");
 			}
 		}
+
+		this.layoutCheckUpdate.onTouchEnded = function() {
+			const rau = require("sf-extension-utils/rau");
+			rau.checkUpdate({
+				showProgressCheck: true,
+				showProgressErrorAlert: true
+			});
+		};
 		
 		initCurrentTheme.call(this);
 	}

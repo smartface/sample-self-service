@@ -133,6 +133,8 @@
 					"horizontaldivider_1",
 					"layoutFinger",
 					"horizontalDividerFingerprint",
+					"layoutCheckUpdate",
+					"horizontalDividerCheckUpdate",
 					"txtAbout",
 					"txtAboutDesc",
 					"signoutLayout"
@@ -937,6 +939,102 @@
 		},
 		{
 			"type": "FlexLayout",
+			"id": "fc9514f8",
+			"themeProps": {},
+			"userProps": {
+				"height": 60,
+				"width": null,
+				"marginRight": 10,
+				"marginLeft": 10,
+				"usePageVariable": true,
+				"flexProps": {
+					"flexDirection": "ROW",
+					"alignItems": "CENTER",
+					"flexGrow": null,
+					"alignSelf": "STRETCH"
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": 60,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"marginRight": 10,
+				"marginLeft": 10,
+				"usePageVariable": true,
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "CENTER",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"children": [
+					"txtCheckUpdate"
+				],
+				"parent": "flexlayout84",
+				"name": "layoutCheckUpdate"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "776b5e5b",
+			"themeProps": {
+				"Highlights": "ListItemTitle"
+			},
+			"userProps": {
+				"text": "Check Update",
+				"width": null,
+				"height": 70,
+				"left": 5,
+				"usePageVariable": true,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".label .label-list-item-title",
+			"props": {
+				"width": null,
+				"height": 70,
+				"touchEnabled": true,
+				"text": "Check Update",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#4A4A4A",
+				"textAlignment": "MIDLEFT",
+				"left": 5,
+				"usePageVariable": true,
+				"font": {
+					"size": 14,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"children": [],
+				"parent": "layoutCheckUpdate",
+				"name": "txtCheckUpdate"
+			}
+		},
+		{
+			"type": "FlexLayout",
 			"id": "0c00afaa",
 			"hiddenComponent": false,
 			"source": {
@@ -1096,7 +1194,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexLayout38"
+					"flexLayout35"
 				],
 				"parent": "flexlayout84",
 				"name": "horizontaldivider_1"
@@ -1150,7 +1248,7 @@
 				},
 				"children": [],
 				"parent": "horizontaldivider_1",
-				"name": "flexLayout38"
+				"name": "flexLayout35"
 			}
 		},
 		{
@@ -1205,7 +1303,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexLayout39"
+					"flexLayout36"
 				],
 				"parent": "signoutLayout",
 				"name": "flexlayout731"
@@ -1259,7 +1357,7 @@
 				},
 				"children": [],
 				"parent": "flexlayout731",
-				"name": "flexLayout39"
+				"name": "flexLayout36"
 			}
 		},
 		{
@@ -1300,6 +1398,7 @@
 				"borderWidth": 0,
 				"left": 0,
 				"top": 0,
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -1312,11 +1411,10 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexLayout40"
+					"flexLayout37"
 				],
 				"parent": "flexlayout84",
-				"name": "horizontalDividerFingerprint",
-				"usePageVariable": true
+				"name": "horizontalDividerFingerprint"
 			}
 		},
 		{
@@ -1367,7 +1465,115 @@
 				},
 				"children": [],
 				"parent": "horizontalDividerFingerprint",
-				"name": "flexLayout40"
+				"name": "flexLayout37"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "86c7ba02",
+			"hiddenComponent": false,
+			"source": {
+				"page": "__library__",
+				"id": "71efc172"
+			},
+			"themeProps": {},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": null,
+				"height": 1,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"alpha": 1,
+				"usePageVariable": true,
+				"flexProps": {
+					"flexGrow": null,
+					"positionType": "RELATIVE"
+				},
+				"flex": {
+					"flexGrow": 1,
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": 1,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": null
+				},
+				"children": [
+					"flexLayout37_1"
+				],
+				"parent": "flexlayout84",
+				"name": "horizontalDividerCheckUpdate"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "c67a0a4f",
+			"hiddenComponent": false,
+			"source": {
+				"page": "__library__"
+			},
+			"themeProps": {},
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"height": null,
+				"width": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"alpha": 0.4,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"layout": {},
+				"flex": {},
+				"font": {},
+				"defaults": {}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"height": null,
+				"width": null,
+				"touchEnabled": true,
+				"visible": true,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"alpha": 0.4,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"direction": "INHERIT",
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"justifyContent": "FLEX_START",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "COLUMN",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"children": [],
+				"parent": "horizontalDividerCheckUpdate",
+				"name": "flexLayout37_1"
 			}
 		}
 	]

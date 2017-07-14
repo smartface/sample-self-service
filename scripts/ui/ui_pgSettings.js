@@ -115,6 +115,34 @@ const PgSettings_ = extend(Page)(
 		flexlayout84.addChild(horizontalDividerFingerprint);
 		this.horizontalDividerFingerprint = horizontalDividerFingerprint;
 
+		const layoutCheckUpdateStyle = getCombinedStyle(".flexLayout", {
+			height: 60,
+			width: null,
+			marginRight: 10,
+			marginLeft: 10,
+			flexDirection: FlexLayout.FlexDirection.ROW,
+			alignItems: FlexLayout.AlignItems.CENTER,
+			flexGrow: null,
+			alignSelf: FlexLayout.AlignSelf.STRETCH
+		});
+		var layoutCheckUpdate = new FlexLayout(layoutCheckUpdateStyle);
+		flexlayout84.addChild(layoutCheckUpdate);
+		this.layoutCheckUpdate = layoutCheckUpdate;
+
+		const horizontalDividerCheckUpdateStyle = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: null,
+			height: 1,
+			backgroundColor: Color.create(255, 255, 255, 255),
+			alpha: 1,
+			flexGrow: null,
+			positionType: FlexLayout.PositionType.RELATIVE
+		});
+		var horizontalDividerCheckUpdate = new HorizontalDivider(horizontalDividerCheckUpdateStyle, "pgSettings");
+		flexlayout84.addChild(horizontalDividerCheckUpdate);
+		this.horizontalDividerCheckUpdate = horizontalDividerCheckUpdate;
+
 		const txtAboutStyle = getCombinedStyle(".label", {
 			width: null,
 			height: 50,
@@ -163,32 +191,6 @@ const PgSettings_ = extend(Page)(
 		flexlayout84.addChild(signoutLayout);
 		this.signoutLayout = signoutLayout;
 
-		const txtNotificationStyle = getCombinedStyle(".label .label-list-item-title", {
-			text: "Notification",
-			width: null,
-			height: 70,
-			left: 5,
-			flexGrow: 1
-		});
-		var txtNotification = new Label(txtNotificationStyle);
-		if(txtNotificationStyle.scrollEnabled === false)
-			txtNotification.ios && (txtNotification.ios.scrollEnabled = false);
-		flexlayout85_1.addChild(txtNotification);
-		this.txtNotification = txtNotification;
-
-		const flexlayout731Style = getCombinedStyle(".flexLayout", {
-			left: 0,
-			top: 0,
-			width: null,
-			height: 1,
-			backgroundColor: Color.create(255, 255, 255, 255),
-			alpha: 1,
-			flexGrow: null,
-			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var flexlayout731 = new HorizontalDivider(flexlayout731Style, "pgSettings");
-		signoutLayout.addChild(flexlayout731);
-		
 		const txtThemeStyle = getCombinedStyle(".label .label-list-item-title", {
 			text: "Theme",
 			width: null,
@@ -215,6 +217,45 @@ const PgSettings_ = extend(Page)(
 		layoutFinger.addChild(txtFingerPrint);
 		this.txtFingerPrint = txtFingerPrint;
 
+		const txtNotificationStyle = getCombinedStyle(".label .label-list-item-title", {
+			text: "Notification",
+			width: null,
+			height: 70,
+			left: 5,
+			flexGrow: 1
+		});
+		var txtNotification = new Label(txtNotificationStyle);
+		if(txtNotificationStyle.scrollEnabled === false)
+			txtNotification.ios && (txtNotification.ios.scrollEnabled = false);
+		flexlayout85_1.addChild(txtNotification);
+		this.txtNotification = txtNotification;
+
+		const flexlayout731Style = getCombinedStyle(".flexLayout", {
+			left: 0,
+			top: 0,
+			width: null,
+			height: 1,
+			backgroundColor: Color.create(255, 255, 255, 255),
+			alpha: 1,
+			flexGrow: null,
+			positionType: FlexLayout.PositionType.RELATIVE
+		});
+		var flexlayout731 = new HorizontalDivider(flexlayout731Style, "pgSettings");
+		signoutLayout.addChild(flexlayout731);
+		
+		const txtCheckUpdateStyle = getCombinedStyle(".label .label-list-item-title", {
+			text: "Check Update",
+			width: null,
+			height: 70,
+			left: 5,
+			flexGrow: 1
+		});
+		var txtCheckUpdate = new Label(txtCheckUpdateStyle);
+		if(txtCheckUpdateStyle.scrollEnabled === false)
+			txtCheckUpdate.ios && (txtCheckUpdate.ios.scrollEnabled = false);
+		layoutCheckUpdate.addChild(txtCheckUpdate);
+		this.txtCheckUpdate = txtCheckUpdate;
+
 		const switchFingerStyle = getCombinedStyle(".switch", {
 			width: null,
 			toggle: false,
@@ -227,19 +268,6 @@ const PgSettings_ = extend(Page)(
 		layoutFinger.addChild(switchFinger);
 		this.switchFinger = switchFinger;
 
-		const label1089Style = getCombinedStyle(".label", {
-			width: null,
-			height: null,
-			text: "Sign out",
-			textAlignment: TextAlignment.MIDCENTER,
-			textColor: Color.create(255, 255, 50, 75),
-			flexGrow: 1
-		});
-		var label1089 = new Label(label1089Style);
-		if(label1089Style.scrollEnabled === false)
-			label1089.ios && (label1089.ios.scrollEnabled = false);
-		signoutLayout.addChild(label1089);
-		
 		const switch1Style = getCombinedStyle(".switch", {
 			width: null,
 			toggle: false,
@@ -264,6 +292,19 @@ const PgSettings_ = extend(Page)(
 		flexlayout85.addChild(themeBlueLayout);
 		this.themeBlueLayout = themeBlueLayout;
 
+		const label1089Style = getCombinedStyle(".label", {
+			width: null,
+			height: null,
+			text: "Sign out",
+			textAlignment: TextAlignment.MIDCENTER,
+			textColor: Color.create(255, 255, 50, 75),
+			flexGrow: 1
+		});
+		var label1089 = new Label(label1089Style);
+		if(label1089Style.scrollEnabled === false)
+			label1089.ios && (label1089.ios.scrollEnabled = false);
+		signoutLayout.addChild(label1089);
+		
 		const themePurpleLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: 35,
 			height: 35,
@@ -277,21 +318,6 @@ const PgSettings_ = extend(Page)(
 		flexlayout85.addChild(themePurpleLayout);
 		this.themePurpleLayout = themePurpleLayout;
 
-		const flexlayout247Style = getCombinedStyle(".flexLayout", {
-			width: null,
-			height: null,
-			marginLeft: 4,
-			marginTop: 4,
-			marginRight: 4,
-			marginBottom: 4,
-			borderColor: Color.create(255, 69, 73, 90),
-			backgroundColor: Color.create(255, 69, 73, 90),
-			borderRadius: 6,
-			flexGrow: 1
-		});
-		var flexlayout247 = new FlexLayout(flexlayout247Style);
-		themeBlueLayout.addChild(flexlayout247);
-		
 		const flexlayout247_1Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -307,6 +333,21 @@ const PgSettings_ = extend(Page)(
 		var flexlayout247_1 = new FlexLayout(flexlayout247_1Style);
 		themePurpleLayout.addChild(flexlayout247_1);
 		
+		const flexlayout247Style = getCombinedStyle(".flexLayout", {
+			width: null,
+			height: null,
+			marginLeft: 4,
+			marginTop: 4,
+			marginRight: 4,
+			marginBottom: 4,
+			borderColor: Color.create(255, 69, 73, 90),
+			backgroundColor: Color.create(255, 69, 73, 90),
+			borderRadius: 6,
+			flexGrow: 1
+		});
+		var flexlayout247 = new FlexLayout(flexlayout247Style);
+		themeBlueLayout.addChild(flexlayout247);
+		
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			flexlayout84: flexlayout84
@@ -320,6 +361,8 @@ const PgSettings_ = extend(Page)(
 			horizontaldivider_1: horizontaldivider_1,
 			layoutFinger: layoutFinger,
 			horizontalDividerFingerprint: horizontalDividerFingerprint,
+			layoutCheckUpdate: layoutCheckUpdate,
+			horizontalDividerCheckUpdate: horizontalDividerCheckUpdate,
 			txtAbout: txtAbout,
 			txtAboutDesc: txtAboutDesc,
 			signoutLayout: signoutLayout
@@ -342,6 +385,11 @@ const PgSettings_ = extend(Page)(
 		layoutFinger.children = Object.assign({}, {
 			txtFingerPrint: txtFingerPrint,
 			switchFinger: switchFinger
+		});
+		
+		//assign the children of layoutCheckUpdate
+		layoutCheckUpdate.children = Object.assign({}, {
+			txtCheckUpdate: txtCheckUpdate
 		});
 		
 		//assign the children of signoutLayout
