@@ -102,7 +102,6 @@ function signin(page) {
 		        FingerPrintLib.validateFingerPrint(function(){
 	    	        doLogin(page);
 	    	    }, function(){
-	    	        AlertUtil.showAlert("Fingerprint failed to validate.");
 		            if (page.passwordLayout.innerTextbox.text === "") {
 	                    // Validate fingerPrint
 	            		AlertUtil.showAlert(lang["pgLogin.inputs.password.error"]);
@@ -118,7 +117,6 @@ function signin(page) {
 	        FingerPrintLib.registerFingerPrint(function(){
     	        doLogin(page);
     	    }, function(){
-    	        AlertUtil.showAlert("Fingerprint failed to register.");
 	            if (page.passwordLayout.innerTextbox.text === "") {
                     // Validate fingerPrint
             		AlertUtil.showAlert(lang["pgLogin.inputs.password.error"]);
@@ -206,7 +204,6 @@ function startLoading(uiComponents){
 
 function stopLoading() {
     Timer.clearTimer(loadingTimer);
-    //loadingTimer = null; ios throws exception here
 }
 
 module && (module.exports = Page_);
