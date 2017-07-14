@@ -206,7 +206,7 @@ function startLoading(uiComponents){
 
 function stopLoading() {
     Timer.clearTimer(loadingTimer);
-    loadingTimer = null;
+    //loadingTimer = null; ios throws exception here
 }
 
 module && (module.exports = Page_);
