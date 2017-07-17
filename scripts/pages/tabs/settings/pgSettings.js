@@ -18,6 +18,7 @@ const Page_ = extend(PageDesign)(
 		this.onLoad = function() {
 			if (typeof _superOnLoad === "function") _superOnLoad.call(this);
 			this.headerBar.title = lang["pgSettings.pageTitle"];
+			this.headerBar.leftItemEnabled = false;
 			this.txtTheme.text = lang["pgSettings.theme"];
 			this.txtNotification.text = lang["pgSettings.notifications"];
 			this.txtAbout.text = lang["pgSettings.about"] + " v." + Application.version ;
@@ -27,7 +28,6 @@ const Page_ = extend(PageDesign)(
 		};
 		
 		this.themeBlueLayout.onTouchEnded = function() {
-			log("remove me later");
 		    changeTheme("Style1");
 		}
 		
