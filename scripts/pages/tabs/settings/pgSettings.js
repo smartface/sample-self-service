@@ -7,6 +7,7 @@ const PageDesign = require("../../../ui/ui_pgSettings");
 const Router = require("sf-core/ui/router");
 const FingerPrintLib = require("sf-extension-utils/fingerprint");
 const System = require('sf-core/device/system');
+const rau = require("sf-extension-utils/rau");
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -15,6 +16,7 @@ const Page_ = extend(PageDesign)(
 		_super(this, params); 
 
 		var _superOnLoad = this.onLoad;
+		var _superOnShow = this.onShow;
 		this.onLoad = function() {
 			if (typeof _superOnLoad === "function") _superOnLoad.call(this);
 			this.headerBar.title = lang["pgSettings.pageTitle"];
@@ -23,8 +25,15 @@ const Page_ = extend(PageDesign)(
 			this.txtNotification.text = lang["pgSettings.notifications"];
 			this.txtAbout.text = lang["pgSettings.about"] + " v." + Application.version ;
 			this.txtAboutDesc.text = lang["pgSettings.aboutDesc"];
-			
+			this.txtNewVersion.visible = false;
+
 			initFingerPrint.call(this);
+		};
+		
+		this.onShow = function() {
+			if (typeof _superOnShow === "function") _superOnShow.call(this);
+
+			initNewVersionButton.call(this);
 		};
 		
 		this.themeBlueLayout.onTouchEnded = function() {
@@ -47,14 +56,6 @@ const Page_ = extend(PageDesign)(
 			}
 		}
 
-		this.layoutCheckUpdate.onTouchEnded = function() {
-			const rau = require("sf-extension-utils/rau");
-			rau.checkUpdate({
-				showProgressCheck: true,
-				showProgressErrorAlert: true
-			});
-		};
-		
 		initCurrentTheme.call(this);
 	}
 );
@@ -106,6 +107,19 @@ function initFingerPrint() {
 	this.switchFinger.onToggleChanged = function( ){
 	    FingerPrintLib.isUserRejectedFingerprint = (this.switchFinger.toggle === false);
 	}.bind(this);
+}
+
+function initNewVersionButton() {
+	Application.checkUpdate(function(err, succ){
+		if (succ) {
+			this.txtNewVersion.visible = true;
+			this.txtNewVersion.onTouchEnded = function() {
+				rau.checkUpdate();
+			};
+		} else {
+			this.txtNewVersion.visible = false;
+		}
+	}.bind(this));
 }
 
 module && (module.exports = Page_);
