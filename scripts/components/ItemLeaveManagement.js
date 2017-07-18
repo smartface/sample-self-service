@@ -59,13 +59,14 @@ function invalidate(item) {
 	index !== -1 && functions[index].call(item);
 	
 	function setApproved() {
-		this.approveLabel.onTouchEnded = approveCallback.bind(item.request, item.updateCallback);
+		this.approveLabel.text = "Approved";
+		this.approveLabel.onTouchEnded = function() {};
 		this.editLabel.onTouchEnded = emptyCallback;
 		this.deleteLabel.onTouchEnded = deleteCallback.bind(item.request, function() {
 			MockService.deleteApprovedLeaveRequest(this);
 			item.updateCallback();
 		}.bind(item.request));
-		Object.assign(this.approveLabel, ApproveLabelActiveStyle);
+		Object.assign(this.approveLabel, getCombinedStyle(".label-leaveRequestListItem-approve-inactive"));
 		Object.assign(this.approveIcon, ApproveIconActiveStyle);
 		Object.assign(this.editLabel, EditLabelInactiveStyle);
 		Object.assign(this.editIcon, EditIconInactiveStyle);
