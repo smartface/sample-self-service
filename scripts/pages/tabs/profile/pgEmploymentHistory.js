@@ -67,6 +67,11 @@ function initListView(listView, data) {
         var item = listViewItem.findChildById(200);
         item.employment = data[index];
     };
+    
+    listView.onPullRefresh = function(){
+        listView.refreshData();
+        listView.stopRefresh();
+    };
 }
 
 module && (module.exports = Page_);
