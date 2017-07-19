@@ -17,6 +17,10 @@ const Page_ = extend(PageDesign)(
 		
 		initTexts.call(this);
 		initListView.call(this);
+		this.onShow = function() {
+			this.listView.itemCount = this.announcements.length;
+			this.listView.refreshData();
+		}.bind(this);
     }
 );
 
@@ -27,14 +31,13 @@ function initTexts() {
 function initListView() {
 	this.listView.rowHeight = 120;
 	this.listView.refreshEnabled = false;
-	
 	this.listView.onRowCreate = function() {
 		var listViewItem = new ListViewItem();
 		var item = new ItemAnnouncement();
 		item.id = 200;
 		listViewItem.addChild(item);
 		return listViewItem;
-	};
+	}.bind(this);
 	
 	this.listView.onRowBind = function(listViewItem, index) {
 		var item = listViewItem.findChildById(200);

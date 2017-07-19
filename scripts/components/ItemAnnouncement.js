@@ -20,17 +20,17 @@ const ItemAnnouncement = extend(ItemAnnouncementDesign)(
 			},
 			set: function(value) {
 				_announcement = value;
-				invalidate(this);
+				invalidate.call(this, value);
 			}
 		})
 	}
 );
 
-function invalidate(item) {
-	item.anMessage.text = item.announcement.message;
-	item.anTitle.text = item.announcement.title;
-	item.anImage.image = item.announcement.image;
-	item.anDate.text = item.announcement.date;
+function invalidate(announcement) {
+	this.anMessage.text = announcement.message;
+	this.anTitle.text = announcement.title;
+	this.anImage.image = announcement.image;
+	this.anDate.text = announcement.date;
 }
 
 module && (module.exports = ItemAnnouncement);
