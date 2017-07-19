@@ -23,7 +23,6 @@ const Page_ = extend(PageDesign)(
 		this.data = this.pendingList;
 		
 		initTexts.call(this);
-		initListView.call(this);
 		initTopTabBar.call(this);
     }
 );
@@ -39,6 +38,7 @@ function onShow(parentOnShow) {
                 this.approvedList = MockService.getApprovedLeaveApprovals();
 				this.data = this.pendingList;
                 
+                initListView.call(this);
                 this.listView.itemCount = this.data.length;
                 this.listView.refreshData();
                 DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
