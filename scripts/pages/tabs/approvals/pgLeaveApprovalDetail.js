@@ -8,14 +8,16 @@ const Page_ = extend(PageDesign)(
 	function(_super, params) {
 		// Initalizes super class for this page scope
 		_super(this, params);
-		this.onShow = onShow.bind(this, this.onShow);
+		this._superOnShow = this.onShow;
+		this.onShow = onShow.bind(this);
 		initTexts.call(this);
     }
 );
 
-function onShow(parentOnShow) {
-	if (typeof parentOnShow === "function") parentOnShow();
+function onShow(detail) {
+	if (typeof this._superOnShow === "function") this._superOnShow();
 	initHeaderBar.call(this);
+	detail && initDetail.call(this, detail);
 }
 
 function initTexts() {
@@ -25,6 +27,15 @@ function initTexts() {
 function initHeaderBar() {
 	this.headerBar.itemColor = Color.WHITE;
 	this.headerBar.title = lang["pgLeaveApprovalDetail.pageTitle"];
+}
+
+function initDetail(detail) {
+		this.name.text     = detail.name;
+		this.avatar.image  = detail.image;
+		this.position.text = detail.position;
+
+		this.btnApprove.visible = !detail.isApproved;
+		this.btnReject.visible  = !detail.isApproved;
 }
 
 module && (module.exports = Page_);

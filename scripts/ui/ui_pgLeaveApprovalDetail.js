@@ -41,8 +41,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: null,
 			alignItems: FlexLayout.AlignItems.STRETCH
-		});
-		var mainContainer = new FlexLayout(mainContainerStyle);
+		});  
+		var mainContainer = new FlexLayout(mainContainerStyle);  
 		this.layout.addChild(mainContainer);
 		this.mainContainer = mainContainer;
 
@@ -54,8 +54,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			paddingBottom: 10,
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var userInformation = new FlexLayout(userInformationStyle);
+		});  
+		var userInformation = new FlexLayout(userInformationStyle);  
 		mainContainer.addChild(userInformation);
 		
 		const flexlayout1104Style = getCombinedStyle(".flexLayout", {
@@ -66,8 +66,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			marginRight: null,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var flexlayout1104 = new FlexLayout(flexlayout1104Style);
+		});  
+		var flexlayout1104 = new FlexLayout(flexlayout1104Style);  
 		mainContainer.addChild(flexlayout1104);
 		
 		const descriptionLayoutStyle = getCombinedStyle(".flexLayout", {
@@ -78,8 +78,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			paddingRight: 10,
 			paddingTop: 10,
 			paddingBottom: 10
-		});
-		var descriptionLayout = new FlexLayout(descriptionLayoutStyle);
+		});  
+		var descriptionLayout = new FlexLayout(descriptionLayoutStyle);  
 		mainContainer.addChild(descriptionLayout);
 		
 		const buttonsLayoutStyle = getCombinedStyle(".flexLayout", {
@@ -88,8 +88,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			marginTop: 10,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexDirection: FlexLayout.FlexDirection.ROW
-		});
-		var buttonsLayout = new FlexLayout(buttonsLayoutStyle);
+		});  
+		var buttonsLayout = new FlexLayout(buttonsLayoutStyle);  
 		mainContainer.addChild(buttonsLayout);
 		
 		const avatarStyle = getCombinedStyle(".imageView", {
@@ -99,28 +99,29 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			borderWidth: null,
 			image: Image.createFromFile("images://avatar1.png"),
 			imageFillType: ImageFillType.ASPECTFIT
-		});
-		var avatar = new ImageView(avatarStyle);
+		});  
+		var avatar = new ImageView(avatarStyle);  
 		userInformation.addChild(avatar);
 		this.avatar = avatar;
 
-		const rejectStyle = getCombinedStyle(".button", {
+		const btnRejectStyle = getCombinedStyle(".button", {
 			width: null,
 			height: null,
 			text: "REJECT",
 			backgroundColor: Color.create(255, 255, 50, 75),
 			flexGrow: 10
-		});
-		var reject = new Button(rejectStyle);
-		buttonsLayout.addChild(reject);
-		
+		});  
+		var btnReject = new Button(btnRejectStyle);  
+		buttonsLayout.addChild(btnReject);
+		this.btnReject = btnReject;
+
 		const flexlayout1105Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
 			flexGrow: 1,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var flexlayout1105 = new FlexLayout(flexlayout1105Style);
+		});  
+		var flexlayout1105 = new FlexLayout(flexlayout1105Style);  
 		flexlayout1104.addChild(flexlayout1105);
 		
 		const descriptionStyle = getCombinedStyle(".textBox", {
@@ -129,8 +130,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			text: "",
 			flexGrow: 1,
 			font: Font.create("Lato", "12", Font.NORMAL)
-		});
-		var description = new TextBox(descriptionStyle);
+		});  
+		var description = new TextBox(descriptionStyle);  
 		if(descriptionStyle.hintTextColor)
 			description.android && (description.android.hintTextColor = descriptionStyle.hintTextColor);
 		if(descriptionStyle.elevation)
@@ -151,8 +152,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			height: null,
 			flexGrow: 1,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var flexlayout1106 = new FlexLayout(flexlayout1106Style);
+		});  
+		var flexlayout1106 = new FlexLayout(flexlayout1106Style);  
 		flexlayout1104.addChild(flexlayout1106);
 		
 		const flexlayout3Style = getCombinedStyle(".flexLayout", {
@@ -160,8 +161,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			height: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: 1
-		});
-		var flexlayout3 = new FlexLayout(flexlayout3Style);
+		});  
+		var flexlayout3 = new FlexLayout(flexlayout3Style);  
 		buttonsLayout.addChild(flexlayout3);
 		
 		const flexlayout1103Style = getCombinedStyle(".flexLayout", {
@@ -169,8 +170,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			width: null,
 			marginLeft: 10,
 			flexGrow: 2
-		});
-		var flexlayout1103 = new FlexLayout(flexlayout1103Style);
+		});  
+		var flexlayout1103 = new FlexLayout(flexlayout1103Style);  
 		userInformation.addChild(flexlayout1103);
 		
 		const flexlayout408Style = getCombinedStyle(".flexLayout", {
@@ -179,8 +180,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			flexGrow: 1,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var flexlayout408 = new FlexLayout(flexlayout408Style);
+		});  
+		var flexlayout408 = new FlexLayout(flexlayout408Style);  
 		userInformation.addChild(flexlayout408);
 		
 		const imageview171Style = getCombinedStyle(".imageView", {
@@ -191,20 +192,21 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			imageFillType: ImageFillType.ASPECTFIT,
 			positionType: FlexLayout.PositionType.ABSOLUTE,
 			alignSelf: FlexLayout.AlignSelf.CENTER
-		});
-		var imageview171 = new ImageView(imageview171Style);
+		});  
+		var imageview171 = new ImageView(imageview171Style);  
 		flexlayout1104.addChild(imageview171);
 		
-		const approveStyle = getCombinedStyle(".button", {
+		const btnApproveStyle = getCombinedStyle(".button", {
 			width: null,
 			height: null,
 			text: "APPROVE",
 			backgroundColor: Color.create(255, 62, 208, 151),
 			flexGrow: 10
-		});
-		var approve = new Button(approveStyle);
-		buttonsLayout.addChild(approve);
-		
+		});  
+		var btnApprove = new Button(btnApproveStyle);  
+		buttonsLayout.addChild(btnApprove);
+		this.btnApprove = btnApprove;
+
 		const imageview66Style = getCombinedStyle(".imageView", {
 			width: null,
 			height: 20,
@@ -212,8 +214,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			image: Image.createFromFile("images://icon_sick_leave.png"),
 			flexGrow: null,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var imageview66 = new ImageView(imageview66Style);
+		});  
+		var imageview66 = new ImageView(imageview66Style);  
 		flexlayout408.addChild(imageview66);
 		
 		const flexlayout1108Style = getCombinedStyle(".flexLayout", {
@@ -221,8 +223,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			height: null,
 			flexGrow: 1,
 			flexDirection: FlexLayout.FlexDirection.ROW
-		});
-		var flexlayout1108 = new FlexLayout(flexlayout1108Style);
+		});  
+		var flexlayout1108 = new FlexLayout(flexlayout1108Style);  
 		flexlayout1105.addChild(flexlayout1108);
 		
 		const nameStyle = getCombinedStyle(".label", {
@@ -232,8 +234,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			textColor: Color.create(255, 74, 74, 74),
 			flexGrow: 1,
 			font: Font.create("Arial", 18, Font.NORMAL)
-		});
-		var name = new Label(nameStyle);
+		});  
+		var name = new Label(nameStyle);  
 		if(nameStyle.scrollEnabled === false)
 			name.ios && (name.ios.scrollEnabled = false);
 		flexlayout1103.addChild(name);
@@ -249,8 +251,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			marginBottom: 5,
 			flexGrow: 1,
 			flexDirection: FlexLayout.FlexDirection.ROW
-		});
-		var flexlayout1 = new FlexLayout(flexlayout1Style);
+		});  
+		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		flexlayout1106.addChild(flexlayout1);
 		
 		const flexlayout1108_1Style = getCombinedStyle(".flexLayout", {
@@ -258,8 +260,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			height: null,
 			flexGrow: 1,
 			flexDirection: FlexLayout.FlexDirection.ROW
-		});
-		var flexlayout1108_1 = new FlexLayout(flexlayout1108_1Style);
+		});  
+		var flexlayout1108_1 = new FlexLayout(flexlayout1108_1Style);  
 		flexlayout1105.addChild(flexlayout1108_1);
 		
 		const label541Style = getCombinedStyle(".label .label-list-item-header", {
@@ -270,8 +272,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			flexGrow: null,
 			alignSelf: FlexLayout.AlignSelf.STRETCH,
 			font: Font.create("Arial", 12, Font.NORMAL)
-		});
-		var label541 = new Label(label541Style);
+		});  
+		var label541 = new Label(label541Style);  
 		if(label541Style.scrollEnabled === false)
 			label541.ios && (label541.ios.scrollEnabled = false);
 		flexlayout408.addChild(label541);
@@ -283,8 +285,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			textColor: Color.create(128, 74, 74, 74),
 			flexGrow: 1,
 			font: Font.create("Arial", 14, Font.NORMAL)
-		});
-		var position = new Label(positionStyle);
+		});  
+		var position = new Label(positionStyle);  
 		if(positionStyle.scrollEnabled === false)
 			position.ios && (position.ios.scrollEnabled = false);
 		flexlayout1103.addChild(position);
@@ -298,8 +300,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			backgroundColor: Color.create(255, 255, 255, 255),
 			positionType: FlexLayout.PositionType.ABSOLUTE,
 			alignSelf: FlexLayout.AlignSelf.CENTER
-		});
-		var imageview170 = new ImageView(imageview170Style);
+		});  
+		var imageview170 = new ImageView(imageview170Style);  
 		flexlayout1105.addChild(imageview170);
 		
 		const label1_1Style = getCombinedStyle(".label", {
@@ -313,8 +315,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			marginTop: 15,
 			flexGrow: 1,
 			font: Font.create("Arial", 18, Font.NORMAL)
-		});
-		var label1_1 = new Label(label1_1Style);
+		});  
+		var label1_1 = new Label(label1_1Style);  
 		if(label1_1Style.scrollEnabled === false)
 			label1_1.ios && (label1_1.ios.scrollEnabled = false);
 		flexlayout1108_1.addChild(label1_1);
@@ -324,8 +326,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			height: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: 1
-		});
-		var flexlayout2 = new FlexLayout(flexlayout2Style);
+		});  
+		var flexlayout2 = new FlexLayout(flexlayout2Style);  
 		flexlayout1.addChild(flexlayout2);
 		
 		const flexlayout1111Style = getCombinedStyle(".flexLayout", {
@@ -336,8 +338,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			paddingBottom: 5,
 			paddingLeft: 30,
 			flexGrow: 1
-		});
-		var flexlayout1111 = new FlexLayout(flexlayout1111Style);
+		});  
+		var flexlayout1111 = new FlexLayout(flexlayout1111Style);  
 		flexlayout1108.addChild(flexlayout1111);
 		
 		const flexlayout1115Style = getCombinedStyle(".flexLayout", {
@@ -345,8 +347,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			height: null,
 			backgroundColor: Color.create(255, 151, 151, 151),
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var flexlayout1115 = new FlexLayout(flexlayout1115Style);
+		});  
+		var flexlayout1115 = new FlexLayout(flexlayout1115Style);  
 		flexlayout1108.addChild(flexlayout1115);
 		
 		const flexlayout1114Style = getCombinedStyle(".flexLayout", {
@@ -354,8 +356,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			height: null,
 			backgroundColor: Color.create(255, 151, 151, 151),
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var flexlayout1114 = new FlexLayout(flexlayout1114Style);
+		});  
+		var flexlayout1114 = new FlexLayout(flexlayout1114Style);  
 		flexlayout1108_1.addChild(flexlayout1114);
 		
 		const flexlayout2_1Style = getCombinedStyle(".flexLayout", {
@@ -363,8 +365,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			height: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: 1
-		});
-		var flexlayout2_1 = new FlexLayout(flexlayout2_1Style);
+		});  
+		var flexlayout2_1 = new FlexLayout(flexlayout2_1Style);  
 		flexlayout1.addChild(flexlayout2_1);
 		
 		const label1Style = getCombinedStyle(".label", {
@@ -377,8 +379,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			marginTop: 15,
 			flexGrow: 1,
 			font: Font.create("Arial", 18, Font.NORMAL)
-		});
-		var label1 = new Label(label1Style);
+		});  
+		var label1 = new Label(label1Style);  
 		if(label1Style.scrollEnabled === false)
 			label1.ios && (label1.ios.scrollEnabled = false);
 		flexlayout1108_1.addChild(label1);
@@ -391,8 +393,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			paddingBottom: 5,
 			paddingLeft: 5,
 			flexGrow: 1
-		});
-		var flexlayout1111_2 = new FlexLayout(flexlayout1111_2Style);
+		});  
+		var flexlayout1111_2 = new FlexLayout(flexlayout1111_2Style);  
 		flexlayout1108.addChild(flexlayout1111_2);
 		
 		const flexlayout2_1_1Style = getCombinedStyle(".flexLayout", {
@@ -400,8 +402,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			height: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: 1
-		});
-		var flexlayout2_1_1 = new FlexLayout(flexlayout2_1_1Style);
+		});  
+		var flexlayout2_1_1 = new FlexLayout(flexlayout2_1_1Style);  
 		flexlayout1.addChild(flexlayout2_1_1);
 		
 		const label2_3Style = getCombinedStyle(".label", {
@@ -413,8 +415,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			text: "5",
 			flexGrow: 2,
 			font: Font.create("Arial", 24, Font.NORMAL)
-		});
-		var label2_3 = new Label(label2_3Style);
+		});  
+		var label2_3 = new Label(label2_3Style);  
 		if(label2_3Style.scrollEnabled === false)
 			label2_3.ios && (label2_3.ios.scrollEnabled = false);
 		flexlayout2_1.addChild(label2_3);
@@ -428,8 +430,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			text: "14",
 			flexGrow: 2,
 			font: Font.create("Arial", 24, Font.NORMAL)
-		});
-		var label2_3_1 = new Label(label2_3_1Style);
+		});  
+		var label2_3_1 = new Label(label2_3_1Style);  
 		if(label2_3_1Style.scrollEnabled === false)
 			label2_3_1.ios && (label2_3_1.ios.scrollEnabled = false);
 		flexlayout2_1_1.addChild(label2_3_1);
@@ -443,8 +445,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			text: "19",
 			flexGrow: 2,
 			font: Font.create("Arial", 24, Font.NORMAL)
-		});
-		var label2 = new Label(label2Style);
+		});  
+		var label2 = new Label(label2Style);  
 		if(label2Style.scrollEnabled === false)
 			label2.ios && (label2.ios.scrollEnabled = false);
 		flexlayout2.addChild(label2);
@@ -456,8 +458,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			text: "12:30",
 			textColor: Color.create(255, 74, 74, 74),
 			flexGrow: 1
-		});
-		var label1572_2 = new Label(label1572_2Style);
+		});  
+		var label1572_2 = new Label(label1572_2Style);  
 		if(label1572_2Style.scrollEnabled === false)
 			label1572_2.ios && (label1572_2.ios.scrollEnabled = false);
 		flexlayout1111_2.addChild(label1572_2);
@@ -469,8 +471,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			text: "9:30",
 			textColor: Color.create(255, 74, 74, 74),
 			flexGrow: 1
-		});
-		var label1572 = new Label(label1572Style);
+		});  
+		var label1572 = new Label(label1572Style);  
 		if(label1572Style.scrollEnabled === false)
 			label1572.ios && (label1572.ios.scrollEnabled = false);
 		flexlayout1111.addChild(label1572);
@@ -484,8 +486,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			text: "Days",
 			flexGrow: 1,
 			font: Font.create("Arial", 12, Font.NORMAL)
-		});
-		var label2_1 = new Label(label2_1Style);
+		});  
+		var label2_1 = new Label(label2_1Style);  
 		if(label2_1Style.scrollEnabled === false)
 			label2_1.ios && (label2_1.ios.scrollEnabled = false);
 		flexlayout2.addChild(label2_1);
@@ -499,8 +501,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			text: "Days",
 			flexGrow: 1,
 			font: Font.create("Arial", 12, Font.NORMAL)
-		});
-		var label2_1_1_1 = new Label(label2_1_1_1Style);
+		});  
+		var label2_1_1_1 = new Label(label2_1_1_1Style);  
 		if(label2_1_1_1Style.scrollEnabled === false)
 			label2_1_1_1.ios && (label2_1_1_1.ios.scrollEnabled = false);
 		flexlayout2_1_1.addChild(label2_1_1_1);
@@ -514,8 +516,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			text: "Days",
 			flexGrow: 1,
 			font: Font.create("Arial", 12, Font.NORMAL)
-		});
-		var label2_1_1 = new Label(label2_1_1Style);
+		});  
+		var label2_1_1 = new Label(label2_1_1Style);  
 		if(label2_1_1Style.scrollEnabled === false)
 			label2_1_1.ios && (label2_1_1.ios.scrollEnabled = false);
 		flexlayout2_1.addChild(label2_1_1);
@@ -528,8 +530,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			textColor: Color.create(128, 74, 74, 74),
 			flexGrow: 1,
 			font: Font.create("Arial", 14, Font.NORMAL)
-		});
-		var label1572_1_1 = new Label(label1572_1_1Style);
+		});  
+		var label1572_1_1 = new Label(label1572_1_1Style);  
 		if(label1572_1_1Style.scrollEnabled === false)
 			label1572_1_1.ios && (label1572_1_1.ios.scrollEnabled = false);
 		flexlayout1111_2.addChild(label1572_1_1);
@@ -542,8 +544,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			textColor: Color.create(128, 74, 74, 74),
 			flexGrow: 1,
 			font: Font.create("Arial", 14, Font.NORMAL)
-		});
-		var label1572_1 = new Label(label1572_1Style);
+		});  
+		var label1572_1 = new Label(label1572_1Style);  
 		if(label1572_1Style.scrollEnabled === false)
 			label1572_1.ios && (label1572_1.ios.scrollEnabled = false);
 		flexlayout1111.addChild(label1572_1);
@@ -557,8 +559,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			text: "REQUESTED",
 			flexGrow: 1,
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var label2_2_1 = new Label(label2_2_1Style);
+		});  
+		var label2_2_1 = new Label(label2_2_1Style);  
 		if(label2_2_1Style.scrollEnabled === false)
 			label2_2_1.ios && (label2_2_1.ios.scrollEnabled = false);
 		flexlayout2_1.addChild(label2_2_1);
@@ -572,8 +574,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			text: "REMAINS",
 			flexGrow: 1,
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var label2_2_1_1 = new Label(label2_2_1_1Style);
+		});  
+		var label2_2_1_1 = new Label(label2_2_1_1Style);  
 		if(label2_2_1_1Style.scrollEnabled === false)
 			label2_2_1_1.ios && (label2_2_1_1.ios.scrollEnabled = false);
 		flexlayout2_1_1.addChild(label2_2_1_1);
@@ -587,8 +589,8 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			text: "TOTAL",
 			flexGrow: 1,
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var label2_2 = new Label(label2_2Style);
+		});  
+		var label2_2 = new Label(label2_2Style);  
 		if(label2_2Style.scrollEnabled === false)
 			label2_2.ios && (label2_2.ios.scrollEnabled = false);
 		flexlayout2.addChild(label2_2);
@@ -627,9 +629,9 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		
 		//assign the children of buttonsLayout
 		buttonsLayout.children = Object.assign({}, {
-			reject: reject,
+			btnReject: btnReject,
 			flexlayout3: flexlayout3,
-			approve: approve
+			btnApprove: btnApprove
 		});
 		
 		//assign the children of flexlayout1105
