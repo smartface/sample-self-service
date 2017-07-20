@@ -1015,7 +1015,7 @@
 				"children": [],
 				"name": "imageview170",
 				"parent": "flexlayout1105",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/yeniservice/ui-editor/img/icon_clock.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.4380088634366386"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/yeniservice/ui-editor/img/icon_clock.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.18307328741556317"
 			}
 		},
 		{
@@ -1059,7 +1059,7 @@
 				"children": [],
 				"name": "imageview171",
 				"parent": "flexlayout1104",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/yeniservice/ui-editor/img/icon_calendar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.7711556317752803"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/yeniservice/ui-editor/img/icon_calendar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.31497386090133017"
 			}
 		},
 		{
@@ -2004,7 +2004,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"description"
+					"txtDescription",
+					"lblDescription"
 				],
 				"name": "descriptionLayout",
 				"parent": "mainContainer"
@@ -2090,6 +2091,7 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -2103,8 +2105,7 @@
 				},
 				"children": [],
 				"name": "btnReject",
-				"parent": "buttonsLayout",
-				"usePageVariable": true
+				"parent": "buttonsLayout"
 			}
 		},
 		{
@@ -2137,6 +2138,7 @@
 				"borderWidth": 0,
 				"textColor": "#FFFFFF",
 				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -2150,8 +2152,7 @@
 				},
 				"children": [],
 				"name": "btnApprove",
-				"parent": "buttonsLayout",
-				"usePageVariable": true
+				"parent": "buttonsLayout"
 			}
 		},
 		{
@@ -2289,7 +2290,7 @@
 				"name": "imageview66",
 				"parent": "flexlayout408",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/yeniservice/ui-editor/img/icon_sick_leave.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.14254673402144635"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/yeniservice/ui-editor/img/icon_sick_leave.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.7012561043879935"
 			}
 		},
 		{
@@ -2389,9 +2390,52 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "description",
+				"name": "txtDescription",
 				"parent": "descriptionLayout",
 				"children": []
+			}
+		},
+		{
+			"type": "Label",
+			"id": "58c829cc",
+			"themeProps": {},
+			"userProps": {
+				"usePageVariable": true,
+				"height": null,
+				"width": null,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"props": {
+				"name": "lblDescription",
+				"isReady": true,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"width": null,
+				"height": null,
+				"touchEnabled": true,
+				"text": "Label",
+				"visible": true,
+				"multiline": false,
+				"backgroundColor": "#FFFFFF",
+				"alpha": 1,
+				"borderColor": "rgba(0,0,0,1)",
+				"borderWidth": 0,
+				"textColor": "#4A4A4A",
+				"textAlignment": "MIDLEFT",
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Lato"
+				},
+				"parent": "descriptionLayout",
+				"children": [],
+				"usePageVariable": true
 			}
 		}
 	]

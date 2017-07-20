@@ -21,7 +21,8 @@ function onShow(detail) {
 }
 
 function initTexts() {
-	this.description.hint = lang["pgLeaveApprovalDetail.description"];
+	this.txtDescription.hint = lang["pgLeaveApprovalDetail.description"];
+	this.lblDescription.text = lang["pgLeaveApprovalDetail.description"];
 }
 
 function initHeaderBar() {
@@ -33,6 +34,9 @@ function initDetail(detail) {
 		this.name.text     = detail.name;
 		this.avatar.image  = detail.image;
 		this.position.text = detail.position;
+
+		this.txtDescription.flexGrow = (detail.isApproved)? 0 : 1;
+		this.lblDescription.flexGrow = (detail.isApproved)? 1 : 0;
 
 		this.btnApprove.visible = !detail.isApproved;
 		this.btnReject.visible  = !detail.isApproved;
