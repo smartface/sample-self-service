@@ -54,6 +54,9 @@ function initTexts(page) {
 	page.usernameLayout.textboxInfo.text = lang["pgLogin.inputs.username.info"];
 	page.usernameLayout.innerTextbox.text = Data.getBooleanVariable("isUserAuthenticated") ? Data.getStringVariable("userName") : "";
 	page.passwordLayout.textboxInfo.text = lang["pgLogin.inputs.password.info"];
+	
+	page.usernameLayout.innerTextbox.text = "";
+	page.passwordLayout.innerTextbox.text = "";
 }
 
 // Runs sign in animation and calls sign in service
