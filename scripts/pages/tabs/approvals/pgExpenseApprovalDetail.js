@@ -9,18 +9,19 @@ const Page_ = extend(PageDesign)(
 	function(_super, params) {
 		// Initalizes super class for this page scope
 		_super(this, params);
-		this.onShow = onShow.bind(this, this.onShow);
-		initTexts.call(this);
+		this._superOnShow = this.onShow;
+		this.onShow = onShow.bind(this);
 		wrapContentIntoScroll.call(this);
     }
 );
 
-function onShow(parentOnShow) {
-	if (typeof parentOnShow === "function") parentOnShow();
+function onShow(detail) {
+	if (typeof this._superOnShow === "function") this._superOnShow();
 	initHeaderBar.call(this);
+	initTexts.call(this, detail);
 }
 
-function initTexts() {
+function initTexts(detail) {
 	this.titleItem.title.text = lang["pgExpenseApprovalDetail.title"];
 	this.titleItem.value.text = "-";
 	this.typeItem.title.text = lang["pgExpenseApprovalDetail.type"];
@@ -35,6 +36,15 @@ function initTexts() {
 	this.approve.text = lang["pgExpenseApprovalDetail.approve"];
 	this.reject.text = lang["pgExpenseApprovalDetail.reject"];
 	this.note.text = "-";
+	
+	if (detail) {
+		this.approve.visible = !detail.isApproved;
+		this.reject.visible  = !detail.isApproved;
+		
+		this.avatar.image  = detail.image;
+		this.name.text     = detail.name;
+		this.position.text = detail.position;
+	}
 }
 
 function initHeaderBar() {

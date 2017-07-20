@@ -75,9 +75,9 @@ function initListView() {
         item.approval = this.data[index];
 	}.bind(this);
 	
-	this.listView.onRowSelected = function() {
-		Router.go("tabs/approvals/expenseApprovalDetail");
-	};
+	this.listView.onRowSelected = function(listviewItem, index) {
+		Router.go("tabs/approvals/expenseApprovalDetail", this.data[index]);
+	}.bind(this);
 }
 
 function initTopTabBar() {
