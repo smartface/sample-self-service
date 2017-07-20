@@ -69,7 +69,6 @@ function initListView(listView, data) {
     };
     
     listView.onPullRefresh = function(){
-        listView.refreshData();
         listView.stopRefresh();
     };
 }

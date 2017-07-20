@@ -63,6 +63,9 @@ function initListView(listView, data) {
         var itemPerformance = listviewItem.findChildById(200);
         itemPerformance.performanceReview = data[index];
     };
+    listView.onPullRefresh = function(){
+        listView.stopRefresh();
+    };
 }
 
 module && (module.exports = Page_);
