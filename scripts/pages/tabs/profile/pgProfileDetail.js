@@ -14,13 +14,18 @@ const Page_ = extend(PageDesign)(
 });
 
 function initTexts() {
+	this.email.title.text                    = lang["pgProfileDetail.email"];
+	this.company.title.text                  = lang["pgProfileDetail.company"];
+	this.workPhone.title.text                = lang["pgProfileDetail.workPhone"];
+	this.informationTitle.text               = lang["pgProfileDetail.information"];
+	this.mobilePhone.title.text              = lang["pgProfileDetail.mobilePhone"];
+	this.hierarchyController.hc_header.text  = lang["pgProfileDetail.organization"];
 	this.layoutHeaderBar.headerBarTitle.text = lang["pgProfileDetail.pageTitle"];
-	this.informationTitle.text = lang["pgProfileDetail.information"];
-	this.company.title.text = lang["pgProfileDetail.company"];
-	this.email.title.text = lang["pgProfileDetail.email"];
-	this.workPhone.title.text = lang["pgProfileDetail.workPhone"];
-	this.mobilePhone.title.text = lang["pgProfileDetail.mobilePhone"];
-	this.hierarchyController.hc_header.text = lang["pgProfileDetail.organization"];
+	
+	this.email.value.text                    = "anthony.bell@aacompany.com";
+	this.company.value.text                  = "AA Company";
+	this.workPhone.value.text                = "+902124342200";
+	this.mobilePhone.value.text              = "+905334342200";
 }
 
 function onLoad(superOnLoad) {
