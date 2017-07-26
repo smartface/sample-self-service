@@ -32,8 +32,8 @@ const PgDocumentDetail_ = extend(Page)(
 			height: null,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var mainLayout = new FlexLayout(mainLayoutStyle);
+		});  
+		var mainLayout = new FlexLayout(mainLayoutStyle);  
 		this.layout.addChild(mainLayout);
 		this.mainLayout = mainLayout;
 
@@ -42,16 +42,16 @@ const PgDocumentDetail_ = extend(Page)(
 			height: 100,
 			width: 100,
 			imageFillType: ImageFillType.ASPECTFIT
-		});
-		var imageview42 = new ImageView(imageview42Style);
+		});  
+		var imageview42 = new ImageView(imageview42Style);  
 		mainLayout.addChild(imageview42);
 		
 		const label322Style = getCombinedStyle(".label", {
 			textAlignment: TextAlignment.MIDCENTER,
 			text: "Please Upload Your Document",
 			textColor: Color.create(255, 155, 155, 155)
-		});
-		var label322 = new Label(label322Style);
+		});  
+		var label322 = new Label(label322Style);  
 		if(label322Style.scrollEnabled === false)
 			label322.ios && (label322.ios.scrollEnabled = false);
 		mainLayout.addChild(label322);

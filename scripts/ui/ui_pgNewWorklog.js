@@ -39,8 +39,8 @@ const PgNewWorklog_ = extend(Page)(
 			paddingLeft: 10,
 			paddingRight: 10,
 			paddingTop: 10
-		});
-		var flexlayout35 = new FlexLayout(flexlayout35Style);
+		});  
+		var flexlayout35 = new FlexLayout(flexlayout35Style);  
 		this.layout.addChild(flexlayout35);
 		
 		const flexlayout66Style = getCombinedStyle(".flexLayout", {
@@ -54,8 +54,8 @@ const PgNewWorklog_ = extend(Page)(
 			paddingBottom: 10,
 			marginBottom: 70,
 			flexGrow: 1
-		});
-		var flexlayout66 = new FlexLayout(flexlayout66Style);
+		});  
+		var flexlayout66 = new FlexLayout(flexlayout66Style);  
 		this.layout.addChild(flexlayout66);
 		
 		const button1Style = getCombinedStyle(".button", {
@@ -67,8 +67,8 @@ const PgNewWorklog_ = extend(Page)(
 			bottom: 0,
 			text: "SUBMIT",
 			positionType: FlexLayout.PositionType.ABSOLUTE
-		});
-		var button1 = new Button(button1Style);
+		});  
+		var button1 = new Button(button1Style);  
 		this.layout.addChild(button1);
 		
 		const label39Style = getCombinedStyle(".label .label-list-item-header", {
@@ -77,8 +77,8 @@ const PgNewWorklog_ = extend(Page)(
 			text: "WORK INFO",
 			width: 250,
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var label39 = new Label(label39Style);
+		});  
+		var label39 = new Label(label39Style);  
 		if(label39Style.scrollEnabled === false)
 			label39.ios && (label39.ios.scrollEnabled = false);
 		flexlayout35.addChild(label39);
@@ -89,8 +89,8 @@ const PgNewWorklog_ = extend(Page)(
 			marginBottom: 5,
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var flexlayout76 = new FlexLayout(flexlayout76Style);
+		});  
+		var flexlayout76 = new FlexLayout(flexlayout76Style);  
 		flexlayout66.addChild(flexlayout76);
 		
 		const textbox1Style = getCombinedStyle(".textBox", {
@@ -102,8 +102,8 @@ const PgNewWorklog_ = extend(Page)(
 			text: "Description",
 			textColor: Color.create(71, 0, 0, 0),
 			flexGrow: 1
-		});
-		var textbox1 = new TextBox(textbox1Style);
+		});  
+		var textbox1 = new TextBox(textbox1Style);  
 		if(textbox1Style.hintTextColor)
 			textbox1.android && (textbox1.android.hintTextColor = textbox1Style.hintTextColor);
 		if(textbox1Style.elevation)
@@ -126,8 +126,8 @@ const PgNewWorklog_ = extend(Page)(
 			marginTop: 10,
 			marginBottom: 10,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var pickerContainer = new PickerContainer(pickerContainerStyle, "pgNewWorklog");
+		}); 
+		var pickerContainer = new PickerContainer(pickerContainerStyle, "pgNewWorklog");  
 		flexlayout35.addChild(pickerContainer);
 		
 		const pickercontainer_1Style = getCombinedStyle(".flexLayout", {
@@ -137,16 +137,16 @@ const PgNewWorklog_ = extend(Page)(
 			height: 45,
 			marginBottom: 10,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var pickercontainer_1 = new PickerContainer(pickercontainer_1Style, "pgNewWorklog");
+		}); 
+		var pickercontainer_1 = new PickerContainer(pickercontainer_1Style, "pgNewWorklog");  
 		flexlayout35.addChild(pickercontainer_1);
 		
 		const flexlayout51Style = getCombinedStyle(".flexLayout", {
 			height: 50,
 			width: null,
 			flexDirection: FlexLayout.FlexDirection.ROW
-		});
-		var flexlayout51 = new FlexLayout(flexlayout51Style);
+		});  
+		var flexlayout51 = new FlexLayout(flexlayout51Style);  
 		flexlayout35.addChild(flexlayout51);
 		
 		const flexlayout52Style = getCombinedStyle(".flexLayout", {
@@ -156,8 +156,8 @@ const PgNewWorklog_ = extend(Page)(
 			height: 45,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: 1
-		});
-		var flexlayout52 = new PickerContainer(flexlayout52Style, "pgNewWorklog");
+		}); 
+		var flexlayout52 = new PickerContainer(flexlayout52Style, "pgNewWorklog");  
 		flexlayout51.addChild(flexlayout52);
 		
 		const label85Style = getCombinedStyle(".label .label-list-item-header", {
@@ -167,8 +167,8 @@ const PgNewWorklog_ = extend(Page)(
 			flexGrow: 1,
 			alignSelf: FlexLayout.AlignSelf.STRETCH,
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var label85 = new Label(label85Style);
+		});  
+		var label85 = new Label(label85Style);  
 		if(label85Style.scrollEnabled === false)
 			label85.ios && (label85.ios.scrollEnabled = false);
 		flexlayout76.addChild(label85);
@@ -178,8 +178,8 @@ const PgNewWorklog_ = extend(Page)(
 			height: 25,
 			image: Image.createFromFile("images://icon_microphone.png"),
 			imageFillType: ImageFillType.ASPECTFIT
-		});
-		var imageview17 = new ImageView(imageview17Style);
+		});  
+		var imageview17 = new ImageView(imageview17Style);  
 		flexlayout76.addChild(imageview17);
 		
 		const flexlayout52_1Style = getCombinedStyle(".flexLayout", {
@@ -190,8 +190,8 @@ const PgNewWorklog_ = extend(Page)(
 			marginLeft: 20,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: 1
-		});
-		var flexlayout52_1 = new PickerContainer(flexlayout52_1Style, "pgNewWorklog");
+		}); 
+		var flexlayout52_1 = new PickerContainer(flexlayout52_1Style, "pgNewWorklog");  
 		flexlayout51.addChild(flexlayout52_1);
 		
 		//assign the children to page 

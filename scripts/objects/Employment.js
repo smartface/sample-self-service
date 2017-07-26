@@ -1,10 +1,11 @@
-function Employment(){}
+function Employment() {
+    this.jobTitle = "";
+    this.payroll = "";
+    this.manager = "";
+    this.grade = "";
+    this.startDate = "";
+    this.endDate = "";
+}
 
-Employment.prototype.jobTitle = "";
-Employment.prototype.payroll = "";
-Employment.prototype.manager = "";
-Employment.prototype.grade = "";
-Employment.prototype.startDate = "";
-Employment.prototype.endDate = "";
 
 module.exports = Employment;

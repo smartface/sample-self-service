@@ -31,8 +31,8 @@ const PgMyCompany_ = extend(Page)(
 			width: null,
 			height: 60,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgMyCompany");
+		}); 
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgMyCompany");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
@@ -47,8 +47,8 @@ const PgMyCompany_ = extend(Page)(
 			flexGrow: 1,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var flexlayout109 = new FlexLayout(flexlayout109Style);
+		});  
+		var flexlayout109 = new FlexLayout(flexlayout109Style);  
 		this.layout.addChild(flexlayout109);
 		
 		const comingSoonStyle = getCombinedStyle(".imageView", {
@@ -57,8 +57,8 @@ const PgMyCompany_ = extend(Page)(
 			imageFillType: ImageFillType.ASPECTFIT,
 			height: 100,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var comingSoon = new ImageView(comingSoonStyle);
+		});  
+		var comingSoon = new ImageView(comingSoonStyle);  
 		flexlayout109.addChild(comingSoon);
 		this.comingSoon = comingSoon;
 

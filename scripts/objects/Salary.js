@@ -1,8 +1,9 @@
-function Salary(){}
+function Salary() {
+    this.basic = "";
+    this.proposalReason = "";
+    this.month = "";
+    this.year = "";
+}
 
-Salary.prototype.basic = "";
-Salary.prototype.proposalReason = "";
-Salary.prototype.month = "";
-Salary.prototype.year = "";
 
 module.exports = Salary;

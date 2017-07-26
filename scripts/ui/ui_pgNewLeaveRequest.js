@@ -7,11 +7,11 @@
 const extend = require('js-base/core/extend');
 const Page = require('sf-core/ui/page');
 const FlexLayout = require('sf-core/ui/flexlayout');
-const Button = require('sf-core/ui/button');
+const Color = require('sf-core/ui/color');
 const Label = require('sf-core/ui/label');
 const Font = require('sf-core/ui/font');
+const Button = require('sf-core/ui/button');
 const TextBox = require('sf-core/ui/textbox');
-const Color = require('sf-core/ui/color');
 
 const ItemSpeech = require("../components/ItemSpeech");
 const PickerContainer = require("../components/PickerContainer");
@@ -38,8 +38,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			paddingTop: 10,
 			paddingBottom: 10,
 			marginBottom: 10
-		});
-		var flexlayout1 = new FlexLayout(flexlayout1Style);
+		});  
+		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		this.layout.addChild(flexlayout1);
 		
 		const flexlayout66Style = getCombinedStyle(".flexLayout", {
@@ -51,25 +51,18 @@ const PgNewLeaveRequest_ = extend(Page)(
 			paddingRight: 15,
 			paddingTop: 10,
 			paddingBottom: 10
-		});
-		var flexlayout66 = new FlexLayout(flexlayout66Style);
+		});  
+		var flexlayout66 = new FlexLayout(flexlayout66Style);  
 		this.layout.addChild(flexlayout66);
 		
-		const button1Style = getCombinedStyle(".button", {
-			left: 0,
-			top: null,
+		const bottomContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
-			height: 60,
-			marginLeft: null,
-			marginRight: null,
-			marginBottom: null,
-			right: 0,
-			bottom: 0,
-			text: "REQUEST",
-			positionType: FlexLayout.PositionType.ABSOLUTE
-		});
-		var button1 = new Button(button1Style);
-		this.layout.addChild(button1);
+			height: null,
+			backgroundColor: Color.create(0, 255, 255, 255),
+			flexGrow: 1
+		});  
+		var bottomContainer = new FlexLayout(bottomContainerStyle);  
+		this.layout.addChild(bottomContainer);
 		
 		const informationTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
@@ -77,12 +70,24 @@ const PgNewLeaveRequest_ = extend(Page)(
 			width: 250,
 			marginLeft: 10,
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var informationTitle = new Label(informationTitleStyle);
+		});  
+		var informationTitle = new Label(informationTitleStyle);  
 		if(informationTitleStyle.scrollEnabled === false)
 			informationTitle.ios && (informationTitle.ios.scrollEnabled = false);
 		flexlayout1.addChild(informationTitle);
 		this.informationTitle = informationTitle;
+
+		const btnRequestStyle = getCombinedStyle(".button", {
+			text: "REQUEST",
+			width: null,
+			left: 0,
+			right: 0,
+			bottom: 0,
+			positionType: FlexLayout.PositionType.ABSOLUTE
+		});  
+		var btnRequest = new Button(btnRequestStyle);  
+		bottomContainer.addChild(btnRequest);
+		this.btnRequest = btnRequest;
 
 		const flexlayout76Style = getCombinedStyle(".flexLayout", {
 			height: 30,
@@ -90,8 +95,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			marginBottom: 5,
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var flexlayout76 = new FlexLayout(flexlayout76Style);
+		});  
+		var flexlayout76 = new FlexLayout(flexlayout76Style);  
 		flexlayout66.addChild(flexlayout76);
 		
 		const flexlayout2Style = getCombinedStyle(".flexLayout", {
@@ -99,8 +104,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			width: null,
 			flexDirection: FlexLayout.FlexDirection.COLUMN,
 			flexGrow: 1
-		});
-		var flexlayout2 = new FlexLayout(flexlayout2Style);
+		});  
+		var flexlayout2 = new FlexLayout(flexlayout2Style);  
 		flexlayout1.addChild(flexlayout2);
 		
 		const textbox1Style = getCombinedStyle(".textBox", {
@@ -112,8 +117,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			text: "Description",
 			textColor: Color.create(71, 0, 0, 0),
 			flexGrow: 1
-		});
-		var textbox1 = new TextBox(textbox1Style);
+		});  
+		var textbox1 = new TextBox(textbox1Style);  
 		if(textbox1Style.hintTextColor)
 			textbox1.android && (textbox1.android.hintTextColor = textbox1Style.hintTextColor);
 		if(textbox1Style.elevation)
@@ -135,8 +140,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			flexGrow: 1
-		});
-		var flexlayout3 = new FlexLayout(flexlayout3Style);
+		});  
+		var flexlayout3 = new FlexLayout(flexlayout3Style);  
 		flexlayout2.addChild(flexlayout3);
 		
 		const label85Style = getCombinedStyle(".label .label-list-item-header", {
@@ -146,8 +151,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			flexGrow: 1,
 			alignSelf: FlexLayout.AlignSelf.STRETCH,
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var label85 = new Label(label85Style);
+		});  
+		var label85 = new Label(label85Style);  
 		if(label85Style.scrollEnabled === false)
 			label85.ios && (label85.ios.scrollEnabled = false);
 		flexlayout76.addChild(label85);
@@ -158,8 +163,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			flexGrow: 1
-		});
-		var flexlayout3_1 = new FlexLayout(flexlayout3_1Style);
+		});  
+		var flexlayout3_1 = new FlexLayout(flexlayout3_1Style);  
 		flexlayout2.addChild(flexlayout3_1);
 		
 		const itemSpeechStyle = getCombinedStyle(".flexLayout", {
@@ -169,8 +174,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			width: 14,
 			height: 25,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var itemSpeech = new ItemSpeech(itemSpeechStyle, "pgNewLeaveRequest");
+		}); 
+		var itemSpeech = new ItemSpeech(itemSpeechStyle, "pgNewLeaveRequest");  
 		flexlayout76.addChild(itemSpeech);
 		this.itemSpeech = itemSpeech;
 
@@ -181,8 +186,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			height: 45,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: 1
-		});
-		var selectDatePicker = new PickerContainer(selectDatePickerStyle, "pgNewLeaveRequest");
+		}); 
+		var selectDatePicker = new PickerContainer(selectDatePickerStyle, "pgNewLeaveRequest");  
 		flexlayout3_1.addChild(selectDatePicker);
 		this.selectDatePicker = selectDatePicker;
 
@@ -193,8 +198,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			height: 45,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: 1
-		});
-		var leaveTypePicker = new PickerContainer(leaveTypePickerStyle, "pgNewLeaveRequest");
+		}); 
+		var leaveTypePicker = new PickerContainer(leaveTypePickerStyle, "pgNewLeaveRequest");  
 		flexlayout3.addChild(leaveTypePicker);
 		this.leaveTypePicker = leaveTypePicker;
 
@@ -206,8 +211,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			marginLeft: 20,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: 1
-		});
-		var timeTypePicker = new PickerContainer(timeTypePickerStyle, "pgNewLeaveRequest");
+		}); 
+		var timeTypePicker = new PickerContainer(timeTypePickerStyle, "pgNewLeaveRequest");  
 		flexlayout3.addChild(timeTypePicker);
 		this.timeTypePicker = timeTypePicker;
 
@@ -219,8 +224,8 @@ const PgNewLeaveRequest_ = extend(Page)(
 			marginLeft: 20,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: 1
-		});
-		var selectTimePicker = new PickerContainer(selectTimePickerStyle, "pgNewLeaveRequest");
+		}); 
+		var selectTimePicker = new PickerContainer(selectTimePickerStyle, "pgNewLeaveRequest");  
 		flexlayout3_1.addChild(selectTimePicker);
 		this.selectTimePicker = selectTimePicker;
 
@@ -228,7 +233,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		this.children = Object.assign({}, {
 			flexlayout1: flexlayout1,
 			flexlayout66: flexlayout66,
-			button1: button1
+			bottomContainer: bottomContainer
 		});
 		
 		//assign the children of flexlayout1
@@ -241,6 +246,11 @@ const PgNewLeaveRequest_ = extend(Page)(
 		flexlayout66.children = Object.assign({}, {
 			flexlayout76: flexlayout76,
 			textbox1: textbox1
+		});
+		
+		//assign the children of bottomContainer
+		bottomContainer.children = Object.assign({}, {
+			btnRequest: btnRequest
 		});
 		
 		//assign the children of flexlayout76

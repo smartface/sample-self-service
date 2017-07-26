@@ -31,8 +31,8 @@ const PgExpenseApprovals_ = extend(Page)(
 			width: null,
 			height: 92,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgExpenseApprovals");
+		}); 
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgExpenseApprovals");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
@@ -49,8 +49,8 @@ const PgExpenseApprovals_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			justifyContent: FlexLayout.JustifyContent.CENTER,
 			flexWrap: FlexLayout.FlexWrap.NOWRAP
-		});
-		var topTabBar = new TopTabBar(topTabBarStyle, "pgExpenseApprovals");
+		}); 
+		var topTabBar = new TopTabBar(topTabBarStyle, "pgExpenseApprovals");  
 		this.layout.addChild(topTabBar);
 		this.topTabBar = topTabBar;
 
@@ -60,8 +60,8 @@ const PgExpenseApprovals_ = extend(Page)(
 			marginLeft: 10,
 			marginRight: 10,
 			backgroundColor: Color.create(255, 151, 151, 151)
-		});
-		var flexlayout1102 = new FlexLayout(flexlayout1102Style);
+		});  
+		var flexlayout1102 = new FlexLayout(flexlayout1102Style);  
 		this.layout.addChild(flexlayout1102);
 		
 		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
@@ -74,8 +74,8 @@ const PgExpenseApprovals_ = extend(Page)(
 			flexGrow: 1,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var listViewContainer = new FlexLayout(listViewContainerStyle);
+		});  
+		var listViewContainer = new FlexLayout(listViewContainerStyle);  
 		this.layout.addChild(listViewContainer);
 		this.listViewContainer = listViewContainer;
 
@@ -85,8 +85,8 @@ const PgExpenseApprovals_ = extend(Page)(
 			itemCount: 0,
 			flexGrow: 1,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var listView = new ListView(listViewStyle);
+		});  
+		var listView = new ListView(listViewStyle);  
 		listView.onRowCreate = function(){ return new ListViewItem(); };
 		listViewContainer.addChild(listView);
 		this.listView = listView;

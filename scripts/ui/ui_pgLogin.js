@@ -38,8 +38,8 @@ const PgLogin_ = extend(Page)(
 			imageFillType: ImageFillType.STRETCH,
 			image: Image.createFromFile("images://background.png"),
 			positionType: FlexLayout.PositionType.ABSOLUTE
-		});
-		var imageview156 = new ImageView(imageview156Style);
+		});  
+		var imageview156 = new ImageView(imageview156Style);  
 		this.layout.addChild(imageview156);
 		
 		const appNameStyle = getCombinedStyle(".label .label-login.large .label-login", {
@@ -49,8 +49,8 @@ const PgLogin_ = extend(Page)(
 			height: null,
 			multiline: true,
 			flexGrow: 5
-		});
-		var appName = new Label(appNameStyle);
+		});  
+		var appName = new Label(appNameStyle);  
 		if(appNameStyle.scrollEnabled === false)
 			appName.ios && (appName.ios.scrollEnabled = false);
 		this.layout.addChild(appName);
@@ -63,8 +63,8 @@ const PgLogin_ = extend(Page)(
 			justifyContent: FlexLayout.JustifyContent.CENTER,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			flexGrow: 3
-		});
-		var inputLayout = new FlexLayout(inputLayoutStyle);
+		});  
+		var inputLayout = new FlexLayout(inputLayoutStyle);  
 		this.layout.addChild(inputLayout);
 		
 		const buttonLayoutStyle = getCombinedStyle(".flexLayout", {
@@ -74,8 +74,8 @@ const PgLogin_ = extend(Page)(
 			flexGrow: 5,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var buttonLayout = new FlexLayout(buttonLayoutStyle);
+		});  
+		var buttonLayout = new FlexLayout(buttonLayoutStyle);  
 		this.layout.addChild(buttonLayout);
 		this.buttonLayout = buttonLayout;
 
@@ -86,8 +86,8 @@ const PgLogin_ = extend(Page)(
 			right: 0,
 			imageFillType: ImageFillType.NORMAL,
 			positionType: FlexLayout.PositionType.ABSOLUTE
-		});
-		var loadingImageView = new ImageView(loadingImageViewStyle);
+		});  
+		var loadingImageView = new ImageView(loadingImageViewStyle);  
 		buttonLayout.addChild(loadingImageView);
 		this.loadingImageView = loadingImageView;
 
@@ -99,8 +99,8 @@ const PgLogin_ = extend(Page)(
 			backgroundColor: Color.create(0, 255, 255, 255),
 			marginBottom: 5,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var usernameLayout = new TextboxWithLine(usernameLayoutStyle, "pgLogin");
+		}); 
+		var usernameLayout = new TextboxWithLine(usernameLayoutStyle, "pgLogin");  
 		inputLayout.addChild(usernameLayout);
 		this.usernameLayout = usernameLayout;
 
@@ -112,8 +112,8 @@ const PgLogin_ = extend(Page)(
 			borderColor: Color.create(255, 233, 233, 233),
 			borderWidth: 1,
 			backgroundColor: Color.create(0, 23, 117, 208)
-		});
-		var signinButton = new Button(signinButtonStyle);
+		});  
+		var signinButton = new Button(signinButtonStyle);  
 		buttonLayout.addChild(signinButton);
 		this.signinButton = signinButton;
 
@@ -125,8 +125,8 @@ const PgLogin_ = extend(Page)(
 			backgroundColor: Color.create(0, 255, 255, 255),
 			marginTop: 5,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var passwordLayout = new TextboxWithLine(passwordLayoutStyle, "pgLogin");
+		}); 
+		var passwordLayout = new TextboxWithLine(passwordLayoutStyle, "pgLogin");  
 		inputLayout.addChild(passwordLayout);
 		this.passwordLayout = passwordLayout;
 

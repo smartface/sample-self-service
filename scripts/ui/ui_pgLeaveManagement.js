@@ -34,8 +34,8 @@ const PgLeaveManagement_ = extend(Page)(
 			width: null,
 			height: 102,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgLeaveManagement");
+		}); 
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgLeaveManagement");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
@@ -43,8 +43,8 @@ const PgLeaveManagement_ = extend(Page)(
 			width: null,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var flexlayout1 = new FlexLayout(flexlayout1Style);
+		});  
+		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		this.layout.addChild(flexlayout1);
 		
 		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
@@ -55,8 +55,8 @@ const PgLeaveManagement_ = extend(Page)(
 			marginRight: 10,
 			flexGrow: 1,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var listViewContainer = new FlexLayout(listViewContainerStyle);
+		});  
+		var listViewContainer = new FlexLayout(listViewContainerStyle);  
 		this.layout.addChild(listViewContainer);
 		this.listViewContainer = listViewContainer;
 
@@ -66,8 +66,8 @@ const PgLeaveManagement_ = extend(Page)(
 			backgroundColor: Color.create(0, 255, 255, 255),
 			itemCount: 0,
 			flexGrow: 1
-		});
-		var listView = new ListView(listViewStyle);
+		});  
+		var listView = new ListView(listViewStyle);  
 		listView.onRowCreate = function(){ return new ListViewItem(); };
 		listViewContainer.addChild(listView);
 		this.listView = listView;
@@ -80,8 +80,8 @@ const PgLeaveManagement_ = extend(Page)(
 			alignSelf: FlexLayout.AlignSelf.STRETCH,
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			alignItems: FlexLayout.AlignItems.STRETCH
-		});
-		var flexlayout30 = new FlexLayout(flexlayout30Style);
+		});  
+		var flexlayout30 = new FlexLayout(flexlayout30Style);  
 		flexlayout1.addChild(flexlayout30);
 		
 		const topTabBarStyle = getCombinedStyle(".flexLayout", {
@@ -97,8 +97,8 @@ const PgLeaveManagement_ = extend(Page)(
 			flexWrap: FlexLayout.FlexWrap.NOWRAP,
 			flexGrow: null,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var topTabBar = new TopTabBar(topTabBarStyle, "pgLeaveManagement");
+		}); 
+		var topTabBar = new TopTabBar(topTabBarStyle, "pgLeaveManagement");  
 		flexlayout1.addChild(topTabBar);
 		this.topTabBar = topTabBar;
 
@@ -107,8 +107,8 @@ const PgLeaveManagement_ = extend(Page)(
 			height: null,
 			imageFillType: ImageFillType.ASPECTFIT,
 			flexGrow: 1
-		});
-		var imageview11 = new ImageView(imageview11Style);
+		});  
+		var imageview11 = new ImageView(imageview11Style);  
 		flexlayout30.addChild(imageview11);
 		
 		const imageview11_1Style = getCombinedStyle(".imageView", {
@@ -117,8 +117,8 @@ const PgLeaveManagement_ = extend(Page)(
 			imageFillType: ImageFillType.ASPECTFIT,
 			image: Image.createFromFile("images://graph2.png"),
 			flexGrow: 1
-		});
-		var imageview11_1 = new ImageView(imageview11_1Style);
+		});  
+		var imageview11_1 = new ImageView(imageview11_1Style);  
 		flexlayout30.addChild(imageview11_1);
 		
 		const imageview11_1_1Style = getCombinedStyle(".imageView", {
@@ -128,8 +128,8 @@ const PgLeaveManagement_ = extend(Page)(
 			image: Image.createFromFile("images://graphlegend.png"),
 			flexGrow: 1,
 			alignSelf: FlexLayout.AlignSelf.CENTER
-		});
-		var imageview11_1_1 = new ImageView(imageview11_1_1Style);
+		});  
+		var imageview11_1_1 = new ImageView(imageview11_1_1Style);  
 		flexlayout30.addChild(imageview11_1_1);
 		
 		//assign the children to page 

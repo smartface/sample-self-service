@@ -37,8 +37,8 @@ const PgOutOfOffice_ = extend(Page)(
 			width: null,
 			height: 92,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgOutOfOffice");
+		}); 
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgOutOfOffice");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
@@ -49,8 +49,8 @@ const PgOutOfOffice_ = extend(Page)(
 			marginRight: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: null
-		});
-		var mainContainer = new FlexLayout(mainContainerStyle);
+		});  
+		var mainContainer = new FlexLayout(mainContainerStyle);  
 		this.layout.addChild(mainContainer);
 		this.mainContainer = mainContainer;
 
@@ -59,8 +59,8 @@ const PgOutOfOffice_ = extend(Page)(
 			height: 59,
 			paddingLeft: 10,
 			paddingRight: 10
-		});
-		var flexlayout48 = new FlexLayout(flexlayout48Style);
+		});  
+		var flexlayout48 = new FlexLayout(flexlayout48Style);  
 		mainContainer.addChild(flexlayout48);
 		
 		const dateContainerStyle = getCombinedStyle(".flexLayout", {
@@ -73,8 +73,8 @@ const PgOutOfOffice_ = extend(Page)(
 			marginTop: 10,
 			marginLeft: 10,
 			marginRight: 10
-		});
-		var dateContainer = new FlexLayout(dateContainerStyle);
+		});  
+		var dateContainer = new FlexLayout(dateContainerStyle);  
 		mainContainer.addChild(dateContainer);
 		
 		const intExtContainerStyle = getCombinedStyle(".flexLayout", {
@@ -87,8 +87,8 @@ const PgOutOfOffice_ = extend(Page)(
 			paddingTop: 10,
 			paddingRight: 10,
 			marginRight: 10
-		});
-		var intExtContainer = new FlexLayout(intExtContainerStyle);
+		});  
+		var intExtContainer = new FlexLayout(intExtContainerStyle);  
 		mainContainer.addChild(intExtContainer);
 		
 		const noteContainerStyle = getCombinedStyle(".flexLayout", {
@@ -101,8 +101,8 @@ const PgOutOfOffice_ = extend(Page)(
 			paddingBottom: 10,
 			marginLeft: 10,
 			marginRight: 10
-		});
-		var noteContainer = new FlexLayout(noteContainerStyle);
+		});  
+		var noteContainer = new FlexLayout(noteContainerStyle);  
 		mainContainer.addChild(noteContainer);
 		
 		const outOfOfficeStyle = getCombinedStyle(".flexLayout", {
@@ -115,8 +115,8 @@ const PgOutOfOffice_ = extend(Page)(
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.SPACE_BETWEEN,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var outOfOffice = new ListItemSwitch(outOfOfficeStyle, "pgOutOfOffice");
+		}); 
+		var outOfOffice = new ListItemSwitch(outOfOfficeStyle, "pgOutOfOffice");  
 		flexlayout48.addChild(outOfOffice);
 		this.outOfOffice = outOfOffice;
 
@@ -124,16 +124,16 @@ const PgOutOfOffice_ = extend(Page)(
 			width: null,
 			height: 25,
 			flexDirection: FlexLayout.FlexDirection.ROW
-		});
-		var flexlayout97 = new FlexLayout(flexlayout97Style);
+		});  
+		var flexlayout97 = new FlexLayout(flexlayout97Style);  
 		noteContainer.addChild(flexlayout97);
 		
 		const intExtTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
 			text: "LOREM IPSUM"
-		});
-		var intExtTitle = new Label(intExtTitleStyle);
+		});  
+		var intExtTitle = new Label(intExtTitleStyle);  
 		if(intExtTitleStyle.scrollEnabled === false)
 			intExtTitle.ios && (intExtTitle.ios.scrollEnabled = false);
 		intExtContainer.addChild(intExtTitle);
@@ -143,8 +143,8 @@ const PgOutOfOffice_ = extend(Page)(
 			height: 25,
 			width: null,
 			text: "START"
-		});
-		var startTitle = new Label(startTitleStyle);
+		});  
+		var startTitle = new Label(startTitleStyle);  
 		if(startTitleStyle.scrollEnabled === false)
 			startTitle.ios && (startTitle.ios.scrollEnabled = false);
 		dateContainer.addChild(startTitle);
@@ -160,8 +160,8 @@ const PgOutOfOffice_ = extend(Page)(
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.SPACE_BETWEEN,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var internal = new ListItemSwitch(internalStyle, "pgOutOfOffice");
+		}); 
+		var internal = new ListItemSwitch(internalStyle, "pgOutOfOffice");  
 		intExtContainer.addChild(internal);
 		this.internal = internal;
 
@@ -173,8 +173,8 @@ const PgOutOfOffice_ = extend(Page)(
 			borderWidth: 0.5,
 			borderColor: Color.create(255, 203, 204, 208),
 			flexGrow: 1
-		});
-		var description = new TextBox(descriptionStyle);
+		});  
+		var description = new TextBox(descriptionStyle);  
 		if(descriptionStyle.hintTextColor)
 			description.android && (description.android.hintTextColor = descriptionStyle.hintTextColor);
 		if(descriptionStyle.elevation)
@@ -196,8 +196,8 @@ const PgOutOfOffice_ = extend(Page)(
 			marginTop: 10,
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			justifyContent: FlexLayout.JustifyContent.SPACE_BETWEEN
-		});
-		var flexlayout742 = new FlexLayout(flexlayout742Style);
+		});  
+		var flexlayout742 = new FlexLayout(flexlayout742Style);  
 		dateContainer.addChild(flexlayout742);
 		
 		const endTitleStyle = getCombinedStyle(".label .label-list-item-header", {
@@ -206,8 +206,8 @@ const PgOutOfOffice_ = extend(Page)(
 			marginLeft: null,
 			marginTop: 10,
 			text: "END"
-		});
-		var endTitle = new Label(endTitleStyle);
+		});  
+		var endTitle = new Label(endTitleStyle);  
 		if(endTitleStyle.scrollEnabled === false)
 			endTitle.ios && (endTitle.ios.scrollEnabled = false);
 		dateContainer.addChild(endTitle);
@@ -222,8 +222,8 @@ const PgOutOfOffice_ = extend(Page)(
 			alpha: 1,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgOutOfOffice");
+		}); 
+		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgOutOfOffice");  
 		intExtContainer.addChild(horizontalDivider);
 		
 		const externalStyle = getCombinedStyle(".flexLayout", {
@@ -236,8 +236,8 @@ const PgOutOfOffice_ = extend(Page)(
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.SPACE_BETWEEN,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var external = new ListItemSwitch(externalStyle, "pgOutOfOffice");
+		}); 
+		var external = new ListItemSwitch(externalStyle, "pgOutOfOffice");  
 		intExtContainer.addChild(external);
 		this.external = external;
 
@@ -247,8 +247,8 @@ const PgOutOfOffice_ = extend(Page)(
 			marginTop: 10,
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			justifyContent: FlexLayout.JustifyContent.SPACE_BETWEEN
-		});
-		var flexlayout742_1 = new FlexLayout(flexlayout742_1Style);
+		});  
+		var flexlayout742_1 = new FlexLayout(flexlayout742_1Style);  
 		dateContainer.addChild(flexlayout742_1);
 		
 		const startDatePickerStyle = getCombinedStyle(".flexLayout", {
@@ -258,8 +258,8 @@ const PgOutOfOffice_ = extend(Page)(
 			height: 45,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: null
-		});
-		var startDatePicker = new PickerContainer(startDatePickerStyle, "pgOutOfOffice");
+		}); 
+		var startDatePicker = new PickerContainer(startDatePickerStyle, "pgOutOfOffice");  
 		flexlayout742.addChild(startDatePicker);
 		this.startDatePicker = startDatePicker;
 
@@ -268,8 +268,8 @@ const PgOutOfOffice_ = extend(Page)(
 			height: null,
 			text: "NOTE",
 			flexGrow: 1
-		});
-		var noteTitle = new Label(noteTitleStyle);
+		});  
+		var noteTitle = new Label(noteTitleStyle);  
 		if(noteTitleStyle.scrollEnabled === false)
 			noteTitle.ios && (noteTitle.ios.scrollEnabled = false);
 		flexlayout97.addChild(noteTitle);
@@ -282,8 +282,8 @@ const PgOutOfOffice_ = extend(Page)(
 			height: 45,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: null
-		});
-		var endDatePicker = new PickerContainer(endDatePickerStyle, "pgOutOfOffice");
+		}); 
+		var endDatePicker = new PickerContainer(endDatePickerStyle, "pgOutOfOffice");  
 		flexlayout742_1.addChild(endDatePicker);
 		this.endDatePicker = endDatePicker;
 
@@ -294,8 +294,8 @@ const PgOutOfOffice_ = extend(Page)(
 			height: 45,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: null
-		});
-		var endTimePicker = new PickerContainer(endTimePickerStyle, "pgOutOfOffice");
+		}); 
+		var endTimePicker = new PickerContainer(endTimePickerStyle, "pgOutOfOffice");  
 		flexlayout742_1.addChild(endTimePicker);
 		this.endTimePicker = endTimePicker;
 
@@ -304,8 +304,8 @@ const PgOutOfOffice_ = extend(Page)(
 			image: Image.createFromFile("images://icon_microphone.png"),
 			imageFillType: ImageFillType.ASPECTFIT,
 			height: null
-		});
-		var imageview44 = new ImageView(imageview44Style);
+		});  
+		var imageview44 = new ImageView(imageview44Style);  
 		flexlayout97.addChild(imageview44);
 		
 		const startTimePickerStyle = getCombinedStyle(".flexLayout", {
@@ -315,8 +315,8 @@ const PgOutOfOffice_ = extend(Page)(
 			height: 45,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: null
-		});
-		var startTimePicker = new PickerContainer(startTimePickerStyle, "pgOutOfOffice");
+		}); 
+		var startTimePicker = new PickerContainer(startTimePickerStyle, "pgOutOfOffice");  
 		flexlayout742.addChild(startTimePicker);
 		this.startTimePicker = startTimePicker;
 
