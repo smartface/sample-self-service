@@ -30,8 +30,8 @@ const PgMeetingRoomReservations_ = extend(Page)(
 			width: null,
 			height: 92,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgMeetingRoomReservations");
+		}); 
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgMeetingRoomReservations");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
@@ -43,8 +43,8 @@ const PgMeetingRoomReservations_ = extend(Page)(
 			flexGrow: 1,
 			alignItems: FlexLayout.AlignItems.STRETCH,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var mainLayout = new FlexLayout(mainLayoutStyle);
+		});  
+		var mainLayout = new FlexLayout(mainLayoutStyle);  
 		this.layout.addChild(mainLayout);
 		this.mainLayout = mainLayout;
 
@@ -54,8 +54,8 @@ const PgMeetingRoomReservations_ = extend(Page)(
 			height: 100,
 			imageFillType: ImageFillType.ASPECTFIT,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var comingSoon = new ImageView(comingSoonStyle);
+		});  
+		var comingSoon = new ImageView(comingSoonStyle);  
 		mainLayout.addChild(comingSoon);
 		this.comingSoon = comingSoon;
 

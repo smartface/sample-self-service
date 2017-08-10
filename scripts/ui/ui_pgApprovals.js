@@ -30,8 +30,8 @@ const PgApprovals_ = extend(Page)(
 			width: null,
 			height: 60,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgApprovals");
+		}); 
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgApprovals");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
@@ -44,16 +44,16 @@ const PgApprovals_ = extend(Page)(
 			flexGrow: 1,
 			alignItems: FlexLayout.AlignItems.STRETCH,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var flexlayout137 = new FlexLayout(flexlayout137Style);
+		});  
+		var flexlayout137 = new FlexLayout(flexlayout137Style);  
 		this.layout.addChild(flexlayout137);
 		
 		const comingSoonStyle = getCombinedStyle(".imageView", {
 			width: null,
 			height: 100,
 			imageFillType: ImageFillType.ASPECTFIT
-		});
-		var comingSoon = new ImageView(comingSoonStyle);
+		});  
+		var comingSoon = new ImageView(comingSoonStyle);  
 		flexlayout137.addChild(comingSoon);
 		this.comingSoon = comingSoon;
 

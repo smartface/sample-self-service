@@ -30,8 +30,8 @@ const PgEmploymentHistory_ = extend(Page)(
 			width: null,
 			height: 100,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgEmploymentHistory");
+		}); 
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgEmploymentHistory");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
@@ -43,8 +43,8 @@ const PgEmploymentHistory_ = extend(Page)(
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: 1,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var listViewContainer = new FlexLayout(listViewContainerStyle);
+		});  
+		var listViewContainer = new FlexLayout(listViewContainerStyle);  
 		this.layout.addChild(listViewContainer);
 		this.listViewContainer = listViewContainer;
 
@@ -53,8 +53,8 @@ const PgEmploymentHistory_ = extend(Page)(
 			height: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: 1
-		});
-		var listView = new ListView(listViewStyle);
+		});  
+		var listView = new ListView(listViewStyle);  
 		listView.onRowCreate = function(){ return new ListViewItem(); };
 		listViewContainer.addChild(listView);
 		this.listView = listView;

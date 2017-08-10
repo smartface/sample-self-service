@@ -35,8 +35,8 @@ const PgOverview_ = extend(Page)(
 			width: null,
 			height: 92,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgOverview");
+		}); 
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgOverview");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
@@ -45,8 +45,8 @@ const PgOverview_ = extend(Page)(
 			height: 170,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var flexlayout1 = new FlexLayout(flexlayout1Style);
+		});  
+		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		this.layout.addChild(flexlayout1);
 		
 		const flexlayout500Style = getCombinedStyle(".flexLayout", {
@@ -54,8 +54,8 @@ const PgOverview_ = extend(Page)(
 			height: 490,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: null
-		});
-		var flexlayout500 = new FlexLayout(flexlayout500Style);
+		});  
+		var flexlayout500 = new FlexLayout(flexlayout500Style);  
 		this.layout.addChild(flexlayout500);
 		this.flexlayout500 = flexlayout500;
 
@@ -72,8 +72,8 @@ const PgOverview_ = extend(Page)(
 			paddingTop: 10,
 			paddingBottom: 10,
 			height: 170
-		});
-		var qualificationcontainer = new FlexLayout(qualificationcontainerStyle);
+		});  
+		var qualificationcontainer = new FlexLayout(qualificationcontainerStyle);  
 		flexlayout500.addChild(qualificationcontainer);
 		
 		const imageview111Style = getCombinedStyle(".imageView", {
@@ -82,8 +82,8 @@ const PgOverview_ = extend(Page)(
 			imageFillType: ImageFillType.ASPECTFIT,
 			image: Image.createFromFile("images://myavatar.png"),
 			marginBottom: 5
-		});
-		var imageview111 = new ImageView(imageview111Style);
+		});  
+		var imageview111 = new ImageView(imageview111Style);  
 		flexlayout1.addChild(imageview111);
 		
 		const salarycontainerStyle = getCombinedStyle(".flexLayout", {
@@ -99,8 +99,8 @@ const PgOverview_ = extend(Page)(
 			paddingTop: 10,
 			paddingBottom: 10,
 			height: 120
-		});
-		var salarycontainer = new FlexLayout(salarycontainerStyle);
+		});  
+		var salarycontainer = new FlexLayout(salarycontainerStyle);  
 		flexlayout500.addChild(salarycontainer);
 		
 		const label827Style = getCombinedStyle(".label .label-overview-title", {
@@ -108,8 +108,8 @@ const PgOverview_ = extend(Page)(
 			height: 25,
 			text: "Anthony Bell",
 			font: Font.create("Arial", 18, Font.NORMAL)
-		});
-		var label827 = new Label(label827Style);
+		});  
+		var label827 = new Label(label827Style);  
 		if(label827Style.scrollEnabled === false)
 			label827.ios && (label827.ios.scrollEnabled = false);
 		flexlayout1.addChild(label827);
@@ -127,8 +127,8 @@ const PgOverview_ = extend(Page)(
 			paddingTop: 10,
 			paddingBottom: 10,
 			height: 170
-		});
-		var qualificationcontainer_1 = new FlexLayout(qualificationcontainer_1Style);
+		});  
+		var qualificationcontainer_1 = new FlexLayout(qualificationcontainer_1Style);  
 		flexlayout500.addChild(qualificationcontainer_1);
 		
 		const label827_1Style = getCombinedStyle(".label .label-overview-title", {
@@ -136,8 +136,8 @@ const PgOverview_ = extend(Page)(
 			height: 25,
 			text: "Director of Sales & Marketing",
 			font: Font.create("Arial", 14, Font.NORMAL)
-		});
-		var label827_1 = new Label(label827_1Style);
+		});  
+		var label827_1 = new Label(label827_1Style);  
 		if(label827_1Style.scrollEnabled === false)
 			label827_1.ios && (label827_1.ios.scrollEnabled = false);
 		flexlayout1.addChild(label827_1);
@@ -147,8 +147,8 @@ const PgOverview_ = extend(Page)(
 			width: null,
 			text: "SALARY",
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var salaryTitle = new Label(salaryTitleStyle);
+		});  
+		var salaryTitle = new Label(salaryTitleStyle);  
 		if(salaryTitleStyle.scrollEnabled === false)
 			salaryTitle.ios && (salaryTitle.ios.scrollEnabled = false);
 		salarycontainer.addChild(salaryTitle);
@@ -159,8 +159,8 @@ const PgOverview_ = extend(Page)(
 			width: null,
 			text: "QUALIFICATION",
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var qualificationTitle = new Label(qualificationTitleStyle);
+		});  
+		var qualificationTitle = new Label(qualificationTitleStyle);  
 		if(qualificationTitleStyle.scrollEnabled === false)
 			qualificationTitle.ios && (qualificationTitle.ios.scrollEnabled = false);
 		qualificationcontainer.addChild(qualificationTitle);
@@ -171,8 +171,8 @@ const PgOverview_ = extend(Page)(
 			width: null,
 			text: "PERFORMANCE OBJECTIVE",
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var label536_2 = new Label(label536_2Style);
+		});  
+		var label536_2 = new Label(label536_2Style);  
 		if(label536_2Style.scrollEnabled === false)
 			label536_2.ios && (label536_2.ios.scrollEnabled = false);
 		qualificationcontainer_1.addChild(label536_2);
@@ -186,8 +186,8 @@ const PgOverview_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var containerType = new ListItem1(containerTypeStyle, "pgOverview");
+		}); 
+		var containerType = new ListItem1(containerTypeStyle, "pgOverview");  
 		qualificationcontainer.addChild(containerType);
 		this.containerType = containerType;
 
@@ -200,8 +200,8 @@ const PgOverview_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var objectiveContainer = new ListItem1(objectiveContainerStyle, "pgOverview");
+		}); 
+		var objectiveContainer = new ListItem1(objectiveContainerStyle, "pgOverview");  
 		qualificationcontainer_1.addChild(objectiveContainer);
 		this.objectiveContainer = objectiveContainer;
 
@@ -214,8 +214,8 @@ const PgOverview_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var containerBasic = new ListItem1(containerBasicStyle, "pgOverview");
+		}); 
+		var containerBasic = new ListItem1(containerBasicStyle, "pgOverview");  
 		salarycontainer.addChild(containerBasic);
 		this.containerBasic = containerBasic;
 
@@ -231,8 +231,8 @@ const PgOverview_ = extend(Page)(
 			marginTop: 5,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontaldivider_3 = new HorizontalDivider(horizontaldivider_3Style, "pgOverview");
+		}); 
+		var horizontaldivider_3 = new HorizontalDivider(horizontaldivider_3Style, "pgOverview");  
 		qualificationcontainer_1.addChild(horizontaldivider_3);
 		
 		const horizontalDividerStyle = getCombinedStyle(".flexLayout", {
@@ -247,8 +247,8 @@ const PgOverview_ = extend(Page)(
 			marginTop: 5,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgOverview");
+		}); 
+		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgOverview");  
 		qualificationcontainer.addChild(horizontalDivider);
 		
 		const horizontaldivider_2Style = getCombinedStyle(".flexLayout", {
@@ -263,8 +263,8 @@ const PgOverview_ = extend(Page)(
 			marginTop: 5,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontaldivider_2 = new HorizontalDivider(horizontaldivider_2Style, "pgOverview");
+		}); 
+		var horizontaldivider_2 = new HorizontalDivider(horizontaldivider_2Style, "pgOverview");  
 		salarycontainer.addChild(horizontaldivider_2);
 		
 		const dueDateContainerStyle = getCombinedStyle(".flexLayout", {
@@ -277,8 +277,8 @@ const PgOverview_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var dueDateContainer = new ListItem1(dueDateContainerStyle, "pgOverview");
+		}); 
+		var dueDateContainer = new ListItem1(dueDateContainerStyle, "pgOverview");  
 		qualificationcontainer_1.addChild(dueDateContainer);
 		this.dueDateContainer = dueDateContainer;
 
@@ -292,8 +292,8 @@ const PgOverview_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var containerTitle = new ListItem1(containerTitleStyle, "pgOverview");
+		}); 
+		var containerTitle = new ListItem1(containerTitleStyle, "pgOverview");  
 		qualificationcontainer.addChild(containerTitle);
 		this.containerTitle = containerTitle;
 
@@ -307,8 +307,8 @@ const PgOverview_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var containerVariable = new ListItem1(containerVariableStyle, "pgOverview");
+		}); 
+		var containerVariable = new ListItem1(containerVariableStyle, "pgOverview");  
 		salarycontainer.addChild(containerVariable);
 		this.containerVariable = containerVariable;
 
@@ -323,8 +323,8 @@ const PgOverview_ = extend(Page)(
 			marginBottom: 5,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgOverview");
+		}); 
+		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgOverview");  
 		qualificationcontainer.addChild(horizontaldivider_1);
 		
 		const horizontaldivider_1_1Style = getCombinedStyle(".flexLayout", {
@@ -338,8 +338,8 @@ const PgOverview_ = extend(Page)(
 			marginBottom: 5,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontaldivider_1_1 = new HorizontalDivider(horizontaldivider_1_1Style, "pgOverview");
+		}); 
+		var horizontaldivider_1_1 = new HorizontalDivider(horizontaldivider_1_1Style, "pgOverview");  
 		qualificationcontainer_1.addChild(horizontaldivider_1_1);
 		
 		const resultContainerStyle = getCombinedStyle(".flexLayout", {
@@ -352,8 +352,8 @@ const PgOverview_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var resultContainer = new ListItem1(resultContainerStyle, "pgOverview");
+		}); 
+		var resultContainer = new ListItem1(resultContainerStyle, "pgOverview");  
 		qualificationcontainer_1.addChild(resultContainer);
 		this.resultContainer = resultContainer;
 
@@ -367,8 +367,8 @@ const PgOverview_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var containerAwardedDate = new ListItem1(containerAwardedDateStyle, "pgOverview");
+		}); 
+		var containerAwardedDate = new ListItem1(containerAwardedDateStyle, "pgOverview");  
 		qualificationcontainer.addChild(containerAwardedDate);
 		this.containerAwardedDate = containerAwardedDate;
 

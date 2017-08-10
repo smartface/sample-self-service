@@ -36,8 +36,8 @@ const PgProfileDetail_ = extend(Page)(
 			width: null,
 			height: 92,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgProfileDetail");
+		}); 
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgProfileDetail");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
@@ -46,8 +46,8 @@ const PgProfileDetail_ = extend(Page)(
 			height: 170,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var flexlayout1 = new FlexLayout(flexlayout1Style);
+		});  
+		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		this.layout.addChild(flexlayout1);
 		
 		const flexlayout500Style = getCombinedStyle(".flexLayout", {
@@ -55,8 +55,8 @@ const PgProfileDetail_ = extend(Page)(
 			height: 610,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: null
-		});
-		var flexlayout500 = new FlexLayout(flexlayout500Style);
+		});  
+		var flexlayout500 = new FlexLayout(flexlayout500Style);  
 		this.layout.addChild(flexlayout500);
 		this.flexlayout500 = flexlayout500;
 
@@ -73,8 +73,8 @@ const PgProfileDetail_ = extend(Page)(
 			paddingTop: 10,
 			paddingBottom: 10,
 			height: 220
-		});
-		var qualificationcontainer = new FlexLayout(qualificationcontainerStyle);
+		});  
+		var qualificationcontainer = new FlexLayout(qualificationcontainerStyle);  
 		flexlayout500.addChild(qualificationcontainer);
 		
 		const imageview111Style = getCombinedStyle(".imageView", {
@@ -83,8 +83,8 @@ const PgProfileDetail_ = extend(Page)(
 			imageFillType: ImageFillType.ASPECTFIT,
 			image: Image.createFromFile("images://myavatar.png"),
 			marginBottom: 5
-		});
-		var imageview111 = new ImageView(imageview111Style);
+		});  
+		var imageview111 = new ImageView(imageview111Style);  
 		flexlayout1.addChild(imageview111);
 		
 		const label827Style = getCombinedStyle(".label .label-overview-title", {
@@ -92,8 +92,8 @@ const PgProfileDetail_ = extend(Page)(
 			height: 25,
 			text: "Anthony Bell",
 			font: Font.create("Arial", 18, Font.NORMAL)
-		});
-		var label827 = new Label(label827Style);
+		});  
+		var label827 = new Label(label827Style);  
 		if(label827Style.scrollEnabled === false)
 			label827.ios && (label827.ios.scrollEnabled = false);
 		flexlayout1.addChild(label827);
@@ -111,8 +111,8 @@ const PgProfileDetail_ = extend(Page)(
 			paddingTop: 10,
 			paddingBottom: 10,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var hierarchyController = new HierarchyController(hierarchyControllerStyle, "pgProfileDetail");
+		}); 
+		var hierarchyController = new HierarchyController(hierarchyControllerStyle, "pgProfileDetail");  
 		flexlayout500.addChild(hierarchyController);
 		this.hierarchyController = hierarchyController;
 
@@ -121,8 +121,8 @@ const PgProfileDetail_ = extend(Page)(
 			height: 25,
 			text: "Director of Sales & Marketing",
 			font: Font.create("Arial", 14, Font.NORMAL)
-		});
-		var label827_1 = new Label(label827_1Style);
+		});  
+		var label827_1 = new Label(label827_1Style);  
 		if(label827_1Style.scrollEnabled === false)
 			label827_1.ios && (label827_1.ios.scrollEnabled = false);
 		flexlayout1.addChild(label827_1);
@@ -132,8 +132,8 @@ const PgProfileDetail_ = extend(Page)(
 			width: null,
 			text: "INFORMATION",
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var informationTitle = new Label(informationTitleStyle);
+		});  
+		var informationTitle = new Label(informationTitleStyle);  
 		if(informationTitleStyle.scrollEnabled === false)
 			informationTitle.ios && (informationTitle.ios.scrollEnabled = false);
 		qualificationcontainer.addChild(informationTitle);
@@ -148,8 +148,8 @@ const PgProfileDetail_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var company = new ListItem1(companyStyle, "pgProfileDetail");
+		}); 
+		var company = new ListItem1(companyStyle, "pgProfileDetail");  
 		qualificationcontainer.addChild(company);
 		this.company = company;
 
@@ -165,8 +165,8 @@ const PgProfileDetail_ = extend(Page)(
 			marginTop: 5,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgProfileDetail");
+		}); 
+		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgProfileDetail");  
 		qualificationcontainer.addChild(horizontalDivider);
 		
 		const emailStyle = getCombinedStyle(".flexLayout", {
@@ -179,8 +179,8 @@ const PgProfileDetail_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var email = new ListItem1(emailStyle, "pgProfileDetail");
+		}); 
+		var email = new ListItem1(emailStyle, "pgProfileDetail");  
 		qualificationcontainer.addChild(email);
 		this.email = email;
 
@@ -195,8 +195,8 @@ const PgProfileDetail_ = extend(Page)(
 			marginBottom: 5,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgProfileDetail");
+		}); 
+		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgProfileDetail");  
 		qualificationcontainer.addChild(horizontaldivider_1);
 		
 		const workPhoneStyle = getCombinedStyle(".flexLayout", {
@@ -209,8 +209,8 @@ const PgProfileDetail_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var workPhone = new ListItem1(workPhoneStyle, "pgProfileDetail");
+		}); 
+		var workPhone = new ListItem1(workPhoneStyle, "pgProfileDetail");  
 		qualificationcontainer.addChild(workPhone);
 		this.workPhone = workPhone;
 
@@ -225,8 +225,8 @@ const PgProfileDetail_ = extend(Page)(
 			marginBottom: 5,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontaldivider_1_1 = new HorizontalDivider(horizontaldivider_1_1Style, "pgProfileDetail");
+		}); 
+		var horizontaldivider_1_1 = new HorizontalDivider(horizontaldivider_1_1Style, "pgProfileDetail");  
 		qualificationcontainer.addChild(horizontaldivider_1_1);
 		
 		const mobilePhoneStyle = getCombinedStyle(".flexLayout", {
@@ -239,8 +239,8 @@ const PgProfileDetail_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var mobilePhone = new ListItem1(mobilePhoneStyle, "pgProfileDetail");
+		}); 
+		var mobilePhone = new ListItem1(mobilePhoneStyle, "pgProfileDetail");  
 		qualificationcontainer.addChild(mobilePhone);
 		this.mobilePhone = mobilePhone;
 

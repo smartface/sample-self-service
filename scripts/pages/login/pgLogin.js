@@ -5,9 +5,7 @@ const Image = require("sf-core/ui/image");
 const Router = require("sf-core/router");
 const System = require("sf-core/device/system");
 const Timer = require("sf-core/timer");
-const FingerPrintLib = require("sf-extension-utils/fingerprint");
-const Data = require("sf-core/data");
-const AlertUtil = require("lib/util/alert");
+const fingerprint = require("sf-extension-utils").fingerprint;
 const rau = require("sf-extension-utils/rau");
 
 const PageDesign = require("../../ui/ui_pgLogin");
@@ -29,7 +27,7 @@ const Page_ = extend(PageDesign)(
 );
 
 function onShow(parentOnShow, params) {
-    if (typeof parentOnShow === "function") parentOnShow(params);
+    parentOnShow && parentOnShow(params);
     
     this.usernameLayout.innerTextbox.ios.clearButtonEnabled = true;
 	this.passwordLayout.innerTextbox.ios.clearButtonEnabled = true;
@@ -52,17 +50,14 @@ function initTexts(page) {
 	page.appName.text = lang["pgLogin.appName"];
 	
 	page.usernameLayout.textboxInfo.text = lang["pgLogin.inputs.username.info"];
-	page.usernameLayout.innerTextbox.text = Data.getBooleanVariable("isUserAuthenticated") ? Data.getStringVariable("userName") : "";
 	page.passwordLayout.textboxInfo.text = lang["pgLogin.inputs.password.info"];
-	
-	page.usernameLayout.innerTextbox.text = "";
 	page.passwordLayout.innerTextbox.text = "";
 }
 
 // Runs sign in animation and calls sign in service
 function signin(page) {
     if (page.usernameLayout.innerTextbox.text === "") {
-    	AlertUtil.showAlert(lang["pgLogin.inputs.username.error"]);
+    	alert(lang["pgLogin.inputs.username.error"]);
 		return;
 	}
 	

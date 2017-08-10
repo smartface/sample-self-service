@@ -31,8 +31,8 @@ const PgLeaveApprovals_ = extend(Page)(
 			width: null,
 			height: 92,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgLeaveApprovals");
+		}); 
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgLeaveApprovals");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
@@ -49,8 +49,8 @@ const PgLeaveApprovals_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			justifyContent: FlexLayout.JustifyContent.CENTER,
 			flexWrap: FlexLayout.FlexWrap.NOWRAP
-		});
-		var topTabBar = new TopTabBar(topTabBarStyle, "pgLeaveApprovals");
+		}); 
+		var topTabBar = new TopTabBar(topTabBarStyle, "pgLeaveApprovals");  
 		this.layout.addChild(topTabBar);
 		this.topTabBar = topTabBar;
 
@@ -60,8 +60,8 @@ const PgLeaveApprovals_ = extend(Page)(
 			width: null,
 			height: 1,
 			backgroundColor: Color.create(255, 151, 151, 151)
-		});
-		var flexlayout856 = new FlexLayout(flexlayout856Style);
+		});  
+		var flexlayout856 = new FlexLayout(flexlayout856Style);  
 		this.layout.addChild(flexlayout856);
 		
 		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
@@ -72,8 +72,8 @@ const PgLeaveApprovals_ = extend(Page)(
 			paddingLeft: 10,
 			paddingRight: 10,
 			flexGrow: 1
-		});
-		var listViewContainer = new FlexLayout(listViewContainerStyle);
+		});  
+		var listViewContainer = new FlexLayout(listViewContainerStyle);  
 		this.layout.addChild(listViewContainer);
 		this.listViewContainer = listViewContainer;
 
@@ -81,8 +81,8 @@ const PgLeaveApprovals_ = extend(Page)(
 			width: null,
 			height: null,
 			flexGrow: 1
-		});
-		var listView = new ListView(listViewStyle);
+		});  
+		var listView = new ListView(listViewStyle);  
 		listView.onRowCreate = function(){ return new ListViewItem(); };
 		listViewContainer.addChild(listView);
 		this.listView = listView;

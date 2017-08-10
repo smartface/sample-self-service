@@ -34,15 +34,15 @@ const PgPerformance_ = extend(Page)(
 			height: 102,
 			marginTop: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgPerformance");
+		}); 
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgPerformance");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
 		const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
 			width: null
-		});
-		var flexlayout1 = new FlexLayout(flexlayout1Style);
+		});  
+		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		this.layout.addChild(flexlayout1);
 		
 		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
@@ -53,8 +53,8 @@ const PgPerformance_ = extend(Page)(
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: 1,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var listViewContainer = new FlexLayout(listViewContainerStyle);
+		});  
+		var listViewContainer = new FlexLayout(listViewContainerStyle);  
 		this.layout.addChild(listViewContainer);
 		this.listViewContainer = listViewContainer;
 
@@ -64,8 +64,8 @@ const PgPerformance_ = extend(Page)(
 			imageFillType: ImageFillType.ASPECTFIT,
 			image: Image.createFromFile("images://graph.png"),
 			flexGrow: 1
-		});
-		var imageview1 = new ImageView(imageview1Style);
+		});  
+		var imageview1 = new ImageView(imageview1Style);  
 		flexlayout1.addChild(imageview1);
 		
 		const listViewStyle = getCombinedStyle(".listView", {
@@ -73,8 +73,8 @@ const PgPerformance_ = extend(Page)(
 			height: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: 1
-		});
-		var listView = new ListView(listViewStyle);
+		});  
+		var listView = new ListView(listViewStyle);  
 		listView.onRowCreate = function(){ return new ListViewItem(); };
 		listViewContainer.addChild(listView);
 		this.listView = listView;

@@ -34,16 +34,16 @@ const PgSalary_ = extend(Page)(
 			height: 82,
 			marginTop: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgSalary");
+		}); 
+		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgSalary");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
 
 		const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
 			height: 180,
 			width: null
-		});
-		var flexlayout1 = new FlexLayout(flexlayout1Style);
+		});  
+		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		this.layout.addChild(flexlayout1);
 		
 		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
@@ -52,8 +52,8 @@ const PgSalary_ = extend(Page)(
 			marginRight: 10,
 			flexGrow: 1,
 			justifyContent: FlexLayout.JustifyContent.CENTER
-		});
-		var listViewContainer = new FlexLayout(listViewContainerStyle);
+		});  
+		var listViewContainer = new FlexLayout(listViewContainerStyle);  
 		this.layout.addChild(listViewContainer);
 		this.listViewContainer = listViewContainer;
 
@@ -63,16 +63,16 @@ const PgSalary_ = extend(Page)(
 			imageFillType: ImageFillType.ASPECTFIT,
 			image: Image.createFromFile("images://graph.png"),
 			flexGrow: 1
-		});
-		var imageview1 = new ImageView(imageview1Style);
+		});  
+		var imageview1 = new ImageView(imageview1Style);  
 		flexlayout1.addChild(imageview1);
 		
 		const listViewStyle = getCombinedStyle(".listView", {
 			width: null,
 			height: null,
 			flexGrow: 1
-		});
-		var listView = new ListView(listViewStyle);
+		});  
+		var listView = new ListView(listViewStyle);  
 		listView.onRowCreate = function(){ return new ListViewItem(); };
 		listViewContainer.addChild(listView);
 		this.listView = listView;

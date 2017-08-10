@@ -38,8 +38,8 @@ const PgNewExpense_ = extend(Page)(
 			id: null,
 			flexGrow: null,
 			alignItems: FlexLayout.AlignItems.STRETCH
-		});
-		var mainContainer = new FlexLayout(mainContainerStyle);
+		});  
+		var mainContainer = new FlexLayout(mainContainerStyle);  
 		this.layout.addChild(mainContainer);
 		this.mainContainer = mainContainer;
 
@@ -50,8 +50,8 @@ const PgNewExpense_ = extend(Page)(
 			marginBottom: 10,
 			marginTop: 10,
 			height: 210
-		});
-		var detailsLayout = new FlexLayout(detailsLayoutStyle);
+		});  
+		var detailsLayout = new FlexLayout(detailsLayoutStyle);  
 		mainContainer.addChild(detailsLayout);
 		
 		const noteLayoutStyle = getCombinedStyle(".flexLayout", {
@@ -65,8 +65,8 @@ const PgNewExpense_ = extend(Page)(
 			paddingBottom: 10,
 			marginBottom: 10,
 			flexGrow: null
-		});
-		var noteLayout = new FlexLayout(noteLayoutStyle);
+		});  
+		var noteLayout = new FlexLayout(noteLayoutStyle);  
 		mainContainer.addChild(noteLayout);
 		
 		const fileAttachmentLayoutStyle = getCombinedStyle(".flexLayout", {
@@ -80,8 +80,8 @@ const PgNewExpense_ = extend(Page)(
 			paddingBottom: 10,
 			marginBottom: null,
 			flexGrow: null
-		});
-		var fileAttachmentLayout = new FlexLayout(fileAttachmentLayoutStyle);
+		});  
+		var fileAttachmentLayout = new FlexLayout(fileAttachmentLayoutStyle);  
 		mainContainer.addChild(fileAttachmentLayout);
 		
 		const requestButtonStyle = getCombinedStyle(".button", {
@@ -92,8 +92,8 @@ const PgNewExpense_ = extend(Page)(
 			marginLeft: 10,
 			marginRight: 10,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var requestButton = new Button(requestButtonStyle);
+		});  
+		var requestButton = new Button(requestButtonStyle);  
 		mainContainer.addChild(requestButton);
 		this.requestButton = requestButton;
 
@@ -106,8 +106,8 @@ const PgNewExpense_ = extend(Page)(
 			marginLeft: 10,
 			marginTop: 5,
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var detailsTitle = new Label(detailsTitleStyle);
+		});  
+		var detailsTitle = new Label(detailsTitleStyle);  
 		if(detailsTitleStyle.scrollEnabled === false)
 			detailsTitle.ios && (detailsTitle.ios.scrollEnabled = false);
 		detailsLayout.addChild(detailsTitle);
@@ -119,8 +119,8 @@ const PgNewExpense_ = extend(Page)(
 			marginBottom: 5,
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var flexlayout76_1 = new FlexLayout(flexlayout76_1Style);
+		});  
+		var flexlayout76_1 = new FlexLayout(flexlayout76_1Style);  
 		fileAttachmentLayout.addChild(flexlayout76_1);
 		
 		const flexlayout76Style = getCombinedStyle(".flexLayout", {
@@ -129,8 +129,8 @@ const PgNewExpense_ = extend(Page)(
 			marginBottom: 5,
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var flexlayout76 = new FlexLayout(flexlayout76Style);
+		});  
+		var flexlayout76 = new FlexLayout(flexlayout76Style);  
 		noteLayout.addChild(flexlayout76);
 		
 		const titleInputStyle = getCombinedStyle(".flexLayout", {
@@ -142,8 +142,8 @@ const PgNewExpense_ = extend(Page)(
 			visible: true,
 			marginTop: 10,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var titleInput = new TextboxWithLine(titleInputStyle, "pgNewExpense");
+		}); 
+		var titleInput = new TextboxWithLine(titleInputStyle, "pgNewExpense");  
 		detailsLayout.addChild(titleInput);
 		this.titleInput = titleInput;
 
@@ -156,8 +156,8 @@ const PgNewExpense_ = extend(Page)(
 			text: null,
 			textColor: Color.create(71, 0, 0, 0),
 			flexGrow: 1
-		});
-		var description = new TextBox(descriptionStyle);
+		});  
+		var description = new TextBox(descriptionStyle);  
 		if(descriptionStyle.hintTextColor)
 			description.android && (description.android.hintTextColor = descriptionStyle.hintTextColor);
 		if(descriptionStyle.elevation)
@@ -181,8 +181,8 @@ const PgNewExpense_ = extend(Page)(
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.FLEX_START,
 			flexDirection: FlexLayout.FlexDirection.ROW
-		});
-		var attachmentsLayout = new FlexLayout(attachmentsLayoutStyle);
+		});  
+		var attachmentsLayout = new FlexLayout(attachmentsLayoutStyle);  
 		fileAttachmentLayout.addChild(attachmentsLayout);
 		this.attachmentsLayout = attachmentsLayout;
 
@@ -196,8 +196,8 @@ const PgNewExpense_ = extend(Page)(
 			paddingRight: null,
 			marginTop: 5,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var expenseInput = new TextboxWithLine(expenseInputStyle, "pgNewExpense");
+		}); 
+		var expenseInput = new TextboxWithLine(expenseInputStyle, "pgNewExpense");  
 		detailsLayout.addChild(expenseInput);
 		this.expenseInput = expenseInput;
 
@@ -207,8 +207,8 @@ const PgNewExpense_ = extend(Page)(
 			marginTop: 5,
 			alignItems: FlexLayout.AlignItems.CENTER,
 			flexDirection: FlexLayout.FlexDirection.ROW
-		});
-		var flexlayout191 = new FlexLayout(flexlayout191Style);
+		});  
+		var flexlayout191 = new FlexLayout(flexlayout191Style);  
 		detailsLayout.addChild(flexlayout191);
 		
 		const typePickerStyle = getCombinedStyle(".flexLayout", {
@@ -218,8 +218,8 @@ const PgNewExpense_ = extend(Page)(
 			height: 45,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: 1
-		});
-		var typePicker = new PickerContainer(typePickerStyle, "pgNewExpense");
+		}); 
+		var typePicker = new PickerContainer(typePickerStyle, "pgNewExpense");  
 		flexlayout191.addChild(typePicker);
 		this.typePicker = typePicker;
 
@@ -235,8 +235,8 @@ const PgNewExpense_ = extend(Page)(
 			alignItems: FlexLayout.AlignItems.CENTER,
 			justifyContent: FlexLayout.JustifyContent.CENTER,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var addFile = new ItemFile(addFileStyle, "pgNewExpense");
+		}); 
+		var addFile = new ItemFile(addFileStyle, "pgNewExpense");  
 		attachmentsLayout.addChild(addFile);
 		this.addFile = addFile;
 
@@ -247,8 +247,8 @@ const PgNewExpense_ = extend(Page)(
 			flexGrow: 1,
 			alignSelf: FlexLayout.AlignSelf.STRETCH,
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var noteTitle = new Label(noteTitleStyle);
+		});  
+		var noteTitle = new Label(noteTitleStyle);  
 		if(noteTitleStyle.scrollEnabled === false)
 			noteTitle.ios && (noteTitle.ios.scrollEnabled = false);
 		flexlayout76.addChild(noteTitle);
@@ -261,8 +261,8 @@ const PgNewExpense_ = extend(Page)(
 			flexGrow: 1,
 			alignSelf: FlexLayout.AlignSelf.STRETCH,
 			font: Font.create("Arial", 16, Font.NORMAL)
-		});
-		var fileAttachmentTitle = new Label(fileAttachmentTitleStyle);
+		});  
+		var fileAttachmentTitle = new Label(fileAttachmentTitleStyle);  
 		if(fileAttachmentTitleStyle.scrollEnabled === false)
 			fileAttachmentTitle.ios && (fileAttachmentTitle.ios.scrollEnabled = false);
 		flexlayout76_1.addChild(fileAttachmentTitle);
@@ -276,8 +276,8 @@ const PgNewExpense_ = extend(Page)(
 			marginLeft: 20,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			flexGrow: 1
-		});
-		var expenseDatePicker = new PickerContainer(expenseDatePickerStyle, "pgNewExpense");
+		}); 
+		var expenseDatePicker = new PickerContainer(expenseDatePickerStyle, "pgNewExpense");  
 		flexlayout191.addChild(expenseDatePicker);
 		this.expenseDatePicker = expenseDatePicker;
 
@@ -286,8 +286,8 @@ const PgNewExpense_ = extend(Page)(
 			height: 25,
 			image: Image.createFromFile("images://icon_microphone.png"),
 			imageFillType: ImageFillType.ASPECTFIT
-		});
-		var imageview17 = new ImageView(imageview17Style);
+		});  
+		var imageview17 = new ImageView(imageview17Style);  
 		flexlayout76.addChild(imageview17);
 		
 		//assign the children to page 

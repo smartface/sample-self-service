@@ -9,8 +9,8 @@ const Page = require('sf-core/ui/page');
 const FlexLayout = require('sf-core/ui/flexlayout');
 const Color = require('sf-core/ui/color');
 const Label = require('sf-core/ui/label');
-const Font = require('sf-core/ui/font');
 const TextAlignment = require('sf-core/ui/textalignment');
+const Font = require('sf-core/ui/font');
 const Switch = require('sf-core/ui/switch');
 
 const HorizontalDivider = require("../components/HorizontalDivider");
@@ -31,8 +31,8 @@ const PgSettings_ = extend(Page)(
 			width: null,
 			paddingLeft: null,
 			paddingRight: null
-		});
-		var flexlayout84 = new FlexLayout(flexlayout84Style);
+		});  
+		var flexlayout84 = new FlexLayout(flexlayout84Style);  
 		this.layout.addChild(flexlayout84);
 		
 		const flexlayout85Style = getCombinedStyle(".flexLayout", {
@@ -44,8 +44,8 @@ const PgSettings_ = extend(Page)(
 			alignItems: FlexLayout.AlignItems.CENTER,
 			flexGrow: null,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var flexlayout85 = new FlexLayout(flexlayout85Style);
+		});  
+		var flexlayout85 = new FlexLayout(flexlayout85Style);  
 		flexlayout84.addChild(flexlayout85);
 		
 		const horizontalDividerStyle = getCombinedStyle(".flexLayout", {
@@ -57,8 +57,8 @@ const PgSettings_ = extend(Page)(
 			alpha: 1,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgSettings");
+		}); 
+		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgSettings");  
 		flexlayout84.addChild(horizontalDivider);
 		
 		const flexlayout85_1Style = getCombinedStyle(".flexLayout", {
@@ -70,8 +70,8 @@ const PgSettings_ = extend(Page)(
 			alignItems: FlexLayout.AlignItems.CENTER,
 			flexGrow: null,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var flexlayout85_1 = new FlexLayout(flexlayout85_1Style);
+		});  
+		var flexlayout85_1 = new FlexLayout(flexlayout85_1Style);  
 		flexlayout84.addChild(flexlayout85_1);
 		
 		const horizontaldivider_1Style = getCombinedStyle(".flexLayout", {
@@ -83,8 +83,8 @@ const PgSettings_ = extend(Page)(
 			alpha: 1,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgSettings");
+		}); 
+		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgSettings");  
 		flexlayout84.addChild(horizontaldivider_1);
 		
 		const layoutFingerStyle = getCombinedStyle(".flexLayout", {
@@ -96,8 +96,8 @@ const PgSettings_ = extend(Page)(
 			alignItems: FlexLayout.AlignItems.CENTER,
 			flexGrow: null,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var layoutFinger = new FlexLayout(layoutFingerStyle);
+		});  
+		var layoutFinger = new FlexLayout(layoutFingerStyle);  
 		flexlayout84.addChild(layoutFinger);
 		this.layoutFinger = layoutFinger;
 
@@ -110,12 +110,12 @@ const PgSettings_ = extend(Page)(
 			alpha: 1,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontalDividerFingerprint = new HorizontalDivider(horizontalDividerFingerprintStyle, "pgSettings");
+		}); 
+		var horizontalDividerFingerprint = new HorizontalDivider(horizontalDividerFingerprintStyle, "pgSettings");  
 		flexlayout84.addChild(horizontalDividerFingerprint);
 		this.horizontalDividerFingerprint = horizontalDividerFingerprint;
 
-		const layoutCheckUpdateStyle = getCombinedStyle(".flexLayout", {
+		const layoutAboutStyle = getCombinedStyle(".flexLayout", {
 			height: 60,
 			width: null,
 			marginRight: 10,
@@ -124,39 +124,10 @@ const PgSettings_ = extend(Page)(
 			alignItems: FlexLayout.AlignItems.CENTER,
 			flexGrow: null,
 			alignSelf: FlexLayout.AlignSelf.STRETCH
-		});
-		var layoutCheckUpdate = new FlexLayout(layoutCheckUpdateStyle);
-		flexlayout84.addChild(layoutCheckUpdate);
-		this.layoutCheckUpdate = layoutCheckUpdate;
-
-		const horizontalDividerCheckUpdateStyle = getCombinedStyle(".flexLayout", {
-			left: 0,
-			top: 0,
-			width: null,
-			height: 1,
-			backgroundColor: Color.create(255, 255, 255, 255),
-			alpha: 1,
-			flexGrow: null,
-			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontalDividerCheckUpdate = new HorizontalDivider(horizontalDividerCheckUpdateStyle, "pgSettings");
-		flexlayout84.addChild(horizontalDividerCheckUpdate);
-		this.horizontalDividerCheckUpdate = horizontalDividerCheckUpdate;
-
-		const txtAboutStyle = getCombinedStyle(".label", {
-			width: null,
-			height: 50,
-			marginLeft: 15,
-			marginRight: 10,
-			marginTop: 20,
-			text: "About    V1.0.1",
-			font: Font.create("Arial", 14, Font.NORMAL)
-		});
-		var txtAbout = new Label(txtAboutStyle);
-		if(txtAboutStyle.scrollEnabled === false)
-			txtAbout.ios && (txtAbout.ios.scrollEnabled = false);
-		flexlayout84.addChild(txtAbout);
-		this.txtAbout = txtAbout;
+		});  
+		var layoutAbout = new FlexLayout(layoutAboutStyle);  
+		flexlayout84.addChild(layoutAbout);
+		this.layoutAbout = layoutAbout;
 
 		const txtAboutDescStyle = getCombinedStyle(".label", {
 			width: null,
@@ -169,8 +140,8 @@ const PgSettings_ = extend(Page)(
 			textColor: Color.create(255, 155, 155, 155),
 			textAlignment: TextAlignment.TOPLEFT,
 			font: Font.create("Arial", 14, Font.NORMAL)
-		});
-		var txtAboutDesc = new Label(txtAboutDescStyle);
+		});  
+		var txtAboutDesc = new Label(txtAboutDescStyle);  
 		if(txtAboutDescStyle.scrollEnabled === false)
 			txtAboutDesc.ios && (txtAboutDesc.ios.scrollEnabled = false);
 		flexlayout84.addChild(txtAboutDesc);
@@ -186,36 +157,10 @@ const PgSettings_ = extend(Page)(
 			right: 0,
 			bottom: 0,
 			positionType: FlexLayout.PositionType.ABSOLUTE
-		});
-		var signoutLayout = new FlexLayout(signoutLayoutStyle);
+		});  
+		var signoutLayout = new FlexLayout(signoutLayoutStyle);  
 		flexlayout84.addChild(signoutLayout);
 		this.signoutLayout = signoutLayout;
-
-		const txtThemeStyle = getCombinedStyle(".label .label-list-item-title", {
-			text: "Theme",
-			width: null,
-			height: 70,
-			left: 5,
-			flexGrow: 1
-		});
-		var txtTheme = new Label(txtThemeStyle);
-		if(txtThemeStyle.scrollEnabled === false)
-			txtTheme.ios && (txtTheme.ios.scrollEnabled = false);
-		flexlayout85.addChild(txtTheme);
-		this.txtTheme = txtTheme;
-
-		const txtFingerPrintStyle = getCombinedStyle(".label .label-list-item-title", {
-			text: "FingerPrint",
-			width: null,
-			height: 70,
-			left: 5,
-			flexGrow: 1
-		});
-		var txtFingerPrint = new Label(txtFingerPrintStyle);
-		if(txtFingerPrintStyle.scrollEnabled === false)
-			txtFingerPrint.ios && (txtFingerPrint.ios.scrollEnabled = false);
-		layoutFinger.addChild(txtFingerPrint);
-		this.txtFingerPrint = txtFingerPrint;
 
 		const txtNotificationStyle = getCombinedStyle(".label .label-list-item-title", {
 			text: "Notification",
@@ -223,8 +168,8 @@ const PgSettings_ = extend(Page)(
 			height: 70,
 			left: 5,
 			flexGrow: 1
-		});
-		var txtNotification = new Label(txtNotificationStyle);
+		});  
+		var txtNotification = new Label(txtNotificationStyle);  
 		if(txtNotificationStyle.scrollEnabled === false)
 			txtNotification.ios && (txtNotification.ios.scrollEnabled = false);
 		flexlayout85_1.addChild(txtNotification);
@@ -239,30 +184,73 @@ const PgSettings_ = extend(Page)(
 			alpha: 1,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var flexlayout731 = new HorizontalDivider(flexlayout731Style, "pgSettings");
+		}); 
+		var flexlayout731 = new HorizontalDivider(flexlayout731Style, "pgSettings");  
 		signoutLayout.addChild(flexlayout731);
 		
-		const txtCheckUpdateStyle = getCombinedStyle(".label .label-list-item-title", {
-			text: "Check Update",
+		const txtFingerPrintStyle = getCombinedStyle(".label .label-list-item-title", {
+			text: "FingerPrint",
 			width: null,
 			height: 70,
 			left: 5,
 			flexGrow: 1
-		});
-		var txtCheckUpdate = new Label(txtCheckUpdateStyle);
-		if(txtCheckUpdateStyle.scrollEnabled === false)
-			txtCheckUpdate.ios && (txtCheckUpdate.ios.scrollEnabled = false);
-		layoutCheckUpdate.addChild(txtCheckUpdate);
-		this.txtCheckUpdate = txtCheckUpdate;
+		});  
+		var txtFingerPrint = new Label(txtFingerPrintStyle);  
+		if(txtFingerPrintStyle.scrollEnabled === false)
+			txtFingerPrint.ios && (txtFingerPrint.ios.scrollEnabled = false);
+		layoutFinger.addChild(txtFingerPrint);
+		this.txtFingerPrint = txtFingerPrint;
+
+		const txtThemeStyle = getCombinedStyle(".label .label-list-item-title", {
+			text: "Theme",
+			width: null,
+			height: 70,
+			left: 5,
+			flexGrow: 1
+		});  
+		var txtTheme = new Label(txtThemeStyle);  
+		if(txtThemeStyle.scrollEnabled === false)
+			txtTheme.ios && (txtTheme.ios.scrollEnabled = false);
+		flexlayout85.addChild(txtTheme);
+		this.txtTheme = txtTheme;
+
+		const txtAboutStyle = getCombinedStyle(".label .label-list-item-title", {
+			text: "About",
+			width: null,
+			height: 70,
+			left: 5,
+			flexGrow: 1
+		});  
+		var txtAbout = new Label(txtAboutStyle);  
+		if(txtAboutStyle.scrollEnabled === false)
+			txtAbout.ios && (txtAbout.ios.scrollEnabled = false);
+		layoutAbout.addChild(txtAbout);
+		this.txtAbout = txtAbout;
+
+		const txtNewVersionStyle = getCombinedStyle(".label .label-list-item-title", {
+			text: "New Version Avaliable!",
+			width: null,
+			height: 70,
+			left: null,
+			textAlignment: TextAlignment.MIDRIGHT,
+			right: 5,
+			textColor: Color.create(255, 74, 144, 226),
+			visible: true,
+			flexGrow: 1
+		});  
+		var txtNewVersion = new Label(txtNewVersionStyle);  
+		if(txtNewVersionStyle.scrollEnabled === false)
+			txtNewVersion.ios && (txtNewVersion.ios.scrollEnabled = false);
+		layoutAbout.addChild(txtNewVersion);
+		this.txtNewVersion = txtNewVersion;
 
 		const switchFingerStyle = getCombinedStyle(".switch", {
 			width: null,
 			toggle: false,
 			minHeight: 31,
 			minWidth: 51
-		});
-		var switchFinger = new Switch(switchFingerStyle);
+		});  
+		var switchFinger = new Switch(switchFingerStyle);  
 		if(switchFingerStyle.toggleOffColor)
 			switchFinger.android && (switchFinger.android.toggleOffColor = switchFingerStyle.toggleOffColor);
 		layoutFinger.addChild(switchFinger);
@@ -273,8 +261,8 @@ const PgSettings_ = extend(Page)(
 			toggle: false,
 			minHeight: 31,
 			minWidth: 51
-		});
-		var switch1 = new Switch(switch1Style);
+		});  
+		var switch1 = new Switch(switch1Style);  
 		if(switch1Style.toggleOffColor)
 			switch1.android && (switch1.android.toggleOffColor = switch1Style.toggleOffColor);
 		flexlayout85_1.addChild(switch1);
@@ -287,8 +275,8 @@ const PgSettings_ = extend(Page)(
 			borderColor: Color.create(255, 195, 195, 195),
 			marginLeft: 10,
 			marginRight: null
-		});
-		var themeBlueLayout = new FlexLayout(themeBlueLayoutStyle);
+		});  
+		var themeBlueLayout = new FlexLayout(themeBlueLayoutStyle);  
 		flexlayout85.addChild(themeBlueLayout);
 		this.themeBlueLayout = themeBlueLayout;
 
@@ -299,8 +287,8 @@ const PgSettings_ = extend(Page)(
 			textAlignment: TextAlignment.MIDCENTER,
 			textColor: Color.create(255, 255, 50, 75),
 			flexGrow: 1
-		});
-		var label1089 = new Label(label1089Style);
+		});  
+		var label1089 = new Label(label1089Style);  
 		if(label1089Style.scrollEnabled === false)
 			label1089.ios && (label1089.ios.scrollEnabled = false);
 		signoutLayout.addChild(label1089);
@@ -313,8 +301,8 @@ const PgSettings_ = extend(Page)(
 			borderColor: Color.create(255, 195, 195, 195),
 			marginLeft: 10,
 			marginRight: null
-		});
-		var themePurpleLayout = new FlexLayout(themePurpleLayoutStyle);
+		});  
+		var themePurpleLayout = new FlexLayout(themePurpleLayoutStyle);  
 		flexlayout85.addChild(themePurpleLayout);
 		this.themePurpleLayout = themePurpleLayout;
 
@@ -329,8 +317,8 @@ const PgSettings_ = extend(Page)(
 			backgroundColor: Color.create(255, 124, 115, 192),
 			borderRadius: 6,
 			flexGrow: 1
-		});
-		var flexlayout247_1 = new FlexLayout(flexlayout247_1Style);
+		});  
+		var flexlayout247_1 = new FlexLayout(flexlayout247_1Style);  
 		themePurpleLayout.addChild(flexlayout247_1);
 		
 		const flexlayout247Style = getCombinedStyle(".flexLayout", {
@@ -344,8 +332,8 @@ const PgSettings_ = extend(Page)(
 			backgroundColor: Color.create(255, 69, 73, 90),
 			borderRadius: 6,
 			flexGrow: 1
-		});
-		var flexlayout247 = new FlexLayout(flexlayout247Style);
+		});  
+		var flexlayout247 = new FlexLayout(flexlayout247Style);  
 		themeBlueLayout.addChild(flexlayout247);
 		
 		//assign the children to page 
@@ -361,9 +349,7 @@ const PgSettings_ = extend(Page)(
 			horizontaldivider_1: horizontaldivider_1,
 			layoutFinger: layoutFinger,
 			horizontalDividerFingerprint: horizontalDividerFingerprint,
-			layoutCheckUpdate: layoutCheckUpdate,
-			horizontalDividerCheckUpdate: horizontalDividerCheckUpdate,
-			txtAbout: txtAbout,
+			layoutAbout: layoutAbout,
 			txtAboutDesc: txtAboutDesc,
 			signoutLayout: signoutLayout
 		});
@@ -387,9 +373,10 @@ const PgSettings_ = extend(Page)(
 			switchFinger: switchFinger
 		});
 		
-		//assign the children of layoutCheckUpdate
-		layoutCheckUpdate.children = Object.assign({}, {
-			txtCheckUpdate: txtCheckUpdate
+		//assign the children of layoutAbout
+		layoutAbout.children = Object.assign({}, {
+			txtAbout: txtAbout,
+			txtNewVersion: txtNewVersion
 		});
 		
 		//assign the children of signoutLayout

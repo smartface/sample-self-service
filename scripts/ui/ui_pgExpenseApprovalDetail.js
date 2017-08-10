@@ -39,8 +39,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			backgroundColor: Color.create(0, 255, 255, 255),
 			top: null,
 			flexGrow: null
-		});
-		var mainLayout = new FlexLayout(mainLayoutStyle);
+		});  
+		var mainLayout = new FlexLayout(mainLayoutStyle);  
 		this.layout.addChild(mainLayout);
 		this.mainLayout = mainLayout;
 
@@ -53,8 +53,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			marginRight: 10,
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var userInformation = new FlexLayout(userInformationStyle);
+		});  
+		var userInformation = new FlexLayout(userInformationStyle);  
 		mainLayout.addChild(userInformation);
 		
 		const detailsLayoutStyle = getCombinedStyle(".flexLayout", {
@@ -65,8 +65,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			height: 210,
 			marginLeft: 10,
 			marginRight: 10
-		});
-		var detailsLayout = new FlexLayout(detailsLayoutStyle);
+		});  
+		var detailsLayout = new FlexLayout(detailsLayoutStyle);  
 		mainLayout.addChild(detailsLayout);
 		
 		const noteLayoutStyle = getCombinedStyle(".flexLayout", {
@@ -79,8 +79,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			paddingBottom: 10,
 			marginLeft: 10,
 			marginRight: 10
-		});
-		var noteLayout = new FlexLayout(noteLayoutStyle);
+		});  
+		var noteLayout = new FlexLayout(noteLayoutStyle);  
 		mainLayout.addChild(noteLayout);
 		
 		const fileLayoutStyle = getCombinedStyle(".flexLayout", {
@@ -93,8 +93,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			paddingBottom: 10,
 			marginLeft: 10,
 			marginRight: 10
-		});
-		var fileLayout = new FlexLayout(fileLayoutStyle);
+		});  
+		var fileLayout = new FlexLayout(fileLayoutStyle);  
 		mainLayout.addChild(fileLayout);
 		this.fileLayout = fileLayout;
 
@@ -106,16 +106,16 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			marginLeft: 10,
 			marginRight: 10,
 			flexDirection: FlexLayout.FlexDirection.ROW
-		});
-		var buttonsLayout = new FlexLayout(buttonsLayoutStyle);
+		});  
+		var buttonsLayout = new FlexLayout(buttonsLayoutStyle);  
 		mainLayout.addChild(buttonsLayout);
 		
 		const fileTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			width: null,
 			height: 25,
 			text: "FILE"
-		});
-		var fileTitle = new Label(fileTitleStyle);
+		});  
+		var fileTitle = new Label(fileTitleStyle);  
 		if(fileTitleStyle.scrollEnabled === false)
 			fileTitle.ios && (fileTitle.ios.scrollEnabled = false);
 		fileLayout.addChild(fileTitle);
@@ -125,8 +125,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			width: null,
 			height: 25,
 			text: "NOTE"
-		});
-		var noteTitle = new Label(noteTitleStyle);
+		});  
+		var noteTitle = new Label(noteTitleStyle);  
 		if(noteTitleStyle.scrollEnabled === false)
 			noteTitle.ios && (noteTitle.ios.scrollEnabled = false);
 		noteLayout.addChild(noteTitle);
@@ -136,8 +136,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			width: null,
 			height: 25,
 			text: "DETAILS"
-		});
-		var detailsTitle = new Label(detailsTitleStyle);
+		});  
+		var detailsTitle = new Label(detailsTitleStyle);  
 		if(detailsTitleStyle.scrollEnabled === false)
 			detailsTitle.ios && (detailsTitle.ios.scrollEnabled = false);
 		detailsLayout.addChild(detailsTitle);
@@ -149,8 +149,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			height: null,
 			backgroundColor: Color.create(255, 255, 50, 75),
 			flexGrow: 10
-		});
-		var reject = new Button(rejectStyle);
+		});  
+		var reject = new Button(rejectStyle);  
 		buttonsLayout.addChild(reject);
 		this.reject = reject;
 
@@ -159,8 +159,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			height: 60,
 			image: Image.createFromFile("images://avatar1.png"),
 			imageFillType: ImageFillType.ASPECTFIT
-		});
-		var avatar = new ImageView(avatarStyle);
+		});  
+		var avatar = new ImageView(avatarStyle);  
 		userInformation.addChild(avatar);
 		this.avatar = avatar;
 
@@ -171,8 +171,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			marginTop: 10,
 			imageFillType: ImageFillType.ASPECTFIT,
 			flexGrow: 1
-		});
-		var imageview22 = new ImageView(imageview22Style);
+		});  
+		var imageview22 = new ImageView(imageview22Style);  
 		fileLayout.addChild(imageview22);
 		
 		const noteStyle = getCombinedStyle(".label", {
@@ -181,8 +181,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			marginTop: 10,
 			text: null,
 			flexGrow: 1
-		});
-		var note = new Label(noteStyle);
+		});  
+		var note = new Label(noteStyle);  
 		if(noteStyle.scrollEnabled === false)
 			note.ios && (note.ios.scrollEnabled = false);
 		noteLayout.addChild(note);
@@ -193,8 +193,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			height: 60,
 			marginLeft: 10,
 			flexGrow: 1
-		});
-		var flexlayout109 = new FlexLayout(flexlayout109Style);
+		});  
+		var flexlayout109 = new FlexLayout(flexlayout109Style);  
 		userInformation.addChild(flexlayout109);
 		
 		const titleItemStyle = getCombinedStyle(".flexLayout", {
@@ -206,8 +206,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var titleItem = new ListItem1(titleItemStyle, "pgExpenseApprovalDetail");
+		}); 
+		var titleItem = new ListItem1(titleItemStyle, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(titleItem);
 		this.titleItem = titleItem;
 
@@ -216,8 +216,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			height: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
 			flexGrow: 1
-		});
-		var flexlayout191 = new FlexLayout(flexlayout191Style);
+		});  
+		var flexlayout191 = new FlexLayout(flexlayout191Style);  
 		buttonsLayout.addChild(flexlayout191);
 		
 		const horizontalDividerStyle = getCombinedStyle(".flexLayout", {
@@ -229,8 +229,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			alpha: 1,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgExpenseApprovalDetail");
+		}); 
+		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(horizontalDivider);
 		
 		const approveStyle = getCombinedStyle(".button", {
@@ -239,8 +239,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			height: null,
 			backgroundColor: Color.create(255, 62, 208, 151),
 			flexGrow: 10
-		});
-		var approve = new Button(approveStyle);
+		});  
+		var approve = new Button(approveStyle);  
 		buttonsLayout.addChild(approve);
 		this.approve = approve;
 
@@ -253,8 +253,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var typeItem = new ListItem1(typeItemStyle, "pgExpenseApprovalDetail");
+		}); 
+		var typeItem = new ListItem1(typeItemStyle, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(typeItem);
 		this.typeItem = typeItem;
 
@@ -267,8 +267,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			alpha: 1,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgExpenseApprovalDetail");
+		}); 
+		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(horizontaldivider_1);
 		
 		const expenseItemStyle = getCombinedStyle(".flexLayout", {
@@ -280,8 +280,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var expenseItem = new ListItem1(expenseItemStyle, "pgExpenseApprovalDetail");
+		}); 
+		var expenseItem = new ListItem1(expenseItemStyle, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(expenseItem);
 		this.expenseItem = expenseItem;
 
@@ -294,8 +294,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			alpha: 1,
 			flexGrow: null,
 			positionType: FlexLayout.PositionType.RELATIVE
-		});
-		var horizontaldivider_2 = new HorizontalDivider(horizontaldivider_2Style, "pgExpenseApprovalDetail");
+		}); 
+		var horizontaldivider_2 = new HorizontalDivider(horizontaldivider_2Style, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(horizontaldivider_2);
 		
 		const expenseDateItemStyle = getCombinedStyle(".flexLayout", {
@@ -307,8 +307,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			flexDirection: FlexLayout.FlexDirection.ROW,
 			positionType: FlexLayout.PositionType.RELATIVE,
 			alignItems: FlexLayout.AlignItems.CENTER
-		});
-		var expenseDateItem = new ListItem1(expenseDateItemStyle, "pgExpenseApprovalDetail");
+		}); 
+		var expenseDateItem = new ListItem1(expenseDateItemStyle, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(expenseDateItem);
 		this.expenseDateItem = expenseDateItem;
 
@@ -319,8 +319,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			textColor: Color.create(255, 74, 74, 74),
 			flexGrow: 1,
 			font: Font.create("Arial", 18, Font.NORMAL)
-		});
-		var name = new Label(nameStyle);
+		});  
+		var name = new Label(nameStyle);  
 		if(nameStyle.scrollEnabled === false)
 			name.ios && (name.ios.scrollEnabled = false);
 		flexlayout109.addChild(name);
@@ -333,8 +333,8 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			textColor: Color.create(128, 74, 74, 74),
 			flexGrow: 1,
 			font: Font.create("Arial", 14, Font.NORMAL)
-		});
-		var position = new Label(positionStyle);
+		});  
+		var position = new Label(positionStyle);  
 		if(positionStyle.scrollEnabled === false)
 			position.ios && (position.ios.scrollEnabled = false);
 		flexlayout109.addChild(position);
