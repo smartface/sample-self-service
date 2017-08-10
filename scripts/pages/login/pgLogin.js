@@ -5,10 +5,8 @@ const Image = require("sf-core/ui/image");
 const Router = require("sf-core/router");
 const System = require("sf-core/device/system");
 const Timer = require("sf-core/timer");
-const FingerPrintLib = require("sf-extension-utils/fingerprint");
-const Data = require("sf-core/data");
-const AlertUtil = require("lib/util/alert");
-const rau = require("sf-extension-utils/rau");
+const fingerprint = require("sf-extension-utils").fingerprint;
+const rau = require("sf-extension-utils").rau;
 const mcs = require("../../lib/mcs");
 var loader = require("../../loader");
 
@@ -30,7 +28,7 @@ const Page_ = extend(PageDesign)(
 );
 
 function onShow(parentOnShow, params) {
-	if (typeof parentOnShow === "function") parentOnShow(params);
+	parentOnShow && parentOnShow(params);
 
 	this.usernameLayout.innerTextbox.ios.clearButtonEnabled = true;
 	this.passwordLayout.innerTextbox.ios.clearButtonEnabled = true;
@@ -53,113 +51,56 @@ function initTexts(page) {
 	page.appName.text = lang["pgLogin.appName"];
 
 	page.usernameLayout.textboxInfo.text = lang["pgLogin.inputs.username.info"];
-	page.usernameLayout.innerTextbox.text = Data.getBooleanVariable("isUserAuthenticated") ? Data.getStringVariable("userName") : "";
 	page.passwordLayout.textboxInfo.text = lang["pgLogin.inputs.password.info"];
 
-	page.usernameLayout.innerTextbox.text = "";
 	page.passwordLayout.innerTextbox.text = "";
 }
 
 // Runs sign in animation and calls sign in service
 function signin(page) {
 	if (page.usernameLayout.innerTextbox.text === "") {
-		AlertUtil.showAlert(lang["pgLogin.inputs.username.error"]);
+		alert(lang["pgLogin.inputs.username.error"]);
 		return;
-	}
-
-	if (!Data.getBooleanVariable('isNotFirstLogin')) {
-		if (page.passwordLayout.innerTextbox.text === "") {
-			// Validate fingerPrint
-			AlertUtil.showAlert(lang["pgLogin.inputs.password.error"]);
-			return;
-		}
-	}
-
-	if (FingerPrintLib.isUserVerifiedFingerprint) {
-		// Second+ logging. No need to register fingerprint user already do it before.
-		if (page.passwordLayout.innerTextbox.text !== "") {
-			// Validate fingerPrint
-			doLogin(page);
-		}
-		else {
-			FingerPrintLib.validateFingerPrint(function() {
-				doLogin(page);
-			}, function() {
-				if (page.passwordLayout.innerTextbox.text === "") {
-					// Validate fingerPrint
-					AlertUtil.showAlert(lang["pgLogin.inputs.password.error"]);
-					return;
-				}
-				doLogin(page);
-			});
-			return;
-		}
-	}
-	else if (FingerPrintLib.isFingerprintAvailable) {
-		if (FingerPrintLib.isUserAllowedFingerprint) {
-			// Second+ logging. But user not registered fingerprint. But password supplied skip fingerprint
-			if (page.passwordLayout.innerTextbox.text !== "") {
-				// Validate fingerPrint
-				doLogin(page);
-			}
-			else {
-				FingerPrintLib.validateFingerPrint(function() {
-					doLogin(page);
-				}, function() {
-					if (page.passwordLayout.innerTextbox.text === "") {
-						// Validate fingerPrint
-						AlertUtil.showAlert(lang["pgLogin.inputs.password.error"]);
-						return;
-					}
-					doLogin(page);
-				});
-				return;
-			}
-		}
-		// first logging and ask user to register fingerprint
-		else if (!FingerPrintLib.isUserRejectedFingerprint) {
-			FingerPrintLib.registerFingerPrint(function() {
-				doLogin(page);
-			}, function() {
-				if (page.passwordLayout.innerTextbox.text === "") {
-					// Validate fingerPrint
-					AlertUtil.showAlert(lang["pgLogin.inputs.password.error"]);
-					return;
-				}
-				doLogin(page);
-			});
-			return;
-		}
-
 	}
 
 	if (page.passwordLayout.innerTextbox.text === "") {
 		// Validate fingerPrint
-		AlertUtil.showAlert(lang["pgLogin.inputs.password.error"]);
+		alert(lang["pgLogin.inputs.password.error"]);
 		return;
 	}
+	var isValid = true;
+	var password;
+	isValid && fingerprint.loginWithFingerprint(function(err, fingerprintResult) {
+		if (err)
+			password = page.passwordLayout.innerTextbox.text;
+		else
+			password = fingerprintResult.password;
+		if (!password)
+			isValid = false;
+		!isValid && alert("password is required");
+		doLogin(page, page.usernameLayout.innerTextbox.text, password, function(err) {
+			if (err)
+				return;
+			fingerprintResult && fingerprintResult.success(); //Important!
+			startLoading(page);
+
+		});
+
+	});
 
 	doLogin(page);
 
 }
 
-function doLogin(page) {
+function doLogin(page, username, password, callback) {
 	mcs.login({
-		username: page.usernameLayout.innerTextbox.text,
-		password: page.passwordLayout.innerTextbox.text
+		username: username,
+		password: password
 	}, function(err, userData) {
 		if (err) {
-			return AlertUtil.showAlert("Username & password not accepted"); //TODO: lang
+			return alert("Username & password not accepted"); //TODO: lang
 		}
-
-		Data.setBooleanVariable("isUserAuthenticated", true);
-		Data.setBooleanVariable('isNotFirstLogin', true);
-		Data.setStringVariable("userName", page.usernameLayout.innerTextbox.text);
-		if (page.passwordLayout.innerTextbox.text) {
-			Data.setStringVariable("password", page.passwordLayout.innerTextbox.text);
-		}
-
-		startLoading(page);
+		callback && callback();
 	});
 
 }

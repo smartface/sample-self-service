@@ -2,7 +2,7 @@ const extend			= require('js-base/core/extend');
 const System			= require("sf-core/device/system");
 const ItemSpeechDesign  = require('library/ItemSpeech');
 const Image             = require('sf-core/ui/image');
-const Speech2Text       = require("sf-extension-utils/speech2text");
+const Speech2Text       = require("sf-extension-utils").speechToText;
 
 const ItemSpeech = extend(ItemSpeechDesign)(
 	//constructor

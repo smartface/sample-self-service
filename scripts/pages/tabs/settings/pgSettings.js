@@ -5,15 +5,15 @@ const Application = require("sf-core/application");
 const Data = require("sf-core/data");
 const PageDesign = require("../../../ui/ui_pgSettings");
 const Router = require("sf-core/ui/router");
-const FingerPrintLib = require("sf-extension-utils/fingerprint");
+const fingerprint = require("sf-extension-utils").fingerprint;
 const System = require('sf-core/device/system');
-const rau = require("sf-extension-utils/rau");
+const rau = require("sf-extension-utils").rau;
 
 const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super, params) {
 		// Initalizes super class for this page scope
-		_super(this, params); 
+		_super(this, params);
 
 		var _superOnLoad = this.onLoad;
 		var _superOnShow = this.onShow;
@@ -23,35 +23,36 @@ const Page_ = extend(PageDesign)(
 			this.headerBar.leftItemEnabled = false;
 			this.txtTheme.text = lang["pgSettings.theme"];
 			this.txtNotification.text = lang["pgSettings.notifications"];
-			this.txtAbout.text = lang["pgSettings.about"] + " v." + Application.version ;
+			this.txtAbout.text = lang["pgSettings.about"] + " v." + Application.version;
 			this.txtAboutDesc.text = lang["pgSettings.aboutDesc"];
 			this.txtNewVersion.visible = false;
 
 			initFingerPrint.call(this);
 		};
-		
+
 		this.onShow = function() {
 			if (typeof _superOnShow === "function") _superOnShow.call(this);
 
 			initNewVersionButton.call(this);
 		};
-		
+
 		this.themeBlueLayout.onTouchEnded = function() {
-		    changeTheme("Style1");
-		}
-		
+			changeTheme("Style1");
+		};
+
 		this.themePurpleLayout.onTouchEnded = function() {
-		    changeTheme("Style2");
-		}
-		
+			changeTheme("Style2");
+		};
+
 		this.signoutLayout.onTouchEnded = function() {
 			Data.setBooleanVariable("isUserAuthenticated", false);
 			Data.setStringVariable("userName", null);
 			Data.setStringVariable("password", null);
-			
+
 			if (System.OS === "Android") {
 				Router.go("login/pgLogin"); // TODO: remove after AND-2900
-			} else {
+			}
+			else {
 				Router.goBack("login");
 			}
 		}
@@ -74,7 +75,7 @@ function changeTheme(styleName) {
 		type: AlertView.Android.ButtonType.POSITIVE,
 		onClick: function() {
 			Data.setStringVariable("theme", styleName);
-    		Application.restart();
+			Application.restart();
 		}
 	});
 	confirmationAlert.addButton({
@@ -92,31 +93,35 @@ function initCurrentTheme() {
 }
 
 function initFingerPrint() {
-	if(FingerPrintLib.isFingerprintAvailable){
-		this.switchFinger.toggle = ((FingerPrintLib.isUserRejectedFingerprint === false) && (FingerPrintLib.isUserVerifiedFingerprint === true)) ;
-	} else {
-	    this.layoutFinger.height = Number.NaN;
-	    this.layoutFinger.maxHeight = 0;
-	    this.layoutFinger.flexGrow = 0;
-	    this.layoutFinger.visible = false;
-	    this.horizontalDividerFingerprint.height = Number.NaN;
-	    this.horizontalDividerFingerprint.flexGrow = 0;
-	    this.horizontalDividerFingerprint.maxHeight = 0;
-	    this.horizontalDividerFingerprint.visible = false;
+	const page = this;
+	if (System.fingerPrintAvailable) {
+		page.switchFinger.toggle = fingerprint.useFingerprintLogin;
 	}
-	this.switchFinger.onToggleChanged = function( ){
-	    FingerPrintLib.isUserRejectedFingerprint = (this.switchFinger.toggle === false);
-	}.bind(this);
+	else {
+		page.layoutFinger.height = Number.NaN;
+		page.layoutFinger.maxHeight = 0;
+		page.layoutFinger.flexGrow = 0;
+		page.layoutFinger.visible = false;
+		page.horizontalDividerFingerprint.height = Number.NaN;
+		page.horizontalDividerFingerprint.flexGrow = 0;
+		page.horizontalDividerFingerprint.maxHeight = 0;
+		page.horizontalDividerFingerprint.visible = false;
+	}
+	page.switchFinger.onToggleChanged = function() {
+		fingerprint.useFingerprintLogin = page.switchFinger.toggle;
+
+	}.bind(page);
 }
 
 function initNewVersionButton() {
-	Application.checkUpdate(function(err, succ){
-		if (succ) {
+	Application.checkUpdate(function(err, succ) {
+		if (!err) {
 			this.txtNewVersion.visible = true;
 			this.txtNewVersion.onTouchEnded = function() {
 				rau.checkUpdate();
 			};
-		} else {
+		}
+		else {
 			this.txtNewVersion.visible = false;
 		}
 	}.bind(this));
