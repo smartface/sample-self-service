@@ -34,7 +34,7 @@ const PgApprovals_ = extend(Page)(
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgApprovals");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
-
+	
 		const flexlayout137Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -47,7 +47,7 @@ const PgApprovals_ = extend(Page)(
 		});  
 		var flexlayout137 = new FlexLayout(flexlayout137Style);  
 		this.layout.addChild(flexlayout137);
-		
+			
 		const comingSoonStyle = getCombinedStyle(".imageView", {
 			width: null,
 			height: 100,
@@ -56,7 +56,7 @@ const PgApprovals_ = extend(Page)(
 		var comingSoon = new ImageView(comingSoonStyle);  
 		flexlayout137.addChild(comingSoon);
 		this.comingSoon = comingSoon;
-
+	
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,

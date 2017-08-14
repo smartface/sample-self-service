@@ -45,7 +45,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var mainContainer = new FlexLayout(mainContainerStyle);  
 		this.layout.addChild(mainContainer);
 		this.mainContainer = mainContainer;
-
+	
 		const userInformationStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 100,
@@ -57,7 +57,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var userInformation = new FlexLayout(userInformationStyle);  
 		mainContainer.addChild(userInformation);
-		
+			
 		const flexlayout1104Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			marginTop: null,
@@ -69,7 +69,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout1104 = new FlexLayout(flexlayout1104Style);  
 		mainContainer.addChild(flexlayout1104);
-		
+			
 		const descriptionLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 120,
@@ -81,7 +81,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var descriptionLayout = new FlexLayout(descriptionLayoutStyle);  
 		mainContainer.addChild(descriptionLayout);
-		
+			
 		const buttonsLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 60,
@@ -91,7 +91,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var buttonsLayout = new FlexLayout(buttonsLayoutStyle);  
 		mainContainer.addChild(buttonsLayout);
-		
+			
 		const avatarStyle = getCombinedStyle(".imageView", {
 			width: 60,
 			height: 60,
@@ -103,13 +103,13 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var avatar = new ImageView(avatarStyle);  
 		userInformation.addChild(avatar);
 		this.avatar = avatar;
-
+	
 		const txtDescriptionStyle = getCombinedStyle(".textBox", {
 			width: null,
 			height: null,
 			text: "",
 			flexGrow: 1,
-			font: Font.create("Lato", "12", Font.NORMAL)
+			font: Font.create("Lato", 16, Font.NORMAL)
 		});  
 		var txtDescription = new TextBox(txtDescriptionStyle);  
 		if(txtDescriptionStyle.hintTextColor)
@@ -126,7 +126,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			txtDescription.ios && (txtDescription.ios.adjustFontSizeToFit = txtDescriptionStyle.adjustFontSizeToFit);
 		descriptionLayout.addChild(txtDescription);
 		this.txtDescription = txtDescription;
-
+	
 		const flexlayout1105Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -135,7 +135,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout1105 = new FlexLayout(flexlayout1105Style);  
 		flexlayout1104.addChild(flexlayout1105);
-		
+			
 		const btnRejectStyle = getCombinedStyle(".button", {
 			width: null,
 			height: null,
@@ -146,7 +146,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var btnReject = new Button(btnRejectStyle);  
 		buttonsLayout.addChild(btnReject);
 		this.btnReject = btnReject;
-
+	
 		const flexlayout3Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -155,7 +155,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout3 = new FlexLayout(flexlayout3Style);  
 		buttonsLayout.addChild(flexlayout3);
-		
+			
 		const flexlayout1103Style = getCombinedStyle(".flexLayout", {
 			height: 60,
 			width: null,
@@ -164,7 +164,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout1103 = new FlexLayout(flexlayout1103Style);  
 		userInformation.addChild(flexlayout1103);
-		
+			
 		const lblDescriptionStyle = getCombinedStyle(".label", {
 			height: null,
 			width: null,
@@ -175,7 +175,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			lblDescription.ios && (lblDescription.ios.scrollEnabled = false);
 		descriptionLayout.addChild(lblDescription);
 		this.lblDescription = lblDescription;
-
+	
 		const flexlayout1106Style = getCombinedStyle(".flexLayout .flexLayout-filled", {
 			width: null,
 			height: null,
@@ -184,7 +184,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout1106 = new FlexLayout(flexlayout1106Style);  
 		flexlayout1104.addChild(flexlayout1106);
-		
+			
 		const flexlayout408Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 60,
@@ -194,7 +194,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout408 = new FlexLayout(flexlayout408Style);  
 		userInformation.addChild(flexlayout408);
-		
+			
 		const imageview171Style = getCombinedStyle(".imageView", {
 			width: 50,
 			height: 50,
@@ -206,7 +206,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var imageview171 = new ImageView(imageview171Style);  
 		flexlayout1104.addChild(imageview171);
-		
+			
 		const btnApproveStyle = getCombinedStyle(".button", {
 			width: null,
 			height: null,
@@ -217,7 +217,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		var btnApprove = new Button(btnApproveStyle);  
 		buttonsLayout.addChild(btnApprove);
 		this.btnApprove = btnApprove;
-
+	
 		const imageview66Style = getCombinedStyle(".imageView", {
 			width: null,
 			height: 20,
@@ -228,7 +228,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var imageview66 = new ImageView(imageview66Style);  
 		flexlayout408.addChild(imageview66);
-		
+			
 		const flexlayout1108Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -237,7 +237,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout1108 = new FlexLayout(flexlayout1108Style);  
 		flexlayout1105.addChild(flexlayout1108);
-		
+			
 		const nameStyle = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -251,7 +251,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			name.ios && (name.ios.scrollEnabled = false);
 		flexlayout1103.addChild(name);
 		this.name = name;
-
+	
 		const flexlayout1Style = getCombinedStyle(".flexLayout", {
 			backgroundColor: Color.create(0, 255, 255, 255),
 			width: null,
@@ -265,7 +265,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		flexlayout1106.addChild(flexlayout1);
-		
+			
 		const label541Style = getCombinedStyle(".label .label-list-item-header", {
 			width: null,
 			height: 20,
@@ -279,7 +279,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label541Style.scrollEnabled === false)
 			label541.ios && (label541.ios.scrollEnabled = false);
 		flexlayout408.addChild(label541);
-		
+			
 		const flexlayout1108_1Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -288,7 +288,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout1108_1 = new FlexLayout(flexlayout1108_1Style);  
 		flexlayout1105.addChild(flexlayout1108_1);
-		
+			
 		const positionStyle = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -302,7 +302,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 			position.ios && (position.ios.scrollEnabled = false);
 		flexlayout1103.addChild(position);
 		this.position = position;
-
+	
 		const imageview170Style = getCombinedStyle(".imageView", {
 			width: 30,
 			height: 30,
@@ -314,7 +314,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var imageview170 = new ImageView(imageview170Style);  
 		flexlayout1105.addChild(imageview170);
-		
+			
 		const flexlayout2Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -323,7 +323,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout2 = new FlexLayout(flexlayout2Style);  
 		flexlayout1.addChild(flexlayout2);
-		
+			
 		const label1_1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -340,7 +340,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label1_1Style.scrollEnabled === false)
 			label1_1.ios && (label1_1.ios.scrollEnabled = false);
 		flexlayout1108_1.addChild(label1_1);
-		
+			
 		const flexlayout1111Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -352,7 +352,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout1111 = new FlexLayout(flexlayout1111Style);  
 		flexlayout1108.addChild(flexlayout1111);
-		
+			
 		const flexlayout2_1Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -361,7 +361,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout2_1 = new FlexLayout(flexlayout2_1Style);  
 		flexlayout1.addChild(flexlayout2_1);
-		
+			
 		const flexlayout1115Style = getCombinedStyle(".flexLayout", {
 			width: 1,
 			height: null,
@@ -370,7 +370,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout1115 = new FlexLayout(flexlayout1115Style);  
 		flexlayout1108.addChild(flexlayout1115);
-		
+			
 		const flexlayout1114Style = getCombinedStyle(".flexLayout", {
 			width: 1,
 			height: null,
@@ -379,7 +379,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout1114 = new FlexLayout(flexlayout1114Style);  
 		flexlayout1108_1.addChild(flexlayout1114);
-		
+			
 		const flexlayout1111_2Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -391,7 +391,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout1111_2 = new FlexLayout(flexlayout1111_2Style);  
 		flexlayout1108.addChild(flexlayout1111_2);
-		
+			
 		const flexlayout2_1_1Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -400,7 +400,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout2_1_1 = new FlexLayout(flexlayout2_1_1Style);  
 		flexlayout1.addChild(flexlayout2_1_1);
-		
+			
 		const label1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -416,7 +416,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label1Style.scrollEnabled === false)
 			label1.ios && (label1.ios.scrollEnabled = false);
 		flexlayout1108_1.addChild(label1);
-		
+			
 		const label2_3_1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -431,7 +431,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label2_3_1Style.scrollEnabled === false)
 			label2_3_1.ios && (label2_3_1.ios.scrollEnabled = false);
 		flexlayout2_1_1.addChild(label2_3_1);
-		
+			
 		const label2Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -446,7 +446,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label2Style.scrollEnabled === false)
 			label2.ios && (label2.ios.scrollEnabled = false);
 		flexlayout2.addChild(label2);
-		
+			
 		const label1572_2Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -459,7 +459,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label1572_2Style.scrollEnabled === false)
 			label1572_2.ios && (label1572_2.ios.scrollEnabled = false);
 		flexlayout1111_2.addChild(label1572_2);
-		
+			
 		const label2_3Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -474,7 +474,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label2_3Style.scrollEnabled === false)
 			label2_3.ios && (label2_3.ios.scrollEnabled = false);
 		flexlayout2_1.addChild(label2_3);
-		
+			
 		const label1572Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -487,7 +487,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label1572Style.scrollEnabled === false)
 			label1572.ios && (label1572.ios.scrollEnabled = false);
 		flexlayout1111.addChild(label1572);
-		
+			
 		const label2_1_1_1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -502,7 +502,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label2_1_1_1Style.scrollEnabled === false)
 			label2_1_1_1.ios && (label2_1_1_1.ios.scrollEnabled = false);
 		flexlayout2_1_1.addChild(label2_1_1_1);
-		
+			
 		const label2_1_1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -517,7 +517,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label2_1_1Style.scrollEnabled === false)
 			label2_1_1.ios && (label2_1_1.ios.scrollEnabled = false);
 		flexlayout2_1.addChild(label2_1_1);
-		
+			
 		const label2_1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -532,7 +532,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label2_1Style.scrollEnabled === false)
 			label2_1.ios && (label2_1.ios.scrollEnabled = false);
 		flexlayout2.addChild(label2_1);
-		
+			
 		const label1572_1_1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -546,7 +546,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label1572_1_1Style.scrollEnabled === false)
 			label1572_1_1.ios && (label1572_1_1.ios.scrollEnabled = false);
 		flexlayout1111_2.addChild(label1572_1_1);
-		
+			
 		const label1572_1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -560,7 +560,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label1572_1Style.scrollEnabled === false)
 			label1572_1.ios && (label1572_1.ios.scrollEnabled = false);
 		flexlayout1111.addChild(label1572_1);
-		
+			
 		const label2_2_1_1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -575,7 +575,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label2_2_1_1Style.scrollEnabled === false)
 			label2_2_1_1.ios && (label2_2_1_1.ios.scrollEnabled = false);
 		flexlayout2_1_1.addChild(label2_2_1_1);
-		
+			
 		const label2_2_1Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -590,7 +590,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label2_2_1Style.scrollEnabled === false)
 			label2_2_1.ios && (label2_2_1.ios.scrollEnabled = false);
 		flexlayout2_1.addChild(label2_2_1);
-		
+			
 		const label2_2Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -605,7 +605,7 @@ const PgLeaveApprovalDetail_ = extend(Page)(
 		if(label2_2Style.scrollEnabled === false)
 			label2_2.ios && (label2_2.ios.scrollEnabled = false);
 		flexlayout2.addChild(label2_2);
-		
+			
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			mainContainer: mainContainer

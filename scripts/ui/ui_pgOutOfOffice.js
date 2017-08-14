@@ -41,7 +41,7 @@ const PgOutOfOffice_ = extend(Page)(
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgOutOfOffice");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
-
+	
 		const mainContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 610,
@@ -53,7 +53,7 @@ const PgOutOfOffice_ = extend(Page)(
 		var mainContainer = new FlexLayout(mainContainerStyle);  
 		this.layout.addChild(mainContainer);
 		this.mainContainer = mainContainer;
-
+	
 		const flexlayout48Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 59,
@@ -62,7 +62,7 @@ const PgOutOfOffice_ = extend(Page)(
 		});  
 		var flexlayout48 = new FlexLayout(flexlayout48Style);  
 		mainContainer.addChild(flexlayout48);
-		
+			
 		const dateContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			top: null,
@@ -76,7 +76,7 @@ const PgOutOfOffice_ = extend(Page)(
 		});  
 		var dateContainer = new FlexLayout(dateContainerStyle);  
 		mainContainer.addChild(dateContainer);
-		
+			
 		const intExtContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 160,
@@ -90,7 +90,7 @@ const PgOutOfOffice_ = extend(Page)(
 		});  
 		var intExtContainer = new FlexLayout(intExtContainerStyle);  
 		mainContainer.addChild(intExtContainer);
-		
+			
 		const noteContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			marginTop: 10,
@@ -104,7 +104,7 @@ const PgOutOfOffice_ = extend(Page)(
 		});  
 		var noteContainer = new FlexLayout(noteContainerStyle);  
 		mainContainer.addChild(noteContainer);
-		
+			
 		const outOfOfficeStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 59,
@@ -119,7 +119,7 @@ const PgOutOfOffice_ = extend(Page)(
 		var outOfOffice = new ListItemSwitch(outOfOfficeStyle, "pgOutOfOffice");  
 		flexlayout48.addChild(outOfOffice);
 		this.outOfOffice = outOfOffice;
-
+	
 		const flexlayout97Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 25,
@@ -127,7 +127,7 @@ const PgOutOfOffice_ = extend(Page)(
 		});  
 		var flexlayout97 = new FlexLayout(flexlayout97Style);  
 		noteContainer.addChild(flexlayout97);
-		
+			
 		const intExtTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
@@ -138,7 +138,7 @@ const PgOutOfOffice_ = extend(Page)(
 			intExtTitle.ios && (intExtTitle.ios.scrollEnabled = false);
 		intExtContainer.addChild(intExtTitle);
 		this.intExtTitle = intExtTitle;
-
+	
 		const startTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
@@ -149,7 +149,7 @@ const PgOutOfOffice_ = extend(Page)(
 			startTitle.ios && (startTitle.ios.scrollEnabled = false);
 		dateContainer.addChild(startTitle);
 		this.startTitle = startTitle;
-
+	
 		const internalStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 59,
@@ -164,7 +164,7 @@ const PgOutOfOffice_ = extend(Page)(
 		var internal = new ListItemSwitch(internalStyle, "pgOutOfOffice");  
 		intExtContainer.addChild(internal);
 		this.internal = internal;
-
+	
 		const descriptionStyle = getCombinedStyle(".textBox", {
 			width: null,
 			height: null,
@@ -189,7 +189,7 @@ const PgOutOfOffice_ = extend(Page)(
 			description.ios && (description.ios.adjustFontSizeToFit = descriptionStyle.adjustFontSizeToFit);
 		noteContainer.addChild(description);
 		this.description = description;
-
+	
 		const flexlayout742Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 45,
@@ -199,7 +199,7 @@ const PgOutOfOffice_ = extend(Page)(
 		});  
 		var flexlayout742 = new FlexLayout(flexlayout742Style);  
 		dateContainer.addChild(flexlayout742);
-		
+			
 		const endTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
@@ -212,7 +212,7 @@ const PgOutOfOffice_ = extend(Page)(
 			endTitle.ios && (endTitle.ios.scrollEnabled = false);
 		dateContainer.addChild(endTitle);
 		this.endTitle = endTitle;
-
+	
 		const horizontalDividerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -225,7 +225,7 @@ const PgOutOfOffice_ = extend(Page)(
 		}); 
 		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgOutOfOffice");  
 		intExtContainer.addChild(horizontalDivider);
-		
+			
 		const externalStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 59,
@@ -240,7 +240,7 @@ const PgOutOfOffice_ = extend(Page)(
 		var external = new ListItemSwitch(externalStyle, "pgOutOfOffice");  
 		intExtContainer.addChild(external);
 		this.external = external;
-
+	
 		const flexlayout742_1Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 45,
@@ -250,7 +250,7 @@ const PgOutOfOffice_ = extend(Page)(
 		});  
 		var flexlayout742_1 = new FlexLayout(flexlayout742_1Style);  
 		dateContainer.addChild(flexlayout742_1);
-		
+			
 		const startDatePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -262,7 +262,7 @@ const PgOutOfOffice_ = extend(Page)(
 		var startDatePicker = new PickerContainer(startDatePickerStyle, "pgOutOfOffice");  
 		flexlayout742.addChild(startDatePicker);
 		this.startDatePicker = startDatePicker;
-
+	
 		const noteTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			width: null,
 			height: null,
@@ -274,7 +274,7 @@ const PgOutOfOffice_ = extend(Page)(
 			noteTitle.ios && (noteTitle.ios.scrollEnabled = false);
 		flexlayout97.addChild(noteTitle);
 		this.noteTitle = noteTitle;
-
+	
 		const endDatePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -286,7 +286,7 @@ const PgOutOfOffice_ = extend(Page)(
 		var endDatePicker = new PickerContainer(endDatePickerStyle, "pgOutOfOffice");  
 		flexlayout742_1.addChild(endDatePicker);
 		this.endDatePicker = endDatePicker;
-
+	
 		const endTimePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -298,7 +298,7 @@ const PgOutOfOffice_ = extend(Page)(
 		var endTimePicker = new PickerContainer(endTimePickerStyle, "pgOutOfOffice");  
 		flexlayout742_1.addChild(endTimePicker);
 		this.endTimePicker = endTimePicker;
-
+	
 		const imageview44Style = getCombinedStyle(".imageView", {
 			width: 14,
 			image: Image.createFromFile("images://icon_microphone.png"),
@@ -307,7 +307,7 @@ const PgOutOfOffice_ = extend(Page)(
 		});  
 		var imageview44 = new ImageView(imageview44Style);  
 		flexlayout97.addChild(imageview44);
-		
+			
 		const startTimePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -319,7 +319,7 @@ const PgOutOfOffice_ = extend(Page)(
 		var startTimePicker = new PickerContainer(startTimePickerStyle, "pgOutOfOffice");  
 		flexlayout742.addChild(startTimePicker);
 		this.startTimePicker = startTimePicker;
-
+	
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,

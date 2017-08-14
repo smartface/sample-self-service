@@ -2,7 +2,7 @@
 	"components": [
 		{
 			"type": "Page",
-			"id": "1118cc00",
+			"id": "1857-e2e9-357d-41ad",
 			"themeProps": {},
 			"userProps": {
 				"layout": {},
@@ -12,7 +12,7 @@
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.3.19",
+			"version": "6.4.5",
 			"props": {
 				"backgroundColor": "#EEEEEE",
 				"orientation": "PORTRAIT",
@@ -25,21 +25,22 @@
 					"justifyContent": "FLEX_START"
 				},
 				"children": [
-					"statusBar",
-					"headerBar",
-					"layoutHeaderBar",
-					"flexlayout1",
-					"flexlayout500"
+					"9952-0302-8edc-34e7",
+					"404e-ee5a-9abd-1072",
+					"3fa1-efb5-9c85-da07",
+					"1184-c199-048c-bdcd",
+					"bee1-8d00-348c-75bf"
 				],
 				"isRemovable": true,
 				"name": "pgProfileDetail",
 				"width": 187.5,
-				"height": 333.5
+				"height": 333.5,
+				"parent": null
 			}
 		},
 		{
 			"type": "StatusBar",
-			"id": "bb4a1566",
+			"id": "9952-0302-8edc-34e7",
 			"themeProps": {},
 			"userProps": {
 				"visible": true,
@@ -54,7 +55,7 @@
 				"color": "#45495A",
 				"visible": true,
 				"children": [],
-				"parent": "pgProfileDetail",
+				"parent": "1857-e2e9-357d-41ad",
 				"isRemovable": false,
 				"name": "statusBar",
 				"height": 20
@@ -62,7 +63,7 @@
 		},
 		{
 			"type": "HeaderBar",
-			"id": "8ffef360",
+			"id": "404e-ee5a-9abd-1072",
 			"themeProps": {},
 			"userProps": {
 				"title": null,
@@ -75,14 +76,14 @@
 				"visible": false,
 				"backgroundColor": "#45495A",
 				"children": [],
-				"parent": "pgProfileDetail",
+				"parent": "1857-e2e9-357d-41ad",
 				"name": "headerBar",
 				"height": 44
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "ec967058",
+			"id": "1184-c199-048c-bdcd",
 			"themeProps": {
 				"Highlights": "HeaderBar"
 			},
@@ -115,17 +116,17 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"imageview111",
-					"label827",
-					"label827_1"
+					"c80a-c4d0-a121-a716",
+					"4e3c-f2d4-2687-2dfc",
+					"c803-a717-2606-30b7"
 				],
-				"parent": "pgProfileDetail",
+				"parent": "1857-e2e9-357d-41ad",
 				"name": "flexlayout1"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "6b533646",
+			"id": "bee1-8d00-348c-75bf",
 			"themeProps": {},
 			"userProps": {
 				"width": null,
@@ -159,16 +160,16 @@
 					"flexGrow": null
 				},
 				"children": [
-					"qualificationcontainer",
-					"hierarchyController"
+					"14b6-948b-2e17-f270",
+					"ae97-d9f6-7277-b41e"
 				],
-				"parent": "pgProfileDetail",
+				"parent": "1857-e2e9-357d-41ad",
 				"name": "flexlayout500"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "da9b9198",
+			"id": "14b6-948b-2e17-f270",
 			"themeProps": {},
 			"userProps": {
 				"width": null,
@@ -220,22 +221,22 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"informationTitle",
-					"company",
-					"horizontalDivider",
-					"email",
-					"horizontaldivider_1",
-					"workPhone",
-					"horizontaldivider_1_1",
-					"mobilePhone"
+					"2a76-00b8-f212-fe61",
+					"292b-e302-e2cd-da33",
+					"3dbd-c369-fe9a-239b",
+					"3cc1-279f-76b3-b561",
+					"d200-b116-6b09-d90c",
+					"d46e-133c-f0b8-f75a",
+					"d960-d224-9777-3873",
+					"d526-b0fd-4a94-921a"
 				],
-				"parent": "flexlayout500",
+				"parent": "bee1-8d00-348c-75bf",
 				"name": "qualificationcontainer"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "58225558",
+			"id": "2a76-00b8-f212-fe61",
 			"themeProps": {
 				"Highlights": "ListItemHeader"
 			},
@@ -278,13 +279,13 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "qualificationcontainer",
+				"parent": "14b6-948b-2e17-f270",
 				"name": "informationTitle"
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "e0d441e4",
+			"id": "c80a-c4d0-a121-a716",
 			"themeProps": {},
 			"userProps": {
 				"height": 85,
@@ -316,14 +317,14 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout1",
+				"parent": "1184-c199-048c-bdcd",
 				"name": "imageview111",
 				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/myavatar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "b14ab590",
+			"id": "4e3c-f2d4-2687-2dfc",
 			"themeProps": {
 				"Highlights": "Overview-title"
 			},
@@ -365,13 +366,13 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout1",
+				"parent": "1184-c199-048c-bdcd",
 				"name": "label827"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "f62486ac",
+			"id": "c803-a717-2606-30b7",
 			"themeProps": {
 				"Highlights": "Overview-title"
 			},
@@ -412,16 +413,16 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout1",
+				"parent": "1184-c199-048c-bdcd",
 				"name": "label827_1"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "80fd4f75",
+			"id": "292b-e302-e2cd-da33",
 			"source": {
 				"page": "__library__",
-				"id": "f7afa96d"
+				"id": "3e69-6f6d-af2d-0ab2"
 			},
 			"hiddenComponent": false,
 			"themeProps": {},
@@ -470,16 +471,16 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"title",
-					"value"
+					"77ec-2e98-7b53-e4c1",
+					"c60e-a039-0933-75e6"
 				],
-				"parent": "qualificationcontainer",
+				"parent": "14b6-948b-2e17-f270",
 				"name": "company"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "01d7b639",
+			"id": "77ec-2e98-7b53-e4c1",
 			"source": {
 				"page": "__library__"
 			},
@@ -534,13 +535,13 @@
 					"flexGrow": null
 				},
 				"children": [],
-				"parent": "company",
+				"parent": "292b-e302-e2cd-da33",
 				"name": "title"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "442af9e0",
+			"id": "c60e-a039-0933-75e6",
 			"source": {
 				"page": "__library__"
 			},
@@ -595,16 +596,16 @@
 					"flexGrow": 2
 				},
 				"children": [],
-				"parent": "company",
+				"parent": "292b-e302-e2cd-da33",
 				"name": "value"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "9317f87c",
+			"id": "3dbd-c369-fe9a-239b",
 			"source": {
 				"page": "__library__",
-				"id": "71efc172"
+				"id": "5ff3-3be5-c42e-e78e"
 			},
 			"hiddenComponent": false,
 			"themeProps": {},
@@ -657,15 +658,15 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout6"
+					"5605-fb0d-b386-5bee"
 				],
-				"parent": "qualificationcontainer",
+				"parent": "14b6-948b-2e17-f270",
 				"name": "horizontalDivider"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "85e62dda",
+			"id": "5605-fb0d-b386-5bee",
 			"source": {
 				"page": "__library__"
 			},
@@ -710,16 +711,16 @@
 					"flexGrow": 1
 				},
 				"children": [],
-				"parent": "horizontalDivider",
+				"parent": "3dbd-c369-fe9a-239b",
 				"name": "flexlayout6"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "b3f46f51",
+			"id": "3cc1-279f-76b3-b561",
 			"source": {
 				"page": "__library__",
-				"id": "f7afa96d"
+				"id": "3e69-6f6d-af2d-0ab2"
 			},
 			"hiddenComponent": false,
 			"themeProps": {},
@@ -770,16 +771,16 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label48",
-					"label49"
+					"04f1-87fd-4bf8-1102",
+					"e624-fff2-d045-8daf"
 				],
-				"parent": "qualificationcontainer",
+				"parent": "14b6-948b-2e17-f270",
 				"name": "email"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "01d7b639",
+			"id": "04f1-87fd-4bf8-1102",
 			"source": {
 				"page": "__library__"
 			},
@@ -834,13 +835,13 @@
 					"flexGrow": null
 				},
 				"children": [],
-				"parent": "email",
+				"parent": "3cc1-279f-76b3-b561",
 				"name": "label48"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "442af9e0",
+			"id": "e624-fff2-d045-8daf",
 			"source": {
 				"page": "__library__"
 			},
@@ -895,16 +896,16 @@
 					"flexGrow": 2
 				},
 				"children": [],
-				"parent": "email",
+				"parent": "3cc1-279f-76b3-b561",
 				"name": "label49"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "8148a777",
+			"id": "d200-b116-6b09-d90c",
 			"source": {
 				"page": "__library__",
-				"id": "71efc172"
+				"id": "5ff3-3be5-c42e-e78e"
 			},
 			"hiddenComponent": false,
 			"themeProps": {},
@@ -955,15 +956,15 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout34"
+					"c1ab-6311-e317-7c2b"
 				],
-				"parent": "qualificationcontainer",
+				"parent": "14b6-948b-2e17-f270",
 				"name": "horizontaldivider_1"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "85e62dda",
+			"id": "c1ab-6311-e317-7c2b",
 			"source": {
 				"page": "__library__"
 			},
@@ -1008,16 +1009,16 @@
 					"flexGrow": 1
 				},
 				"children": [],
-				"parent": "horizontaldivider_1",
+				"parent": "d200-b116-6b09-d90c",
 				"name": "flexlayout34"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "65410b1c",
+			"id": "d46e-133c-f0b8-f75a",
 			"source": {
 				"page": "__library__",
-				"id": "f7afa96d"
+				"id": "3e69-6f6d-af2d-0ab2"
 			},
 			"hiddenComponent": false,
 			"themeProps": {},
@@ -1068,16 +1069,16 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label50",
-					"label51"
+					"271d-f28b-e002-3c55",
+					"f2a5-9af3-23eb-cb2e"
 				],
-				"parent": "qualificationcontainer",
+				"parent": "14b6-948b-2e17-f270",
 				"name": "workPhone"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "01d7b639",
+			"id": "271d-f28b-e002-3c55",
 			"source": {
 				"page": "__library__"
 			},
@@ -1132,13 +1133,13 @@
 					"flexGrow": null
 				},
 				"children": [],
-				"parent": "workPhone",
+				"parent": "d46e-133c-f0b8-f75a",
 				"name": "label50"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "442af9e0",
+			"id": "f2a5-9af3-23eb-cb2e",
 			"source": {
 				"page": "__library__"
 			},
@@ -1193,16 +1194,16 @@
 					"flexGrow": 2
 				},
 				"children": [],
-				"parent": "workPhone",
+				"parent": "d46e-133c-f0b8-f75a",
 				"name": "label51"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "2c424488",
+			"id": "d960-d224-9777-3873",
 			"source": {
 				"page": "__library__",
-				"id": "71efc172"
+				"id": "5ff3-3be5-c42e-e78e"
 			},
 			"hiddenComponent": false,
 			"themeProps": {},
@@ -1253,15 +1254,15 @@
 					"flexGrow": null
 				},
 				"children": [
-					"flexlayout35"
+					"1056-191b-2004-c370"
 				],
-				"parent": "qualificationcontainer",
+				"parent": "14b6-948b-2e17-f270",
 				"name": "horizontaldivider_1_1"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "85e62dda",
+			"id": "1056-191b-2004-c370",
 			"source": {
 				"page": "__library__"
 			},
@@ -1306,16 +1307,16 @@
 					"flexGrow": 1
 				},
 				"children": [],
-				"parent": "horizontaldivider_1_1",
+				"parent": "d960-d224-9777-3873",
 				"name": "flexlayout35"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "bd12d269",
+			"id": "d526-b0fd-4a94-921a",
 			"source": {
 				"page": "__library__",
-				"id": "f7afa96d"
+				"id": "3e69-6f6d-af2d-0ab2"
 			},
 			"hiddenComponent": false,
 			"themeProps": {},
@@ -1366,16 +1367,16 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"label52",
-					"label53"
+					"3259-f4c3-4cb1-170f",
+					"bf94-f01c-ffa9-1df3"
 				],
-				"parent": "qualificationcontainer",
+				"parent": "14b6-948b-2e17-f270",
 				"name": "mobilePhone"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "01d7b639",
+			"id": "3259-f4c3-4cb1-170f",
 			"source": {
 				"page": "__library__"
 			},
@@ -1430,13 +1431,13 @@
 					"flexGrow": null
 				},
 				"children": [],
-				"parent": "mobilePhone",
+				"parent": "d526-b0fd-4a94-921a",
 				"name": "label52"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "442af9e0",
+			"id": "bf94-f01c-ffa9-1df3",
 			"source": {
 				"page": "__library__"
 			},
@@ -1491,16 +1492,16 @@
 					"flexGrow": 2
 				},
 				"children": [],
-				"parent": "mobilePhone",
+				"parent": "d526-b0fd-4a94-921a",
 				"name": "label53"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "d555faa9",
+			"id": "ae97-d9f6-7277-b41e",
 			"source": {
 				"page": "__library__",
-				"id": "ce432fce"
+				"id": "a913-e1da-7ac5-691c"
 			},
 			"hiddenComponent": false,
 			"themeProps": {},
@@ -1558,19 +1559,19 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"hc_header",
-					"hc_level1",
-					"hc_level2",
-					"hc_level3",
-					"hc_level3_1"
+					"3d0e-0eb2-95c0-1105",
+					"03cb-6216-1f34-4d69",
+					"43fb-3dd7-0bb6-9f92",
+					"d3c4-8099-4ecd-350b",
+					"7cf3-2bd1-d879-3a13"
 				],
-				"parent": "flexlayout500",
+				"parent": "bee1-8d00-348c-75bf",
 				"name": "hierarchyController"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "c0cba6f4",
+			"id": "3d0e-0eb2-95c0-1105",
 			"source": {
 				"page": "__library__"
 			},
@@ -1617,13 +1618,13 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "hierarchyController",
+				"parent": "ae97-d9f6-7277-b41e",
 				"name": "hc_header"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "0d4102d7",
+			"id": "03cb-6216-1f34-4d69",
 			"source": {
 				"page": "__library__"
 			},
@@ -1671,17 +1672,17 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"imageview1",
-					"flexlayout13",
-					"flexlayout14"
+					"2463-af36-d73d-ad2a",
+					"9879-d54d-f007-60a7",
+					"7924-3f1d-dcfa-2e74"
 				],
-				"parent": "hierarchyController",
+				"parent": "ae97-d9f6-7277-b41e",
 				"name": "hc_level1"
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "277a7d76",
+			"id": "2463-af36-d73d-ad2a",
 			"source": {
 				"page": "__library__"
 			},
@@ -1721,14 +1722,14 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "hc_level1",
+				"parent": "03cb-6216-1f34-4d69",
 				"name": "imageview1",
 				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=undefined&brandModel=iPhone%207?random=0.14783335880510418"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "8f105e0b",
+			"id": "9879-d54d-f007-60a7",
 			"source": {
 				"page": "__library__"
 			},
@@ -1769,16 +1770,16 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"label17",
-					"label18"
+					"9e01-ce7c-bdf6-b507",
+					"02c8-ef8e-713c-27ed"
 				],
-				"parent": "hc_level1",
+				"parent": "03cb-6216-1f34-4d69",
 				"name": "flexlayout13"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "34b615d1",
+			"id": "9e01-ce7c-bdf6-b507",
 			"source": {
 				"page": "__library__"
 			},
@@ -1824,13 +1825,13 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout13",
+				"parent": "9879-d54d-f007-60a7",
 				"name": "label17"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "32231610",
+			"id": "02c8-ef8e-713c-27ed",
 			"source": {
 				"page": "__library__"
 			},
@@ -1873,13 +1874,13 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout13",
+				"parent": "9879-d54d-f007-60a7",
 				"name": "label18"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "28fdbff4",
+			"id": "7924-3f1d-dcfa-2e74",
 			"source": {
 				"page": "__library__"
 			},
@@ -1922,13 +1923,13 @@
 					"positionType": "ABSOLUTE"
 				},
 				"children": [],
-				"parent": "hc_level1",
+				"parent": "03cb-6216-1f34-4d69",
 				"name": "flexlayout14"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "9bab0fd2",
+			"id": "43fb-3dd7-0bb6-9f92",
 			"source": {
 				"page": "__library__"
 			},
@@ -1976,19 +1977,19 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"imageview4",
-					"flexlayout15",
-					"flexlayout16",
-					"flexlayout17",
-					"flexlayout18"
+					"adfa-1504-4e94-5b97",
+					"d9e8-2e05-e8a7-4c86",
+					"5cc0-32ef-fa0b-4716",
+					"3792-3f03-a53b-980e",
+					"a6ff-528a-5a69-f53d"
 				],
-				"parent": "hierarchyController",
+				"parent": "ae97-d9f6-7277-b41e",
 				"name": "hc_level2"
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "ec1a287c",
+			"id": "adfa-1504-4e94-5b97",
 			"source": {
 				"page": "__library__"
 			},
@@ -2028,14 +2029,14 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "hc_level2",
+				"parent": "43fb-3dd7-0bb6-9f92",
 				"name": "imageview4",
 				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/myavatar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=undefined&brandModel=iPhone%207?random=0.024541320736453986"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "e3a3b596",
+			"id": "d9e8-2e05-e8a7-4c86",
 			"source": {
 				"page": "__library__"
 			},
@@ -2076,16 +2077,16 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"label19",
-					"label20"
+					"db68-b58a-d61d-dc17",
+					"85d3-d9b7-6c59-4759"
 				],
-				"parent": "hc_level2",
+				"parent": "43fb-3dd7-0bb6-9f92",
 				"name": "flexlayout15"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "546658c5",
+			"id": "db68-b58a-d61d-dc17",
 			"source": {
 				"page": "__library__"
 			},
@@ -2131,13 +2132,13 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout15",
+				"parent": "d9e8-2e05-e8a7-4c86",
 				"name": "label19"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "3dd3c2c9",
+			"id": "85d3-d9b7-6c59-4759",
 			"source": {
 				"page": "__library__"
 			},
@@ -2181,13 +2182,13 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout15",
+				"parent": "d9e8-2e05-e8a7-4c86",
 				"name": "label20"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "d5cb5dee",
+			"id": "5cc0-32ef-fa0b-4716",
 			"source": {
 				"page": "__library__"
 			},
@@ -2230,13 +2231,13 @@
 					"positionType": "ABSOLUTE"
 				},
 				"children": [],
-				"parent": "hc_level2",
+				"parent": "43fb-3dd7-0bb6-9f92",
 				"name": "flexlayout16"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "0d0839a7",
+			"id": "3792-3f03-a53b-980e",
 			"source": {
 				"page": "__library__"
 			},
@@ -2279,13 +2280,13 @@
 					"positionType": "ABSOLUTE"
 				},
 				"children": [],
-				"parent": "hc_level2",
+				"parent": "43fb-3dd7-0bb6-9f92",
 				"name": "flexlayout17"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "02423dba",
+			"id": "a6ff-528a-5a69-f53d",
 			"source": {
 				"page": "__library__"
 			},
@@ -2328,13 +2329,13 @@
 					"positionType": "ABSOLUTE"
 				},
 				"children": [],
-				"parent": "hc_level2",
+				"parent": "43fb-3dd7-0bb6-9f92",
 				"name": "flexlayout18"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "e31415ac",
+			"id": "d3c4-8099-4ecd-350b",
 			"source": {
 				"page": "__library__"
 			},
@@ -2382,19 +2383,19 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"imageview5",
-					"flexlayout19",
-					"flexlayout20",
-					"flexlayout21",
-					"flexlayout22"
+					"00a2-fadf-5cc9-5451",
+					"d3fb-a436-f84c-733e",
+					"e3de-c129-a8ba-164a",
+					"7064-5f40-cab7-4b0b",
+					"576d-b25c-9c39-66eb"
 				],
-				"parent": "hierarchyController",
+				"parent": "ae97-d9f6-7277-b41e",
 				"name": "hc_level3"
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "00541bee",
+			"id": "00a2-fadf-5cc9-5451",
 			"source": {
 				"page": "__library__"
 			},
@@ -2434,14 +2435,14 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "hc_level3",
+				"parent": "d3c4-8099-4ecd-350b",
 				"name": "imageview5",
 				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar3.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=undefined&brandModel=iPhone%207?random=0.2929192096061355"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "e0c6dd64",
+			"id": "d3fb-a436-f84c-733e",
 			"source": {
 				"page": "__library__"
 			},
@@ -2482,16 +2483,16 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"label21",
-					"label22"
+					"34d8-d25d-7d4d-5a58",
+					"c678-76d7-fe94-4325"
 				],
-				"parent": "hc_level3",
+				"parent": "d3c4-8099-4ecd-350b",
 				"name": "flexlayout19"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "3a471ffc",
+			"id": "34d8-d25d-7d4d-5a58",
 			"source": {
 				"page": "__library__"
 			},
@@ -2537,13 +2538,13 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout19",
+				"parent": "d3fb-a436-f84c-733e",
 				"name": "label21"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "d0747635",
+			"id": "c678-76d7-fe94-4325",
 			"source": {
 				"page": "__library__"
 			},
@@ -2586,13 +2587,13 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout19",
+				"parent": "d3fb-a436-f84c-733e",
 				"name": "label22"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "024a669c",
+			"id": "e3de-c129-a8ba-164a",
 			"source": {
 				"page": "__library__"
 			},
@@ -2635,13 +2636,13 @@
 					"positionType": "ABSOLUTE"
 				},
 				"children": [],
-				"parent": "hc_level3",
+				"parent": "d3c4-8099-4ecd-350b",
 				"name": "flexlayout20"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "cf0f63cc",
+			"id": "7064-5f40-cab7-4b0b",
 			"source": {
 				"page": "__library__"
 			},
@@ -2682,13 +2683,13 @@
 					"positionType": "ABSOLUTE"
 				},
 				"children": [],
-				"parent": "hc_level3",
+				"parent": "d3c4-8099-4ecd-350b",
 				"name": "flexlayout21"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "515027cb",
+			"id": "576d-b25c-9c39-66eb",
 			"source": {
 				"page": "__library__"
 			},
@@ -2731,13 +2732,13 @@
 					"positionType": "ABSOLUTE"
 				},
 				"children": [],
-				"parent": "hc_level3",
+				"parent": "d3c4-8099-4ecd-350b",
 				"name": "flexlayout22"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "ae4a4c13",
+			"id": "7cf3-2bd1-d879-3a13",
 			"source": {
 				"page": "__library__"
 			},
@@ -2785,18 +2786,18 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"imageview6",
-					"flexlayout23",
-					"flexlayout24",
-					"flexlayout25"
+					"5006-513a-1a70-6d5f",
+					"efdd-e852-6239-add0",
+					"6174-e0bf-93d5-8629",
+					"fa13-235f-8f3a-5603"
 				],
-				"parent": "hierarchyController",
+				"parent": "ae97-d9f6-7277-b41e",
 				"name": "hc_level3_1"
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "a47793e3",
+			"id": "5006-513a-1a70-6d5f",
 			"source": {
 				"page": "__library__"
 			},
@@ -2836,14 +2837,14 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "hc_level3_1",
+				"parent": "7cf3-2bd1-d879-3a13",
 				"name": "imageview6",
 				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/avatar4.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=undefined&brandModel=iPhone%207?random=0.30717979186541866"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "272aa013",
+			"id": "efdd-e852-6239-add0",
 			"source": {
 				"page": "__library__"
 			},
@@ -2884,16 +2885,16 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"label23",
-					"label24"
+					"e9c7-d4d1-215a-d75a",
+					"757a-66bb-b881-5740"
 				],
-				"parent": "hc_level3_1",
+				"parent": "7cf3-2bd1-d879-3a13",
 				"name": "flexlayout23"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "8f7e6041",
+			"id": "e9c7-d4d1-215a-d75a",
 			"source": {
 				"page": "__library__"
 			},
@@ -2939,13 +2940,13 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout23",
+				"parent": "efdd-e852-6239-add0",
 				"name": "label23"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "8bf47542",
+			"id": "757a-66bb-b881-5740",
 			"source": {
 				"page": "__library__"
 			},
@@ -2988,13 +2989,13 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [],
-				"parent": "flexlayout23",
+				"parent": "efdd-e852-6239-add0",
 				"name": "label24"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "d52fbad3",
+			"id": "6174-e0bf-93d5-8629",
 			"source": {
 				"page": "__library__"
 			},
@@ -3037,13 +3038,13 @@
 					"positionType": "ABSOLUTE"
 				},
 				"children": [],
-				"parent": "hc_level3_1",
+				"parent": "7cf3-2bd1-d879-3a13",
 				"name": "flexlayout24"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "e0a9ab9a",
+			"id": "fa13-235f-8f3a-5603",
 			"source": {
 				"page": "__library__"
 			},
@@ -3086,16 +3087,16 @@
 					"positionType": "ABSOLUTE"
 				},
 				"children": [],
-				"parent": "hc_level3_1",
+				"parent": "7cf3-2bd1-d879-3a13",
 				"name": "flexlayout25"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "7e49507b",
+			"id": "3fa1-efb5-9c85-da07",
 			"source": {
 				"page": "__library__",
-				"id": "ab2fbca6"
+				"id": "ebb9-37cc-ff1b-0314"
 			},
 			"hiddenComponent": false,
 			"themeProps": {
@@ -3137,9 +3138,9 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"flexlayout118"
+					"1eef-2bd5-58b4-042c"
 				],
-				"parent": "pgProfileDetail",
+				"parent": "1857-e2e9-357d-41ad",
 				"name": "layoutHeaderBar",
 				"visibility": true,
 				"usePageVariable": true
@@ -3147,7 +3148,7 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "0ad9a0e2",
+			"id": "1eef-2bd5-58b4-042c",
 			"source": {
 				"page": "__library__"
 			},
@@ -3190,17 +3191,17 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"leftItems",
-					"headerBarTitle",
-					"rightItems"
+					"31cf-8b62-eadd-a061",
+					"8c3f-b5a1-866f-6d38",
+					"bf84-4bf1-bb56-1447"
 				],
 				"name": "flexlayout118",
-				"parent": "layoutHeaderBar"
+				"parent": "3fa1-efb5-9c85-da07"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "a4c4724c",
+			"id": "31cf-8b62-eadd-a061",
 			"source": {
 				"page": "__library__"
 			},
@@ -3243,12 +3244,12 @@
 				},
 				"children": [],
 				"name": "leftItems",
-				"parent": "flexlayout118"
+				"parent": "1eef-2bd5-58b4-042c"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "c0335fde",
+			"id": "8c3f-b5a1-866f-6d38",
 			"source": {
 				"page": "__library__"
 			},
@@ -3297,12 +3298,12 @@
 				},
 				"children": [],
 				"name": "headerBarTitle",
-				"parent": "flexlayout118"
+				"parent": "1eef-2bd5-58b4-042c"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "cf884f27",
+			"id": "bf84-4bf1-bb56-1447",
 			"source": {
 				"page": "__library__"
 			},
@@ -3347,16 +3348,16 @@
 					"flexGrow": null
 				},
 				"children": [
-					"rightItem2",
-					"rightItem1"
+					"1be8-ec14-b5ca-1581",
+					"36e7-cdde-64a2-ca48"
 				],
 				"name": "rightItems",
-				"parent": "flexlayout118"
+				"parent": "1eef-2bd5-58b4-042c"
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "92be2cfe",
+			"id": "1be8-ec14-b5ca-1581",
 			"source": {
 				"page": "__library__"
 			},
@@ -3395,12 +3396,12 @@
 				},
 				"children": [],
 				"name": "rightItem2",
-				"parent": "rightItems"
+				"parent": "bf84-4bf1-bb56-1447"
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "c6dbd97c",
+			"id": "36e7-cdde-64a2-ca48",
 			"source": {
 				"page": "__library__"
 			},
@@ -3441,7 +3442,7 @@
 				},
 				"children": [],
 				"name": "rightItem1",
-				"parent": "rightItems",
+				"parent": "bf84-4bf1-bb56-1447",
 				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=undefined&brandModel=iPhone%207?random=0.10936833753231512"
 			}
 		}

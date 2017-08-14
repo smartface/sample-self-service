@@ -34,7 +34,7 @@ const PgMeetingRoomReservations_ = extend(Page)(
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgMeetingRoomReservations");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
-
+	
 		const mainLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -47,7 +47,7 @@ const PgMeetingRoomReservations_ = extend(Page)(
 		var mainLayout = new FlexLayout(mainLayoutStyle);  
 		this.layout.addChild(mainLayout);
 		this.mainLayout = mainLayout;
-
+	
 		const comingSoonStyle = getCombinedStyle(".imageView", {
 			width: null,
 			image: Image.createFromFile("images://coming_soon.png"),
@@ -58,7 +58,7 @@ const PgMeetingRoomReservations_ = extend(Page)(
 		var comingSoon = new ImageView(comingSoonStyle);  
 		mainLayout.addChild(comingSoon);
 		this.comingSoon = comingSoon;
-
+	
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,

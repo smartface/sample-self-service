@@ -2,14 +2,14 @@
 	"components": [
 		{
 			"type": "Page",
-			"id": "9c22b78e",
+			"id": "4172-1434-af47-0090",
 			"userProps": {},
-			"version": "6.3.0-rc.16",
+			"version": "6.4.5",
 			"props": {
 				"name": "pgTimeManagement",
 				"children": [
-					"statusBar",
-					"headerBar"
+					"128c-ae62-0144-41a1",
+					"762a-cf93-be6e-c010"
 				],
 				"flexProps": {
 					"alignContent": "STRETCH",
@@ -26,18 +26,19 @@
 				"flex": {},
 				"font": {},
 				"width": 187.5,
-				"height": 301.5
+				"height": 301.5,
+				"parent": null
 			}
 		},
 		{
 			"type": "StatusBar",
-			"id": "7e6f8fb5",
+			"id": "128c-ae62-0144-41a1",
 			"userProps": {},
 			"props": {
 				"name": "statusBar",
 				"visible": true,
 				"children": [],
-				"parent": "pgTimeManagement",
+				"parent": "4172-1434-af47-0090",
 				"color": "#00A1F1",
 				"isRemovable": false,
 				"layout": {
@@ -51,14 +52,14 @@
 		},
 		{
 			"type": "HeaderBar",
-			"id": "7294a612",
+			"id": "762a-cf93-be6e-c010",
 			"userProps": {
 				"title": "newPage001"
 			},
 			"props": {
 				"name": "headerBar",
 				"children": [],
-				"parent": "pgTimeManagement",
+				"parent": "4172-1434-af47-0090",
 				"title": "newPage001",
 				"visible": true,
 				"layout": {

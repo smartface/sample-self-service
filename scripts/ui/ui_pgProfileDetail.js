@@ -40,7 +40,7 @@ const PgProfileDetail_ = extend(Page)(
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgProfileDetail");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
-
+	
 		const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
 			width: null,
 			height: 170,
@@ -49,7 +49,7 @@ const PgProfileDetail_ = extend(Page)(
 		});  
 		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		this.layout.addChild(flexlayout1);
-		
+			
 		const flexlayout500Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 610,
@@ -59,7 +59,7 @@ const PgProfileDetail_ = extend(Page)(
 		var flexlayout500 = new FlexLayout(flexlayout500Style);  
 		this.layout.addChild(flexlayout500);
 		this.flexlayout500 = flexlayout500;
-
+	
 		const qualificationcontainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			left: null,
@@ -76,7 +76,7 @@ const PgProfileDetail_ = extend(Page)(
 		});  
 		var qualificationcontainer = new FlexLayout(qualificationcontainerStyle);  
 		flexlayout500.addChild(qualificationcontainer);
-		
+			
 		const imageview111Style = getCombinedStyle(".imageView", {
 			height: 85,
 			width: 85,
@@ -86,7 +86,7 @@ const PgProfileDetail_ = extend(Page)(
 		});  
 		var imageview111 = new ImageView(imageview111Style);  
 		flexlayout1.addChild(imageview111);
-		
+			
 		const label827Style = getCombinedStyle(".label .label-overview-title", {
 			width: 200,
 			height: 25,
@@ -97,7 +97,7 @@ const PgProfileDetail_ = extend(Page)(
 		if(label827Style.scrollEnabled === false)
 			label827.ios && (label827.ios.scrollEnabled = false);
 		flexlayout1.addChild(label827);
-		
+			
 		const hierarchyControllerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -115,7 +115,7 @@ const PgProfileDetail_ = extend(Page)(
 		var hierarchyController = new HierarchyController(hierarchyControllerStyle, "pgProfileDetail");  
 		flexlayout500.addChild(hierarchyController);
 		this.hierarchyController = hierarchyController;
-
+	
 		const label827_1Style = getCombinedStyle(".label .label-overview-title", {
 			width: 200,
 			height: 25,
@@ -126,7 +126,7 @@ const PgProfileDetail_ = extend(Page)(
 		if(label827_1Style.scrollEnabled === false)
 			label827_1.ios && (label827_1.ios.scrollEnabled = false);
 		flexlayout1.addChild(label827_1);
-		
+			
 		const informationTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
@@ -138,7 +138,7 @@ const PgProfileDetail_ = extend(Page)(
 			informationTitle.ios && (informationTitle.ios.scrollEnabled = false);
 		qualificationcontainer.addChild(informationTitle);
 		this.informationTitle = informationTitle;
-
+	
 		const companyStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -152,7 +152,7 @@ const PgProfileDetail_ = extend(Page)(
 		var company = new ListItem1(companyStyle, "pgProfileDetail");  
 		qualificationcontainer.addChild(company);
 		this.company = company;
-
+	
 		const horizontalDividerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -168,7 +168,7 @@ const PgProfileDetail_ = extend(Page)(
 		}); 
 		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgProfileDetail");  
 		qualificationcontainer.addChild(horizontalDivider);
-		
+			
 		const emailStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -183,7 +183,7 @@ const PgProfileDetail_ = extend(Page)(
 		var email = new ListItem1(emailStyle, "pgProfileDetail");  
 		qualificationcontainer.addChild(email);
 		this.email = email;
-
+	
 		const horizontaldivider_1Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -198,7 +198,7 @@ const PgProfileDetail_ = extend(Page)(
 		}); 
 		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgProfileDetail");  
 		qualificationcontainer.addChild(horizontaldivider_1);
-		
+			
 		const workPhoneStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -213,7 +213,7 @@ const PgProfileDetail_ = extend(Page)(
 		var workPhone = new ListItem1(workPhoneStyle, "pgProfileDetail");  
 		qualificationcontainer.addChild(workPhone);
 		this.workPhone = workPhone;
-
+	
 		const horizontaldivider_1_1Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -228,7 +228,7 @@ const PgProfileDetail_ = extend(Page)(
 		}); 
 		var horizontaldivider_1_1 = new HorizontalDivider(horizontaldivider_1_1Style, "pgProfileDetail");  
 		qualificationcontainer.addChild(horizontaldivider_1_1);
-		
+			
 		const mobilePhoneStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -243,7 +243,7 @@ const PgProfileDetail_ = extend(Page)(
 		var mobilePhone = new ListItem1(mobilePhoneStyle, "pgProfileDetail");  
 		qualificationcontainer.addChild(mobilePhone);
 		this.mobilePhone = mobilePhone;
-
+	
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,

@@ -42,7 +42,7 @@ const PgNewExpense_ = extend(Page)(
 		var mainContainer = new FlexLayout(mainContainerStyle);  
 		this.layout.addChild(mainContainer);
 		this.mainContainer = mainContainer;
-
+	
 		const detailsLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			marginLeft: 10,
@@ -53,7 +53,7 @@ const PgNewExpense_ = extend(Page)(
 		});  
 		var detailsLayout = new FlexLayout(detailsLayoutStyle);  
 		mainContainer.addChild(detailsLayout);
-		
+			
 		const noteLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			marginLeft: 10,
@@ -68,7 +68,7 @@ const PgNewExpense_ = extend(Page)(
 		});  
 		var noteLayout = new FlexLayout(noteLayoutStyle);  
 		mainContainer.addChild(noteLayout);
-		
+			
 		const fileAttachmentLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			marginLeft: 10,
@@ -83,7 +83,7 @@ const PgNewExpense_ = extend(Page)(
 		});  
 		var fileAttachmentLayout = new FlexLayout(fileAttachmentLayoutStyle);  
 		mainContainer.addChild(fileAttachmentLayout);
-		
+			
 		const requestButtonStyle = getCombinedStyle(".button", {
 			height: 60,
 			top: 10,
@@ -96,7 +96,7 @@ const PgNewExpense_ = extend(Page)(
 		var requestButton = new Button(requestButtonStyle);  
 		mainContainer.addChild(requestButton);
 		this.requestButton = requestButton;
-
+	
 		const detailsTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
@@ -112,7 +112,7 @@ const PgNewExpense_ = extend(Page)(
 			detailsTitle.ios && (detailsTitle.ios.scrollEnabled = false);
 		detailsLayout.addChild(detailsTitle);
 		this.detailsTitle = detailsTitle;
-
+	
 		const flexlayout76_1Style = getCombinedStyle(".flexLayout", {
 			height: 30,
 			width: null,
@@ -122,7 +122,7 @@ const PgNewExpense_ = extend(Page)(
 		});  
 		var flexlayout76_1 = new FlexLayout(flexlayout76_1Style);  
 		fileAttachmentLayout.addChild(flexlayout76_1);
-		
+			
 		const flexlayout76Style = getCombinedStyle(".flexLayout", {
 			height: 30,
 			width: null,
@@ -132,7 +132,7 @@ const PgNewExpense_ = extend(Page)(
 		});  
 		var flexlayout76 = new FlexLayout(flexlayout76Style);  
 		noteLayout.addChild(flexlayout76);
-		
+			
 		const titleInputStyle = getCombinedStyle(".flexLayout", {
 			height: 50,
 			left: null,
@@ -146,7 +146,7 @@ const PgNewExpense_ = extend(Page)(
 		var titleInput = new TextboxWithLine(titleInputStyle, "pgNewExpense");  
 		detailsLayout.addChild(titleInput);
 		this.titleInput = titleInput;
-
+	
 		const descriptionStyle = getCombinedStyle(".textBox", {
 			width: null,
 			height: null,
@@ -172,7 +172,7 @@ const PgNewExpense_ = extend(Page)(
 			description.ios && (description.ios.adjustFontSizeToFit = descriptionStyle.adjustFontSizeToFit);
 		noteLayout.addChild(description);
 		this.description = description;
-
+	
 		const attachmentsLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -185,7 +185,7 @@ const PgNewExpense_ = extend(Page)(
 		var attachmentsLayout = new FlexLayout(attachmentsLayoutStyle);  
 		fileAttachmentLayout.addChild(attachmentsLayout);
 		this.attachmentsLayout = attachmentsLayout;
-
+	
 		const expenseInputStyle = getCombinedStyle(".flexLayout", {
 			height: 50,
 			left: 0,
@@ -200,7 +200,7 @@ const PgNewExpense_ = extend(Page)(
 		var expenseInput = new TextboxWithLine(expenseInputStyle, "pgNewExpense");  
 		detailsLayout.addChild(expenseInput);
 		this.expenseInput = expenseInput;
-
+	
 		const flexlayout191Style = getCombinedStyle(".flexLayout", {
 			height: 50,
 			width: null,
@@ -210,7 +210,7 @@ const PgNewExpense_ = extend(Page)(
 		});  
 		var flexlayout191 = new FlexLayout(flexlayout191Style);  
 		detailsLayout.addChild(flexlayout191);
-		
+			
 		const typePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -222,7 +222,7 @@ const PgNewExpense_ = extend(Page)(
 		var typePicker = new PickerContainer(typePickerStyle, "pgNewExpense");  
 		flexlayout191.addChild(typePicker);
 		this.typePicker = typePicker;
-
+	
 		const addFileStyle = getCombinedStyle(".flexLayout", {
 			width: 65,
 			height: 65,
@@ -239,7 +239,7 @@ const PgNewExpense_ = extend(Page)(
 		var addFile = new ItemFile(addFileStyle, "pgNewExpense");  
 		attachmentsLayout.addChild(addFile);
 		this.addFile = addFile;
-
+	
 		const noteTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			width: null,
 			height: null,
@@ -253,7 +253,7 @@ const PgNewExpense_ = extend(Page)(
 			noteTitle.ios && (noteTitle.ios.scrollEnabled = false);
 		flexlayout76.addChild(noteTitle);
 		this.noteTitle = noteTitle;
-
+	
 		const fileAttachmentTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			width: null,
 			height: null,
@@ -267,7 +267,7 @@ const PgNewExpense_ = extend(Page)(
 			fileAttachmentTitle.ios && (fileAttachmentTitle.ios.scrollEnabled = false);
 		flexlayout76_1.addChild(fileAttachmentTitle);
 		this.fileAttachmentTitle = fileAttachmentTitle;
-
+	
 		const expenseDatePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -280,7 +280,7 @@ const PgNewExpense_ = extend(Page)(
 		var expenseDatePicker = new PickerContainer(expenseDatePickerStyle, "pgNewExpense");  
 		flexlayout191.addChild(expenseDatePicker);
 		this.expenseDatePicker = expenseDatePicker;
-
+	
 		const imageview17Style = getCombinedStyle(".imageView", {
 			width: 14,
 			height: 25,
@@ -289,7 +289,7 @@ const PgNewExpense_ = extend(Page)(
 		});  
 		var imageview17 = new ImageView(imageview17Style);  
 		flexlayout76.addChild(imageview17);
-		
+			
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			mainContainer: mainContainer

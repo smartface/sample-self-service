@@ -38,7 +38,7 @@ const PgLeaveManagement_ = extend(Page)(
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgLeaveManagement");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
-
+	
 		const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
 			width: null,
 			alignItems: FlexLayout.AlignItems.CENTER,
@@ -46,7 +46,7 @@ const PgLeaveManagement_ = extend(Page)(
 		});  
 		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		this.layout.addChild(flexlayout1);
-		
+			
 		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
 			backgroundColor: Color.create(0, 255, 255, 255),
 			width: null,
@@ -59,7 +59,7 @@ const PgLeaveManagement_ = extend(Page)(
 		var listViewContainer = new FlexLayout(listViewContainerStyle);  
 		this.layout.addChild(listViewContainer);
 		this.listViewContainer = listViewContainer;
-
+	
 		const listViewStyle = getCombinedStyle(".listView", {
 			width: null,
 			height: null,
@@ -71,7 +71,7 @@ const PgLeaveManagement_ = extend(Page)(
 		listView.onRowCreate = function(){ return new ListViewItem(); };
 		listViewContainer.addChild(listView);
 		this.listView = listView;
-
+	
 		const flexlayout30Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -83,7 +83,7 @@ const PgLeaveManagement_ = extend(Page)(
 		});  
 		var flexlayout30 = new FlexLayout(flexlayout30Style);  
 		flexlayout1.addChild(flexlayout30);
-		
+			
 		const topTabBarStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 50,
@@ -101,7 +101,7 @@ const PgLeaveManagement_ = extend(Page)(
 		var topTabBar = new TopTabBar(topTabBarStyle, "pgLeaveManagement");  
 		flexlayout1.addChild(topTabBar);
 		this.topTabBar = topTabBar;
-
+	
 		const imageview11Style = getCombinedStyle(".imageView", {
 			width: null,
 			height: null,
@@ -110,7 +110,7 @@ const PgLeaveManagement_ = extend(Page)(
 		});  
 		var imageview11 = new ImageView(imageview11Style);  
 		flexlayout30.addChild(imageview11);
-		
+			
 		const imageview11_1Style = getCombinedStyle(".imageView", {
 			width: null,
 			height: null,
@@ -120,7 +120,7 @@ const PgLeaveManagement_ = extend(Page)(
 		});  
 		var imageview11_1 = new ImageView(imageview11_1Style);  
 		flexlayout30.addChild(imageview11_1);
-		
+			
 		const imageview11_1_1Style = getCombinedStyle(".imageView", {
 			width: null,
 			height: 60,
@@ -131,7 +131,7 @@ const PgLeaveManagement_ = extend(Page)(
 		});  
 		var imageview11_1_1 = new ImageView(imageview11_1_1Style);  
 		flexlayout30.addChild(imageview11_1_1);
-		
+			
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,

@@ -34,7 +34,7 @@ const PgHierarchy_ = extend(Page)(
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgHierarchy");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
-
+	
 		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -46,7 +46,7 @@ const PgHierarchy_ = extend(Page)(
 		var listViewContainer = new FlexLayout(listViewContainerStyle);  
 		this.layout.addChild(listViewContainer);
 		this.listViewContainer = listViewContainer;
-
+	
 		const listViewStyle = getCombinedStyle(".listView", {
 			width: null,
 			height: null,
@@ -56,7 +56,7 @@ const PgHierarchy_ = extend(Page)(
 		listView.onRowCreate = function(){ return new ListViewItem(); };
 		listViewContainer.addChild(listView);
 		this.listView = listView;
-
+	
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,

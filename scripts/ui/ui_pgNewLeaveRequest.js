@@ -41,7 +41,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		});  
 		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		this.layout.addChild(flexlayout1);
-		
+			
 		const flexlayout66Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			marginLeft: 10,
@@ -54,7 +54,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		});  
 		var flexlayout66 = new FlexLayout(flexlayout66Style);  
 		this.layout.addChild(flexlayout66);
-		
+			
 		const bottomContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -63,7 +63,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		});  
 		var bottomContainer = new FlexLayout(bottomContainerStyle);  
 		this.layout.addChild(bottomContainer);
-		
+			
 		const informationTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			text: "WORK INFORMATION",
@@ -76,7 +76,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 			informationTitle.ios && (informationTitle.ios.scrollEnabled = false);
 		flexlayout1.addChild(informationTitle);
 		this.informationTitle = informationTitle;
-
+	
 		const btnRequestStyle = getCombinedStyle(".button", {
 			text: "REQUEST",
 			width: null,
@@ -88,7 +88,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		var btnRequest = new Button(btnRequestStyle);  
 		bottomContainer.addChild(btnRequest);
 		this.btnRequest = btnRequest;
-
+	
 		const flexlayout76Style = getCombinedStyle(".flexLayout", {
 			height: 30,
 			width: null,
@@ -98,7 +98,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		});  
 		var flexlayout76 = new FlexLayout(flexlayout76Style);  
 		flexlayout66.addChild(flexlayout76);
-		
+			
 		const flexlayout2Style = getCombinedStyle(".flexLayout", {
 			height: 66,
 			width: null,
@@ -107,7 +107,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		});  
 		var flexlayout2 = new FlexLayout(flexlayout2Style);  
 		flexlayout1.addChild(flexlayout2);
-		
+			
 		const textbox1Style = getCombinedStyle(".textBox", {
 			width: null,
 			height: null,
@@ -133,7 +133,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 			textbox1.ios && (textbox1.ios.adjustFontSizeToFit = textbox1Style.adjustFontSizeToFit);
 		flexlayout66.addChild(textbox1);
 		this.textbox1 = textbox1;
-
+	
 		const flexlayout3Style = getCombinedStyle(".flexLayout", {
 			height: null,
 			width: null,
@@ -143,7 +143,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		});  
 		var flexlayout3 = new FlexLayout(flexlayout3Style);  
 		flexlayout2.addChild(flexlayout3);
-		
+			
 		const label85Style = getCombinedStyle(".label .label-list-item-header", {
 			width: null,
 			height: null,
@@ -156,7 +156,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		if(label85Style.scrollEnabled === false)
 			label85.ios && (label85.ios.scrollEnabled = false);
 		flexlayout76.addChild(label85);
-		
+			
 		const flexlayout3_1Style = getCombinedStyle(".flexLayout", {
 			height: null,
 			width: null,
@@ -166,7 +166,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		});  
 		var flexlayout3_1 = new FlexLayout(flexlayout3_1Style);  
 		flexlayout2.addChild(flexlayout3_1);
-		
+			
 		const itemSpeechStyle = getCombinedStyle(".flexLayout", {
 			backgroundColor: Color.create(255, 255, 255, 255),
 			left: 0,
@@ -178,7 +178,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		var itemSpeech = new ItemSpeech(itemSpeechStyle, "pgNewLeaveRequest");  
 		flexlayout76.addChild(itemSpeech);
 		this.itemSpeech = itemSpeech;
-
+	
 		const selectDatePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -190,7 +190,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		var selectDatePicker = new PickerContainer(selectDatePickerStyle, "pgNewLeaveRequest");  
 		flexlayout3_1.addChild(selectDatePicker);
 		this.selectDatePicker = selectDatePicker;
-
+	
 		const leaveTypePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -202,7 +202,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		var leaveTypePicker = new PickerContainer(leaveTypePickerStyle, "pgNewLeaveRequest");  
 		flexlayout3.addChild(leaveTypePicker);
 		this.leaveTypePicker = leaveTypePicker;
-
+	
 		const timeTypePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -215,7 +215,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		var timeTypePicker = new PickerContainer(timeTypePickerStyle, "pgNewLeaveRequest");  
 		flexlayout3.addChild(timeTypePicker);
 		this.timeTypePicker = timeTypePicker;
-
+	
 		const selectTimePickerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -228,7 +228,7 @@ const PgNewLeaveRequest_ = extend(Page)(
 		var selectTimePicker = new PickerContainer(selectTimePickerStyle, "pgNewLeaveRequest");  
 		flexlayout3_1.addChild(selectTimePicker);
 		this.selectTimePicker = selectTimePicker;
-
+	
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			flexlayout1: flexlayout1,

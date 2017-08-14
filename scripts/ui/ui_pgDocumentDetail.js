@@ -36,7 +36,7 @@ const PgDocumentDetail_ = extend(Page)(
 		var mainLayout = new FlexLayout(mainLayoutStyle);  
 		this.layout.addChild(mainLayout);
 		this.mainLayout = mainLayout;
-
+	
 		const imageview42Style = getCombinedStyle(".imageView", {
 			image: Image.createFromFile("images://add_photo.png"),
 			height: 100,
@@ -45,7 +45,7 @@ const PgDocumentDetail_ = extend(Page)(
 		});  
 		var imageview42 = new ImageView(imageview42Style);  
 		mainLayout.addChild(imageview42);
-		
+			
 		const label322Style = getCombinedStyle(".label", {
 			textAlignment: TextAlignment.MIDCENTER,
 			text: "Please Upload Your Document",
@@ -55,7 +55,7 @@ const PgDocumentDetail_ = extend(Page)(
 		if(label322Style.scrollEnabled === false)
 			label322.ios && (label322.ios.scrollEnabled = false);
 		mainLayout.addChild(label322);
-		
+			
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			mainLayout: mainLayout

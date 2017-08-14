@@ -35,7 +35,7 @@ const PgLeaveApprovals_ = extend(Page)(
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgLeaveApprovals");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
-
+	
 		const topTabBarStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 50,
@@ -53,7 +53,7 @@ const PgLeaveApprovals_ = extend(Page)(
 		var topTabBar = new TopTabBar(topTabBarStyle, "pgLeaveApprovals");  
 		this.layout.addChild(topTabBar);
 		this.topTabBar = topTabBar;
-
+	
 		const flexlayout856Style = getCombinedStyle(".flexLayout", {
 			marginLeft: 10,
 			marginRight: 10,
@@ -63,7 +63,7 @@ const PgLeaveApprovals_ = extend(Page)(
 		});  
 		var flexlayout856 = new FlexLayout(flexlayout856Style);  
 		this.layout.addChild(flexlayout856);
-		
+			
 		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -76,7 +76,7 @@ const PgLeaveApprovals_ = extend(Page)(
 		var listViewContainer = new FlexLayout(listViewContainerStyle);  
 		this.layout.addChild(listViewContainer);
 		this.listViewContainer = listViewContainer;
-
+	
 		const listViewStyle = getCombinedStyle(".listView", {
 			width: null,
 			height: null,
@@ -86,7 +86,7 @@ const PgLeaveApprovals_ = extend(Page)(
 		listView.onRowCreate = function(){ return new ListViewItem(); };
 		listViewContainer.addChild(listView);
 		this.listView = listView;
-
+	
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,

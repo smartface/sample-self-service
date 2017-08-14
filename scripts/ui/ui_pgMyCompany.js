@@ -35,7 +35,7 @@ const PgMyCompany_ = extend(Page)(
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgMyCompany");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
-
+	
 		const flexlayout109Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -50,7 +50,7 @@ const PgMyCompany_ = extend(Page)(
 		});  
 		var flexlayout109 = new FlexLayout(flexlayout109Style);  
 		this.layout.addChild(flexlayout109);
-		
+			
 		const comingSoonStyle = getCombinedStyle(".imageView", {
 			width: null,
 			image: Image.createFromFile("images://coming_soon.png"),
@@ -61,7 +61,7 @@ const PgMyCompany_ = extend(Page)(
 		var comingSoon = new ImageView(comingSoonStyle);  
 		flexlayout109.addChild(comingSoon);
 		this.comingSoon = comingSoon;
-
+	
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,

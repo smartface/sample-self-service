@@ -41,7 +41,7 @@ const PgLogin_ = extend(Page)(
 		});  
 		var imageview156 = new ImageView(imageview156Style);  
 		this.layout.addChild(imageview156);
-		
+			
 		const appNameStyle = getCombinedStyle(".label .label-login.large .label-login", {
 			text: "EMPLOYEE\nSELF SERVICE",
 			textAlignment: TextAlignment.MIDCENTER,
@@ -55,7 +55,7 @@ const PgLogin_ = extend(Page)(
 			appName.ios && (appName.ios.scrollEnabled = false);
 		this.layout.addChild(appName);
 		this.appName = appName;
-
+	
 		const inputLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			backgroundColor: Color.create(0, 255, 255, 255),
@@ -66,7 +66,7 @@ const PgLogin_ = extend(Page)(
 		});  
 		var inputLayout = new FlexLayout(inputLayoutStyle);  
 		this.layout.addChild(inputLayout);
-		
+			
 		const buttonLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -78,7 +78,7 @@ const PgLogin_ = extend(Page)(
 		var buttonLayout = new FlexLayout(buttonLayoutStyle);  
 		this.layout.addChild(buttonLayout);
 		this.buttonLayout = buttonLayout;
-
+	
 		const loadingImageViewStyle = getCombinedStyle(".imageView", {
 			width: null,
 			height: 50,
@@ -90,7 +90,7 @@ const PgLogin_ = extend(Page)(
 		var loadingImageView = new ImageView(loadingImageViewStyle);  
 		buttonLayout.addChild(loadingImageView);
 		this.loadingImageView = loadingImageView;
-
+	
 		const usernameLayoutStyle = getCombinedStyle(".flexLayout", {
 			height: 60,
 			left: 0,
@@ -103,7 +103,7 @@ const PgLogin_ = extend(Page)(
 		var usernameLayout = new TextboxWithLine(usernameLayoutStyle, "pgLogin");  
 		inputLayout.addChild(usernameLayout);
 		this.usernameLayout = usernameLayout;
-
+	
 		const signinButtonStyle = getCombinedStyle(".button", {
 			text: "SIGN IN",
 			width: 250,
@@ -116,7 +116,7 @@ const PgLogin_ = extend(Page)(
 		var signinButton = new Button(signinButtonStyle);  
 		buttonLayout.addChild(signinButton);
 		this.signinButton = signinButton;
-
+	
 		const passwordLayoutStyle = getCombinedStyle(".flexLayout", {
 			height: 60,
 			left: 0,
@@ -129,7 +129,7 @@ const PgLogin_ = extend(Page)(
 		var passwordLayout = new TextboxWithLine(passwordLayoutStyle, "pgLogin");  
 		inputLayout.addChild(passwordLayout);
 		this.passwordLayout = passwordLayout;
-
+	
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			imageview156: imageview156,

@@ -34,7 +34,7 @@ const PgSettings_ = extend(Page)(
 		});  
 		var flexlayout84 = new FlexLayout(flexlayout84Style);  
 		this.layout.addChild(flexlayout84);
-		
+			
 		const flexlayout85Style = getCombinedStyle(".flexLayout", {
 			height: 60,
 			width: null,
@@ -47,7 +47,7 @@ const PgSettings_ = extend(Page)(
 		});  
 		var flexlayout85 = new FlexLayout(flexlayout85Style);  
 		flexlayout84.addChild(flexlayout85);
-		
+			
 		const horizontalDividerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -60,7 +60,7 @@ const PgSettings_ = extend(Page)(
 		}); 
 		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgSettings");  
 		flexlayout84.addChild(horizontalDivider);
-		
+			
 		const flexlayout85_1Style = getCombinedStyle(".flexLayout", {
 			height: 60,
 			width: null,
@@ -73,7 +73,7 @@ const PgSettings_ = extend(Page)(
 		});  
 		var flexlayout85_1 = new FlexLayout(flexlayout85_1Style);  
 		flexlayout84.addChild(flexlayout85_1);
-		
+			
 		const horizontaldivider_1Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -86,7 +86,7 @@ const PgSettings_ = extend(Page)(
 		}); 
 		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgSettings");  
 		flexlayout84.addChild(horizontaldivider_1);
-		
+			
 		const layoutFingerStyle = getCombinedStyle(".flexLayout", {
 			height: 60,
 			width: null,
@@ -100,7 +100,7 @@ const PgSettings_ = extend(Page)(
 		var layoutFinger = new FlexLayout(layoutFingerStyle);  
 		flexlayout84.addChild(layoutFinger);
 		this.layoutFinger = layoutFinger;
-
+	
 		const horizontalDividerFingerprintStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -114,7 +114,7 @@ const PgSettings_ = extend(Page)(
 		var horizontalDividerFingerprint = new HorizontalDivider(horizontalDividerFingerprintStyle, "pgSettings");  
 		flexlayout84.addChild(horizontalDividerFingerprint);
 		this.horizontalDividerFingerprint = horizontalDividerFingerprint;
-
+	
 		const layoutAboutStyle = getCombinedStyle(".flexLayout", {
 			height: 60,
 			width: null,
@@ -128,7 +128,7 @@ const PgSettings_ = extend(Page)(
 		var layoutAbout = new FlexLayout(layoutAboutStyle);  
 		flexlayout84.addChild(layoutAbout);
 		this.layoutAbout = layoutAbout;
-
+	
 		const txtAboutDescStyle = getCombinedStyle(".label", {
 			width: null,
 			height: 100,
@@ -146,7 +146,7 @@ const PgSettings_ = extend(Page)(
 			txtAboutDesc.ios && (txtAboutDesc.ios.scrollEnabled = false);
 		flexlayout84.addChild(txtAboutDesc);
 		this.txtAboutDesc = txtAboutDesc;
-
+	
 		const signoutLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 61,
@@ -161,7 +161,7 @@ const PgSettings_ = extend(Page)(
 		var signoutLayout = new FlexLayout(signoutLayoutStyle);  
 		flexlayout84.addChild(signoutLayout);
 		this.signoutLayout = signoutLayout;
-
+	
 		const txtNotificationStyle = getCombinedStyle(".label .label-list-item-title", {
 			text: "Notification",
 			width: null,
@@ -174,7 +174,7 @@ const PgSettings_ = extend(Page)(
 			txtNotification.ios && (txtNotification.ios.scrollEnabled = false);
 		flexlayout85_1.addChild(txtNotification);
 		this.txtNotification = txtNotification;
-
+	
 		const flexlayout731Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -187,7 +187,7 @@ const PgSettings_ = extend(Page)(
 		}); 
 		var flexlayout731 = new HorizontalDivider(flexlayout731Style, "pgSettings");  
 		signoutLayout.addChild(flexlayout731);
-		
+			
 		const txtFingerPrintStyle = getCombinedStyle(".label .label-list-item-title", {
 			text: "FingerPrint",
 			width: null,
@@ -200,7 +200,7 @@ const PgSettings_ = extend(Page)(
 			txtFingerPrint.ios && (txtFingerPrint.ios.scrollEnabled = false);
 		layoutFinger.addChild(txtFingerPrint);
 		this.txtFingerPrint = txtFingerPrint;
-
+	
 		const txtThemeStyle = getCombinedStyle(".label .label-list-item-title", {
 			text: "Theme",
 			width: null,
@@ -213,7 +213,7 @@ const PgSettings_ = extend(Page)(
 			txtTheme.ios && (txtTheme.ios.scrollEnabled = false);
 		flexlayout85.addChild(txtTheme);
 		this.txtTheme = txtTheme;
-
+	
 		const txtAboutStyle = getCombinedStyle(".label .label-list-item-title", {
 			text: "About",
 			width: null,
@@ -226,7 +226,7 @@ const PgSettings_ = extend(Page)(
 			txtAbout.ios && (txtAbout.ios.scrollEnabled = false);
 		layoutAbout.addChild(txtAbout);
 		this.txtAbout = txtAbout;
-
+	
 		const txtNewVersionStyle = getCombinedStyle(".label .label-list-item-title", {
 			text: "New Version Avaliable!",
 			width: null,
@@ -243,7 +243,7 @@ const PgSettings_ = extend(Page)(
 			txtNewVersion.ios && (txtNewVersion.ios.scrollEnabled = false);
 		layoutAbout.addChild(txtNewVersion);
 		this.txtNewVersion = txtNewVersion;
-
+	
 		const switchFingerStyle = getCombinedStyle(".switch", {
 			width: null,
 			toggle: false,
@@ -255,7 +255,7 @@ const PgSettings_ = extend(Page)(
 			switchFinger.android && (switchFinger.android.toggleOffColor = switchFingerStyle.toggleOffColor);
 		layoutFinger.addChild(switchFinger);
 		this.switchFinger = switchFinger;
-
+	
 		const switch1Style = getCombinedStyle(".switch", {
 			width: null,
 			toggle: false,
@@ -266,7 +266,7 @@ const PgSettings_ = extend(Page)(
 		if(switch1Style.toggleOffColor)
 			switch1.android && (switch1.android.toggleOffColor = switch1Style.toggleOffColor);
 		flexlayout85_1.addChild(switch1);
-		
+			
 		const themeBlueLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: 35,
 			height: 35,
@@ -279,7 +279,7 @@ const PgSettings_ = extend(Page)(
 		var themeBlueLayout = new FlexLayout(themeBlueLayoutStyle);  
 		flexlayout85.addChild(themeBlueLayout);
 		this.themeBlueLayout = themeBlueLayout;
-
+	
 		const label1089Style = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -292,7 +292,7 @@ const PgSettings_ = extend(Page)(
 		if(label1089Style.scrollEnabled === false)
 			label1089.ios && (label1089.ios.scrollEnabled = false);
 		signoutLayout.addChild(label1089);
-		
+			
 		const themePurpleLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: 35,
 			height: 35,
@@ -305,7 +305,7 @@ const PgSettings_ = extend(Page)(
 		var themePurpleLayout = new FlexLayout(themePurpleLayoutStyle);  
 		flexlayout85.addChild(themePurpleLayout);
 		this.themePurpleLayout = themePurpleLayout;
-
+	
 		const flexlayout247_1Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -320,7 +320,7 @@ const PgSettings_ = extend(Page)(
 		});  
 		var flexlayout247_1 = new FlexLayout(flexlayout247_1Style);  
 		themePurpleLayout.addChild(flexlayout247_1);
-		
+			
 		const flexlayout247Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -335,7 +335,7 @@ const PgSettings_ = extend(Page)(
 		});  
 		var flexlayout247 = new FlexLayout(flexlayout247Style);  
 		themeBlueLayout.addChild(flexlayout247);
-		
+			
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			flexlayout84: flexlayout84

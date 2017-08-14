@@ -43,7 +43,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		var mainLayout = new FlexLayout(mainLayoutStyle);  
 		this.layout.addChild(mainLayout);
 		this.mainLayout = mainLayout;
-
+	
 		const userInformationStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 90,
@@ -56,7 +56,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		});  
 		var userInformation = new FlexLayout(userInformationStyle);  
 		mainLayout.addChild(userInformation);
-		
+			
 		const detailsLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			paddingLeft: 10,
@@ -68,7 +68,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		});  
 		var detailsLayout = new FlexLayout(detailsLayoutStyle);  
 		mainLayout.addChild(detailsLayout);
-		
+			
 		const noteLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 120,
@@ -82,7 +82,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		});  
 		var noteLayout = new FlexLayout(noteLayoutStyle);  
 		mainLayout.addChild(noteLayout);
-		
+			
 		const fileLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 300,
@@ -97,7 +97,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		var fileLayout = new FlexLayout(fileLayoutStyle);  
 		mainLayout.addChild(fileLayout);
 		this.fileLayout = fileLayout;
-
+	
 		const buttonsLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 60,
@@ -109,7 +109,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		});  
 		var buttonsLayout = new FlexLayout(buttonsLayoutStyle);  
 		mainLayout.addChild(buttonsLayout);
-		
+			
 		const fileTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			width: null,
 			height: 25,
@@ -120,7 +120,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			fileTitle.ios && (fileTitle.ios.scrollEnabled = false);
 		fileLayout.addChild(fileTitle);
 		this.fileTitle = fileTitle;
-
+	
 		const noteTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			width: null,
 			height: 25,
@@ -131,7 +131,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			noteTitle.ios && (noteTitle.ios.scrollEnabled = false);
 		noteLayout.addChild(noteTitle);
 		this.noteTitle = noteTitle;
-
+	
 		const detailsTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			width: null,
 			height: 25,
@@ -142,7 +142,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			detailsTitle.ios && (detailsTitle.ios.scrollEnabled = false);
 		detailsLayout.addChild(detailsTitle);
 		this.detailsTitle = detailsTitle;
-
+	
 		const rejectStyle = getCombinedStyle(".button", {
 			text: "REJECT",
 			width: null,
@@ -153,7 +153,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		var reject = new Button(rejectStyle);  
 		buttonsLayout.addChild(reject);
 		this.reject = reject;
-
+	
 		const avatarStyle = getCombinedStyle(".imageView", {
 			width: 60,
 			height: 60,
@@ -163,7 +163,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		var avatar = new ImageView(avatarStyle);  
 		userInformation.addChild(avatar);
 		this.avatar = avatar;
-
+	
 		const imageview22Style = getCombinedStyle(".imageView", {
 			width: null,
 			height: null,
@@ -174,7 +174,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		});  
 		var imageview22 = new ImageView(imageview22Style);  
 		fileLayout.addChild(imageview22);
-		
+			
 		const noteStyle = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -187,7 +187,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			note.ios && (note.ios.scrollEnabled = false);
 		noteLayout.addChild(note);
 		this.note = note;
-
+	
 		const flexlayout109Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 60,
@@ -196,7 +196,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout109 = new FlexLayout(flexlayout109Style);  
 		userInformation.addChild(flexlayout109);
-		
+			
 		const titleItemStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -210,7 +210,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		var titleItem = new ListItem1(titleItemStyle, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(titleItem);
 		this.titleItem = titleItem;
-
+	
 		const flexlayout191Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: null,
@@ -219,7 +219,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		});  
 		var flexlayout191 = new FlexLayout(flexlayout191Style);  
 		buttonsLayout.addChild(flexlayout191);
-		
+			
 		const horizontalDividerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -232,7 +232,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		}); 
 		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(horizontalDivider);
-		
+			
 		const approveStyle = getCombinedStyle(".button", {
 			text: "APPROVE",
 			width: null,
@@ -243,7 +243,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		var approve = new Button(approveStyle);  
 		buttonsLayout.addChild(approve);
 		this.approve = approve;
-
+	
 		const typeItemStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -257,7 +257,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		var typeItem = new ListItem1(typeItemStyle, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(typeItem);
 		this.typeItem = typeItem;
-
+	
 		const horizontaldivider_1Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -270,7 +270,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		}); 
 		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(horizontaldivider_1);
-		
+			
 		const expenseItemStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -284,7 +284,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		var expenseItem = new ListItem1(expenseItemStyle, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(expenseItem);
 		this.expenseItem = expenseItem;
-
+	
 		const horizontaldivider_2Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -297,7 +297,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		}); 
 		var horizontaldivider_2 = new HorizontalDivider(horizontaldivider_2Style, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(horizontaldivider_2);
-		
+			
 		const expenseDateItemStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -311,7 +311,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 		var expenseDateItem = new ListItem1(expenseDateItemStyle, "pgExpenseApprovalDetail");  
 		detailsLayout.addChild(expenseDateItem);
 		this.expenseDateItem = expenseDateItem;
-
+	
 		const nameStyle = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -325,7 +325,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			name.ios && (name.ios.scrollEnabled = false);
 		flexlayout109.addChild(name);
 		this.name = name;
-
+	
 		const positionStyle = getCombinedStyle(".label", {
 			width: null,
 			height: null,
@@ -339,7 +339,7 @@ const PgExpenseApprovalDetail_ = extend(Page)(
 			position.ios && (position.ios.scrollEnabled = false);
 		flexlayout109.addChild(position);
 		this.position = position;
-
+	
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			mainLayout: mainLayout

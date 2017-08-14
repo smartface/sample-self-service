@@ -39,7 +39,7 @@ const PgOverview_ = extend(Page)(
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgOverview");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
-
+	
 		const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
 			width: null,
 			height: 170,
@@ -48,7 +48,7 @@ const PgOverview_ = extend(Page)(
 		});  
 		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		this.layout.addChild(flexlayout1);
-		
+			
 		const flexlayout500Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			height: 490,
@@ -58,7 +58,7 @@ const PgOverview_ = extend(Page)(
 		var flexlayout500 = new FlexLayout(flexlayout500Style);  
 		this.layout.addChild(flexlayout500);
 		this.flexlayout500 = flexlayout500;
-
+	
 		const qualificationcontainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			left: null,
@@ -75,7 +75,7 @@ const PgOverview_ = extend(Page)(
 		});  
 		var qualificationcontainer = new FlexLayout(qualificationcontainerStyle);  
 		flexlayout500.addChild(qualificationcontainer);
-		
+			
 		const imageview111Style = getCombinedStyle(".imageView", {
 			height: 85,
 			width: 85,
@@ -85,7 +85,7 @@ const PgOverview_ = extend(Page)(
 		});  
 		var imageview111 = new ImageView(imageview111Style);  
 		flexlayout1.addChild(imageview111);
-		
+			
 		const salarycontainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			left: null,
@@ -102,7 +102,7 @@ const PgOverview_ = extend(Page)(
 		});  
 		var salarycontainer = new FlexLayout(salarycontainerStyle);  
 		flexlayout500.addChild(salarycontainer);
-		
+			
 		const label827Style = getCombinedStyle(".label .label-overview-title", {
 			width: 200,
 			height: 25,
@@ -113,7 +113,7 @@ const PgOverview_ = extend(Page)(
 		if(label827Style.scrollEnabled === false)
 			label827.ios && (label827.ios.scrollEnabled = false);
 		flexlayout1.addChild(label827);
-		
+			
 		const qualificationcontainer_1Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			left: null,
@@ -130,7 +130,7 @@ const PgOverview_ = extend(Page)(
 		});  
 		var qualificationcontainer_1 = new FlexLayout(qualificationcontainer_1Style);  
 		flexlayout500.addChild(qualificationcontainer_1);
-		
+			
 		const label827_1Style = getCombinedStyle(".label .label-overview-title", {
 			width: 200,
 			height: 25,
@@ -141,7 +141,7 @@ const PgOverview_ = extend(Page)(
 		if(label827_1Style.scrollEnabled === false)
 			label827_1.ios && (label827_1.ios.scrollEnabled = false);
 		flexlayout1.addChild(label827_1);
-		
+			
 		const salaryTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
@@ -153,7 +153,7 @@ const PgOverview_ = extend(Page)(
 			salaryTitle.ios && (salaryTitle.ios.scrollEnabled = false);
 		salarycontainer.addChild(salaryTitle);
 		this.salaryTitle = salaryTitle;
-
+	
 		const qualificationTitleStyle = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
@@ -165,7 +165,7 @@ const PgOverview_ = extend(Page)(
 			qualificationTitle.ios && (qualificationTitle.ios.scrollEnabled = false);
 		qualificationcontainer.addChild(qualificationTitle);
 		this.qualificationTitle = qualificationTitle;
-
+	
 		const label536_2Style = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			width: null,
@@ -176,7 +176,7 @@ const PgOverview_ = extend(Page)(
 		if(label536_2Style.scrollEnabled === false)
 			label536_2.ios && (label536_2.ios.scrollEnabled = false);
 		qualificationcontainer_1.addChild(label536_2);
-		
+			
 		const containerTypeStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -190,7 +190,7 @@ const PgOverview_ = extend(Page)(
 		var containerType = new ListItem1(containerTypeStyle, "pgOverview");  
 		qualificationcontainer.addChild(containerType);
 		this.containerType = containerType;
-
+	
 		const objectiveContainerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -204,7 +204,7 @@ const PgOverview_ = extend(Page)(
 		var objectiveContainer = new ListItem1(objectiveContainerStyle, "pgOverview");  
 		qualificationcontainer_1.addChild(objectiveContainer);
 		this.objectiveContainer = objectiveContainer;
-
+	
 		const containerBasicStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -218,7 +218,7 @@ const PgOverview_ = extend(Page)(
 		var containerBasic = new ListItem1(containerBasicStyle, "pgOverview");  
 		salarycontainer.addChild(containerBasic);
 		this.containerBasic = containerBasic;
-
+	
 		const horizontaldivider_3Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -234,7 +234,7 @@ const PgOverview_ = extend(Page)(
 		}); 
 		var horizontaldivider_3 = new HorizontalDivider(horizontaldivider_3Style, "pgOverview");  
 		qualificationcontainer_1.addChild(horizontaldivider_3);
-		
+			
 		const horizontalDividerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -250,7 +250,7 @@ const PgOverview_ = extend(Page)(
 		}); 
 		var horizontalDivider = new HorizontalDivider(horizontalDividerStyle, "pgOverview");  
 		qualificationcontainer.addChild(horizontalDivider);
-		
+			
 		const horizontaldivider_2Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -266,7 +266,7 @@ const PgOverview_ = extend(Page)(
 		}); 
 		var horizontaldivider_2 = new HorizontalDivider(horizontaldivider_2Style, "pgOverview");  
 		salarycontainer.addChild(horizontaldivider_2);
-		
+			
 		const dueDateContainerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -281,7 +281,7 @@ const PgOverview_ = extend(Page)(
 		var dueDateContainer = new ListItem1(dueDateContainerStyle, "pgOverview");  
 		qualificationcontainer_1.addChild(dueDateContainer);
 		this.dueDateContainer = dueDateContainer;
-
+	
 		const containerTitleStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -296,7 +296,7 @@ const PgOverview_ = extend(Page)(
 		var containerTitle = new ListItem1(containerTitleStyle, "pgOverview");  
 		qualificationcontainer.addChild(containerTitle);
 		this.containerTitle = containerTitle;
-
+	
 		const containerVariableStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -311,7 +311,7 @@ const PgOverview_ = extend(Page)(
 		var containerVariable = new ListItem1(containerVariableStyle, "pgOverview");  
 		salarycontainer.addChild(containerVariable);
 		this.containerVariable = containerVariable;
-
+	
 		const horizontaldivider_1Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -326,7 +326,7 @@ const PgOverview_ = extend(Page)(
 		}); 
 		var horizontaldivider_1 = new HorizontalDivider(horizontaldivider_1Style, "pgOverview");  
 		qualificationcontainer.addChild(horizontaldivider_1);
-		
+			
 		const horizontaldivider_1_1Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -341,7 +341,7 @@ const PgOverview_ = extend(Page)(
 		}); 
 		var horizontaldivider_1_1 = new HorizontalDivider(horizontaldivider_1_1Style, "pgOverview");  
 		qualificationcontainer_1.addChild(horizontaldivider_1_1);
-		
+			
 		const resultContainerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -356,7 +356,7 @@ const PgOverview_ = extend(Page)(
 		var resultContainer = new ListItem1(resultContainerStyle, "pgOverview");  
 		qualificationcontainer_1.addChild(resultContainer);
 		this.resultContainer = resultContainer;
-
+	
 		const containerAwardedDateStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -371,7 +371,7 @@ const PgOverview_ = extend(Page)(
 		var containerAwardedDate = new ListItem1(containerAwardedDateStyle, "pgOverview");  
 		qualificationcontainer.addChild(containerAwardedDate);
 		this.containerAwardedDate = containerAwardedDate;
-
+	
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,

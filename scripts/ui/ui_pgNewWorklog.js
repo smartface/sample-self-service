@@ -42,7 +42,7 @@ const PgNewWorklog_ = extend(Page)(
 		});  
 		var flexlayout35 = new FlexLayout(flexlayout35Style);  
 		this.layout.addChild(flexlayout35);
-		
+			
 		const flexlayout66Style = getCombinedStyle(".flexLayout", {
 			width: null,
 			marginLeft: 10,
@@ -57,7 +57,7 @@ const PgNewWorklog_ = extend(Page)(
 		});  
 		var flexlayout66 = new FlexLayout(flexlayout66Style);  
 		this.layout.addChild(flexlayout66);
-		
+			
 		const button1Style = getCombinedStyle(".button", {
 			height: 60,
 			left: -1,
@@ -70,7 +70,7 @@ const PgNewWorklog_ = extend(Page)(
 		});  
 		var button1 = new Button(button1Style);  
 		this.layout.addChild(button1);
-		
+			
 		const label39Style = getCombinedStyle(".label .label-list-item-header", {
 			height: 25,
 			marginLeft: 10,
@@ -82,7 +82,7 @@ const PgNewWorklog_ = extend(Page)(
 		if(label39Style.scrollEnabled === false)
 			label39.ios && (label39.ios.scrollEnabled = false);
 		flexlayout35.addChild(label39);
-		
+			
 		const flexlayout76Style = getCombinedStyle(".flexLayout", {
 			height: 30,
 			width: 312,
@@ -92,7 +92,7 @@ const PgNewWorklog_ = extend(Page)(
 		});  
 		var flexlayout76 = new FlexLayout(flexlayout76Style);  
 		flexlayout66.addChild(flexlayout76);
-		
+			
 		const textbox1Style = getCombinedStyle(".textBox", {
 			width: null,
 			height: null,
@@ -117,7 +117,7 @@ const PgNewWorklog_ = extend(Page)(
 		if(textbox1Style.adjustFontSizeToFit)
 			textbox1.ios && (textbox1.ios.adjustFontSizeToFit = textbox1Style.adjustFontSizeToFit);
 		flexlayout66.addChild(textbox1);
-		
+			
 		const pickerContainerStyle = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -129,7 +129,7 @@ const PgNewWorklog_ = extend(Page)(
 		}); 
 		var pickerContainer = new PickerContainer(pickerContainerStyle, "pgNewWorklog");  
 		flexlayout35.addChild(pickerContainer);
-		
+			
 		const pickercontainer_1Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -140,7 +140,7 @@ const PgNewWorklog_ = extend(Page)(
 		}); 
 		var pickercontainer_1 = new PickerContainer(pickercontainer_1Style, "pgNewWorklog");  
 		flexlayout35.addChild(pickercontainer_1);
-		
+			
 		const flexlayout51Style = getCombinedStyle(".flexLayout", {
 			height: 50,
 			width: null,
@@ -148,7 +148,7 @@ const PgNewWorklog_ = extend(Page)(
 		});  
 		var flexlayout51 = new FlexLayout(flexlayout51Style);  
 		flexlayout35.addChild(flexlayout51);
-		
+			
 		const flexlayout52Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -159,7 +159,7 @@ const PgNewWorklog_ = extend(Page)(
 		}); 
 		var flexlayout52 = new PickerContainer(flexlayout52Style, "pgNewWorklog");  
 		flexlayout51.addChild(flexlayout52);
-		
+			
 		const label85Style = getCombinedStyle(".label .label-list-item-header", {
 			width: null,
 			height: null,
@@ -172,7 +172,7 @@ const PgNewWorklog_ = extend(Page)(
 		if(label85Style.scrollEnabled === false)
 			label85.ios && (label85.ios.scrollEnabled = false);
 		flexlayout76.addChild(label85);
-		
+			
 		const imageview17Style = getCombinedStyle(".imageView", {
 			width: 14,
 			height: 25,
@@ -181,7 +181,7 @@ const PgNewWorklog_ = extend(Page)(
 		});  
 		var imageview17 = new ImageView(imageview17Style);  
 		flexlayout76.addChild(imageview17);
-		
+			
 		const flexlayout52_1Style = getCombinedStyle(".flexLayout", {
 			left: 0,
 			top: 0,
@@ -193,7 +193,7 @@ const PgNewWorklog_ = extend(Page)(
 		}); 
 		var flexlayout52_1 = new PickerContainer(flexlayout52_1Style, "pgNewWorklog");  
 		flexlayout51.addChild(flexlayout52_1);
-		
+			
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			flexlayout35: flexlayout35,

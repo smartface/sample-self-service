@@ -38,14 +38,14 @@ const PgSalary_ = extend(Page)(
 		var layoutHeaderBar = new LayoutHeaderBar(layoutHeaderBarStyle, "pgSalary");  
 		this.layout.addChild(layoutHeaderBar);
 		this.layoutHeaderBar = layoutHeaderBar;
-
+	
 		const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
 			height: 180,
 			width: null
 		});  
 		var flexlayout1 = new FlexLayout(flexlayout1Style);  
 		this.layout.addChild(flexlayout1);
-		
+			
 		const listViewContainerStyle = getCombinedStyle(".flexLayout", {
 			width: null,
 			marginLeft: 10,
@@ -56,7 +56,7 @@ const PgSalary_ = extend(Page)(
 		var listViewContainer = new FlexLayout(listViewContainerStyle);  
 		this.layout.addChild(listViewContainer);
 		this.listViewContainer = listViewContainer;
-
+	
 		const imageview1Style = getCombinedStyle(".imageView", {
 			height: null,
 			width: null,
@@ -66,7 +66,7 @@ const PgSalary_ = extend(Page)(
 		});  
 		var imageview1 = new ImageView(imageview1Style);  
 		flexlayout1.addChild(imageview1);
-		
+			
 		const listViewStyle = getCombinedStyle(".listView", {
 			width: null,
 			height: null,
@@ -76,7 +76,7 @@ const PgSalary_ = extend(Page)(
 		listView.onRowCreate = function(){ return new ListViewItem(); };
 		listViewContainer.addChild(listView);
 		this.listView = listView;
-
+	
 		//assign the children to page 
 		this.children = Object.assign({}, {
 			layoutHeaderBar: layoutHeaderBar,
