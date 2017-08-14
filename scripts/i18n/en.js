@@ -1,3 +1,4 @@
+/* globals SMF*/
 SMF.i18n.defineLanguage('en', {
 	"appName": "Employee Self Service",
 	"cancel": "Cancel",
@@ -147,5 +148,5 @@ SMF.i18n.defineLanguage('en', {
 	"pgSettings.theme"					: "Theme",
 	"pgSettings.notifications"			: "Notifications",
 	"pgSettings.about"					: "About",
-	"pgSettings.aboutDesc"				: "This is a general purpose field service app with the following functions: Customer Management, Customer Service Entry, Customer Timeline and Customer Notifications."
+	"pgSettings.aboutDesc"				: "This is a general purpose self service app with the following functions: Profile Management, Leave & Expense Management, Approvals, Company Information Flows"
 });
