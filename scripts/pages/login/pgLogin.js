@@ -151,7 +151,7 @@ function startLoading(uiComponents) {
 					Router.go("tabs");
 				}
 			},
-			delay: 20
+			delay: (1000/60)
 		});
 	}
 }
