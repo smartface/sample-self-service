@@ -39,6 +39,12 @@ function onShow(parentOnShow, params) {
 	this.loadingImageView.alpha = 0;
 
 	initTexts(this);
+
+	fingerprint.init({
+		userNameTextBox: this.usernameLayout.innerTextbox,
+		passwordTextBox: this.passwordLayout.innerTextbox
+	});
+
 	rau.checkUpdate();
 }
 
@@ -62,12 +68,7 @@ function signin(page) {
 		alert(lang["pgLogin.inputs.username.error"]);
 		return;
 	}
-
-	if (page.passwordLayout.innerTextbox.text === "") {
-		// Validate fingerPrint
-		alert(lang["pgLogin.inputs.password.error"]);
-		return;
-	}
+	
 	var isValid = true;
 	var password;
 	isValid && fingerprint.loginWithFingerprint(function(err, fingerprintResult) {
@@ -77,7 +78,9 @@ function signin(page) {
 			password = fingerprintResult.password;
 		if (!password)
 			isValid = false;
-		!isValid && alert("password is required");
+		if(!isValid)
+			return alert("password is required");
+		
 		doLogin(page, page.usernameLayout.innerTextbox.text, password, function(err) {
 			if (err)
 				return;
@@ -87,9 +90,6 @@ function signin(page) {
 		});
 
 	});
-
-	doLogin(page);
-
 }
 
 function doLogin(page, username, password, callback) {
@@ -139,7 +139,6 @@ function startLoading(uiComponents) {
 		else {
 			image = Image.createFromFile("images://loading.png").resize(50, 50);
 		}
-
 		var counter = 0;
 		var timer = Timer.setInterval({
 			task: function() {
@@ -151,7 +150,7 @@ function startLoading(uiComponents) {
 					Router.go("tabs");
 				}
 			},
-			delay: (1000/60)
+			delay: (1000 / 60)
 		});
 	}
 }

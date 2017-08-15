@@ -1,21 +1,21 @@
 /* globals lang */
 const TabBarItem = require("sf-core/ui/tabbaritem");
 const Image = require("sf-core/ui/image");
-const PgConstants = require("pages/PgConstants");
 const Navigator = require("sf-core/ui/navigator");
 const BottomTabBar = require("sf-core/ui/bottomtabbar");
 const Color = require("sf-core/ui/color");
 const settings = require("./settings.json");
 const Router = require("sf-core/ui/router");
-var loaded = false;
-
+var tabBar;
 
 exports.load = function load() {
-    if (loaded)
-        return;
-    loaded = true;
+    if (tabBar) {
+        tabBar.setIndex("profile");
+        return true;
+    }
+
     var itemColor = Color.create((settings.config.theme.currentTheme === "Style1" ? "#1775D0" : "#00B9FF"));
-    var tabBar = new BottomTabBar({
+    tabBar = new BottomTabBar({
         backgroundColor: Color.create("#EAEAEB"),
         itemColor: {
             normal: Color.create("#9C9DA6"),
@@ -77,4 +77,5 @@ exports.load = function load() {
 
     Router.add("tabs", tabBar);
 
+    return true;
 };

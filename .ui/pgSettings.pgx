@@ -3,6 +3,7 @@
 		{
 			"type": "Page",
 			"id": "f0aa-6f50-8314-3f9c",
+			"initialized": true,
 			"themeProps": {
 				"Highlights": "Default"
 			},
@@ -33,10 +34,9 @@
 				],
 				"parent": null,
 				"name": "pgSettings",
-				"width": 375,
-				"height": 603
-			},
-			"initialized": true
+				"width": 157.5,
+				"height": 253.25999999999996
+			}
 		},
 		{
 			"type": "StatusBar",
@@ -58,8 +58,7 @@
 				"children": [],
 				"parent": "f0aa-6f50-8314-3f9c",
 				"isRemovable": false,
-				"name": "statusBar",
-				"height": 20
+				"name": "statusBar"
 			}
 		},
 		{
@@ -86,8 +85,7 @@
 				"children": [],
 				"parent": "f0aa-6f50-8314-3f9c",
 				"isRemovable": false,
-				"name": "headerBar",
-				"height": 44
+				"name": "headerBar"
 			}
 		},
 		{
@@ -690,13 +688,10 @@
 				"left": 0,
 				"right": 0,
 				"bottom": 0,
+				"top": null,
 				"flexProps": {
 					"positionType": "ABSOLUTE"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -715,6 +710,7 @@
 				"left": 0,
 				"right": 0,
 				"bottom": 0,
+				"top": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -746,13 +742,10 @@
 				"text": "Sign out",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 255, 50, 75, 1 )",
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".label",
 			"props": {
@@ -768,6 +761,7 @@
 				"borderWidth": 0,
 				"textColor": "rgba( 255, 50, 75, 1 )",
 				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -779,7 +773,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": 1
 				},
-				"name": "label1089",
+				"name": "lblSignOut",
 				"parent": "28a5-7111-51dd-3ce3",
 				"children": []
 			}
@@ -1142,7 +1136,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"7db2-4a99-efe6-d42b"
+					"70d3-9477-3724-9f99"
 				],
 				"parent": "bc99-82e9-b1cf-d916",
 				"name": "horizontalDivider"
@@ -1150,7 +1144,7 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "7db2-4a99-efe6-d42b",
+			"id": "70d3-9477-3724-9f99",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
@@ -1257,7 +1251,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"ec84-331a-aa34-904f"
+					"55f0-0ced-8a49-1920"
 				],
 				"parent": "bc99-82e9-b1cf-d916",
 				"name": "horizontaldivider_1"
@@ -1265,7 +1259,7 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "ec84-331a-aa34-904f",
+			"id": "55f0-0ced-8a49-1920",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
@@ -1314,7 +1308,7 @@
 				},
 				"children": [],
 				"parent": "0872-536a-f34e-94a5",
-				"name": "flexLayout118"
+				"name": "flexLayout4"
 			}
 		},
 		{
@@ -1372,7 +1366,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"a8df-568b-dcd4-1949"
+					"d58e-2c3d-bfeb-256a"
 				],
 				"parent": "28a5-7111-51dd-3ce3",
 				"name": "flexlayout731"
@@ -1380,7 +1374,7 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "a8df-568b-dcd4-1949",
+			"id": "d58e-2c3d-bfeb-256a",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
@@ -1429,7 +1423,7 @@
 				},
 				"children": [],
 				"parent": "9d97-9ce0-66e8-ebec",
-				"name": "flexLayout119"
+				"name": "flexLayout5"
 			}
 		},
 		{
@@ -1486,7 +1480,7 @@
 					"flexGrow": null
 				},
 				"children": [
-					"47d2-a2bc-d12a-b45b"
+					"1f94-65c5-b187-47fa"
 				],
 				"parent": "bc99-82e9-b1cf-d916",
 				"name": "horizontalDividerFingerprint"
@@ -1494,7 +1488,7 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "47d2-a2bc-d12a-b45b",
+			"id": "1f94-65c5-b187-47fa",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
@@ -1543,7 +1537,7 @@
 				},
 				"children": [],
 				"parent": "4dcb-f6fd-486b-92d3",
-				"name": "flexLayout120"
+				"name": "flexLayout6"
 			}
 		}
 	]

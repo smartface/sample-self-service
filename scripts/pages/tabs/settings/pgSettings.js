@@ -26,6 +26,7 @@ const Page_ = extend(PageDesign)(
 			this.txtAbout.text = lang["pgSettings.about"] + " v." + Application.version;
 			this.txtAboutDesc.text = lang["pgSettings.aboutDesc"];
 			this.txtNewVersion.visible = false;
+			this.lblSignOut.text = lang.signout;
 
 			initFingerPrint.call(this);
 		};
@@ -55,8 +56,7 @@ const Page_ = extend(PageDesign)(
 			else {
 				Router.goBack("login");
 			}
-		}
-
+		};
 		initCurrentTheme.call(this);
 	}
 );

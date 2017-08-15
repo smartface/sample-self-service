@@ -156,6 +156,7 @@ const PgSettings_ = extend(Page)(
 			left: 0,
 			right: 0,
 			bottom: 0,
+			top: null,
 			positionType: FlexLayout.PositionType.ABSOLUTE
 		});  
 		var signoutLayout = new FlexLayout(signoutLayoutStyle);  
@@ -280,7 +281,7 @@ const PgSettings_ = extend(Page)(
 		flexlayout85.addChild(themeBlueLayout);
 		this.themeBlueLayout = themeBlueLayout;
 	
-		const label1089Style = getCombinedStyle(".label", {
+		const lblSignOutStyle = getCombinedStyle(".label", {
 			width: null,
 			height: null,
 			text: "Sign out",
@@ -288,11 +289,12 @@ const PgSettings_ = extend(Page)(
 			textColor: Color.create(255, 255, 50, 75),
 			flexGrow: 1
 		});  
-		var label1089 = new Label(label1089Style);  
-		if(label1089Style.scrollEnabled === false)
-			label1089.ios && (label1089.ios.scrollEnabled = false);
-		signoutLayout.addChild(label1089);
-			
+		var lblSignOut = new Label(lblSignOutStyle);  
+		if(lblSignOutStyle.scrollEnabled === false)
+			lblSignOut.ios && (lblSignOut.ios.scrollEnabled = false);
+		signoutLayout.addChild(lblSignOut);
+		this.lblSignOut = lblSignOut;
+	
 		const themePurpleLayoutStyle = getCombinedStyle(".flexLayout", {
 			width: 35,
 			height: 35,
@@ -382,7 +384,7 @@ const PgSettings_ = extend(Page)(
 		//assign the children of signoutLayout
 		signoutLayout.children = Object.assign({}, {
 			flexlayout731: flexlayout731,
-			label1089: label1089
+			lblSignOut: lblSignOut
 		});
 		
 		//assign the children of themeBlueLayout
