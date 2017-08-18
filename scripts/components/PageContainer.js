@@ -20,6 +20,9 @@ const HRIndex = extend(Page)(
             const pageStyle = getCombinedStyle(".page");
 	        Object.assign(this.layout, pageStyle);
             this.headerBar.visible = false;
+            
+            initSwipeView(this);
+            initDotIndicator(this);
         }.bind(this);
         
         var _superOnShow = this.onShow;
@@ -34,9 +37,6 @@ const HRIndex = extend(Page)(
                 this.statusBar.ios.style = statusbarStyle.style;
             }
         }.bind(this);
-        
-        initSwipeView(this);
-        initDotIndicator(this);
     }
 );
 
