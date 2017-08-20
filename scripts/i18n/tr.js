@@ -78,7 +78,7 @@ SMF.i18n.defineLanguage('tr', {
 	"pgNewExpense.details.expense"		: "Harcama miktarı",
 	"pgNewExpense.details.type"			: "Tür",
 	"pgNewExpense.details.expenseDate"	: "Masraf Tarihi",
-	"pgNewExpense.note"					: "MASRAF SEBebi",
+	"pgNewExpense.note"					: "MASRAF SEBEBİ",
 	"pgNewExpense.note.description" 	: "Tanım...",
 	"pgNewExpense.fileAttachment"		: "EKLER",
 	"pgNewExpense.request"				: "TALEP ET",
