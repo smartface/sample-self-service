@@ -26,7 +26,8 @@ stylerBuilder.setActiveTheme(Data.getStringVariable("theme") || settings.config.
 
 var navigator = new Navigator();
 navigator.add("pgLogin", require("./pages/login/pgLogin"));
-
+const loader = require("./loader");
+loader.load();
 
 Router.add("login", navigator);
 Router.go("login/pgLogin");

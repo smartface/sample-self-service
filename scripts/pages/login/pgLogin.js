@@ -146,7 +146,7 @@ function startLoading(uiComponents) {
 
 				if (counter > 100) {
 					Timer.clearTimer(timer);
-					loader.load();
+					// loader.load();
 					Router.go("tabs");
 				}
 			},

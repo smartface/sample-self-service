@@ -1,5 +1,4 @@
 const extend = require("js-base/core/extend");
-const Color = require("sf-core/ui/color");
 const DotIndicator = require("components/DotIndicator");
 const FlexLayout = require("sf-core/ui/flexlayout");
 const Page = require("sf-core/ui/page");
@@ -11,22 +10,26 @@ const statusbarStyle = getCombinedStyle(".statusBar");
 const HRIndex = extend(Page)(
     function(_super, params) {
         _super(this, params);
-        
+
         if (!this.childPages) this.childPages = [];
-        
+
         var _superOnLoad = this.onLoad;
         this.onLoad = function() {
             typeof _superOnLoad === "function" && _superOnLoad();
             const pageStyle = getCombinedStyle(".page");
-	        Object.assign(this.layout, pageStyle);
+            Object.assign(this.layout, pageStyle);
             this.headerBar.visible = false;
+            if (System.OS === "iOS") {
+                initSwipeView(this);
+                initDotIndicator(this);
+            }
         }.bind(this);
-        
+
         var _superOnShow = this.onShow;
         this.onShow = function(user) {
             typeof _superOnShow === "function" && _superOnShow(user);
             this.headerBar.visible = false;
-            
+
             if (statusbarStyle.color) {
                 this.statusBar.android.color = statusbarStyle.color;
             }
@@ -34,9 +37,11 @@ const HRIndex = extend(Page)(
                 this.statusBar.ios.style = statusbarStyle.style;
             }
         }.bind(this);
-        
-        initSwipeView(this);
-        initDotIndicator(this);
+
+        if (System.OS === "Android") {
+            initSwipeView(this);
+            initDotIndicator(this);
+        }
     }
 );
 
