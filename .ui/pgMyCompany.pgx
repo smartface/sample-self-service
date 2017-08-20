@@ -2,13 +2,13 @@
 	"components": [
 		{
 			"type": "Page",
-			"id": "9cf8c44f",
+			"id": "2c96-a374-3aee-c1f9",
 			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 226, 226, 228, 1 )"
 			},
 			"className": ".page",
-			"version": "6.3.6",
+			"version": "6.4.5",
 			"props": {
 				"backgroundColor": "rgba( 226, 226, 228, 1 )",
 				"orientation": "PORTRAIT",
@@ -22,10 +22,10 @@
 				},
 				"parent": null,
 				"children": [
-					"statusBar",
-					"headerBar",
-					"layoutHeaderBar",
-					"flexlayout109"
+					"826f-8b44-ed26-5f45",
+					"e846-c185-ac09-5a0e",
+					"09cf-8bcc-426b-01f2",
+					"b03e-fd60-a31d-55d1"
 				],
 				"name": "pgMyCompany",
 				"layout": {
@@ -46,14 +46,14 @@
 		},
 		{
 			"type": "StatusBar",
-			"id": "30fe869a",
+			"id": "826f-8b44-ed26-5f45",
 			"themeProps": {},
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
 				"color": "#7C73C0",
 				"visible": true,
-				"parent": "pgMyCompany",
+				"parent": "2c96-a374-3aee-c1f9",
 				"children": [],
 				"isRemovable": false,
 				"name": "statusBar",
@@ -68,7 +68,7 @@
 		},
 		{
 			"type": "HeaderBar",
-			"id": "671bb2c8",
+			"id": "e846-c185-ac09-5a0e",
 			"themeProps": {},
 			"userProps": {
 				"title": "newPage001",
@@ -80,7 +80,7 @@
 				"titleColor": "#FFFFFF",
 				"visible": false,
 				"backgroundColor": "#7C73C0",
-				"parent": "pgMyCompany",
+				"parent": "2c96-a374-3aee-c1f9",
 				"children": [],
 				"isRemovable": false,
 				"name": "headerBar",
@@ -95,7 +95,7 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "7d8b83be",
+			"id": "b03e-fd60-a31d-55d1",
 			"themeProps": {},
 			"userProps": {
 				"width": null,
@@ -138,9 +138,9 @@
 					"flexGrow": 1
 				},
 				"name": "flexlayout109",
-				"parent": "pgMyCompany",
+				"parent": "2c96-a374-3aee-c1f9",
 				"children": [
-					"comingSoon"
+					"e080-d195-4b58-b490"
 				],
 				"layout": {
 					"marginBottom": 5,
@@ -162,7 +162,7 @@
 		},
 		{
 			"type": "ImageView",
-			"id": "004ca261",
+			"id": "e080-d195-4b58-b490",
 			"themeProps": {},
 			"userProps": {
 				"width": null,
@@ -191,7 +191,7 @@
 					"positionType": "RELATIVE"
 				},
 				"name": "comingSoon",
-				"parent": "flexlayout109",
+				"parent": "b03e-fd60-a31d-55d1",
 				"children": [],
 				"layout": {
 					"height": 50,
@@ -208,10 +208,10 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "bf72ec11",
+			"id": "09cf-8bcc-426b-01f2",
 			"source": {
 				"page": "__library__",
-				"id": "ab2fbca6"
+				"id": "ebb9-37cc-ff1b-0314"
 			},
 			"hiddenComponent": false,
 			"themeProps": {
@@ -260,9 +260,9 @@
 					"flexDirection": 0,
 					"positionType": 0
 				},
-				"parent": "pgMyCompany",
+				"parent": "2c96-a374-3aee-c1f9",
 				"children": [
-					"headerBarTitle"
+					"b126-9165-39f3-b867"
 				],
 				"name": "layoutHeaderBar",
 				"layout": {
@@ -277,7 +277,7 @@
 		},
 		{
 			"type": "Label",
-			"id": "87da769a",
+			"id": "b126-9165-39f3-b867",
 			"source": {
 				"page": "__library__"
 			},
@@ -323,7 +323,7 @@
 					"positionType": "RELATIVE",
 					"flexGrow": null
 				},
-				"parent": "layoutHeaderBar",
+				"parent": "09cf-8bcc-426b-01f2",
 				"children": [],
 				"name": "headerBarTitle",
 				"layout": {

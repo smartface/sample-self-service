@@ -15,7 +15,10 @@
 		"Switch": ".switch",
 		"TextBox": ".textBox",
 		"VideoView": ".videoView",
-		"WebView": ".webView"
+		"WebView": ".webView",
+		"ScrollView": ".scrollView",
+		"ListViewItem": ".listViewItem",
+		"TextArea": ".textArea"
 	},
 	"Components": {
 		"ActivityIndicator": {
@@ -222,6 +225,30 @@
 				"Warning": ".webView-warning",
 				"Error": ".webView-error",
 				"Success": ".webView-success"
+			}
+		},
+		"ScrollView": {
+			"Sizes": {
+				"Default": ".scrollView",
+				"Small": ".scrollView-small",
+				"Medium": ".scrollView-medium",
+				"Large": ".scrollView-large"
+			}
+		},
+		"ListViewItem": {
+			"Sizes": {
+				"Default": ".listViewItem",
+				"Small": ".listViewItem-small",
+				"Medium": ".listViewItem-medium",
+				"Large": ".listViewItem-large"
+			}
+		},
+		"TextArea": {
+			"Sizes": {
+				"Default": ".textArea",
+				"Small": ".textArea-small",
+				"Medium": ".textArea-medium",
+				"Large": ".textArea-large"
 			}
 		}
 	}

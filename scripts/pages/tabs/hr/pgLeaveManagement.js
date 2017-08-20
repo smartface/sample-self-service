@@ -4,26 +4,25 @@ const DialogsLib = require("lib/ui/dialogs");
 const ListViewItem = require('sf-core/ui/listviewitem');
 const Image = require("sf-core/ui/image");
 const ItemLeaveManagement = require('../../../components/ItemLeaveManagement');
-const MockService = require("../../../objects/MockService");
+const leaveManagement = require("../../../model/leave-management");
 const PageDesign = require("../../../ui/ui_pgLeaveManagement");
 const Router = require("sf-core/router");
-const Timer = require("sf-core/timer");
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
 const Page_ = extend(PageDesign)(
-	// Constructor
-	function(_super){
-		// Initalizes super class for this page scope
-		_super(this);
-		this.onShow = onShow.bind(this, this.onShow.bind(this));
-		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-		
-		this.approvedList = [];
+    // Constructor
+    function(_super) {
+        // Initalizes super class for this page scope
+        _super(this);
+        this.onShow = onShow.bind(this, this.onShow.bind(this));
+        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+
+        this.approvedList = [];
         this.waitingList = [];
         this.rejectedList = [];
         this.data = this.approvedList;
-        
+
         initListView(this.listView, this);
         initTopTabBar.call(this);
         initHeaderBar.call(this);
@@ -31,24 +30,35 @@ const Page_ = extend(PageDesign)(
 );
 
 var firstOnShow = true;
+
 function onShow(parentOnShow) {
     parentOnShow();
-    
+    const page = this;
+
     if (firstOnShow) {
         DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
-        Timer.setTimeout({
-            task: function() {
-                this.approvedList = MockService.getApprovedLeaveRequests();
-                this.waitingList = MockService.getWaitingLeaveRequests();
-                this.rejectedList = MockService.getRejectedLeaveRequests();
-                this.data = this.approvedList;
-                
-                this.listView.itemCount = this.data.length;
-                this.listView.refreshData();
-                DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
-            }.bind(this),
-            delay: 1500
+        leaveManagement.getApprovedLeaveRequests(function(err, approvedLeaveRequests) {
+            if (err)
+                return alert("getApprovedLeaveRequests error"); //TODO: lang
+            leaveManagement.getWaitingLeaveRequests(function(err, waitingLeaveRequests) {
+                if (err)
+                    return alert("getWaitingLeaveRequests error"); //TODO: lang
+                leaveManagement.getRejectedLeaveRequests(function(err, rejectedLeaveRequests) {
+                    if (err)
+                        return alert("getRejectedLeaveRequests error"); //TODO: lang
+
+                    page.approvedList = approvedLeaveRequests;
+                    page.waitingList = waitingLeaveRequests;
+                    page.rejectedList = rejectedLeaveRequests;
+                    page.data = page.approvedList;
+
+                    page.listView.itemCount = page.data.length;
+                    page.listView.refreshData();
+                    DialogsLib.endLoading(loadingIndicator, page.listViewContainer);
+                });
+            });
         });
+
         firstOnShow = false;
     }
 }
@@ -69,7 +79,7 @@ function initListView(listView, dataHolder) {
         myListViewItem.addChild(item);
         item.updateCallback = function() {
             listView.itemCount = dataHolder.data.length;
-            listView.refreshData();  
+            listView.refreshData();
         };
         return myListViewItem;
     };

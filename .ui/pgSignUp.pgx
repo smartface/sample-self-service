@@ -2,14 +2,14 @@
 	"components": [
 		{
 			"type": "Page",
-			"id": "5294d01c",
+			"id": "ea91-958c-d6e6-f562",
 			"userProps": {},
-			"version": "6.3.0-rc.16",
+			"version": "6.4.5",
 			"props": {
 				"name": "pgSignUp",
 				"children": [
-					"statusBar",
-					"headerBar"
+					"ac1d-8e47-7c05-9186",
+					"e849-8c2a-2c89-0d06"
 				],
 				"flexProps": {
 					"alignContent": "STRETCH",
@@ -26,18 +26,19 @@
 				"flex": {},
 				"font": {},
 				"width": 187.5,
-				"height": 301.5
+				"height": 301.5,
+				"parent": null
 			}
 		},
 		{
 			"type": "StatusBar",
-			"id": "ad21ec43",
+			"id": "ac1d-8e47-7c05-9186",
 			"userProps": {},
 			"props": {
 				"name": "statusBar",
 				"visible": true,
 				"children": [],
-				"parent": "pgSignUp",
+				"parent": "ea91-958c-d6e6-f562",
 				"color": "#00A1F1",
 				"isRemovable": false,
 				"layout": {
@@ -51,14 +52,14 @@
 		},
 		{
 			"type": "HeaderBar",
-			"id": "c2bcd103",
+			"id": "e849-8c2a-2c89-0d06",
 			"userProps": {
 				"title": "newPage001"
 			},
 			"props": {
 				"name": "headerBar",
 				"children": [],
-				"parent": "pgSignUp",
+				"parent": "ea91-958c-d6e6-f562",
 				"title": "newPage001",
 				"visible": true,
 				"layout": {

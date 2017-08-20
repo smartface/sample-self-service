@@ -2,7 +2,7 @@
 	"components": [
 		{
 			"type": "Page",
-			"id": "e477943f",
+			"id": "a841-f0c4-4c4d-7f90",
 			"themeProps": {},
 			"userProps": {
 				"layout": {},
@@ -12,7 +12,7 @@
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.3.19",
+			"version": "6.4.5",
 			"props": {
 				"backgroundColor": "#EEEEEE",
 				"orientation": "PORTRAIT",
@@ -25,12 +25,12 @@
 					"justifyContent": "FLEX_START"
 				},
 				"children": [
-					"statusBar",
-					"headerBar",
-					"layoutHeaderBar",
-					"topTabBar",
-					"flexlayout1102",
-					"listViewContainer"
+					"9727-c3c3-4408-ec44",
+					"5f5b-3b44-8924-8dc9",
+					"8958-a67c-67f4-3089",
+					"7b78-8263-0842-31af",
+					"13e9-23a2-2f39-c5b4",
+					"e951-708c-4d63-b477"
 				],
 				"parent": null,
 				"name": "pgExpenseApprovals",
@@ -40,7 +40,7 @@
 		},
 		{
 			"type": "StatusBar",
-			"id": "7ce1c21a",
+			"id": "9727-c3c3-4408-ec44",
 			"themeProps": {},
 			"userProps": {
 				"layout": {},
@@ -54,7 +54,7 @@
 				"color": "#45495A",
 				"visible": true,
 				"children": [],
-				"parent": "pgExpenseApprovals",
+				"parent": "a841-f0c4-4c4d-7f90",
 				"isRemovable": false,
 				"name": "statusBar",
 				"height": 20
@@ -62,7 +62,7 @@
 		},
 		{
 			"type": "HeaderBar",
-			"id": "c37eab0c",
+			"id": "5f5b-3b44-8924-8dc9",
 			"themeProps": {},
 			"userProps": {
 				"title": "newPage001",
@@ -80,7 +80,7 @@
 				"visible": false,
 				"backgroundColor": "#45495A",
 				"children": [],
-				"parent": "pgExpenseApprovals",
+				"parent": "a841-f0c4-4c4d-7f90",
 				"isRemovable": false,
 				"name": "headerBar",
 				"height": 44
@@ -88,7 +88,7 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "cd570093",
+			"id": "13e9-23a2-2f39-c5b4",
 			"themeProps": {},
 			"userProps": {
 				"width": null,
@@ -126,12 +126,12 @@
 				},
 				"children": [],
 				"name": "flexlayout1102",
-				"parent": "pgExpenseApprovals"
+				"parent": "a841-f0c4-4c4d-7f90"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "7c8595eb",
+			"id": "e951-708c-4d63-b477",
 			"themeProps": {},
 			"userProps": {
 				"usePageVariable": true,
@@ -174,15 +174,15 @@
 					"flexGrow": 1
 				},
 				"children": [
-					"listView"
+					"2975-f108-02a0-c8b4"
 				],
 				"name": "listViewContainer",
-				"parent": "pgExpenseApprovals"
+				"parent": "a841-f0c4-4c4d-7f90"
 			}
 		},
 		{
 			"type": "ListView",
-			"id": "1d40aa67",
+			"id": "2975-f108-02a0-c8b4",
 			"themeProps": {},
 			"userProps": {
 				"width": null,
@@ -215,15 +215,15 @@
 				},
 				"children": [],
 				"name": "listView",
-				"parent": "listViewContainer"
+				"parent": "e951-708c-4d63-b477"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "64a18b01",
+			"id": "8958-a67c-67f4-3089",
 			"source": {
 				"page": "__library__",
-				"id": "ab2fbca6"
+				"id": "ebb9-37cc-ff1b-0314"
 			},
 			"hiddenComponent": false,
 			"themeProps": {
@@ -269,15 +269,15 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"flexlayout118"
+					"394f-0732-5c7d-0414"
 				],
-				"parent": "pgExpenseApprovals",
+				"parent": "a841-f0c4-4c4d-7f90",
 				"name": "layoutHeaderBar"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "b752e543",
+			"id": "394f-0732-5c7d-0414",
 			"source": {
 				"page": "__library__"
 			},
@@ -320,17 +320,17 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"leftItems",
-					"headerBarTitle",
-					"rightItems"
+					"aceb-359d-9171-6ad6",
+					"e485-879a-0069-07ae",
+					"7cb5-6484-47e1-9970"
 				],
 				"name": "flexlayout118",
-				"parent": "layoutHeaderBar"
+				"parent": "8958-a67c-67f4-3089"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "76f93dae",
+			"id": "aceb-359d-9171-6ad6",
 			"source": {
 				"page": "__library__"
 			},
@@ -373,12 +373,12 @@
 				},
 				"children": [],
 				"name": "leftItems",
-				"parent": "flexlayout118"
+				"parent": "394f-0732-5c7d-0414"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "1290b05f",
+			"id": "e485-879a-0069-07ae",
 			"source": {
 				"page": "__library__"
 			},
@@ -427,12 +427,12 @@
 				},
 				"children": [],
 				"name": "headerBarTitle",
-				"parent": "flexlayout118"
+				"parent": "394f-0732-5c7d-0414"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "f41b8735",
+			"id": "7cb5-6484-47e1-9970",
 			"source": {
 				"page": "__library__"
 			},
@@ -477,16 +477,16 @@
 					"flexGrow": null
 				},
 				"children": [
-					"rightItem2",
-					"rightItem1"
+					"9760-85c4-4a40-a72b",
+					"2cf3-691a-a5dc-680d"
 				],
 				"name": "rightItems",
-				"parent": "flexlayout118"
+				"parent": "394f-0732-5c7d-0414"
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "a35d2f81",
+			"id": "9760-85c4-4a40-a72b",
 			"source": {
 				"page": "__library__"
 			},
@@ -525,12 +525,12 @@
 				},
 				"children": [],
 				"name": "rightItem2",
-				"parent": "rightItems"
+				"parent": "7cb5-6484-47e1-9970"
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "5a81cc1c",
+			"id": "2cf3-691a-a5dc-680d",
 			"source": {
 				"page": "__library__"
 			},
@@ -571,16 +571,16 @@
 				},
 				"children": [],
 				"name": "rightItem1",
-				"parent": "rightItems",
+				"parent": "7cb5-6484-47e1-9970",
 				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/self-service/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "b0890755",
+			"id": "7b78-8263-0842-31af",
 			"source": {
 				"page": "__library__",
-				"id": "0c46ed74"
+				"id": "0ad7-a7ae-197b-3575"
 			},
 			"hiddenComponent": false,
 			"themeProps": {},
@@ -640,7 +640,7 @@
 					"right": 0
 				},
 				"children": [],
-				"parent": "pgExpenseApprovals",
+				"parent": "a841-f0c4-4c4d-7f90",
 				"name": "topTabBar"
 			}
 		}

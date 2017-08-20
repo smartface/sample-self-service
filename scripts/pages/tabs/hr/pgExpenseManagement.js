@@ -6,42 +6,42 @@ const FloatingMenu = require("sf-core/ui/floatingmenu");
 const Image = require("sf-core/ui/image");
 const ItemExpense = require('../../../components/ItemExpense');
 const ListViewItem = require('sf-core/ui/listviewitem');
-const MockService = require("../../../objects/MockService");
+const expenseMangement = require("../../../model/expense-management");
 const PageDesign = require("../../../ui/ui_pgExpanseManagement");
 const Router = require("sf-core/router");
 const System = require("sf-core/device/system");
-const Timer = require("sf-core/timer");
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
 const Page_ = extend(PageDesign)(
-	// Constructor
-	function(_super){
-		// Initalizes super class for this page scope
-		_super(this);
-		this.onShow = onShow.bind(this, this.onShow.bind(this));
-		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-		
-		this.expenseList = [];
-		initListView.call(this);
-		initFloatingMenu.call(this);
+    // Constructor
+    function(_super) {
+        // Initalizes super class for this page scope
+        _super(this);
+        this.onShow = onShow.bind(this, this.onShow.bind(this));
+        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+
+        this.expenseList = [];
+        initListView.call(this);
+        initFloatingMenu.call(this);
     }
 );
 
 var firstOnShow = true;
+
 function onShow(parentOnShow) {
     parentOnShow();
-    
+    const page = this;
     if (firstOnShow) {
         DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
-        Timer.setTimeout({
-            task: function() {
-                this.expenseList = MockService.getExpenses();
-                this.listView.itemCount = this.expenseList.length;
-                this.listView.refreshData();
-                DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
-            }.bind(this),
-            delay: 1500
+
+        expenseMangement.getExpenses(function(err, expenses) {
+            if (err)
+                return alert("getExpenses error"); //TODO: lang
+            page.expenseList = expenses;
+            page.listView.itemCount = page.expenseList.length;
+            page.listView.refreshData();
+            DialogsLib.endLoading(loadingIndicator, page.listViewContainer);
         });
         firstOnShow = false;
     }
@@ -64,13 +64,13 @@ function initListView() {
         myListViewItem.addChild(item);
         return myListViewItem;
     };
-    
+
     this.listView.onRowBind = function(listViewItem, index) {
         listViewItem.item.expense = this.expenseList[index];
     }.bind(this);
-    
+
     this.listView.onRowSelected = function() {
-        
+
     };
 }
 
@@ -108,7 +108,7 @@ function initFloatingMenu() {
             onClick: addNewExpense
         })
     ];
-        
+
     this.floatingMenu = new FloatingMenu({
         items: items,
         icon: Image.createFromFile("images://icon_add_blue.png"),
