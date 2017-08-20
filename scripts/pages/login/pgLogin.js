@@ -63,7 +63,9 @@ function onShow(parentOnShow, params) {
 		}
 	});
 
-	rau.checkUpdate();
+	rau.checkUpdate({
+		url: "https://smf.to/selfservice"
+	});
 }
 
 

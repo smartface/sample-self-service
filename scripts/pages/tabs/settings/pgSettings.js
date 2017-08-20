@@ -118,7 +118,9 @@ function initNewVersionButton() {
 		if (!err) {
 			this.txtNewVersion.visible = true;
 			this.txtNewVersion.onTouchEnded = function() {
-				rau.checkUpdate();
+				rau.checkUpdate({
+					url: "https://smf.to/selfservice"
+				});
 			};
 		}
 		else {
