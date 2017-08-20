@@ -8,7 +8,6 @@ const Timer = require("sf-core/timer");
 const fingerprint = require("sf-extension-utils").fingerprint;
 const rau = require("sf-extension-utils").rau;
 const mcs = require("../../lib/mcs");
-var loader = require("../../loader");
 
 const PageDesign = require("../../ui/ui_pgLogin");
 
@@ -29,6 +28,7 @@ const Page_ = extend(PageDesign)(
 
 function onShow(parentOnShow, params) {
 	parentOnShow && parentOnShow(params);
+	const page = this;
 
 	this.usernameLayout.innerTextbox.ios.clearButtonEnabled = true;
 	this.passwordLayout.innerTextbox.ios.clearButtonEnabled = true;
@@ -42,7 +42,25 @@ function onShow(parentOnShow, params) {
 
 	fingerprint.init({
 		userNameTextBox: this.usernameLayout.innerTextbox,
-		passwordTextBox: this.passwordLayout.innerTextbox
+		passwordTextBox: this.passwordLayout.innerTextbox,
+		autoLogin: true,
+		callback: function(err, fingerprintResult) {
+			var password;
+			if (err)
+				password = page.passwordLayout.innerTextbox.text;
+			else
+				password = fingerprintResult.password;
+			if (!password)
+				return alert("password is required");
+
+			doLogin(page, page.usernameLayout.innerTextbox.text, password, function(err) {
+				if (err)
+					return;
+				fingerprintResult && fingerprintResult.success(); //Important!
+				startLoading(page);
+			});
+
+		}
 	});
 
 	rau.checkUpdate();
@@ -68,28 +86,7 @@ function signin(page) {
 		alert(lang["pgLogin.inputs.username.error"]);
 		return;
 	}
-	
-	var isValid = true;
-	var password;
-	isValid && fingerprint.loginWithFingerprint(function(err, fingerprintResult) {
-		if (err)
-			password = page.passwordLayout.innerTextbox.text;
-		else
-			password = fingerprintResult.password;
-		if (!password)
-			isValid = false;
-		if(!isValid)
-			return alert("password is required");
-		
-		doLogin(page, page.usernameLayout.innerTextbox.text, password, function(err) {
-			if (err)
-				return;
-			fingerprintResult && fingerprintResult.success(); //Important!
-			startLoading(page);
-
-		});
-
-	});
+	fingerprint.loginWithFingerprint();
 }
 
 function doLogin(page, username, password, callback) {
@@ -146,7 +143,6 @@ function startLoading(uiComponents) {
 
 				if (counter > 100) {
 					Timer.clearTimer(timer);
-					// loader.load();
 					Router.go("tabs");
 				}
 			},
