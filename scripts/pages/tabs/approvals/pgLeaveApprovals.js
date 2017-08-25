@@ -16,6 +16,7 @@ const Page_ = extend(PageDesign)(
 		// Initalizes super class for this page scope
 		_super(this, params);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
+		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 
 		this.pendingList = [];
 		this.approvedList = [];
@@ -25,6 +26,11 @@ const Page_ = extend(PageDesign)(
 		initTopTabBar.call(this);
 	}
 );
+
+function onLoad(parentOnLoad) {
+	parentOnLoad();
+	initListView.call(this);
+}
 
 var firstOnShow = true;
 
@@ -43,7 +49,6 @@ function onShow(parentOnShow) {
 				page.approvedList = approvedLeaveApprovals;
 				page.data = page.pendingList;
 
-				initListView.call(page);
 				page.listView.itemCount = page.data.length;
 				page.listView.refreshData();
 				DialogsLib.endLoading(loadingIndicator, page.listViewContainer);
@@ -63,6 +68,7 @@ function initTexts() {
 }
 
 function initListView() {
+	this.listView.itemCount = 0;
 	this.listView.rowHeight = 90;
 	this.listView.refreshEnabled = false;
 

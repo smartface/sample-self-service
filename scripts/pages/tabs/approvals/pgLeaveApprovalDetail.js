@@ -2,7 +2,7 @@
 const extend = require("js-base/core/extend");
 const Color = require("sf-core/ui/color");
 const PageDesign = require("../../../ui/ui_pgLeaveApprovalDetail");
-
+const backAction = require("../../../lib/ui/back-action");
 const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super, params) {
@@ -18,6 +18,7 @@ function onShow(detail) {
 	if (typeof this._superOnShow === "function") this._superOnShow();
 	initHeaderBar.call(this);
 	detail && initDetail.call(this, detail);
+	backAction(this);
 }
 
 function initTexts() {
