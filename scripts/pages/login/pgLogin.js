@@ -8,6 +8,7 @@ const Timer = require("sf-core/timer");
 const fingerprint = require("sf-extension-utils").fingerprint;
 const rau = require("sf-extension-utils").rau;
 const mcs = require("../../lib/mcs");
+const ActionKeyType = require('sf-core/ui/actionkeytype');
 
 const PageDesign = require("../../ui/ui_pgLogin");
 
@@ -16,15 +17,34 @@ const Page_ = extend(PageDesign)(
 	function(_super, params) {
 		// Initalizes super class for this page scope
 		_super(this, params);
-
+		this.onLoad = onLoad.bind(this, this.onLoad);
 		this.onShow = onShow.bind(this, this.onShow);
-		this.signinButton.onPress = signin.bind(this.signinButton, this);
-		this.appName.onTouchEnded = function() {
-			this.usernameLayout.innerTextbox.text = "selfservice";
-			this.passwordLayout.innerTextbox.text = "123qweASD";
-		}.bind(this);
+
+
 	}
 );
+
+function onLoad(parentOnLoad) {
+	parentOnLoad && parentOnLoad();
+	const page = this;
+	const signInAction = signin.bind(this.signinButton, this);
+	page.usernameLayout.onActionButtonPress = function() {
+		page.passwordLayout.requestFocus();
+	};
+	page.usernameLayout.actionKeyType = ActionKeyType.NEXT;
+
+	page.passwordLayout.onActionButtonPress = function() {
+		signInAction();
+	};
+	page.passwordLayout.actionKeyType = ActionKeyType.SEND;
+
+	this.signinButton.onPress = signInAction;
+
+	page.appName.onTouchEnded = function() {
+		page.usernameLayout.innerTextbox.text = "selfservice";
+		page.passwordLayout.innerTextbox.text = "123qweASD";
+	};
+}
 
 function onShow(parentOnShow, params) {
 	parentOnShow && parentOnShow(params);
