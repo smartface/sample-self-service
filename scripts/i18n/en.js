@@ -237,6 +237,8 @@ SMF.i18n.defineLanguage('en', {
 	"apr": "Apr",
 	"jun": "Jun",
 	"aug": "Aug",
+	"jan": "Jan",
+	"mar": "Mar",
 	"agingReport": "Aging Report",
 	"historyByStatus": "History By Status",
 	"historyByProduct": "History By Product",

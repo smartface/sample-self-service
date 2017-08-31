@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us" style="padding:0;overflow-y:hidden;margin:0;">
+
+<head>
+  <title>Smartface Oracle JET Chart Extension</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link rel="icon" href="css/images/favicon.ico" type="image/x-icon" />
+
+  <!-- This is the main css file for the default Alta theme -->
+  <!-- injector:theme -->
+  <link rel="stylesheet" href="css/libs/oj/v3.1.0/alta/oj-alta-min.css" type="text/css" />
+  <!-- endinjector -->
+  <!-- This contains icon fonts used by the starter template -->
+  <link rel="stylesheet" href="css/demo-alta-site-min.css" type="text/css" />
+
+  <!-- This is where you would add any app specific styling -->
+  <link rel="stylesheet" href="css/override.css" type="text/css" />
+
+</head>
+
+<body class="oj-web-applayout-body" style="margin:0;padding:0;overflow-y:hidden;">
+  <div id='chart-container'>
+    <div style="width:100%;height:100%;position:absolute;margin:0;padding:0;" data-bind="ojComponent: {
+            component: 'ojChart',
+            type: typeValue,
+            orientation: orientationValue,
+            series: seriesValue,
+            groups: groupsValue,
+            animationOnDisplay: animationOnDisplayValue,
+            animationOnDataChange: animationOnDataChangeValue,
+            hoverBehavior: hoverBehaviorValue,
+            dataCursor : dataCursorValue,
+            dataCursorBehavior: dataCursorBehaviorValue,
+            dragMode: dragModeValue,
+            drilling: drillingValue,
+            hideAndShowBehavior: hideAndShowBehaviorValue,
+            initialZooming: initialZoomingValue,
+            legend: legendValue,
+            plotArea: plotAreaValue,
+            selectionMode: selectionModeValue,
+            sorting: sortingValue,
+            splitDualY: splitDualYValue,
+            splitterPosition: splitterPositionValue,
+            stack: stackValue,
+            stackLabel: stackLabelValue,
+            styleDefaults: styleDefaultsValue,
+            tooltip: tooltipValue,
+            touchResponse: touchResponseValue,
+            trackResize : trackResizeValue,
+            translations: translationsValue,
+            valueFormats: valueFormatsValue,
+            xAxis: xAxisValue,
+            y2Axis: y2AxisValue,
+            yAxis: yAxisValue,
+            zoomAndScroll: zoomAndScrollValue,
+            zoomDirection: zoomDirectionValue,
+            destroy: ojDestroy,
+            drill: ojDrill,
+            optionChange: ojOptionChange,
+            selectInput: ojSelectInput,
+            viewportChange: ojViewportChange,
+            viewportChangeInput: ojViewportChangeInput
+        }">
+    </div>
+    <script type="text/javascript" src="js/libs/require/require.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
