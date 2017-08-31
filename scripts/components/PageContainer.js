@@ -6,6 +6,7 @@ const SwipeView = require("sf-core/ui/swipeview");
 const System = require("sf-core/device/system");
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const statusbarStyle = getCombinedStyle(".statusBar");
+const Animator = require('sf-core/ui/animator');
 
 const HRIndex = extend(Page)(
     function(_super, params) {
@@ -65,7 +66,11 @@ function initDotIndicator(page) {
 }
 
 function onChildPageChanged(index) {
-    this.dotIndicator.currentIndex = index;
+    const page = this;
+    Animator.animate(page.layout, 500, function() {
+        page.dotIndicator.currentIndex = index;
+    });
+
 }
 
 module.exports = HRIndex;
