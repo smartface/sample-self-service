@@ -72,14 +72,18 @@ function onShow(parentOnShow, params) {
 				password = fingerprintResult.password;
 			if (!password)
 				return alert("password is required");
+			startLoading(page, function(animation) {
+				doLogin(page, page.usernameLayout.innerTextbox.text, password, function(err) {
+					animation.stop();
+					if (err) {
+						animation.revert();
+						return;
+					}
+					fingerprintResult && fingerprintResult.success(); //Important!
+					Router.go("tabs");
 
-			doLogin(page, page.usernameLayout.innerTextbox.text, password, function(err) {
-				if (err)
-					return;
-				fingerprintResult && fingerprintResult.success(); //Important!
-				startLoading(page);
+				});
 			});
-
 		}
 	});
 
@@ -117,16 +121,14 @@ function doLogin(page, username, password, callback) {
 		password: password
 	}, function(err, userData) {
 		if (err) {
-			return alert("Username & password not accepted"); //TODO: lang
+			alert(lang["pgLogin.invalidLogin"]);
 		}
-		callback && callback();
+		callback && callback(err, userData);
 	});
-
 }
 
-function startLoading(uiComponents) {
+function startLoading(uiComponents, callback) {
 	var imageView = uiComponents.loadingImageView;
-
 	uiComponents.signinButton.text = "";
 
 	var layout;
@@ -162,13 +164,27 @@ function startLoading(uiComponents) {
 		var timer = Timer.setInterval({
 			task: function() {
 				imageView.image = image.rotate(++counter * 7);
-
-				if (counter > 100) {
-					Timer.clearTimer(timer);
-					Router.go("tabs");
-				}
 			},
 			delay: (1000 / 60)
+		});
+		callback && callback({
+			stop: function() {
+				Timer.clearTimer(timer);
+			},
+			revert: revert
+		});
+	}
+
+	function revert() {
+		uiComponents.signinButton.text = lang["pgLogin.signin"];
+		Animator.animate(uiComponents.layout, 300, function() {
+			imageView.alpha = 0;
+		}).complete(function() {
+			uiComponents.signinButton.alpha = 1;
+			Animator.animate(layout, 100, function() {
+				uiComponents.signinButton.width = 250;
+				uiComponents.signinButton.alpha = 1;
+			});
 		});
 	}
 }

@@ -92,6 +92,7 @@ SMF.i18n.defineLanguage('tr', {
 	"pgLogin.signin"					: "GİRİŞ",
 	"pgLogin.dontHaveAccount"			: "Henüz hesabınız yok mu?",
 	"pgLogin.signup"					: "Hesap aç",
+	"pgLogin.invalidLogin"				: "Kullanıcı & şifre kabul edilmedi",
 	"pgSettings.pageTitle"				: "AYARLAR",
 	"pgSettings.themeChangeMessage"		: "Uygulamanın görünümnü değiştirmek istiyor musun? Bu işlem uygulamayı yeni baştan başlatacaktır.",
 	"pgMyCompany.pageTitle"				: "ŞİRKETİM",
