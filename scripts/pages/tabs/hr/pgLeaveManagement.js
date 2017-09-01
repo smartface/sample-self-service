@@ -7,6 +7,9 @@ const ItemLeaveManagement = require('../../../components/ItemLeaveManagement');
 const leaveManagement = require("../../../model/leave-management");
 const PageDesign = require("../../../ui/ui_pgLeaveManagement");
 const Router = require("sf-core/router");
+const JET = require('sf-extension-oracle-jet');
+const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
+const color2Hex = require("../../../lib/color2Hex");
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
@@ -55,6 +58,7 @@ function onShow(parentOnShow) {
                     page.listView.itemCount = page.data.length;
                     page.listView.refreshData();
                     DialogsLib.endLoading(loadingIndicator, page.listViewContainer);
+                    loadChart.call(page);
                 });
             });
         });
@@ -65,6 +69,69 @@ function onShow(parentOnShow) {
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
+}
+
+function loadChart() {
+    const page = this;
+    var jet = new JET({
+        jetPath: "assets://jet/",
+        webView: page.wvChart
+    });
+    page.wvChart.visible = true;
+    page.wvChart.bounceEnabled = false;
+    const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
+        width: null,
+        flexGrow: null
+    });
+    var backgroundColor = color2Hex.getRGB(flexlayout1Style.backgroundColor);
+
+    Object.assign(jet, {
+        series: [{
+            name: "TOTAL",
+            items: [40],
+        }, {
+            name: "USED",
+            items: [25],
+        }, {
+            name: "REMAINING",
+            items: [35],
+        }],
+        styleDefaults: {
+            pieInnerRadius: 0.5,
+            dataLabelPosition: "center"
+        },
+        plotArea: {
+          backgroundColor:   backgroundColor
+        },
+        type: JET.Type.PIE,
+        orientation: JET.Orientation.VERTICAL,
+        stack: JET.Stack.OFF,
+        animationOnDisplay: JET.AnimationOnDisplay.AUTO,
+        animationOnDataChange: JET.AnimationOnDataChange.AUTO,
+        legend: {
+            rendered: JET.LegendRendered.AUTO,
+            backgroundColor: backgroundColor,
+            textStyle: "color:white;"
+        },
+        xAxis: {
+            axisLine: {
+                lineColor: "white"
+            }
+        },
+        yAxis: {
+            axisLine: {
+                lineColor: "white"
+            },
+            tickLabel: {
+                style: "color:white;",
+                scaling: "none"
+            }
+        }
+
+    });
+    jet.legend.rendered = false;
+    jet.jetData.backgroundColor = backgroundColor;
+    jet.refresh();
 }
 
 function initListView(listView, dataHolder) {

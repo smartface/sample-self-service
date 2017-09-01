@@ -28,6 +28,9 @@ var navigator = new Navigator();
 navigator.add("pgLogin", require("./pages/login/pgLogin"));
 const loader = require("./loader");
 loader.load();
-
 Router.add("login", navigator);
 Router.go("login/pgLogin");
+
+// Router.add("page2", require("sf-extension-oracle-jet/samples/samplePage"));
+// Router.add("page3", require("sf-extension-oracle-jet/samples/samplePageWithOfficalCharts"));
+// Router.go("page2");
