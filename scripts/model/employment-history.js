@@ -1,5 +1,6 @@
 const mcs = require("../lib/mcs");
-const Http = require("sf-core/net/http");
+const http = require("sf-core/net/http");
+const Http = new http();
 
 exports.getEmploymentHistory = getEmploymentHistory;
 
@@ -12,14 +13,8 @@ function getEmploymentHistory(request, callback) {
         apiName: "SelfService",
         endpointName: "employmenthistory"
     }), {
-        method: "GET"
-    });
-    if (request)
-        requestOptions.body = JSON.stringify(request);
-
-
-    Http.request(requestOptions,
-        function(response) {
+        method: "GET",
+        onLoad: function(response) {
             var responseBody = response.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -27,7 +22,7 @@ function getEmploymentHistory(request, callback) {
             finally {}
             callback && callback(null, responseBody);
         },
-        function(e) {
+        onError: function(e) {
             var responseBody = e.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -35,5 +30,10 @@ function getEmploymentHistory(request, callback) {
             finally {}
             callback && callback(responseBody);
         }
-    );
+    });
+    if (request)
+        requestOptions.body = JSON.stringify(request);
+
+
+    Http.request(requestOptions);
 }

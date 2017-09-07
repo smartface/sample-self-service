@@ -1,5 +1,6 @@
 const mcs = require("../lib/mcs");
-const Http = require("sf-core/net/http");
+const http = require("sf-core/net/http");
+const Http = new http();
 const getImage = require("../lib/getImage");
 
 exports.deleteApprovedLeaveRequest = deleteApprovedLeaveRequest;
@@ -22,14 +23,8 @@ function deleteApprovedLeaveRequest(request, callback) {
         apiName: "SelfService",
         endpointName: "approvedleaverequests"
     }), {
-        method: "DELETE"
-    });
-    if (request)
-        requestOptions.body = JSON.stringify(request);
-
-
-    Http.request(requestOptions,
-        function(response) {
+        method: "DELETE",
+        onLoad: function(response) {
             var responseBody = response.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -37,7 +32,7 @@ function deleteApprovedLeaveRequest(request, callback) {
             finally {}
             callback && callback(null, responseBody);
         },
-        function(e) {
+        onError: function(e) {
             var responseBody = e.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -45,7 +40,12 @@ function deleteApprovedLeaveRequest(request, callback) {
             finally {}
             callback && callback(responseBody);
         }
-    );
+    });
+    if (request)
+        requestOptions.body = JSON.stringify(request);
+
+
+    Http.request(requestOptions);
 }
 
 function deleteWaitingLeaveRequest(request, callback) {
@@ -57,13 +57,8 @@ function deleteWaitingLeaveRequest(request, callback) {
         apiName: "SelfService",
         endpointName: "waitingleaverequests"
     }), {
-        method: "DELETE"
-    });
-    if (request)
-        requestOptions.body = JSON.stringify(request);
-
-    Http.request(requestOptions,
-        function(response) {
+        method: "DELETE",
+        onLoad: function(response) {
             var responseBody = response.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -71,7 +66,7 @@ function deleteWaitingLeaveRequest(request, callback) {
             finally {}
             callback && callback(null, responseBody);
         },
-        function(e) {
+        onError: function(e) {
             var responseBody = e.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -79,7 +74,11 @@ function deleteWaitingLeaveRequest(request, callback) {
             finally {}
             callback && callback(responseBody);
         }
-    );
+    });
+    if (request)
+        requestOptions.body = JSON.stringify(request);
+
+    Http.request(requestOptions);
 }
 
 function deleteRejectedLeaveRequest(request, callback) {
@@ -91,13 +90,8 @@ function deleteRejectedLeaveRequest(request, callback) {
         apiName: "SelfService",
         endpointName: "rejectedleaverequest"
     }), {
-        method: "DELETE"
-    });
-    if (request)
-        requestOptions.body = JSON.stringify(request);
-
-    Http.request(requestOptions,
-        function(response) {
+        method: "DELETE",
+        onLoad: function(response) {
             var responseBody = response.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -105,7 +99,7 @@ function deleteRejectedLeaveRequest(request, callback) {
             finally {}
             callback && callback(null, responseBody);
         },
-        function(e) {
+        onError: function(e) {
             var responseBody = e.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -113,7 +107,11 @@ function deleteRejectedLeaveRequest(request, callback) {
             finally {}
             callback && callback(responseBody);
         }
-    );
+    });
+    if (request)
+        requestOptions.body = JSON.stringify(request);
+
+    Http.request(requestOptions);
 }
 
 function getPendingLeaveApprovals(request, callback) {
@@ -125,13 +123,8 @@ function getPendingLeaveApprovals(request, callback) {
         apiName: "SelfService",
         endpointName: "pendingleaveapprovals"
     }), {
-        method: "GET"
-    });
-    if (request)
-        requestOptions.body = JSON.stringify(request);
-
-    Http.request(requestOptions,
-        function(response) {
+        method: "GET",
+        onLoad: function(response) {
             var responseBody = response.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -142,7 +135,7 @@ function getPendingLeaveApprovals(request, callback) {
             finally {}
             callback && callback(null, responseBody);
         },
-        function(e) {
+        onError: function(e) {
             var responseBody = e.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -150,7 +143,11 @@ function getPendingLeaveApprovals(request, callback) {
             finally {}
             callback && callback(responseBody);
         }
-    );
+    });
+    if (request)
+        requestOptions.body = JSON.stringify(request);
+
+    Http.request(requestOptions);
 }
 
 function getApprovedLeaveApprovals(request, callback) {
@@ -162,13 +159,8 @@ function getApprovedLeaveApprovals(request, callback) {
         apiName: "SelfService",
         endpointName: "approvedleaveapprovals"
     }), {
-        method: "GET"
-    });
-    if (request)
-        requestOptions.body = JSON.stringify(request);
-
-    Http.request(requestOptions,
-        function(response) {
+        method: "GET",
+        onLoad: function(response) {
             var responseBody = response.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -179,7 +171,7 @@ function getApprovedLeaveApprovals(request, callback) {
             finally {}
             callback && callback(null, responseBody);
         },
-        function(e) {
+        onError: function(e) {
             var responseBody = e.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -187,7 +179,11 @@ function getApprovedLeaveApprovals(request, callback) {
             finally {}
             callback && callback(responseBody);
         }
-    );
+    });
+    if (request)
+        requestOptions.body = JSON.stringify(request);
+
+    Http.request(requestOptions);
 }
 
 function getApprovedLeaveRequests(request, callback) {
@@ -199,13 +195,8 @@ function getApprovedLeaveRequests(request, callback) {
         apiName: "SelfService",
         endpointName: "approvedleaverequests"
     }), {
-        method: "GET"
-    });
-    if (request)
-        requestOptions.body = JSON.stringify(request);
-
-    Http.request(requestOptions,
-        function(response) {
+        method: "GET",
+        onLoad: function(response) {
             var responseBody = response.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -213,7 +204,7 @@ function getApprovedLeaveRequests(request, callback) {
             finally {}
             callback && callback(null, responseBody);
         },
-        function(e) {
+        onError: function(e) {
             var responseBody = e.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -221,7 +212,11 @@ function getApprovedLeaveRequests(request, callback) {
             finally {}
             callback && callback(responseBody);
         }
-    );
+    });
+    if (request)
+        requestOptions.body = JSON.stringify(request);
+
+    Http.request(requestOptions);
 }
 
 function getWaitingLeaveRequests(request, callback) {
@@ -233,13 +228,8 @@ function getWaitingLeaveRequests(request, callback) {
         apiName: "SelfService",
         endpointName: "waitingleaverequests"
     }), {
-        method: "GET"
-    });
-    if (request)
-        requestOptions.body = JSON.stringify(request);
-
-    Http.request(requestOptions,
-        function(response) {
+        method: "GET",
+        onLoad: function(response) {
             var responseBody = response.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -247,7 +237,7 @@ function getWaitingLeaveRequests(request, callback) {
             finally {}
             callback && callback(null, responseBody);
         },
-        function(e) {
+        onError: function(e) {
             var responseBody = e.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -255,7 +245,11 @@ function getWaitingLeaveRequests(request, callback) {
             finally {}
             callback && callback(responseBody);
         }
-    );
+    });
+    if (request)
+        requestOptions.body = JSON.stringify(request);
+
+    Http.request(requestOptions);
 }
 
 function getRejectedLeaveRequests(request, callback) {
@@ -267,13 +261,8 @@ function getRejectedLeaveRequests(request, callback) {
         apiName: "SelfService",
         endpointName: "rejectedleaverequest"
     }), {
-        method: "GET"
-    });
-    if (request)
-        requestOptions.body = JSON.stringify(request);
-
-    Http.request(requestOptions,
-        function(response) {
+        method: "GET",
+        onLoad: function(response) {
             var responseBody = response.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -281,7 +270,7 @@ function getRejectedLeaveRequests(request, callback) {
             finally {}
             callback && callback(null, responseBody);
         },
-        function(e) {
+        onError: function(e) {
             var responseBody = e.body.toString();
             try {
                 responseBody = JSON.parse(responseBody);
@@ -289,5 +278,10 @@ function getRejectedLeaveRequests(request, callback) {
             finally {}
             callback && callback(responseBody);
         }
-    );
+    
+    });
+    if (request)
+        requestOptions.body = JSON.stringify(request);
+
+    Http.request(requestOptions);
 }
