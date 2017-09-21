@@ -66,11 +66,7 @@ function initDotIndicator(page) {
 }
 
 function onChildPageChanged(index) {
-    const page = this;
-    Animator.animate(page.layout, 500, function() {
-        page.dotIndicator.currentIndex = index;
-    });
-
+    this.dotIndicator.currentIndex = index;
 }
 
 module.exports = HRIndex;
