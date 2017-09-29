@@ -15,6 +15,7 @@ const Page_ = extend(PageDesign)(
     function(_super) {
         // Initalizes super class for this page scope
         _super(this);
+        this.firstOnShow = true;
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 
@@ -23,24 +24,25 @@ const Page_ = extend(PageDesign)(
     }
 );
 
-var firstOnShow = true;
+
 
 function onShow(parentOnShow) {
     parentOnShow();
-    if (firstOnShow) {
+    if (this.firstOnShow) {
         DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
-        performanceReviews.getPerformanceReviews(function(err, performanceList) {
+        performanceReviews.getPerformanceReviews(function(err, performanceReviewData) {
             if (err)
                 return alert("getPerformanceReviews error"); //TODO: lang
+            var performanceList = performanceReviewData.data;
             this.performanceList.slice(0);
             Array.prototype.push.apply(this.performanceList,
                 performanceList);
             this.listView.itemCount = this.performanceList.length;
             this.listView.refreshData();
             DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
+            loadChart.call(this, performanceReviewData.series);
         }.bind(this));
-        loadChart.call(this);
-        firstOnShow = false;
+        this.firstOnShow = false;
     }
 }
 
@@ -50,7 +52,7 @@ function onLoad(parentOnLoad) {
     page.layoutHeaderBar.headerBarTitle.text = lang["pgPerformance.pageTitle"];
 }
 
-function loadChart() {
+function loadChart(series) {
     const page = this;
     var jet = new JET({
         jetPath: "assets://jet/",
@@ -65,7 +67,7 @@ function loadChart() {
     Object.assign(jet, {
         series: [{
             name: lang.performance,
-            items: [0, 0.50, 0.50, 1.00],
+            items: series,
             color: "#2077CD"
         }],
         groups: [{ name: lang.jan, labelStyle: "color:#FFFFFF;" },

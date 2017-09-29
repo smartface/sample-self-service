@@ -10,6 +10,7 @@ const Router = require("sf-core/router");
 const JET = require('sf-extension-oracle-jet');
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const color2Hex = require("../../../lib/color2Hex");
+const mixinDeep = require('mixin-deep');
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
@@ -18,6 +19,7 @@ const Page_ = extend(PageDesign)(
     function(_super) {
         // Initalizes super class for this page scope
         _super(this);
+        this.firstOnShow = true;
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 
@@ -32,13 +34,14 @@ const Page_ = extend(PageDesign)(
     }
 );
 
-var firstOnShow = true;
+
 
 function onShow(parentOnShow) {
     parentOnShow();
     const page = this;
 
-    if (firstOnShow) {
+    if (page.firstOnShow) {
+        page.firstOnShow = false;
         DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
         leaveManagement.getApprovedLeaveRequests(function(err, approvedLeaveRequests) {
             if (err)
@@ -49,21 +52,23 @@ function onShow(parentOnShow) {
                 leaveManagement.getRejectedLeaveRequests(function(err, rejectedLeaveRequests) {
                     if (err)
                         return alert("getRejectedLeaveRequests error"); //TODO: lang
+                    leaveManagement.getLeaveRequestsChart(function(err, leaveRequestChartData) {
+                        if (err)
+                            return alert("getRejectedLeaveRequests error"); //TODO: lang
 
-                    page.approvedList = approvedLeaveRequests;
-                    page.waitingList = waitingLeaveRequests;
-                    page.rejectedList = rejectedLeaveRequests;
-                    page.data = page.approvedList;
+                        page.approvedList = approvedLeaveRequests;
+                        page.waitingList = waitingLeaveRequests;
+                        page.rejectedList = rejectedLeaveRequests;
+                        page.data = page.approvedList;
 
-                    page.listView.itemCount = page.data.length;
-                    page.listView.refreshData();
-                    DialogsLib.endLoading(loadingIndicator, page.listViewContainer);
-                    loadChart.call(page);
+                        page.listView.itemCount = page.data.length;
+                        page.listView.refreshData();
+                        DialogsLib.endLoading(loadingIndicator, page.listViewContainer);
+                        loadChart.call(page, leaveRequestChartData);
+                    });
                 });
             });
         });
-
-        firstOnShow = false;
     }
 }
 
@@ -71,7 +76,7 @@ function onLoad(parentOnLoad) {
     parentOnLoad();
 }
 
-function loadChart() {
+function loadChart(leaveRequestChartData) {
     const page = this;
     var jet = new JET({
         jetPath: "assets://jet/",
@@ -84,51 +89,15 @@ function loadChart() {
         flexGrow: null
     });
     var backgroundColor = color2Hex.getRGB(flexlayout1Style.backgroundColor);
-
-    Object.assign(jet, {
-        series: [{
-            name: "TOTAL",
-            items: [40],
-        }, {
-            name: "USED",
-            items: [25],
-        }, {
-            name: "REMAINING",
-            items: [35],
-        }],
-        styleDefaults: {
-            pieInnerRadius: 0.5,
-            dataLabelPosition: "center"
-        },
+    leaveRequestChartData = mixinDeep(leaveRequestChartData, {
         plotArea: {
-          backgroundColor:   backgroundColor
+            backgroundColor: backgroundColor
         },
-        type: JET.Type.PIE,
-        orientation: JET.Orientation.VERTICAL,
-        stack: JET.Stack.OFF,
-        animationOnDisplay: JET.AnimationOnDisplay.AUTO,
-        animationOnDataChange: JET.AnimationOnDataChange.AUTO,
         legend: {
-            rendered: JET.LegendRendered.AUTO,
             backgroundColor: backgroundColor,
-            textStyle: "color:white;"
-        },
-        xAxis: {
-            axisLine: {
-                lineColor: "white"
-            }
-        },
-        yAxis: {
-            axisLine: {
-                lineColor: "white"
-            },
-            tickLabel: {
-                style: "color:white;",
-                scaling: "none"
-            }
         }
-
     });
+    Object.assign(jet, leaveRequestChartData);
     jet.legend.rendered = false;
     jet.jetData.backgroundColor = backgroundColor;
     jet.refresh();

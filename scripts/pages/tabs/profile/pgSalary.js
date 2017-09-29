@@ -33,11 +33,15 @@ function onShow(parentOnShow) {
             if (err)
                 return alert("getSalaryList error"); //TODO: lang
             this.salaryList.slice(0);
+            var series = [];
+            salaryList.forEach((item) => {
+                series.push(item.basic);
+            });
             Array.prototype.push.apply(this.salaryList, salaryList);
             this.listView.itemCount = this.salaryList.length;
             this.listView.refreshData();
             DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
-            loadChart.call(this);
+            loadChart.call(this, series);
         }.bind(this));
         firstOnShow = false;
     }
@@ -48,7 +52,7 @@ function onLoad(parentOnLoad) {
     this.layoutHeaderBar.headerBarTitle.text = lang["pgSalary.pageTitle"];
 }
 
-function loadChart() {
+function loadChart(series) {
     const page = this;
     var jet = new JET({
         jetPath: "assets://jet/",
@@ -63,7 +67,7 @@ function loadChart() {
     Object.assign(jet, {
         series: [{
             name: lang.performance,
-            items: [0, 0.50, 0.50, 1.00],
+            items: series,
             color: "#2077CD"
         }],
         groups: [{ name: lang.jan, labelStyle: "color:#FFFFFF;" },

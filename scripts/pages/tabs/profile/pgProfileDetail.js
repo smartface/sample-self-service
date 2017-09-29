@@ -24,8 +24,8 @@ function initTexts() {
 	
 	this.email.value.text                    = "anthony.bell@aacompany.com";
 	this.company.value.text                  = "AA Company";
-	this.workPhone.value.text                = "+902124342200";
-	this.mobilePhone.value.text              = "+905334342200";
+	this.workPhone.value.text                = "+1-202-555-0167";
+	this.mobilePhone.value.text              = "+1-202-555-0125";
 }
 
 function onLoad(superOnLoad) {
