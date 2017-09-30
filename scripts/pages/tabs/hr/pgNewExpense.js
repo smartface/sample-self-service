@@ -14,11 +14,11 @@ const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 
 const Page_ = extend(PageDesign)(
 	// Constructor
-	function(_super, params){
+	function(_super, params) {
 		// Initalizes super class for this page scope
 		_super(this, params);
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-		
+
 		initColors.call(this);
 		initCallbacks.call(this);
 	}
@@ -27,11 +27,11 @@ const Page_ = extend(PageDesign)(
 function initColors() {
 	changeInputColorsToDark(this.titleInput);
 	changeInputColorsToDark(this.expenseInput);
-	
+
 	function changeInputColorsToDark(inputLayout) {
 		inputLayout.textboxInfo.textColor = Color.create("#4A4A4A");
 		inputLayout.innerTextbox.textColor = Color.create("#000000");
-		inputLayout.textboxBottomLine.backgroundColor = Color.create("#D6D6D6");	
+		inputLayout.textboxBottomLine.backgroundColor = Color.create("#D6D6D6");
 	}
 }
 
@@ -59,44 +59,46 @@ function initCallbacks() {
 function onLoad(superOnLoad) {
 	typeof superOnLoad === "function" && superOnLoad();
 	wrapContentIntoScroll.call(this);
-	
+
 	initTexts.call(this);
 	this.headerBar.itemColor = Color.WHITE;
 }
 
 function wrapContentIntoScroll() {
 	this.scrollView = new ScrollView({
-		flexGrow: 1	
+		flexGrow: 1
 	});
 	this.layout.removeChild(this.mainContainer);
 	this.scrollView.addChild(this.mainContainer);
 	this.layout.addChild(this.scrollView);
-} 
+}
 
 var typeCurrentIndex = 0;
+
 function onTypePickerPressed() {
 	var items = [
-	    "Food",
-	    "Hotel",
-	    "Travel",
-	    "Taxi",
-	    "Health"
+		"Food",
+		"Hotel",
+		"Travel",
+		"Taxi",
+		"Health"
 	];
 
 	var picker = new Picker({
-	    items: items,
-	    currentIndex: typeCurrentIndex
+		items: items,
+		currentIndex: typeCurrentIndex
 	});
 	picker.show(onSelected.bind(this));
-	
-	function onSelected (params) {
+
+	function onSelected(params) {
 		typeCurrentIndex = params.index;
-	    this.typePicker.pickerText.text = items[typeCurrentIndex];
+		this.typePicker.pickerText.text = items[typeCurrentIndex];
 	}
 }
 
 var datePicker = new DatePicker();
 var expenseDate = null;
+
 function onExpenseDatePickerPressed() {
 	if (expenseDate !== null) {
 		datePicker.setDate(expenseDate);
@@ -104,8 +106,13 @@ function onExpenseDatePickerPressed() {
 
 	datePicker.onDateSelected = function(date) {
 		expenseDate = date;
-		this.expenseDatePicker.pickerText.text = expenseDate.getDate() + "." + 
-			(expenseDate.getMonth() + 1) + "." + expenseDate.getFullYear();
+		var month = expenseDate.getMonth() + 1;
+		if (month < 10)
+			month = "0" + String(month);
+		var day = expenseDate.getDate();
+		if (day < 10)
+			day = "0" + String(day);
+		this.expenseDatePicker.pickerText.text = `${month}/${day}/${expenseDate.getFullYear()}`;
 	}.bind(this);
 
 	datePicker.show();
@@ -113,17 +120,17 @@ function onExpenseDatePickerPressed() {
 
 function onAddFilePressed() {
 	Multimedia.pickFromGallery({
-       type: Multimedia.Type.IMAGE,
-       onSuccess: onSuccess.bind(this),
-       page : this
-    });
+		type: Multimedia.Type.IMAGE,
+		onSuccess: onSuccess.bind(this),
+		page: this
+	});
 
-   function onSuccess(picked) { 
-       var itemFile = new ItemFile();
-       itemFile.marginLeft = 10;
-       itemFile.filePreview.image = picked.image;
-       this.attachmentsLayout.addChild(itemFile);
-   }
+	function onSuccess(picked) {
+		var itemFile = new ItemFile();
+		itemFile.marginLeft = 10;
+		itemFile.filePreview.image = picked.image;
+		this.attachmentsLayout.addChild(itemFile);
+	}
 }
 
 module && (module.exports = Page_);
