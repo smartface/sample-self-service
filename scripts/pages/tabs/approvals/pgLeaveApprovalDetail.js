@@ -36,8 +36,8 @@ function initDetail(detail) {
 		this.avatar.image  = detail.image;
 		this.position.text = detail.position;
 
-		this.txtDescription.flexGrow = (detail.isApproved)? 0 : 1;
-		this.lblDescription.flexGrow = (detail.isApproved)? 1 : 0;
+		// this.txtDescription.flexGrow = (detail.isApproved)? 0 : 1;
+		// this.lblDescription.flexGrow = (detail.isApproved)? 1 : 0;
 
 		this.btnApprove.visible = !detail.isApproved;
 		this.btnReject.visible  = !detail.isApproved;

@@ -3,6 +3,7 @@
 		{
 			"type": "Page",
 			"id": "09ed-e31c-d557-d68e",
+			"initialized": true,
 			"themeProps": {
 				"Highlights": "Default"
 			},
@@ -16,7 +17,7 @@
 			"className": ".page",
 			"version": "6.4.6",
 			"props": {
-				"backgroundColor": "#EEEEEE",
+				"backgroundColor": "#E2E2E4",
 				"orientation": "PORTRAIT",
 				"flexProps": {
 					"alignContent": "STRETCH",
@@ -33,10 +34,9 @@
 				],
 				"parent": null,
 				"name": "pgLeaveApprovalDetail",
-				"width": 187.5,
-				"height": 301.5
-			},
-			"initialized": true
+				"width": 120,
+				"height": 192.95999999999998
+			}
 		},
 		{
 			"type": "StatusBar",
@@ -53,13 +53,12 @@
 			},
 			"className": ".statusBar",
 			"props": {
-				"color": "#45495A",
+				"color": "#00A1F1",
 				"visible": true,
 				"children": [],
 				"parent": "09ed-e31c-d557-d68e",
 				"isRemovable": false,
-				"name": "statusBar",
-				"height": 20
+				"name": "statusBar"
 			}
 		},
 		{
@@ -79,14 +78,13 @@
 			"className": ".headerBar",
 			"props": {
 				"title": "newPage001",
-				"titleColor": "#FFFFFF",
+				"titleColor": "#000000",
 				"visible": true,
-				"backgroundColor": "#45495A",
+				"backgroundColor": "#FFFFFF",
 				"children": [],
 				"parent": "09ed-e31c-d557-d68e",
 				"isRemovable": false,
-				"name": "headerBar",
-				"height": 44
+				"name": "headerBar"
 			}
 		},
 		{
@@ -248,7 +246,7 @@
 				"children": [],
 				"name": "avatar",
 				"parent": "a81d-1453-b3c6-2495",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/yeniservice/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/selfservice5/ui-editor/img/avatar1.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.32&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -342,7 +340,7 @@
 					"size": 18,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -396,7 +394,7 @@
 					"size": 14,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -530,13 +528,13 @@
 				"font": {},
 				"defaults": {}
 			},
-			"className": ".flexLayout .flexLayout-filled",
+			"className": ".flexLayout",
 			"props": {
 				"height": null,
 				"width": null,
 				"touchEnabled": true,
 				"visible": true,
-				"backgroundColor": "#1775D0",
+				"backgroundColor": "#FFFFFF",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
@@ -750,7 +748,7 @@
 					"size": 16,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -803,7 +801,7 @@
 					"size": 14,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -909,7 +907,7 @@
 					"size": 16,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -962,7 +960,7 @@
 					"size": 14,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1015,7 +1013,7 @@
 				"children": [],
 				"name": "imageview170",
 				"parent": "be36-3419-cf5c-1d49",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/yeniservice/ui-editor/img/icon_clock.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.18307328741556317"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/selfservice5/ui-editor/img/icon_clock.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.32&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1059,7 +1057,7 @@
 				"children": [],
 				"name": "imageview171",
 				"parent": "1cac-43e4-6a73-ac23",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/yeniservice/ui-editor/img/icon_calendar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.31497386090133017"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/selfservice5/ui-editor/img/icon_calendar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.32&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -1195,7 +1193,7 @@
 					"size": 18,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1254,7 +1252,7 @@
 					"size": 18,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1415,7 +1413,7 @@
 					"size": 24,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1469,7 +1467,7 @@
 					"size": 12,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1523,7 +1521,7 @@
 					"size": 16,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1626,7 +1624,7 @@
 					"size": 24,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1680,7 +1678,7 @@
 					"size": 12,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1734,7 +1732,7 @@
 					"size": 16,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1837,7 +1835,7 @@
 					"size": 24,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1891,7 +1889,7 @@
 					"size": 12,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -1945,7 +1943,7 @@
 					"size": 16,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "AUTO",
@@ -2004,8 +2002,8 @@
 					"positionType": "RELATIVE"
 				},
 				"children": [
-					"1168-0fa5-3a51-5392",
-					"28b8-b84d-2502-f752"
+					"28b8-b84d-2502-f752",
+					"1168-0fa5-3a51-5392"
 				],
 				"name": "descriptionLayout",
 				"parent": "f90b-5408-035a-c27b"
@@ -2096,7 +2094,7 @@
 					"size": 16,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"positionType": "RELATIVE",
@@ -2143,7 +2141,7 @@
 					"size": 16,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"positionType": "RELATIVE",
@@ -2290,7 +2288,7 @@
 				"name": "imageview66",
 				"parent": "fe52-2bd0-5e38-2cfb",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface495/yeniservice/ui-editor/img/icon_sick_leave.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.7012561043879935"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/selfservice5/ui-editor/img/icon_sick_leave.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.32&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -2316,7 +2314,7 @@
 				"flex": {},
 				"defaults": {}
 			},
-			"className": ".label .label-list-item-header",
+			"className": ".label",
 			"props": {
 				"width": null,
 				"height": 20,
@@ -2328,13 +2326,13 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "#1775D0",
+				"textColor": "#000000",
 				"textAlignment": "MIDCENTER",
 				"font": {
 					"size": 12,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
 				"flexProps": {
 					"alignSelf": "STRETCH",
@@ -2347,7 +2345,7 @@
 			}
 		},
 		{
-			"type": "TextBox",
+			"type": "TextArea",
 			"id": "1168-0fa5-3a51-5392",
 			"themeProps": {
 				"Sizes": "Default",
@@ -2358,6 +2356,9 @@
 				"height": null,
 				"text": "",
 				"usePageVariable": true,
+				"textAlignment": "MIDLEFT",
+				"borderColor": "rgba( 203, 204, 208, 1 )",
+				"borderWidth": 0.5,
 				"font": {
 					"family": "Lato"
 				},
@@ -2365,7 +2366,7 @@
 					"flexGrow": 1
 				}
 			},
-			"className": ".textBox",
+			"className": ".textArea",
 			"props": {
 				"height": null,
 				"width": null,
@@ -2374,8 +2375,8 @@
 				"visible": true,
 				"backgroundColor": "#FFFFFF",
 				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
+				"borderColor": "rgba( 203, 204, 208, 1 )",
+				"borderWidth": 0.5,
 				"textColor": "rgba(0,0,0,1)",
 				"textAlignment": "MIDLEFT",
 				"usePageVariable": true,
@@ -2398,44 +2399,49 @@
 		{
 			"type": "Label",
 			"id": "28b8-b84d-2502-f752",
-			"themeProps": {},
+			"hiddenComponent": false,
+			"themeProps": {
+				"Sizes": "Default",
+				"Highlights": "Default"
+			},
 			"userProps": {
 				"usePageVariable": true,
 				"height": null,
 				"width": null,
+				"text": "Description",
 				"flexProps": {
 					"flexGrow": 1
 				}
 			},
+			"className": ".label",
 			"props": {
-				"name": "lblDescription",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"width": null,
 				"height": null,
 				"touchEnabled": true,
-				"text": "Label",
+				"text": "Description",
 				"visible": true,
 				"multiline": false,
 				"backgroundColor": "#FFFFFF",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
-				"textColor": "#4A4A4A",
+				"textColor": "#000000",
 				"textAlignment": "MIDLEFT",
+				"usePageVariable": true,
 				"font": {
 					"size": 16,
 					"bold": false,
 					"italic": false,
-					"family": "Lato"
+					"family": "Arial"
 				},
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"name": "lblDescription",
 				"parent": "e3e4-fe21-3a12-7ec0",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		}
 	]
