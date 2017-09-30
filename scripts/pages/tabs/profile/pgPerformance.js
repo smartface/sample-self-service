@@ -30,17 +30,20 @@ function onShow(parentOnShow) {
     parentOnShow();
     if (this.firstOnShow) {
         DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
-        performanceReviews.getPerformanceReviews(function(err, performanceReviewData) {
+        performanceReviews.getPerformanceReviews(function(err, performanceList) {
             if (err)
                 return alert("getPerformanceReviews error"); //TODO: lang
-            var performanceList = performanceReviewData.data;
             this.performanceList.slice(0);
             Array.prototype.push.apply(this.performanceList,
                 performanceList);
             this.listView.itemCount = this.performanceList.length;
             this.listView.refreshData();
             DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
-            loadChart.call(this, performanceReviewData.series);
+            var series =[];
+            performanceList.forEach((item) => {
+                series.push(item.overallScore);
+            });
+            loadChart.call(this, series);
         }.bind(this));
         this.firstOnShow = false;
     }
