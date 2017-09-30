@@ -45,7 +45,6 @@ function initTexts() {
 	this.typePicker.pickerTitle.text = lang["pgNewExpense.details.type"];
 	this.expenseDatePicker.pickerTitle.text = lang["pgNewExpense.details.expenseDate"];
 	this.noteTitle.text = lang["pgNewExpense.note"];
-	this.description.hint = lang["pgNewExpense.note.description"];
 	this.fileAttachmentTitle.text = lang["pgNewExpense.fileAttachment"];
 	this.requestButton.text = lang["pgNewExpense.request"];
 }

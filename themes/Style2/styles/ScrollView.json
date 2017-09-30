@@ -1,0 +1,34 @@
+{
+    ".scrollView": {
+        "height": 200,
+        "width": 200,
+        "touchEnabled": true,
+        "visible": true,
+        "backgroundColor": "#FFFFFF",
+        "alpha": 1,
+        "borderColor": "rgba(0,0,0,1)",
+        "borderWidth": 0,
+        "align": "VERTICAL",
+        "scrollBarEnabled": true,
+        "font": {},
+        "flexProps": {
+            "alignSelf": "AUTO",
+            "direction": "INHERIT",
+            "alignContent": "STRETCH",
+            "alignItems": "STRETCH",
+            "justifyContent": "FLEX_START",
+            "flexWrap": "NOWRAP",
+            "flexDirection": "COLUMN",
+            "positionType": "RELATIVE"
+        },
+        "&-small": {
+            "width": 100
+        },
+        "&-medium": {
+            "width": 250
+        },
+        "&-large": {
+            "width": 350
+        }
+    }
+}
