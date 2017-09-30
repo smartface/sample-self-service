@@ -1,3 +1,4 @@
+/*globals lang*/
 const extend = require("js-base/core/extend");
 const PageDesign = require("../../../ui/ui_pgOutOfOffice");
 const ScrollView = require("sf-core/ui/scrollview");
