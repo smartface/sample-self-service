@@ -15,7 +15,10 @@
 		"Switch": ".switch",
 		"TextBox": ".textBox",
 		"VideoView": ".videoView",
-		"WebView": ".webView"
+		"WebView": ".webView",
+		"TextArea": ".textArea",
+		"ScrollView": ".scrollView",
+		"ListViewItem": ".listViewItem"
 	},
 	"Components": {
 		"ActivityIndicator": {
@@ -61,8 +64,8 @@
 				"Success": ".flexLayout-success",
 				"HeaderBar": ".flexLayout-headerBar",
 				"DotIndicator": ".flexLayout-dotIndicator-main",
-				"DotIndicatorInactiveItem": ".flexLayout-dotIndicator-item.inactive",
-				"DotIndicatorActiveItem": ".flexLayout-dotIndicator-item.active",
+				"DotIndicatorInactiveItem": ".flexLayout-dotIndicator-item-inactive",
+				"DotIndicatorActiveItem": ".flexLayout-dotIndicator-item-active",
 				"ThemeColor": ".flexLayout-filled"
 			}
 		},
@@ -103,15 +106,15 @@
 				"Warning": ".label-warning",
 				"Error": ".label-error",
 				"Success": ".label-success",
-				"ListItemHeader" : ".label-list-item-header",
-				"ListItemTitle" : ".label-list-item-title",
-				"ListItemValue" : ".label-list-item-value",
-				"ApproveItemActive" : ".label-approve-item-active",
-				"ApproveItemInactive" : ".label-approve-item-inactive",
-				"EditItemActive" : ".label-edit-item-active",
-				"EditItemInactive" : ".label-edit-item-inactive",
-				"DeleteItemActive" : ".label-delete-item-active",
-				"DeleteItemInactive" : ".label-delete-item-inactive",
+				"ListItemHeader": ".label-list-item-header",
+				"ListItemTitle": ".label-list-item-title",
+				"ListItemValue": ".label-list-item-value",
+				"ApproveItemActive": ".label-approve-item-active",
+				"ApproveItemInactive": ".label-approve-item-inactive",
+				"EditItemActive": ".label-edit-item-active",
+				"EditItemInactive": ".label-edit-item-inactive",
+				"DeleteItemActive": ".label-delete-item-active",
+				"DeleteItemInactive": ".label-delete-item-inactive",
 				"Login-Info": ".label-login.info",
 				"Login-Normal": ".label-login",
 				"Overview-title": ".label-overview-title",
