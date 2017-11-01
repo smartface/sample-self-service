@@ -11,7 +11,7 @@ function getEmploymentHistory(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "employmenthistory"
+        endpointPath: "employmenthistory"
     }), {
         method: "GET",
         onLoad: function(response) {

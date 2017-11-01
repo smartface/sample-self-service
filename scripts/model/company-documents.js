@@ -11,7 +11,7 @@ function getCompanyDocuments(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "companydocuments"
+        endpointPath: "companydocuments"
     }), {
         method: "GET",
         onLoad: function(response) {

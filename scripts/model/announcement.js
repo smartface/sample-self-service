@@ -12,7 +12,7 @@ function getAnnouncements(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "announcements"
+        endpointPath: "announcements"
     }), {
         method: "GET",
         onLoad: function(response) {

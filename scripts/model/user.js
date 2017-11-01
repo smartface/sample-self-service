@@ -12,7 +12,7 @@ function getUsers(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "users"
+        endpointPath: "users"
     }), {
         method: "GET",
         onLoad: function(response) {

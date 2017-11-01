@@ -11,7 +11,7 @@ function getSalaryList(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "salary"
+        endpointPath: "salary"
     }), {
         method: "GET",
         onLoad: function(response) {

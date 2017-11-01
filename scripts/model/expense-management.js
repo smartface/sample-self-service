@@ -14,7 +14,7 @@ function getPendingExpenseApprovals(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "pendingexpenseapprovals"
+        endpointPath: "pendingexpenseapprovals"
     }), {
         method: "GET",
         onLoad: function(response) {
@@ -51,7 +51,7 @@ function getApprovedExpenseApprovals(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "approvedexpenseapprovals"
+        endpointPath: "approvedexpenseapprovals"
     }), {
         method: "GET",
         onLoad: function(response) {
@@ -88,7 +88,7 @@ function getExpenses(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "expenses"
+        endpointPath: "expenses"
     }), {
         method: "GET",
         onLoad: function(response) {

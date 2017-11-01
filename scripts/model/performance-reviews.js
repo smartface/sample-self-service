@@ -11,7 +11,7 @@ function getPerformanceReviews(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "performancereviews"
+        endpointPath: "performancereviews"
     }), {
         method: "GET",
         onLoad: function(response) {

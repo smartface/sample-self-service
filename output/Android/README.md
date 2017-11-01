@@ -1,1 +1,0 @@
-Android apk files will be placed into this folder.

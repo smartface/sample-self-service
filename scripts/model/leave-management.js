@@ -21,7 +21,7 @@ function deleteApprovedLeaveRequest(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "approvedleaverequests"
+        endpointPath: "approvedleaverequests"
     }), {
         method: "DELETE",
         onLoad: function(response) {
@@ -55,7 +55,7 @@ function deleteWaitingLeaveRequest(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "waitingleaverequests"
+        endpointPath: "waitingleaverequests"
     }), {
         method: "DELETE",
         onLoad: function(response) {
@@ -88,7 +88,7 @@ function deleteRejectedLeaveRequest(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "rejectedleaverequest"
+        endpointPath: "rejectedleaverequest"
     }), {
         method: "DELETE",
         onLoad: function(response) {
@@ -121,7 +121,7 @@ function getPendingLeaveApprovals(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "pendingleaveapprovals"
+        endpointPath: "pendingleaveapprovals"
     }), {
         method: "GET",
         onLoad: function(response) {
@@ -157,7 +157,7 @@ function getApprovedLeaveApprovals(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "approvedleaveapprovals"
+        endpointPath: "approvedleaveapprovals"
     }), {
         method: "GET",
         onLoad: function(response) {
@@ -193,7 +193,7 @@ function getApprovedLeaveRequests(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "approvedleaverequests"
+        endpointPath: "approvedleaverequests"
     }), {
         method: "GET",
         onLoad: function(response) {
@@ -226,7 +226,7 @@ function getWaitingLeaveRequests(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "waitingleaverequests"
+        endpointPath: "waitingleaverequests"
     }), {
         method: "GET",
         onLoad: function(response) {
@@ -259,7 +259,7 @@ function getRejectedLeaveRequests(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "rejectedleaverequest"
+        endpointPath: "rejectedleaverequest"
     }), {
         method: "GET",
         onLoad: function(response) {
@@ -293,7 +293,7 @@ function getLeaveRequestsChart(request, callback) {
     }
     var requestOptions = Object.assign(mcs.createRequestOptions({
         apiName: "SelfService",
-        endpointName: "leaverequestschart"
+        endpointPath: "leaverequestschart"
     }), {
         method: "GET",
         onLoad: function(response) {
