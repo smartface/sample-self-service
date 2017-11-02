@@ -215,7 +215,6 @@ function getApprovedLeaveRequests(request, callback) {
     });
     if (request)
         requestOptions.body = JSON.stringify(request);
-
     Http.request(requestOptions);
 }
 
