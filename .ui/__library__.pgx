@@ -237,7 +237,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "d694-cd17-df53-0801",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -3423,10 +3423,12 @@
 				"flex": {},
 				"font": {},
 				"flexProps": {},
-				"defaults": {}
+				"defaults": {},
+				"id": 100
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
+				"id": 100,
 				"name": "titleSwitch",
 				"text": "Text",
 				"children": [],
@@ -3454,6 +3456,7 @@
 				"defaults": {},
 				"minHeight": 31,
 				"minWidth": 51,
+				"id": 101,
 				"input": {
 					"height": 31,
 					"width": 51
@@ -3461,6 +3464,7 @@
 			},
 			"className": ".switch",
 			"props": {
+				"id": 101,
 				"name": "switchItem",
 				"toggle": true,
 				"children": [],
