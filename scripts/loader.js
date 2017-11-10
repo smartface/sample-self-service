@@ -6,6 +6,8 @@ const BottomTabBar = require("sf-core/ui/bottomtabbar");
 const Color = require("sf-core/ui/color");
 const settings = require("./settings.json");
 const Router = require("sf-core/ui/router");
+const Data = require('sf-core/data');
+
 var tabBar;
 
 exports.load = function load() {
@@ -14,7 +16,7 @@ exports.load = function load() {
         return true;
     }
 
-    var itemColor = Color.create((settings.config.theme.currentTheme === "Style1" ? "#1775D0" : "#00B9FF"));
+    var itemColor = Color.create((Data.getStringVariable("theme") === "Style1" ? "#1775D0" : "#00B9FF"));
     tabBar = new BottomTabBar({
         backgroundColor: Color.create("#EAEAEB"),
         itemColor: {
@@ -22,6 +24,7 @@ exports.load = function load() {
             selected: itemColor
         }
     });
+
 
     var profileNavigator = new Navigator();
     profileNavigator.add("index", require("./pages/tabs/profile"));
