@@ -56,6 +56,13 @@
 				"infoPlist": "config/iOS/Info.plist",
 				"urlIdentifier": "",
 				"urlSchemes": "",
+				"plugins": {
+					"codereaderios": {
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/iOS/2.0.0/codereaderios.zip",
+						"path": "plugins/iOS/codereaderios.zip",
+						"active": false
+					}
+				},
 				"playerPath": null
 			},
 			"android": {
@@ -69,6 +76,13 @@
 					"keystorePass": "smartface",
 					"aliasName": "smartface",
 					"keyPass": "smartface"
+				},
+				"plugins": {
+					"smfimagecode": {
+						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/Android/2.0.0/CodeReaderAndroid.zip",
+						"path": "plugins/Android/CodeReaderAndroid.zip",
+						"active": false
+					}
 				},
 				"playerPath": null
 			},
