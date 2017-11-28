@@ -51,6 +51,8 @@ function onLoad(parentOnLoad) {
     this.layoutHeaderBar.headerBarTitle.text = lang["pgEmploymentHistory.pageTitle"];
 }
 
+var itemIndex = 0;
+
 function initListView(listView, data) {
     listView.rowHeight = 350;
     listView.itemCount = 0;
@@ -59,7 +61,7 @@ function initListView(listView, data) {
         var employmentItem = new ItemEmploymentHistory();
         employmentItem.id = 200;
         myListViewItem.item = employmentItem;
-        myListViewItem.addChild(employmentItem);
+        myListViewItem.addChild(employmentItem, "employment_"+itemIndex);
         return myListViewItem;
     };
 

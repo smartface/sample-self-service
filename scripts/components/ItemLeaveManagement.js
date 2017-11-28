@@ -6,6 +6,7 @@ const ItemLeaveManagement = require('library/ItemLeaveManagement');
 const FlexLayout = require('sf-core/ui/flexlayout');
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 
+/*
 const ApproveLabelActiveStyle = getCombinedStyle(".label-leaveRequestListItem-approve-active");
 const ApproveLabelInactiveStyle = getCombinedStyle(".label-leaveRequestListItem-approve-inactive");
 const EditLabelActiveStyle = getCombinedStyle(".label-leaveRequestListItem-edit-active");
@@ -17,7 +18,7 @@ const ApproveIconInactiveStyle = getCombinedStyle(".imageView-leaveRequestListIt
 const EditIconActiveStyle = getCombinedStyle(".imageView-leaveRequestListItem-edit-active");
 const EditIconInactiveStyle = getCombinedStyle(".imageView-leaveRequestListItem-edit-inactive");
 const DeleteIconActiveStyle = getCombinedStyle(".imageView-leaveRequestListItem-delete-active");
-
+*/
 const leaveManagement = require("../model/leave-management");
 
 const ItemLeaveManagement_ = extend(ItemLeaveManagement)(
@@ -69,12 +70,13 @@ function invalidate(item) {
 				item.updateCallback();
 			});
 		}.bind(item.request));
-		Object.assign(this.approveLabel, getCombinedStyle(".label-leaveRequestListItem-approve-inactive"));
+		/*Object.assign(this.approveLabel, getCombinedStyle(".label-leaveRequestListItem-approve-inactive"));
 		Object.assign(this.approveIcon, ApproveIconActiveStyle);
 		Object.assign(this.editLabel, EditLabelInactiveStyle);
 		Object.assign(this.editIcon, EditIconInactiveStyle);
 		Object.assign(this.deleteLabel, DeleteLabelActiveStyle);
 		Object.assign(this.deleteIcon, DeleteIconActiveStyle);
+		*/
 	}
 
 	function setPending() {
@@ -87,12 +89,13 @@ function invalidate(item) {
 				item.updateCallback();
 			});
 		}.bind(item.request));
-		Object.assign(this.approveLabel, ApproveLabelInactiveStyle);
+	/*	Object.assign(this.approveLabel, ApproveLabelInactiveStyle);
 		Object.assign(this.approveIcon, ApproveIconInactiveStyle);
 		Object.assign(this.editLabel, EditLabelActiveStyle);
 		Object.assign(this.editIcon, EditIconActiveStyle);
 		Object.assign(this.deleteLabel, DeleteLabelActiveStyle);
 		Object.assign(this.deleteIcon, DeleteIconActiveStyle);
+		*/
 	}
 
 	function setRejected() {
@@ -105,12 +108,13 @@ function invalidate(item) {
 				item.updateCallback();
 			});
 		}.bind(item.request));
-		Object.assign(this.approveLabel, ApproveLabelInactiveStyle);
+	/*	Object.assign(this.approveLabel, ApproveLabelInactiveStyle);
 		Object.assign(this.approveIcon, ApproveIconInactiveStyle);
 		Object.assign(this.editLabel, EditLabelInactiveStyle);
 		Object.assign(this.editIcon, EditIconInactiveStyle);
 		Object.assign(this.deleteLabel, DeleteLabelActiveStyle);
 		Object.assign(this.deleteIcon, DeleteIconActiveStyle);
+		*/
 	}
 }
 

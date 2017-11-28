@@ -11,6 +11,8 @@ const JET = require('sf-extension-oracle-jet');
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const color2Hex = require("../../../lib/color2Hex");
 const mixinDeep = require('mixin-deep');
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
@@ -107,12 +109,14 @@ function initListView(listView, dataHolder) {
     listView.rowHeight = 135;
     listView.itemCount = dataHolder.data.length;
     listView.refreshEnabled = false;
+    var  itemIndex = 0;
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemLeaveManagement();
         item.id = 200;
         myListViewItem.item = item;
-        myListViewItem.addChild(item);
+        this.dispatch(addChild("item"+(++itemIndex), myListViewItem));
+        myListViewItem.addChild(item, "child");
         item.updateCallback = function() {
             listView.itemCount = dataHolder.data.length;
             listView.refreshData();

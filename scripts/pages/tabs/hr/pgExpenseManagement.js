@@ -10,6 +10,8 @@ const expenseMangement = require("../../../model/expense-management");
 const PageDesign = require("../../../ui/ui_pgExpanseManagement");
 const Router = require("sf-core/router");
 const System = require("sf-core/device/system");
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
@@ -56,12 +58,14 @@ function initListView() {
     this.listView.rowHeight = 75;
     this.listView.itemCount = this.expenseList.length;
     this.listView.refreshEnabled = false;
+    var itemIndex = 0;
     this.listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemExpense();
         item.id = 200;
         myListViewItem.item = item;
-        myListViewItem.addChild(item);
+        this.dispatch(addChild("item"+(++itemIndex), myListViewItem));
+        myListViewItem.addChild(item,"child");
         return myListViewItem;
     };
 

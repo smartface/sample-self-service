@@ -7,6 +7,8 @@ const ListViewItem = require("sf-core/ui/listviewitem");
 const leaveManagement = require('../../../model/leave-management');
 const PageDesign = require("../../../ui/ui_pgLeaveApprovals");
 const Router = require("sf-core/router");
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
@@ -68,15 +70,20 @@ function initTexts() {
 }
 
 function initListView() {
+	this.listView.dispatch(removeChildren());
+	
 	this.listView.itemCount = 0;
 	this.listView.rowHeight = 90;
 	this.listView.refreshEnabled = false;
+	var itemIndex = 0;
 
 	this.listView.onRowCreate = function() {
 		var listViewItem = new ListViewItem();
 		var item = new ItemApproval();
 		item.id = 200;
-		listViewItem.addChild(item);
+		this.dispatch(addChild("item"+(++itemIndex), listViewItem));
+		listViewItem.addChild(item, "child");
+		
 		return listViewItem;
 	};
 

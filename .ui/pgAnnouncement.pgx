@@ -3,16 +3,13 @@
 		{
 			"type": "Page",
 			"id": "79d4-068d-65be-483e",
-			"themeProps": {},
 			"userProps": {
-				"layout": {},
-				"flex": {},
 				"font": {},
 				"flexProps": {},
 				"defaults": {}
 			},
 			"className": ".page",
-			"version": "6.5.2",
+			"version": "6.5.3",
 			"props": {
 				"backgroundColor": "#EEEEEE",
 				"orientation": "PORTRAIT",
@@ -40,10 +37,7 @@
 		{
 			"type": "StatusBar",
 			"id": "ec8b-eb9a-46d9-a134",
-			"themeProps": {},
 			"userProps": {
-				"layout": {},
-				"flex": {},
 				"font": {},
 				"flexProps": {},
 				"defaults": {}
@@ -62,12 +56,9 @@
 		{
 			"type": "HeaderBar",
 			"id": "d6d3-a112-c8bf-d1a8",
-			"themeProps": {},
 			"userProps": {
 				"title": "newPage001",
 				"visible": false,
-				"layout": {},
-				"flex": {},
 				"font": {},
 				"flexProps": {},
 				"defaults": {}
@@ -88,7 +79,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "c2ba-c550-320a-37e4",
-			"themeProps": {},
 			"userProps": {
 				"usePageVariable": true,
 				"width": null,
@@ -100,8 +90,6 @@
 				"flexProps": {
 					"flexGrow": 1
 				},
-				"layout": {},
-				"flex": {},
 				"font": {},
 				"defaults": {}
 			},
@@ -141,7 +129,6 @@
 		{
 			"type": "ListView",
 			"id": "0ef9-1756-19da-ca8a",
-			"themeProps": {},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -187,9 +174,6 @@
 				"page": "__library__",
 				"id": "ebb9-37cc-ff1b-0314"
 			},
-			"themeProps": {
-				"Highlights": "HeaderBar"
-			},
 			"userProps": {
 				"left": 0,
 				"top": 0,
@@ -199,10 +183,6 @@
 				"flexProps": {
 					"positionType": "RELATIVE"
 				},
-				"flex": {
-					"positionType": 0
-				},
-				"layout": {},
 				"font": {},
 				"defaults": {}
 			},
@@ -236,65 +216,11 @@
 		},
 		{
 			"type": "FlexLayout",
-			"id": "8c1f-6737-6e47-5e45",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"themeProps": {},
-			"userProps": {
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"marginTop": null,
-				"width": null,
-				"height": 40,
-				"top": 20,
-				"flexProps": {
-					"flexDirection": "ROW"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"height": 40,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"marginTop": null,
-				"top": 20,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
-				},
-				"children": [
-					"697b-2b05-8925-d61c",
-					"d860-0107-47f3-6ea3",
-					"5943-8ab7-7a2c-d507"
-				],
-				"name": "flexlayout118",
-				"parent": "7488-d8c2-c9ba-fab9"
-			}
-		},
-		{
-			"type": "FlexLayout",
 			"id": "697b-2b05-8925-d61c",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {},
 			"userProps": {
 				"height": null,
 				"width": 68,
@@ -303,8 +229,6 @@
 				"flexProps": {
 					"flexGrow": null
 				},
-				"layout": {},
-				"flex": {},
 				"font": {},
 				"defaults": {}
 			},
@@ -342,7 +266,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {},
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 1 )",
@@ -353,8 +276,6 @@
 				"flexProps": {
 					"flexGrow": 2
 				},
-				"layout": {},
-				"flex": {},
 				"font": {},
 				"defaults": {}
 			},
@@ -396,7 +317,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {},
 			"userProps": {
 				"height": null,
 				"width": 68,
@@ -408,8 +328,6 @@
 					"alignItems": "CENTER",
 					"justifyContent": "SPACE_AROUND"
 				},
-				"layout": {},
-				"flex": {},
 				"font": {},
 				"defaults": {}
 			},
@@ -450,7 +368,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {},
 			"userProps": {
 				"height": 24,
 				"width": 24,
@@ -460,8 +377,6 @@
 					"alignSelf": "AUTO",
 					"flexGrow": null
 				},
-				"layout": {},
-				"flex": {},
 				"font": {},
 				"defaults": {}
 			},
@@ -494,7 +409,6 @@
 			"source": {
 				"page": "__library__"
 			},
-			"themeProps": {},
 			"userProps": {
 				"height": 24,
 				"width": 24,
@@ -505,8 +419,6 @@
 					"alignSelf": "AUTO",
 					"flexGrow": null
 				},
-				"layout": {},
-				"flex": {},
 				"font": {},
 				"defaults": {}
 			},
