@@ -4,7 +4,7 @@ const AlertView = require("sf-core/ui/alertview");
 const Color = require("sf-core/ui/color");
 const ItemLeaveManagement = require('library/ItemLeaveManagement');
 const FlexLayout = require('sf-core/ui/flexlayout');
-const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
+//const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 
 /*
 const ApproveLabelActiveStyle = getCombinedStyle(".label-leaveRequestListItem-approve-active");
@@ -24,7 +24,7 @@ const leaveManagement = require("../model/leave-management");
 const ItemLeaveManagement_ = extend(ItemLeaveManagement)(
 	//constructor
 	function(_super, props, pageName) {
-		delete ItemLeaveManagement.defaults.width;
+		//delete ItemLeaveManagement.defaults.width;
 		_super(this, props || ItemLeaveManagement.defaults);
 		this.pageName = pageName;
 

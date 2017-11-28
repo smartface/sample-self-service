@@ -2,8 +2,9 @@
 		You can modify its contents.
 */
 const extend = require('js-base/core/extend');
-const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const ItemDocumentDesign = require('library/ItemDocument');
+const pushClassNames = require("@smartface/contx/lib/styling/action/pushClassNames")
+const removeClassName = require("@smartface/contx/lib/styling/action/removeClassName")
 
 const ItemDocument = extend(ItemDocumentDesign)(
 	//constructor
@@ -28,9 +29,12 @@ const ItemDocument = extend(ItemDocumentDesign)(
 
 function invalidate(item, data) {
 	item.itemDocumentTitle.text = data.title;
-	
+	item.itemDocumentAcceptance.dispatch(pushClassNames(".label-item-document-" + data.condition));
+	item.itemDocumentImage.dispatch(pushClassNames(".imageView-item-document-" + data.condition));
+	/*
 	Object.assign(item.itemDocumentAcceptance, getCombinedStyle(".label-item-document-" + data.condition));
 	Object.assign(item.itemDocumentImage, getCombinedStyle(".imageView-item-document-" + data.condition));
+	*/
 }
 
 module && (module.exports = ItemDocument);

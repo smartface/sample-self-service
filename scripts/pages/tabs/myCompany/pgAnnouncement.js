@@ -4,6 +4,8 @@ const ItemAnnouncement = require("components/ItemAnnouncement");
 const ListViewItem = require("sf-core/ui/listviewitem");
 const announcement = require("../../../model/announcement");
 const PageDesign = require("../../../ui/ui_pgAnnouncement");
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -35,11 +37,15 @@ function initTexts() {
 function initListView() {
 	this.listView.rowHeight = 120;
 	this.listView.refreshEnabled = false;
+	var itemIndex = 0;
+	
 	this.listView.onRowCreate = function() {
 		var listViewItem = new ListViewItem();
 		var item = new ItemAnnouncement();
 		item.id = 200;
-		listViewItem.addChild(item);
+		this.dispatch(addChild("item"+(++itemIndex), listViewItem));
+		listViewItem.addChild(item, "child");
+		
 		return listViewItem;
 	}.bind(this);
 

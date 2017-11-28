@@ -70,7 +70,7 @@ function initListView() {
     };
 
     this.listView.onRowBind = function(listViewItem, index) {
-        listViewItem.item.expense = this.expenseList[index];
+        listViewItem.findChildById(200).expense = this.expenseList[index];
     }.bind(this);
 
     this.listView.onRowSelected = function() {

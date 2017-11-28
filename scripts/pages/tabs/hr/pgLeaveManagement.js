@@ -124,7 +124,7 @@ function initListView(listView, dataHolder) {
         return myListViewItem;
     };
     listView.onRowBind = function(listViewItem, index) {
-        listViewItem.item.request = dataHolder.data[index];
+        listViewItem.findChildById(200).request = dataHolder.data[index];
     };
 }
 
