@@ -9,6 +9,8 @@ var loadingIndicator = DialogsLib.createLoadingDialog();
 const color2Hex = require("../../../lib/color2Hex");
 const JET = require('sf-extension-oracle-jet');
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 
 const Page_ = extend(PageDesign)(
     function(_super) {
@@ -114,11 +116,13 @@ function initListView(listView, data) {
     listView.itemCount = 0;
     listView.rowHeight = 80;
     listView.refreshEnabled = false;
-
+    var itemIndex = 0;
+    
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var salaryItem = new ItemSalary();
         salaryItem.id = 200;
+        this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
         myListViewItem.addChild(salaryItem);
         return myListViewItem;
     };
