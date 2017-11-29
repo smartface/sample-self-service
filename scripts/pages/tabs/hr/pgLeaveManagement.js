@@ -8,7 +8,6 @@ const leaveManagement = require("../../../model/leave-management");
 const PageDesign = require("../../../ui/ui_pgLeaveManagement");
 const Router = require("sf-core/router");
 const JET = require('sf-extension-oracle-jet');
-const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const color2Hex = require("../../../lib/color2Hex");
 const mixinDeep = require('mixin-deep');
 const addChild = require("@smartface/contx/lib/smartface/action/addChild");
@@ -84,26 +83,38 @@ function loadChart(leaveRequestChartData) {
         jetPath: "assets://jet/",
         webView: page.wvChart
     });
+    
+    page.dispatch(addChild("jetChart", 
+    {
+        constructor:{$$styleContext: {className: ".flexLayout .flexLayout-headerBar"}}, 
+        subscribeContext: function(e){
+            if(e.rawStyle.backgroundColor){
+                var backgroundColor = color2Hex.getRGB(e.rawStyle.backgroundColor);
+                leaveRequestChartData = mixinDeep(leaveRequestChartData, {
+                    plotArea: {
+                        backgroundColor: backgroundColor
+                    },
+                    legend: {
+                        backgroundColor: backgroundColor,
+                    }
+                });
+                Object.assign(jet, leaveRequestChartData);
+                jet.legend.rendered = false;
+                jet.jetData.backgroundColor = backgroundColor;
+                jet.refresh();        
+            }
+        }
+    }));
+    
     page.wvChart.visible = true;
     page.wvChart.bounceEnabled = false;
-    const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
-        width: null,
-        flexGrow: null
-    });
-    var backgroundColor = color2Hex.getRGB(flexlayout1Style.backgroundColor);
-    leaveRequestChartData = mixinDeep(leaveRequestChartData, {
-        plotArea: {
-            backgroundColor: backgroundColor
-        },
-        legend: {
-            backgroundColor: backgroundColor,
-        }
-    });
-    Object.assign(jet, leaveRequestChartData);
-    jet.legend.rendered = false;
-    jet.jetData.backgroundColor = backgroundColor;
-    jet.refresh();
+    // const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
+    //     width: null,
+    //     flexGrow: null
+    // });
 }
+
+
 
 function initListView(listView, dataHolder) {
     listView.rowHeight = 135;

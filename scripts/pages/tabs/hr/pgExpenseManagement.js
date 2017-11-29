@@ -74,7 +74,6 @@ function initListView() {
     }.bind(this);
 
     this.listView.onRowSelected = function() {
-
     };
 }
 

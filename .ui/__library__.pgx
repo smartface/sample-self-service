@@ -111,7 +111,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "3e69-6f6d-af2d-0ab2",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -152,12 +152,14 @@
 				"usePageVariable": true,
 				"minWidth": null,
 				"maxWidth": null,
+				"id": 112,
 				"flexProps": {
 					"flexGrow": null
 				}
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
+				"id": 112,
 				"name": "title",
 				"text": "Text",
 				"usePageVariable": true,
@@ -174,7 +176,7 @@
 			"userProps": {
 				"text": "Value",
 				"usePageVariable": true,
-				"id": 100,
+				"id": 111,
 				"width": null,
 				"height": null,
 				"textAlignment": "MIDRIGHT",
@@ -186,7 +188,7 @@
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"id": 100,
+				"id": 111,
 				"name": "value",
 				"text": "Value",
 				"usePageVariable": true,
@@ -832,14 +834,16 @@
 				"marginLeft": 10,
 				"marginRight": 10,
 				"alpha": 0.4,
+				"font": {},
+				"defaults": {},
+				"id": 113,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
+				"id": 113,
 				"name": "flexlayout6",
 				"children": [],
 				"parent": "5ff3-3be5-c42e-e78e"
@@ -1028,7 +1032,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "dcae-3af8-79da-1b55",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},

@@ -59,7 +59,7 @@ function initListView(data) {
         itemCount: data.length,
         items: [],
         from(props){
-            return Object.assign(new ListView(props), initListView(data));
+            return Object.assign(new ListView(), initListView(data), props);
         },
         reset() {
             this.dispatch({

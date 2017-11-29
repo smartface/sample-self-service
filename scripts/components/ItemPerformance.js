@@ -1,6 +1,7 @@
 /* 
 		You can modify its contents.
 */
+/*global lang*/
 const extend = require('js-base/core/extend');
 
 const ItemPerformanceDesign = require('library/ItemPerformance');

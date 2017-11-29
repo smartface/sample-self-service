@@ -7,6 +7,8 @@ const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemEmploymentHistory = require('../../../components/ItemEmploymentHistory');
 const employmentHistory = require('../../../model/employment-history');
 const Employment = require('../../../objects/Employment');
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 
 var PageDesign = require("../../../ui/ui_pgEmploymentHistory");
 
@@ -61,6 +63,7 @@ function initListView(listView, data) {
         var employmentItem = new ItemEmploymentHistory();
         employmentItem.id = 200;
         myListViewItem.item = employmentItem;
+        this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
         myListViewItem.addChild(employmentItem, "employment_"+itemIndex);
         return myListViewItem;
     };

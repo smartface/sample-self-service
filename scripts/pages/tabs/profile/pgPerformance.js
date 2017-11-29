@@ -6,9 +6,9 @@ const PageDesign = require("../../../ui/ui_pgPerformance");
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemPerformance = require('../../../components/ItemPerformance');
 const JET = require('sf-extension-oracle-jet');
-const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const color2Hex = require("../../../lib/color2Hex");
 var loadingIndicator = DialogsLib.createLoadingDialog();
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
 
 const Page_ = extend(PageDesign)(
     // Constructor
@@ -62,11 +62,6 @@ function loadChart(series) {
         webView: page.wvChart
     });
     page.wvChart.bounceEnabled = false;
-    const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
-        width: null,
-        flexGrow: null
-    });
-
     Object.assign(jet, {
         series: [{
             name: lang.performance,
@@ -108,9 +103,18 @@ function loadChart(series) {
         items.observables.valueFormatsValue = {y: {converter: ko.toJS(yAxisConverter)}};
         `
     });
-    jet.legend.rendered = false;
-    jet.jetData.backgroundColor = color2Hex.getRGB(flexlayout1Style.backgroundColor);
-    jet.refresh();
+    page.dispatch(addChild("jetChart", 
+    {
+        constructor:{$$styleContext: {className: ".flexLayout .flexLayout-headerBar"}}, 
+        subscribeContext: function(e){
+            if(e.rawStyle.backgroundColor){
+                var backgroundColor = color2Hex.getRGB(e.rawStyle.backgroundColor);
+                jet.legend.rendered = false;
+                jet.jetData.backgroundColor = backgroundColor;
+                jet.refresh();        
+            }
+        }
+    }));
 }
 
 function initListView(listView, data) {
