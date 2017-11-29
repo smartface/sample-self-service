@@ -10,7 +10,7 @@
 			"className": ".page",
 			"version": "6.5.3",
 			"props": {
-				"orientation": "PORTRAIT",
+				"name": "pgCompanyDocuments",
 				"children": [
 					"711e-6527-7f4c-b013",
 					"14d3-b794-b9a3-07c4",
@@ -18,19 +18,19 @@
 					"4453-87d2-064f-cd29"
 				],
 				"parent": null,
-				"name": "pgCompanyDocuments"
+				"orientation": "PORTRAIT"
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "711e-6527-7f4c-b013",
 			"userProps": {},
-			"className": ".statusBar",
+			"className": "",
 			"props": {
+				"name": "statusBar",
 				"children": [],
 				"parent": "7d62-57c9-c4bb-993a",
-				"isRemovable": false,
-				"name": "statusBar"
+				"isRemovable": false
 			}
 		},
 		{
@@ -42,11 +42,11 @@
 			},
 			"className": ".headerBar",
 			"props": {
+				"name": "headerBar",
 				"title": "newPage001",
 				"children": [],
 				"parent": "7d62-57c9-c4bb-993a",
-				"isRemovable": false,
-				"name": "headerBar"
+				"isRemovable": false
 			}
 		},
 		{
@@ -62,11 +62,11 @@
 			},
 			"className": ".flexLayout .flexLayout-main",
 			"props": {
+				"name": "listViewContainer",
 				"usePageVariable": true,
 				"children": [
 					"e735-4997-9c68-f12d"
 				],
-				"name": "listViewContainer",
 				"parent": "7d62-57c9-c4bb-993a"
 			}
 		},
@@ -83,12 +83,12 @@
 			},
 			"className": ".listView",
 			"props": {
-				"usePageVariable": true,
-				"rowHeight": 60,
-				"itemCount": 3,
-				"children": [],
 				"name": "listView",
-				"parent": "4453-87d2-064f-cd29"
+				"usePageVariable": true,
+				"children": [],
+				"parent": "4453-87d2-064f-cd29",
+				"itemCount": 3,
+				"rowHeight": 60
 			}
 		},
 		{
@@ -111,10 +111,10 @@
 			},
 			"className": ".flexLayout .flexLayout-headerBar",
 			"props": {
+				"name": "layoutHeaderBar",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "7d62-57c9-c4bb-993a",
-				"name": "layoutHeaderBar"
+				"parent": "7d62-57c9-c4bb-993a"
 			}
 		},
 		{
@@ -136,9 +136,9 @@
 			},
 			"className": ".imageView",
 			"props": {
+				"name": "rightItem2",
 				"usePageVariable": true,
 				"children": [],
-				"name": "rightItem2",
 				"parent": "60ee-83b6-2653-f6d6"
 			}
 		},
@@ -161,9 +161,9 @@
 			},
 			"className": ".imageView",
 			"props": {
+				"name": "rightItem1",
 				"usePageVariable": true,
 				"children": [],
-				"name": "rightItem1",
 				"parent": "60ee-83b6-2653-f6d6"
 			}
 		}

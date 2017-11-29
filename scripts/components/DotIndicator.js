@@ -19,7 +19,7 @@ const DotIndicator = extend(DotIndicatorDesign)(
 	//constructor
 	function(_super, props, pageName) {
 		// initalizes super class for this scope
-		_super(this, props || DotIndicatorDesign.defaults);
+		_super(this, props || {});
 		this.pageName = pageName;
 
 		var _currentIndex = 0;
@@ -87,7 +87,7 @@ function setSize(newSize) {
 		this.children[PREFIX+i] = new FlexLayout();
 		this.addChild(this.children[PREFIX + i], PREFIX + i, ".flexLayout .flexLayout-dotIndicator-item.inactive");
 	}
-	
+	this.width = newSize * 14;
 	this.currentIndex = 0;
 
 	this.applyLayout();

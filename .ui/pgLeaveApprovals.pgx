@@ -27,7 +27,7 @@
 			"type": "StatusBar",
 			"id": "2b14-a1c7-26b0-9250",
 			"userProps": {},
-			"className": ".statusBar",
+			"className": "",
 			"props": {
 				"name": "statusBar",
 				"children": [],
@@ -44,8 +44,8 @@
 			},
 			"className": ".headerBar",
 			"props": {
-				"title": "newPage001",
 				"name": "headerBar",
+				"title": "newPage001",
 				"children": [],
 				"parent": "5550-4771-be9f-aa01",
 				"isRemovable": false
@@ -70,8 +70,8 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"usePageVariable": true,
 				"name": "listViewContainer",
+				"usePageVariable": true,
 				"children": [
 					"f685-b92c-7963-26fd"
 				],
@@ -91,10 +91,12 @@
 			},
 			"className": ".listView",
 			"props": {
-				"usePageVariable": true,
 				"name": "listView",
+				"usePageVariable": true,
 				"children": [],
-				"parent": "2936-bb4f-8938-b363"
+				"parent": "2936-bb4f-8938-b363",
+				"itemCount": 3,
+				"rowHeight": 60
 			}
 		},
 		{
@@ -117,8 +119,8 @@
 			},
 			"className": ".flexLayout .flexLayout-headerBar",
 			"props": {
-				"usePageVariable": true,
 				"name": "layoutHeaderBar",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "5550-4771-be9f-aa01"
 			}
@@ -142,8 +144,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"usePageVariable": true,
 				"name": "rightItem2",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "73cc-9402-10ab-38b6"
 			}
@@ -167,8 +169,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"usePageVariable": true,
 				"name": "rightItem1",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "73cc-9402-10ab-38b6"
 			}
@@ -201,8 +203,8 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"usePageVariable": true,
 				"name": "topTabBar",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "5550-4771-be9f-aa01"
 			}

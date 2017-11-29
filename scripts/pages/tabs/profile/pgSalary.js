@@ -102,15 +102,14 @@ function loadChart(series) {
         `
     });
 
-    page.dispatch(addChild("jetChart", 
-    {
-        constructor:{$$styleContext: {className: ".flexLayout .flexLayout-headerBar"}}, 
-        subscribeContext: function(e){
-            if(e.rawStyle.backgroundColor){
+    page.dispatch(addChild("jetChart", {
+        constructor: { $$styleContext: { className: ".flexLayout .flexLayout-headerBar" } },
+        subscribeContext: function(e) {
+            if (e.rawStyle.backgroundColor) {
                 var backgroundColor = color2Hex.getRGB(e.rawStyle.backgroundColor);
                 jet.legend.rendered = false;
                 jet.jetData.backgroundColor = backgroundColor;
-                jet.refresh();        
+                jet.refresh();
             }
         }
     }));
@@ -121,13 +120,20 @@ function initListView(listView, data) {
     listView.rowHeight = 80;
     listView.refreshEnabled = false;
     var itemIndex = 0;
-    
+
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var salaryItem = new ItemSalary();
         salaryItem.id = 200;
         this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
-        myListViewItem.addChild(salaryItem);
+        myListViewItem.addChild(salaryItem, "child", "", {
+            width: null,
+            height: 80,
+            flexProps: {
+                flexDirection: "COLUMN",
+                alignItems: "CENTER"
+            }
+        });
         return myListViewItem;
     };
 

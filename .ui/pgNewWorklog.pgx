@@ -3,6 +3,7 @@
 		{
 			"type": "Page",
 			"id": "2668-5ec3-f7bf-a4a3",
+			"initialized": true,
 			"userProps": {
 				"backgroundColor": "rgba( 228, 228, 228, 1 )",
 				"flexProps": {}
@@ -10,7 +11,7 @@
 			"className": ".page",
 			"version": "6.5.3",
 			"props": {
-				"orientation": "PORTRAIT",
+				"name": "pgNewWorklog",
 				"children": [
 					"355c-481a-bb0c-7187",
 					"1c7a-ff27-d0cf-7132",
@@ -19,19 +20,19 @@
 					"4133-c06b-3d39-714c"
 				],
 				"parent": null,
-				"name": "pgNewWorklog"
+				"orientation": "PORTRAIT"
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "355c-481a-bb0c-7187",
 			"userProps": {},
-			"className": ".statusBar",
+			"className": "",
 			"props": {
+				"name": "statusBar",
 				"children": [],
 				"parent": "2668-5ec3-f7bf-a4a3",
-				"isRemovable": false,
-				"name": "statusBar"
+				"isRemovable": false
 			}
 		},
 		{
@@ -42,11 +43,11 @@
 			},
 			"className": ".headerBar",
 			"props": {
+				"name": "headerBar",
 				"title": "NEW WORK LOG",
 				"children": [],
 				"parent": "2668-5ec3-f7bf-a4a3",
-				"isRemovable": false,
-				"name": "headerBar"
+				"isRemovable": false
 			}
 		},
 		{
@@ -68,12 +69,12 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "flexlayout66",
 				"children": [
 					"502c-a866-82ad-8b5e",
 					"689f-d623-e57c-e1cb"
 				],
-				"parent": "2668-5ec3-f7bf-a4a3",
-				"name": "flexlayout66"
+				"parent": "2668-5ec3-f7bf-a4a3"
 			}
 		},
 		{
@@ -90,12 +91,12 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "flexlayout76",
 				"children": [
 					"e1f6-50d5-890f-9d10",
 					"5498-6f50-bf29-3161"
 				],
-				"parent": "7497-fee3-ba6b-9884",
-				"name": "flexlayout76"
+				"parent": "7497-fee3-ba6b-9884"
 			}
 		},
 		{
@@ -115,10 +116,10 @@
 			},
 			"className": ".label .label-list-item-header",
 			"props": {
+				"name": "label85",
 				"text": "DESCRIPTION",
 				"children": [],
-				"parent": "502c-a866-82ad-8b5e",
-				"name": "label85"
+				"parent": "502c-a866-82ad-8b5e"
 			}
 		},
 		{
@@ -133,9 +134,9 @@
 			},
 			"className": ".imageView",
 			"props": {
+				"name": "imageview17",
 				"children": [],
-				"parent": "502c-a866-82ad-8b5e",
-				"name": "imageview17"
+				"parent": "502c-a866-82ad-8b5e"
 			}
 		},
 		{
@@ -156,10 +157,10 @@
 			},
 			"className": ".textBox",
 			"props": {
+				"name": "textbox1",
 				"text": "Description",
 				"children": [],
-				"parent": "7497-fee3-ba6b-9884",
-				"name": "textbox1"
+				"parent": "7497-fee3-ba6b-9884"
 			}
 		},
 		{
@@ -179,14 +180,14 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "flexlayout35",
 				"children": [
 					"6690-667b-4597-1234",
 					"7fb0-81a7-c9c5-48e9",
 					"76ac-9845-5522-8aed",
 					"abaa-9d5d-1741-8ec8"
 				],
-				"parent": "2668-5ec3-f7bf-a4a3",
-				"name": "flexlayout35"
+				"parent": "2668-5ec3-f7bf-a4a3"
 			}
 		},
 		{
@@ -209,10 +210,10 @@
 			},
 			"className": ".button",
 			"props": {
+				"name": "button1",
 				"text": "SUBMIT",
 				"children": [],
-				"parent": "2668-5ec3-f7bf-a4a3",
-				"name": "button1"
+				"parent": "2668-5ec3-f7bf-a4a3"
 			}
 		},
 		{
@@ -230,10 +231,10 @@
 			},
 			"className": ".label .label-list-item-header",
 			"props": {
+				"name": "label39",
 				"text": "WORK INFO",
 				"children": [],
-				"parent": "702e-9687-0985-1c32",
-				"name": "label39"
+				"parent": "702e-9687-0985-1c32"
 			}
 		},
 		{
@@ -248,22 +249,22 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "flexlayout51",
 				"children": [
 					"8919-3886-1668-866e",
 					"908b-547c-08c3-e907"
 				],
-				"parent": "702e-9687-0985-1c32",
-				"name": "flexlayout51"
+				"parent": "702e-9687-0985-1c32"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "7fb0-81a7-c9c5-48e9",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
 				"id": "33a3-5dd0-316b-b576"
 			},
-			"hiddenComponent": false,
 			"userProps": {
 				"left": 0,
 				"top": 0,
@@ -277,19 +278,19 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "pickerContainer",
 				"children": [],
-				"parent": "702e-9687-0985-1c32",
-				"name": "pickerContainer"
+				"parent": "702e-9687-0985-1c32"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "76ac-9845-5522-8aed",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
 				"id": "33a3-5dd0-316b-b576"
 			},
-			"hiddenComponent": false,
 			"userProps": {
 				"left": 0,
 				"top": 0,
@@ -302,19 +303,19 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "pickercontainer_1",
 				"children": [],
-				"parent": "702e-9687-0985-1c32",
-				"name": "pickercontainer_1"
+				"parent": "702e-9687-0985-1c32"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "8919-3886-1668-866e",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
 				"id": "33a3-5dd0-316b-b576"
 			},
-			"hiddenComponent": false,
 			"userProps": {
 				"left": 0,
 				"top": 0,
@@ -327,19 +328,19 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "flexlayout52",
 				"children": [],
-				"parent": "abaa-9d5d-1741-8ec8",
-				"name": "flexlayout52"
+				"parent": "abaa-9d5d-1741-8ec8"
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "908b-547c-08c3-e907",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
 				"id": "33a3-5dd0-316b-b576"
 			},
-			"hiddenComponent": false,
 			"userProps": {
 				"left": 0,
 				"top": 0,
@@ -353,9 +354,9 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "flexlayout52_1",
 				"children": [],
-				"parent": "abaa-9d5d-1741-8ec8",
-				"name": "flexlayout52_1"
+				"parent": "abaa-9d5d-1741-8ec8"
 			}
 		}
 	]

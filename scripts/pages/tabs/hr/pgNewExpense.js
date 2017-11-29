@@ -20,6 +20,10 @@ const Page_ = extend(PageDesign)(
 
 		initColors.call(this);
 		initCallbacks.call(this);
+		
+        this.onError = function(e){
+            console.log(e.message);
+        }
 	}
 );
 

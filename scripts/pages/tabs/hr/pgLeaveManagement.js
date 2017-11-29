@@ -8,6 +8,7 @@ const leaveManagement = require("../../../model/leave-management");
 const PageDesign = require("../../../ui/ui_pgLeaveManagement");
 const Router = require("sf-core/router");
 const JET = require('sf-extension-oracle-jet');
+const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const color2Hex = require("../../../lib/color2Hex");
 const mixinDeep = require('mixin-deep');
 const addChild = require("@smartface/contx/lib/smartface/action/addChild");
@@ -32,6 +33,10 @@ const Page_ = extend(PageDesign)(
         initListView(this.listView, this);
         initTopTabBar.call(this);
         initHeaderBar.call(this);
+        
+        this.onError = function(e){
+            console.log(e.message);
+        }
     }
 );
 

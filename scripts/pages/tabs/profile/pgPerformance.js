@@ -120,11 +120,15 @@ function loadChart(series) {
 function initListView(listView, data) {
     listView.rowHeight = 195;
     listView.itemCount = 0;
+    var itemIndex = 0;
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemPerformance();
         item.id = 200;
-        myListViewItem.addChild(item);
+        this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
+        myListViewItem.addChild(item,"child","",{
+            width: null
+        });
         return myListViewItem;
     };
 

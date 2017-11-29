@@ -12,6 +12,10 @@ const Page_ = extend(PageDesign)(
 		
 		wrapContentIntoScroll.call(this);
 		initTexts.call(this);
+		
+        this.onError = function(e){
+            console.log(e.message);
+        }
 });
 
 function onLoad(parentOnLoad) {

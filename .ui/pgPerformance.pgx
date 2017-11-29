@@ -11,7 +11,7 @@
 			"className": ".page",
 			"version": "6.5.3",
 			"props": {
-				"orientation": "PORTRAIT",
+				"name": "pgPerformance",
 				"children": [
 					"bf6c-a415-467b-5b1d",
 					"57ff-3267-07b9-1be9",
@@ -19,21 +19,21 @@
 					"17f5-e028-12fc-80a8",
 					"836c-9cc1-4f00-97ef"
 				],
-				"isRemovable": true,
-				"name": "pgPerformance",
-				"parent": null
+				"parent": null,
+				"orientation": "PORTRAIT",
+				"isRemovable": true
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "bf6c-a415-467b-5b1d",
 			"userProps": {},
-			"className": ".statusBar",
+			"className": "",
 			"props": {
+				"name": "statusBar",
 				"children": [],
 				"parent": "ddbd-cdba-3926-1250",
-				"isRemovable": false,
-				"name": "statusBar"
+				"isRemovable": false
 			}
 		},
 		{
@@ -45,10 +45,10 @@
 			},
 			"className": ".headerBar",
 			"props": {
+				"name": "headerBar",
 				"title": "newPage001",
 				"children": [],
-				"parent": "ddbd-cdba-3926-1250",
-				"name": "headerBar"
+				"parent": "ddbd-cdba-3926-1250"
 			}
 		},
 		{
@@ -62,11 +62,11 @@
 			},
 			"className": ".flexLayout .flexLayout-headerBar",
 			"props": {
+				"name": "flexlayout1",
 				"children": [
 					"60a7-1d88-1202-c328"
 				],
-				"parent": "ddbd-cdba-3926-1250",
-				"name": "flexlayout1"
+				"parent": "ddbd-cdba-3926-1250"
 			}
 		},
 		{
@@ -86,12 +86,12 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"usePageVariable": true,
 				"name": "listViewContainer",
-				"parent": "ddbd-cdba-3926-1250",
+				"usePageVariable": true,
 				"children": [
 					"3a50-a264-2d98-3731"
-				]
+				],
+				"parent": "ddbd-cdba-3926-1250"
 			}
 		},
 		{
@@ -108,12 +108,12 @@
 			},
 			"className": ".listView",
 			"props": {
-				"usePageVariable": true,
-				"rowHeight": 60,
-				"itemCount": 3,
 				"name": "listView",
+				"usePageVariable": true,
+				"children": [],
 				"parent": "836c-9cc1-4f00-97ef",
-				"children": []
+				"itemCount": 3,
+				"rowHeight": 60
 			}
 		},
 		{
@@ -137,10 +137,10 @@
 			},
 			"className": ".flexLayout .flexLayout-headerBar",
 			"props": {
+				"name": "layoutHeaderBar",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "ddbd-cdba-3926-1250",
-				"name": "layoutHeaderBar"
+				"parent": "ddbd-cdba-3926-1250"
 			}
 		},
 		{
@@ -156,10 +156,10 @@
 			},
 			"className": ".webView",
 			"props": {
-				"usePageVariable": true,
 				"name": "wvChart",
-				"parent": "17f5-e028-12fc-80a8",
-				"children": []
+				"usePageVariable": true,
+				"children": [],
+				"parent": "17f5-e028-12fc-80a8"
 			}
 		}
 	]

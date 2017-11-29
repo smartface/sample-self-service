@@ -10,7 +10,7 @@
 			"className": ".page",
 			"version": "6.5.3",
 			"props": {
-				"orientation": "PORTRAIT",
+				"name": "pgMeetingRoomReservations",
 				"children": [
 					"8503-fb1e-6ca2-42c5",
 					"cbf4-3827-4917-3579",
@@ -18,19 +18,19 @@
 					"afaa-0420-d636-bf24"
 				],
 				"parent": null,
-				"name": "pgMeetingRoomReservations"
+				"orientation": "PORTRAIT"
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "8503-fb1e-6ca2-42c5",
 			"userProps": {},
-			"className": ".statusBar",
+			"className": "",
 			"props": {
+				"name": "statusBar",
 				"children": [],
 				"parent": "1e91-9918-829b-0dfe",
-				"isRemovable": false,
-				"name": "statusBar"
+				"isRemovable": false
 			}
 		},
 		{
@@ -42,11 +42,11 @@
 			},
 			"className": ".headerBar",
 			"props": {
+				"name": "headerBar",
 				"title": "newPage001",
 				"children": [],
 				"parent": "1e91-9918-829b-0dfe",
-				"isRemovable": false,
-				"name": "headerBar"
+				"isRemovable": false
 			}
 		},
 		{
@@ -66,12 +66,12 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"usePageVariable": true,
 				"name": "mainLayout",
-				"parent": "1e91-9918-829b-0dfe",
+				"usePageVariable": true,
 				"children": [
 					"f5cb-710d-fc8a-09cc"
-				]
+				],
+				"parent": "1e91-9918-829b-0dfe"
 			}
 		},
 		{
@@ -89,10 +89,10 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"usePageVariable": true,
 				"name": "comingSoon",
-				"parent": "afaa-0420-d636-bf24",
-				"children": []
+				"usePageVariable": true,
+				"children": [],
+				"parent": "afaa-0420-d636-bf24"
 			}
 		},
 		{
@@ -115,10 +115,10 @@
 			},
 			"className": ".flexLayout .flexLayout-headerBar",
 			"props": {
+				"name": "layoutHeaderBar",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "1e91-9918-829b-0dfe",
-				"name": "layoutHeaderBar"
+				"parent": "1e91-9918-829b-0dfe"
 			}
 		},
 		{
@@ -140,9 +140,9 @@
 			},
 			"className": ".imageView",
 			"props": {
+				"name": "rightItem2",
 				"usePageVariable": true,
 				"children": [],
-				"name": "rightItem2",
 				"parent": "5ee9-dea5-7f07-b8ef"
 			}
 		},
@@ -165,9 +165,9 @@
 			},
 			"className": ".imageView",
 			"props": {
+				"name": "rightItem1",
 				"usePageVariable": true,
 				"children": [],
-				"name": "rightItem1",
 				"parent": "5ee9-dea5-7f07-b8ef"
 			}
 		}

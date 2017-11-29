@@ -12,6 +12,10 @@ const Page_ = extend(PageDesign)(
 		this.onShow = onShow.bind(this, this.onShow);
 		
 		initTexts.call(this);
+		
+        this.onError = function(e){
+            console.log(e.message);
+        }
 	}
 );
 

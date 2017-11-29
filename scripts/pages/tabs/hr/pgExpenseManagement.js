@@ -26,7 +26,12 @@ const Page_ = extend(PageDesign)(
         this.expenseList = [];
         initListView.call(this);
         initFloatingMenu.call(this);
+    
+        this.onError = function(e){
+            console.log(e.message);
+        }
     }
+    
 );
 
 var firstOnShow = true;

@@ -11,26 +11,26 @@
 			"className": ".page",
 			"version": "6.5.3",
 			"props": {
-				"orientation": "PORTRAIT",
+				"name": "pgNewExpense",
 				"children": [
 					"010b-c2f6-c19b-c9bd",
 					"6bf5-0ff2-9b21-73a9",
 					"e326-47f6-f135-75c3"
 				],
 				"parent": null,
-				"name": "pgNewExpense"
+				"orientation": "PORTRAIT"
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "010b-c2f6-c19b-c9bd",
 			"userProps": {},
-			"className": ".statusBar",
+			"className": "",
 			"props": {
+				"name": "statusBar",
 				"children": [],
 				"parent": "9568-3532-0228-9e62",
-				"isRemovable": false,
-				"name": "statusBar"
+				"isRemovable": false
 			}
 		},
 		{
@@ -41,11 +41,11 @@
 			},
 			"className": ".headerBar",
 			"props": {
+				"name": "headerBar",
 				"title": null,
 				"children": [],
 				"parent": "9568-3532-0228-9e62",
-				"isRemovable": false,
-				"name": "headerBar"
+				"isRemovable": false
 			}
 		},
 		{
@@ -64,16 +64,16 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"usePageVariable": true,
 				"id": null,
+				"name": "mainContainer",
+				"usePageVariable": true,
 				"children": [
 					"327a-0d1c-1646-7b63",
 					"8dc6-9b2a-0368-a75e",
 					"b5bf-2208-82b3-2d2c",
 					"0b70-8cd7-7776-ae2a"
 				],
-				"parent": "9568-3532-0228-9e62",
-				"name": "mainContainer"
+				"parent": "9568-3532-0228-9e62"
 			}
 		},
 		{
@@ -95,12 +95,12 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "noteLayout",
 				"children": [
 					"8961-fcb4-32ca-5fdb",
 					"fb12-e32b-7245-cf47"
 				],
-				"parent": "e326-47f6-f135-75c3",
-				"name": "noteLayout"
+				"parent": "e326-47f6-f135-75c3"
 			}
 		},
 		{
@@ -117,12 +117,12 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "flexlayout76",
 				"children": [
 					"6e68-775e-fcb9-223f",
 					"cabf-646c-0ad6-23db"
 				],
-				"parent": "8dc6-9b2a-0368-a75e",
-				"name": "flexlayout76"
+				"parent": "8dc6-9b2a-0368-a75e"
 			}
 		},
 		{
@@ -143,11 +143,11 @@
 			},
 			"className": ".label",
 			"props": {
+				"name": "noteTitle",
 				"text": "NOTE",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "8961-fcb4-32ca-5fdb",
-				"name": "noteTitle"
+				"parent": "8961-fcb4-32ca-5fdb"
 			}
 		},
 		{
@@ -162,9 +162,9 @@
 			},
 			"className": ".imageView",
 			"props": {
+				"name": "imageview17",
 				"children": [],
-				"parent": "8961-fcb4-32ca-5fdb",
-				"name": "imageview17"
+				"parent": "8961-fcb4-32ca-5fdb"
 			}
 		},
 		{
@@ -182,6 +182,7 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "detailsLayout",
 				"usePageVariable": false,
 				"children": [
 					"3dae-8373-b0bd-740e",
@@ -189,8 +190,7 @@
 					"be30-6d97-084e-b5e4",
 					"5679-fe21-aa6c-9492"
 				],
-				"parent": "e326-47f6-f135-75c3",
-				"name": "detailsLayout"
+				"parent": "e326-47f6-f135-75c3"
 			}
 		},
 		{
@@ -212,11 +212,11 @@
 			},
 			"className": ".label",
 			"props": {
+				"name": "detailsTitle",
 				"text": "DETAILS",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "327a-0d1c-1646-7b63",
-				"name": "detailsTitle"
+				"parent": "327a-0d1c-1646-7b63"
 			}
 		},
 		{
@@ -233,12 +233,12 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "flexlayout191",
 				"children": [
 					"6d9f-23ed-cfe5-2a0f",
 					"5905-f95d-c52d-2936"
 				],
-				"parent": "327a-0d1c-1646-7b63",
-				"name": "flexlayout191"
+				"parent": "327a-0d1c-1646-7b63"
 			}
 		},
 		{
@@ -260,12 +260,12 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "fileAttachmentLayout",
 				"children": [
 					"0e16-1951-2954-07e9",
 					"53e4-c9f0-1372-1210"
 				],
-				"parent": "e326-47f6-f135-75c3",
-				"name": "fileAttachmentLayout"
+				"parent": "e326-47f6-f135-75c3"
 			}
 		},
 		{
@@ -282,11 +282,11 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "flexlayout76_1",
 				"children": [
 					"5f30-0fa9-ec3d-76e6"
 				],
-				"parent": "b5bf-2208-82b3-2d2c",
-				"name": "flexlayout76_1"
+				"parent": "b5bf-2208-82b3-2d2c"
 			}
 		},
 		{
@@ -307,11 +307,11 @@
 			},
 			"className": ".label",
 			"props": {
+				"name": "fileAttachmentTitle",
 				"text": "FILE ATTACHMENT",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "0e16-1951-2954-07e9",
-				"name": "fileAttachmentTitle"
+				"parent": "0e16-1951-2954-07e9"
 			}
 		},
 		{
@@ -331,12 +331,12 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "attachmentsLayout",
 				"usePageVariable": true,
 				"children": [
 					"7420-4ebd-a958-26a2"
 				],
-				"parent": "b5bf-2208-82b3-2d2c",
-				"name": "attachmentsLayout"
+				"parent": "b5bf-2208-82b3-2d2c"
 			}
 		},
 		{
@@ -357,11 +357,11 @@
 			},
 			"className": ".button",
 			"props": {
+				"name": "requestButton",
 				"text": "REQUEST",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "e326-47f6-f135-75c3",
-				"name": "requestButton"
+				"parent": "e326-47f6-f135-75c3"
 			}
 		},
 		{
@@ -381,11 +381,11 @@
 			},
 			"className": ".textArea",
 			"props": {
+				"name": "description",
 				"text": null,
 				"usePageVariable": true,
-				"name": "description",
-				"parent": "8dc6-9b2a-0368-a75e",
-				"children": []
+				"children": [],
+				"parent": "8dc6-9b2a-0368-a75e"
 			}
 		},
 		{
@@ -409,10 +409,10 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "typePicker",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "5679-fe21-aa6c-9492",
-				"name": "typePicker"
+				"parent": "5679-fe21-aa6c-9492"
 			}
 		},
 		{
@@ -437,10 +437,10 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "expenseDatePicker",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "5679-fe21-aa6c-9492",
-				"name": "expenseDatePicker"
+				"parent": "5679-fe21-aa6c-9492"
 			}
 		},
 		{
@@ -469,10 +469,10 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "addFile",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "53e4-c9f0-1372-1210",
-				"name": "addFile"
+				"parent": "53e4-c9f0-1372-1210"
 			}
 		},
 		{
@@ -498,10 +498,10 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "titleInput",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "327a-0d1c-1646-7b63",
-				"name": "titleInput"
+				"parent": "327a-0d1c-1646-7b63"
 			}
 		},
 		{
@@ -528,10 +528,10 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "expenseInput",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "327a-0d1c-1646-7b63",
-				"name": "expenseInput"
+				"parent": "327a-0d1c-1646-7b63"
 			}
 		}
 	]

@@ -1,43 +1,53 @@
 const extend = require("js-base/core/extend");
 const DotIndicator = require("components/DotIndicator");
 const FlexLayout = require("sf-core/ui/flexlayout");
-const Page = require("sf-core/ui/page");
+const Page = extend(require("sf-core/ui/page"));
 const SwipeView = require("sf-core/ui/swipeview");
 const System = require("sf-core/device/system");
 const pageContextPatch = require('@smartface/contx/lib/smartface/pageContextPatch');
 
-const HRIndex = extend(Page)(
-    function(_super, params) {
-        _super(this, params);
+const HRIndex = Page(HRIndexConstructor);
 
-        if (!this.childPages) this.childPages = [];
-        this.children = {};
+function HRIndexConstructor(_super, params) {
+    _super(this, params);
 
-        pageContextPatch(this, "pageContainer");
+    if (!this.childPages) this.childPages = [];
+    this.children = {};
 
-        var _superOnLoad = this.onLoad;
+    pageContextPatch(this, "pageContainer");
 
-        this.onLoad = function() {
-            typeof _superOnLoad === "function" && _superOnLoad();
-            this.headerBar.visible = false;
-            // if (System.OS === "iOS") {
-                initDotIndicator(this);
-                initSwipeView(this);
-            // }
-        }.bind(this);
+    var _superOnLoad = this.onLoad;
 
-        var _superOnShow = this.onShow;
-        this.onShow = function(user) {
-            typeof _superOnShow === "function" && _superOnShow(user);
-            this.headerBar.visible = false;
-        }.bind(this);
-
-        // if (System.OS === "Android") {
-        //     initSwipeView(this);
-        //     initDotIndicator(this);
+    this.onLoad = function() {
+        typeof _superOnLoad === "function" && _superOnLoad();
+        this.headerBar.visible = false;
+        // if (System.OS === "iOS") {
+        initDotIndicator(this);
+        initSwipeView(this);
         // }
+    }.bind(this);
+
+    var _superOnShow = this.onShow;
+    this.onShow = function(user) {
+        typeof _superOnShow === "function" && _superOnShow(user);
+        this.headerBar.visible = false;
+    }.bind(this);
+}
+
+HRIndexConstructor.$$styleContext = {
+    classNames: ".page",
+    userProps: {},
+    statusBar: {
+        classNames: ".statusBar",
+        userProps: {}
+    },
+    headerBar: {
+        classNames: ".headerBar",
+        userProps: {
+            visible: false
+        }
     }
-);
+};
 
 function initSwipeView(page) {
     page.swipeView = new SwipeView({
@@ -46,13 +56,13 @@ function initSwipeView(page) {
         pages: page.childPages,
         onPageSelected: onChildPageChanged.bind(page)
     });
-    
+
     page.layout.addChild(page.swipeView, "swipeview");
 }
 
 function initDotIndicator(page) {
     page.dotIndicator = new DotIndicator();
-    page.layout.addChild(page.dotIndicator,"dotIndicator", ".flexlayout");
+    page.layout.addChild(page.dotIndicator, "dotIndicator", ".flexlayout");
     page.dotIndicator.size = page.childPages.length;
     page.dotIndicator.top = 60; //System.OS === "Android" ? 40 : 60;
     page.dotIndicator.alignSelf = FlexLayout.AlignSelf.CENTER;
