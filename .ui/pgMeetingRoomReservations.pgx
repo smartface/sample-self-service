@@ -5,23 +5,12 @@
 			"id": "1e91-9918-829b-0dfe",
 			"initialized": true,
 			"userProps": {
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".page",
 			"version": "6.5.3",
 			"props": {
-				"backgroundColor": "#EEEEEE",
 				"orientation": "PORTRAIT",
-				"flexProps": {
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"direction": "INHERIT",
-					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
-					"justifyContent": "FLEX_START"
-				},
 				"children": [
 					"8503-fb1e-6ca2-42c5",
 					"cbf4-3827-4917-3579",
@@ -29,24 +18,15 @@
 					"afaa-0420-d636-bf24"
 				],
 				"parent": null,
-				"name": "pgMeetingRoomReservations",
-				"width": 112.5,
-				"height": 200.1
+				"name": "pgMeetingRoomReservations"
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "8503-fb1e-6ca2-42c5",
-			"userProps": {
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
-			},
+			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#7C73C0",
-				"visible": true,
-				"style": "LIGHTCONTENT",
 				"children": [],
 				"parent": "1e91-9918-829b-0dfe",
 				"isRemovable": false,
@@ -58,17 +38,11 @@
 			"id": "cbf4-3827-4917-3579",
 			"userProps": {
 				"title": "newPage001",
-				"visible": false,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"visible": false
 			},
 			"className": ".headerBar",
 			"props": {
 				"title": "newPage001",
-				"titleColor": "#FFFFFF",
-				"visible": false,
-				"backgroundColor": "#7C73C0",
 				"children": [],
 				"parent": "1e91-9918-829b-0dfe",
 				"isRemovable": false,
@@ -88,34 +62,11 @@
 					"flexGrow": 1,
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
 				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "CENTER",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "mainLayout",
 				"parent": "1e91-9918-829b-0dfe",
 				"children": [
@@ -134,31 +85,14 @@
 				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".imageView",
 			"props": {
-				"width": null,
-				"height": 100,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"image": "coming_soon.png",
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "STRETCH",
-					"positionType": "RELATIVE"
-				},
 				"name": "comingSoon",
 				"parent": "afaa-0420-d636-bf24",
-				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/selfservice5/ui-editor/img/coming_soon.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.3&brandModel=iPhone%207?random=0.26619152310651506"
+				"children": []
 			}
 		},
 		{
@@ -177,183 +111,14 @@
 				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout .flexLayout-headerBar",
 			"props": {
-				"height": 92,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#7C73C0",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"left": 0,
-				"top": 0,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
 				"children": [],
 				"parent": "1e91-9918-829b-0dfe",
 				"name": "layoutHeaderBar"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "a5a6-08f0-a6b3-672e",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"height": null,
-				"width": 75,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": null
-				},
-				"font": {},
-				"defaults": {}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"height": null,
-				"width": 75,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
-				"children": [],
-				"name": "leftItems",
-				"parent": "ec44-f152-22a6-b610"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "93ec-2034-11d0-c866",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"width": null,
-				"height": null,
-				"textAlignment": "MIDCENTER",
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 2
-				},
-				"font": {},
-				"defaults": {}
-			},
-			"className": ".label",
-			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"text": "Label",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"textAlignment": "MIDCENTER",
-				"usePageVariable": true,
-				"font": {
-					"size": 16,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 2
-				},
-				"children": [],
-				"name": "headerBarTitle",
-				"parent": "ec44-f152-22a6-b610"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "5ee9-dea5-7f07-b8ef",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"height": null,
-				"width": 75,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": null,
-					"flexDirection": "ROW",
-					"alignItems": "CENTER",
-					"justifyContent": "SPACE_AROUND"
-				},
-				"font": {},
-				"defaults": {}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"height": null,
-				"width": 75,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
-					"justifyContent": "SPACE_AROUND",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
-				"children": [
-					"6e78-823e-ed10-ed9e",
-					"64fa-2670-ed35-e2a9"
-				],
-				"name": "rightItems",
-				"parent": "ec44-f152-22a6-b610"
 			}
 		},
 		{
@@ -371,27 +136,11 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"flexGrow": null
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".imageView",
 			"props": {
-				"width": 20,
-				"height": 20,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
 				"children": [],
 				"name": "rightItem2",
 				"parent": "5ee9-dea5-7f07-b8ef"
@@ -409,36 +158,17 @@
 				"width": 20,
 				"usePageVariable": true,
 				"imageFillType": "ASPECTFIT",
-				"image": null,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"flexGrow": null
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".imageView",
 			"props": {
-				"width": 20,
-				"height": 20,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
 				"usePageVariable": true,
-				"image": null,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
 				"children": [],
 				"name": "rightItem1",
-				"parent": "5ee9-dea5-7f07-b8ef",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/selfservice5/ui-editor/img/null?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=undefined&brandModel=iPhone%207?random=0.24254148830605726"
+				"parent": "5ee9-dea5-7f07-b8ef"
 			}
 		}
 	]

@@ -6,9 +6,7 @@
 			"initialized": true,
 			"userProps": {
 				"backgroundColor": "rgba( 131, 52, 52, 1 )",
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".page",
 			"version": "6.5.3",
@@ -52,11 +50,7 @@
 		{
 			"type": "StatusBar",
 			"id": "efc5-fd69-1047-b468",
-			"userProps": {
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
-			},
+			"userProps": {},
 			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
@@ -67,11 +61,7 @@
 		{
 			"type": "HeaderBar",
 			"id": "f99e-f65e-1989-a1d1",
-			"userProps": {
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
-			},
+			"userProps": {},
 			"className": ".headerBar",
 			"props": {
 				"name": "headerBar",
@@ -159,10 +149,10 @@
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"id": 112,
-				"name": "title",
 				"text": "Text",
 				"usePageVariable": true,
+				"id": 112,
+				"name": "title",
 				"children": [],
 				"parent": "3e69-6f6d-af2d-0ab2"
 			}
@@ -188,10 +178,10 @@
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"id": 111,
-				"name": "value",
 				"text": "Value",
 				"usePageVariable": true,
+				"id": 111,
+				"name": "value",
 				"children": [],
 				"parent": "3e69-6f6d-af2d-0ab2"
 			}
@@ -272,9 +262,7 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -303,9 +291,7 @@
 				"id": 101,
 				"flexProps": {
 					"flexDirection": "ROW"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -378,9 +364,7 @@
 				"page": "__library__"
 			},
 			"userProps": {
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".flexLayout .flexLayout-dotIndicator-item.active",
 			"props": {
@@ -396,9 +380,7 @@
 				"page": "__library__"
 			},
 			"userProps": {
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".flexLayout .flexLayout-dotIndicator-item.inactive",
 			"props": {
@@ -414,9 +396,7 @@
 				"page": "__library__"
 			},
 			"userProps": {
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".flexLayout .flexLayout-dotIndicator-item.inactive",
 			"props": {
@@ -437,9 +417,7 @@
 				"id": 1032,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -464,9 +442,7 @@
 				"id": 1031,
 				"flexProps": {
 					"flexGrow": 2
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -492,21 +468,20 @@
 				"text": "3",
 				"id": 10322,
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 22,
 					"bold": true
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label .label-list-item-header",
 			"props": {
-				"id": 10322,
-				"name": "daysCount",
 				"text": "3",
+				"id": 10322,
 				"usePageVariable": true,
+				"name": "daysCount",
 				"children": [],
 				"parent": "3d6a-5f5c-b463-6e97"
 			}
@@ -523,19 +498,18 @@
 				"textAlignment": "MIDCENTER",
 				"text": "Days",
 				"id": 10321,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 18
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label .label-list-item-header",
 			"props": {
+				"text": "Days",
 				"id": 10321,
 				"name": "label205_1",
-				"text": "Days",
 				"children": [],
 				"parent": "3d6a-5f5c-b463-6e97"
 			}
@@ -581,9 +555,7 @@
 					"justifyContent": "CENTER",
 					"flexGrow": 1,
 					"flexDirection": "ROW"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -609,15 +581,13 @@
 				"image": "icon_approve_active.png",
 				"id": 10152,
 				"usePageVariable": true,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
 				"id": 10152,
-				"name": "approveIcon",
 				"usePageVariable": true,
+				"name": "approveIcon",
 				"children": [],
 				"parent": "a798-7fee-a519-fabb"
 			}
@@ -637,18 +607,17 @@
 				"maxWidth": 100,
 				"id": 10151,
 				"usePageVariable": true,
+				"font": {},
 				"flexProps": {
 					"flexGrow": null
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".label .label-approve-item-active",
 			"props": {
-				"id": 10151,
-				"name": "approveLabel",
 				"text": "Approve",
+				"id": 10151,
 				"usePageVariable": true,
+				"name": "approveLabel",
 				"children": [],
 				"parent": "a798-7fee-a519-fabb"
 			}
@@ -668,9 +637,7 @@
 					"justifyContent": "CENTER",
 					"flexGrow": 1,
 					"flexDirection": "ROW"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -696,15 +663,13 @@
 				"image": "icon_edit_active.png",
 				"id": 10132,
 				"usePageVariable": true,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
 				"id": 10132,
-				"name": "editIcon",
 				"usePageVariable": true,
+				"name": "editIcon",
 				"children": [],
 				"parent": "6113-af22-42f9-c9a0"
 			}
@@ -724,15 +689,14 @@
 				"id": 10131,
 				"usePageVariable": true,
 				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-edit-item-active",
 			"props": {
-				"id": 10131,
-				"name": "editLabel",
 				"text": "Edit",
+				"id": 10131,
 				"usePageVariable": true,
+				"name": "editLabel",
 				"children": [],
 				"parent": "6113-af22-42f9-c9a0"
 			}
@@ -752,9 +716,7 @@
 					"justifyContent": "CENTER",
 					"flexGrow": 1,
 					"flexDirection": "ROW"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -780,15 +742,13 @@
 				"image": "icon_delete.png",
 				"id": 10112,
 				"usePageVariable": true,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
 				"id": 10112,
-				"name": "deleteIcon",
 				"usePageVariable": true,
+				"name": "deleteIcon",
 				"children": [],
 				"parent": "0d30-feb0-9510-f1d6"
 			}
@@ -808,15 +768,14 @@
 				"id": 10111,
 				"usePageVariable": true,
 				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-delete-item-active",
 			"props": {
-				"id": 10111,
-				"name": "deleteLabel",
 				"text": "Delete",
+				"id": 10111,
 				"usePageVariable": true,
+				"name": "deleteLabel",
 				"children": [],
 				"parent": "0d30-feb0-9510-f1d6"
 			}
@@ -834,8 +793,6 @@
 				"marginLeft": 10,
 				"marginRight": 10,
 				"alpha": 0.4,
-				"font": {},
-				"defaults": {},
 				"id": 113,
 				"flexProps": {
 					"flexGrow": 1
@@ -869,8 +826,8 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"name": "itemSalary",
 				"usePageVariable": true,
+				"name": "itemSalary",
 				"children": [
 					"a5e3-5db5-2308-0660",
 					"92d5-2a16-6424-1c41"
@@ -893,9 +850,7 @@
 					"flexGrow": 1,
 					"alignSelf": "STRETCH",
 					"flexDirection": "ROW"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -921,9 +876,7 @@
 				"flexProps": {
 					"flexGrow": null,
 					"alignItems": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -949,9 +902,7 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"alignItems": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -978,21 +929,20 @@
 				"marginBottom": 5,
 				"id": 10222,
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "STRETCH"
-				},
 				"font": {
 					"size": 18
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				}
 			},
 			"className": ".label .label-list-item-header",
 			"props": {
-				"id": 10222,
-				"name": "month",
 				"text": "FEB",
+				"id": 10222,
 				"usePageVariable": true,
+				"name": "month",
 				"children": [],
 				"parent": "a41a-02aa-ba8d-f63e"
 			}
@@ -1010,21 +960,20 @@
 				"textAlignment": "TOPCENTER",
 				"id": 10221,
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "STRETCH"
-				},
 				"font": {
 					"size": 16
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				}
 			},
 			"className": ".label .label-list-item-header",
 			"props": {
-				"id": 10221,
-				"name": "year",
 				"text": "2017",
+				"id": 10221,
 				"usePageVariable": true,
+				"name": "year",
 				"children": [],
 				"parent": "a41a-02aa-ba8d-f63e"
 			}
@@ -1122,9 +1071,8 @@
 				"width": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textAlignment": "MIDCENTER",
-				"font": {},
-				"defaults": {},
 				"id": 100,
+				"font": {},
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -1147,10 +1095,8 @@
 			"userProps": {
 				"width": null,
 				"height": 5,
-				"font": {},
-				"flexProps": {},
-				"defaults": {},
-				"id": 101
+				"id": 101,
+				"flexProps": {}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -1198,8 +1144,6 @@
 				"width": null,
 				"paddingLeft": 10,
 				"paddingRight": 10,
-				"font": {},
-				"defaults": {},
 				"id": 100,
 				"flexProps": {
 					"flexGrow": null,
@@ -1232,19 +1176,18 @@
 				"text": "",
 				"usePageVariable": true,
 				"textColor": "rgba( 74, 74, 74, 1 )",
-				"font": {},
-				"defaults": {},
 				"id": 101,
+				"font": {},
 				"flexProps": {
 					"flexGrow": null
 				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"id": 101,
-				"name": "pickerText",
 				"text": "",
 				"usePageVariable": true,
+				"id": 101,
+				"name": "pickerText",
 				"children": [],
 				"parent": "33a3-5dd0-316b-b576"
 			}
@@ -1260,19 +1203,18 @@
 				"height": 30,
 				"text": "Text",
 				"usePageVariable": true,
-				"font": {},
-				"defaults": {},
 				"id": 103,
+				"font": {},
 				"flexProps": {
 					"flexGrow": 1
 				}
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"id": 103,
-				"name": "pickerTitle",
 				"text": "Text",
 				"usePageVariable": true,
+				"id": 103,
+				"name": "pickerTitle",
 				"children": [],
 				"parent": "4ed3-68cd-bfdc-bb2d"
 			}
@@ -1288,10 +1230,8 @@
 				"height": 5,
 				"image": "arrow_down.png",
 				"imageFillType": "ASPECTFIT",
-				"font": {},
-				"flexProps": {},
-				"defaults": {},
-				"id": 102
+				"id": 102,
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
@@ -1344,9 +1284,7 @@
 					"alignSelf": "STRETCH",
 					"flexDirection": "ROW",
 					"alignItems": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -1374,15 +1312,13 @@
 				"image": "avatar1.png",
 				"id": 1023,
 				"usePageVariable": true,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
 				"id": 1023,
-				"name": "userImage",
 				"usePageVariable": true,
+				"name": "userImage",
 				"children": [],
 				"parent": "44ef-83f6-9146-5817"
 			}
@@ -1401,9 +1337,7 @@
 				"id": 1022,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -1428,9 +1362,7 @@
 				"imageFillType": "ASPECTFIT",
 				"image": "arrow_right.png",
 				"id": 1021,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
@@ -1458,15 +1390,14 @@
 					"bold": false,
 					"size": 18
 				},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"id": 10222,
-				"name": "userName",
 				"text": "Adam Stewart",
+				"id": 10222,
 				"usePageVariable": true,
+				"name": "userName",
 				"children": [],
 				"parent": "bfd4-67f7-4ee7-93c1"
 			}
@@ -1486,15 +1417,14 @@
 				"font": {
 					"bold": false
 				},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"id": 10221,
-				"name": "userPosition",
 				"text": "Manager of Sales & Marketing",
+				"id": 10221,
 				"usePageVariable": true,
+				"name": "userPosition",
 				"children": [],
 				"parent": "bfd4-67f7-4ee7-93c1"
 			}
@@ -1543,9 +1473,7 @@
 					"alignSelf": "STRETCH",
 					"flexDirection": "ROW",
 					"alignItems": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -1573,15 +1501,13 @@
 				"imageFillType": "ASPECTFIT",
 				"id": 106,
 				"usePageVariable": true,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
 				"id": 106,
-				"name": "expenseStatusImage",
 				"usePageVariable": true,
+				"name": "expenseStatusImage",
 				"children": [],
 				"parent": "c744-fd6e-5beb-d61d"
 			}
@@ -1600,9 +1526,7 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -1629,9 +1553,7 @@
 					"flexGrow": null,
 					"justifyContent": "FLEX_END",
 					"flexDirection": "ROW"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -1662,15 +1584,14 @@
 				},
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"defaults": {}
+				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"id": 1042,
-				"name": "expenseId",
 				"text": "998230084534",
+				"id": 1042,
 				"usePageVariable": true,
+				"name": "expenseId",
 				"children": [],
 				"parent": "0926-0cec-3079-567a"
 			}
@@ -1693,15 +1614,14 @@
 				},
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"defaults": {}
+				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"id": 1041,
-				"name": "expenseDate",
 				"text": " 07.05.2017",
+				"id": 1041,
 				"usePageVariable": true,
+				"name": "expenseDate",
 				"children": [],
 				"parent": "0926-0cec-3079-567a"
 			}
@@ -1720,9 +1640,7 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -1755,15 +1673,14 @@
 				},
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"defaults": {}
+				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"id": 1052,
-				"name": "expenseAmount",
 				"text": "$88",
+				"id": 1052,
 				"usePageVariable": true,
+				"name": "expenseAmount",
 				"children": [],
 				"parent": "7b8d-f51d-1dcd-7fef"
 			}
@@ -1785,15 +1702,14 @@
 				},
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"defaults": {}
+				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"id": 1051,
-				"name": "expenseType",
 				"text": "Travel",
+				"id": 1051,
 				"usePageVariable": true,
+				"name": "expenseType",
 				"children": [],
 				"parent": "7b8d-f51d-1dcd-7fef"
 			}
@@ -1810,9 +1726,7 @@
 				"imageFillType": "ASPECTFIT",
 				"image": "icon_attachment.png",
 				"id": 1031,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
@@ -1874,10 +1788,10 @@
 			},
 			"className": ".textBox",
 			"props": {
-				"id": 101,
-				"name": "innerTextbox",
 				"text": "",
 				"usePageVariable": true,
+				"id": 101,
+				"name": "innerTextbox",
 				"children": [],
 				"parent": "e9f0-d2c8-f908-88e9"
 			}
@@ -1894,8 +1808,6 @@
 				"usePageVariable": true,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"font": {},
-				"defaults": {},
 				"id": 102,
 				"flexProps": {
 					"flexGrow": null
@@ -1903,9 +1815,9 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"usePageVariable": true,
 				"id": 102,
 				"name": "textboxBottomLine",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "e9f0-d2c8-f908-88e9"
 			}
@@ -1927,10 +1839,10 @@
 			},
 			"className": ".label .label-login.small .label-textboxWithLine.normal",
 			"props": {
-				"id": 100,
-				"name": "textboxInfo",
 				"text": "",
 				"usePageVariable": true,
+				"id": 100,
+				"name": "textboxInfo",
 				"children": [],
 				"parent": "e9f0-d2c8-f908-88e9"
 			}
@@ -2009,9 +1921,7 @@
 				"borderRadius": 30,
 				"borderColor": "rgba( 151, 151, 151, 1 )",
 				"borderWidth": 1,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
@@ -2032,9 +1942,7 @@
 				"paddingLeft": 10,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2060,13 +1968,12 @@
 				"font": {
 					"size": 18
 				},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"name": "label493",
 				"text": "Adam Stewart",
+				"name": "label493",
 				"children": [],
 				"parent": "313c-4a75-1419-03ef"
 			}
@@ -2082,13 +1989,12 @@
 				"width": null,
 				"text": "Manager of Sales and Marketing",
 				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"name": "label494",
 				"text": "Manager of Sales and Marketing",
+				"name": "label494",
 				"children": [],
 				"parent": "313c-4a75-1419-03ef"
 			}
@@ -2107,9 +2013,7 @@
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"flexProps": {
 					"positionType": "ABSOLUTE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2164,9 +2068,7 @@
 				"borderRadius": 30,
 				"borderWidth": 1,
 				"borderColor": "rgba( 23, 117, 208, 1 )",
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
@@ -2187,9 +2089,7 @@
 				"paddingLeft": 10,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2215,13 +2115,12 @@
 				"font": {
 					"size": 18
 				},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"name": "label1140",
 				"text": "Anthony Bell",
+				"name": "label1140",
 				"children": [],
 				"parent": "13cb-099d-dce6-985d"
 			}
@@ -2238,13 +2137,12 @@
 				"text": "Director of Sales and Marketing",
 				"textColor": "rgba( 23, 117, 208, 0.5 )",
 				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"name": "label1141",
 				"text": "Director of Sales and Marketing",
+				"name": "label1141",
 				"children": [],
 				"parent": "13cb-099d-dce6-985d"
 			}
@@ -2263,9 +2161,7 @@
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"flexProps": {
 					"positionType": "ABSOLUTE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2288,9 +2184,7 @@
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"flexProps": {
 					"positionType": "ABSOLUTE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2345,9 +2239,7 @@
 				"borderRadius": 30,
 				"borderWidth": 1,
 				"borderColor": "rgba( 151, 151, 151, 1 )",
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
@@ -2370,9 +2262,7 @@
 				"left": 105,
 				"flexProps": {
 					"positionType": "ABSOLUTE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2393,9 +2283,7 @@
 				"paddingLeft": 10,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2421,13 +2309,12 @@
 				"font": {
 					"size": 18
 				},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"name": "label1816",
 				"text": "Thomas Turner",
+				"name": "label1816",
 				"children": [],
 				"parent": "7f50-90bb-bc5d-5c46"
 			}
@@ -2443,13 +2330,12 @@
 				"width": null,
 				"text": "Sales Responsible",
 				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"name": "label1817",
 				"text": "Sales Responsible",
+				"name": "label1817",
 				"children": [],
 				"parent": "7f50-90bb-bc5d-5c46"
 			}
@@ -2468,9 +2354,7 @@
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"flexProps": {
 					"positionType": "ABSOLUTE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2492,9 +2376,7 @@
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"flexProps": {
 					"positionType": "ABSOLUTE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2517,9 +2399,7 @@
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"flexProps": {
 					"positionType": "ABSOLUTE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2573,9 +2453,7 @@
 				"borderWidth": 1,
 				"image": "avatar4.png",
 				"imageFillType": "ASPECTFIT",
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
@@ -2596,9 +2474,7 @@
 				"paddingLeft": 10,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2624,13 +2500,12 @@
 				"font": {
 					"size": 18
 				},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"name": "label2378",
 				"text": "Belly Edwards",
+				"name": "label2378",
 				"children": [],
 				"parent": "58a3-d9f7-1c81-ca95"
 			}
@@ -2646,13 +2521,12 @@
 				"width": null,
 				"text": "Sales Responsible",
 				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"name": "label2379",
 				"text": "Sales Responsible",
+				"name": "label2379",
 				"children": [],
 				"parent": "58a3-d9f7-1c81-ca95"
 			}
@@ -2671,9 +2545,7 @@
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"flexProps": {
 					"positionType": "ABSOLUTE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2696,9 +2568,7 @@
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"flexProps": {
 					"positionType": "ABSOLUTE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2750,14 +2620,13 @@
 				"font": {
 					"size": 16
 				},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-header",
 			"props": {
-				"name": "hc_header",
 				"text": "ORGANISATION",
 				"usePageVariable": true,
+				"name": "hc_header",
 				"children": [],
 				"parent": "a913-e1da-7ac5-691c"
 			}
@@ -2802,16 +2671,15 @@
 				"height": 30,
 				"marginLeft": 10,
 				"text": "Text",
+				"id": 100,
 				"font": {},
-				"flexProps": {},
-				"defaults": {},
-				"id": 100
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
+				"text": "Text",
 				"id": 100,
 				"name": "titleSwitch",
-				"text": "Text",
 				"children": [],
 				"parent": "e9e3-f777-d1de-b2d3"
 			}
@@ -2823,21 +2691,18 @@
 				"page": "__library__"
 			},
 			"userProps": {
-				"toggle": true,
 				"width": null,
 				"marginRight": 10,
-				"font": {},
-				"flexProps": {},
-				"defaults": {},
 				"minHeight": 31,
 				"minWidth": 51,
-				"id": 101
+				"id": 101,
+				"flexProps": {}
 			},
 			"className": ".switch",
 			"props": {
+				"toggle": true,
 				"id": 101,
 				"name": "switchItem",
-				"toggle": true,
 				"children": [],
 				"parent": "e9e3-f777-d1de-b2d3"
 			}
@@ -2856,9 +2721,7 @@
 				"top": 20,
 				"flexProps": {
 					"flexDirection": "ROW"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -2884,17 +2747,16 @@
 				"height": null,
 				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
+				"font": {},
 				"flexProps": {
 					"flexGrow": 2
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".label",
 			"props": {
+				"usePageVariable": true,
 				"name": "headerBarTitle",
 				"text": "Label",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "26ed-c790-32dc-3796"
 			}
@@ -2912,14 +2774,12 @@
 				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": null
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
-				"name": "leftItems",
 				"usePageVariable": true,
+				"name": "leftItems",
 				"children": [],
 				"parent": "26ed-c790-32dc-3796"
 			}
@@ -2940,14 +2800,12 @@
 					"flexDirection": "ROW",
 					"alignItems": "CENTER",
 					"justifyContent": "SPACE_AROUND"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
-				"name": "rightItems",
 				"usePageVariable": true,
+				"name": "rightItems",
 				"children": [
 					"ff70-d0fa-f60d-8569",
 					"d993-aae9-55fe-6a42"
@@ -2969,14 +2827,12 @@
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"flexGrow": null
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "rightItem2",
 				"usePageVariable": true,
+				"name": "rightItem2",
 				"children": [],
 				"parent": "2375-104c-2ff4-74dc"
 			}
@@ -2992,8 +2848,6 @@
 				"width": 20,
 				"usePageVariable": true,
 				"imageFillType": "ASPECTFIT",
-				"font": {},
-				"defaults": {},
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"flexGrow": null
@@ -3001,8 +2855,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "rightItem1",
 				"usePageVariable": true,
+				"name": "rightItem1",
 				"children": [],
 				"parent": "2375-104c-2ff4-74dc"
 			}
@@ -3045,9 +2899,7 @@
 					"flexGrow": 1,
 					"flexDirection": "ROW",
 					"alignItems": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -3074,9 +2926,7 @@
 				"marginLeft": null,
 				"marginRight": null,
 				"id": 20,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -3100,15 +2950,13 @@
 				"imageFillType": "ASPECTFIT",
 				"image": "avatar1.png",
 				"id": 90,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
+				"usePageVariable": true,
 				"id": 90,
 				"name": "apUserImage",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "b1c8-0cb7-fdbc-e94e"
 			}
@@ -3126,9 +2974,7 @@
 				"id": 50,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -3154,9 +3000,7 @@
 				"image": "arrow_right.png",
 				"imageFillType": "ASPECTFIT",
 				"id": 40,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
@@ -3179,19 +3023,19 @@
 				"textColor": "rgba( 74, 74, 74, 1 )",
 				"id": 80,
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 18
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"id": 80,
-				"name": "apUsername",
 				"text": "Adam Stewart",
+				"id": 80,
 				"usePageVariable": true,
+				"name": "apUsername",
 				"children": [],
 				"parent": "729e-78b3-0a10-c4d9"
 			}
@@ -3214,10 +3058,10 @@
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"id": 70,
-				"name": "apPosition",
 				"text": "Manager of Sales and Marketing",
+				"id": 70,
 				"usePageVariable": true,
+				"name": "apPosition",
 				"children": [],
 				"parent": "729e-78b3-0a10-c4d9"
 			}
@@ -3241,10 +3085,10 @@
 			},
 			"className": ".label .label-list-item-value",
 			"props": {
-				"id": 60,
-				"name": "apDescription",
 				"text": "Personal Leave, 10 days requested",
+				"id": 60,
 				"usePageVariable": true,
+				"name": "apDescription",
 				"children": [],
 				"parent": "729e-78b3-0a10-c4d9"
 			}
@@ -3267,20 +3111,19 @@
 				"usePageVariable": true,
 				"marginRight": null,
 				"id": 10,
-				"flexProps": {
-					"positionType": "ABSOLUTE"
-				},
 				"font": {
 					"size": 12
 				},
-				"defaults": {}
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				}
 			},
 			"className": ".label",
 			"props": {
-				"id": 10,
-				"name": "approvedDate",
 				"text": "1 day ago",
 				"usePageVariable": true,
+				"id": 10,
+				"name": "approvedDate",
 				"children": [],
 				"parent": "80b9-3163-7a5f-0380"
 			}
@@ -3493,9 +3336,9 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"usePageVariable": true,
 				"id": 7,
 				"name": "circle",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "cac6-1898-72bc-1cad"
 			}
@@ -3515,20 +3358,20 @@
 				"marginTop": null,
 				"usePageVariable": true,
 				"id": 12,
+				"font": {
+					"size": 14
+				},
 				"flexProps": {
 					"flexGrow": 4,
 					"alignSelf": "STRETCH"
-				},
-				"font": {
-					"size": 14
 				}
 			},
 			"className": ".label",
 			"props": {
-				"id": 12,
-				"name": "anDate",
 				"text": "11.02.2017",
 				"usePageVariable": true,
+				"id": 12,
+				"name": "anDate",
 				"children": [],
 				"parent": "81e2-8038-76b1-c448"
 			}
@@ -3546,19 +3389,19 @@
 				"textColor": "rgba( 39, 39, 49, 1 )",
 				"usePageVariable": true,
 				"id": 3,
-				"flexProps": {
-					"flexGrow": 4
-				},
 				"font": {
 					"size": 14
+				},
+				"flexProps": {
+					"flexGrow": 4
 				}
 			},
 			"className": ".label",
 			"props": {
-				"id": 3,
-				"name": "anTitle",
 				"text": "Bath County",
 				"usePageVariable": true,
+				"id": 3,
+				"name": "anTitle",
 				"children": [],
 				"parent": "d931-cac1-78ec-660a"
 			}
@@ -3578,19 +3421,19 @@
 				"textColor": "rgba( 155, 155, 155, 1 )",
 				"usePageVariable": true,
 				"id": 2,
-				"flexProps": {
-					"flexGrow": 6
-				},
 				"font": {
 					"size": 14
+				},
+				"flexProps": {
+					"flexGrow": 6
 				}
 			},
 			"className": ".label",
 			"props": {
-				"id": 2,
-				"name": "anMessage",
 				"text": "Lorem ipsum dolor sit amet, veniam melius duo ei, ea his esse sonet, rebum tation vituperatorib",
 				"usePageVariable": true,
+				"id": 2,
+				"name": "anMessage",
 				"children": [],
 				"parent": "d931-cac1-78ec-660a"
 			}
@@ -3640,9 +3483,9 @@
 			},
 			"className": ".imageView",
 			"props": {
+				"usePageVariable": true,
 				"id": 11,
 				"name": "anImage",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "78f7-5dfa-7fd7-afdd"
 			}
@@ -3688,9 +3531,7 @@
 					"flexGrow": 1,
 					"flexDirection": "ROW",
 					"alignItems": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -3716,9 +3557,7 @@
 				"marginRight": null,
 				"backgroundColor": "rgba( 151, 151, 151, 0.4 )",
 				"id": 9,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -3742,15 +3581,13 @@
 				"imageFillType": "ASPECTFIT",
 				"usePageVariable": true,
 				"id": 7,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
+				"usePageVariable": true,
 				"id": 7,
 				"name": "ibUserImage",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "cbe7-cca3-cff7-4418"
 			}
@@ -3768,9 +3605,7 @@
 				"id": 6,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -3796,20 +3631,19 @@
 				"textColor": "rgba( 74, 74, 74, 0.5 )",
 				"usePageVariable": true,
 				"id": 5,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"id": 5,
-				"name": "ibUserPosition",
 				"text": "Manager of S&M",
 				"usePageVariable": true,
+				"id": 5,
+				"name": "ibUserPosition",
 				"children": [],
 				"parent": "b1d5-d7b8-a18e-cf53"
 			}
@@ -3828,9 +3662,7 @@
 					"flexGrow": 1,
 					"flexDirection": "ROW",
 					"alignItems": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -3856,20 +3688,19 @@
 				"text": "Adam Stewart",
 				"usePageVariable": true,
 				"id": 3,
-				"flexProps": {
-					"flexGrow": 2
-				},
 				"font": {
 					"size": 18
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 2
+				}
 			},
 			"className": ".label .label-list-item-title",
 			"props": {
-				"id": 3,
-				"name": "ibUserName",
 				"text": "Adam Stewart",
 				"usePageVariable": true,
+				"id": 3,
+				"name": "ibUserName",
 				"children": [],
 				"parent": "f657-1512-6690-8882"
 			}
@@ -3887,20 +3718,19 @@
 				"textAlignment": "MIDRIGHT",
 				"usePageVariable": true,
 				"id": 2,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label .label-list-item-header",
 			"props": {
-				"id": 2,
-				"name": "ibUserBirthday",
 				"text": "MAY 16",
 				"usePageVariable": true,
+				"id": 2,
+				"name": "ibUserBirthday",
 				"children": [],
 				"parent": "f657-1512-6690-8882"
 			}
@@ -3919,9 +3749,7 @@
 				"id": 1,
 				"flexProps": {
 					"alignSelf": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".imageView",
 			"props": {
@@ -4023,9 +3851,9 @@
 			},
 			"className": ".imageView",
 			"props": {
+				"usePageVariable": true,
 				"id": 6,
 				"name": "itemDocumentImage",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "9669-9f27-ae5a-d6ae"
 			}
@@ -4049,10 +3877,10 @@
 			},
 			"className": ".label",
 			"props": {
-				"id": 5,
-				"name": "itemDocumentTitle",
 				"text": "Passport",
 				"usePageVariable": true,
+				"id": 5,
+				"name": "itemDocumentTitle",
 				"children": [],
 				"parent": "9669-9f27-ae5a-d6ae"
 			}
@@ -4097,19 +3925,19 @@
 				"text": "ACCEPTED",
 				"usePageVariable": true,
 				"id": 3,
-				"flexProps": {
-					"positionType": "ABSOLUTE"
-				},
 				"font": {
 					"size": 12
+				},
+				"flexProps": {
+					"positionType": "ABSOLUTE"
 				}
 			},
 			"className": ".label",
 			"props": {
-				"id": 3,
-				"name": "itemDocumentAcceptance",
 				"text": "ACCEPTED",
 				"usePageVariable": true,
+				"id": 3,
+				"name": "itemDocumentAcceptance",
 				"children": [],
 				"parent": "9669-9f27-ae5a-d6ae"
 			}
@@ -4134,14 +3962,12 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "filePreview",
 				"usePageVariable": true,
+				"name": "filePreview",
 				"children": [],
 				"parent": "c1c5-cf3e-d14e-315f"
 			}
@@ -4160,9 +3986,7 @@
 				"id": 8,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4198,15 +4022,14 @@
 				"usePageVariable": true,
 				"id": 100,
 				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".label .label-list-item-header",
 			"props": {
-				"id": 100,
-				"name": "headerTitle",
 				"text": "COMPANY NAME",
 				"usePageVariable": true,
+				"id": 100,
+				"name": "headerTitle",
 				"children": [],
 				"parent": "363b-1ff2-c49f-a2c0"
 			}
@@ -4252,8 +4075,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "icon",
 				"usePageVariable": true,
+				"name": "icon",
 				"children": [],
 				"parent": "eca6-3b22-68a8-aa04"
 			}
@@ -4277,15 +4100,13 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"id": 10312,
-				"name": "startDate",
 				"usePageVariable": true,
+				"name": "startDate",
 				"children": [],
 				"parent": "9bb1-9402-a9bc-729b"
 			}
@@ -4309,15 +4130,13 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"id": 10311,
-				"name": "endDate",
 				"usePageVariable": true,
+				"name": "endDate",
 				"children": [],
 				"parent": "9bb1-9402-a9bc-729b"
 			}
@@ -4342,9 +4161,7 @@
 				"id": 1014,
 				"flexProps": {
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4374,9 +4191,7 @@
 				"id": 1012,
 				"flexProps": {
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4404,9 +4219,7 @@
 				"flexProps": {
 					"flexGrow": null,
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4436,9 +4249,7 @@
 					"flexGrow": null,
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4469,15 +4280,13 @@
 					"alignItems": "CENTER",
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"id": 10222,
-				"name": "containerBasic",
 				"usePageVariable": true,
+				"name": "containerBasic",
 				"children": [],
 				"parent": "2dcf-3827-8df1-6801"
 			}
@@ -4503,15 +4312,13 @@
 					"alignItems": "CENTER",
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"id": 10221,
-				"name": "containerProposal",
 				"usePageVariable": true,
+				"name": "containerProposal",
 				"children": [],
 				"parent": "2dcf-3827-8df1-6801"
 			}
@@ -4535,15 +4342,13 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"alignItems": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"id": 107,
-				"name": "reviewDate",
 				"usePageVariable": true,
+				"name": "reviewDate",
 				"children": [],
 				"parent": "dcae-3af8-79da-1b55"
 			}
@@ -4566,9 +4371,7 @@
 				"flexProps": {
 					"flexGrow": null,
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4597,15 +4400,13 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"alignItems": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"id": 105,
-				"name": "nextReview",
 				"usePageVariable": true,
+				"name": "nextReview",
 				"children": [],
 				"parent": "dcae-3af8-79da-1b55"
 			}
@@ -4628,9 +4429,7 @@
 				"flexProps": {
 					"flexGrow": null,
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4659,15 +4458,13 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"alignItems": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"id": 103,
-				"name": "rating",
 				"usePageVariable": true,
+				"name": "rating",
 				"children": [],
 				"parent": "dcae-3af8-79da-1b55"
 			}
@@ -4690,9 +4487,7 @@
 				"flexProps": {
 					"flexGrow": null,
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4721,15 +4516,13 @@
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
 					"alignItems": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"id": 101,
-				"name": "overallScore",
 				"usePageVariable": true,
+				"name": "overallScore",
 				"children": [],
 				"parent": "dcae-3af8-79da-1b55"
 			}
@@ -4751,9 +4544,7 @@
 				"flexProps": {
 					"flexGrow": null,
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4781,9 +4572,7 @@
 					"flexGrow": null,
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4812,9 +4601,7 @@
 					"flexGrow": null,
 					"positionType": "RELATIVE",
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -4841,64 +4628,13 @@
 					"alignItems": "CENTER",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"name": "hc_level1",
 				"children": [],
 				"parent": "a913-e1da-7ac5-691c"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "4f07-0c7f-f444-7214",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"height": 30,
-				"width": null,
-				"textColor": "rgba( 0, 0, 0, 1 )",
-				"text": "Adam Stewart",
-				"font": {
-					"size": 18
-				},
-				"flexProps": {},
-				"defaults": {}
-			},
-			"className": ".label .label-list-item-value",
-			"props": {
-				"name": "label493",
-				"text": "Adam Stewart",
-				"children": [],
-				"parent": "cfcc-c66b-b54a-c3b2"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "7fc2-d81e-b3d7-2d1b",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"height": 30,
-				"width": null,
-				"text": "Manager of Sales and Marketing",
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
-			},
-			"className": ".label .label-list-item-value",
-			"props": {
-				"name": "label494",
-				"text": "Manager of Sales and Marketing",
-				"children": [],
-				"parent": "cfcc-c66b-b54a-c3b2"
 			}
 		},
 		{
@@ -4918,65 +4654,13 @@
 					"alignItems": "CENTER",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"name": "hc_level2",
 				"children": [],
 				"parent": "a913-e1da-7ac5-691c"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "7ee9-8858-869a-41b6",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"width": null,
-				"height": 30,
-				"textColor": "rgba( 23, 117, 208, 1 )",
-				"text": "Anthony Bell",
-				"font": {
-					"size": 18
-				},
-				"flexProps": {},
-				"defaults": {}
-			},
-			"className": ".label .label-list-item-value",
-			"props": {
-				"name": "label1140",
-				"text": "Anthony Bell",
-				"children": [],
-				"parent": "2713-4bf6-1a56-6257"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "983f-47f3-0a9a-1000",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"width": null,
-				"height": 30,
-				"text": "Director of Sales and Marketing",
-				"textColor": "rgba( 23, 117, 208, 0.5 )",
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
-			},
-			"className": ".label .label-list-item-value",
-			"props": {
-				"name": "label1141",
-				"text": "Director of Sales and Marketing",
-				"children": [],
-				"parent": "2713-4bf6-1a56-6257"
 			}
 		},
 		{
@@ -4996,64 +4680,13 @@
 					"alignItems": "CENTER",
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"name": "hc_level3",
 				"children": [],
 				"parent": "a913-e1da-7ac5-691c"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "8874-3a8e-35b4-c416",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"height": 30,
-				"width": null,
-				"textColor": "rgba( 0, 0, 0, 1 )",
-				"text": "Thomas Turner",
-				"font": {
-					"size": 18
-				},
-				"flexProps": {},
-				"defaults": {}
-			},
-			"className": ".label .label-list-item-value",
-			"props": {
-				"name": "label1816",
-				"text": "Thomas Turner",
-				"children": [],
-				"parent": "9db5-5852-f3b5-a5f6"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "3e8c-06df-1df9-a2e9",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"height": 30,
-				"width": null,
-				"text": "Sales Responsible",
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
-			},
-			"className": ".label .label-list-item-value",
-			"props": {
-				"name": "label1817",
-				"text": "Sales Responsible",
-				"children": [],
-				"parent": "9db5-5852-f3b5-a5f6"
 			}
 		},
 		{
@@ -5073,64 +4706,13 @@
 					"flexDirection": "ROW",
 					"alignItems": "CENTER",
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
 				"name": "hc_level3_1",
 				"children": [],
 				"parent": "a913-e1da-7ac5-691c"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "f593-16d5-4cfd-38f2",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"height": 30,
-				"width": null,
-				"text": "Belly Edwards",
-				"textColor": "rgba( 0, 0, 0, 1 )",
-				"font": {
-					"size": 18
-				},
-				"flexProps": {},
-				"defaults": {}
-			},
-			"className": ".label .label-list-item-value",
-			"props": {
-				"name": "label2378",
-				"text": "Belly Edwards",
-				"children": [],
-				"parent": "1dfe-189f-8b36-b73d"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "396d-b76f-05eb-1d0d",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"height": 30,
-				"width": null,
-				"text": "Sales Responsible",
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
-			},
-			"className": ".label .label-list-item-value",
-			"props": {
-				"name": "label2379",
-				"text": "Sales Responsible",
-				"children": [],
-				"parent": "1dfe-189f-8b36-b73d"
 			}
 		},
 		{
@@ -5148,8 +4730,6 @@
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true,
 				"id": 101,
-				"font": {},
-				"defaults": {},
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -5158,9 +4738,9 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"usePageVariable": true,
 				"id": 101,
 				"name": "row1",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "363b-1ff2-c49f-a2c0"
 			}
@@ -5180,8 +4760,6 @@
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true,
 				"id": 103,
-				"font": {},
-				"defaults": {},
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -5190,9 +4768,9 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"usePageVariable": true,
 				"id": 103,
 				"name": "row2",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "363b-1ff2-c49f-a2c0"
 			}
@@ -5212,8 +4790,6 @@
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true,
 				"id": 105,
-				"font": {},
-				"defaults": {},
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -5222,9 +4798,9 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"usePageVariable": true,
 				"id": 105,
 				"name": "row3",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "363b-1ff2-c49f-a2c0"
 			}
@@ -5244,8 +4820,6 @@
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true,
 				"id": 107,
-				"font": {},
-				"defaults": {},
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -5254,9 +4828,9 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"usePageVariable": true,
 				"id": 107,
 				"name": "row4",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "363b-1ff2-c49f-a2c0"
 			}
@@ -5276,8 +4850,6 @@
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true,
 				"id": 109,
-				"font": {},
-				"defaults": {},
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -5286,9 +4858,9 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"usePageVariable": true,
 				"id": 109,
 				"name": "row5",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "363b-1ff2-c49f-a2c0"
 			}
@@ -5308,8 +4880,6 @@
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true,
 				"id": 111,
-				"font": {},
-				"defaults": {},
 				"flexProps": {
 					"flexDirection": "ROW",
 					"positionType": "RELATIVE",
@@ -5318,9 +4888,9 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"usePageVariable": true,
 				"id": 111,
 				"name": "row6",
-				"usePageVariable": true,
 				"children": [],
 				"parent": "363b-1ff2-c49f-a2c0"
 			}
@@ -5339,8 +4909,6 @@
 				"height": 1,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"alpha": 1,
-				"font": {},
-				"defaults": {},
 				"id": 110,
 				"flexProps": {
 					"flexGrow": null,
@@ -5369,8 +4937,6 @@
 				"height": 1,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"alpha": 1,
-				"font": {},
-				"defaults": {},
 				"id": 108,
 				"flexProps": {
 					"flexGrow": null,
@@ -5399,8 +4965,6 @@
 				"height": 1,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"alpha": 1,
-				"font": {},
-				"defaults": {},
 				"id": 106,
 				"flexProps": {
 					"flexGrow": null,
@@ -5429,8 +4993,6 @@
 				"height": 1,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"alpha": 1,
-				"font": {},
-				"defaults": {},
 				"id": 104,
 				"flexProps": {
 					"flexGrow": null,
@@ -5459,8 +5021,6 @@
 				"height": 1,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"alpha": 1,
-				"font": {},
-				"defaults": {},
 				"id": 102,
 				"flexProps": {
 					"flexGrow": null,

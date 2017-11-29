@@ -6,23 +6,12 @@
 			"initialized": true,
 			"userProps": {
 				"backgroundColor": "rgba( 228, 228, 228, 1 )",
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".page",
 			"version": "6.5.3",
 			"props": {
-				"backgroundColor": "rgba( 228, 228, 228, 1 )",
 				"orientation": "PORTRAIT",
-				"flexProps": {
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"direction": "INHERIT",
-					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
-					"justifyContent": "FLEX_START"
-				},
 				"children": [
 					"bf6c-a415-467b-5b1d",
 					"57ff-3267-07b9-1be9",
@@ -32,23 +21,15 @@
 				],
 				"isRemovable": true,
 				"name": "pgPerformance",
-				"parent": null,
-				"width": 116.25,
-				"height": 206.77
+				"parent": null
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "bf6c-a415-467b-5b1d",
-			"userProps": {
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
-			},
+			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#45495A",
-				"visible": true,
 				"children": [],
 				"parent": "ddbd-cdba-3926-1250",
 				"isRemovable": false,
@@ -60,17 +41,11 @@
 			"id": "57ff-3267-07b9-1be9",
 			"userProps": {
 				"title": "newPage001",
-				"visible": false,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"visible": false
 			},
 			"className": ".headerBar",
 			"props": {
 				"title": "newPage001",
-				"titleColor": "#FFFFFF",
-				"visible": false,
-				"backgroundColor": "#45495A",
 				"children": [],
 				"parent": "ddbd-cdba-3926-1250",
 				"name": "headerBar"
@@ -87,25 +62,6 @@
 			},
 			"className": ".flexLayout .flexLayout-headerBar",
 			"props": {
-				"height": 200,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#45495A",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": null
-				},
 				"children": [
 					"60a7-1d88-1202-c328"
 				],
@@ -126,34 +82,11 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"justifyContent": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"marginLeft": 10,
-				"marginRight": 10,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "CENTER",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "listViewContainer",
 				"parent": "ddbd-cdba-3926-1250",
 				"children": [
@@ -171,29 +104,13 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".listView",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"multiline": false,
+				"usePageVariable": true,
 				"rowHeight": 60,
 				"itemCount": 3,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "listView",
 				"parent": "836c-9cc1-4f00-97ef",
 				"children": []
@@ -216,34 +133,11 @@
 				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout .flexLayout-headerBar",
 			"props": {
-				"height": 102,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#45495A",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"left": 0,
-				"top": 0,
-				"marginTop": null,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
 				"children": [],
 				"parent": "ddbd-cdba-3926-1250",
 				"name": "layoutHeaderBar"
@@ -262,20 +156,7 @@
 			},
 			"className": ".webView",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "wvChart",
 				"parent": "17f5-e028-12fc-80a8",
 				"children": []

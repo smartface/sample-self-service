@@ -5,9 +5,7 @@
 			"id": "09ed-e31c-d557-d68e",
 			"initialized": true,
 			"userProps": {
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".page",
 			"version": "6.5.3",
@@ -25,11 +23,7 @@
 		{
 			"type": "StatusBar",
 			"id": "9d89-bb05-3290-99e0",
-			"userProps": {
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
-			},
+			"userProps": {},
 			"className": ".statusBar",
 			"props": {
 				"name": "statusBar",
@@ -42,15 +36,12 @@
 			"type": "HeaderBar",
 			"id": "2f60-31f5-bf33-3d2d",
 			"userProps": {
-				"title": "newPage001",
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"title": "newPage001"
 			},
 			"className": ".headerBar",
 			"props": {
-				"name": "headerBar",
 				"title": "newPage001",
+				"name": "headerBar",
 				"children": [],
 				"parent": "09ed-e31c-d557-d68e",
 				"isRemovable": false
@@ -72,14 +63,12 @@
 				"flexProps": {
 					"flexGrow": null,
 					"alignItems": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
-				"name": "mainContainer",
 				"usePageVariable": true,
+				"name": "mainContainer",
 				"children": [
 					"a81d-1453-b3c6-2495",
 					"1cac-43e4-6a73-ac23",
@@ -101,9 +90,7 @@
 				"flexProps": {
 					"flexDirection": "ROW",
 					"alignItems": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -127,14 +114,12 @@
 				"image": "avatar1.png",
 				"imageFillType": "ASPECTFIT",
 				"usePageVariable": true,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".imageView",
 			"props": {
-				"name": "avatar",
 				"usePageVariable": true,
+				"name": "avatar",
 				"children": [],
 				"parent": "a81d-1453-b3c6-2495"
 			}
@@ -148,9 +133,7 @@
 				"marginLeft": 10,
 				"flexProps": {
 					"flexGrow": 2
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -171,19 +154,18 @@
 				"text": "Adam Stewart",
 				"textColor": "rgba( 74, 74, 74, 1 )",
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 18
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "name",
 				"text": "Adam Stewart",
 				"usePageVariable": true,
+				"name": "name",
 				"children": [],
 				"parent": "5bcc-d1c0-2f82-8455"
 			}
@@ -197,19 +179,18 @@
 				"text": "Manager of S&M",
 				"textColor": "rgba( 74, 74, 74, 0.5 )",
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "position",
 				"text": "Manager of S&M",
 				"usePageVariable": true,
+				"name": "position",
 				"children": [],
 				"parent": "5bcc-d1c0-2f82-8455"
 			}
@@ -226,9 +207,7 @@
 				"flexProps": {
 					"alignItems": "CENTER",
 					"justifyContent": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -250,9 +229,7 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -274,9 +251,7 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout .flexLayout-filled",
 			"props": {
@@ -296,9 +271,7 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -323,9 +296,7 @@
 				"paddingLeft": 30,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -346,9 +317,7 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -370,16 +339,15 @@
 				"textAlignment": "MIDCENTER",
 				"text": "9:30",
 				"textColor": "rgba( 74, 74, 74, 1 )",
+				"font": {},
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label1572",
 				"text": "9:30",
+				"name": "label1572",
 				"children": [],
 				"parent": "6ec0-c098-97c7-786c"
 			}
@@ -393,18 +361,17 @@
 				"textAlignment": "TOPCENTER",
 				"text": "Start Time",
 				"textColor": "rgba( 74, 74, 74, 0.5 )",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label1572_1",
 				"text": "Start Time",
+				"name": "label1572_1",
 				"children": [],
 				"parent": "6ec0-c098-97c7-786c"
 			}
@@ -421,9 +388,7 @@
 				"paddingLeft": 5,
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -444,16 +409,15 @@
 				"textAlignment": "MIDCENTER",
 				"text": "12:30",
 				"textColor": "rgba( 74, 74, 74, 1 )",
+				"font": {},
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label1572_2",
 				"text": "12:30",
+				"name": "label1572_2",
 				"children": [],
 				"parent": "4546-c549-618b-1dfc"
 			}
@@ -467,18 +431,17 @@
 				"textAlignment": "TOPCENTER",
 				"text": "End Time",
 				"textColor": "rgba( 74, 74, 74, 0.5 )",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 14
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label1572_1_1",
 				"text": "End Time",
+				"name": "label1572_1_1",
 				"children": [],
 				"parent": "4546-c549-618b-1dfc"
 			}
@@ -495,9 +458,7 @@
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"alignSelf": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".imageView",
 			"props": {
@@ -518,9 +479,7 @@
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"alignSelf": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".imageView",
 			"props": {
@@ -538,9 +497,7 @@
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"flexProps": {
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -558,9 +515,7 @@
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"flexProps": {
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -580,18 +535,17 @@
 				"text": "MAY 24, 2017",
 				"marginLeft": 15,
 				"marginTop": 15,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 18
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label1",
 				"text": "MAY 24, 2017",
+				"name": "label1",
 				"children": [],
 				"parent": "172a-29a8-4078-69d8"
 			}
@@ -608,18 +562,17 @@
 				"marginLeft": null,
 				"marginRight": 15,
 				"marginTop": 15,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 18
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label1_1",
 				"text": "MAY 19, 2017",
+				"name": "label1_1",
 				"children": [],
 				"parent": "172a-29a8-4078-69d8"
 			}
@@ -638,9 +591,7 @@
 				"flexProps": {
 					"flexGrow": 1,
 					"flexDirection": "ROW"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -662,9 +613,7 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -687,18 +636,17 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 1 )",
 				"text": "19",
-				"flexProps": {
-					"flexGrow": 2
-				},
 				"font": {
 					"size": 24
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 2
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label2",
 				"text": "19",
+				"name": "label2",
 				"children": [],
 				"parent": "ff1d-e128-8ed8-25c3"
 			}
@@ -713,18 +661,17 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 0.5 )",
 				"text": "Days",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 12
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label2_1",
 				"text": "Days",
+				"name": "label2_1",
 				"children": [],
 				"parent": "ff1d-e128-8ed8-25c3"
 			}
@@ -739,18 +686,17 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 0.75 )",
 				"text": "TOTAL",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 16
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label2_2",
 				"text": "TOTAL",
+				"name": "label2_2",
 				"children": [],
 				"parent": "ff1d-e128-8ed8-25c3"
 			}
@@ -764,9 +710,7 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -789,18 +733,17 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 1 )",
 				"text": "5",
-				"flexProps": {
-					"flexGrow": 2
-				},
 				"font": {
 					"size": 24
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 2
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label2_3",
 				"text": "5",
+				"name": "label2_3",
 				"children": [],
 				"parent": "42d7-30ed-ce32-e826"
 			}
@@ -815,18 +758,17 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 0.5 )",
 				"text": "Days",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 12
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label2_1_1",
 				"text": "Days",
+				"name": "label2_1_1",
 				"children": [],
 				"parent": "42d7-30ed-ce32-e826"
 			}
@@ -841,18 +783,17 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 0.75 )",
 				"text": "REQUESTED",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 16
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label2_2_1",
 				"text": "REQUESTED",
+				"name": "label2_2_1",
 				"children": [],
 				"parent": "42d7-30ed-ce32-e826"
 			}
@@ -866,9 +807,7 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -891,18 +830,17 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 1 )",
 				"text": "14",
-				"flexProps": {
-					"flexGrow": 2
-				},
 				"font": {
 					"size": 24
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 2
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label2_3_1",
 				"text": "14",
+				"name": "label2_3_1",
 				"children": [],
 				"parent": "a83e-a2c0-d188-9ff9"
 			}
@@ -917,18 +855,17 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 0.5 )",
 				"text": "Days",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 12
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label2_1_1_1",
 				"text": "Days",
+				"name": "label2_1_1_1",
 				"children": [],
 				"parent": "a83e-a2c0-d188-9ff9"
 			}
@@ -943,18 +880,17 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"textColor": "rgba( 255, 255, 255, 0.75 )",
 				"text": "REMAINS",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"size": 16
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".label",
 			"props": {
-				"name": "label2_2_1_1",
 				"text": "REMAINS",
+				"name": "label2_2_1_1",
 				"children": [],
 				"parent": "a83e-a2c0-d188-9ff9"
 			}
@@ -970,9 +906,7 @@
 				"paddingRight": 10,
 				"paddingTop": 10,
 				"paddingBottom": 10,
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -994,9 +928,7 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexDirection": "ROW"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -1024,9 +956,9 @@
 			},
 			"className": ".button",
 			"props": {
-				"name": "btnReject",
 				"text": "REJECT",
 				"usePageVariable": true,
+				"name": "btnReject",
 				"children": [],
 				"parent": "587c-e2b3-069a-4dcf"
 			}
@@ -1046,9 +978,9 @@
 			},
 			"className": ".button",
 			"props": {
-				"name": "btnApprove",
 				"text": "APPROVE",
 				"usePageVariable": true,
+				"name": "btnApprove",
 				"children": [],
 				"parent": "587c-e2b3-069a-4dcf"
 			}
@@ -1062,9 +994,7 @@
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 1
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -1083,9 +1013,7 @@
 					"flexGrow": 1,
 					"alignItems": "CENTER",
 					"justifyContent": "CENTER"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -1108,9 +1036,7 @@
 				"flexProps": {
 					"flexGrow": null,
 					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".imageView",
 			"props": {
@@ -1127,19 +1053,18 @@
 				"height": 20,
 				"textAlignment": "MIDCENTER",
 				"text": "Sick Leave",
-				"flexProps": {
-					"flexGrow": null,
-					"alignSelf": "STRETCH"
-				},
 				"font": {
 					"size": 12
 				},
-				"defaults": {}
+				"flexProps": {
+					"flexGrow": null,
+					"alignSelf": "STRETCH"
+				}
 			},
 			"className": ".label .label-list-item-header",
 			"props": {
-				"name": "label541",
 				"text": "Sick Leave",
+				"name": "label541",
 				"children": [],
 				"parent": "fe52-2bd0-5e38-2cfb"
 			}
@@ -1164,9 +1089,9 @@
 			},
 			"className": ".textArea",
 			"props": {
-				"name": "txtDescription",
 				"text": "",
 				"usePageVariable": true,
+				"name": "txtDescription",
 				"children": [],
 				"parent": "e3e4-fe21-3a12-7ec0"
 			}
@@ -1186,9 +1111,9 @@
 			},
 			"className": ".label",
 			"props": {
-				"name": "lblDescription",
-				"text": "Description",
 				"usePageVariable": true,
+				"text": "Description",
+				"name": "lblDescription",
 				"children": [],
 				"parent": "e3e4-fe21-3a12-7ec0"
 			}
