@@ -56,7 +56,10 @@ function initListView(listView, data) {
         item.id = 200;
         myListViewItem.item = item;
         this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
-        myListViewItem.addChild(item, "child");
+        myListViewItem.addChild(item, "child", "", {
+            width: null,
+            height: listView.rowHeight
+        });
         return myListViewItem;
     };
     listView.onRowBind = function(listViewItem, index) {

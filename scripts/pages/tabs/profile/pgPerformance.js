@@ -9,6 +9,7 @@ const JET = require('sf-extension-oracle-jet');
 const color2Hex = require("../../../lib/color2Hex");
 var loadingIndicator = DialogsLib.createLoadingDialog();
 const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const createSFCoreProp = require("@smartface/contx/lib/smartface/sfCorePropFactory").createSFCoreProp;
 
 const Page_ = extend(PageDesign)(
     // Constructor
@@ -39,7 +40,7 @@ function onShow(parentOnShow) {
             this.listView.itemCount = this.performanceList.length;
             this.listView.refreshData();
             DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
-            var series =[];
+            var series = [];
             performanceList.forEach((item) => {
                 series.push(item.overallScore);
             });
@@ -103,18 +104,18 @@ function loadChart(series) {
         items.observables.valueFormatsValue = {y: {converter: ko.toJS(yAxisConverter)}};
         `
     });
-    page.dispatch(addChild("jetChart", 
-    {
-        constructor:{$$styleContext: {className: ".flexLayout .flexLayout-headerBar"}}, 
-        subscribeContext: function(e){
-            if(e.rawStyle.backgroundColor){
-                var backgroundColor = color2Hex.getRGB(e.rawStyle.backgroundColor);
-                jet.legend.rendered = false;
-                jet.jetData.backgroundColor = backgroundColor;
-                jet.refresh();        
+    page.dispatch(addChild("jetChart", {
+            subscribeContext: function(e) {
+                if (e.rawStyle.backgroundColor) {
+                    var backgroundColor = color2Hex.getRGB(createSFCoreProp("backgroundColor", e.rawStyle.backgroundColor));
+                    jet.legend.rendered = false;
+                    jet.jetData.backgroundColor = backgroundColor;
+                    jet.refresh();
+                }
             }
-        }
-    }));
+        },
+        ".flexLayout .flexLayout-headerBar"
+    ));
 }
 
 function initListView(listView, data) {
@@ -126,7 +127,7 @@ function initListView(listView, data) {
         var item = new ItemPerformance();
         item.id = 200;
         this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
-        myListViewItem.addChild(item,"child","",{
+        myListViewItem.addChild(item, "child", "", {
             width: null
         });
         return myListViewItem;

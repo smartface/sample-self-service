@@ -13,7 +13,7 @@ const color2Hex = require("../../../lib/color2Hex");
 const mixinDeep = require('mixin-deep');
 const addChild = require("@smartface/contx/lib/smartface/action/addChild");
 const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
-
+const createSFCoreProp = require("@smartface/contx/lib/smartface/sfCorePropFactory").createSFCoreProp;
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
 const Page_ = extend(PageDesign)(
@@ -90,26 +90,28 @@ function loadChart(leaveRequestChartData) {
     });
     
     page.dispatch(addChild("jetChart", 
-    {
-        constructor:{$$styleContext: {className: ".flexLayout .flexLayout-headerBar"}}, 
-        subscribeContext: function(e){
-            if(e.rawStyle.backgroundColor){
-                var backgroundColor = color2Hex.getRGB(e.rawStyle.backgroundColor);
-                leaveRequestChartData = mixinDeep(leaveRequestChartData, {
-                    plotArea: {
-                        backgroundColor: backgroundColor
-                    },
-                    legend: {
-                        backgroundColor: backgroundColor,
-                    }
-                });
-                Object.assign(jet, leaveRequestChartData);
-                jet.legend.rendered = false;
-                jet.jetData.backgroundColor = backgroundColor;
-                jet.refresh();        
+        {
+            subscribeContext: function(e){
+                if(e.rawStyle.backgroundColor){
+                    //console.log("JET_BACKGROUND->"+ e.rawStyle.backgroundColor);
+                    var backgroundColor = color2Hex.getRGB(createSFCoreProp("backgroundColor",e.rawStyle.backgroundColor));
+                    leaveRequestChartData = mixinDeep(leaveRequestChartData, {
+                        plotArea: {
+                            backgroundColor: backgroundColor
+                        },
+                        legend: {
+                            backgroundColor: backgroundColor,
+                        }
+                    });
+                    Object.assign(jet, leaveRequestChartData);
+                    jet.legend.rendered = false;
+                    jet.jetData.backgroundColor = backgroundColor;
+                    jet.refresh();        
+                }
             }
-        }
-    }));
+        },
+        ".flexLayout .flexLayout-headerBar"
+    ));
     
     page.wvChart.visible = true;
     page.wvChart.bounceEnabled = false;
@@ -132,7 +134,9 @@ function initListView(listView, dataHolder) {
         item.id = 200;
         myListViewItem.item = item;
         this.dispatch(addChild("item"+(++itemIndex), myListViewItem));
-        myListViewItem.addChild(item, "child");
+        myListViewItem.addChild(item, "child", "", {
+            width: null
+        });
         item.updateCallback = function() {
             listView.itemCount = dataHolder.data.length;
             listView.refreshData();
@@ -140,7 +144,8 @@ function initListView(listView, dataHolder) {
         return myListViewItem;
     };
     listView.onRowBind = function(listViewItem, index) {
-        listViewItem.findChildById(200).request = dataHolder.data[index];
+        var item = listViewItem.findChildById(200);
+        item && (item.request = dataHolder.data[index]);
     };
 }
 

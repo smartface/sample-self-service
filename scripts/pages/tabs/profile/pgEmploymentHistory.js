@@ -64,7 +64,9 @@ function initListView(listView, data) {
         employmentItem.id = 200;
         myListViewItem.item = employmentItem;
         this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
-        myListViewItem.addChild(employmentItem, "employment_"+itemIndex);
+        myListViewItem.addChild(employmentItem, "employment_"+itemIndex, "",{
+            width: null
+        });
         return myListViewItem;
     };
 

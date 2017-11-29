@@ -10,6 +10,7 @@ const color2Hex = require("../../../lib/color2Hex");
 const JET = require('sf-extension-oracle-jet');
 const addChild = require("@smartface/contx/lib/smartface/action/addChild");
 const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
+const createSFCoreProp = require("@smartface/contx/lib/smartface/sfCorePropFactory").createSFCoreProp;
 
 const Page_ = extend(PageDesign)(
     function(_super) {
@@ -103,16 +104,19 @@ function loadChart(series) {
     });
 
     page.dispatch(addChild("jetChart", {
-        constructor: { $$styleContext: { className: ".flexLayout .flexLayout-headerBar" } },
-        subscribeContext: function(e) {
-            if (e.rawStyle.backgroundColor) {
-                var backgroundColor = color2Hex.getRGB(e.rawStyle.backgroundColor);
-                jet.legend.rendered = false;
-                jet.jetData.backgroundColor = backgroundColor;
-                jet.refresh();
+            subscribeContext: function(e) {
+                console.log("RAWSTYLES" + JSON.stringify(e));
+                if (e.rawStyle.backgroundColor) {
+                    var backgroundColor = color2Hex.getRGB(createSFCoreProp("backgroundColor", e.rawStyle.backgroundColor));
+                    //console.log("JET_BACKGROUND" + backgroundColor);
+                    jet.legend.rendered = false;
+                    jet.jetData.backgroundColor = backgroundColor;
+                    jet.refresh();
+                }
             }
-        }
-    }));
+        },
+        ".flexLayout .flexLayout-headerBar"
+    ));
 }
 
 function initListView(listView, data) {
