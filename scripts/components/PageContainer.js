@@ -22,8 +22,8 @@ function HRIndexConstructor(_super, params) {
         typeof _superOnLoad === "function" && _superOnLoad();
         this.headerBar.visible = false;
         // if (System.OS === "iOS") {
-        initDotIndicator(this);
         initSwipeView(this);
+        initDotIndicator(this);
         // }
     }.bind(this);
 
@@ -56,21 +56,31 @@ function initSwipeView(page) {
         pages: page.childPages,
         onPageSelected: onChildPageChanged.bind(page)
     });
+    
 
     page.layout.addChild(page.swipeView, "swipeview");
 }
 
 function initDotIndicator(page) {
     page.dotIndicator = new DotIndicator();
-    page.layout.addChild(page.dotIndicator, "dotIndicator", ".flexlayout");
+    page.layout.addChild(page.dotIndicator, "dotIndicator", ".flexlayout", {
+        top: 60,
+        height: 10,
+        flexProps: {
+            alignSelf: "CENTER",
+            positionType: "ABSOLUTE"
+        }
+    });
     page.dotIndicator.size = page.childPages.length;
+    /*
     page.dotIndicator.top = 60; //System.OS === "Android" ? 40 : 60;
     page.dotIndicator.alignSelf = FlexLayout.AlignSelf.CENTER;
     page.dotIndicator.positionType = FlexLayout.PositionType.ABSOLUTE;
+    */
 }
 
 function onChildPageChanged(index) {
-    this.dotIndicator.currentIndex = index;
+    this.dotIndicator && (this.dotIndicator.currentIndex = index);
 }
 
 module.exports = HRIndex;
