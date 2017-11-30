@@ -19,7 +19,7 @@ const Page_ = extend(PageDesign)(
 		_super(this, params);
 		this.onLoad = onLoad.bind(this, this.onLoad);
 		this.onShow = onShow.bind(this, this.onShow);
-
+	
 
 	}
 );
@@ -90,6 +90,7 @@ function onShow(parentOnShow, params) {
 	rau.checkUpdate({
 		url: "https://smf.to/selfservice"
 	});
+	
 }
 
 
