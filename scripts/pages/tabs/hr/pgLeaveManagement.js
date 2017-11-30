@@ -134,8 +134,9 @@ function initListView(listView, dataHolder) {
         item.id = 200;
         myListViewItem.item = item;
         this.dispatch(addChild("item"+(++itemIndex), myListViewItem));
-        myListViewItem.addChild(item, "child", "", {
-            width: null
+        myListViewItem.addChild(item, "child", "", function(style){
+            style.width = null;
+            return style;
         });
         item.updateCallback = function() {
             listView.itemCount = dataHolder.data.length;

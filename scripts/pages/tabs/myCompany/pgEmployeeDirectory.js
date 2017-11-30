@@ -56,9 +56,9 @@ function initListView(listView, data) {
         item.id = 200;
         myListViewItem.item = item;
         this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
-        myListViewItem.addChild(item, "child", "", {
-            width: null,
-            height: listView.rowHeight
+        myListViewItem.addChild(item, "child", "", function(style){
+            style.width = null;
+            return style;
         });
         return myListViewItem;
     };

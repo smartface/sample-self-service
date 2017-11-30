@@ -130,13 +130,9 @@ function initListView(listView, data) {
         var salaryItem = new ItemSalary();
         salaryItem.id = 200;
         this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
-        myListViewItem.addChild(salaryItem, "child", "", {
-            width: null,
-            height: 80,
-            flexProps: {
-                flexDirection: "COLUMN",
-                alignItems: "CENTER"
-            }
+        myListViewItem.addChild(salaryItem, "child", "", function(style){
+            style.width = null;
+            return style;
         });
         return myListViewItem;
     };

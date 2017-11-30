@@ -10,9 +10,6 @@ const Page_ = extend(PageDesign)(
 		_super(this, params);
 		this.onLoad = onLoad.bind(this, this.onLoad);
 		
-		wrapContentIntoScroll.call(this);
-		initTexts.call(this);
-		
         this.onError = function(e){
             console.log(e.message);
         }
@@ -21,6 +18,9 @@ const Page_ = extend(PageDesign)(
 function onLoad(parentOnLoad) {
     if (typeof parentOnLoad === "function") parentOnLoad();
     this.layoutHeaderBar.headerBarTitle.text = lang["pgOutOfOffice.pageTitle"];
+
+	wrapContentIntoScroll.call(this);
+	initTexts.call(this);
 }
 
 function wrapContentIntoScroll() {

@@ -61,17 +61,19 @@ function initListView(listView, data) {
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var employmentItem = new ItemEmploymentHistory();
-        employmentItem.id = 200;
+        employmentItem.id = 234;
         myListViewItem.item = employmentItem;
         this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
-        myListViewItem.addChild(employmentItem, "employment_"+itemIndex, "",{
-            width: null
+        myListViewItem.addChild(employmentItem, "employment_"+itemIndex, "", function(style){
+            style.width = null;
+            
+            return style;
         });
         return myListViewItem;
     };
 
     listView.onRowBind = function(listViewItem, index) {
-        var item = listViewItem.findChildById(200);
+        var item = listViewItem.findChildById(234);
         item.employment = data[index];
     };
 

@@ -127,8 +127,9 @@ function initListView(listView, data) {
         var item = new ItemPerformance();
         item.id = 200;
         this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
-        myListViewItem.addChild(item, "child", "", {
-            width: null
+        myListViewItem.addChild(item, "child", "", function(style){
+            style.width = null;
+            return style;
         });
         return myListViewItem;
     };
