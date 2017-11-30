@@ -1,6 +1,5 @@
 {
-	"components": [
-		{
+	"components": [{
 			"type": "Page",
 			"id": "21ae-2c3a-a5a2-518c",
 			"initialized": true,
@@ -45,8 +44,8 @@
 			},
 			"className": ".headerBar .headerBar-login",
 			"props": {
-				"title": "newPage001",
 				"name": "headerBar",
+				"title": "newPage001",
 				"children": [],
 				"parent": "21ae-2c3a-a5a2-518c"
 			}
@@ -113,8 +112,8 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"usePageVariable": true,
 				"name": "buttonLayout",
+				"usePageVariable": true,
 				"children": [
 					"13d3-2531-9ee4-7e52",
 					"3939-9e86-aa02-725f"
@@ -137,9 +136,9 @@
 			},
 			"className": ".button",
 			"props": {
-				"usePageVariable": true,
-				"text": "SIGN IN",
 				"name": "signinButton",
+				"text": "SIGN IN",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "aa9f-9d81-c51a-e6d4"
 			}
@@ -185,8 +184,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"usePageVariable": true,
 				"name": "loadingImageView",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "aa9f-9d81-c51a-e6d4"
 			}
@@ -213,8 +212,8 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"usePageVariable": true,
 				"name": "usernameLayout",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "5eef-6028-947b-4ed6"
 			}
@@ -241,8 +240,8 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"usePageVariable": true,
 				"name": "passwordLayout",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "5eef-6028-947b-4ed6"
 			}

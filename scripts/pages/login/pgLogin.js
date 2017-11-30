@@ -88,7 +88,7 @@ function onShow(parentOnShow, params) {
 	rau.checkUpdate({
 		url: "https://smf.to/selfservice"
 	});
-	*/
+*/
 }
 
 
