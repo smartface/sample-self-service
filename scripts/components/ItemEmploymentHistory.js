@@ -2,7 +2,7 @@
 const extend = require('js-base/core/extend');
 
 const ItemEmploymentHistory = require('library/ItemEmploymentHistory');
-
+var startID = 512;
 const ItemEmploymentHistory_ = extend(ItemEmploymentHistory)(
 	//constructor
 	function(_super, props, pageName){
@@ -15,9 +15,9 @@ const ItemEmploymentHistory_ = extend(ItemEmploymentHistory)(
 		this.row4.title.text = lang["pgEmploymentHistory.grade"];
 		this.row5.title.text = lang["pgEmploymentHistory.startDate"];
 		this.row6.title.text = lang["pgEmploymentHistory.endDate"];
-		
 		var _employment;
-		
+		startID = 512;
+		setIDs(this);
 		Object.defineProperties(this, {
 			'employment': {
 				get: function() {
@@ -44,5 +44,14 @@ function invalidate(item)
 	item.row6.value.text = item.employment.endDate;
 }
 
+function setIDs(item){
+	var keys = Object.keys(item.children);
+	keys.forEach( key => {
+		item.children[key].id = ++startID;
+		if(item.children[key].children){
+			setIDs(item.children[key]);
+		}
+	});
+}
 module && (module.exports = ItemEmploymentHistory_);
 
