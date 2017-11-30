@@ -57,7 +57,6 @@ function onShow(parentOnShow) {
 function initListView(data) {
     return {
         itemCount: data.length,
-        items: [],
         from(props){
             return Object.assign(new ListView(), initListView(data), props);
         },
@@ -83,15 +82,15 @@ function initListView(data) {
         onRowCreate() {
             var myListViewItem = new ListViewItem();
             var item = new ItemDocument();
-            this.items.push(item);
+            item.id = 200;
             this.dispatch(addChild("item" + (++this.itemIndex), myListViewItem));
             myListViewItem.addChild(item, "child");
             
             return myListViewItem;
         },
         onRowBind(listViewItem, index) {
-            var item = this.items[index % this.itemCount];
-            item.data = data[index];
+            var item = listViewItem.findChildById(200);
+            item && (item.data = data[index]);
         },
         onRowSelected() {
             Router.go("tabs/myCompany/documentDetail");

@@ -29,6 +29,7 @@ const Page_ = extend(PageDesign)(
 			this.lblSignOut.text = lang.signout;
 
 			initFingerPrint.call(this);
+			initCurrentTheme.call(this);
 		};
 
 		this.onShow = function() {
@@ -57,7 +58,6 @@ const Page_ = extend(PageDesign)(
 				Router.goBack("login");
 			}
 		};
-		initCurrentTheme.call(this);
 	}
 );
 
@@ -87,8 +87,18 @@ function changeTheme(styleName) {
 
 function initCurrentTheme() {
 	if (Data.getStringVariable("theme") !== "Style1") {
-		this.themeBlueLayout.borderWidth = 0;
-		this.themePurpleLayout.borderWidth = 1;
+		this.themeBlueLayout.dispatch({
+			type: "updateUserStyle",
+			userStyle: {
+				borderWidth: 0
+			}
+		});
+		this.themePurpleLayout.dispatch({
+			type: "updateUserStyle",
+			userStyle: {
+				borderWidth: 1
+			}
+		});
 	}
 }
 
