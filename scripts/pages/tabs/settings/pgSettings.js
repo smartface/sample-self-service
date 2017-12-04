@@ -62,7 +62,7 @@ const Page_ = extend(PageDesign)(
 );
 
 function changeTheme(styleName) {
-	if (Data.getStringVariable("theme") === styleName) {
+	/*if (Data.getStringVariable("theme") === styleName) {
 		return;
 	}
 
@@ -74,7 +74,6 @@ function changeTheme(styleName) {
 		text: lang["ok"],
 		type: AlertView.Android.ButtonType.POSITIVE,
 		onClick: function() {
-			Data.setStringVariable("theme", styleName);
 			Application.restart();
 		}
 	});
@@ -82,7 +81,13 @@ function changeTheme(styleName) {
 		text: lang["cancel"],
 		type: AlertView.Android.ButtonType.NEGATIVE
 	});
-	confirmationAlert.show();
+	confirmationAlert.show();*/
+	
+	Data.setStringVariable("theme", styleName);
+	Application.theme()({
+		type: "changeTheme",
+		theme: styleName
+	});
 }
 
 function initCurrentTheme() {
