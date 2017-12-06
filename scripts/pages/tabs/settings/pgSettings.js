@@ -17,8 +17,11 @@ const Page_ = extend(PageDesign)(
 
 		var _superOnLoad = this.onLoad;
 		var _superOnShow = this.onShow;
+		
 		this.onLoad = function() {
-			if (typeof _superOnLoad === "function") _superOnLoad.call(this);
+			if (typeof _superOnLoad === "function") 
+				_superOnLoad.call(this);
+			
 			this.headerBar.title = lang["pgSettings.pageTitle"];
 			this.headerBar.leftItemEnabled = false;
 			this.txtTheme.text = lang["pgSettings.theme"];
@@ -38,12 +41,12 @@ const Page_ = extend(PageDesign)(
 			initNewVersionButton.call(this);
 		};
 
-		this.themeBlueLayout.onTouchEnded = function() {
-			changeTheme("Style1");
+		this.themeBlueLayout.onTouchEnded = () => {
+			changeTheme.call(this, "Style1");
 		};
 
-		this.themePurpleLayout.onTouchEnded = function() {
-			changeTheme("Style2");
+		this.themePurpleLayout.onTouchEnded = () => {
+			changeTheme.call(this, "Style2");
 		};
 
 		this.signoutLayout.onTouchEnded = function() {
@@ -61,8 +64,8 @@ const Page_ = extend(PageDesign)(
 	}
 );
 
-function changeTheme(styleName) {
-	if (Data.getStringVariable("theme") === styleName) {
+function changeTheme(themeName) {
+	if (Data.getStringVariable("theme") === themeName) {
 		return;
 	}
 
@@ -73,38 +76,44 @@ function changeTheme(styleName) {
 	confirmationAlert.addButton({
 		text: lang["ok"],
 		type: AlertView.Android.ButtonType.POSITIVE,
-		onClick: function() {
-			Application.restart();
+		onClick: () => {
+			this.themeContext({
+				type: "changeTheme",
+				theme: themeName
+			});
+			
+			this.dispatch({
+				type: "invalidate"
+			});
+
+			Data.setStringVariable("theme", themeName);
+			initCurrentTheme.call(this);
 		}
 	});
+	
 	confirmationAlert.addButton({
 		text: lang["cancel"],
 		type: AlertView.Android.ButtonType.NEGATIVE
 	});
-	confirmationAlert.show();
 	
-	Data.setStringVariable("theme", styleName);
-	Application.theme()({
-		type: "changeTheme",
-		theme: styleName
-	});
+	confirmationAlert.show();
 }
 
 function initCurrentTheme() {
-	if (Data.getStringVariable("theme") !== "Style1") {
+	// if (Data.getStringVariable("theme") !== "Style1") {
 		this.themeBlueLayout.dispatch({
 			type: "updateUserStyle",
 			userStyle: {
-				borderWidth: 0
+				borderWidth: Data.getStringVariable("theme") == "Style1" ? 1 : 0
 			}
 		});
 		this.themePurpleLayout.dispatch({
 			type: "updateUserStyle",
 			userStyle: {
-				borderWidth: 1
+				borderWidth: Data.getStringVariable("theme") == "Style2" ? 1 : 0
 			}
 		});
-	}
+	// }
 }
 
 function initFingerPrint() {

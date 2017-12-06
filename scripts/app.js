@@ -1,4 +1,4 @@
-require("./theme");
+
 /* globals lang */
 require("i18n/i18n.js"); // Generates global lang object
 
@@ -12,6 +12,8 @@ Application.onUnhandledError = function(e) {
         message: e.message + "\n\n*" + e.sourceURL + "\n*" + e.line + "\n*" + e.stack
     });
 };
+
+require("./theme");
 
 const Router = require("sf-core/ui/router");
 const Navigator = require("sf-core/ui/navigator");
