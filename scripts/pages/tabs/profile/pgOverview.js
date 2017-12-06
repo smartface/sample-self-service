@@ -10,7 +10,6 @@ const Page_ = extend(PageDesign)(
 		// Initalizes super class for this page scope
 		_super(this, params);
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-		alert("page overview");
 		
 		initTexts.call(this);
 	}

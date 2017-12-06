@@ -23,7 +23,7 @@ function HRIndexConstructor(_super, params) {
         this.headerBar.visible = false;
         // if (System.OS === "iOS") {
         initSwipeView(this);
-        // initDotIndicator(this);
+        initDotIndicator(this);
         // }
     }.bind(this);
 
