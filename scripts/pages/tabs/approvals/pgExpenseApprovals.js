@@ -33,6 +33,7 @@ var firstOnShow = true;
 function onShow(parentOnShow) {
 	parentOnShow();
 	const page = this;
+	this.topTabBar.currentIndex = 0;
 	if (firstOnShow) {
 		DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
 		expenseManagement.getPendingExpenseApprovals(function(err, pendingExpenseApprovals) {
