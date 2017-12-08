@@ -1,3 +1,5 @@
+require("./theme");
+
 
 /* globals lang */
 require("i18n/i18n.js"); // Generates global lang object

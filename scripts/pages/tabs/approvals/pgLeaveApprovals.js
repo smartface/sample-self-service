@@ -71,7 +71,7 @@ function initTexts() {
 
 function initListView() {
 	this.listView.dispatch(removeChildren());
-	
+
 	this.listView.itemCount = 0;
 	this.listView.rowHeight = 90;
 	this.listView.refreshEnabled = false;
@@ -81,9 +81,12 @@ function initListView() {
 		var listViewItem = new ListViewItem();
 		var item = new ItemApproval();
 		item.id = 200;
-		this.dispatch(addChild("item"+(++itemIndex), listViewItem));
-		listViewItem.addChild(item, "child");
-		
+		this.dispatch(addChild("item" + (++itemIndex), listViewItem));
+		listViewItem.addChild(item, "child", "", style => {
+			style.width = null;
+			return style;
+		});
+
 		return listViewItem;
 	};
 

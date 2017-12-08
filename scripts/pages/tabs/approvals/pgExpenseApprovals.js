@@ -72,8 +72,11 @@ function initListView() {
 		var listViewItem = new ListViewItem();
 		var item = new ItemApproval();
 		item.id = 200;
-		this.dispatch(addChild("item"+(++itemIndex), listViewItem));
-		listViewItem.addChild(item, "child");
+		this.dispatch(addChild("item" + (++itemIndex), listViewItem));
+		listViewItem.addChild(item, "child", "", style => {
+			style.width = null;
+			return style;
+		});
 		return listViewItem;
 	};
 
