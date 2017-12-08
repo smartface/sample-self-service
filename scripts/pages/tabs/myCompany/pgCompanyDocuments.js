@@ -23,9 +23,8 @@ const Page_ = extend(PageDesign)(
 
         this.documents = [];
         Object.assign(
-            this.listView, 
-            initListView(this.documents),
-            {
+            this.listView,
+            initListView(this.documents), {
                 rowHeight: 75,
                 itemIndex: 0,
                 refreshEnabled: false
@@ -57,21 +56,21 @@ function onShow(parentOnShow) {
 function initListView(data) {
     return {
         itemCount: data.length,
-        from(props){
+        from(props) {
             return Object.assign(new ListView(), initListView(data), props);
         },
         reset() {
             this.dispatch({
                 type: "removeChildren"
             });
-            
+
             return Object.assign(this, initListView(data));
         },
-        dispose(){
+        dispose() {
             this.dispatch({
                 type: "removeChildren"
             });
-            
+
             delete this.onRowCreate;
             delete this.onRowBind;
             delete this.items;
@@ -84,8 +83,11 @@ function initListView(data) {
             var item = new ItemDocument();
             item.id = 200;
             this.dispatch(addChild("item" + (++this.itemIndex), myListViewItem));
-            myListViewItem.addChild(item, "child");
-            
+            myListViewItem.addChild(item, "child", "", style => {
+                style.width = null;
+                return style;
+            });
+
             return myListViewItem;
         },
         onRowBind(listViewItem, index) {
