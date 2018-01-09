@@ -49,7 +49,7 @@ function initListView(listView, data) {
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemBirthday();
-        item.id = 200;
+        item.id = 20099;
         myListViewItem.item = item;
         myListViewItem.addChild(item);
         return myListViewItem;

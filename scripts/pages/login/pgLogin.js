@@ -117,15 +117,16 @@ function signin(page) {
 }
 
 function doLogin(page, username, password, callback) {
-	mcs.login({
-		username: username,
-		password: password
-	}, function(err, userData) {
-		if (err) {
-			alert(lang["pgLogin.invalidLogin"]);
-		}
-		callback && callback(err, userData);
-	});
+	// mcs.login({
+	// 	username: username,
+	// 	password: password
+	// }, function(err, userData) {
+	// 	if (err) {
+	// 		alert(lang["pgLogin.invalidLogin"]);
+	// 	}
+	// 	callback && callback(err, userData);
+	// });
+	callback(null,null);
 }
 
 function startLoading(uiComponents, callback) {
