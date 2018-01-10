@@ -81,7 +81,6 @@ function onShow(parentOnShow, params) {
 					}
 					fingerprintResult && fingerprintResult.success(); //Important!
 					Router.go("tabs");
-
 				});
 			});
 		}

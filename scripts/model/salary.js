@@ -1,13 +1,17 @@
 // const mcs = require("../lib/mcs");
 // const http = require("sf-core/net/http");
 // const Http = new http();
-const File = require("sf-core/io/file");
-const FileStream = require("sf-core/io/filestream");
+// const File = require("sf-core/io/file");
+// const FileStream = require("sf-core/io/filestream");
 const converterJSON = require("../lib/convertFileToJsonObj");
 
 exports.getSalaryList = getSalaryList;
 
-function getSalaryList(callback) {
+function getSalaryList(request, callback) {
+    if (!callback && request) {
+        callback = request;
+        request = null;
+    }
     try {
         var filePath = 'assets://mock/getSalaryList.json';
 
@@ -16,6 +20,7 @@ function getSalaryList(callback) {
     catch (err) {
         callback(err);
     }
+    finally {}
     callback && callback(null, salaryListJSONObj);
 }
 // function getSalaryList(request, callback) {

@@ -1,6 +1,6 @@
-const mcs = require("../lib/mcs");
-const http = require("sf-core/net/http");
-const Http = new http();
+// const mcs = require("../lib/mcs");
+// const http = require("sf-core/net/http");
+// const Http = new http();
 const getImage = require("../lib/getImage");
 const converterJSON = require("../lib/convertFileToJsonObj");
 
@@ -430,14 +430,14 @@ function getLeaveRequestsChart(request, callback) {
     }
 
     try {
-        var filePath = 'updateHereAfretwards';
+        var filePath = 'assets://mock/getLeaveRequestsChart.json';
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
     }
     catch (err) {
         callback(err);
     }
-    callback && callback(JSONobj, JSONobj);
+    callback && callback(null, JSONobj);
 
     // if (!callback && request) {
     //     callback = request;
