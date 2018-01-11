@@ -22,14 +22,18 @@ function deleteApprovedLeaveRequest(request, callback) {
         request = null;
     }
     try {
-        var filePath = 'assets://mock/deleteApprovedLeaveRequest.json';
+        var filePath = "../mock/deleteApprovedLeaveRequest.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
+    finally {}
 
     // if (!callback && request) {
     //     callback = request;
@@ -72,14 +76,18 @@ function deleteWaitingLeaveRequest(request, callback) {
     }
 
     try {
-        var filePath = 'assets://mock/deleteWaitingLeaveRequest.json';
+        var filePath = "../mock/deleteWaitingLeaveRequest.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
+    finally {}
 
     // if (!callback && request) {
     //     callback = request;
@@ -121,14 +129,18 @@ function deleteRejectedLeaveRequest(request, callback) {
     }
 
     try {
-        var filePath = 'assets://mock/deleteRejectedLeaveRequest.json';
+        var filePath = "../mock/deleteRejectedLeaveRequest.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
+    finally {}
 
     // if (!callback && request) {
     //     callback = request;
@@ -170,18 +182,25 @@ function getPendingLeaveApprovals(request, callback) {
     }
 
     try {
-        var filePath = 'assets://mock/getPendingLeaveApprovals.json';
+        var filePath = "../mock/getPendingLeaveApprovals.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
 
-        JSONobj.forEach(function(item) {
-            item.image = getImage(item.image);
-        });
+            var JSONstringify = JSON.stringify(JSONobj);
+            var JSONobjparsed = JSON.parse(JSONstringify);
+
+            JSONobjparsed.forEach(function(item) {
+                item.image = getImage(item.image);
+            });
+
+            callback && callback(null, JSONobjparsed);
+        }
+        else {
+            callback(JSONobjparsed);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
+    finally {}
 
     // if (!callback && request) {
     //     callback = request;
@@ -226,18 +245,25 @@ function getApprovedLeaveApprovals(request, callback) {
     }
 
     try {
-        var filePath = 'assets://mock/getApprovedLeaveApprovals.json';
+        var filePath = "../mock/getApprovedLeaveApprovals.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
 
-        JSONobj.forEach(function(item) {
-            item.image = getImage(item.image);
-        });
+            var JSONstringify = JSON.stringify(JSONobj);
+            var JSONobjparsed = JSON.parse(JSONstringify);
+
+            JSONobjparsed.forEach(function(item) {
+                item.image = getImage(item.image);
+            });
+
+            callback && callback(null, JSONobjparsed);
+        }
+        else {
+            callback(JSONobjparsed);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
+    finally {}
 
     // if (!callback && request) {
     //     callback = request;
@@ -282,14 +308,17 @@ function getApprovedLeaveRequests(request, callback) {
     }
 
     try {
-        var filePath = 'assets://mock/getApprovedLeaveRequests.json';
+        var filePath = "../mock/getApprovedLeaveRequests.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
+    finally {}
 
 
     // if (!callback && request) {
@@ -331,15 +360,17 @@ function getWaitingLeaveRequests(request, callback) {
     }
 
     try {
-        var filePath = 'assets://mock/getWaitingLeaveRequests.json';
+        var filePath = "../mock/getWaitingLeaveRequests.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
-
+    finally {}
     // if (!callback && request) {
     //     callback = request;
     //     request = null;
@@ -380,14 +411,17 @@ function getRejectedLeaveRequests(request, callback) {
     }
 
     try {
-        var filePath = 'assets://mock/getRejectedLeaveRequests.json';
+        var filePath = "../mock/getRejectedLeaveRequests.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
+    finally {}
 
     // if (!callback && request) {
     //     callback = request;
@@ -430,14 +464,17 @@ function getLeaveRequestsChart(request, callback) {
     }
 
     try {
-        var filePath = 'assets://mock/getLeaveRequestsChart.json';
+        var filePath = "../mock/getLeaveRequestsChart.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
+    finally {}
 
     // if (!callback && request) {
     //     callback = request;

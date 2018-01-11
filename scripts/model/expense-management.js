@@ -14,18 +14,22 @@ function getPendingExpenseApprovals(request, callback) {
         request = null;
     }
     try {
-        var filePath = 'assets://mock/getPendingExpenseApprovals.json';
+        var filePath = "../mock/getPendingExpenseApprovals.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
 
-        JSONobj.forEach(function(item) {
-            item.image = getImage(item.image);
-        });
+            JSONobj.forEach(function(item) {
+                item.image = getImage(item.image);
+            });
+
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
+    finally {}
     // var requestOptions = Object.assign(mcs.createRequestOptions({
     //     apiName: "SelfService",
     //     endpointPath: "pendingexpenseapprovals"
@@ -65,19 +69,22 @@ function getApprovedExpenseApprovals(request, callback) {
         request = null;
     }
     try {
-        var filePath = 'assets://mock/getApprovedExpenseApprovals.json';
+        var filePath = "../mock/getApprovedExpenseApprovals.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
 
-        JSONobj.forEach(function(item) {
-            item.image = getImage(item.image);
-        });
+            JSONobj.forEach(function(item) {
+                item.image = getImage(item.image);
+            });
 
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
+    finally {}
 
     // var requestOptions = Object.assign(mcs.createRequestOptions({
     //     apiName: "SelfService",
@@ -119,14 +126,17 @@ function getExpenses(request, callback) {
         request = null;
     }
     try {
-        var filePath = 'assets://mock/getExpenses.json';
+        var filePath = "../mock/getExpenses.json";
 
-        var salaryListJSONObj = converterJSON.convertFileToJson(filePath);
+        var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, salaryListJSONObj);
+    finally {}
 
     // var requestOptions = Object.assign(mcs.createRequestOptions({
     //     apiName: "SelfService",

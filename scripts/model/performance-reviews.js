@@ -8,14 +8,17 @@ exports.getPerformanceReviews = getPerformanceReviews;
 function getPerformanceReviews(callback) {
 
     try {
-        var filePath = 'assets://mock/getPerformanceReviews.json';
+        var filePath ="../mock/getPerformanceReviews.json";
 
-        var performJSONObj = converterJSON.convertFileToJson(filePath);
+        var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, performJSONObj);
+    finally {}
 
 }
 

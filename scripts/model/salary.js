@@ -13,15 +13,17 @@ function getSalaryList(request, callback) {
         request = null;
     }
     try {
-        var filePath = 'assets://mock/getSalaryList.json';
+        var filePath = "../mock/getSalaryList.json";
 
-        var salaryListJSONObj = converterJSON.convertFileToJson(filePath);
-    }
-    catch (err) {
-        callback(err);
+        var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
     finally {}
-    callback && callback(null, salaryListJSONObj);
 }
 // function getSalaryList(request, callback) {
 //     if (!callback && request) {

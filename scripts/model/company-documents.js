@@ -6,21 +6,25 @@ const converterJSON = require("../lib/convertFileToJsonObj");
 exports.getCompanyDocuments = getCompanyDocuments;
 
 function getCompanyDocuments(request, callback) {
-    
+
     if (!callback && request) {
         callback = request;
         request = null;
     }
     try {
-        var filePath = 'assets://mock/getCompanyDocuments.json';
+        var filePath = "../mock/getCompanyDocuments.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
-    
+    finally {}
+
     // if (!callback && request) {
     //     callback = request;
     //     request = null;

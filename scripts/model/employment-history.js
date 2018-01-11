@@ -7,14 +7,18 @@ exports.getEmploymentHistory = getEmploymentHistory;
 
 function getEmploymentHistory(callback) {
     try {
-        var filePath = 'assets://mock/getEmploymentHistory.json';
+        var filePath = "../mock/getEmploymentHistory.json";
 
-        var empHistoryJSONObj = converterJSON.convertFileToJson(filePath);
+        var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+
+            callback && callback(null, JSONobj);
+        }
+        else {
+            callback(JSONobj);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, empHistoryJSONObj);
+    finally {}
 }
 
 // function getEmploymentHistory(request, callback) {

@@ -11,6 +11,7 @@ const JET = require('sf-extension-oracle-jet');
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const color2Hex = require("../../../lib/color2Hex");
 const mixinDeep = require('mixin-deep');
+const Color = require('sf-core/ui/color');
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
@@ -78,6 +79,7 @@ function onLoad(parentOnLoad) {
 
 function loadChart(leaveRequestChartData) {
     const page = this;
+
     var jet = new JET({
         jetPath: "assets://jet/",
         webView: page.wvChart

@@ -14,18 +14,24 @@ function getAnnouncements(request, callback) {
     }
 
     try {
-        var filePath = 'assets://mock/getAnnouncements.json';
+        var filePath = "../mock/getAnnouncements.json";
 
         var JSONobj = converterJSON.convertFileToJson(filePath);
+        if (JSONobj) {
+            var JSONstringify = JSON.stringify(JSONobj);
+            var JSONobjparsed = JSON.parse(JSONstringify);
 
-        JSONobj.forEach(function(item) {
-            item.image = getImage(item.image);
-        });
+            JSONobjparsed.forEach(function(item) {
+                item.image = getImage(item.image);
+            });
+            
+            callback && callback(null, JSONobjparsed);
+        }
+        else {
+            callback(JSONobjparsed);
+        }
     }
-    catch (err) {
-        callback(err);
-    }
-    callback && callback(null, JSONobj);
+    finally {}
 
     // if (!callback && request) {
     //     callback = request;
