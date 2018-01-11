@@ -19,7 +19,6 @@ require("./theme");
 
 const Router = require("sf-core/ui/router");
 const Navigator = require("sf-core/ui/navigator");
-<<<<<<< HEAD
 const stylerBuilder = require("library/styler-builder");
 const settings = require("./settings.json");
 const Data = require('sf-core/data');
@@ -29,8 +28,6 @@ if (Data.getStringVariable("theme") == null)
     Data.setStringVariable("theme", settings.config.theme.currentTheme);
 
 stylerBuilder.setActiveTheme(Data.getStringVariable("theme") || settings.config.theme.currentTheme);
-=======
->>>>>>> b07417e76ddcf49cf5e031554a90b4b5264adc74
 
 var navigator = new Navigator();
 navigator.add("pgLogin", require("./pages/login/pgLogin"));
