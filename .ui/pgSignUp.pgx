@@ -4,26 +4,46 @@
 			"type": "Page",
 			"id": "ea91-958c-d6e6-f562",
 			"initialized": true,
+			"themeProps": {
+				"Highlights": "Default"
+			},
 			"userProps": {},
 			"className": ".page",
-			"version": "6.5.3",
+			"version": "6.5.2",
 			"props": {
+				"backgroundColor": "#EEEEEE",
 				"orientation": "PORTRAIT",
+				"flexProps": {
+					"alignContent": "STRETCH",
+					"alignItems": "STRETCH",
+					"direction": "INHERIT",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "FLEX_START"
+				},
 				"name": "pgSignUp",
 				"children": [
 					"ac1d-8e47-7c05-9186",
 					"e849-8c2a-2c89-0d06"
 				],
 				"isRemovable": true,
-				"parent": null
+				"parent": null,
+				"width": 112.5,
+				"height": 180.9
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "ac1d-8e47-7c05-9186",
+			"themeProps": {
+				"Highlights": "Default"
+			},
 			"userProps": {},
 			"className": ".statusBar",
 			"props": {
+				"color": "#7C73C0",
+				"visible": true,
+				"style": "LIGHTCONTENT",
 				"name": "statusBar",
 				"children": [],
 				"parent": "ea91-958c-d6e6-f562",
@@ -33,12 +53,18 @@
 		{
 			"type": "HeaderBar",
 			"id": "e849-8c2a-2c89-0d06",
+			"themeProps": {
+				"Highlights": "Default"
+			},
 			"userProps": {
 				"title": "newPage001"
 			},
 			"className": ".headerBar",
 			"props": {
 				"title": "newPage001",
+				"titleColor": "#FFFFFF",
+				"visible": true,
+				"backgroundColor": "#7C73C0",
 				"name": "headerBar",
 				"children": [],
 				"parent": "ea91-958c-d6e6-f562"

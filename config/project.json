@@ -3,7 +3,7 @@
 		"name": "Self Service",
 		"company": "Smartface Inc.",
 		"webSite": "https://www.smartface.io",
-		"version": "2.0.2",
+		"version": "1.4.8",
 		"runtimeVersion": "1100",
 		"description": "This is Self Service application from Smartface.io developed with Smartface."
 	},
@@ -63,7 +63,7 @@
 						"active": false
 					}
 				},
-				"playerPath": null
+				"playerPath": "players/iOS/player-6.5.3-beta.219.zip"
 			},
 			"android": {
 				"scripts": "scripts",
@@ -84,7 +84,7 @@
 						"active": false
 					}
 				},
-				"playerPath": null
+				"playerPath": "players/android/player-6.5.3-beta.3.zip"
 			},
 			"keys": {
 				"project3DesKey": "Ert8ZaAixihjvQeDC/mtHbRInqW7orvQ",
@@ -94,11 +94,11 @@
 		"output": {
 			"ios": {
 				"outputFolder": "output/iOS",
-				"bundleIdentifier": "io.smartface.selfservice"
+				"bundleIdentifier": "io.smartface.sample.selfservice"
 			},
 			"android": {
 				"outputFolder": "output/Android",
-				"packageName": "io.smartface.selfservice"
+				"packageName": "io.smartface.sample.selfservice"
 			}
 		},
 		"tempFolder": "output/.tmp"
