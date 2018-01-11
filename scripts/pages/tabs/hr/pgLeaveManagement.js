@@ -11,14 +11,9 @@ const JET = require('sf-extension-oracle-jet');
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const color2Hex = require("../../../lib/color2Hex");
 const mixinDeep = require('mixin-deep');
-<<<<<<< HEAD
-const Color = require('sf-core/ui/color');
-
-=======
 const addChild = require("@smartface/contx/lib/smartface/action/addChild");
 const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 const createSFCoreProp = require("@smartface/contx/lib/smartface/sfCorePropFactory").createSFCoreProp;
->>>>>>> b07417e76ddcf49cf5e031554a90b4b5264adc74
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
 const Page_ = extend(PageDesign)(
@@ -89,7 +84,6 @@ function onLoad(parentOnLoad) {
 
 function loadChart(leaveRequestChartData) {
     const page = this;
-
     var jet = new JET({
         jetPath: "assets://jet/",
         webView: page.wvChart

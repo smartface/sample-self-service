@@ -63,7 +63,7 @@ function initListView(listView, data) {
     };
 
     listView.onRowBind = function(listViewItem, index) {
-        listViewItem.findChildById(200).user = data[index];
+        listViewItem.findChildById(20099).user = data[index];
     };
 
     listView.onRowSelected = function() {}
