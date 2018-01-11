@@ -6,9 +6,10 @@ const PageDesign = require("../../../ui/ui_pgPerformance");
 const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemPerformance = require('../../../components/ItemPerformance');
 const JET = require('sf-extension-oracle-jet');
-const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const color2Hex = require("../../../lib/color2Hex");
 var loadingIndicator = DialogsLib.createLoadingDialog();
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const createSFCoreProp = require("@smartface/contx/lib/smartface/sfCorePropFactory").createSFCoreProp;
 
 const Page_ = extend(PageDesign)(
     // Constructor
@@ -39,7 +40,7 @@ function onShow(parentOnShow) {
             this.listView.itemCount = this.performanceList.length;
             this.listView.refreshData();
             DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
-            var series =[];
+            var series = [];
             performanceList.forEach((item) => {
                 series.push(item.overallScore);
             });
@@ -62,11 +63,6 @@ function loadChart(series) {
         webView: page.wvChart
     });
     page.wvChart.bounceEnabled = false;
-    const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
-        width: null,
-        flexGrow: null
-    });
-
     Object.assign(jet, {
         series: [{
             name: lang.performance,
@@ -108,19 +104,33 @@ function loadChart(series) {
         items.observables.valueFormatsValue = {y: {converter: ko.toJS(yAxisConverter)}};
         `
     });
-    jet.legend.rendered = false;
-    jet.jetData.backgroundColor = color2Hex.getRGB(flexlayout1Style.backgroundColor);
-    jet.refresh();
+    page.dispatch(addChild("jetChart", {
+            subscribeContext: function(e) {
+                if (e.rawStyle.backgroundColor) {
+                    var backgroundColor = color2Hex.getRGB(createSFCoreProp("backgroundColor", e.rawStyle.backgroundColor));
+                    jet.legend.rendered = false;
+                    jet.jetData.backgroundColor = backgroundColor;
+                    jet.refresh();
+                }
+            }
+        },
+        ".flexLayout .flexLayout-headerBar"
+    ));
 }
 
 function initListView(listView, data) {
     listView.rowHeight = 195;
     listView.itemCount = 0;
+    var itemIndex = 0;
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemPerformance();
         item.id = 200;
-        myListViewItem.addChild(item);
+        this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
+        myListViewItem.addChild(item, "child", "", function(style){
+            style.width = null;
+            return style;
+        });
         return myListViewItem;
     };
 

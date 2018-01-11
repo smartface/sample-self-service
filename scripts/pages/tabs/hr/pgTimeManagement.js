@@ -9,7 +9,11 @@ const Page_ = extend(Page)(
 		_super(this, {
 			onLoad: onLoad.bind(this)
 		});
-});
+		
+        this.onError = function(e){
+            console.log(e.message);
+        }
+    });
 
 function onLoad() { 
     this.headerBar.visible = true;

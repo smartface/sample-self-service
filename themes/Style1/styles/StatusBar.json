@@ -1,12 +1,19 @@
 {
   ".statusBar": {
-    "color": "#45495A",
+    "android": {
+      "color": "#45495A"
+    },
     "visible": true,
-    "font": {},
-    "flexProps": {},
-    "style": "LIGHTCONTENT",
+    "ios": {
+      "style": "LIGHTCONTENT"
+    },
     "&-login": {
-      "color": "#1775CF"
+      "android": {
+        "color": "#1775CF"
+      },
+      "ios": {
+        "style": "DEFAULT"
+      }
     }
   }
 }

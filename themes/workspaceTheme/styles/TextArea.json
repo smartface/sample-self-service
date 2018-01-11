@@ -1,0 +1,34 @@
+{
+    ".textArea": {
+        "height": 200,
+        "width": 200,
+        "touchEnabled": true,
+        "text": "TextArea",
+        "visible": true,
+        "backgroundColor": "#FFFFFF",
+        "alpha": 1,
+        "borderColor": "rgba(0,0,0,1)",
+        "borderWidth": 0,
+        "textColor": "rgba(0,0,0,1)",
+        "textAlignment": "TOPLEFT",
+        "font": {
+            "size": 16,
+            "bold": false,
+            "italic": false,
+            "family": "Lato"
+        },
+        "flexProps": {
+            "alignSelf": "AUTO",
+            "positionType": "RELATIVE"
+        },
+        "&-small": {
+            "width": 100
+        },
+        "&-medium": {
+            "width": 250
+        },
+        "&-large": {
+            "width": 350
+        }
+    }
+}

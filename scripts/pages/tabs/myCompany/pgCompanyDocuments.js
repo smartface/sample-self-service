@@ -6,6 +6,11 @@ const companyDocuments = require('../../../model/company-documents');
 const PageDesign = require("../../../ui/ui_pgCompanyDocuments");
 const ItemDocument = require('../../../components/ItemDocument');
 const DialogsLib = require("lib/ui/dialogs");
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
+const ListView = require('sf-core/ui/listview');
+const FlexLayout = require('sf-core/ui/flexlayout');
+const Color = require("sf-core/ui/color");
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
@@ -17,7 +22,13 @@ const Page_ = extend(PageDesign)(
         this.onShow = onShow.bind(this, this.onShow.bind(this));
 
         this.documents = [];
-        initListView(this.listView, this.documents);
+        Object.assign(
+            this.listView,
+            initListView(this.documents), {
+                rowHeight: 75,
+                itemIndex: 0,
+                refreshEnabled: false
+            });
         initHeaderBar.call(this);
     }
 );
@@ -42,27 +53,51 @@ function onShow(parentOnShow) {
     }
 }
 
-function initListView(listView, data) {
-    listView.rowHeight = 75;
-    listView.itemCount = data.length;
-    listView.refreshEnabled = false;
+function initListView(data) {
+    return {
+        itemCount: data.length,
+        from(props) {
+            return Object.assign(new ListView(), initListView(data), props);
+        },
+        reset() {
+            this.dispatch({
+                type: "removeChildren"
+            });
 
-    listView.onRowCreate = function() {
-        var myListViewItem = new ListViewItem();
-        var item = new ItemDocument();
-        item.id = 200;
-        myListViewItem.addChild(item);
-        return myListViewItem;
+            return Object.assign(this, initListView(data));
+        },
+        dispose() {
+            this.dispatch({
+                type: "removeChildren"
+            });
+
+            delete this.onRowCreate;
+            delete this.onRowBind;
+            delete this.items;
+            delete this.clear;
+            delete this.dispose;
+            delete this.from;
+        },
+        onRowCreate() {
+            var myListViewItem = new ListViewItem();
+            var item = new ItemDocument();
+            item.id = 200;
+            this.dispatch(addChild("item" + (++this.itemIndex), myListViewItem));
+            myListViewItem.addChild(item, "child", "", style => {
+                style.width = null;
+                return style;
+            });
+
+            return myListViewItem;
+        },
+        onRowBind(listViewItem, index) {
+            var item = listViewItem.findChildById(200);
+            item && (item.data = data[index]);
+        },
+        onRowSelected() {
+            Router.go("tabs/myCompany/documentDetail");
+        }
     };
-
-    listView.onRowBind = function(listViewItem, index) {
-        var item = listViewItem.findChildById(200);
-        item.data = data[index];
-    };
-
-    listView.onRowSelected = function() {
-        Router.go("tabs/myCompany/documentDetail");
-    }
 }
 
 function initHeaderBar() {

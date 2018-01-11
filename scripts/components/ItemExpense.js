@@ -8,7 +8,7 @@ const ItemExpenseDesign = require('library/ItemExpense');
 const ItemExpense = extend(ItemExpenseDesign)(
 	//constructor
 	function(_super, props, pageName){
-		delete ItemExpenseDesign.defaults.width
+		//delete ItemExpenseDesign.defaults.width
 		_super(this, props || ItemExpenseDesign.defaults );
 		this.pageName = pageName;
 		

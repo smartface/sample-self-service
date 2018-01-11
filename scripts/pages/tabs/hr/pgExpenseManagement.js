@@ -10,6 +10,8 @@ const expenseMangement = require("../../../model/expense-management");
 const PageDesign = require("../../../ui/ui_pgExpanseManagement");
 const Router = require("sf-core/router");
 const System = require("sf-core/device/system");
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
@@ -24,7 +26,12 @@ const Page_ = extend(PageDesign)(
         this.expenseList = [];
         initListView.call(this);
         initFloatingMenu.call(this);
+    
+        this.onError = function(e){
+            console.log(e.message);
+        }
     }
+    
 );
 
 var firstOnShow = true;
@@ -56,21 +63,25 @@ function initListView() {
     this.listView.rowHeight = 75;
     this.listView.itemCount = this.expenseList.length;
     this.listView.refreshEnabled = false;
+    var itemIndex = 0;
     this.listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemExpense();
         item.id = 200;
         myListViewItem.item = item;
-        myListViewItem.addChild(item);
+        this.dispatch(addChild("item"+(++itemIndex), myListViewItem));
+        myListViewItem.addChild(item,"child", "", function(style){
+            style.width = null;
+            return style;
+        });
         return myListViewItem;
     };
 
     this.listView.onRowBind = function(listViewItem, index) {
-        listViewItem.item.expense = this.expenseList[index];
+        listViewItem.findChildById(200).expense = this.expenseList[index];
     }.bind(this);
 
     this.listView.onRowSelected = function() {
-
     };
 }
 

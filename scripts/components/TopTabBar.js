@@ -109,7 +109,7 @@ function setSize(tabBar, newSize) {
 				tabSelected(tabBar, this.index);
 			}.bind({index: i})
 		});
-		tabBar.addChild(tabBar.children[PREFIX+i]);
+		tabBar.addChild(tabBar.children[PREFIX+i], PREFIX+i);
 	}
 	tabBar.applyLayout();
 	invalidate(tabBar);

@@ -1,6 +1,7 @@
 /* 
 		You can modify its contents.
 */
+/*global lang*/
 const extend = require('js-base/core/extend');
 
 const ItemSalaryDesign = require('library/ItemSalary');
@@ -9,8 +10,8 @@ const Salary = require("../objects/Salary")
 const ItemSalary = extend(ItemSalaryDesign)(
 	//constructor
 	function(_super, props, pageName){
-		delete ItemSalaryDesign.defaults.width;
-		_super(this, props || ItemSalaryDesign.defaults);
+		//delete ItemSalaryDesign.defaults.width;
+		_super(this, props);
 		this.pageName = pageName;
 		this.containerBasic.title.text = lang["pgSalary.basic"];
 		this.containerProposal.title.text = lang["pgSalary.proposalReason"];
