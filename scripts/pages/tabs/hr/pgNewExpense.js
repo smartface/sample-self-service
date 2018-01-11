@@ -10,7 +10,6 @@ const PageDesign = require("../../../ui/ui_pgNewExpense");
 const Picker = require("sf-core/ui/picker");
 const Router = require("sf-core/router");
 const ScrollView = require("sf-core/ui/scrollview");
-const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -21,6 +20,10 @@ const Page_ = extend(PageDesign)(
 
 		initColors.call(this);
 		initCallbacks.call(this);
+		
+        this.onError = function(e){
+            console.log(e.message);
+        }
 	}
 );
 

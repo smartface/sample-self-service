@@ -7,6 +7,8 @@ const ListViewItem = require('sf-core/ui/listviewitem');
 const ItemEmploymentHistory = require('../../../components/ItemEmploymentHistory');
 const employmentHistory = require('../../../model/employment-history');
 const Employment = require('../../../objects/Employment');
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 
 var PageDesign = require("../../../ui/ui_pgEmploymentHistory");
 
@@ -51,20 +53,27 @@ function onLoad(parentOnLoad) {
     this.layoutHeaderBar.headerBarTitle.text = lang["pgEmploymentHistory.pageTitle"];
 }
 
+var itemIndex = 0;
+
 function initListView(listView, data) {
     listView.rowHeight = 350;
     listView.itemCount = 0;
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var employmentItem = new ItemEmploymentHistory();
-        employmentItem.id = 200;
+        employmentItem.id = 234;
         myListViewItem.item = employmentItem;
-        myListViewItem.addChild(employmentItem);
+        this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
+        myListViewItem.addChild(employmentItem, "employment_"+itemIndex, "", function(style){
+            style.width = null;
+            
+            return style;
+        });
         return myListViewItem;
     };
 
     listView.onRowBind = function(listViewItem, index) {
-        var item = listViewItem.findChildById(200);
+        var item = listViewItem.findChildById(234);
         item.employment = data[index];
     };
 

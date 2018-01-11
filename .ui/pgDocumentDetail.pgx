@@ -3,115 +3,53 @@
 		{
 			"type": "Page",
 			"id": "89ce-578e-c47c-44d6",
-			"themeProps": {},
+			"initialized": true,
 			"userProps": {
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
 			"className": ".page",
-			"version": "6.5.2",
+			"version": "6.6.0",
 			"props": {
-				"backgroundColor": "#EEEEEE",
-				"orientation": "PORTRAIT",
+				"name": "pgDocumentDetail",
 				"children": [
 					"bac5-862b-7730-58d5",
 					"4204-9c42-426b-7701",
 					"65e0-23e5-f035-1275"
 				],
-				"flexProps": {
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"direction": "INHERIT",
-					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
-					"justifyContent": "FLEX_START"
-				},
 				"parent": null,
-				"name": "pgDocumentDetail",
-				"layout": {
-					"width": 234.375,
-					"height": 376.875
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 4,
-					"flexDirection": 0,
-					"flexWrap": 0,
-					"justifyContent": 0
-				},
-				"font": {},
-				"width": 468.75,
-				"height": 753.75
+				"orientation": "PORTRAIT"
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "bac5-862b-7730-58d5",
-			"themeProps": {},
-			"userProps": {
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
-			},
-			"className": ".statusBar",
+			"userProps": {},
+			"className": "",
 			"props": {
-				"color": "#45495A",
-				"visible": true,
+				"name": "statusBar",
 				"children": [],
 				"parent": "89ce-578e-c47c-44d6",
-				"isRemovable": false,
-				"name": "statusBar",
-				"layout": {
-					"height": 25
-				},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"height": 20
+				"isRemovable": false
 			}
 		},
 		{
 			"type": "HeaderBar",
 			"id": "4204-9c42-426b-7701",
-			"themeProps": {},
 			"userProps": {
-				"title": "newPage001",
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"title": "newPage001"
 			},
 			"className": ".headerBar",
 			"props": {
+				"name": "headerBar",
 				"title": "newPage001",
-				"titleColor": "#FFFFFF",
-				"visible": true,
-				"backgroundColor": "#45495A",
 				"children": [],
 				"parent": "89ce-578e-c47c-44d6",
-				"isRemovable": false,
-				"name": "headerBar",
-				"layout": {
-					"height": 55
-				},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"height": 44
+				"isRemovable": false
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "65e0-23e5-f035-1275",
-			"themeProps": {
-				"Sizes": "Main"
-			},
 			"userProps": {
 				"usePageVariable": true,
 				"width": null,
@@ -119,154 +57,52 @@
 				"flexProps": {
 					"alignItems": "CENTER",
 					"justifyContent": "CENTER"
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
+				}
 			},
 			"className": ".flexLayout .flexLayout-main",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"marginLeft": 10,
-				"marginRight": 10,
+				"name": "mainLayout",
+				"usePageVariable": true,
 				"children": [
 					"ec33-5436-0955-5eda",
 					"0cb4-4626-3ef8-a5a2"
 				],
-				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
-					"justifyContent": "CENTER",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"name": "mainLayout",
-				"parent": "89ce-578e-c47c-44d6",
-				"layout": {
-					"marginLeft": 12.5,
-					"marginRight": 12.5,
-					"borderWidth": 0
-				},
-				"flex": {
-					"alignContent": 4,
-					"alignItems": 2,
-					"justifyContent": 1,
-					"flexWrap": 0,
-					"flexDirection": 0,
-					"positionType": 0,
-					"flexGrow": 1
-				},
-				"font": {}
+				"parent": "89ce-578e-c47c-44d6"
 			}
 		},
 		{
 			"type": "ImageView",
 			"id": "ec33-5436-0955-5eda",
-			"themeProps": {},
 			"userProps": {
 				"image": "add_photo.png",
 				"height": 100,
 				"width": 100,
 				"imageFillType": "ASPECTFIT",
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
+			"className": ".imageView",
 			"props": {
 				"name": "imageview42",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"width": 100,
-				"height": 100,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"flex": {
-					"positionType": 0
-				},
-				"parent": "65e0-23e5-f035-1275",
 				"children": [],
-				"layout": {
-					"width": 125,
-					"height": 125,
-					"borderWidth": 0
-				},
-				"image": "add_photo.png",
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface80/selffservice/ui-editor/img/add_photo.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1.25&brandModel=iPhone%207?random=0.7822315029781759"
+				"parent": "65e0-23e5-f035-1275"
 			}
 		},
 		{
 			"type": "Label",
 			"id": "0cb4-4626-3ef8-a5a2",
-			"themeProps": {},
 			"userProps": {
 				"textAlignment": "MIDCENTER",
 				"text": "Please Upload Your Document",
 				"textColor": "rgba( 155, 155, 155, 1 )",
-				"layout": {},
-				"flex": {},
 				"font": {},
-				"flexProps": {},
-				"defaults": {}
+				"flexProps": {}
 			},
+			"className": ".label",
 			"props": {
 				"name": "label322",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
-				"width": 250,
-				"height": 70,
-				"touchEnabled": true,
 				"text": "Please Upload Your Document",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 155, 155, 155, 1 )",
-				"textAlignment": "MIDCENTER",
-				"font": {
-					"size": 16,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flex": {
-					"positionType": 0
-				},
-				"parent": "65e0-23e5-f035-1275",
 				"children": [],
-				"layout": {
-					"width": 312.5,
-					"height": 87.5,
-					"borderWidth": 0
-				}
+				"parent": "65e0-23e5-f035-1275"
 			}
 		}
 	]

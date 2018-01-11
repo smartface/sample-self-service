@@ -8,7 +8,9 @@ const DialogsLib = require("lib/ui/dialogs");
 var loadingIndicator = DialogsLib.createLoadingDialog();
 const color2Hex = require("../../../lib/color2Hex");
 const JET = require('sf-extension-oracle-jet');
-const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
+const createSFCoreProp = require("@smartface/contx/lib/smartface/sfCorePropFactory").createSFCoreProp;
 
 const Page_ = extend(PageDesign)(
     function(_super) {
@@ -59,11 +61,6 @@ function loadChart(series) {
         webView: page.wvChart
     });
     page.wvChart.bounceEnabled = false;
-    const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
-        width: null,
-        flexGrow: null
-    });
-
     Object.assign(jet, {
         series: [{
             name: lang.performance,
@@ -105,21 +102,38 @@ function loadChart(series) {
         items.observables.valueFormatsValue = {y: {converter: ko.toJS(yAxisConverter)}};
         `
     });
-    jet.legend.rendered = false;
-    jet.jetData.backgroundColor = color2Hex.getRGB(flexlayout1Style.backgroundColor);
-    jet.refresh();
+
+    page.dispatch(addChild("jetChart", {
+            subscribeContext: function(e) {
+                //console.log("RAWSTYLES" + JSON.stringify(e));
+                if (e.rawStyle.backgroundColor) {
+                    var backgroundColor = color2Hex.getRGB(createSFCoreProp("backgroundColor", e.rawStyle.backgroundColor));
+                    //console.log("JET_BACKGROUND" + backgroundColor);
+                    jet.legend.rendered = false;
+                    jet.jetData.backgroundColor = backgroundColor;
+                    jet.refresh();
+                }
+            }
+        },
+        ".flexLayout .flexLayout-headerBar"
+    ));
 }
 
 function initListView(listView, data) {
     listView.itemCount = 0;
     listView.rowHeight = 80;
     listView.refreshEnabled = false;
+    var itemIndex = 0;
 
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var salaryItem = new ItemSalary();
         salaryItem.id = 200;
-        myListViewItem.addChild(salaryItem);
+        this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
+        myListViewItem.addChild(salaryItem, "child", "", function(style){
+            style.width = null;
+            return style;
+        });
         return myListViewItem;
     };
 

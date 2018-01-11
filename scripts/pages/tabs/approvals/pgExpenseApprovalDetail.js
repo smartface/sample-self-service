@@ -11,9 +11,13 @@ const Page_ = extend(PageDesign)(
 		_super(this, params);
 		this._superOnShow = this.onShow;
 		this.onShow = onShow.bind(this);
-		wrapContentIntoScroll.call(this);
-    }
+		this.onLoad = onLoad.bind(this, this.onLoad);
+	}
 );
+function onLoad(parentOnLoad){
+	if (typeof parentOnLoad === "function") parentOnLoad();
+	wrapContentIntoScroll.call(this);
+}
 
 function onShow(detail) {
 	if (typeof this._superOnShow === "function") this._superOnShow();
@@ -36,13 +40,13 @@ function initTexts(detail) {
 	this.approve.text = lang["pgExpenseApprovalDetail.approve"];
 	this.reject.text = lang["pgExpenseApprovalDetail.reject"];
 	this.note.text = "-";
-	
+
 	if (detail) {
 		this.approve.visible = !detail.isApproved;
-		this.reject.visible  = !detail.isApproved;
-		
-		this.avatar.image  = detail.image;
-		this.name.text     = detail.name;
+		this.reject.visible = !detail.isApproved;
+
+		this.avatar.image = detail.image;
+		this.name.text = detail.name;
 		this.position.text = detail.position;
 	}
 }
@@ -54,11 +58,17 @@ function initHeaderBar() {
 
 function wrapContentIntoScroll() {
 	this.scrollView = new ScrollView({
-		flexGrow: 1	
+		flexGrow: 1
 	});
 	this.layout.removeChild(this.mainLayout);
-	this.scrollView.addChild(this.mainLayout);
-	this.layout.addChild(this.scrollView);
+	this.scrollView.addChild(this.mainLayout, "mainLayout", ".flexlayout", {
+		width: null,
+		height: 810
+	});
+	this.layout.addChild(this.scrollView, "scrollView", "", {
+		flexGrow: 1,
+		width: null
+	});
 }
 
 module && (module.exports = Page_);

@@ -7,6 +7,8 @@ const user = require('../../../model/user');
 const PageDesign = require("../../../ui/ui_pgEmployeeDirectory");
 const ItemUser = require('../../../components/ItemUser');
 const DialogsLib = require("lib/ui/dialogs");
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
@@ -47,16 +49,22 @@ function initListView(listView, data) {
     listView.rowHeight = 75;
     listView.itemCount = data.length;
     listView.refreshEnabled = false;
+    var itemIndex = 0;
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemUser();
         item.id = 200;
         myListViewItem.item = item;
-        myListViewItem.addChild(item);
+        this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
+        myListViewItem.addChild(item, "child", "", function(style){
+            style.width = null;
+            return style;
+        });
         return myListViewItem;
     };
     listView.onRowBind = function(listViewItem, index) {
-        listViewItem.item.user = data[index];
+        var item = listViewItem && listViewItem.findChildById(200);
+        item && (item.user = data[index]);
     };
 
     listView.onRowSelected = function() {}

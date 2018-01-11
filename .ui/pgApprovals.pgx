@@ -4,83 +4,54 @@
 			"type": "Page",
 			"id": "0ca9-6daa-ace6-f99f",
 			"initialized": true,
-			"themeProps": {
-				"Highlights": "Default"
-			},
 			"userProps": {
 				"backgroundColor": "rgba( 226, 226, 228, 1 )"
 			},
 			"className": ".page",
-			"version": "6.5.2",
+			"version": "6.6.0",
 			"props": {
-				"backgroundColor": "rgba( 226, 226, 228, 1 )",
-				"orientation": "PORTRAIT",
-				"flexProps": {
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"direction": "INHERIT",
-					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
-					"justifyContent": "FLEX_START"
-				},
-				"parent": null,
+				"name": "pgApprovals",
 				"children": [
 					"a48a-6975-e796-cd4b",
 					"f154-720c-c335-9228",
 					"7570-e5dc-e94c-bb2c",
 					"1997-471e-fd1e-69e5"
 				],
-				"name": "pgApprovals",
-				"width": 161.25,
-				"height": 286.81
+				"parent": null,
+				"orientation": "PORTRAIT"
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "a48a-6975-e796-cd4b",
-			"themeProps": {
-				"Highlights": "Default"
-			},
 			"userProps": {},
-			"className": ".statusBar",
+			"className": "",
 			"props": {
-				"color": "#45495A",
-				"visible": true,
-				"parent": "0ca9-6daa-ace6-f99f",
+				"name": "statusBar",
 				"children": [],
-				"isRemovable": false,
-				"name": "statusBar"
+				"parent": "0ca9-6daa-ace6-f99f",
+				"isRemovable": false
 			}
 		},
 		{
 			"type": "HeaderBar",
 			"id": "f154-720c-c335-9228",
-			"themeProps": {
-				"Highlights": "Default"
-			},
 			"userProps": {
 				"title": "newPage001",
 				"visible": false
 			},
 			"className": ".headerBar",
 			"props": {
+				"name": "headerBar",
 				"title": "newPage001",
-				"titleColor": "#FFFFFF",
-				"visible": false,
-				"backgroundColor": "#45495A",
-				"parent": "0ca9-6daa-ace6-f99f",
 				"children": [],
-				"isRemovable": false,
-				"name": "headerBar"
+				"parent": "0ca9-6daa-ace6-f99f",
+				"isRemovable": false
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "7570-e5dc-e94c-bb2c",
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -95,42 +66,16 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"marginBottom": 10,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "CENTER",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flexlayout137",
-				"parent": "0ca9-6daa-ace6-f99f",
 				"children": [
 					"3d46-361a-cc03-02b1"
-				]
+				],
+				"parent": "0ca9-6daa-ace6-f99f"
 			}
 		},
 		{
 			"type": "ImageView",
 			"id": "3d46-361a-cc03-02b1",
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": 100,
@@ -139,53 +84,23 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": null,
-				"height": 100,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "comingSoon",
-				"parent": "7570-e5dc-e94c-bb2c",
-				"children": []
+				"usePageVariable": true,
+				"children": [],
+				"parent": "7570-e5dc-e94c-bb2c"
 			}
 		},
 		{
 			"type": "ListView",
 			"id": "1997-471e-fd1e-69e5",
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
 			"userProps": {},
 			"className": ".listView",
 			"props": {
-				"height": 200,
-				"width": 200,
-				"touchEnabled": true,
-				"multiline": false,
-				"rowHeight": 60,
-				"itemCount": 3,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "listView1",
+				"children": [],
 				"parent": "0ca9-6daa-ace6-f99f",
-				"children": []
+				"itemCount": 3,
+				"rowHeight": 60
 			}
 		}
 	]

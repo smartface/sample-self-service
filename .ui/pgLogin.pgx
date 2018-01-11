@@ -4,9 +4,6 @@
 			"type": "Page",
 			"id": "21ae-2c3a-a5a2-518c",
 			"initialized": true,
-			"themeProps": {
-				"Highlights": "Login"
-			},
 			"userProps": {
 				"flexProps": {
 					"justifyContent": "SPACE_AROUND",
@@ -14,7 +11,7 @@
 				}
 			},
 			"className": ".page .page-login",
-			"version": "6.5.2",
+			"version": "6.6.0",
 			"props": {
 				"name": "pgLogin",
 				"children": [
@@ -32,12 +29,7 @@
 		{
 			"type": "StatusBar",
 			"id": "896e-230e-4261-6c04",
-			"themeProps": {
-				"Highlights": "Login"
-			},
-			"userProps": {
-				"style": "LIGHTCONTENT"
-			},
+			"userProps": {},
 			"className": ".statusBar .statusBar-login",
 			"props": {
 				"name": "statusBar",
@@ -48,9 +40,6 @@
 		{
 			"type": "HeaderBar",
 			"id": "e795-e624-e7ad-2b03",
-			"themeProps": {
-				"Highlights": "Login"
-			},
 			"userProps": {
 				"title": "newPage001"
 			},
@@ -65,12 +54,8 @@
 		{
 			"type": "Label",
 			"id": "f959-9458-1a9f-b32a",
-			"themeProps": {
-				"Sizes": "Login-Large",
-				"Highlights": "Login-Normal"
-			},
 			"userProps": {
-				"text": "EMPLOYEE\\nSELF SERVICE",
+				"text": "EMPLOYEE\nSELF SERVICE",
 				"textAlignment": "MIDCENTER",
 				"width": null,
 				"height": null,
@@ -80,11 +65,11 @@
 					"flexGrow": 5
 				}
 			},
-			"className": ".label .label-login.large .label-login",
+			"className": ".label .label-login.large",
 			"props": {
-				"name": "appName",
-				"text": "EMPLOYEE\\nSELF SERVICE",
+				"text": "EMPLOYEE\nSELF SERVICE",
 				"usePageVariable": true,
+				"name": "appName",
 				"children": [],
 				"parent": "21ae-2c3a-a5a2-518c"
 			}
@@ -92,10 +77,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "5eef-6028-947b-4ed6",
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -119,10 +100,6 @@
 		{
 			"type": "FlexLayout",
 			"id": "aa9f-9d81-c51a-e6d4",
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -148,10 +125,6 @@
 		{
 			"type": "Button",
 			"id": "3939-9e86-aa02-725f",
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
 			"userProps": {
 				"usePageVariable": true,
 				"text": "SIGN IN",
@@ -174,10 +147,6 @@
 		{
 			"type": "ImageView",
 			"id": "8bf4-67c8-9537-7dff",
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
 			"userProps": {
 				"left": 0,
 				"right": 0,
@@ -203,10 +172,6 @@
 		{
 			"type": "ImageView",
 			"id": "13d3-2531-9ee4-7e52",
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
 			"userProps": {
 				"usePageVariable": true,
 				"width": null,
@@ -234,10 +199,6 @@
 				"page": "__library__",
 				"id": "e9f0-d2c8-f908-88e9"
 			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
 			"userProps": {
 				"height": 60,
 				"left": 0,
@@ -248,9 +209,6 @@
 				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE"
-				},
-				"flex": {
-					"positionType": 0
 				}
 			},
 			"className": ".flexLayout",
@@ -262,123 +220,12 @@
 			}
 		},
 		{
-			"type": "Label",
-			"id": "71a3-2495-1ac2-36e0",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Login-Small",
-				"Highlights": "InputLayoutNormal"
-			},
-			"userProps": {
-				"text": "",
-				"usePageVariable": true,
-				"width": null,
-				"height": 20,
-				"marginLeft": 10,
-				"marginRight": 10
-			},
-			"className": ".label .label-login.small .label-textboxWithLine.normal",
-			"props": {
-				"name": "textboxInfo",
-				"text": "",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "adeb-78f5-db42-ff91"
-			}
-		},
-		{
-			"type": "TextBox",
-			"id": "be29-82d9-5bf8-8581",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"text": "",
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".textBox",
-			"props": {
-				"name": "innerTextbox",
-				"text": "",
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"font": {
-					"size": 16,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"children": [],
-				"parent": "adeb-78f5-db42-ff91"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "1c52-41b3-1d96-c909",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
-			"userProps": {
-				"width": null,
-				"height": 1,
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"flexProps": {
-					"flexGrow": null
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"name": "textboxBottomLine",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "adeb-78f5-db42-ff91"
-			}
-		},
-		{
 			"type": "FlexLayout",
 			"id": "e74a-9da0-0f22-9a9b",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
 				"id": "e9f0-d2c8-f908-88e9"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
 			},
 			"userProps": {
 				"height": 60,
@@ -390,9 +237,6 @@
 				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE"
-				},
-				"flex": {
-					"positionType": 0
 				}
 			},
 			"className": ".flexLayout",
@@ -401,113 +245,6 @@
 				"usePageVariable": true,
 				"children": [],
 				"parent": "5eef-6028-947b-4ed6"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "570f-5707-8554-6326",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Login-Small",
-				"Highlights": "InputLayoutNormal"
-			},
-			"userProps": {
-				"text": "",
-				"usePageVariable": true,
-				"width": null,
-				"height": 20,
-				"marginLeft": 10,
-				"marginRight": 10
-			},
-			"className": ".label .label-login.small .label-textboxWithLine.normal",
-			"props": {
-				"name": "label274",
-				"text": "",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "e74a-9da0-0f22-9a9b"
-			}
-		},
-		{
-			"type": "TextBox",
-			"id": "4b4e-8fa3-e87f-98fb",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"text": "",
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".textBox",
-			"props": {
-				"name": "textbox1",
-				"text": "",
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"font": {
-					"size": 16,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"children": [],
-				"parent": "e74a-9da0-0f22-9a9b"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "a58a-f8ca-2013-5824",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
-			"userProps": {
-				"width": null,
-				"height": 1,
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"flexProps": {
-					"flexGrow": null
-				},
-				"layout": {},
-				"flex": {},
-				"font": {},
-				"defaults": {}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"name": "flexlayout201",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "e74a-9da0-0f22-9a9b"
 			}
 		}
 	]

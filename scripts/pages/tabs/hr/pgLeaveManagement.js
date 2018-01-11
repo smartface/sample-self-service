@@ -11,7 +11,9 @@ const JET = require('sf-extension-oracle-jet');
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const color2Hex = require("../../../lib/color2Hex");
 const mixinDeep = require('mixin-deep');
-
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
+const createSFCoreProp = require("@smartface/contx/lib/smartface/sfCorePropFactory").createSFCoreProp;
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
 const Page_ = extend(PageDesign)(
@@ -31,6 +33,10 @@ const Page_ = extend(PageDesign)(
         initListView(this.listView, this);
         initTopTabBar.call(this);
         initHeaderBar.call(this);
+        
+        this.onError = function(e){
+            console.log(e.message);
+        }
     }
 );
 
@@ -39,7 +45,7 @@ const Page_ = extend(PageDesign)(
 function onShow(parentOnShow) {
     parentOnShow();
     const page = this;
-
+    this.topTabBar.currentIndex = 0;
     if (page.firstOnShow) {
         page.firstOnShow = false;
         DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
@@ -82,37 +88,56 @@ function loadChart(leaveRequestChartData) {
         jetPath: "assets://jet/",
         webView: page.wvChart
     });
+    
+    page.dispatch(addChild("jetChart", 
+        {
+            subscribeContext: function(e){
+                if(e.rawStyle.backgroundColor){
+                    //console.log("JET_BACKGROUND->"+ e.rawStyle.backgroundColor);
+                    var backgroundColor = color2Hex.getRGB(createSFCoreProp("backgroundColor",e.rawStyle.backgroundColor));
+                    leaveRequestChartData = mixinDeep(leaveRequestChartData, {
+                        plotArea: {
+                            backgroundColor: backgroundColor
+                        },
+                        legend: {
+                            backgroundColor: backgroundColor,
+                        }
+                    });
+                    Object.assign(jet, leaveRequestChartData);
+                    jet.legend.rendered = false;
+                    jet.jetData.backgroundColor = backgroundColor;
+                    jet.refresh();        
+                }
+            }
+        },
+        ".flexLayout .flexLayout-headerBar"
+    ));
+    
     page.wvChart.visible = true;
     page.wvChart.bounceEnabled = false;
-    const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
-        width: null,
-        flexGrow: null
-    });
-    var backgroundColor = color2Hex.getRGB(flexlayout1Style.backgroundColor);
-    leaveRequestChartData = mixinDeep(leaveRequestChartData, {
-        plotArea: {
-            backgroundColor: backgroundColor
-        },
-        legend: {
-            backgroundColor: backgroundColor,
-        }
-    });
-    Object.assign(jet, leaveRequestChartData);
-    jet.legend.rendered = false;
-    jet.jetData.backgroundColor = backgroundColor;
-    jet.refresh();
+    // const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
+    //     width: null,
+    //     flexGrow: null
+    // });
 }
+
+
 
 function initListView(listView, dataHolder) {
     listView.rowHeight = 135;
     listView.itemCount = dataHolder.data.length;
     listView.refreshEnabled = false;
+    var  itemIndex = 0;
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemLeaveManagement();
         item.id = 200;
         myListViewItem.item = item;
-        myListViewItem.addChild(item);
+        this.dispatch(addChild("item"+(++itemIndex), myListViewItem));
+        myListViewItem.addChild(item, "child", "", function(style){
+            style.width = null;
+            return style;
+        });
         item.updateCallback = function() {
             listView.itemCount = dataHolder.data.length;
             listView.refreshData();
@@ -120,7 +145,8 @@ function initListView(listView, dataHolder) {
         return myListViewItem;
     };
     listView.onRowBind = function(listViewItem, index) {
-        listViewItem.item.request = dataHolder.data[index];
+        var item = listViewItem.findChildById(200);
+        item && (item.request = dataHolder.data[index]);
     };
 }
 
