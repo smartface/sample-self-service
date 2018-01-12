@@ -2,23 +2,32 @@ const mcs = require("../lib/mcs");
 const http = require("sf-core/net/http");
 const Http = new http();
 const converterJSON = require("../lib/convertFileToJsonObj");
+const Timer = require("sf-core/global/timer");
+
 
 exports.getEmploymentHistory = getEmploymentHistory;
 
 function getEmploymentHistory(callback) {
-    try {
-        var filePath = "../mock/getEmploymentHistory.json";
 
-        var JSONobj = converterJSON.convertFileToJson(filePath);
-        if (JSONobj) {
+    var myTimer = Timer.setTimeout({
+        task: function() {
+            try {
+                var filePath = "../mock/getEmploymentHistory.json";
 
-            callback && callback(null, JSONobj);
-        }
-        else {
-            callback(JSONobj);
-        }
-    }
-    finally {}
+                var JSONobj = converterJSON.convertFileToJson(filePath);
+                if (JSONobj) {
+
+                    callback && callback(null, JSONobj);
+                }
+                else {
+                    callback(JSONobj);
+                }
+            }
+            finally {}
+        },
+        delay: 200
+    });
+
 }
 
 // function getEmploymentHistory(request, callback) {

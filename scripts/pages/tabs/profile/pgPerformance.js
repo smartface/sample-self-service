@@ -42,6 +42,7 @@ function onShow(parentOnShow) {
             DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
             var series = [];
             performanceList.forEach((item) => {
+              //  console.log(" " + item.overallScore);
                 series.push(item.overallScore);
             });
             loadChart.call(this, series);
@@ -104,10 +105,13 @@ function loadChart(series) {
         items.observables.valueFormatsValue = {y: {converter: ko.toJS(yAxisConverter)}};
         `
     });
+
     page.dispatch(addChild("jetChart", {
             subscribeContext: function(e) {
+                //console.log("RAWSTYLES" + JSON.stringify(e));
                 if (e.rawStyle.backgroundColor) {
                     var backgroundColor = color2Hex.getRGB(createSFCoreProp("backgroundColor", e.rawStyle.backgroundColor));
+                    //console.log("JET_BACKGROUND" + backgroundColor);
                     jet.legend.rendered = false;
                     jet.jetData.backgroundColor = backgroundColor;
                     jet.refresh();

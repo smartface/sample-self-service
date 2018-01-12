@@ -4,26 +4,34 @@
 // const File = require("sf-core/io/file");
 // const FileStream = require("sf-core/io/filestream");
 const converterJSON = require("../lib/convertFileToJsonObj");
+const Timer = require("sf-core/global/timer");
 
 exports.getSalaryList = getSalaryList;
 
 function getSalaryList(request, callback) {
-    if (!callback && request) {
-        callback = request;
-        request = null;
-    }
-    try {
-        var filePath = "../mock/getSalaryList.json";
 
-        var JSONobj = converterJSON.convertFileToJson(filePath);
-        if (JSONobj) {
-            callback && callback(null, JSONobj);
-        }
-        else {
-            callback(JSONobj);
-        }
-    }
-    finally {}
+    var myTimer = Timer.setTimeout({
+        task: function() {
+            if (!callback && request) {
+                callback = request;
+                request = null;
+            }
+            try {
+                var filePath = "../mock/getSalaryList.json";
+
+                var JSONobj = converterJSON.convertFileToJson(filePath);
+                if (JSONobj) {
+                    callback && callback(null, JSONobj);
+                }
+                else {
+                    callback(JSONobj);
+                }
+            }
+            finally {}
+        },
+        delay: 200
+    });
+
 }
 // function getSalaryList(request, callback) {
 //     if (!callback && request) {

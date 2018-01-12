@@ -3,6 +3,7 @@
 // const Http = new http();
 const getImage = require("../lib/getImage");
 const converterJSON = require("../lib/convertFileToJsonObj");
+const Timer = require("sf-core/global/timer");
 
 exports.deleteApprovedLeaveRequest = deleteApprovedLeaveRequest;
 exports.deleteWaitingLeaveRequest = deleteWaitingLeaveRequest;
@@ -17,24 +18,29 @@ exports.getLeaveRequestsChart = getLeaveRequestsChart;
 
 function deleteApprovedLeaveRequest(request, callback) {
 
-    if (!callback && request) {
-        callback = request;
-        request = null;
-    }
-    try {
-        var filePath = "../mock/deleteApprovedLeaveRequest.json";
+    var myTimer = Timer.setTimeout({
+        task: function() {
+            if (!callback && request) {
+                callback = request;
+                request = null;
+            }
+            try {
+                var filePath = "../mock/deleteApprovedLeaveRequest.json";
 
-        var JSONobj = converterJSON.convertFileToJson(filePath);
-        if (JSONobj) {
+                var JSONobj = converterJSON.convertFileToJson(filePath);
+                if (JSONobj) {
 
-            callback && callback(null, JSONobj);
-        }
-        else {
-            callback(JSONobj);
-        }
-    }
-    finally {}
+                    callback && callback(null, JSONobj);
+                }
+                else {
+                    callback(JSONobj);
+                }
+            }
+            finally {}
 
+        },
+        delay: 200
+    });
     // if (!callback && request) {
     //     callback = request;
     //     request = null;
@@ -70,24 +76,29 @@ function deleteApprovedLeaveRequest(request, callback) {
 
 function deleteWaitingLeaveRequest(request, callback) {
 
-    if (!callback && request) {
-        callback = request;
-        request = null;
-    }
+    var myTimer = Timer.setTimeout({
+        task: function() {
+            if (!callback && request) {
+                callback = request;
+                request = null;
+            }
 
-    try {
-        var filePath = "../mock/deleteWaitingLeaveRequest.json";
+            try {
+                var filePath = "../mock/deleteWaitingLeaveRequest.json";
 
-        var JSONobj = converterJSON.convertFileToJson(filePath);
-        if (JSONobj) {
+                var JSONobj = converterJSON.convertFileToJson(filePath);
+                if (JSONobj) {
 
-            callback && callback(null, JSONobj);
-        }
-        else {
-            callback(JSONobj);
-        }
-    }
-    finally {}
+                    callback && callback(null, JSONobj);
+                }
+                else {
+                    callback(JSONobj);
+                }
+            }
+            finally {}
+        },
+        delay: 200
+    });
 
     // if (!callback && request) {
     //     callback = request;
@@ -123,24 +134,29 @@ function deleteWaitingLeaveRequest(request, callback) {
 
 function deleteRejectedLeaveRequest(request, callback) {
 
-    if (!callback && request) {
-        callback = request;
-        request = null;
-    }
+    var myTimer = Timer.setTimeout({
+        task: function() {
+            if (!callback && request) {
+                callback = request;
+                request = null;
+            }
 
-    try {
-        var filePath = "../mock/deleteRejectedLeaveRequest.json";
+            try {
+                var filePath = "../mock/deleteRejectedLeaveRequest.json";
 
-        var JSONobj = converterJSON.convertFileToJson(filePath);
-        if (JSONobj) {
+                var JSONobj = converterJSON.convertFileToJson(filePath);
+                if (JSONobj) {
 
-            callback && callback(null, JSONobj);
-        }
-        else {
-            callback(JSONobj);
-        }
-    }
-    finally {}
+                    callback && callback(null, JSONobj);
+                }
+                else {
+                    callback(JSONobj);
+                }
+            }
+            finally {}
+        },
+        delay: 200
+    });
 
     // if (!callback && request) {
     //     callback = request;
@@ -176,31 +192,36 @@ function deleteRejectedLeaveRequest(request, callback) {
 
 function getPendingLeaveApprovals(request, callback) {
 
-    if (!callback && request) {
-        callback = request;
-        request = null;
-    }
+    var myTimer = Timer.setTimeout({
+        task: function() {
+            if (!callback && request) {
+                callback = request;
+                request = null;
+            }
 
-    try {
-        var filePath = "../mock/getPendingLeaveApprovals.json";
+            try {
+                var filePath = "../mock/getPendingLeaveApprovals.json";
 
-        var JSONobj = converterJSON.convertFileToJson(filePath);
-        if (JSONobj) {
+                var JSONobj = converterJSON.convertFileToJson(filePath);
+                if (JSONobj) {
 
-            var JSONstringify = JSON.stringify(JSONobj);
-            var JSONobjparsed = JSON.parse(JSONstringify);
+                    var JSONstringify = JSON.stringify(JSONobj);
+                    var JSONobjparsed = JSON.parse(JSONstringify);
 
-            JSONobjparsed.forEach(function(item) {
-                item.image = getImage(item.image);
-            });
+                    JSONobjparsed.forEach(function(item) {
+                        item.image = getImage(item.image);
+                    });
 
-            callback && callback(null, JSONobjparsed);
-        }
-        else {
-            callback(JSONobjparsed);
-        }
-    }
-    finally {}
+                    callback && callback(null, JSONobjparsed);
+                }
+                else {
+                    callback(JSONobjparsed);
+                }
+            }
+            finally {}
+        },
+        delay: 200
+    });
 
     // if (!callback && request) {
     //     callback = request;
@@ -239,31 +260,38 @@ function getPendingLeaveApprovals(request, callback) {
 
 function getApprovedLeaveApprovals(request, callback) {
 
-    if (!callback && request) {
-        callback = request;
-        request = null;
-    }
 
-    try {
-        var filePath = "../mock/getApprovedLeaveApprovals.json";
 
-        var JSONobj = converterJSON.convertFileToJson(filePath);
-        if (JSONobj) {
+    var myTimer = Timer.setTimeout({
+        task: function() {
+            if (!callback && request) {
+                callback = request;
+                request = null;
+            }
 
-            var JSONstringify = JSON.stringify(JSONobj);
-            var JSONobjparsed = JSON.parse(JSONstringify);
+            try {
+                var filePath = "../mock/getApprovedLeaveApprovals.json";
 
-            JSONobjparsed.forEach(function(item) {
-                item.image = getImage(item.image);
-            });
+                var JSONobj = converterJSON.convertFileToJson(filePath);
+                if (JSONobj) {
 
-            callback && callback(null, JSONobjparsed);
-        }
-        else {
-            callback(JSONobjparsed);
-        }
-    }
-    finally {}
+                    var JSONstringify = JSON.stringify(JSONobj);
+                    var JSONobjparsed = JSON.parse(JSONstringify);
+
+                    JSONobjparsed.forEach(function(item) {
+                        item.image = getImage(item.image);
+                    });
+
+                    callback && callback(null, JSONobjparsed);
+                }
+                else {
+                    callback(JSONobjparsed);
+                }
+            }
+            finally {}
+        },
+        delay: 200
+    });
 
     // if (!callback && request) {
     //     callback = request;
@@ -302,24 +330,30 @@ function getApprovedLeaveApprovals(request, callback) {
 
 function getApprovedLeaveRequests(request, callback) {
 
-    if (!callback && request) {
-        callback = request;
-        request = null;
-    }
 
-    try {
-        var filePath = "../mock/getApprovedLeaveRequests.json";
+    var myTimer = Timer.setTimeout({
+        task: function() {
+            if (!callback && request) {
+                callback = request;
+                request = null;
+            }
 
-        var JSONobj = converterJSON.convertFileToJson(filePath);
-        if (JSONobj) {
-            callback && callback(null, JSONobj);
-        }
-        else {
-            callback(JSONobj);
-        }
-    }
-    finally {}
+            try {
+                var filePath = "../mock/getApprovedLeaveRequests.json";
 
+                var JSONobj = converterJSON.convertFileToJson(filePath);
+                if (JSONobj) {
+                    callback && callback(null, JSONobj);
+                }
+                else {
+                    callback(JSONobj);
+                }
+            }
+            finally {}
+
+        },
+        delay: 200
+    });
 
     // if (!callback && request) {
     //     callback = request;
@@ -354,23 +388,29 @@ function getApprovedLeaveRequests(request, callback) {
 
 function getWaitingLeaveRequests(request, callback) {
 
-    if (!callback && request) {
-        callback = request;
-        request = null;
-    }
+    var myTimer = Timer.setTimeout({
+        task: function() {
+            if (!callback && request) {
+                callback = request;
+                request = null;
+            }
 
-    try {
-        var filePath = "../mock/getWaitingLeaveRequests.json";
+            try {
+                var filePath = "../mock/getWaitingLeaveRequests.json";
 
-        var JSONobj = converterJSON.convertFileToJson(filePath);
-        if (JSONobj) {
-            callback && callback(null, JSONobj);
-        }
-        else {
-            callback(JSONobj);
-        }
-    }
-    finally {}
+                var JSONobj = converterJSON.convertFileToJson(filePath);
+                if (JSONobj) {
+                    callback && callback(null, JSONobj);
+                }
+                else {
+                    callback(JSONobj);
+                }
+            }
+            finally {}
+        },
+        delay: 200
+    });
+
     // if (!callback && request) {
     //     callback = request;
     //     request = null;
@@ -405,23 +445,29 @@ function getWaitingLeaveRequests(request, callback) {
 
 function getRejectedLeaveRequests(request, callback) {
 
-    if (!callback && request) {
-        callback = request;
-        request = null;
-    }
 
-    try {
-        var filePath = "../mock/getRejectedLeaveRequests.json";
+    var myTimer = Timer.setTimeout({
+        task: function() {
+            if (!callback && request) {
+                callback = request;
+                request = null;
+            }
 
-        var JSONobj = converterJSON.convertFileToJson(filePath);
-        if (JSONobj) {
-            callback && callback(null, JSONobj);
-        }
-        else {
-            callback(JSONobj);
-        }
-    }
-    finally {}
+            try {
+                var filePath = "../mock/getRejectedLeaveRequests.json";
+
+                var JSONobj = converterJSON.convertFileToJson(filePath);
+                if (JSONobj) {
+                    callback && callback(null, JSONobj);
+                }
+                else {
+                    callback(JSONobj);
+                }
+            }
+            finally {}
+        },
+        delay: 200
+    });
 
     // if (!callback && request) {
     //     callback = request;
@@ -458,23 +504,30 @@ function getRejectedLeaveRequests(request, callback) {
 
 function getLeaveRequestsChart(request, callback) {
 
-    if (!callback && request) {
-        callback = request;
-        request = null;
-    }
+    var myTimer = Timer.setTimeout({
+        task: function() {
+            if (!callback && request) {
+                callback = request;
+                request = null;
+            }
 
-    try {
-        var filePath = "../mock/getLeaveRequestsChart.json";
+            try {
+                var filePath = "../mock/getLeaveRequestsChart.json";
 
-        var JSONobj = converterJSON.convertFileToJson(filePath);
-        if (JSONobj) {
-            callback && callback(null, JSONobj);
-        }
-        else {
-            callback(JSONobj);
-        }
-    }
-    finally {}
+                var JSONobj = converterJSON.convertFileToJson(filePath);
+                if (JSONobj) {
+                    callback && callback(null, JSONobj);
+                }
+                else {
+                    callback(JSONobj);
+                }
+            }
+            finally {}
+
+        },
+        delay: 200
+    });
+
 
     // if (!callback && request) {
     //     callback = request;
