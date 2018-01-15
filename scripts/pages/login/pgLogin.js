@@ -74,20 +74,22 @@ function onShow(parentOnShow, params) {
 				doLogin(page, page.usernameLayout.innerTextbox.text, password, function(err) {
 					animation.stop();
 					if (err) {
+						console.log("in revert");
 						animation.revert();
 						return;
 					}
+					console.log("after condifiton");
 					fingerprintResult && fingerprintResult.success(); //Important!
 					Router.go("tabs");
 				});
 			});
 		}
 	});
- /*
+
 	rau.checkUpdate({
 		url: "https://smf.to/selfservice"
 	});
-*/
+
 }
 
 
@@ -123,7 +125,12 @@ function doLogin(page, username, password, callback) {
 	// 	}
 	// 	callback && callback(err, userData);
 	// });
-	callback(null,null);
+	Timer.setTimeout({
+		task: function() {
+			callback(null, null);
+		},
+		delay: 1000
+	});
 }
 
 function startLoading(uiComponents, callback) {
