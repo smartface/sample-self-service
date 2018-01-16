@@ -10,7 +10,6 @@ const PageDesign = require("../../../ui/ui_pgNewExpense");
 const Picker = require("sf-core/ui/picker");
 const Router = require("sf-core/router");
 const ScrollView = require("sf-core/ui/scrollview");
-const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -18,15 +17,20 @@ const Page_ = extend(PageDesign)(
 		// Initalizes super class for this page scope
 		_super(this, params);
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+		this.onShow = onShow.bind(this, this.onShow.bind(this));
 
-		initColors.call(this);
-		initCallbacks.call(this);
+		this.onError = function(e) {
+			console.log(e.message);
+		}
 	}
 );
 
 function initColors() {
 	changeInputColorsToDark(this.titleInput);
 	changeInputColorsToDark(this.expenseInput);
+
+	// this.titleInput.innerTextbox.textColor = Color.BLACK;
+	// this.expenseInput.innerTextbox.textColor = Color.BLACK;
 
 	function changeInputColorsToDark(inputLayout) {
 		inputLayout.textboxInfo.textColor = Color.create("#4A4A4A");
@@ -61,6 +65,14 @@ function onLoad(superOnLoad) {
 
 	initTexts.call(this);
 	this.headerBar.itemColor = Color.WHITE;
+}
+
+function onShow(superOnLoad) {
+	typeof superOnLoad === "function" && superOnLoad();
+
+	initColors.call(this);
+	initCallbacks.call(this);
+
 }
 
 function wrapContentIntoScroll() {

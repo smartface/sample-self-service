@@ -3,33 +3,34 @@
 		{
 			"type": "Page",
 			"id": "bb7e-e76c-d0ac-4a8b",
+			"initialized": true,
 			"userProps": {
 				"backgroundColor": "rgba( 228, 228, 228, 1 )",
 				"flexProps": {}
 			},
 			"className": ".page",
-			"version": "6.5.3",
+			"version": "6.6.0",
 			"props": {
-				"orientation": "PORTRAIT",
+				"name": "pgEmploymentHistory",
 				"children": [
 					"01af-a351-fe76-c88a",
 					"02c8-0737-ee7c-705f",
 					"0992-6e57-ad60-1cf0",
 					"d769-1e4a-6ae5-99e1"
 				],
-				"name": "pgEmploymentHistory",
-				"parent": null
+				"parent": null,
+				"orientation": "PORTRAIT"
 			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "01af-a351-fe76-c88a",
 			"userProps": {},
-			"className": ".statusBar",
+			"className": "",
 			"props": {
+				"name": "statusBar",
 				"children": [],
-				"parent": "bb7e-e76c-d0ac-4a8b",
-				"name": "statusBar"
+				"parent": "bb7e-e76c-d0ac-4a8b"
 			}
 		},
 		{
@@ -41,10 +42,10 @@
 			},
 			"className": ".headerBar",
 			"props": {
+				"name": "headerBar",
 				"title": "newPage001",
 				"children": [],
-				"parent": "bb7e-e76c-d0ac-4a8b",
-				"name": "headerBar"
+				"parent": "bb7e-e76c-d0ac-4a8b"
 			}
 		},
 		{
@@ -64,11 +65,11 @@
 			},
 			"className": ".flexLayout",
 			"props": {
+				"name": "listViewContainer",
 				"usePageVariable": true,
 				"children": [
 					"1ad2-8694-6b9b-90f1"
 				],
-				"name": "listViewContainer",
 				"parent": "bb7e-e76c-d0ac-4a8b"
 			}
 		},
@@ -86,22 +87,22 @@
 			},
 			"className": ".listView",
 			"props": {
-				"usePageVariable": true,
-				"rowHeight": 60,
-				"itemCount": 3,
-				"children": [],
 				"name": "listView",
-				"parent": "d769-1e4a-6ae5-99e1"
+				"usePageVariable": true,
+				"children": [],
+				"parent": "d769-1e4a-6ae5-99e1",
+				"itemCount": 3,
+				"rowHeight": 60
 			}
 		},
 		{
 			"type": "FlexLayout",
 			"id": "0992-6e57-ad60-1cf0",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
 				"id": "ebb9-37cc-ff1b-0314"
 			},
-			"hiddenComponent": false,
 			"userProps": {
 				"left": 0,
 				"top": 0,
@@ -114,39 +115,10 @@
 			},
 			"className": ".flexLayout .flexLayout-headerBar",
 			"props": {
+				"name": "layoutHeaderBar",
 				"usePageVariable": true,
 				"children": [],
-				"parent": "bb7e-e76c-d0ac-4a8b",
-				"name": "layoutHeaderBar"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "fd6c-60ef-afbc-a1f7",
-			"source": {
-				"page": "__library__"
-			},
-			"hiddenComponent": false,
-			"userProps": {
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"width": null,
-				"height": 40,
-				"textAlignment": "MIDCENTER",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"marginTop": 20,
-				"font": {
-					"size": 16
-				},
-				"flexProps": {
-					"flexGrow": null
-				}
-			},
-			"className": ".label",
-			"props": {
-				"text": "Label",
-				"children": [],
-				"parent": "0992-6e57-ad60-1cf0",
-				"name": "headerBarTitle"
+				"parent": "bb7e-e76c-d0ac-4a8b"
 			}
 		}
 	]

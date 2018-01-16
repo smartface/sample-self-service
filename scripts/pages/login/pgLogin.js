@@ -8,6 +8,7 @@ const Timer = require("sf-core/timer");
 const fingerprint = require("sf-extension-utils").fingerprint;
 const rau = require("sf-extension-utils").rau;
 const mcs = require("../../lib/mcs");
+const Color = require("sf-core/ui/color");
 const ActionKeyType = require('sf-core/ui/actionkeytype');
 
 const PageDesign = require("../../ui/ui_pgLogin");
@@ -19,8 +20,6 @@ const Page_ = extend(PageDesign)(
 		_super(this, params);
 		this.onLoad = onLoad.bind(this, this.onLoad);
 		this.onShow = onShow.bind(this, this.onShow);
-	
-
 	}
 );
 
@@ -49,10 +48,11 @@ function onLoad(parentOnLoad) {
 function onShow(parentOnShow, params) {
 	parentOnShow && parentOnShow(params);
 	const page = this;
-
+	
 	this.usernameLayout.innerTextbox.ios.clearButtonEnabled = true;
 	this.passwordLayout.innerTextbox.ios.clearButtonEnabled = true;
 	// Reset sign in button status because if sign in animation ran it changes
+
 
 	this.signinButton.width = 250;
 	this.signinButton.alpha = 1;
@@ -75,13 +75,15 @@ function onShow(parentOnShow, params) {
 			startLoading(page, function(animation) {
 				doLogin(page, page.usernameLayout.innerTextbox.text, password, function(err) {
 					animation.stop();
+					animation.revert();
 					if (err) {
+						console.log("in revert");
 						animation.revert();
 						return;
 					}
+					console.log("after condifiton");
 					fingerprintResult && fingerprintResult.success(); //Important!
 					Router.go("tabs");
-
 				});
 			});
 		}
@@ -90,7 +92,7 @@ function onShow(parentOnShow, params) {
 	rau.checkUpdate({
 		url: "https://smf.to/selfservice"
 	});
-	
+
 }
 
 
@@ -117,14 +119,20 @@ function signin(page) {
 }
 
 function doLogin(page, username, password, callback) {
-	mcs.login({
-		username: username,
-		password: password
-	}, function(err, userData) {
-		if (err) {
-			alert(lang["pgLogin.invalidLogin"]);
-		}
-		callback && callback(err, userData);
+	// mcs.login({
+	// 	username: username,
+	// 	password: password
+	// }, function(err, userData) {
+	// 	if (err) {
+	// 		alert(lang["pgLogin.invalidLogin"]);
+	// 	}
+	// 	callback && callback(err, userData);
+	// });
+	Timer.setTimeout({
+		task: function() {
+			callback(null, null);
+		},
+		delay: 1000
 	});
 }
 

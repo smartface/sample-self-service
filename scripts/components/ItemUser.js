@@ -8,7 +8,7 @@ const ItemUserDesign = require('library/ItemUser');
 const ItemUser = extend(ItemUserDesign)(
 	//constructor
 	function(_super, props, pageName){
-		delete ItemUserDesign.defaults.width;
+		//delete ItemUserDesign.defaults.width;
 		_super(this, props || ItemUserDesign.defaults );
 		this.pageName = pageName;
 		

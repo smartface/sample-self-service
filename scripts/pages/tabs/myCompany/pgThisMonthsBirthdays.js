@@ -7,6 +7,8 @@ const user = require('../../../model/user');
 const PageDesign = require("../../../ui/ui_pgThisMonthsBirthdays");
 const ItemBirthday = require('../../../components/ItemBirthday');
 const DialogsLib = require("lib/ui/dialogs");
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
@@ -46,17 +48,22 @@ function initListView(listView, data) {
     listView.rowHeight = 75;
     listView.itemCount = data.length;
     listView.refreshEnabled = false;
+    var itemIndex = 0;
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemBirthday();
-        item.id = 200;
+        item.id = 20099;
         myListViewItem.item = item;
-        myListViewItem.addChild(item);
+        this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
+        myListViewItem.addChild(item, "child", "", style => {
+			style.width = null;
+			return style;
+		});
         return myListViewItem;
     };
 
     listView.onRowBind = function(listViewItem, index) {
-        listViewItem.item.user = data[index];
+        listViewItem.findChildById(20099).user = data[index];
     };
 
     listView.onRowSelected = function() {}

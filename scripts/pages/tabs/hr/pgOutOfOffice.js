@@ -10,22 +10,30 @@ const Page_ = extend(PageDesign)(
 		_super(this, params);
 		this.onLoad = onLoad.bind(this, this.onLoad);
 		
-		wrapContentIntoScroll.call(this);
-		initTexts.call(this);
+        this.onError = function(e){
+            console.log(e.message);
+        }
 });
 
 function onLoad(parentOnLoad) {
     if (typeof parentOnLoad === "function") parentOnLoad();
     this.layoutHeaderBar.headerBarTitle.text = lang["pgOutOfOffice.pageTitle"];
+
+	wrapContentIntoScroll.call(this);
+	initTexts.call(this);
 }
 
 function wrapContentIntoScroll() {
-	this.scrollView = new ScrollView({
-		flexGrow: 1
-	});
+	this.scrollView = new ScrollView();
 	this.layout.removeChild(this.mainContainer);
-	this.scrollView.addChild(this.mainContainer);
-	this.layout.addChild(this.scrollView);
+	this.scrollView.addChild(this.mainContainer, "mainContainer", ".flexlayout", {
+		width: null,
+		backgroundColor: "#DEDEDE"
+	});
+	this.layout.addChild(this.scrollView, "scrollView", "", {
+		flexGrow: 1,
+		width: null
+	});
 }
 
 function initTexts() {

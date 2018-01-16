@@ -7,7 +7,8 @@ const ListViewItem = require("sf-core/ui/listviewitem");
 const expenseManagement = require('../../../model/expense-management');
 const PageDesign = require("../../../ui/ui_pgExpenseApprovals");
 const Router = require("sf-core/router");
-
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
 const Page_ = extend(PageDesign)(
@@ -16,22 +17,27 @@ const Page_ = extend(PageDesign)(
 		// Initalizes super class for this page scope
 		_super(this, params);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
+		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 
 		this.pendingList = [];
 		this.approvedList = [];
 		this.data = this.pendingList;
-
-		initTexts.call(this);
-		initListView.call(this);
-		initTopTabBar.call(this);
 	}
 );
 
 var firstOnShow = true;
 
+function onLoad(superOnload) {
+	superOnload && superOnload();
+	initTexts.call(this);
+	initListView.call(this);
+	initTopTabBar.call(this);
+}
+
 function onShow(parentOnShow) {
 	parentOnShow();
 	const page = this;
+	this.topTabBar.currentIndex = 0;
 	if (firstOnShow) {
 		DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
 		expenseManagement.getPendingExpenseApprovals(function(err, pendingExpenseApprovals) {
@@ -65,12 +71,17 @@ function initListView() {
 	this.listView.itemCount = 0;
 	this.listView.rowHeight = 90;
 	this.listView.refreshEnabled = false;
+	var itemIndex = 0;
 
 	this.listView.onRowCreate = function() {
 		var listViewItem = new ListViewItem();
 		var item = new ItemApproval();
 		item.id = 200;
-		listViewItem.addChild(item);
+		this.dispatch(addChild("item" + (++itemIndex), listViewItem));
+		listViewItem.addChild(item, "child", "", style => {
+			style.width = null;
+			return style;
+		});
 		return listViewItem;
 	};
 
@@ -85,9 +96,9 @@ function initListView() {
 }
 
 function initTopTabBar() {
-	this.topTabBar.activeTextColor = Color.create("#1775D0");
-	this.topTabBar.inactiveTextColor = Color.create("#9F9E9F");
-	this.topTabBar.activeBarColor = Color.create("#1775CF");
+	this.topTabBar.activeTextColor = "#1775D0";
+	this.topTabBar.inactiveTextColor = "#9F9E9F";
+	this.topTabBar.activeBarColor = "#1775CF";
 	this.topTabBar.onChanged = function(index) {
 		var lists = [this.pendingList, this.approvedList];
 		this.data = lists[index];

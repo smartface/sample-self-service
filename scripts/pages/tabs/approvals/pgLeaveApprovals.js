@@ -7,6 +7,11 @@ const ListViewItem = require("sf-core/ui/listviewitem");
 const leaveManagement = require('../../../model/leave-management');
 const PageDesign = require("../../../ui/ui_pgLeaveApprovals");
 const Router = require("sf-core/router");
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
+const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
+const pushClassNames = require("@smartface/contx/lib/styling/action/pushClassNames")
+
 
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
@@ -21,15 +26,14 @@ const Page_ = extend(PageDesign)(
 		this.pendingList = [];
 		this.approvedList = [];
 		this.data = this.pendingList;
-
-		initTexts.call(this);
-		initTopTabBar.call(this);
 	}
 );
 
 function onLoad(parentOnLoad) {
 	parentOnLoad();
+	initTexts.call(this);
 	initListView.call(this);
+	initTopTabBar.call(this);
 }
 
 var firstOnShow = true;
@@ -37,6 +41,7 @@ var firstOnShow = true;
 function onShow(parentOnShow) {
 	parentOnShow();
 	const page = this;
+	this.topTabBar.currentIndex = 0;
 	if (firstOnShow) {
 		DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
 		leaveManagement.getPendingLeaveApprovals(function(err, pendingLeaveApprovals) {
@@ -68,15 +73,23 @@ function initTexts() {
 }
 
 function initListView() {
+	this.listView.dispatch(removeChildren());
+
 	this.listView.itemCount = 0;
 	this.listView.rowHeight = 90;
 	this.listView.refreshEnabled = false;
+	var itemIndex = 0;
 
 	this.listView.onRowCreate = function() {
 		var listViewItem = new ListViewItem();
 		var item = new ItemApproval();
 		item.id = 200;
-		listViewItem.addChild(item);
+		this.dispatch(addChild("item" + (++itemIndex), listViewItem));
+		listViewItem.addChild(item, "child", "", style => {
+			style.width = null;
+			return style;
+		});
+
 		return listViewItem;
 	};
 
@@ -91,9 +104,16 @@ function initListView() {
 }
 
 function initTopTabBar() {
-	this.topTabBar.activeTextColor = Color.create("#1775D0");
-	this.topTabBar.inactiveTextColor = Color.create("#9F9E9F");
-	this.topTabBar.activeBarColor = Color.create("#1775CF");
+ //  this.topTabBar.$$styleContext = {
+	// 	classNames: ".toptabbar"
+	// };
+	//this.topTabBar.dispatch(pushClassNames(".toptabbar"));
+	//
+	this.topTabBar.activeTextColor = "#1775D0";
+	this.topTabBar.inactiveTextColor = "#9F9E9F";
+	this.topTabBar.activeBarColor = "#1775CF";
+	// componentContextPatch(this.topTabBar, "toptabbar");
+	
 	this.topTabBar.onChanged = function(index) {
 		var lists = [this.pendingList, this.approvedList];
 		this.data = lists[index];

@@ -94,7 +94,7 @@ SMF.i18n.defineLanguage('en', {
 	"pgLogin.signup"					: "Sign Up",
 	"pgLogin.invalidLogin"				: "Username & password not accepted",
 	"pgSettings.pageTitle"				: "SETTINGS",
-	"pgSettings.themeChangeMessage"		: "Do you really want to change the theme of the application? This will cause the application to restart.",
+	"pgSettings.themeChangeMessage"		: "Do you really want to change the theme of the application?",
 	"pgMyCompany.pageTitle"				: "MY COMPANY",
 	"pgApprovals.pageTitle"				: "LEAVE APPROVALS",
 	"pgOutOfOffice.pageTitle"			: "OUT OF OFFICE",

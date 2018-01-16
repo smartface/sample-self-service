@@ -11,6 +11,11 @@ const Page_ = extend(PageDesign)(
 		_super(this, {
 			//onLoad: onLoad.bind(this)
 		});
+		
+        this.onError = function(e){
+            console.log(e.message);
+        }
+		
 });
 
 module && (module.exports = Page_);

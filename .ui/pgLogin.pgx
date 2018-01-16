@@ -11,7 +11,7 @@
 				}
 			},
 			"className": ".page .page-login",
-			"version": "6.5.3",
+			"version": "6.6.0",
 			"props": {
 				"name": "pgLogin",
 				"children": [
@@ -29,9 +29,7 @@
 		{
 			"type": "StatusBar",
 			"id": "896e-230e-4261-6c04",
-			"userProps": {
-				"style": "LIGHTCONTENT"
-			},
+			"userProps": {},
 			"className": ".statusBar .statusBar-login",
 			"props": {
 				"name": "statusBar",
@@ -47,8 +45,8 @@
 			},
 			"className": ".headerBar .headerBar-login",
 			"props": {
-				"title": "newPage001",
 				"name": "headerBar",
+				"title": "newPage001",
 				"children": [],
 				"parent": "21ae-2c3a-a5a2-518c"
 			}
@@ -57,7 +55,7 @@
 			"type": "Label",
 			"id": "f959-9458-1a9f-b32a",
 			"userProps": {
-				"text": "EMPLOYEE\\nSELF SERVICE",
+				"text": "EMPLOYEE\nSELF SERVICE",
 				"textAlignment": "MIDCENTER",
 				"width": null,
 				"height": null,
@@ -67,9 +65,9 @@
 					"flexGrow": 5
 				}
 			},
-			"className": ".label .label-login.large .label-login",
+			"className": ".label .label-login.large",
 			"props": {
-				"text": "EMPLOYEE\\nSELF SERVICE",
+				"text": "EMPLOYEE\nSELF SERVICE",
 				"usePageVariable": true,
 				"name": "appName",
 				"children": [],
@@ -115,8 +113,8 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"usePageVariable": true,
 				"name": "buttonLayout",
+				"usePageVariable": true,
 				"children": [
 					"13d3-2531-9ee4-7e52",
 					"3939-9e86-aa02-725f"
@@ -139,9 +137,9 @@
 			},
 			"className": ".button",
 			"props": {
-				"usePageVariable": true,
-				"text": "SIGN IN",
 				"name": "signinButton",
+				"text": "SIGN IN",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "aa9f-9d81-c51a-e6d4"
 			}
@@ -187,8 +185,8 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"usePageVariable": true,
 				"name": "loadingImageView",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "aa9f-9d81-c51a-e6d4"
 			}
@@ -215,88 +213,10 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"usePageVariable": true,
 				"name": "usernameLayout",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "5eef-6028-947b-4ed6"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "71a3-2495-1ac2-36e0",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"text": "",
-				"usePageVariable": true,
-				"width": null,
-				"height": 20,
-				"marginLeft": 10,
-				"marginRight": 10
-			},
-			"className": ".label .label-login.small .label-textboxWithLine.normal",
-			"props": {
-				"text": "",
-				"usePageVariable": true,
-				"name": "textboxInfo",
-				"children": [],
-				"parent": "adeb-78f5-db42-ff91"
-			}
-		},
-		{
-			"type": "TextBox",
-			"id": "be29-82d9-5bf8-8581",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"text": "",
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".textBox",
-			"props": {
-				"text": "",
-				"usePageVariable": true,
-				"name": "innerTextbox",
-				"children": [],
-				"parent": "adeb-78f5-db42-ff91"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "1c52-41b3-1d96-c909",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"width": null,
-				"height": 1,
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"flexProps": {
-					"flexGrow": null
-				}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"usePageVariable": true,
-				"name": "textboxBottomLine",
-				"children": [],
-				"parent": "adeb-78f5-db42-ff91"
 			}
 		},
 		{
@@ -321,88 +241,10 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"usePageVariable": true,
 				"name": "passwordLayout",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "5eef-6028-947b-4ed6"
-			}
-		},
-		{
-			"type": "Label",
-			"id": "570f-5707-8554-6326",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"text": "",
-				"usePageVariable": true,
-				"width": null,
-				"height": 20,
-				"marginLeft": 10,
-				"marginRight": 10
-			},
-			"className": ".label .label-login.small .label-textboxWithLine.normal",
-			"props": {
-				"text": "",
-				"usePageVariable": true,
-				"name": "label274",
-				"children": [],
-				"parent": "e74a-9da0-0f22-9a9b"
-			}
-		},
-		{
-			"type": "TextBox",
-			"id": "4b4e-8fa3-e87f-98fb",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"width": null,
-				"height": null,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"textColor": "rgba( 255, 255, 255, 1 )",
-				"text": "",
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".textBox",
-			"props": {
-				"text": "",
-				"usePageVariable": true,
-				"name": "textbox1",
-				"children": [],
-				"parent": "e74a-9da0-0f22-9a9b"
-			}
-		},
-		{
-			"type": "FlexLayout",
-			"id": "a58a-f8ca-2013-5824",
-			"hiddenComponent": false,
-			"source": {
-				"page": "__library__"
-			},
-			"userProps": {
-				"width": null,
-				"height": 1,
-				"usePageVariable": true,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"flexProps": {
-					"flexGrow": null
-				}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"usePageVariable": true,
-				"name": "flexlayout201",
-				"children": [],
-				"parent": "e74a-9da0-0f22-9a9b"
 			}
 		}
 	]

@@ -10,17 +10,17 @@ const PREFIX = "tab";
 
 const TopTabBar = extend(TopTabBarDesign)(
 	//constructor
-	function(_super, props, pageName){
+	function(_super, props, pageName) {
 		// initalizes super class for this scope
 		_super(this, props || TopTabBarDesign.defaults);
 		this.pageName = pageName;
-		
+
 		var _items = 0;
 		var _currentIndex = 0;
-		var _activeTextColor = Color.create("#FFFFFF");
-		var _inactiveTextColor = Color.create("#A8A9B1");
-		var _activeBarColor = Color.create("#E7C355");
-		
+		var _activeTextColor = "#FFFFFF";
+		var _inactiveTextColor = "#A8A9B1";
+		var _activeBarColor = "#E7C355";
+
 		Object.defineProperties(this, {
 			'items': {
 				get: function() {
@@ -30,7 +30,7 @@ const TopTabBar = extend(TopTabBarDesign)(
 					if (value < 0) {
 						value = 0;
 					}
-					
+
 					_items = value;
 					setSize(this, _items.length);
 				}
@@ -46,7 +46,7 @@ const TopTabBar = extend(TopTabBarDesign)(
 					if (value < 0 || value > _items.length) {
 						throw new Error("currentIndex is out of range");
 					}
-					
+
 					_currentIndex = value;
 					invalidate(this);
 					typeof this.onChanged === "function" && this.onChanged(_currentIndex);
@@ -86,15 +86,37 @@ const TopTabBar = extend(TopTabBarDesign)(
 function invalidate(tabBar) {
 	for (var i = 0; i < tabBar.items.length; i++) {
 		var childName = PREFIX + i;
-		
+
 		tabBar.children[childName].children.tabItemTitle.text = tabBar.items[i];
 		if (i === tabBar.currentIndex) { // active
-			tabBar.children[childName].children.tabItemBottomLine.backgroundColor = tabBar.activeBarColor;
-			tabBar.children[childName].children.tabItemBottomLine.visible = true;
-			tabBar.children[childName].children.tabItemTitle.textColor = tabBar.activeTextColor;
-		} else {
-			tabBar.children[childName].children.tabItemBottomLine.visible = false;
-			tabBar.children[childName].children.tabItemTitle.textColor = tabBar.inactiveTextColor;
+
+			tabBar.children[childName].children.tabItemBottomLine.dispatch({
+				type: "updateUserStyle",
+				userStyle: {
+					backgroundColor: tabBar.activeBarColor,
+					visible: true
+				}
+			});
+			tabBar.children[childName].children.tabItemTitle.dispatch({
+				type: "updateUserStyle",
+				userStyle: {
+					textColor: tabBar.activeTextColor
+				}
+			});
+		}
+		else {
+			tabBar.children[childName].children.tabItemBottomLine.dispatch({
+				type: "updateUserStyle",
+				userStyle: {
+					visible: false
+				}
+			});
+			tabBar.children[childName].children.tabItemTitle.dispatch({
+				type: "updateUserStyle",
+				userStyle: {
+					textColor: tabBar.inactiveTextColor
+				}
+			});
 		}
 	}
 }
@@ -103,13 +125,13 @@ function setSize(tabBar, newSize) {
 	tabBar.removeAll();
 	tabBar.children = {};
 	for (var i = 0; i < newSize; ++i) {
-		tabBar.children[PREFIX+i] = new TopTabItem({
+		tabBar.children[PREFIX + i] = new TopTabItem({
 			flexGrow: 1,
 			onTouchEnded: function() {
 				tabSelected(tabBar, this.index);
-			}.bind({index: i})
+			}.bind({ index: i })
 		});
-		tabBar.addChild(tabBar.children[PREFIX+i]);
+		tabBar.addChild(tabBar.children[PREFIX + i], PREFIX + i);
 	}
 	tabBar.applyLayout();
 	invalidate(tabBar);
@@ -120,4 +142,3 @@ function tabSelected(tabBar, index) {
 }
 
 module && (module.exports = TopTabBar);
-
