@@ -61,6 +61,7 @@
 		{
 			"type": "HeaderBar",
 			"id": "f99e-f65e-1989-a1d1",
+			"hiddenComponent": false,
 			"userProps": {},
 			"className": ".headerBar",
 			"props": {
@@ -73,7 +74,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "5ff3-3be5-c42e-e78e",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -101,7 +102,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "3e69-6f6d-af2d-0ab2",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -783,6 +784,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "b300-c048-210a-c0fa",
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -979,7 +981,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "dcae-3af8-79da-1b55",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
@@ -1037,7 +1039,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "e8a3-eaa5-d3b6-a28b",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -1071,6 +1073,7 @@
 				"textAlignment": "MIDCENTER",
 				"id": 100,
 				"font": {},
+				"usePageVariable": true,
 				"flexProps": {
 					"flexGrow": 1
 				}
@@ -1080,6 +1083,7 @@
 				"id": 100,
 				"name": "tabItemTitle",
 				"text": "Label",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "e8a3-eaa5-d3b6-a28b"
 			}
@@ -1737,7 +1741,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "e9f0-d2c8-f908-88e9",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
 			},
@@ -1807,6 +1811,8 @@
 				"marginLeft": 10,
 				"marginRight": 10,
 				"id": 102,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"alpha": 0.4,
 				"flexProps": {
 					"flexGrow": null
 				}
@@ -3760,7 +3766,7 @@
 		{
 			"type": "FlexLayout",
 			"id": "220b-c892-230c-b031",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"source": {
 				"page": "__library__"
 			},
