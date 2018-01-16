@@ -7,24 +7,20 @@ const Color = require("sf-core/ui/color");
 const settings = require("./settings.json");
 const Router = require("sf-core/ui/router");
 const Data = require('sf-core/data');
+const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
 
 var tabBar;
-
+BottomTabBar.$$styleContext={
+    classNames: ".bottomtabbar"
+};
 exports.load = function load() {
     if (tabBar) {
         tabBar.setIndex("profile");
         return true;
     }
 
-    var itemColor = Color.create((Data.getStringVariable("theme") === "Style1" ? "#1775D0" : "#00B9FF"));
-    tabBar = new BottomTabBar({
-        backgroundColor: Color.create("#EAEAEB"),
-        itemColor: {
-            normal: Color.create("#9C9DA6"),
-            selected: itemColor
-        }
-    });
-
+    //var itemColor = Color.create((Data.getStringVariable("theme") === "Style1" ? "#1775D0" : "#FFFFFF"));
+    tabBar = new BottomTabBar();
 
     var profileNavigator = new Navigator();
     profileNavigator.add("index", require("./pages/tabs/profile"));
@@ -76,6 +72,7 @@ exports.load = function load() {
         icon: Image.createFromFile("images://icon_tab_settings.png"),
         route: settingsNavigator
     }));
+    componentContextPatch(tabBar, "bottomtabbar");
     tabBar.setIndex("profile");
 
     Router.add("tabs", tabBar);

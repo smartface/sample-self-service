@@ -30,11 +30,7 @@ const Page_ = extend(PageDesign)(
         this.rejectedList = [];
         this.data = this.approvedList;
 
-        initListView(this.listView, this);
-        initTopTabBar.call(this);
-        initHeaderBar.call(this);
-        
-        this.onError = function(e){
+        this.onError = function(e) {
             console.log(e.message);
         }
     }
@@ -80,6 +76,9 @@ function onShow(parentOnShow) {
 
 function onLoad(parentOnLoad) {
     parentOnLoad();
+    initListView(this.listView, this);
+    initTopTabBar.call(this);
+    initHeaderBar.call(this);
 }
 
 function loadChart(leaveRequestChartData) {
@@ -88,13 +87,12 @@ function loadChart(leaveRequestChartData) {
         jetPath: "assets://jet/",
         webView: page.wvChart
     });
-    
-    page.dispatch(addChild("jetChart", 
-        {
-            subscribeContext: function(e){
-                if(e.rawStyle.backgroundColor){
+
+    page.dispatch(addChild("jetChart", {
+            subscribeContext: function(e) {
+                if (e.rawStyle.backgroundColor) {
                     //console.log("JET_BACKGROUND->"+ e.rawStyle.backgroundColor);
-                    var backgroundColor = color2Hex.getRGB(createSFCoreProp("backgroundColor",e.rawStyle.backgroundColor));
+                    var backgroundColor = color2Hex.getRGB(createSFCoreProp("backgroundColor", e.rawStyle.backgroundColor));
                     leaveRequestChartData = mixinDeep(leaveRequestChartData, {
                         plotArea: {
                             backgroundColor: backgroundColor
@@ -106,13 +104,13 @@ function loadChart(leaveRequestChartData) {
                     Object.assign(jet, leaveRequestChartData);
                     jet.legend.rendered = false;
                     jet.jetData.backgroundColor = backgroundColor;
-                    jet.refresh();        
+                    jet.refresh();
                 }
             }
         },
         ".flexLayout .flexLayout-headerBar"
     ));
-    
+
     page.wvChart.visible = true;
     page.wvChart.bounceEnabled = false;
     // const flexlayout1Style = getCombinedStyle(".flexLayout .flexLayout-headerBar", {
@@ -127,14 +125,14 @@ function initListView(listView, dataHolder) {
     listView.rowHeight = 135;
     listView.itemCount = dataHolder.data.length;
     listView.refreshEnabled = false;
-    var  itemIndex = 0;
+    var itemIndex = 0;
     listView.onRowCreate = function() {
         var myListViewItem = new ListViewItem();
         var item = new ItemLeaveManagement();
         item.id = 200;
         myListViewItem.item = item;
-        this.dispatch(addChild("item"+(++itemIndex), myListViewItem));
-        myListViewItem.addChild(item, "child", "", function(style){
+        this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
+        myListViewItem.addChild(item, "child", "", function(style) {
             style.width = null;
             return style;
         });

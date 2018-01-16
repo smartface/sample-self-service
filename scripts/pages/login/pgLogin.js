@@ -8,6 +8,7 @@ const Timer = require("sf-core/timer");
 const fingerprint = require("sf-extension-utils").fingerprint;
 const rau = require("sf-extension-utils").rau;
 const mcs = require("../../lib/mcs");
+const Color = require("sf-core/ui/color");
 const ActionKeyType = require('sf-core/ui/actionkeytype');
 
 const PageDesign = require("../../ui/ui_pgLogin");
@@ -47,9 +48,9 @@ function onLoad(parentOnLoad) {
 function onShow(parentOnShow, params) {
 	parentOnShow && parentOnShow(params);
 	const page = this;
-
-	this.usernameLayout.innerTextbox.ios.clearButtonEnabled = true;
-	this.passwordLayout.innerTextbox.ios.clearButtonEnabled = true;
+	
+	this.usernameLayout.innerTextbox.textColor = Color.BLACK;
+	this.passwordLayout.innerTextbox.textColor = Color.BLACK;
 	// Reset sign in button status because if sign in animation ran it changes
 
 	this.signinButton.width = 250;
@@ -73,6 +74,7 @@ function onShow(parentOnShow, params) {
 			startLoading(page, function(animation) {
 				doLogin(page, page.usernameLayout.innerTextbox.text, password, function(err) {
 					animation.stop();
+					animation.revert();
 					if (err) {
 						console.log("in revert");
 						animation.revert();

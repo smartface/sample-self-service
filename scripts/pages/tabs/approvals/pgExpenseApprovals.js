@@ -17,18 +17,22 @@ const Page_ = extend(PageDesign)(
 		// Initalizes super class for this page scope
 		_super(this, params);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
+		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 
 		this.pendingList = [];
 		this.approvedList = [];
 		this.data = this.pendingList;
-
-		initTexts.call(this);
-		initListView.call(this);
-		initTopTabBar.call(this);
 	}
 );
 
 var firstOnShow = true;
+
+function onLoad(superOnload) {
+	superOnload && superOnload();
+	initTexts.call(this);
+	initListView.call(this);
+	initTopTabBar.call(this);
+}
 
 function onShow(parentOnShow) {
 	parentOnShow();
@@ -92,9 +96,9 @@ function initListView() {
 }
 
 function initTopTabBar() {
-	this.topTabBar.activeTextColor = Color.create("#1775D0");
-	this.topTabBar.inactiveTextColor = Color.create("#9F9E9F");
-	this.topTabBar.activeBarColor = Color.create("#1775CF");
+	this.topTabBar.activeTextColor = "#1775D0";
+	this.topTabBar.inactiveTextColor = "#9F9E9F";
+	this.topTabBar.activeBarColor = "#1775CF";
 	this.topTabBar.onChanged = function(index) {
 		var lists = [this.pendingList, this.approvedList];
 		this.data = lists[index];

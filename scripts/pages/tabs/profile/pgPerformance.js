@@ -72,8 +72,8 @@ function loadChart(series) {
         }],
         groups: [{ name: lang.jan, labelStyle: "color:#FFFFFF;" },
             { name: lang.feb, labelStyle: "color:#FFFFFF;" },
-            { name: lang.mar, labelStyle: "color:#FFFFFF;" },
-            { name: lang.apr, labelStyle: "color:#FFFFFF;" }
+            { name: lang.mar, labelStyle: "color:#FFFFFF;" }
+            // { name: lang.apr, labelStyle: "color:#FFFFFF;" }
         ],
         type: JET.Type.LINE,
         orientation: JET.Orientation.VERTICAL,

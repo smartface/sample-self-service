@@ -63,13 +63,13 @@ function invalidate(item) {
 		this.approveLabel.text = "Approved";
 		this.approveLabel.onTouchEnded = function() {};
 		this.editLabel.onTouchEnded = emptyCallback;
-		this.deleteLabel.onTouchEnded = deleteCallback.bind(item.request, function() {
-			leaveManagement.deleteApprovedLeaveRequest(this, function(err, response) {
-				if (err)
-					return alert("delete failed"); //TODO: lang
-				item.updateCallback();
-			});
-		}.bind(item.request));
+		// this.deleteLabel.onTouchEnded = deleteCallback.bind(item.request, function() {
+		// 	leaveManagement.deleteApprovedLeaveRequest(this, function(err, response) {
+		// 		if (err)
+		// 			return alert("delete failed"); //TODO: lang
+		// 		item.updateCallback();
+		// 	});
+		// }.bind(item.request));
 		/*Object.assign(this.approveLabel, getCombinedStyle(".label-leaveRequestListItem-approve-inactive"));
 		Object.assign(this.approveIcon, ApproveIconActiveStyle);
 		Object.assign(this.editLabel, EditLabelInactiveStyle);
@@ -82,13 +82,13 @@ function invalidate(item) {
 	function setPending() {
 		this.approveLabel.onTouchEnded = emptyCallback;
 		this.editLabel.onTouchEnded = editCallback.bind(item.request, item.updateCallback);
-		this.deleteLabel.onTouchEnded = deleteCallback.bind(item.request, function() {
-			leaveManagement.deleteWaitingLeaveRequest(this, function(err, response) {
-				if (err)
-					return alert("delete failed"); //TODO: lang
-				item.updateCallback();
-			});
-		}.bind(item.request));
+		// this.deleteLabel.onTouchEnded = deleteCallback.bind(item.request, function() {
+		// 	leaveManagement.deleteWaitingLeaveRequest(this, function(err, response) {
+		// 		if (err)
+		// 			return alert("delete failed"); //TODO: lang
+		// 		item.updateCallback();
+		// 	});
+		// }.bind(item.request));
 	/*	Object.assign(this.approveLabel, ApproveLabelInactiveStyle);
 		Object.assign(this.approveIcon, ApproveIconInactiveStyle);
 		Object.assign(this.editLabel, EditLabelActiveStyle);
@@ -101,13 +101,13 @@ function invalidate(item) {
 	function setRejected() {
 		this.approveLabel.onTouchEnded = emptyCallback;
 		this.editLabel.onTouchEnded = emptyCallback;
-		this.deleteLabel.onTouchEnded = deleteCallback.bind(item.request, function() {
-			leaveManagement.deleteRejectedLeaveRequest(this, function(err, response) {
-				if (err)
-					return alert("delete failed"); //TODO: lang
-				item.updateCallback();
-			});
-		}.bind(item.request));
+		// this.deleteLabel.onTouchEnded = deleteCallback.bind(item.request, function() {
+		// 	leaveManagement.deleteRejectedLeaveRequest(this, function(err, response) {
+		// 		if (err)
+		// 			return alert("delete failed"); //TODO: lang
+		// 		item.updateCallback();
+		// 	});
+		// }.bind(item.request));
 	/*	Object.assign(this.approveLabel, ApproveLabelInactiveStyle);
 		Object.assign(this.approveIcon, ApproveIconInactiveStyle);
 		Object.assign(this.editLabel, EditLabelInactiveStyle);

@@ -4,6 +4,9 @@
 const getImage = require("../lib/getImage");
 const converterJSON = require("../lib/convertFileToJsonObj");
 const Timer = require("sf-core/global/timer");
+const Path = require('sf-core/io/path');
+const File = require('sf-core/io/file');
+const FileStream = require('sf-core/io/filestream');
 
 exports.deleteApprovedLeaveRequest = deleteApprovedLeaveRequest;
 exports.deleteWaitingLeaveRequest = deleteWaitingLeaveRequest;
@@ -15,6 +18,9 @@ exports.getWaitingLeaveRequests = getWaitingLeaveRequests;
 exports.getRejectedLeaveRequests = getRejectedLeaveRequests;
 exports.getLeaveRequestsChart = getLeaveRequestsChart;
 
+var approvedReq;
+var pendingReq;
+var rejectedReq;
 
 function deleteApprovedLeaveRequest(request, callback) {
 
@@ -25,9 +31,26 @@ function deleteApprovedLeaveRequest(request, callback) {
                 request = null;
             }
             try {
-                var filePath = "../mock/deleteApprovedLeaveRequest.json";
+                var filePath = "../mock/getApprovedLeaveApprovals.json";
 
                 var JSONobj = converterJSON.convertFileToJson(filePath);
+                var singJson = JSON.stringify(JSONobj);
+                var Jsonobj = JSONobj.body;
+                for (let i in JSONobj) {
+                    console.log("i + " + i + "  " + "" + Jsonobj[i].days);
+                    if (JSONobj[i].days === this.days) {
+                        console.log("json " + JSONobj[i].days);
+                        Array.prototype.slice.call(JSONobj, i, 1);
+                    }
+                }
+                var file = new File({
+                    path: filePath
+                });
+                var fileStream = file.openStream(FileStream.StreamType.WRITE, FileStream.ContentMode.TEXT);
+                console.log("sing Json \n " + singJson);
+                fileStream.write(singJson);
+                fileStream.close();
+
                 if (JSONobj) {
 
                     callback && callback(null, JSONobj);
@@ -192,13 +215,13 @@ function deleteRejectedLeaveRequest(request, callback) {
 
 function getPendingLeaveApprovals(request, callback) {
 
-    var myTimer = Timer.setTimeout({
-        task: function() {
-            if (!callback && request) {
-                callback = request;
-                request = null;
-            }
+    if (!callback && request) {
+        callback = request;
+        request = null;
+    }
 
+    Timer.setTimeout({
+        task: function() {
             try {
                 var filePath = "../mock/getPendingLeaveApprovals.json";
 
@@ -212,7 +235,7 @@ function getPendingLeaveApprovals(request, callback) {
                         item.image = getImage(item.image);
                     });
 
-                    callback && callback(null, JSONobjparsed);
+                    callback(null, JSONobjparsed);
                 }
                 else {
                     callback(JSONobjparsed);
@@ -261,6 +284,10 @@ function getPendingLeaveApprovals(request, callback) {
 function getApprovedLeaveApprovals(request, callback) {
 
 
+    if (!callback && request) {
+        callback = request;
+        request = null;
+    }
 
     var myTimer = Timer.setTimeout({
         task: function() {

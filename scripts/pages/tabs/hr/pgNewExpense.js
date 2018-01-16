@@ -30,6 +30,10 @@ const Page_ = extend(PageDesign)(
 function initColors() {
 	changeInputColorsToDark(this.titleInput);
 	changeInputColorsToDark(this.expenseInput);
+	
+	
+	this.usernameLayout.innerTextbox.ios.clearButtonEnabled = true;
+	this.passwordLayout.innerTextbox.ios.clearButtonEnabled = true;
 
 	function changeInputColorsToDark(inputLayout) {
 		inputLayout.textboxInfo.textColor = Color.create("#4A4A4A");
