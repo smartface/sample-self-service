@@ -49,9 +49,10 @@ function onShow(parentOnShow, params) {
 	parentOnShow && parentOnShow(params);
 	const page = this;
 	
-	this.usernameLayout.innerTextbox.textColor = Color.BLACK;
-	this.passwordLayout.innerTextbox.textColor = Color.BLACK;
+	this.usernameLayout.innerTextbox.ios.clearButtonEnabled = true;
+	this.passwordLayout.innerTextbox.ios.clearButtonEnabled = true;
 	// Reset sign in button status because if sign in animation ran it changes
+
 
 	this.signinButton.width = 250;
 	this.signinButton.alpha = 1;

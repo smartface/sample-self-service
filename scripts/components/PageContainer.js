@@ -6,7 +6,6 @@ const SwipeView = require("sf-core/ui/swipeview");
 const System = require("sf-core/device/system");
 const pageContextPatch = require('@smartface/contx/lib/smartface/pageContextPatch');
 
-const HRIndex = Page(HRIndexConstructor);
 
 function HRIndexConstructor(_super, params) {
     _super(this, params);
@@ -14,8 +13,9 @@ function HRIndexConstructor(_super, params) {
     if (!this.childPages) this.childPages = [];
     this.children = {};
 
+    this.children["statusBar"] = this.statusBar;
+    this.children["headerBar"] = this.headerBar;
     pageContextPatch(this, "pageContainer");
-
     var _superOnLoad = this.onLoad;
 
     this.onLoad = function() {
@@ -32,6 +32,9 @@ function HRIndexConstructor(_super, params) {
         typeof _superOnShow === "function" && _superOnShow(user);
         this.headerBar.visible = false;
     }.bind(this);
+
+    
+
 }
 
 HRIndexConstructor.$$styleContext = {
@@ -49,6 +52,8 @@ HRIndexConstructor.$$styleContext = {
     }
 };
 
+const HRIndex = Page(HRIndexConstructor);
+
 function initSwipeView(page) {
     page.swipeView = new SwipeView({
         page: page,
@@ -56,7 +61,7 @@ function initSwipeView(page) {
         pages: page.childPages,
         onPageSelected: onChildPageChanged.bind(page)
     });
-    
+
     page.layout.addChild(page.swipeView, "swipeview");
 }
 
