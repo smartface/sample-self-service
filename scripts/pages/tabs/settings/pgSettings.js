@@ -17,11 +17,11 @@ const Page_ = extend(PageDesign)(
 
 		var _superOnLoad = this.onLoad;
 		var _superOnShow = this.onShow;
-		
+
 		this.onLoad = function() {
-			if (typeof _superOnLoad === "function") 
+			if (typeof _superOnLoad === "function")
 				_superOnLoad.call(this);
-			
+
 			this.headerBar.title = lang["pgSettings.pageTitle"];
 			this.headerBar.leftItemEnabled = false;
 			this.txtTheme.text = lang["pgSettings.theme"];
@@ -81,7 +81,7 @@ function changeTheme(themeName) {
 				type: "changeTheme",
 				theme: themeName
 			});
-			
+
 			this.dispatch({
 				type: "invalidate"
 			});
@@ -90,29 +90,32 @@ function changeTheme(themeName) {
 			initCurrentTheme.call(this);
 		}
 	});
-	
+
 	confirmationAlert.addButton({
 		text: lang["cancel"],
 		type: AlertView.Android.ButtonType.NEGATIVE
 	});
-	
+
 	confirmationAlert.show();
 }
 
 function initCurrentTheme() {
 	// if (Data.getStringVariable("theme") !== "Style1") {
-		this.themeBlueLayout.dispatch({
-			type: "updateUserStyle",
-			userStyle: {
-				borderWidth: Data.getStringVariable("theme") == "Style1" ? 1 : 0
-			}
-		});
-		this.themePurpleLayout.dispatch({
-			type: "updateUserStyle",
-			userStyle: {
-				borderWidth: Data.getStringVariable("theme") == "Style2" ? 1 : 0
-			}
-		});
+
+
+
+	this.themeBlueLayout.dispatch({
+		type: "updateUserStyle",
+		userStyle: {
+			borderWidth: Data.getStringVariable("theme") == "Style1" ? 1 : 0
+		}
+	});
+	this.themePurpleLayout.dispatch({
+		type: "updateUserStyle",
+		userStyle: {
+			borderWidth: Data.getStringVariable("theme") == "Style2" ? 1 : 0
+		}
+	});
 	// }
 }
 

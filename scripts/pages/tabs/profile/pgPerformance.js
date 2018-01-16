@@ -42,7 +42,7 @@ function onShow(parentOnShow) {
             DialogsLib.endLoading(loadingIndicator, this.listViewContainer);
             var series = [];
             performanceList.forEach((item) => {
-              //  console.log(" " + item.overallScore);
+                //  console.log(" " + item.overallScore);
                 series.push(item.overallScore);
             });
             loadChart.call(this, series);
@@ -67,8 +67,8 @@ function loadChart(series) {
     Object.assign(jet, {
         series: [{
             name: lang.performance,
-            items: series,
-            color: "#2077CD"
+            items: series
+            // color: "#2077CD"
         }],
         groups: [{ name: lang.jan, labelStyle: "color:#FFFFFF;" },
             { name: lang.feb, labelStyle: "color:#FFFFFF;" },
@@ -114,11 +114,12 @@ function loadChart(series) {
                     //console.log("JET_BACKGROUND" + backgroundColor);
                     jet.legend.rendered = false;
                     jet.jetData.backgroundColor = backgroundColor;
+                    jet.series[0].color = e.rawStyle.color;
                     jet.refresh();
                 }
             }
         },
-        ".flexLayout .flexLayout-headerBar"
+        ".flexLayout .flexLayout-headerBar  .jet-series"
     ));
 }
 
@@ -131,7 +132,7 @@ function initListView(listView, data) {
         var item = new ItemPerformance();
         item.id = 200;
         this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
-        myListViewItem.addChild(item, "child", "", function(style){
+        myListViewItem.addChild(item, "child", "", function(style) {
             style.width = null;
             return style;
         });

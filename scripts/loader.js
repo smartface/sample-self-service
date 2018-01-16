@@ -11,7 +11,8 @@ const componentContextPatch = require("@smartface/contx/lib/smartface/componentC
 
 var tabBar;
 BottomTabBar.$$styleContext = {
-    classNames: ".bottomtabbar"
+    classNames: ".bottomtabbar",
+    userProps: {}
 };
 exports.load = function load() {
     if (tabBar) {
@@ -31,7 +32,6 @@ exports.load = function load() {
         icon: Image.createFromFile("images://icon_tab_profile.png"),
         route: profileNavigator
     });
-    tabBar.add("profile", tabBar.children["profile"]);
 
     var hrNavigator = new Navigator();
     hrNavigator.add("index", require("./pages/tabs/hr"));
@@ -43,7 +43,6 @@ exports.load = function load() {
         icon: Image.createFromFile("images://icon_tab_hr.png"),
         route: hrNavigator
     });
-    tabBar.add("hr", tabBar.children["hr"]);
 
     var approvalNavigator = new Navigator();
     approvalNavigator.add("index", require("./pages/tabs/approvals"));
@@ -56,7 +55,6 @@ exports.load = function load() {
         icon: Image.createFromFile("images://icon_tab_approvals.png"),
         route: approvalNavigator
     })
-    tabBar.add("approvals", tabBar.children["approvals"]);
 
     var myCompanyNavigator = new Navigator();
     myCompanyNavigator.add("index", require("./pages/tabs/myCompany"));
@@ -68,8 +66,6 @@ exports.load = function load() {
         route: myCompanyNavigator
     });
 
-    tabBar.add("myCompany", tabBar.children["myCompany"]);
-
     var settingsNavigator = new Navigator();
     settingsNavigator.add("index", require("./pages/tabs/settings/pgSettings"));
     settingsNavigator.go("index");
@@ -78,8 +74,15 @@ exports.load = function load() {
         icon: Image.createFromFile("images://icon_tab_settings.png"),
         route: settingsNavigator
     });
-    tabBar.add("settings", tabBar.children["settings"]);
+
     componentContextPatch(tabBar, "bottomtabbar");
+
+    tabBar.add("profile", tabBar.children["profile"]);
+    tabBar.add("hr", tabBar.children["hr"]);
+    tabBar.add("approvals", tabBar.children["approvals"]);
+    tabBar.add("myCompany", tabBar.children["myCompany"]);
+    tabBar.add("settings", tabBar.children["settings"]);
+
     tabBar.setIndex("profile");
 
     Router.add("tabs", tabBar);

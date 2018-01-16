@@ -61,11 +61,12 @@ function loadChart(series) {
         webView: page.wvChart
     });
     page.wvChart.bounceEnabled = false;
+  
+    
     Object.assign(jet, {
         series: [{
             name: lang.performance,
-            items: series,
-            color: "#2077CD"
+            items: series
         }],
         groups: [{ name: lang.jan, labelStyle: "color:#FFFFFF;" },
             { name: lang.feb, labelStyle: "color:#FFFFFF;" },
@@ -111,11 +112,12 @@ function loadChart(series) {
                     //console.log("JET_BACKGROUND" + backgroundColor);
                     jet.legend.rendered = false;
                     jet.jetData.backgroundColor = backgroundColor;
+                    jet.series[0].color = e.rawStyle.color;
                     jet.refresh();
                 }
             }
         },
-        ".flexLayout .flexLayout-headerBar"
+        ".flexLayout .flexLayout-headerBar .jet-series"
     ));
 }
 

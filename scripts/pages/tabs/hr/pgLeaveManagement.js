@@ -42,6 +42,7 @@ function onShow(parentOnShow) {
     parentOnShow();
     const page = this;
     this.topTabBar.currentIndex = 0;
+
     if (page.firstOnShow) {
         page.firstOnShow = false;
         DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
