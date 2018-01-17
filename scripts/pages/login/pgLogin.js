@@ -7,7 +7,7 @@ const System = require("sf-core/device/system");
 const Timer = require("sf-core/timer");
 const fingerprint = require("sf-extension-utils").fingerprint;
 const rau = require("sf-extension-utils").rau;
-const mcs = require("../../lib/mcs");
+const login =  require("../../lib/lgn");
 const Color = require("sf-core/ui/color");
 const ActionKeyType = require('sf-core/ui/actionkeytype');
 
@@ -128,12 +128,21 @@ function doLogin(page, username, password, callback) {
 	// 	}
 	// 	callback && callback(err, userData);
 	// });
-	Timer.setTimeout({
-		task: function() {
-			callback(null, null);
-		},
-		delay: 1000
-	});
+	login.lgn({
+		username: username,
+		password: password
+	}, function(err, userData){
+		 	if (err) {
+			alert(lang["pgLogin.invalidLogin"]);
+		}
+		callback && callback(err, userData);
+	})
+	// Timer.setTimeout({
+	// 	task: function() {
+	// 		callback(null, null);
+	// 	},
+	// 	delay: 1000
+	// });
 }
 
 function startLoading(uiComponents, callback) {
