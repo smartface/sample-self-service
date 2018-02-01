@@ -18,15 +18,11 @@ function lgn(options, callback) {
             var responseBody = e.body.toString();
 
             var parseJSON = JSON.parse(responseBody);
-            console.log("parse json " + JSON.stringify(parseJSON));
-
-            console.log(parseJSON[0].username + "  " + parseJSON[0].password)
 
             if (username === parseJSON[0].username && password === parseJSON[0].password) {
                 callback && callback(null, responseBody);
             }
             else {
-                ///alert("password or username uncredintial");
                 callback(responseBody);
             }
 

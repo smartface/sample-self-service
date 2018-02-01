@@ -102,8 +102,6 @@ function changeTheme(themeName) {
 function initCurrentTheme() {
 	// if (Data.getStringVariable("theme") !== "Style1") {
 
-
-
 	this.themeBlueLayout.dispatch({
 		type: "updateUserStyle",
 		userStyle: {

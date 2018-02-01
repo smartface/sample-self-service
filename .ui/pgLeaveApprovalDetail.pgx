@@ -53,16 +53,19 @@
 			"userProps": {
 				"usePageVariable": true,
 				"width": null,
-				"height": 520,
-				"marginLeft": 10,
-				"marginRight": 10,
+				"height": null,
 				"paddingLeft": null,
 				"paddingRight": null,
 				"paddingTop": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"left": 10,
+				"right": 10,
+				"top": 0,
+				"bottom": 70,
 				"flexProps": {
 					"flexGrow": null,
-					"alignItems": "STRETCH"
+					"alignItems": "STRETCH",
+					"positionType": "ABSOLUTE"
 				}
 			},
 			"className": ".flexLayout",
@@ -89,7 +92,8 @@
 				"paddingBottom": 10,
 				"flexProps": {
 					"flexDirection": "ROW",
-					"alignItems": "CENTER"
+					"alignItems": "CENTER",
+					"flexGrow": 2
 				}
 			},
 			"className": ".flexLayout",
@@ -206,7 +210,8 @@
 				"marginRight": null,
 				"flexProps": {
 					"alignItems": "CENTER",
-					"justifyContent": "CENTER"
+					"justifyContent": "CENTER",
+					"flexGrow": 3.5
 				}
 			},
 			"className": ".flexLayout",
@@ -906,7 +911,9 @@
 				"paddingRight": 10,
 				"paddingTop": 10,
 				"paddingBottom": 10,
-				"flexProps": {}
+				"flexProps": {
+					"flexGrow": 2
+				}
 			},
 			"className": ".flexLayout",
 			"props": {
@@ -923,11 +930,12 @@
 			"id": "587c-e2b3-069a-4dcf",
 			"userProps": {
 				"width": null,
-				"height": 60,
+				"height": null,
 				"marginTop": 10,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
-					"flexDirection": "ROW"
+					"flexDirection": "ROW",
+					"flexGrow": 1
 				}
 			},
 			"className": ".flexLayout",

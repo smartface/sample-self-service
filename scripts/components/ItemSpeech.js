@@ -12,6 +12,7 @@ const ItemSpeech = extend(ItemSpeechDesign)(
 		this.pageName = pageName;
 		
 		var _inputField;
+		var page = this;
 		
 		Object.defineProperties(this, {
 			'inputField': {
@@ -36,9 +37,8 @@ const ItemSpeech = extend(ItemSpeechDesign)(
 			}
 		});
 		
-		this.onTouchEnded = function()
-		{
-			startSpeechRecognizer(this);
+		this.onTouchEnded = function(){
+			startSpeechRecognizer(page);
 		}.bind(this);
 		
 	}
@@ -49,9 +49,9 @@ function startSpeechRecognizer(item)
 {
 	if (!Speech2Text.isRunning) {
 	    item.icon.image = Image.createFromFile("images://icon_microphone_red.png");
-		Speech2Text.startType(item.inputField, 3000, function() {
+		//Speech2Text.startType(item.inputField, 3000, function() {
 		    item.icon.image = Image.createFromFile("images://icon_microphone.png");
-		});
+	//	});
 	}
 }
 

@@ -10,6 +10,7 @@ const PageDesign = require("../../../ui/ui_pgNewExpense");
 const Picker = require("sf-core/ui/picker");
 const Router = require("sf-core/router");
 const ScrollView = require("sf-core/ui/scrollview");
+const ImageView = require('sf-core/ui/imageview');
 
 const Page_ = extend(PageDesign)(
 	// Constructor
@@ -63,6 +64,8 @@ function onLoad(superOnLoad) {
 	typeof superOnLoad === "function" && superOnLoad();
 	wrapContentIntoScroll.call(this);
 
+	initCallbacks.call(this);
+
 	initTexts.call(this);
 	this.headerBar.itemColor = Color.WHITE;
 }
@@ -71,7 +74,6 @@ function onShow(superOnLoad) {
 	typeof superOnLoad === "function" && superOnLoad();
 
 	initColors.call(this);
-	initCallbacks.call(this);
 
 }
 
@@ -130,16 +132,20 @@ function onExpenseDatePickerPressed() {
 }
 
 function onAddFilePressed() {
+console.log("onPress ")
 	Multimedia.pickFromGallery({
 		type: Multimedia.Type.IMAGE,
 		onSuccess: onSuccess.bind(this),
+		onFailure: console.log(" picking fail"),
 		page: this
 	});
-
+console.log("before success");
 	function onSuccess(picked) {
 		var itemFile = new ItemFile();
 		itemFile.marginLeft = 10;
 		itemFile.filePreview.image = picked.image;
+		itemFile.filePreview.imageFillType = ImageView.FillType.STRETCH;
+		console.log("in on success");
 		this.attachmentsLayout.addChild(itemFile);
 	}
 }
