@@ -1,125 +1,125 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "2b5c-c30c-0ebc-f6e3",
 			"initialized": true,
-			"userProps": {
-				"flexProps": {}
-			},
-			"className": ".page",
-			"version": "6.6.0",
 			"props": {
-				"name": "pgExpanseManagement",
 				"children": [
 					"81ad-b6ca-67f3-08d9",
 					"183f-f46d-89aa-4a99",
 					"a1f7-df63-7a05-2e40",
 					"6c27-5800-f271-1ad0"
 				],
-				"parent": null,
+				"isRemovable": true,
+				"name": "pgExpanseManagement",
 				"orientation": "PORTRAIT",
-				"isRemovable": true
-			}
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {}
+			},
+			"version": "6.6.1"
 		},
 		{
-			"type": "StatusBar",
-			"id": "81ad-b6ca-67f3-08d9",
-			"userProps": {},
 			"className": "",
+			"id": "81ad-b6ca-67f3-08d9",
 			"props": {
-				"name": "statusBar",
 				"children": [],
-				"parent": "2b5c-c30c-0ebc-f6e3",
-				"isRemovable": false
-			}
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "2b5c-c30c-0ebc-f6e3"
+			},
+			"type": "StatusBar",
+			"userProps": {}
 		},
 		{
-			"type": "HeaderBar",
+			"className": ".headerBar",
 			"id": "183f-f46d-89aa-4a99",
+			"props": {
+				"children": [],
+				"name": "headerBar",
+				"parent": "2b5c-c30c-0ebc-f6e3",
+				"title": "newPage001"
+			},
+			"type": "HeaderBar",
 			"userProps": {
 				"title": "newPage001",
 				"visible": false
-			},
-			"className": ".headerBar",
-			"props": {
-				"name": "headerBar",
-				"title": "newPage001",
-				"children": [],
-				"parent": "2b5c-c30c-0ebc-f6e3"
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "6c27-5800-f271-1ad0",
-			"userProps": {
-				"width": null,
-				"height": null,
-				"backgroundColor": "rgba( 255, 255, 255, 1 )",
-				"marginLeft": 10,
-				"marginRight": 10,
-				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1,
-					"justifyContent": "CENTER"
-				}
-			},
 			"className": ".flexLayout",
+			"id": "6c27-5800-f271-1ad0",
 			"props": {
-				"name": "listViewContainer",
-				"usePageVariable": true,
 				"children": [
 					"6a75-c9c1-6279-4ef9"
 				],
-				"parent": "2b5c-c30c-0ebc-f6e3"
+				"name": "listViewContainer",
+				"parent": "2b5c-c30c-0ebc-f6e3",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"flexGrow": 1,
+					"justifyContent": "CENTER"
+				},
+				"height": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"usePageVariable": true,
+				"width": null
 			}
 		},
 		{
-			"type": "ListView",
+			"className": ".listView",
 			"id": "6a75-c9c1-6279-4ef9",
+			"props": {
+				"children": [],
+				"itemCount": 3,
+				"name": "listView",
+				"parent": "6c27-5800-f271-1ad0",
+				"rowHeight": 60,
+				"usePageVariable": true
+			},
+			"type": "ListView",
 			"userProps": {
-				"usePageVariable": true,
-				"width": null,
-				"height": null,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 1
-				}
-			},
-			"className": ".listView",
-			"props": {
-				"name": "listView",
+				},
+				"height": null,
 				"usePageVariable": true,
-				"children": [],
-				"parent": "6c27-5800-f271-1ad0",
-				"itemCount": 3,
-				"rowHeight": 60
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "a1f7-df63-7a05-2e40",
+			"className": ".flexLayout .flexLayout-headerBar",
 			"hiddenComponent": false,
+			"id": "a1f7-df63-7a05-2e40",
+			"props": {
+				"children": [],
+				"name": "layoutHeaderBar",
+				"parent": "2b5c-c30c-0ebc-f6e3",
+				"usePageVariable": true
+			},
 			"source": {
 				"page": "__library__",
 				"id": "ebb9-37cc-ff1b-0314"
 			},
+			"type": "FlexLayout",
 			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 92,
-				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE"
-				}
-			},
-			"className": ".flexLayout .flexLayout-headerBar",
-			"props": {
-				"name": "layoutHeaderBar",
+				},
+				"height": 92,
+				"left": 0,
+				"top": 0,
 				"usePageVariable": true,
-				"children": [],
-				"parent": "2b5c-c30c-0ebc-f6e3"
+				"width": null
 			}
 		}
 	]

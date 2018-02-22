@@ -1,108 +1,108 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "89ce-578e-c47c-44d6",
 			"initialized": true,
-			"userProps": {
-				"flexProps": {}
-			},
-			"className": ".page",
-			"version": "6.6.0",
 			"props": {
-				"name": "pgDocumentDetail",
 				"children": [
 					"bac5-862b-7730-58d5",
 					"4204-9c42-426b-7701",
 					"65e0-23e5-f035-1275"
 				],
-				"parent": null,
-				"orientation": "PORTRAIT"
-			}
-		},
-		{
-			"type": "StatusBar",
-			"id": "bac5-862b-7730-58d5",
-			"userProps": {},
-			"className": "",
-			"props": {
-				"name": "statusBar",
-				"children": [],
-				"parent": "89ce-578e-c47c-44d6",
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "4204-9c42-426b-7701",
+				"name": "pgDocumentDetail",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
 			"userProps": {
+				"flexProps": {}
+			},
+			"version": "6.6.1"
+		},
+		{
+			"className": "",
+			"id": "bac5-862b-7730-58d5",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "89ce-578e-c47c-44d6"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
+			"id": "4204-9c42-426b-7701",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "89ce-578e-c47c-44d6",
 				"title": "newPage001"
 			},
-			"className": ".headerBar",
-			"props": {
-				"name": "headerBar",
-				"title": "newPage001",
-				"children": [],
-				"parent": "89ce-578e-c47c-44d6",
-				"isRemovable": false
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "newPage001"
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "65e0-23e5-f035-1275",
-			"userProps": {
-				"usePageVariable": true,
-				"width": null,
-				"height": null,
-				"flexProps": {
-					"alignItems": "CENTER",
-					"justifyContent": "CENTER"
-				}
-			},
 			"className": ".flexLayout .flexLayout-main",
+			"id": "65e0-23e5-f035-1275",
 			"props": {
-				"name": "mainLayout",
-				"usePageVariable": true,
 				"children": [
 					"ec33-5436-0955-5eda",
 					"0cb4-4626-3ef8-a5a2"
 				],
-				"parent": "89ce-578e-c47c-44d6"
+				"name": "mainLayout",
+				"parent": "89ce-578e-c47c-44d6",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER"
+				},
+				"height": null,
+				"usePageVariable": true,
+				"width": null
 			}
 		},
 		{
-			"type": "ImageView",
-			"id": "ec33-5436-0955-5eda",
-			"userProps": {
-				"image": "add_photo.png",
-				"height": 100,
-				"width": 100,
-				"imageFillType": "ASPECTFIT",
-				"flexProps": {}
-			},
 			"className": ".imageView",
+			"id": "ec33-5436-0955-5eda",
 			"props": {
-				"name": "imageview42",
 				"children": [],
+				"name": "imageview42",
 				"parent": "65e0-23e5-f035-1275"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {},
+				"height": 100,
+				"image": "add_photo.png",
+				"imageFillType": "ASPECTFIT",
+				"width": 100
 			}
 		},
 		{
-			"type": "Label",
-			"id": "0cb4-4626-3ef8-a5a2",
-			"userProps": {
-				"textAlignment": "MIDCENTER",
-				"text": "Please Upload Your Document",
-				"textColor": "rgba( 155, 155, 155, 1 )",
-				"font": {},
-				"flexProps": {}
-			},
 			"className": ".label",
+			"id": "0cb4-4626-3ef8-a5a2",
 			"props": {
-				"name": "label322",
-				"text": "Please Upload Your Document",
 				"children": [],
-				"parent": "65e0-23e5-f035-1275"
+				"name": "label322",
+				"parent": "65e0-23e5-f035-1275",
+				"text": "Please Upload Your Document"
+			},
+			"type": "Label",
+			"userProps": {
+				"flexProps": {},
+				"font": {},
+				"text": "Please Upload Your Document",
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 155, 155, 155, 1 )"
 			}
 		}
 	]

@@ -26,7 +26,6 @@ function initTexts() {
 	this.company.value.text = "AA Company";
 	this.workPhone.value.text = "+1-202-555-0167";
 	this.mobilePhone.value.text = "+1-202-555-0125";
-
 }
 
 function onLoad(superOnLoad) {

@@ -1,124 +1,124 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "bb7e-e76c-d0ac-4a8b",
 			"initialized": true,
-			"userProps": {
-				"backgroundColor": "rgba( 228, 228, 228, 1 )",
-				"flexProps": {}
-			},
-			"className": ".page",
-			"version": "6.6.0",
 			"props": {
-				"name": "pgEmploymentHistory",
 				"children": [
 					"01af-a351-fe76-c88a",
 					"02c8-0737-ee7c-705f",
 					"0992-6e57-ad60-1cf0",
 					"d769-1e4a-6ae5-99e1"
 				],
-				"parent": null,
-				"orientation": "PORTRAIT"
-			}
+				"name": "pgEmploymentHistory",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"backgroundColor": "rgba( 228, 228, 228, 1 )",
+				"flexProps": {}
+			},
+			"version": "6.6.1"
 		},
 		{
-			"type": "StatusBar",
-			"id": "01af-a351-fe76-c88a",
-			"userProps": {},
 			"className": "",
+			"id": "01af-a351-fe76-c88a",
 			"props": {
-				"name": "statusBar",
 				"children": [],
+				"name": "statusBar",
 				"parent": "bb7e-e76c-d0ac-4a8b"
-			}
+			},
+			"type": "StatusBar",
+			"userProps": {}
 		},
 		{
-			"type": "HeaderBar",
+			"className": ".headerBar",
 			"id": "02c8-0737-ee7c-705f",
+			"props": {
+				"children": [],
+				"name": "headerBar",
+				"parent": "bb7e-e76c-d0ac-4a8b",
+				"title": "newPage001"
+			},
+			"type": "HeaderBar",
 			"userProps": {
 				"title": "newPage001",
 				"visible": false
-			},
-			"className": ".headerBar",
-			"props": {
-				"name": "headerBar",
-				"title": "newPage001",
-				"children": [],
-				"parent": "bb7e-e76c-d0ac-4a8b"
 			}
 		},
 		{
-			"type": "FlexLayout",
+			"className": ".flexLayout",
 			"id": "d769-1e4a-6ae5-99e1",
+			"props": {
+				"children": [
+					"1ad2-8694-6b9b-90f1"
+				],
+				"name": "listViewContainer",
+				"parent": "bb7e-e76c-d0ac-4a8b",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
 			"userProps": {
-				"usePageVariable": true,
-				"width": null,
-				"height": null,
-				"marginLeft": 10,
-				"marginRight": 10,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 1,
 					"justifyContent": "CENTER"
-				}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"name": "listViewContainer",
+				},
+				"height": null,
+				"marginLeft": 10,
+				"marginRight": 10,
 				"usePageVariable": true,
-				"children": [
-					"1ad2-8694-6b9b-90f1"
-				],
-				"parent": "bb7e-e76c-d0ac-4a8b"
+				"width": null
 			}
 		},
 		{
-			"type": "ListView",
+			"className": ".listView",
 			"id": "1ad2-8694-6b9b-90f1",
+			"props": {
+				"children": [],
+				"itemCount": 3,
+				"name": "listView",
+				"parent": "d769-1e4a-6ae5-99e1",
+				"rowHeight": 60,
+				"usePageVariable": true
+			},
+			"type": "ListView",
 			"userProps": {
-				"width": null,
-				"height": null,
-				"usePageVariable": true,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 1
-				}
-			},
-			"className": ".listView",
-			"props": {
-				"name": "listView",
+				},
+				"height": null,
 				"usePageVariable": true,
-				"children": [],
-				"parent": "d769-1e4a-6ae5-99e1",
-				"itemCount": 3,
-				"rowHeight": 60
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "0992-6e57-ad60-1cf0",
+			"className": ".flexLayout .flexLayout-headerBar",
 			"hiddenComponent": false,
+			"id": "0992-6e57-ad60-1cf0",
+			"props": {
+				"children": [],
+				"name": "layoutHeaderBar",
+				"parent": "bb7e-e76c-d0ac-4a8b",
+				"usePageVariable": true
+			},
 			"source": {
 				"page": "__library__",
 				"id": "ebb9-37cc-ff1b-0314"
 			},
+			"type": "FlexLayout",
 			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 100,
-				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE"
-				}
-			},
-			"className": ".flexLayout .flexLayout-headerBar",
-			"props": {
-				"name": "layoutHeaderBar",
+				},
+				"height": 100,
+				"left": 0,
+				"top": 0,
 				"usePageVariable": true,
-				"children": [],
-				"parent": "bb7e-e76c-d0ac-4a8b"
+				"width": null
 			}
 		}
 	]

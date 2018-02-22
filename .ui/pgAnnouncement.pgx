@@ -1,125 +1,125 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "79d4-068d-65be-483e",
 			"initialized": true,
-			"userProps": {
-				"flexProps": {}
-			},
-			"className": ".page",
-			"version": "6.6.0",
 			"props": {
-				"name": "pgAnnouncement",
 				"children": [
 					"ec8b-eb9a-46d9-a134",
 					"d6d3-a112-c8bf-d1a8",
 					"7488-d8c2-c9ba-fab9",
 					"c2ba-c550-320a-37e4"
 				],
-				"parent": null,
-				"orientation": "PORTRAIT"
-			}
+				"name": "pgAnnouncement",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {}
+			},
+			"version": "6.6.1"
 		},
 		{
-			"type": "StatusBar",
-			"id": "ec8b-eb9a-46d9-a134",
-			"userProps": {},
 			"className": "",
+			"id": "ec8b-eb9a-46d9-a134",
 			"props": {
-				"name": "statusBar",
 				"children": [],
-				"parent": "79d4-068d-65be-483e",
-				"isRemovable": false
-			}
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "79d4-068d-65be-483e"
+			},
+			"type": "StatusBar",
+			"userProps": {}
 		},
 		{
-			"type": "HeaderBar",
+			"className": ".headerBar",
 			"id": "d6d3-a112-c8bf-d1a8",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "79d4-068d-65be-483e",
+				"title": "newPage001"
+			},
+			"type": "HeaderBar",
 			"userProps": {
 				"title": "newPage001",
 				"visible": false
-			},
-			"className": ".headerBar",
-			"props": {
-				"name": "headerBar",
-				"title": "newPage001",
-				"children": [],
-				"parent": "79d4-068d-65be-483e",
-				"isRemovable": false
 			}
 		},
 		{
-			"type": "FlexLayout",
+			"className": ".flexLayout",
 			"id": "c2ba-c550-320a-37e4",
+			"props": {
+				"children": [
+					"0ef9-1756-19da-ca8a"
+				],
+				"name": "listViewContainer",
+				"parent": "79d4-068d-65be-483e",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
 			"userProps": {
-				"usePageVariable": true,
-				"width": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
 				"height": null,
 				"marginLeft": 10,
 				"marginRight": 10,
 				"paddingLeft": null,
 				"paddingRight": null,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".flexLayout",
-			"props": {
-				"name": "listViewContainer",
 				"usePageVariable": true,
-				"children": [
-					"0ef9-1756-19da-ca8a"
-				],
-				"parent": "79d4-068d-65be-483e"
+				"width": null
 			}
 		},
 		{
-			"type": "ListView",
+			"className": ".listView",
 			"id": "0ef9-1756-19da-ca8a",
+			"props": {
+				"children": [],
+				"name": "listView",
+				"parent": "c2ba-c550-320a-37e4",
+				"usePageVariable": true
+			},
+			"type": "ListView",
 			"userProps": {
-				"width": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
 				"height": null,
-				"usePageVariable": true,
+				"itemCount": 0,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"itemCount": 0,
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"className": ".listView",
-			"props": {
-				"name": "listView",
 				"usePageVariable": true,
-				"children": [],
-				"parent": "c2ba-c550-320a-37e4"
+				"width": null
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "7488-d8c2-c9ba-fab9",
+			"className": ".flexLayout .flexLayout-headerBar",
 			"hiddenComponent": false,
+			"id": "7488-d8c2-c9ba-fab9",
+			"props": {
+				"children": [],
+				"name": "layoutHeaderBar",
+				"parent": "79d4-068d-65be-483e",
+				"usePageVariable": true
+			},
 			"source": {
 				"page": "__library__",
 				"id": "ebb9-37cc-ff1b-0314"
 			},
+			"type": "FlexLayout",
 			"userProps": {
-				"left": 0,
-				"top": 0,
-				"width": null,
-				"height": 92,
-				"usePageVariable": true,
 				"flexProps": {
 					"positionType": "RELATIVE"
-				}
-			},
-			"className": ".flexLayout .flexLayout-headerBar",
-			"props": {
-				"name": "layoutHeaderBar",
+				},
+				"height": 92,
+				"left": 0,
+				"top": 0,
 				"usePageVariable": true,
-				"children": [],
-				"parent": "79d4-068d-65be-483e"
+				"width": null
 			}
 		}
 	]

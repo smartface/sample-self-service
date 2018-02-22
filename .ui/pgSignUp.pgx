@@ -1,47 +1,47 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "ea91-958c-d6e6-f562",
 			"initialized": true,
-			"userProps": {},
-			"className": ".page",
-			"version": "6.6.0",
 			"props": {
-				"orientation": "PORTRAIT",
-				"name": "pgSignUp",
 				"children": [
 					"ac1d-8e47-7c05-9186",
 					"e849-8c2a-2c89-0d06"
 				],
 				"isRemovable": true,
+				"name": "pgSignUp",
+				"orientation": "PORTRAIT",
 				"parent": null
-			}
-		},
-		{
-			"type": "StatusBar",
-			"id": "ac1d-8e47-7c05-9186",
+			},
+			"type": "Page",
 			"userProps": {},
-			"className": ".statusBar",
-			"props": {
-				"name": "statusBar",
-				"children": [],
-				"parent": "ea91-958c-d6e6-f562",
-				"isRemovable": false
-			}
+			"version": "6.6.1"
 		},
 		{
-			"type": "HeaderBar",
+			"className": ".statusBar",
+			"id": "ac1d-8e47-7c05-9186",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "ea91-958c-d6e6-f562"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
 			"id": "e849-8c2a-2c89-0d06",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "headerBar",
+				"parent": "ea91-958c-d6e6-f562",
 				"title": "newPage001"
 			},
-			"className": ".headerBar",
-			"props": {
-				"title": "newPage001",
-				"name": "headerBar",
-				"children": [],
-				"parent": "ea91-958c-d6e6-f562"
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "newPage001"
 			}
 		}
 	]

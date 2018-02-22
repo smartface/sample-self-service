@@ -1,44 +1,44 @@
 {
 	"components": [
 		{
-			"type": "Page",
 			"id": "3587-a53c-f5d1-7fa6",
 			"initialized": true,
-			"userProps": {},
-			"version": "6.6.0",
 			"props": {
-				"name": "pgTimeManagement",
-				"parent": null,
 				"children": [
 					"ad9c-9b78-6b43-dfd2",
 					"6db2-c797-63f0-098c"
 				],
-				"orientation": "PORTRAIT"
-			}
-		},
-		{
-			"type": "StatusBar",
-			"id": "ad9c-9b78-6b43-dfd2",
-			"userProps": {},
-			"props": {
-				"name": "statusBar",
-				"parent": "3587-a53c-f5d1-7fa6",
-				"children": [],
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "6db2-c797-63f0-098c",
-			"userProps": {
-				"title": "pgTimeManagement"
+				"name": "pgTimeManagement",
+				"orientation": "PORTRAIT",
+				"parent": null
 			},
+			"type": "Page",
+			"userProps": {},
+			"version": "6.6.1"
+		},
+		{
+			"id": "ad9c-9b78-6b43-dfd2",
 			"props": {
-				"title": "pgTimeManagement",
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "3587-a53c-f5d1-7fa6"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"id": "6db2-c797-63f0-098c",
+			"props": {
+				"children": [],
+				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "3587-a53c-f5d1-7fa6",
-				"children": [],
-				"isRemovable": false
+				"title": "pgTimeManagement"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgTimeManagement"
 			}
 		}
 	]
