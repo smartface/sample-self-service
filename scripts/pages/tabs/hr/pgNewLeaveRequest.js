@@ -10,6 +10,7 @@ const Page_ = extend(PageDesign)(
 		// Initalizes super class for this page scope
 		_super(this, params);
 		this.onShow = onShow.bind(this, this.onShow);
+		this.onLoad = onLoad.bind(this, this.onLoad);
 		
 		initTexts.call(this);
 		
@@ -18,6 +19,14 @@ const Page_ = extend(PageDesign)(
         }
 	}
 );
+
+
+function onLoad(parentOnLoad) {
+	parentOnLoad();
+	
+	this.ios.safeAreaLayoutMode = true;
+
+}
 
 function onShow(parentOnShow) {
 	if (typeof parentOnShow === "function") parentOnShow();

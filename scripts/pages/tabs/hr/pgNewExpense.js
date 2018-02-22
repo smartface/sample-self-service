@@ -67,6 +67,8 @@ function onLoad(superOnLoad) {
 	initCallbacks.call(this);
 
 	initTexts.call(this);
+
+	this.ios.safeAreaLayoutMode = true;
 	this.headerBar.itemColor = Color.WHITE;
 }
 
@@ -132,14 +134,15 @@ function onExpenseDatePickerPressed() {
 }
 
 function onAddFilePressed() {
-console.log("onPress ")
+	console.log("onPress ")
 	Multimedia.pickFromGallery({
 		type: Multimedia.Type.IMAGE,
 		onSuccess: onSuccess.bind(this),
 		onFailure: console.log(" picking fail"),
 		page: this
 	});
-console.log("before success");
+	console.log("before success");
+
 	function onSuccess(picked) {
 		var itemFile = new ItemFile();
 		itemFile.marginLeft = 10;
