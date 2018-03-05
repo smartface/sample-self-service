@@ -67,15 +67,15 @@ function $Flexlayout35(_super, pageInstance) {
 $Flexlayout35.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
+    height: 240,
+    marginBottom: 10,
     marginLeft: 10,
     marginRight: 10,
     marginTop: 10,
-    marginBottom: 10,
-    width: null,
-    height: 240,
     paddingLeft: 10,
     paddingRight: 10,
-    paddingTop: 10
+    paddingTop: 10,
+    width: null
   }
 };
 const $Flexlayout35_ = FlexLayout($Flexlayout35);
@@ -88,12 +88,12 @@ function $Flexlayout35$$Label39(_super, pageInstance) {
 $Flexlayout35$$Label39.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
-    height: 25,
-    marginLeft: 10,
-    width: 250,
     font: {
       size: 16
-    }
+    },
+    height: 25,
+    marginLeft: 10,
+    width: 250
   }
 };
 const $Flexlayout35$$Label39_ = Label($Flexlayout35$$Label39);
@@ -104,15 +104,15 @@ function $Flexlayout35$$PickerContainer(_super, pageInstance) {
 $Flexlayout35$$PickerContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 45,
-    marginTop: 10,
-    marginBottom: 10,
     flexProps: {
       positionType: "RELATIVE"
-    }
+    },
+    height: 45,
+    left: 0,
+    marginBottom: 10,
+    marginTop: 10,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout35$$PickerContainer_ = PickerContainer($Flexlayout35$$PickerContainer);
@@ -123,14 +123,14 @@ function $Flexlayout35$$Pickercontainer_1(_super, pageInstance) {
 $Flexlayout35$$Pickercontainer_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 45,
-    marginBottom: 10,
     flexProps: {
       positionType: "RELATIVE"
-    }
+    },
+    height: 45,
+    left: 0,
+    marginBottom: 10,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout35$$Pickercontainer_1_ = PickerContainer($Flexlayout35$$Pickercontainer_1);
@@ -143,11 +143,11 @@ function $Flexlayout35$$Flexlayout51(_super, pageInstance) {
 $Flexlayout35$$Flexlayout51.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: 50,
-    width: null,
     flexProps: {
       flexDirection: "ROW"
-    }
+    },
+    height: 50,
+    width: null
   }
 };
 const $Flexlayout35$$Flexlayout51_ = FlexLayout($Flexlayout35$$Flexlayout51);
@@ -158,14 +158,14 @@ function $Flexlayout35$$Flexlayout51$$Flexlayout52(_super, pageInstance) {
 $Flexlayout35$$Flexlayout51$$Flexlayout52.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 45,
     flexProps: {
       positionType: "RELATIVE",
       flexGrow: 1
-    }
+    },
+    height: 45,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout35$$Flexlayout51$$Flexlayout52_ = PickerContainer($Flexlayout35$$Flexlayout51$$Flexlayout52);
@@ -176,15 +176,15 @@ function $Flexlayout35$$Flexlayout51$$Flexlayout52_1(_super, pageInstance) {
 $Flexlayout35$$Flexlayout51$$Flexlayout52_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 45,
-    marginLeft: 20,
     flexProps: {
       positionType: "RELATIVE",
       flexGrow: 1
-    }
+    },
+    height: 45,
+    left: 0,
+    marginLeft: 20,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout35$$Flexlayout51$$Flexlayout52_1_ = PickerContainer($Flexlayout35$$Flexlayout51$$Flexlayout52_1);
@@ -197,18 +197,18 @@ function $Flexlayout66(_super, pageInstance) {
 $Flexlayout66.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
+    flexProps: {
+      flexGrow: 1
+    },
+    height: null,
+    marginBottom: 70,
     marginLeft: 10,
     marginRight: 10,
-    height: null,
+    paddingBottom: 10,
     paddingLeft: 15,
     paddingRight: 15,
     paddingTop: 10,
-    paddingBottom: 10,
-    marginBottom: 70,
-    flexProps: {
-      flexGrow: 1
-    }
+    width: null
   }
 };
 const $Flexlayout66_ = FlexLayout($Flexlayout66);
@@ -221,13 +221,13 @@ function $Flexlayout66$$Flexlayout76(_super, pageInstance) {
 $Flexlayout66$$Flexlayout76.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: 30,
-    width: 312,
-    marginBottom: 5,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER"
-    }
+    },
+    height: 30,
+    marginBottom: 5,
+    width: 312
   }
 };
 const $Flexlayout66$$Flexlayout76_ = FlexLayout($Flexlayout66$$Flexlayout76);
@@ -240,15 +240,15 @@ function $Flexlayout66$$Flexlayout76$$Label85(_super, pageInstance) {
 $Flexlayout66$$Flexlayout76$$Label85.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
-    width: null,
-    height: null,
-    font: {
-      size: 16
-    },
     flexProps: {
       flexGrow: 1,
       alignSelf: "STRETCH"
-    }
+    },
+    font: {
+      size: 16
+    },
+    height: null,
+    width: null
   }
 };
 const $Flexlayout66$$Flexlayout76$$Label85_ = Label($Flexlayout66$$Flexlayout76$$Label85);
@@ -259,10 +259,10 @@ function $Flexlayout66$$Flexlayout76$$Imageview17(_super, pageInstance) {
 $Flexlayout66$$Flexlayout76$$Imageview17.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    width: 14,
     height: 25,
     image: "icon_microphone.png",
-    imageFillType: "ASPECTFIT"
+    imageFillType: "ASPECTFIT",
+    width: 14
   }
 };
 const $Flexlayout66$$Flexlayout76$$Imageview17_ = ImageView($Flexlayout66$$Flexlayout76$$Imageview17);
@@ -275,16 +275,16 @@ function $Flexlayout66$$Textbox1(_super, pageInstance) {
 $Flexlayout66$$Textbox1.$$styleContext = {
   classNames: ".textBox",
   userProps: {
-    width: null,
-    height: null,
-    borderWidth: 0.5,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
     borderColor: "rgba( 203, 204, 208, 1 )",
-    textColor: "rgba( 0, 0, 0, 0.28 )",
-    font: null,
+    borderWidth: 0.5,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    font: null,
+    height: null,
+    textColor: "rgba( 0, 0, 0, 0.28 )",
+    width: null
   }
 };
 const $Flexlayout66$$Textbox1_ = TextBox($Flexlayout66$$Textbox1);
@@ -297,16 +297,16 @@ function $Button1(_super, pageInstance) {
 $Button1.$$styleContext = {
   classNames: ".button",
   userProps: {
-    height: 60,
-    left: -1,
-    top: 543,
-    width: null,
-    right: 0,
     bottom: 0,
-    font: null,
     flexProps: {
       positionType: "ABSOLUTE"
-    }
+    },
+    font: null,
+    height: 60,
+    left: -1,
+    right: 0,
+    top: 543,
+    width: null
   }
 };
 const $Button1_ = Button($Button1);

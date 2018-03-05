@@ -66,13 +66,13 @@ function $LayoutHeaderBar(_super, pageInstance) {
 $LayoutHeaderBar.$$styleContext = {
   classNames: ".flexLayout .flexLayout-headerBar",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 102,
     flexProps: {
       positionType: "RELATIVE"
-    }
+    },
+    height: 102,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
@@ -85,11 +85,11 @@ function $Flexlayout1(_super, pageInstance) {
 $Flexlayout1.$$styleContext = {
   classNames: ".flexLayout .flexLayout-headerBar",
   userProps: {
-    width: null,
     flexProps: {
       alignItems: "CENTER",
       justifyContent: "CENTER"
-    }
+    },
+    width: null
   }
 };
 const $Flexlayout1_ = FlexLayout($Flexlayout1);
@@ -101,15 +101,15 @@ function $Flexlayout1$$Flexlayout30(_super, pageInstance) {
 $Flexlayout1$$Flexlayout30.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
     flexProps: {
       flexGrow: 1,
       alignSelf: "STRETCH",
       flexDirection: "ROW",
       alignItems: "STRETCH"
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $Flexlayout1$$Flexlayout30_ = FlexLayout($Flexlayout1$$Flexlayout30);
@@ -121,12 +121,12 @@ function $Flexlayout1$$Flexlayout30$$WvChart(_super, pageInstance) {
 $Flexlayout1$$Flexlayout30$$WvChart.$$styleContext = {
   classNames: ".webView",
   userProps: {
-    height: null,
-    width: null,
-    visible: false,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    visible: false,
+    width: null
   }
 };
 const $Flexlayout1$$Flexlayout30$$WvChart_ = WebView($Flexlayout1$$Flexlayout30$$WvChart);
@@ -138,12 +138,7 @@ function $Flexlayout1$$TopTabBar(_super, pageInstance) {
 $Flexlayout1$$TopTabBar.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 50,
-    left: 0,
-    right: 0,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    top: 0,
     flexProps: {
       positionType: "RELATIVE",
       flexDirection: "ROW",
@@ -151,7 +146,12 @@ $Flexlayout1$$TopTabBar.$$styleContext = {
       flexWrap: "NOWRAP",
       flexGrow: null,
       alignSelf: "STRETCH"
-    }
+    },
+    height: 50,
+    left: 0,
+    right: 0,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout1$$TopTabBar_ = TopTabBar($Flexlayout1$$TopTabBar);
@@ -165,14 +165,14 @@ $ListViewContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    width: null,
-    height: null,
-    marginLeft: 10,
-    marginRight: 10,
     flexProps: {
       flexGrow: 1,
       justifyContent: "CENTER"
-    }
+    },
+    height: null,
+    marginLeft: 10,
+    marginRight: 10,
+    width: null
   }
 };
 const $ListViewContainer_ = FlexLayout($ListViewContainer);
@@ -189,12 +189,12 @@ function $ListViewContainer$$ListView(_super, pageInstance) {
 $ListViewContainer$$ListView.$$styleContext = {
   classNames: ".listView",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $ListViewContainer$$ListView_ = ListView($ListViewContainer$$ListView);

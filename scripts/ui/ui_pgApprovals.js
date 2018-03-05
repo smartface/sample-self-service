@@ -62,16 +62,16 @@ function $Flexlayout137(_super, pageInstance) {
 $Flexlayout137.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
-    marginLeft: 10,
-    marginRight: 10,
-    marginBottom: 10,
     flexProps: {
       flexGrow: 1,
       alignItems: "STRETCH",
       justifyContent: "CENTER"
-    }
+    },
+    height: null,
+    marginBottom: 10,
+    marginLeft: 10,
+    marginRight: 10,
+    width: null
   }
 };
 const $Flexlayout137_ = FlexLayout($Flexlayout137);
@@ -83,9 +83,9 @@ function $Flexlayout137$$ComingSoon(_super, pageInstance) {
 $Flexlayout137$$ComingSoon.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    width: null,
     height: 100,
-    imageFillType: "ASPECTFIT"
+    imageFillType: "ASPECTFIT",
+    width: null
   }
 };
 const $Flexlayout137$$ComingSoon_ = ImageView($Flexlayout137$$ComingSoon);

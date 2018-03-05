@@ -53,8 +53,8 @@ $PgOutOfOffice.$$styleContext = {
   headerBar: {
     classNames: ".headerBar",
     userProps: {
-      visible: false,
-      backgroundColor: "rgba( 255, 255, 255, 1 )"
+      backgroundColor: "rgba( 255, 255, 255, 1 )",
+      visible: false
     }
   }
 };
@@ -67,13 +67,13 @@ function $LayoutHeaderBar(_super, pageInstance) {
 $LayoutHeaderBar.$$styleContext = {
   classNames: ".flexLayout .flexLayout-headerBar",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 92,
     flexProps: {
       positionType: "RELATIVE"
-    }
+    },
+    height: 92,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
@@ -89,14 +89,14 @@ function $MainContainer(_super, pageInstance) {
 $MainContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 610,
-    marginLeft: null,
-    marginRight: null,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
     flexProps: {
       flexGrow: null
-    }
+    },
+    height: 610,
+    marginLeft: null,
+    marginRight: null,
+    width: null
   }
 };
 const $MainContainer_ = FlexLayout($MainContainer);
@@ -108,10 +108,10 @@ function $MainContainer$$Flexlayout48(_super, pageInstance) {
 $MainContainer$$Flexlayout48.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
     height: 59,
     paddingLeft: 10,
-    paddingRight: 10
+    paddingRight: 10,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout48_ = FlexLayout($MainContainer$$Flexlayout48);
@@ -123,17 +123,17 @@ function $MainContainer$$Flexlayout48$$OutOfOffice(_super, pageInstance) {
 $MainContainer$$Flexlayout48$$OutOfOffice.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 59,
-    left: null,
-    top: null,
-    marginLeft: null,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER",
       justifyContent: "SPACE_BETWEEN",
       positionType: "RELATIVE"
-    }
+    },
+    height: 59,
+    left: null,
+    marginLeft: null,
+    top: null,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout48$$OutOfOffice_ = ListItemSwitch($MainContainer$$Flexlayout48$$OutOfOffice);
@@ -148,15 +148,15 @@ function $MainContainer$$DateContainer(_super, pageInstance) {
 $MainContainer$$DateContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    top: null,
-    paddingLeft: 10,
-    paddingTop: 10,
-    paddingRight: 10,
     height: 190,
-    marginTop: 10,
     marginLeft: 10,
-    marginRight: 10
+    marginRight: 10,
+    marginTop: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 10,
+    top: null,
+    width: null
   }
 };
 const $MainContainer$$DateContainer_ = FlexLayout($MainContainer$$DateContainer);
@@ -170,9 +170,9 @@ function $MainContainer$$DateContainer$$StartTitle(_super, pageInstance) {
 $MainContainer$$DateContainer$$StartTitle.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
+    font: null,
     height: 25,
-    width: null,
-    font: null
+    width: null
   }
 };
 const $MainContainer$$DateContainer$$StartTitle_ = Label($MainContainer$$DateContainer$$StartTitle);
@@ -185,13 +185,13 @@ function $MainContainer$$DateContainer$$Flexlayout742(_super, pageInstance) {
 $MainContainer$$DateContainer$$Flexlayout742.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 45,
-    marginTop: 10,
     flexProps: {
       flexDirection: "ROW",
       justifyContent: "SPACE_BETWEEN"
-    }
+    },
+    height: 45,
+    marginTop: 10,
+    width: null
   }
 };
 const $MainContainer$$DateContainer$$Flexlayout742_ = FlexLayout($MainContainer$$DateContainer$$Flexlayout742);
@@ -203,14 +203,14 @@ function $MainContainer$$DateContainer$$Flexlayout742$$StartDatePicker(_super, p
 $MainContainer$$DateContainer$$Flexlayout742$$StartDatePicker.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: 140,
-    height: 45,
     flexProps: {
       positionType: "RELATIVE",
       flexGrow: null
-    }
+    },
+    height: 45,
+    left: 0,
+    top: 0,
+    width: 140
   }
 };
 const $MainContainer$$DateContainer$$Flexlayout742$$StartDatePicker_ = PickerContainer($MainContainer$$DateContainer$$Flexlayout742$$StartDatePicker);
@@ -222,14 +222,14 @@ function $MainContainer$$DateContainer$$Flexlayout742$$StartTimePicker(_super, p
 $MainContainer$$DateContainer$$Flexlayout742$$StartTimePicker.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: 140,
-    height: 45,
     flexProps: {
       positionType: "RELATIVE",
       flexGrow: null
-    }
+    },
+    height: 45,
+    left: 0,
+    top: 0,
+    width: 140
   }
 };
 const $MainContainer$$DateContainer$$Flexlayout742$$StartTimePicker_ = PickerContainer($MainContainer$$DateContainer$$Flexlayout742$$StartTimePicker);
@@ -243,11 +243,11 @@ function $MainContainer$$DateContainer$$EndTitle(_super, pageInstance) {
 $MainContainer$$DateContainer$$EndTitle.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
+    font: null,
     height: 25,
-    width: null,
     marginLeft: null,
     marginTop: 10,
-    font: null
+    width: null
   }
 };
 const $MainContainer$$DateContainer$$EndTitle_ = Label($MainContainer$$DateContainer$$EndTitle);
@@ -260,13 +260,13 @@ function $MainContainer$$DateContainer$$Flexlayout742_1(_super, pageInstance) {
 $MainContainer$$DateContainer$$Flexlayout742_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 45,
-    marginTop: 10,
     flexProps: {
       flexDirection: "ROW",
       justifyContent: "SPACE_BETWEEN"
-    }
+    },
+    height: 45,
+    marginTop: 10,
+    width: null
   }
 };
 const $MainContainer$$DateContainer$$Flexlayout742_1_ = FlexLayout($MainContainer$$DateContainer$$Flexlayout742_1);
@@ -278,14 +278,14 @@ function $MainContainer$$DateContainer$$Flexlayout742_1$$EndDatePicker(_super, p
 $MainContainer$$DateContainer$$Flexlayout742_1$$EndDatePicker.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: 140,
-    height: 45,
     flexProps: {
       positionType: "RELATIVE",
       flexGrow: null
-    }
+    },
+    height: 45,
+    left: 0,
+    top: 0,
+    width: 140
   }
 };
 const $MainContainer$$DateContainer$$Flexlayout742_1$$EndDatePicker_ = PickerContainer($MainContainer$$DateContainer$$Flexlayout742_1$$EndDatePicker);
@@ -297,14 +297,14 @@ function $MainContainer$$DateContainer$$Flexlayout742_1$$EndTimePicker(_super, p
 $MainContainer$$DateContainer$$Flexlayout742_1$$EndTimePicker.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: 140,
-    height: 45,
     flexProps: {
       positionType: "RELATIVE",
       flexGrow: null
-    }
+    },
+    height: 45,
+    left: 0,
+    top: 0,
+    width: 140
   }
 };
 const $MainContainer$$DateContainer$$Flexlayout742_1$$EndTimePicker_ = PickerContainer($MainContainer$$DateContainer$$Flexlayout742_1$$EndTimePicker);
@@ -319,15 +319,15 @@ function $MainContainer$$IntExtContainer(_super, pageInstance) {
 $MainContainer$$IntExtContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
     height: 160,
-    top: null,
     marginLeft: 10,
+    marginRight: 10,
     marginTop: 10,
     paddingLeft: 10,
-    paddingTop: 10,
     paddingRight: 10,
-    marginRight: 10
+    paddingTop: 10,
+    top: null,
+    width: null
   }
 };
 const $MainContainer$$IntExtContainer_ = FlexLayout($MainContainer$$IntExtContainer);
@@ -341,9 +341,9 @@ function $MainContainer$$IntExtContainer$$IntExtTitle(_super, pageInstance) {
 $MainContainer$$IntExtContainer$$IntExtTitle.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
+    font: null,
     height: 25,
-    width: null,
-    font: null
+    width: null
   }
 };
 const $MainContainer$$IntExtContainer$$IntExtTitle_ = Label($MainContainer$$IntExtContainer$$IntExtTitle);
@@ -355,17 +355,17 @@ function $MainContainer$$IntExtContainer$$Internal(_super, pageInstance) {
 $MainContainer$$IntExtContainer$$Internal.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 59,
-    left: 0,
-    top: 0,
-    marginLeft: null,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER",
       justifyContent: "SPACE_BETWEEN",
       positionType: "RELATIVE"
-    }
+    },
+    height: 59,
+    left: 0,
+    marginLeft: null,
+    top: 0,
+    width: null
   }
 };
 const $MainContainer$$IntExtContainer$$Internal_ = ListItemSwitch($MainContainer$$IntExtContainer$$Internal);
@@ -376,16 +376,16 @@ function $MainContainer$$IntExtContainer$$HorizontalDivider(_super, pageInstance
 $MainContainer$$IntExtContainer$$HorizontalDivider.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $MainContainer$$IntExtContainer$$HorizontalDivider_ = HorizontalDivider($MainContainer$$IntExtContainer$$HorizontalDivider);
@@ -397,17 +397,17 @@ function $MainContainer$$IntExtContainer$$External(_super, pageInstance) {
 $MainContainer$$IntExtContainer$$External.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 59,
-    left: 0,
-    top: 0,
-    marginLeft: null,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER",
       justifyContent: "SPACE_BETWEEN",
       positionType: "RELATIVE"
-    }
+    },
+    height: 59,
+    left: 0,
+    marginLeft: null,
+    top: 0,
+    width: null
   }
 };
 const $MainContainer$$IntExtContainer$$External_ = ListItemSwitch($MainContainer$$IntExtContainer$$External);
@@ -420,15 +420,15 @@ function $MainContainer$$NoteContainer(_super, pageInstance) {
 $MainContainer$$NoteContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
+    height: 160,
+    marginLeft: 10,
+    marginRight: 10,
     marginTop: 10,
+    paddingBottom: 10,
     paddingLeft: 10,
     paddingRight: 10,
     paddingTop: 10,
-    height: 160,
-    paddingBottom: 10,
-    marginLeft: 10,
-    marginRight: 10
+    width: null
   }
 };
 const $MainContainer$$NoteContainer_ = FlexLayout($MainContainer$$NoteContainer);
@@ -441,11 +441,11 @@ function $MainContainer$$NoteContainer$$Flexlayout97(_super, pageInstance) {
 $MainContainer$$NoteContainer$$Flexlayout97.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 25,
     flexProps: {
       flexDirection: "ROW"
-    }
+    },
+    height: 25,
+    width: null
   }
 };
 const $MainContainer$$NoteContainer$$Flexlayout97_ = FlexLayout($MainContainer$$NoteContainer$$Flexlayout97);
@@ -459,12 +459,12 @@ function $MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle(_super, pageInst
 $MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
-    width: null,
-    height: null,
-    font: null,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    font: null,
+    height: null,
+    width: null
   }
 };
 const $MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle_ = Label($MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle);
@@ -475,10 +475,10 @@ function $MainContainer$$NoteContainer$$Flexlayout97$$Imageview44(_super, pageIn
 $MainContainer$$NoteContainer$$Flexlayout97$$Imageview44.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    width: 14,
+    height: null,
     image: "icon_microphone.png",
     imageFillType: "ASPECTFIT",
-    height: null
+    width: 14
   }
 };
 const $MainContainer$$NoteContainer$$Flexlayout97$$Imageview44_ = ImageView($MainContainer$$NoteContainer$$Flexlayout97$$Imageview44);
@@ -492,15 +492,15 @@ function $MainContainer$$NoteContainer$$Description(_super, pageInstance) {
 $MainContainer$$NoteContainer$$Description.$$styleContext = {
   classNames: ".textArea",
   userProps: {
-    width: null,
-    height: null,
-    marginTop: 10,
-    borderWidth: 0.5,
     borderColor: "rgba( 203, 204, 208, 1 )",
-    textAlignment: "TOPLEFT",
+    borderWidth: 0.5,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    marginTop: 10,
+    textAlignment: "TOPLEFT",
+    width: null
   }
 };
 const $MainContainer$$NoteContainer$$Description_ = TextArea($MainContainer$$NoteContainer$$Description);

@@ -66,17 +66,17 @@ function $Imageview156(_super, pageInstance) {
 $Imageview156.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    left: 0,
-    right: 0,
     bottom: 0,
-    top: 0,
-    width: null,
-    height: null,
-    imageFillType: "STRETCH",
-    image: "background.png",
     flexProps: {
       positionType: "ABSOLUTE"
-    }
+    },
+    height: null,
+    image: "background.png",
+    imageFillType: "STRETCH",
+    left: 0,
+    right: 0,
+    top: 0,
+    width: null
   }
 };
 const $Imageview156_ = ImageView($Imageview156);
@@ -90,13 +90,13 @@ function $AppName(_super, pageInstance) {
 $AppName.$$styleContext = {
   classNames: ".label .label-login.large",
   userProps: {
-    textAlignment: "MIDCENTER",
-    width: null,
-    height: null,
-    multiline: true,
     flexProps: {
       flexGrow: 5
-    }
+    },
+    height: null,
+    multiline: true,
+    textAlignment: "MIDCENTER",
+    width: null
   }
 };
 const $AppName_ = Label($AppName);
@@ -109,14 +109,14 @@ function $InputLayout(_super, pageInstance) {
 $InputLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    height: null,
     flexProps: {
       justifyContent: "CENTER",
       alignItems: "CENTER",
       flexGrow: 3
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $InputLayout_ = FlexLayout($InputLayout);
@@ -128,15 +128,15 @@ function $InputLayout$$UsernameLayout(_super, pageInstance) {
 $InputLayout$$UsernameLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: 60,
-    left: 0,
-    top: 0,
-    width: 250,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    marginBottom: 5,
     flexProps: {
       positionType: "RELATIVE"
-    }
+    },
+    height: 60,
+    left: 0,
+    marginBottom: 5,
+    top: 0,
+    width: 250
   }
 };
 const $InputLayout$$UsernameLayout_ = TextboxWithLine($InputLayout$$UsernameLayout);
@@ -148,15 +148,15 @@ function $InputLayout$$PasswordLayout(_super, pageInstance) {
 $InputLayout$$PasswordLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: 60,
-    left: 0,
-    top: 0,
-    width: 250,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    marginTop: 5,
     flexProps: {
       positionType: "RELATIVE"
-    }
+    },
+    height: 60,
+    left: 0,
+    marginTop: 5,
+    top: 0,
+    width: 250
   }
 };
 const $InputLayout$$PasswordLayout_ = TextboxWithLine($InputLayout$$PasswordLayout);
@@ -170,14 +170,14 @@ function $ButtonLayout(_super, pageInstance) {
 $ButtonLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
     flexProps: {
       flexGrow: 5,
       alignItems: "CENTER",
       justifyContent: "CENTER"
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $ButtonLayout_ = FlexLayout($ButtonLayout);
@@ -189,14 +189,14 @@ function $ButtonLayout$$LoadingImageView(_super, pageInstance) {
 $ButtonLayout$$LoadingImageView.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    width: null,
-    height: 50,
-    left: 0,
-    right: 0,
-    imageFillType: "NORMAL",
     flexProps: {
       positionType: "ABSOLUTE"
-    }
+    },
+    height: 50,
+    imageFillType: "NORMAL",
+    left: 0,
+    right: 0,
+    width: null
   }
 };
 const $ButtonLayout$$LoadingImageView_ = ImageView($ButtonLayout$$LoadingImageView);
@@ -210,12 +210,12 @@ function $ButtonLayout$$SigninButton(_super, pageInstance) {
 $ButtonLayout$$SigninButton.$$styleContext = {
   classNames: ".button",
   userProps: {
-    width: 250,
-    height: 50,
-    borderRadius: 25,
+    backgroundColor: "rgba( 23, 117, 208, 0 )",
     borderColor: "rgba( 233, 233, 233, 1 )",
+    borderRadius: 25,
     borderWidth: 1,
-    backgroundColor: "rgba( 23, 117, 208, 0 )"
+    height: 50,
+    width: 250
   }
 };
 const $ButtonLayout$$SigninButton_ = Button($ButtonLayout$$SigninButton);

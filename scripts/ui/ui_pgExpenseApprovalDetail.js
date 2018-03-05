@@ -65,17 +65,17 @@ function $MainLayout(_super, pageInstance) {
 $MainLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
+    backgroundColor: "rgba( 255, 255, 255, 0 )",
+    flexProps: {
+      flexGrow: null
+    },
     height: 810,
     marginLeft: null,
     marginRight: null,
     paddingLeft: null,
     paddingRight: null,
-    backgroundColor: "rgba( 255, 255, 255, 0 )",
     top: null,
-    flexProps: {
-      flexGrow: null
-    }
+    width: null
   }
 };
 const $MainLayout_ = FlexLayout($MainLayout);
@@ -88,16 +88,16 @@ function $MainLayout$$UserInformation(_super, pageInstance) {
 $MainLayout$$UserInformation.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 90,
-    paddingLeft: 10,
-    paddingRight: 10,
-    marginLeft: 10,
-    marginRight: 10,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER"
-    }
+    },
+    height: 90,
+    marginLeft: 10,
+    marginRight: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
+    width: null
   }
 };
 const $MainLayout$$UserInformation_ = FlexLayout($MainLayout$$UserInformation);
@@ -109,10 +109,10 @@ function $MainLayout$$UserInformation$$Avatar(_super, pageInstance) {
 $MainLayout$$UserInformation$$Avatar.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    width: 60,
     height: 60,
     image: "avatar1.png",
-    imageFillType: "ASPECTFIT"
+    imageFillType: "ASPECTFIT",
+    width: 60
   }
 };
 const $MainLayout$$UserInformation$$Avatar_ = ImageView($MainLayout$$UserInformation$$Avatar);
@@ -125,12 +125,12 @@ function $MainLayout$$UserInformation$$Flexlayout109(_super, pageInstance) {
 $MainLayout$$UserInformation$$Flexlayout109.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 60,
-    marginLeft: 10,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: 60,
+    marginLeft: 10,
+    width: null
   }
 };
 const $MainLayout$$UserInformation$$Flexlayout109_ = FlexLayout($MainLayout$$UserInformation$$Flexlayout109);
@@ -144,15 +144,15 @@ function $MainLayout$$UserInformation$$Flexlayout109$$Name(_super, pageInstance)
 $MainLayout$$UserInformation$$Flexlayout109$$Name.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textColor: "rgba( 74, 74, 74, 1 )",
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 18
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textColor: "rgba( 74, 74, 74, 1 )",
+    width: null
   }
 };
 const $MainLayout$$UserInformation$$Flexlayout109$$Name_ = Label($MainLayout$$UserInformation$$Flexlayout109$$Name);
@@ -166,15 +166,15 @@ function $MainLayout$$UserInformation$$Flexlayout109$$Position(_super, pageInsta
 $MainLayout$$UserInformation$$Flexlayout109$$Position.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textColor: "rgba( 74, 74, 74, 0.5 )",
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 14
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textColor: "rgba( 74, 74, 74, 0.5 )",
+    width: null
   }
 };
 const $MainLayout$$UserInformation$$Flexlayout109$$Position_ = Label($MainLayout$$UserInformation$$Flexlayout109$$Position);
@@ -193,13 +193,13 @@ function $MainLayout$$DetailsLayout(_super, pageInstance) {
 $MainLayout$$DetailsLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    paddingLeft: 10,
-    paddingTop: 10,
-    paddingRight: 10,
     height: 210,
     marginLeft: 10,
-    marginRight: 10
+    marginRight: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 10,
+    width: null
   }
 };
 const $MainLayout$$DetailsLayout_ = FlexLayout($MainLayout$$DetailsLayout);
@@ -213,9 +213,9 @@ function $MainLayout$$DetailsLayout$$DetailsTitle(_super, pageInstance) {
 $MainLayout$$DetailsLayout$$DetailsTitle.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
-    width: null,
+    font: null,
     height: 25,
-    font: null
+    width: null
   }
 };
 const $MainLayout$$DetailsLayout$$DetailsTitle_ = Label($MainLayout$$DetailsLayout$$DetailsTitle);
@@ -227,16 +227,16 @@ function $MainLayout$$DetailsLayout$$TitleItem(_super, pageInstance) {
 $MainLayout$$DetailsLayout$$TitleItem.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 40,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexDirection: "ROW",
       positionType: "RELATIVE",
       alignItems: "CENTER"
-    }
+    },
+    height: 40,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $MainLayout$$DetailsLayout$$TitleItem_ = ListItem1($MainLayout$$DetailsLayout$$TitleItem);
@@ -247,16 +247,16 @@ function $MainLayout$$DetailsLayout$$HorizontalDivider(_super, pageInstance) {
 $MainLayout$$DetailsLayout$$HorizontalDivider.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $MainLayout$$DetailsLayout$$HorizontalDivider_ = HorizontalDivider($MainLayout$$DetailsLayout$$HorizontalDivider);
@@ -268,16 +268,16 @@ function $MainLayout$$DetailsLayout$$TypeItem(_super, pageInstance) {
 $MainLayout$$DetailsLayout$$TypeItem.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 40,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexDirection: "ROW",
       positionType: "RELATIVE",
       alignItems: "CENTER"
-    }
+    },
+    height: 40,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $MainLayout$$DetailsLayout$$TypeItem_ = ListItem1($MainLayout$$DetailsLayout$$TypeItem);
@@ -288,16 +288,16 @@ function $MainLayout$$DetailsLayout$$Horizontaldivider_1(_super, pageInstance) {
 $MainLayout$$DetailsLayout$$Horizontaldivider_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $MainLayout$$DetailsLayout$$Horizontaldivider_1_ = HorizontalDivider($MainLayout$$DetailsLayout$$Horizontaldivider_1);
@@ -309,16 +309,16 @@ function $MainLayout$$DetailsLayout$$ExpenseItem(_super, pageInstance) {
 $MainLayout$$DetailsLayout$$ExpenseItem.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 40,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexDirection: "ROW",
       positionType: "RELATIVE",
       alignItems: "CENTER"
-    }
+    },
+    height: 40,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $MainLayout$$DetailsLayout$$ExpenseItem_ = ListItem1($MainLayout$$DetailsLayout$$ExpenseItem);
@@ -329,16 +329,16 @@ function $MainLayout$$DetailsLayout$$Horizontaldivider_2(_super, pageInstance) {
 $MainLayout$$DetailsLayout$$Horizontaldivider_2.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $MainLayout$$DetailsLayout$$Horizontaldivider_2_ = HorizontalDivider($MainLayout$$DetailsLayout$$Horizontaldivider_2);
@@ -350,16 +350,16 @@ function $MainLayout$$DetailsLayout$$ExpenseDateItem(_super, pageInstance) {
 $MainLayout$$DetailsLayout$$ExpenseDateItem.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 40,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexDirection: "ROW",
       positionType: "RELATIVE",
       alignItems: "CENTER"
-    }
+    },
+    height: 40,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $MainLayout$$DetailsLayout$$ExpenseDateItem_ = ListItem1($MainLayout$$DetailsLayout$$ExpenseDateItem);
@@ -372,15 +372,15 @@ function $MainLayout$$NoteLayout(_super, pageInstance) {
 $MainLayout$$NoteLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
     height: 120,
+    marginLeft: 10,
+    marginRight: 10,
     marginTop: 10,
+    paddingBottom: 10,
     paddingLeft: 10,
     paddingRight: 10,
     paddingTop: 10,
-    paddingBottom: 10,
-    marginLeft: 10,
-    marginRight: 10
+    width: null
   }
 };
 const $MainLayout$$NoteLayout_ = FlexLayout($MainLayout$$NoteLayout);
@@ -394,9 +394,9 @@ function $MainLayout$$NoteLayout$$NoteTitle(_super, pageInstance) {
 $MainLayout$$NoteLayout$$NoteTitle.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
-    width: null,
+    font: null,
     height: 25,
-    font: null
+    width: null
   }
 };
 const $MainLayout$$NoteLayout$$NoteTitle_ = Label($MainLayout$$NoteLayout$$NoteTitle);
@@ -410,13 +410,13 @@ function $MainLayout$$NoteLayout$$Note(_super, pageInstance) {
 $MainLayout$$NoteLayout$$Note.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    marginTop: 10,
-    font: null,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    font: null,
+    height: null,
+    marginTop: 10,
+    width: null
   }
 };
 const $MainLayout$$NoteLayout$$Note_ = Label($MainLayout$$NoteLayout$$Note);
@@ -430,15 +430,15 @@ function $MainLayout$$FileLayout(_super, pageInstance) {
 $MainLayout$$FileLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
     height: 300,
+    marginLeft: 10,
+    marginRight: 10,
     marginTop: 10,
+    paddingBottom: 10,
     paddingLeft: 10,
     paddingRight: 10,
     paddingTop: 10,
-    paddingBottom: 10,
-    marginLeft: 10,
-    marginRight: 10
+    width: null
   }
 };
 const $MainLayout$$FileLayout_ = FlexLayout($MainLayout$$FileLayout);
@@ -452,9 +452,9 @@ function $MainLayout$$FileLayout$$FileTitle(_super, pageInstance) {
 $MainLayout$$FileLayout$$FileTitle.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
-    width: null,
+    font: null,
     height: 25,
-    font: null
+    width: null
   }
 };
 const $MainLayout$$FileLayout$$FileTitle_ = Label($MainLayout$$FileLayout$$FileTitle);
@@ -465,14 +465,14 @@ function $MainLayout$$FileLayout$$Imageview22(_super, pageInstance) {
 $MainLayout$$FileLayout$$Imageview22.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    width: null,
-    height: null,
-    image: "invoice.png",
-    marginTop: 10,
-    imageFillType: "ASPECTFIT",
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    image: "invoice.png",
+    imageFillType: "ASPECTFIT",
+    marginTop: 10,
+    width: null
   }
 };
 const $MainLayout$$FileLayout$$Imageview22_ = ImageView($MainLayout$$FileLayout$$Imageview22);
@@ -486,15 +486,15 @@ function $MainLayout$$ButtonsLayout(_super, pageInstance) {
 $MainLayout$$ButtonsLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 60,
-    marginTop: 10,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    marginLeft: 10,
-    marginRight: 10,
     flexProps: {
       flexDirection: "ROW"
-    }
+    },
+    height: 60,
+    marginLeft: 10,
+    marginRight: 10,
+    marginTop: 10,
+    width: null
   }
 };
 const $MainLayout$$ButtonsLayout_ = FlexLayout($MainLayout$$ButtonsLayout);
@@ -508,13 +508,13 @@ function $MainLayout$$ButtonsLayout$$Reject(_super, pageInstance) {
 $MainLayout$$ButtonsLayout$$Reject.$$styleContext = {
   classNames: ".button",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 255, 50, 75, 1 )",
-    font: null,
     flexProps: {
       flexGrow: 10
-    }
+    },
+    font: null,
+    height: null,
+    width: null
   }
 };
 const $MainLayout$$ButtonsLayout$$Reject_ = Button($MainLayout$$ButtonsLayout$$Reject);
@@ -525,12 +525,12 @@ function $MainLayout$$ButtonsLayout$$Flexlayout191(_super, pageInstance) {
 $MainLayout$$ButtonsLayout$$Flexlayout191.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainLayout$$ButtonsLayout$$Flexlayout191_ = FlexLayout($MainLayout$$ButtonsLayout$$Flexlayout191);
@@ -544,13 +544,13 @@ function $MainLayout$$ButtonsLayout$$Approve(_super, pageInstance) {
 $MainLayout$$ButtonsLayout$$Approve.$$styleContext = {
   classNames: ".button",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 62, 208, 151, 1 )",
-    font: null,
     flexProps: {
       flexGrow: 10
-    }
+    },
+    font: null,
+    height: null,
+    width: null
   }
 };
 const $MainLayout$$ButtonsLayout$$Approve_ = Button($MainLayout$$ButtonsLayout$$Approve);
