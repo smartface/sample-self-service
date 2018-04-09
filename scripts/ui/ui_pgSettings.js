@@ -69,9 +69,9 @@ $Flexlayout84.$$styleContext = {
   classNames: ".flexLayout .flexLayout-main",
   userProps: {
     height: null,
-    width: null,
     paddingLeft: null,
-    paddingRight: null
+    paddingRight: null,
+    width: null
   }
 };
 const $Flexlayout84_ = FlexLayout($Flexlayout84);
@@ -85,16 +85,16 @@ function $Flexlayout84$$Flexlayout85(_super, pageInstance) {
 $Flexlayout84$$Flexlayout85.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: 60,
-    width: null,
-    marginRight: 10,
-    marginLeft: 10,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER",
       flexGrow: null,
       alignSelf: "STRETCH"
-    }
+    },
+    height: 60,
+    marginLeft: 10,
+    marginRight: 10,
+    width: null
   }
 };
 const $Flexlayout84$$Flexlayout85_ = FlexLayout($Flexlayout84$$Flexlayout85);
@@ -108,12 +108,12 @@ function $Flexlayout84$$Flexlayout85$$TxtTheme(_super, pageInstance) {
 $Flexlayout84$$Flexlayout85$$TxtTheme.$$styleContext = {
   classNames: ".label .label-list-item-title",
   userProps: {
-    width: null,
-    height: 70,
-    left: 5,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: 70,
+    left: 5,
+    width: null
   }
 };
 const $Flexlayout84$$Flexlayout85$$TxtTheme_ = Label($Flexlayout84$$Flexlayout85$$TxtTheme);
@@ -126,13 +126,13 @@ function $Flexlayout84$$Flexlayout85$$ThemeBlueLayout(_super, pageInstance) {
 $Flexlayout84$$Flexlayout85$$ThemeBlueLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: 35,
-    height: 35,
+    borderColor: "rgba( 195, 195, 195, 1 )",
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: "rgba( 195, 195, 195, 1 )",
+    height: 35,
     marginLeft: 10,
-    marginRight: null
+    marginRight: null,
+    width: 35
   }
 };
 const $Flexlayout84$$Flexlayout85$$ThemeBlueLayout_ = FlexLayout($Flexlayout84$$Flexlayout85$$ThemeBlueLayout);
@@ -143,18 +143,18 @@ function $Flexlayout84$$Flexlayout85$$ThemeBlueLayout$$Flexlayout247(_super, pag
 $Flexlayout84$$Flexlayout85$$ThemeBlueLayout$$Flexlayout247.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
-    marginLeft: 4,
-    marginTop: 4,
-    marginRight: 4,
-    marginBottom: 4,
-    borderColor: "rgba( 69, 73, 90, 1 )",
     backgroundColor: "rgba( 69, 73, 90, 1 )",
+    borderColor: "rgba( 69, 73, 90, 1 )",
     borderRadius: 6,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    marginBottom: 4,
+    marginLeft: 4,
+    marginRight: 4,
+    marginTop: 4,
+    width: null
   }
 };
 const $Flexlayout84$$Flexlayout85$$ThemeBlueLayout$$Flexlayout247_ = FlexLayout($Flexlayout84$$Flexlayout85$$ThemeBlueLayout$$Flexlayout247);
@@ -167,13 +167,13 @@ function $Flexlayout84$$Flexlayout85$$ThemePurpleLayout(_super, pageInstance) {
 $Flexlayout84$$Flexlayout85$$ThemePurpleLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: 35,
-    height: 35,
+    borderColor: "rgba( 195, 195, 195, 1 )",
     borderRadius: 8,
     borderWidth: 0,
-    borderColor: "rgba( 195, 195, 195, 1 )",
+    height: 35,
     marginLeft: 10,
-    marginRight: null
+    marginRight: null,
+    width: 35
   }
 };
 const $Flexlayout84$$Flexlayout85$$ThemePurpleLayout_ = FlexLayout($Flexlayout84$$Flexlayout85$$ThemePurpleLayout);
@@ -184,18 +184,18 @@ function $Flexlayout84$$Flexlayout85$$ThemePurpleLayout$$Flexlayout247_1(_super,
 $Flexlayout84$$Flexlayout85$$ThemePurpleLayout$$Flexlayout247_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
-    marginLeft: 4,
-    marginTop: 4,
-    marginRight: 4,
-    marginBottom: 4,
-    borderColor: "rgba( 69, 73, 90, 1 )",
     backgroundColor: "rgba( 124, 115, 192, 1 )",
+    borderColor: "rgba( 69, 73, 90, 1 )",
     borderRadius: 6,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    marginBottom: 4,
+    marginLeft: 4,
+    marginRight: 4,
+    marginTop: 4,
+    width: null
   }
 };
 const $Flexlayout84$$Flexlayout85$$ThemePurpleLayout$$Flexlayout247_1_ = FlexLayout($Flexlayout84$$Flexlayout85$$ThemePurpleLayout$$Flexlayout247_1);
@@ -206,16 +206,16 @@ function $Flexlayout84$$HorizontalDivider(_super, pageInstance) {
 $Flexlayout84$$HorizontalDivider.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout84$$HorizontalDivider_ = HorizontalDivider($Flexlayout84$$HorizontalDivider);
@@ -228,16 +228,16 @@ function $Flexlayout84$$Flexlayout85_1(_super, pageInstance) {
 $Flexlayout84$$Flexlayout85_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: 60,
-    width: null,
-    marginRight: 10,
-    marginLeft: 10,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER",
       flexGrow: null,
       alignSelf: "STRETCH"
-    }
+    },
+    height: 60,
+    marginLeft: 10,
+    marginRight: 10,
+    width: null
   }
 };
 const $Flexlayout84$$Flexlayout85_1_ = FlexLayout($Flexlayout84$$Flexlayout85_1);
@@ -251,12 +251,12 @@ function $Flexlayout84$$Flexlayout85_1$$TxtNotification(_super, pageInstance) {
 $Flexlayout84$$Flexlayout85_1$$TxtNotification.$$styleContext = {
   classNames: ".label .label-list-item-title",
   userProps: {
-    width: null,
-    height: 70,
-    left: 5,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: 70,
+    left: 5,
+    width: null
   }
 };
 const $Flexlayout84$$Flexlayout85_1$$TxtNotification_ = Label($Flexlayout84$$Flexlayout85_1$$TxtNotification);
@@ -267,9 +267,9 @@ function $Flexlayout84$$Flexlayout85_1$$Switch1(_super, pageInstance) {
 $Flexlayout84$$Flexlayout85_1$$Switch1.$$styleContext = {
   classNames: ".switch",
   userProps: {
-    width: null,
     minHeight: 31,
-    minWidth: 51
+    minWidth: 51,
+    width: null
   }
 };
 const $Flexlayout84$$Flexlayout85_1$$Switch1_ = Switch($Flexlayout84$$Flexlayout85_1$$Switch1);
@@ -280,16 +280,16 @@ function $Flexlayout84$$Horizontaldivider_1(_super, pageInstance) {
 $Flexlayout84$$Horizontaldivider_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout84$$Horizontaldivider_1_ = HorizontalDivider($Flexlayout84$$Horizontaldivider_1);
@@ -303,16 +303,16 @@ function $Flexlayout84$$LayoutFinger(_super, pageInstance) {
 $Flexlayout84$$LayoutFinger.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: 60,
-    width: null,
-    marginRight: 10,
-    marginLeft: 10,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER",
       flexGrow: null,
       alignSelf: "STRETCH"
-    }
+    },
+    height: 60,
+    marginLeft: 10,
+    marginRight: 10,
+    width: null
   }
 };
 const $Flexlayout84$$LayoutFinger_ = FlexLayout($Flexlayout84$$LayoutFinger);
@@ -326,12 +326,12 @@ function $Flexlayout84$$LayoutFinger$$TxtFingerPrint(_super, pageInstance) {
 $Flexlayout84$$LayoutFinger$$TxtFingerPrint.$$styleContext = {
   classNames: ".label .label-list-item-title",
   userProps: {
-    width: null,
-    height: 70,
-    left: 5,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: 70,
+    left: 5,
+    width: null
   }
 };
 const $Flexlayout84$$LayoutFinger$$TxtFingerPrint_ = Label($Flexlayout84$$LayoutFinger$$TxtFingerPrint);
@@ -343,9 +343,9 @@ function $Flexlayout84$$LayoutFinger$$SwitchFinger(_super, pageInstance) {
 $Flexlayout84$$LayoutFinger$$SwitchFinger.$$styleContext = {
   classNames: ".switch",
   userProps: {
-    width: null,
     minHeight: 31,
-    minWidth: 51
+    minWidth: 51,
+    width: null
   }
 };
 const $Flexlayout84$$LayoutFinger$$SwitchFinger_ = Switch($Flexlayout84$$LayoutFinger$$SwitchFinger);
@@ -357,16 +357,16 @@ function $Flexlayout84$$HorizontalDividerFingerprint(_super, pageInstance) {
 $Flexlayout84$$HorizontalDividerFingerprint.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout84$$HorizontalDividerFingerprint_ = HorizontalDivider($Flexlayout84$$HorizontalDividerFingerprint);
@@ -380,16 +380,16 @@ function $Flexlayout84$$LayoutAbout(_super, pageInstance) {
 $Flexlayout84$$LayoutAbout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: 60,
-    width: null,
-    marginRight: 10,
-    marginLeft: 10,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER",
       flexGrow: null,
       alignSelf: "STRETCH"
-    }
+    },
+    height: 60,
+    marginLeft: 10,
+    marginRight: 10,
+    width: null
   }
 };
 const $Flexlayout84$$LayoutAbout_ = FlexLayout($Flexlayout84$$LayoutAbout);
@@ -403,12 +403,12 @@ function $Flexlayout84$$LayoutAbout$$TxtAbout(_super, pageInstance) {
 $Flexlayout84$$LayoutAbout$$TxtAbout.$$styleContext = {
   classNames: ".label .label-list-item-title",
   userProps: {
-    width: null,
-    height: 70,
-    left: 5,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: 70,
+    left: 5,
+    width: null
   }
 };
 const $Flexlayout84$$LayoutAbout$$TxtAbout_ = Label($Flexlayout84$$LayoutAbout$$TxtAbout);
@@ -422,16 +422,16 @@ function $Flexlayout84$$LayoutAbout$$TxtNewVersion(_super, pageInstance) {
 $Flexlayout84$$LayoutAbout$$TxtNewVersion.$$styleContext = {
   classNames: ".label .label-list-item-title",
   userProps: {
-    width: null,
-    height: 70,
-    left: null,
-    textAlignment: "MIDRIGHT",
-    right: 5,
-    textColor: "rgba( 74, 144, 226, 1 )",
-    visible: true,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: 70,
+    left: null,
+    right: 5,
+    textAlignment: "MIDRIGHT",
+    textColor: "rgba( 74, 144, 226, 1 )",
+    visible: true,
+    width: null
   }
 };
 const $Flexlayout84$$LayoutAbout$$TxtNewVersion_ = Label($Flexlayout84$$LayoutAbout$$TxtNewVersion);
@@ -445,17 +445,17 @@ function $Flexlayout84$$TxtAboutDesc(_super, pageInstance) {
 $Flexlayout84$$TxtAboutDesc.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
+    font: {
+      size: 14
+    },
     height: 100,
     marginLeft: 15,
     marginRight: 10,
     marginTop: null,
     multiline: true,
-    textColor: "rgba( 155, 155, 155, 1 )",
     textAlignment: "TOPLEFT",
-    font: {
-      size: 14
-    }
+    textColor: "rgba( 155, 155, 155, 1 )",
+    width: null
   }
 };
 const $Flexlayout84$$TxtAboutDesc_ = Label($Flexlayout84$$TxtAboutDesc);
@@ -469,18 +469,18 @@ function $Flexlayout84$$SignoutLayout(_super, pageInstance) {
 $Flexlayout84$$SignoutLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 61,
-    marginLeft: null,
-    marginRight: null,
-    marginBottom: null,
-    left: 0,
-    right: 0,
     bottom: 0,
-    top: null,
     flexProps: {
       positionType: "ABSOLUTE"
-    }
+    },
+    height: 61,
+    left: 0,
+    marginBottom: null,
+    marginLeft: null,
+    marginRight: null,
+    right: 0,
+    top: null,
+    width: null
   }
 };
 const $Flexlayout84$$SignoutLayout_ = FlexLayout($Flexlayout84$$SignoutLayout);
@@ -491,16 +491,16 @@ function $Flexlayout84$$SignoutLayout$$Flexlayout731(_super, pageInstance) {
 $Flexlayout84$$SignoutLayout$$Flexlayout731.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout84$$SignoutLayout$$Flexlayout731_ = HorizontalDivider($Flexlayout84$$SignoutLayout$$Flexlayout731);
@@ -514,13 +514,13 @@ function $Flexlayout84$$SignoutLayout$$LblSignOut(_super, pageInstance) {
 $Flexlayout84$$SignoutLayout$$LblSignOut.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
+    flexProps: {
+      flexGrow: 1
+    },
     height: null,
     textAlignment: "MIDCENTER",
     textColor: "rgba( 255, 50, 75, 1 )",
-    flexProps: {
-      flexGrow: 1
-    }
+    width: null
   }
 };
 const $Flexlayout84$$SignoutLayout$$LblSignOut_ = Label($Flexlayout84$$SignoutLayout$$LblSignOut);

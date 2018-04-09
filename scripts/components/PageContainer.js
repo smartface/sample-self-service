@@ -1,3 +1,4 @@
+/* globals swipeViewIndex */
 const extend = require("js-base/core/extend");
 const DotIndicator = require("components/DotIndicator");
 const FlexLayout = require("sf-core/ui/flexlayout");
@@ -31,9 +32,8 @@ function HRIndexConstructor(_super, params) {
     this.onShow = function(user) {
         typeof _superOnShow === "function" && _superOnShow(user);
         this.headerBar.visible = false;
+        this.swipeView.swipeToIndex(swipeViewIndex.currentIndex, false);
     }.bind(this);
-
-    
 
 }
 
@@ -66,16 +66,19 @@ function initSwipeView(page) {
 }
 
 function initDotIndicator(page) {
-    page.dotIndicator = new DotIndicator();
-    page.layout.addChild(page.dotIndicator, "dotIndicator", ".flexlayout", {
-        top: 60,
-        height: 10,
-        flexProps: {
-            alignSelf: "CENTER",
-            positionType: "ABSOLUTE"
-        }
-    });
-    page.dotIndicator.size = page.childPages.length;
+    if (page.childPages.length !== 1) {
+        page.dotIndicator = new DotIndicator();
+        page.layout.addChild(page.dotIndicator, "dotIndicator", ".flexlayout", {
+            top: 60,
+            height: 10,
+            flexProps: {
+                alignSelf: "CENTER",
+                positionType: "ABSOLUTE",
+            }
+        });
+        page.dotIndicator.size = page.childPages.length;
+    }
+
     /*
     page.dotIndicator.top = 60; //System.OS === "Android" ? 40 : 60;
     page.dotIndicator.alignSelf = FlexLayout.AlignSelf.CENTER;

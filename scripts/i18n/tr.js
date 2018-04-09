@@ -7,7 +7,7 @@ SMF.i18n.defineLanguage('tr', {
 	"ok": "Tamam",
 	"tab.profile": "Profil",
 	"tab.HR": "İK",
-	"tab.Approvals": "Onaylar",
+	"tab.chatbot": "Chatbot",
 	"tab.myCompany": "Şirketim",
 	"tab.settings": "Ayarlar",
 	"pgOverview.pageTitle": "GENEL BAKIŞ",

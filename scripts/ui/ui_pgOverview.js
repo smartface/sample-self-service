@@ -64,13 +64,13 @@ function $LayoutHeaderBar(_super, pageInstance) {
 $LayoutHeaderBar.$$styleContext = {
   classNames: ".flexLayout .flexLayout-headerBar",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 92,
     flexProps: {
       positionType: "RELATIVE"
-    }
+    },
+    height: 92,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
@@ -84,12 +84,12 @@ function $Flexlayout1(_super, pageInstance) {
 $Flexlayout1.$$styleContext = {
   classNames: ".flexLayout .flexLayout-headerBar",
   userProps: {
-    width: null,
-    height: 170,
     flexProps: {
       alignItems: "CENTER",
       justifyContent: "CENTER"
-    }
+    },
+    height: 170,
+    width: null
   }
 };
 const $Flexlayout1_ = FlexLayout($Flexlayout1);
@@ -101,10 +101,10 @@ $Flexlayout1$$Imageview111.$$styleContext = {
   classNames: ".imageView",
   userProps: {
     height: 85,
-    width: 85,
-    imageFillType: "ASPECTFIT",
     image: "myavatar.png",
-    marginBottom: 5
+    imageFillType: "ASPECTFIT",
+    marginBottom: 5,
+    width: 85
   }
 };
 const $Flexlayout1$$Imageview111_ = ImageView($Flexlayout1$$Imageview111);
@@ -117,12 +117,12 @@ function $Flexlayout1$$Label827(_super, pageInstance) {
 $Flexlayout1$$Label827.$$styleContext = {
   classNames: ".label .label-overview-title",
   userProps: {
-    width: 200,
-    height: 25,
     font: {
       bold: false,
       size: 18
-    }
+    },
+    height: 25,
+    width: 200
   }
 };
 const $Flexlayout1$$Label827_ = Label($Flexlayout1$$Label827);
@@ -135,11 +135,11 @@ function $Flexlayout1$$Label827_1(_super, pageInstance) {
 $Flexlayout1$$Label827_1.$$styleContext = {
   classNames: ".label .label-overview-title",
   userProps: {
-    width: 200,
-    height: 25,
     font: {
       size: 14
-    }
+    },
+    height: 25,
+    width: 200
   }
 };
 const $Flexlayout1$$Label827_1_ = Label($Flexlayout1$$Label827_1);
@@ -154,12 +154,12 @@ function $Flexlayout500(_super, pageInstance) {
 $Flexlayout500.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 490,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
     flexProps: {
       flexGrow: null
-    }
+    },
+    height: 490,
+    width: null
   }
 };
 const $Flexlayout500_ = FlexLayout($Flexlayout500);
@@ -176,18 +176,18 @@ function $Flexlayout500$$Qualificationcontainer(_super, pageInstance) {
 $Flexlayout500$$Qualificationcontainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
+    height: 170,
     left: null,
-    right: null,
-    top: null,
     marginLeft: 10,
     marginRight: 10,
     marginTop: null,
+    paddingBottom: 10,
     paddingLeft: 10,
     paddingRight: 10,
     paddingTop: 10,
-    paddingBottom: 10,
-    height: 170
+    right: null,
+    top: null,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer_ = FlexLayout($Flexlayout500$$Qualificationcontainer);
@@ -201,11 +201,11 @@ function $Flexlayout500$$Qualificationcontainer$$QualificationTitle(_super, page
 $Flexlayout500$$Qualificationcontainer$$QualificationTitle.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
-    height: 25,
-    width: null,
     font: {
       size: 16
-    }
+    },
+    height: 25,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer$$QualificationTitle_ = Label($Flexlayout500$$Qualificationcontainer$$QualificationTitle);
@@ -217,16 +217,16 @@ function $Flexlayout500$$Qualificationcontainer$$ContainerType(_super, pageInsta
 $Flexlayout500$$Qualificationcontainer$$ContainerType.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 35,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexDirection: "ROW",
       positionType: "RELATIVE",
       alignItems: "CENTER"
-    }
+    },
+    height: 35,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer$$ContainerType_ = ListItem1($Flexlayout500$$Qualificationcontainer$$ContainerType);
@@ -237,19 +237,19 @@ function $Flexlayout500$$Qualificationcontainer$$HorizontalDivider(_super, pageI
 $Flexlayout500$$Qualificationcontainer$$HorizontalDivider.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
-    paddingBottom: null,
-    marginBottom: 5,
-    marginTop: 5,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    marginBottom: 5,
+    marginTop: 5,
+    paddingBottom: null,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer$$HorizontalDivider_ = HorizontalDivider($Flexlayout500$$Qualificationcontainer$$HorizontalDivider);
@@ -261,17 +261,17 @@ function $Flexlayout500$$Qualificationcontainer$$ContainerTitle(_super, pageInst
 $Flexlayout500$$Qualificationcontainer$$ContainerTitle.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 35,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
-    marginTop: null,
     flexProps: {
       flexDirection: "ROW",
       positionType: "RELATIVE",
       alignItems: "CENTER"
-    }
+    },
+    height: 35,
+    left: 0,
+    marginTop: null,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer$$ContainerTitle_ = ListItem1($Flexlayout500$$Qualificationcontainer$$ContainerTitle);
@@ -282,18 +282,18 @@ function $Flexlayout500$$Qualificationcontainer$$Horizontaldivider_1(_super, pag
 $Flexlayout500$$Qualificationcontainer$$Horizontaldivider_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
-    marginTop: 5,
-    marginBottom: 5,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    marginBottom: 5,
+    marginTop: 5,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer$$Horizontaldivider_1_ = HorizontalDivider($Flexlayout500$$Qualificationcontainer$$Horizontaldivider_1);
@@ -305,17 +305,17 @@ function $Flexlayout500$$Qualificationcontainer$$ContainerAwardedDate(_super, pa
 $Flexlayout500$$Qualificationcontainer$$ContainerAwardedDate.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 35,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
-    marginTop: null,
     flexProps: {
       flexDirection: "ROW",
       positionType: "RELATIVE",
       alignItems: "CENTER"
-    }
+    },
+    height: 35,
+    left: 0,
+    marginTop: null,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer$$ContainerAwardedDate_ = ListItem1($Flexlayout500$$Qualificationcontainer$$ContainerAwardedDate);
@@ -330,18 +330,18 @@ function $Flexlayout500$$Salarycontainer(_super, pageInstance) {
 $Flexlayout500$$Salarycontainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
+    height: 120,
     left: null,
-    right: null,
-    top: null,
     marginLeft: 10,
     marginRight: 10,
     marginTop: 10,
+    paddingBottom: 10,
     paddingLeft: 10,
     paddingRight: 10,
     paddingTop: 10,
-    paddingBottom: 10,
-    height: 120
+    right: null,
+    top: null,
+    width: null
   }
 };
 const $Flexlayout500$$Salarycontainer_ = FlexLayout($Flexlayout500$$Salarycontainer);
@@ -355,11 +355,11 @@ function $Flexlayout500$$Salarycontainer$$SalaryTitle(_super, pageInstance) {
 $Flexlayout500$$Salarycontainer$$SalaryTitle.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
-    height: 25,
-    width: null,
     font: {
       size: 16
-    }
+    },
+    height: 25,
+    width: null
   }
 };
 const $Flexlayout500$$Salarycontainer$$SalaryTitle_ = Label($Flexlayout500$$Salarycontainer$$SalaryTitle);
@@ -371,16 +371,16 @@ function $Flexlayout500$$Salarycontainer$$ContainerBasic(_super, pageInstance) {
 $Flexlayout500$$Salarycontainer$$ContainerBasic.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 35,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexDirection: "ROW",
       positionType: "RELATIVE",
       alignItems: "CENTER"
-    }
+    },
+    height: 35,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Salarycontainer$$ContainerBasic_ = ListItem1($Flexlayout500$$Salarycontainer$$ContainerBasic);
@@ -391,19 +391,19 @@ function $Flexlayout500$$Salarycontainer$$Horizontaldivider_2(_super, pageInstan
 $Flexlayout500$$Salarycontainer$$Horizontaldivider_2.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
-    paddingBottom: null,
-    marginBottom: 5,
-    marginTop: 5,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    marginBottom: 5,
+    marginTop: 5,
+    paddingBottom: null,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Salarycontainer$$Horizontaldivider_2_ = HorizontalDivider($Flexlayout500$$Salarycontainer$$Horizontaldivider_2);
@@ -415,17 +415,17 @@ function $Flexlayout500$$Salarycontainer$$ContainerVariable(_super, pageInstance
 $Flexlayout500$$Salarycontainer$$ContainerVariable.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 35,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
-    marginTop: null,
     flexProps: {
       flexDirection: "ROW",
       positionType: "RELATIVE",
       alignItems: "CENTER"
-    }
+    },
+    height: 35,
+    left: 0,
+    marginTop: null,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Salarycontainer$$ContainerVariable_ = ListItem1($Flexlayout500$$Salarycontainer$$ContainerVariable);
@@ -442,18 +442,18 @@ function $Flexlayout500$$Qualificationcontainer_1(_super, pageInstance) {
 $Flexlayout500$$Qualificationcontainer_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
+    height: 170,
     left: null,
-    right: null,
-    top: null,
     marginLeft: 10,
     marginRight: 10,
     marginTop: 10,
+    paddingBottom: 10,
     paddingLeft: 10,
     paddingRight: 10,
     paddingTop: 10,
-    paddingBottom: 10,
-    height: 170
+    right: null,
+    top: null,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer_1_ = FlexLayout($Flexlayout500$$Qualificationcontainer_1);
@@ -466,11 +466,11 @@ function $Flexlayout500$$Qualificationcontainer_1$$Label536_2(_super, pageInstan
 $Flexlayout500$$Qualificationcontainer_1$$Label536_2.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
-    height: 25,
-    width: null,
     font: {
       size: 16
-    }
+    },
+    height: 25,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer_1$$Label536_2_ = Label($Flexlayout500$$Qualificationcontainer_1$$Label536_2);
@@ -482,16 +482,16 @@ function $Flexlayout500$$Qualificationcontainer_1$$ObjectiveContainer(_super, pa
 $Flexlayout500$$Qualificationcontainer_1$$ObjectiveContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 35,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexDirection: "ROW",
       positionType: "RELATIVE",
       alignItems: "CENTER"
-    }
+    },
+    height: 35,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer_1$$ObjectiveContainer_ = ListItem1($Flexlayout500$$Qualificationcontainer_1$$ObjectiveContainer);
@@ -502,19 +502,19 @@ function $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_3(_super, p
 $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_3.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
-    paddingBottom: null,
-    marginBottom: 5,
-    marginTop: 5,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    marginBottom: 5,
+    marginTop: 5,
+    paddingBottom: null,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_3_ = HorizontalDivider($Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_3);
@@ -526,17 +526,17 @@ function $Flexlayout500$$Qualificationcontainer_1$$DueDateContainer(_super, page
 $Flexlayout500$$Qualificationcontainer_1$$DueDateContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 35,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
-    marginTop: null,
     flexProps: {
       flexDirection: "ROW",
       positionType: "RELATIVE",
       alignItems: "CENTER"
-    }
+    },
+    height: 35,
+    left: 0,
+    marginTop: null,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer_1$$DueDateContainer_ = ListItem1($Flexlayout500$$Qualificationcontainer_1$$DueDateContainer);
@@ -547,18 +547,18 @@ function $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_1_1(_super,
 $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_1_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 255, 255, 255, 1 )",
     alpha: 1,
-    marginTop: 5,
-    marginBottom: 5,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       flexGrow: null,
       positionType: "RELATIVE"
-    }
+    },
+    height: 1,
+    left: 0,
+    marginBottom: 5,
+    marginTop: 5,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_1_1_ = HorizontalDivider($Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_1_1);
@@ -570,17 +570,17 @@ function $Flexlayout500$$Qualificationcontainer_1$$ResultContainer(_super, pageI
 $Flexlayout500$$Qualificationcontainer_1$$ResultContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 35,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
-    marginTop: null,
     flexProps: {
       flexDirection: "ROW",
       positionType: "RELATIVE",
       alignItems: "CENTER"
-    }
+    },
+    height: 35,
+    left: 0,
+    marginTop: null,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout500$$Qualificationcontainer_1$$ResultContainer_ = ListItem1($Flexlayout500$$Qualificationcontainer_1$$ResultContainer);

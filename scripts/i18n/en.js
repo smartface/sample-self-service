@@ -7,7 +7,7 @@ SMF.i18n.defineLanguage('en', {
 	"ok": "OK",
 	"tab.profile"						: "Profile",
 	"tab.HR"							: "HR",
-	"tab.Approvals" 					: "Approvals",
+	"tab.chatbot" 					: "Chatbot",
 	"tab.myCompany" 					: "My Company",
 	"tab.settings"						: "Settings",
 	"pgOverview.pageTitle"				: "OVERVIEW",

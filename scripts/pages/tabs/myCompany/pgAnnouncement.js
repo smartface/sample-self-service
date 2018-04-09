@@ -18,6 +18,7 @@ const Page_ = extend(PageDesign)(
 		initTexts.call(this);
 
 		this.onShow = function() {
+			swipeViewIndex.currentIndex = 0;
 			announcement.getAnnouncements(function(err, announcements) {
 				if (err)
 					return alert("getAnnouncements error"); //TODO: lang

@@ -61,13 +61,13 @@ function $LayoutHeaderBar(_super, pageInstance) {
 $LayoutHeaderBar.$$styleContext = {
   classNames: ".flexLayout .flexLayout-headerBar",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 92,
     flexProps: {
       positionType: "RELATIVE"
-    }
+    },
+    height: 92,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
@@ -80,11 +80,11 @@ function $ListViewContainer(_super, pageInstance) {
 $ListViewContainer.$$styleContext = {
   classNames: ".flexLayout .flexLayout-main",
   userProps: {
-    width: null,
-    height: null,
     flexProps: {
       justifyContent: "CENTER"
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $ListViewContainer_ = FlexLayout($ListViewContainer);
@@ -99,11 +99,11 @@ function $ListViewContainer$$ListView(_super, pageInstance) {
 $ListViewContainer$$ListView.$$styleContext = {
   classNames: ".listView",
   userProps: {
-    width: null,
-    height: null,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $ListViewContainer$$ListView_ = ListView($ListViewContainer$$ListView);

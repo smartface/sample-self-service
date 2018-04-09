@@ -29,6 +29,8 @@ const Page_ = extend(PageDesign)(
 
 function onShow(parentOnShow) {
     parentOnShow();
+    swipeViewIndex.currentIndex = 3;
+    
     if (this.firstOnShow) {
         DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
         performanceReviews.getPerformanceReviews(function(err, performanceList) {

@@ -62,21 +62,21 @@ function $MainContainer(_super, pageInstance) {
 $MainContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
-    paddingLeft: null,
-    paddingRight: null,
-    paddingTop: null,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    left: 10,
-    right: 10,
-    top: 0,
     bottom: 70,
     flexProps: {
       flexGrow: null,
       alignItems: "STRETCH",
       positionType: "ABSOLUTE"
-    }
+    },
+    height: null,
+    left: 10,
+    paddingLeft: null,
+    paddingRight: null,
+    paddingTop: null,
+    right: 10,
+    top: 0,
+    width: null
   }
 };
 const $MainContainer_ = FlexLayout($MainContainer);
@@ -90,16 +90,16 @@ function $MainContainer$$UserInformation(_super, pageInstance) {
 $MainContainer$$UserInformation.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 100,
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingBottom: 10,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER",
       flexGrow: 2
-    }
+    },
+    height: 100,
+    paddingBottom: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
+    width: null
   }
 };
 const $MainContainer$$UserInformation_ = FlexLayout($MainContainer$$UserInformation);
@@ -111,12 +111,12 @@ function $MainContainer$$UserInformation$$Avatar(_super, pageInstance) {
 $MainContainer$$UserInformation$$Avatar.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    width: 60,
-    height: 60,
     borderRadius: 30,
     borderWidth: null,
+    height: 60,
     image: "avatar1.png",
-    imageFillType: "ASPECTFIT"
+    imageFillType: "ASPECTFIT",
+    width: 60
   }
 };
 const $MainContainer$$UserInformation$$Avatar_ = ImageView($MainContainer$$UserInformation$$Avatar);
@@ -129,12 +129,12 @@ function $MainContainer$$UserInformation$$Flexlayout1103(_super, pageInstance) {
 $MainContainer$$UserInformation$$Flexlayout1103.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: 60,
-    width: null,
-    marginLeft: 10,
     flexProps: {
       flexGrow: 2
-    }
+    },
+    height: 60,
+    marginLeft: 10,
+    width: null
   }
 };
 const $MainContainer$$UserInformation$$Flexlayout1103_ = FlexLayout($MainContainer$$UserInformation$$Flexlayout1103);
@@ -148,15 +148,15 @@ function $MainContainer$$UserInformation$$Flexlayout1103$$Name(_super, pageInsta
 $MainContainer$$UserInformation$$Flexlayout1103$$Name.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textColor: "rgba( 74, 74, 74, 1 )",
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 18
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textColor: "rgba( 74, 74, 74, 1 )",
+    width: null
   }
 };
 const $MainContainer$$UserInformation$$Flexlayout1103$$Name_ = Label($MainContainer$$UserInformation$$Flexlayout1103$$Name);
@@ -170,15 +170,15 @@ function $MainContainer$$UserInformation$$Flexlayout1103$$Position(_super, pageI
 $MainContainer$$UserInformation$$Flexlayout1103$$Position.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textColor: "rgba( 74, 74, 74, 0.5 )",
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 14
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textColor: "rgba( 74, 74, 74, 0.5 )",
+    width: null
   }
 };
 const $MainContainer$$UserInformation$$Flexlayout1103$$Position_ = Label($MainContainer$$UserInformation$$Flexlayout1103$$Position);
@@ -191,13 +191,13 @@ function $MainContainer$$UserInformation$$Flexlayout408(_super, pageInstance) {
 $MainContainer$$UserInformation$$Flexlayout408.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 60,
     flexProps: {
       flexGrow: 1,
       alignItems: "CENTER",
       justifyContent: "CENTER"
-    }
+    },
+    height: 60,
+    width: null
   }
 };
 const $MainContainer$$UserInformation$$Flexlayout408_ = FlexLayout($MainContainer$$UserInformation$$Flexlayout408);
@@ -208,14 +208,14 @@ function $MainContainer$$UserInformation$$Flexlayout408$$Imageview66(_super, pag
 $MainContainer$$UserInformation$$Flexlayout408$$Imageview66.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    width: null,
-    height: 20,
-    imageFillType: "ASPECTFIT",
-    image: "icon_sick_leave.png",
     flexProps: {
       flexGrow: null,
       alignSelf: "STRETCH"
-    }
+    },
+    height: 20,
+    image: "icon_sick_leave.png",
+    imageFillType: "ASPECTFIT",
+    width: null
   }
 };
 const $MainContainer$$UserInformation$$Flexlayout408$$Imageview66_ = ImageView($MainContainer$$UserInformation$$Flexlayout408$$Imageview66);
@@ -228,16 +228,16 @@ function $MainContainer$$UserInformation$$Flexlayout408$$Label541(_super, pageIn
 $MainContainer$$UserInformation$$Flexlayout408$$Label541.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
-    width: null,
-    height: 20,
-    textAlignment: "MIDCENTER",
-    font: {
-      size: 12
-    },
     flexProps: {
       flexGrow: null,
       alignSelf: "STRETCH"
-    }
+    },
+    font: {
+      size: 12
+    },
+    height: 20,
+    textAlignment: "MIDCENTER",
+    width: null
   }
 };
 const $MainContainer$$UserInformation$$Flexlayout408$$Label541_ = Label($MainContainer$$UserInformation$$Flexlayout408$$Label541);
@@ -251,16 +251,16 @@ function $MainContainer$$Flexlayout1104(_super, pageInstance) {
 $MainContainer$$Flexlayout1104.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    marginTop: null,
-    height: 220,
-    marginLeft: null,
-    marginRight: null,
     flexProps: {
       alignItems: "CENTER",
       justifyContent: "CENTER",
       flexGrow: 3.5
-    }
+    },
+    height: 220,
+    marginLeft: null,
+    marginRight: null,
+    marginTop: null,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104_ = FlexLayout($MainContainer$$Flexlayout1104);
@@ -274,12 +274,12 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105(_super, pageInstance) {
 $MainContainer$$Flexlayout1104$$Flexlayout1105.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
     flexProps: {
       flexGrow: 1,
       alignSelf: "STRETCH"
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1105);
@@ -293,12 +293,12 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108(_super, 
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
     flexProps: {
       flexGrow: 1,
       flexDirection: "ROW"
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108);
@@ -311,15 +311,15 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlay
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
-    paddingRight: 5,
-    paddingTop: 5,
-    paddingBottom: 5,
-    paddingLeft: 30,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    paddingBottom: 5,
+    paddingLeft: 30,
+    paddingRight: 5,
+    paddingTop: 5,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111);
@@ -332,14 +332,14 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlay
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
+    flexProps: {
+      flexGrow: 1
+    },
+    font: null,
     height: null,
     textAlignment: "MIDCENTER",
     textColor: "rgba( 74, 74, 74, 1 )",
-    font: null,
-    flexProps: {
-      flexGrow: 1
-    }
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572);
@@ -352,16 +352,16 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlay
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "TOPCENTER",
-    textColor: "rgba( 74, 74, 74, 0.5 )",
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 14
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textAlignment: "TOPCENTER",
+    textColor: "rgba( 74, 74, 74, 0.5 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1);
@@ -372,12 +372,12 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlay
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1115.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: 1,
-    height: null,
     backgroundColor: "rgba( 151, 151, 151, 1 )",
     flexProps: {
       alignSelf: "STRETCH"
-    }
+    },
+    height: null,
+    width: 1
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1115_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1115);
@@ -390,15 +390,15 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlay
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
-    paddingRight: 30,
-    paddingTop: 5,
-    paddingBottom: 5,
-    paddingLeft: 5,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    paddingBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 30,
+    paddingTop: 5,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2);
@@ -411,14 +411,14 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlay
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_2.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
+    flexProps: {
+      flexGrow: 1
+    },
+    font: null,
     height: null,
     textAlignment: "MIDCENTER",
     textColor: "rgba( 74, 74, 74, 1 )",
-    font: null,
-    flexProps: {
-      flexGrow: 1
-    }
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_2_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_2);
@@ -431,16 +431,16 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlay
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "TOPCENTER",
-    textColor: "rgba( 74, 74, 74, 0.5 )",
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 14
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textAlignment: "TOPCENTER",
+    textColor: "rgba( 74, 74, 74, 0.5 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1);
@@ -454,12 +454,12 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1(_super
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
     flexProps: {
       flexGrow: 1,
       flexDirection: "ROW"
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1);
@@ -472,19 +472,19 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "MIDCENTER",
-    textColor: "rgba( 74, 74, 74, 1 )",
-    marginLeft: null,
-    marginRight: 15,
-    marginTop: 15,
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 18
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    marginLeft: null,
+    marginRight: 15,
+    marginTop: 15,
+    textAlignment: "MIDCENTER",
+    textColor: "rgba( 74, 74, 74, 1 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1);
@@ -495,12 +495,12 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Flexl
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Flexlayout1114.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: 1,
-    height: null,
     backgroundColor: "rgba( 151, 151, 151, 1 )",
     flexProps: {
       alignSelf: "STRETCH"
-    }
+    },
+    height: null,
+    width: 1
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Flexlayout1114_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Flexlayout1114);
@@ -513,18 +513,18 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "MIDCENTER",
-    textColor: "rgba( 74, 74, 74, 1 )",
-    marginLeft: 15,
-    marginTop: 15,
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 18
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    marginLeft: 15,
+    marginTop: 15,
+    textAlignment: "MIDCENTER",
+    textColor: "rgba( 74, 74, 74, 1 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1);
@@ -535,15 +535,15 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Imageview170(_super, pa
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Imageview170.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    width: 30,
-    height: 30,
-    image: "icon_clock.png",
-    imageFillType: "ASPECTFIT",
     backgroundColor: "rgba( 255, 255, 255, 1 )",
     flexProps: {
       positionType: "ABSOLUTE",
       alignSelf: "CENTER"
-    }
+    },
+    height: 30,
+    image: "icon_clock.png",
+    imageFillType: "ASPECTFIT",
+    width: 30
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Imageview170_ = ImageView($MainContainer$$Flexlayout1104$$Flexlayout1105$$Imageview170);
@@ -555,12 +555,12 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106(_super, pageInstance) {
 $MainContainer$$Flexlayout1104$$Flexlayout1106.$$styleContext = {
   classNames: ".flexLayout .flexLayout-filled",
   userProps: {
-    width: null,
-    height: null,
     flexProps: {
       flexGrow: 1,
       alignSelf: "STRETCH"
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1106);
@@ -575,16 +575,16 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    width: null,
-    height: null,
-    marginLeft: 10,
-    marginTop: 20,
-    marginRight: 10,
-    marginBottom: 5,
     flexProps: {
       flexGrow: 1,
       flexDirection: "ROW"
-    }
+    },
+    height: null,
+    marginBottom: 5,
+    marginLeft: 10,
+    marginRight: 10,
+    marginTop: 20,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1);
@@ -598,12 +598,12 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2);
@@ -616,17 +616,17 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "BOTTOMCENTER",
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    textColor: "rgba( 255, 255, 255, 1 )",
+    flexProps: {
+      flexGrow: 2
+    },
     font: {
       size: 24
     },
-    flexProps: {
-      flexGrow: 2
-    }
+    height: null,
+    textAlignment: "BOTTOMCENTER",
+    textColor: "rgba( 255, 255, 255, 1 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2);
@@ -639,17 +639,17 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_1.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "TOPCENTER",
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    textColor: "rgba( 255, 255, 255, 0.5 )",
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 12
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textAlignment: "TOPCENTER",
+    textColor: "rgba( 255, 255, 255, 0.5 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_1);
@@ -662,17 +662,17 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "MIDCENTER",
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    textColor: "rgba( 255, 255, 255, 0.75 )",
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 16
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textAlignment: "MIDCENTER",
+    textColor: "rgba( 255, 255, 255, 0.75 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2);
@@ -686,12 +686,12 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1);
@@ -704,17 +704,17 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_3.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "BOTTOMCENTER",
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    textColor: "rgba( 255, 255, 255, 1 )",
+    flexProps: {
+      flexGrow: 2
+    },
     font: {
       size: 24
     },
-    flexProps: {
-      flexGrow: 2
-    }
+    height: null,
+    textAlignment: "BOTTOMCENTER",
+    textColor: "rgba( 255, 255, 255, 1 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_3_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_3);
@@ -727,17 +727,17 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_1_1.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "TOPCENTER",
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    textColor: "rgba( 255, 255, 255, 0.5 )",
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 12
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textAlignment: "TOPCENTER",
+    textColor: "rgba( 255, 255, 255, 0.5 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_1_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_1_1);
@@ -750,17 +750,17 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "MIDCENTER",
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    textColor: "rgba( 255, 255, 255, 0.75 )",
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 16
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textAlignment: "MIDCENTER",
+    textColor: "rgba( 255, 255, 255, 0.75 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1);
@@ -774,12 +774,12 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1);
@@ -792,17 +792,17 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_3_1.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "BOTTOMCENTER",
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    textColor: "rgba( 255, 255, 255, 1 )",
+    flexProps: {
+      flexGrow: 2
+    },
     font: {
       size: 24
     },
-    flexProps: {
-      flexGrow: 2
-    }
+    height: null,
+    textAlignment: "BOTTOMCENTER",
+    textColor: "rgba( 255, 255, 255, 1 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_3_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_3_1);
@@ -815,17 +815,17 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_1_1_1.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "TOPCENTER",
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    textColor: "rgba( 255, 255, 255, 0.5 )",
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 12
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textAlignment: "TOPCENTER",
+    textColor: "rgba( 255, 255, 255, 0.5 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_1_1_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_1_1_1);
@@ -838,17 +838,17 @@ function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1.$$styleContext = {
   classNames: ".label",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "MIDCENTER",
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    textColor: "rgba( 255, 255, 255, 0.75 )",
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       size: 16
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textAlignment: "MIDCENTER",
+    textColor: "rgba( 255, 255, 255, 0.75 )",
+    width: null
   }
 };
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1);
@@ -859,15 +859,15 @@ function $MainContainer$$Flexlayout1104$$Imageview171(_super, pageInstance) {
 $MainContainer$$Flexlayout1104$$Imageview171.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    width: 50,
-    height: 50,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    image: "icon_calendar.png",
-    imageFillType: "ASPECTFIT",
     flexProps: {
       positionType: "ABSOLUTE",
       alignSelf: "CENTER"
-    }
+    },
+    height: 50,
+    image: "icon_calendar.png",
+    imageFillType: "ASPECTFIT",
+    width: 50
   }
 };
 const $MainContainer$$Flexlayout1104$$Imageview171_ = ImageView($MainContainer$$Flexlayout1104$$Imageview171);
@@ -880,16 +880,16 @@ function $MainContainer$$DescriptionLayout(_super, pageInstance) {
 $MainContainer$$DescriptionLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
+    flexProps: {
+      flexGrow: 2
+    },
     height: 120,
     marginTop: 10,
+    paddingBottom: 10,
     paddingLeft: 10,
     paddingRight: 10,
     paddingTop: 10,
-    paddingBottom: 10,
-    flexProps: {
-      flexGrow: 2
-    }
+    width: null
   }
 };
 const $MainContainer$$DescriptionLayout_ = FlexLayout($MainContainer$$DescriptionLayout);
@@ -903,11 +903,11 @@ function $MainContainer$$DescriptionLayout$$LblDescription(_super, pageInstance)
 $MainContainer$$DescriptionLayout$$LblDescription.$$styleContext = {
   classNames: ".label",
   userProps: {
-    height: null,
-    width: null,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainContainer$$DescriptionLayout$$LblDescription_ = Label($MainContainer$$DescriptionLayout$$LblDescription);
@@ -921,17 +921,17 @@ function $MainContainer$$DescriptionLayout$$TxtDescription(_super, pageInstance)
 $MainContainer$$DescriptionLayout$$TxtDescription.$$styleContext = {
   classNames: ".textArea",
   userProps: {
-    width: null,
-    height: null,
-    textAlignment: "TOPLEFT",
     borderColor: "rgba( 203, 204, 208, 1 )",
     borderWidth: 0.5,
+    flexProps: {
+      flexGrow: 1
+    },
     font: {
       family: "Lato"
     },
-    flexProps: {
-      flexGrow: 1
-    }
+    height: null,
+    textAlignment: "TOPLEFT",
+    width: null
   }
 };
 const $MainContainer$$DescriptionLayout$$TxtDescription_ = TextArea($MainContainer$$DescriptionLayout$$TxtDescription);
@@ -945,14 +945,14 @@ function $MainContainer$$ButtonsLayout(_super, pageInstance) {
 $MainContainer$$ButtonsLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
-    marginTop: 10,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
     flexProps: {
       flexDirection: "ROW",
       flexGrow: 1
-    }
+    },
+    height: null,
+    marginTop: 10,
+    width: null
   }
 };
 const $MainContainer$$ButtonsLayout_ = FlexLayout($MainContainer$$ButtonsLayout);
@@ -966,12 +966,12 @@ function $MainContainer$$ButtonsLayout$$BtnReject(_super, pageInstance) {
 $MainContainer$$ButtonsLayout$$BtnReject.$$styleContext = {
   classNames: ".button",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 255, 50, 75, 1 )",
     flexProps: {
       flexGrow: 10
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainContainer$$ButtonsLayout$$BtnReject_ = Button($MainContainer$$ButtonsLayout$$BtnReject);
@@ -982,12 +982,12 @@ function $MainContainer$$ButtonsLayout$$Flexlayout3(_super, pageInstance) {
 $MainContainer$$ButtonsLayout$$Flexlayout3.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainContainer$$ButtonsLayout$$Flexlayout3_ = FlexLayout($MainContainer$$ButtonsLayout$$Flexlayout3);
@@ -1001,12 +1001,12 @@ function $MainContainer$$ButtonsLayout$$BtnApprove(_super, pageInstance) {
 $MainContainer$$ButtonsLayout$$BtnApprove.$$styleContext = {
   classNames: ".button",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 62, 208, 151, 1 )",
     flexProps: {
       flexGrow: 10
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainContainer$$ButtonsLayout$$BtnApprove_ = Button($MainContainer$$ButtonsLayout$$BtnApprove);

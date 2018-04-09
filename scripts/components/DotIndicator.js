@@ -24,11 +24,11 @@ const DotIndicator = extend(DotIndicatorDesign)(
 
 		var _currentIndex = 0;
 		this.lastActiveIndex = 0;
-		var _size = 3;
+		var _size = 0;
 		var _activeColor = null;
 		var _inactiveColor = null;
 		this._styles = {};
-		
+
 		Object.defineProperties(this, {
 			'currentIndex': {
 				get: function() {
@@ -43,8 +43,8 @@ const DotIndicator = extend(DotIndicatorDesign)(
 					}
 
 					this.children[PREFIX + value].dispatch(pushClassNames(".flexLayout-dotIndicator-item.active"));
-					value !== _currentIndex 
-						&& this.children[PREFIX + _currentIndex].dispatch(removeClassName(".flexLayout-dotIndicator-item.active"));
+					value !== _currentIndex &&
+						this.children[PREFIX + _currentIndex].dispatch(removeClassName(".flexLayout-dotIndicator-item.active"));
 					this.lastActiveIndex = _currentIndex;
 					_currentIndex = value;
 					updateDots.call(this);
@@ -74,23 +74,25 @@ function updateDots(indicator) {
 	// if (indicator.inactiveColor !== null) {
 	// 	inactiveSettings.backgroundColor = indicator.inactiveColor;
 	// }
-	
+
 	// Object.assign(indicator.children[PREFIX + indicator.lastActiveIndex], inactiveSettings);
 	// Object.assign(indicator.children[PREFIX + indicator.currentIndex], activeSettings);
 }
 
 function setSize(newSize) {
-	this.removeAll();
-	this.children = {};
+	
 
-	for (var i = 0; i < newSize; i++) {
-		this.children[PREFIX+i] = new FlexLayout();
-		this.addChild(this.children[PREFIX + i], PREFIX + i, ".flexLayout .flexLayout-dotIndicator-item.inactive");
-	}
-	this.width = newSize * 14;
-	this.currentIndex = 0;
+		this.removeAll();
+		this.children = {};
 
-	this.applyLayout();
+		for (var i = 0; i < newSize; i++) {
+			this.children[PREFIX + i] = new FlexLayout();
+			this.addChild(this.children[PREFIX + i], PREFIX + i, ".flexLayout .flexLayout-dotIndicator-item.inactive");
+		}
+		this.width = newSize * 14;
+		this.currentIndex = 0;
+
+		this.applyLayout();
 }
 
 module && (module.exports = DotIndicator);

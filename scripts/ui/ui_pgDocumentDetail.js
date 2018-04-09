@@ -58,12 +58,12 @@ function $MainLayout(_super, pageInstance) {
 $MainLayout.$$styleContext = {
   classNames: ".flexLayout .flexLayout-main",
   userProps: {
-    width: null,
-    height: null,
     flexProps: {
       alignItems: "CENTER",
       justifyContent: "CENTER"
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $MainLayout_ = FlexLayout($MainLayout);
@@ -74,10 +74,10 @@ function $MainLayout$$Imageview42(_super, pageInstance) {
 $MainLayout$$Imageview42.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    image: "add_photo.png",
     height: 100,
-    width: 100,
-    imageFillType: "ASPECTFIT"
+    image: "add_photo.png",
+    imageFillType: "ASPECTFIT",
+    width: 100
   }
 };
 const $MainLayout$$Imageview42_ = ImageView($MainLayout$$Imageview42);
@@ -90,9 +90,9 @@ function $MainLayout$$Label322(_super, pageInstance) {
 $MainLayout$$Label322.$$styleContext = {
   classNames: ".label",
   userProps: {
+    font: null,
     textAlignment: "MIDCENTER",
-    textColor: "rgba( 155, 155, 155, 1 )",
-    font: null
+    textColor: "rgba( 155, 155, 155, 1 )"
   }
 };
 const $MainLayout$$Label322_ = Label($MainLayout$$Label322);

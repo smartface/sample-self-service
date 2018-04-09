@@ -6,7 +6,9 @@ const HRIndex = extend(PageContainer)(
         this.childPages = [
                 require("./pgLeaveManagement"),
                 require("./pgExpenseManagement"),
-                require("./pgOutOfOffice")
+                require("./pgOutOfOffice"),
+                require("./pgLeaveApprovals"),
+                require("./pgExpenseApprovals"),
             ];
         _super(this, params);
     }

@@ -5,19 +5,27 @@ const ScrollView = require("sf-core/ui/scrollview");
 
 const Page_ = extend(PageDesign)(
 	// Constructor
-	function(_super, params){
+	function(_super, params) {
 		// Initalizes super class for this page scope
 		_super(this, params);
 		this.onLoad = onLoad.bind(this, this.onLoad);
-		
-        this.onError = function(e){
-            console.log(e.message);
-        }
-});
+		this.onShow = onShow.bind(this, this.onShow.bind(this));
+
+
+		this.onError = function(e) {
+			console.log(e.message);
+		}
+	});
+
+function onShow(parentOnShow) {
+	parentOnShow();
+	swipeViewIndex.currentIndex = 2;
+
+}
 
 function onLoad(parentOnLoad) {
-    if (typeof parentOnLoad === "function") parentOnLoad();
-    this.layoutHeaderBar.headerBarTitle.text = lang["pgOutOfOffice.pageTitle"];
+	if (typeof parentOnLoad === "function") parentOnLoad();
+	this.layoutHeaderBar.headerBarTitle.text = lang["pgOutOfOffice.pageTitle"];
 
 	wrapContentIntoScroll.call(this);
 	initTexts.call(this);

@@ -6,14 +6,21 @@ const PageDesign = require("../../../ui/ui_pgOverview");
 
 const Page_ = extend(PageDesign)(
 	// Constructor
-	function(_super, params){
+	function(_super, params) {
 		// Initalizes super class for this page scope
 		_super(this, params);
+		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-		
+
+
 		initTexts.call(this);
 	}
 );
+
+function onShow(parentOnShow) {
+	parentOnShow();
+	swipeViewIndex.currentIndex = 0;
+}
 
 function onLoad(superOnLoad) {
 	superOnLoad();
@@ -22,7 +29,7 @@ function onLoad(superOnLoad) {
 
 function wrapContentIntoScroll() {
 	this.scrollView = new ScrollView({
-		flexGrow: 1	
+		flexGrow: 1
 	});
 	this.layout.removeChild(this.flexlayout500);
 	this.scrollView.addChild(this.flexlayout500);

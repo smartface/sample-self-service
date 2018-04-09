@@ -64,13 +64,13 @@ function $LayoutHeaderBar(_super, pageInstance) {
 $LayoutHeaderBar.$$styleContext = {
   classNames: ".flexLayout .flexLayout-headerBar",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 92,
     flexProps: {
       positionType: "RELATIVE"
-    }
+    },
+    height: 92,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
@@ -82,20 +82,20 @@ function $TopTabBar(_super, pageInstance) {
 $TopTabBar.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: 50,
-    left: 0,
-    right: 0,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
-    top: 0,
-    marginLeft: 10,
-    marginRight: 10,
     flexProps: {
       positionType: "RELATIVE",
       flexDirection: "ROW",
       justifyContent: "CENTER",
       flexWrap: "NOWRAP"
-    }
+    },
+    height: 50,
+    left: 0,
+    marginLeft: 10,
+    marginRight: 10,
+    right: 0,
+    top: 0,
+    width: null
   }
 };
 const $TopTabBar_ = TopTabBar($TopTabBar);
@@ -106,11 +106,11 @@ function $Flexlayout856(_super, pageInstance) {
 $Flexlayout856.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
+    backgroundColor: "rgba( 151, 151, 151, 1 )",
+    height: 1,
     marginLeft: 10,
     marginRight: 10,
-    width: null,
-    height: 1,
-    backgroundColor: "rgba( 151, 151, 151, 1 )"
+    width: null
   }
 };
 const $Flexlayout856_ = FlexLayout($Flexlayout856);
@@ -123,17 +123,17 @@ function $ListViewContainer(_super, pageInstance) {
 $ListViewContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
+    flexProps: {
+      flexGrow: 1,
+      justifyContent: "CENTER",
+      alignItems: "CENTER"
+    },
     height: null,
     marginLeft: 10,
     marginRight: 10,
     paddingLeft: 10,
     paddingRight: 10,
-    flexProps: {
-      flexGrow: 1,
-      justifyContent: "CENTER",
-      alignItems: "CENTER"
-    }
+    width: null
   }
 };
 const $ListViewContainer_ = FlexLayout($ListViewContainer);
@@ -148,11 +148,11 @@ function $ListViewContainer$$ListView(_super, pageInstance) {
 $ListViewContainer$$ListView.$$styleContext = {
   classNames: ".listView",
   userProps: {
-    width: null,
-    height: null,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $ListViewContainer$$ListView_ = ListView($ListViewContainer$$ListView);

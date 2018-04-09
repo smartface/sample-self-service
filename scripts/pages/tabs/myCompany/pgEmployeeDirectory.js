@@ -29,6 +29,8 @@ var firstOnShow = true;
 
 function onShow(parentOnShow) {
     parentOnShow();
+    swipeViewIndex.currentIndex = 1;
+
 
     if (firstOnShow) {
         DialogsLib.startLoading(loadingIndicator, this.listViewContainer);
@@ -56,7 +58,7 @@ function initListView(listView, data) {
         item.id = 200;
         myListViewItem.item = item;
         this.dispatch(addChild("item" + (++itemIndex), myListViewItem));
-        myListViewItem.addChild(item, "child", "", function(style){
+        myListViewItem.addChild(item, "child", "", function(style) {
             style.width = null;
             return style;
         });

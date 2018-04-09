@@ -63,16 +63,16 @@ function $Flexlayout1(_super, pageInstance) {
 $Flexlayout1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
     height: 160,
+    marginBottom: 10,
     marginLeft: 10,
     marginRight: 10,
     marginTop: 10,
+    paddingBottom: 10,
     paddingLeft: null,
     paddingRight: 10,
     paddingTop: 10,
-    paddingBottom: 10,
-    marginBottom: 10
+    width: null
   }
 };
 const $Flexlayout1_ = FlexLayout($Flexlayout1);
@@ -86,12 +86,12 @@ function $Flexlayout1$$InformationTitle(_super, pageInstance) {
 $Flexlayout1$$InformationTitle.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
-    height: 25,
-    width: 250,
-    marginLeft: 10,
     font: {
       size: 16
-    }
+    },
+    height: 25,
+    marginLeft: 10,
+    width: 250
   }
 };
 const $Flexlayout1$$InformationTitle_ = Label($Flexlayout1$$InformationTitle);
@@ -104,12 +104,12 @@ function $Flexlayout1$$Flexlayout2(_super, pageInstance) {
 $Flexlayout1$$Flexlayout2.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: 66,
-    width: null,
     flexProps: {
       flexDirection: "COLUMN",
       flexGrow: 1
-    }
+    },
+    height: 66,
+    width: null
   }
 };
 const $Flexlayout1$$Flexlayout2_ = FlexLayout($Flexlayout1$$Flexlayout2);
@@ -122,13 +122,13 @@ function $Flexlayout1$$Flexlayout2$$Flexlayout3(_super, pageInstance) {
 $Flexlayout1$$Flexlayout2$$Flexlayout3.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: null,
-    width: null,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER",
       flexGrow: 1
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $Flexlayout1$$Flexlayout2$$Flexlayout3_ = FlexLayout($Flexlayout1$$Flexlayout2$$Flexlayout3);
@@ -140,14 +140,14 @@ function $Flexlayout1$$Flexlayout2$$Flexlayout3$$LeaveTypePicker(_super, pageIns
 $Flexlayout1$$Flexlayout2$$Flexlayout3$$LeaveTypePicker.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 45,
     flexProps: {
       positionType: "RELATIVE",
       flexGrow: 1
-    }
+    },
+    height: 45,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout1$$Flexlayout2$$Flexlayout3$$LeaveTypePicker_ = PickerContainer($Flexlayout1$$Flexlayout2$$Flexlayout3$$LeaveTypePicker);
@@ -159,15 +159,15 @@ function $Flexlayout1$$Flexlayout2$$Flexlayout3$$TimeTypePicker(_super, pageInst
 $Flexlayout1$$Flexlayout2$$Flexlayout3$$TimeTypePicker.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 45,
-    marginLeft: 20,
     flexProps: {
       positionType: "RELATIVE",
       flexGrow: 1
-    }
+    },
+    height: 45,
+    left: 0,
+    marginLeft: 20,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout1$$Flexlayout2$$Flexlayout3$$TimeTypePicker_ = PickerContainer($Flexlayout1$$Flexlayout2$$Flexlayout3$$TimeTypePicker);
@@ -180,13 +180,13 @@ function $Flexlayout1$$Flexlayout2$$Flexlayout3_1(_super, pageInstance) {
 $Flexlayout1$$Flexlayout2$$Flexlayout3_1.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: null,
-    width: null,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER",
       flexGrow: 1
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $Flexlayout1$$Flexlayout2$$Flexlayout3_1_ = FlexLayout($Flexlayout1$$Flexlayout2$$Flexlayout3_1);
@@ -198,14 +198,14 @@ function $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectDatePicker(_super, page
 $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectDatePicker.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 45,
     flexProps: {
       positionType: "RELATIVE",
       flexGrow: 1
-    }
+    },
+    height: 45,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectDatePicker_ = PickerContainer($Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectDatePicker);
@@ -217,15 +217,15 @@ function $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectTimePicker(_super, page
 $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectTimePicker.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 45,
-    marginLeft: 20,
     flexProps: {
       positionType: "RELATIVE",
       flexGrow: 1
-    }
+    },
+    height: 45,
+    left: 0,
+    marginLeft: 20,
+    top: 0,
+    width: null
   }
 };
 const $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectTimePicker_ = PickerContainer($Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectTimePicker);
@@ -238,14 +238,14 @@ function $Flexlayout66(_super, pageInstance) {
 $Flexlayout66.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
+    height: 200,
     marginLeft: 10,
     marginRight: 10,
-    height: 200,
+    paddingBottom: 10,
     paddingLeft: 15,
     paddingRight: 15,
     paddingTop: 10,
-    paddingBottom: 10
+    width: null
   }
 };
 const $Flexlayout66_ = FlexLayout($Flexlayout66);
@@ -258,13 +258,13 @@ function $Flexlayout66$$Flexlayout76(_super, pageInstance) {
 $Flexlayout66$$Flexlayout76.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: 30,
-    width: null,
-    marginBottom: 5,
     flexProps: {
       flexDirection: "ROW",
       alignItems: "CENTER"
-    }
+    },
+    height: 30,
+    marginBottom: 5,
+    width: null
   }
 };
 const $Flexlayout66$$Flexlayout76_ = FlexLayout($Flexlayout66$$Flexlayout76);
@@ -277,15 +277,15 @@ function $Flexlayout66$$Flexlayout76$$Label85(_super, pageInstance) {
 $Flexlayout66$$Flexlayout76$$Label85.$$styleContext = {
   classNames: ".label .label-list-item-header",
   userProps: {
-    width: null,
-    height: null,
-    font: {
-      size: 16
-    },
     flexProps: {
       flexGrow: 1,
       alignSelf: "STRETCH"
-    }
+    },
+    font: {
+      size: 16
+    },
+    height: null,
+    width: null
   }
 };
 const $Flexlayout66$$Flexlayout76$$Label85_ = Label($Flexlayout66$$Flexlayout76$$Label85);
@@ -298,13 +298,13 @@ $Flexlayout66$$Flexlayout76$$ItemSpeech.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
     backgroundColor: "rgba( 255, 255, 255, 1 )",
-    left: 0,
-    top: 0,
-    width: 14,
-    height: 25,
     flexProps: {
       positionType: "RELATIVE"
-    }
+    },
+    height: 25,
+    left: 0,
+    top: 0,
+    width: 14
   }
 };
 const $Flexlayout66$$Flexlayout76$$ItemSpeech_ = ItemSpeech($Flexlayout66$$Flexlayout76$$ItemSpeech);
@@ -318,16 +318,16 @@ function $Flexlayout66$$Textbox1(_super, pageInstance) {
 $Flexlayout66$$Textbox1.$$styleContext = {
   classNames: ".textArea",
   userProps: {
-    width: null,
-    height: null,
-    borderWidth: 0.5,
     backgroundColor: "rgba( 255, 255, 255, 1 )",
     borderColor: "rgba( 203, 204, 208, 1 )",
-    textColor: "rgba( 0, 0, 0, 1 )",
-    textAlignment: "TOPLEFT",
+    borderWidth: 0.5,
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    textAlignment: "TOPLEFT",
+    textColor: "rgba( 0, 0, 0, 1 )",
+    width: null
   }
 };
 const $Flexlayout66$$Textbox1_ = TextArea($Flexlayout66$$Textbox1);
@@ -339,12 +339,12 @@ function $BottomContainer(_super, pageInstance) {
 $BottomContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
     backgroundColor: "rgba( 255, 255, 255, 0 )",
     flexProps: {
       flexGrow: 1
-    }
+    },
+    height: null,
+    width: null
   }
 };
 const $BottomContainer_ = FlexLayout($BottomContainer);
@@ -358,13 +358,13 @@ function $BottomContainer$$BtnRequest(_super, pageInstance) {
 $BottomContainer$$BtnRequest.$$styleContext = {
   classNames: ".button",
   userProps: {
-    width: null,
-    left: 0,
-    right: 0,
     bottom: 0,
     flexProps: {
       positionType: "ABSOLUTE"
-    }
+    },
+    left: 0,
+    right: 0,
+    width: null
   }
 };
 const $BottomContainer$$BtnRequest_ = Button($BottomContainer$$BtnRequest);

@@ -41,6 +41,7 @@ const Page_ = extend(PageDesign)(
 function onShow(parentOnShow) {
     parentOnShow();
     const page = this;
+    swipeViewIndex.currentIndex = 0;
     this.topTabBar.currentIndex = 0;
 
     if (page.firstOnShow) {

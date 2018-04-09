@@ -37,6 +37,7 @@ var firstOnShow = true;
 
 function onShow(parentOnShow) {
     parentOnShow();
+    swipeViewIndex.currentIndex = 4;
 
     if (firstOnShow) {
         DialogsLib.startLoading(loadingIndicator, this.listViewContainer);

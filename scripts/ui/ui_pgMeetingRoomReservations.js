@@ -60,13 +60,13 @@ function $LayoutHeaderBar(_super, pageInstance) {
 $LayoutHeaderBar.$$styleContext = {
   classNames: ".flexLayout .flexLayout-headerBar",
   userProps: {
-    left: 0,
-    top: 0,
-    width: null,
-    height: 92,
     flexProps: {
       positionType: "RELATIVE"
-    }
+    },
+    height: 92,
+    left: 0,
+    top: 0,
+    width: null
   }
 };
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
@@ -79,15 +79,15 @@ function $MainLayout(_super, pageInstance) {
 $MainLayout.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    width: null,
-    height: null,
-    marginLeft: 10,
-    marginRight: 10,
     flexProps: {
       flexGrow: 1,
       alignItems: "STRETCH",
       justifyContent: "CENTER"
-    }
+    },
+    height: null,
+    marginLeft: 10,
+    marginRight: 10,
+    width: null
   }
 };
 const $MainLayout_ = FlexLayout($MainLayout);
@@ -99,13 +99,13 @@ function $MainLayout$$ComingSoon(_super, pageInstance) {
 $MainLayout$$ComingSoon.$$styleContext = {
   classNames: ".imageView",
   userProps: {
-    width: null,
-    image: "coming_soon.png",
-    height: 100,
-    imageFillType: "ASPECTFIT",
     flexProps: {
       alignSelf: "STRETCH"
-    }
+    },
+    height: 100,
+    image: "coming_soon.png",
+    imageFillType: "ASPECTFIT",
+    width: null
   }
 };
 const $MainLayout$$ComingSoon_ = ImageView($MainLayout$$ComingSoon);

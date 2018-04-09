@@ -10,8 +10,14 @@ const Page_ = extend(PageDesign)(
 	function(_super, params) {
 		// Initalizes super class for this page scope
 		_super(this, params);
+		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 	});
+	
+	function onShow(parentOnShow) {
+    parentOnShow();
+    swipeViewIndex.currentIndex = 4;
+}
 
 function initTexts() {
 	this.email.title.text = lang["pgProfileDetail.email"];
