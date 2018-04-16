@@ -16,6 +16,8 @@ const Font = require('sf-core/ui/font');
 const ScrollView = require('sf-core/ui/scrollview');
 
 var noInclude = '_NOINCLUDE,';
+var sender;
+var evaluatedData;
 
 const ChatbotPg = extend(ChatbotPgDesign)(
   // Constructor
@@ -66,29 +68,164 @@ function onLoad(superOnLoad) {
   // });
 
   myWebSocket = new WebSocket({ url: "https://safe-sands-45992.herokuapp.com" });
+  setOnMessageTrigger();
 
   this.layoutHeaderBar.rightItem1.width = 25;
   this.layoutHeaderBar.rightItem1.height = 25;
   this.layoutHeaderBar.rightItem1.image = Image.createFromFile("images://ic_info_outline_white.png")
 
-  this.sendLabel.onTouch = send_onPress.bind(this);
+  this.sendLabel.onTouch = function() {
+    sender = true;
+    applyMessageOnScreen();
+  }.bind(this)
+
   this.layoutHeaderBar.rightItem1.onTouch = function() {
     initAlerView().show();
   }.bind(this)
 }
 
-function send_onPress() {
+// function send_onPress() {
+//   const page = this;
+//   var text = page.sendText.text;
+//   var sizeOfLabelObj = sizeOfLabel(text);
+
+//   if (text) {
+
+//     var userSendMessage = new chatBotReplyStructure();
+//     userSendMessage.chatBotLabel.text = text;
+
+//     page.chatScrollView.layout.addChild(userSendMessage, 'newSendMessage', '', {
+//       marginTop: 15,
+//       marginRight: 5,
+//       marginLeft: 5,
+//       width: null,
+//       maxHeight: sizeOfLabelObj.height,
+//       maxWidth: sizeOfLabelObj.width,
+//       flexGrow: 1,
+//       flexProps: {
+//         flexDirection: "ROW_REVERSE",
+//         positionType: "RELATIVE",
+//         alignSelf: "FLEX_END"
+//       },
+//       backgroundColor: '#FFFFFF'
+//     });
+
+//     userSendMessage.chatBotLabel.dispatch({
+//       type: "updateUserStyle",
+//       userStyle: {
+//         textColor: "#FFFFFF",
+//         backgroundColor: "#4A90E2"
+//       }
+//     });
+
+//     userSendMessage.contentfl.dispatch({
+//       type: "updateUserStyle",
+//       userStyle: {
+//         backgroundColor: "#4A90E2"
+//       }
+//     });
+
+//     userSendMessage.messageIconImageView.dispatch({
+//       type: "updateUserStyle",
+//       userStyle: {
+//         width: 0,
+//         height: 0,
+//         visible: false
+//       }
+//     });
+
+//     //calculate scrollview height dynamic
+//     heightOfChatScrollview += sizeOfLabelObj.height;
+//     // placeHolderHeight -= sizeOfLabelObj.height;
+//     this.chatScrollView.layout.height = heightOfChatScrollview;
+//     // placeHolder.scrollViewPlaceHolder.dispatch({
+//     //   type: "updateUserStyle",
+//     //   userStyle: {
+//     //     height: placeHolderHeight
+//     //   }
+//     // });
+
+//     page.layout.applyLayout();
+
+//     if (scrollBasedOnScrollHeight(page.chatScrollView.height)) {
+//       page.chatScrollView.scrollToEdge(ScrollView.Edge.BOTTOM);
+//     };
+
+//     //send to Websocket server
+//     replyToWs(text);
+//     //after sending text make it empty
+//     page.sendText.text = "";
+//   }
+//   else {
+//     alert("Please enter something");
+//   }
+// }
+
+// function send_onReceived(text) {
+//   const page = this;
+
+//   var sizeOfLabelObj = sizeOfLabel(text);
+
+//   if (text) {
+
+//     var wsSendMessage = new chatBotReplyStructure();
+//     wsSendMessage.chatBotLabel.text = text;
+
+//     page.chatScrollView.layout.addChild(wsSendMessage, 'wsSendMessage', '', {
+//       marginTop: 15,
+//       marginRight: 5,
+//       marginLeft: 5,
+//       width: null,
+//       maxWidth: sizeOfLabelObj.width,
+//       maxHeight: sizeOfLabelObj.height,
+//       flexGrow: 1,
+//       flexProps: {
+//         flexDirection: "ROW",
+//         positionType: "RELATIVE",
+//         alignSelf: "FLEX_START",
+//       },
+//       backgroundColor: '#FFFFFF'
+//     });
+
+//     //calculate scrollview height dynamic
+//     heightOfChatScrollview += sizeOfLabelObj.height;
+//     this.chatScrollView.layout.height = heightOfChatScrollview;
+//     // placeHolderHeight -= sizeOfLabelObj.height;
+//     // this.chatScrollView.layout.height = heightOfChatScrollview;
+//     // placeHolder.scrollViewPlaceHolder.dispatch({
+//     //   type: "updateUserStyle",
+//     //   userStyle: {
+//     //     height: placeHolderHeight
+//     //   }
+//     // });
+
+//     page.layout.applyLayout();
+
+//     //In order to achive samebehavior implement timeOut.
+//     if (scrollBasedOnScrollHeight(page.chatScrollView.height)) {
+//       setTimeout(function() {
+//         page.chatScrollView.scrollToEdge(ScrollView.Edge.BOTTOM);
+//       }, 200);
+
+//     }
+//   }
+//   else {
+//     alert("Please enter something");
+//   }
+// }
+
+function applyMessageOnScreen() {
   const page = this;
 
-  var text = page.sendText.text;
-  var sizeOfLabelObj = sizeOfLabel(text);
+  var messageComponent = new chatBotReplyStructure();
 
-  if (text) {
+  if (sender) {
 
-    var userSendMessage = new chatBotReplyStructure();
-    userSendMessage.chatBotLabel.text = text;
+    var text = page.sendText.text;
+    var sizeOfLabelObj = sizeOfLabel(text);
+    messageComponent.chatBotLabel.text = text;
 
-    page.chatScrollView.layout.addChild(userSendMessage, 'newSendMessage', '', {
+    page.chatScrollView.layout.addChild(messageComponent, 'messageComponent', '', {
       marginTop: 15,
       marginRight: 5,
       marginLeft: 5,
@@ -104,7 +241,7 @@ function send_onPress() {
       backgroundColor: '#FFFFFF'
     });
 
-    userSendMessage.chatBotLabel.dispatch({
+    messageComponent.chatBotLabel.dispatch({
       type: "updateUserStyle",
       userStyle: {
         textColor: "#FFFFFF",
@@ -112,14 +249,14 @@ function send_onPress() {
       }
     });
 
-    userSendMessage.contentfl.dispatch({
+    messageComponent.contentfl.dispatch({
       type: "updateUserStyle",
       userStyle: {
         backgroundColor: "#4A90E2"
       }
     });
 
-    userSendMessage.messageIconImageView.dispatch({
+    messageComponent.messageIconImageView.dispatch({
       type: "updateUserStyle",
       userStyle: {
         width: 0,
@@ -127,47 +264,11 @@ function send_onPress() {
         visible: false
       }
     });
-
-
-    //calculate scrollview height dynamic
-    heightOfChatScrollview += sizeOfLabelObj.height;
-    // placeHolderHeight -= sizeOfLabelObj.height;
-    this.chatScrollView.layout.height = heightOfChatScrollview;
-    // placeHolder.scrollViewPlaceHolder.dispatch({
-    //   type: "updateUserStyle",
-    //   userStyle: {
-    //     height: placeHolderHeight
-    //   }
-    // });
-
-    page.layout.applyLayout();
-
-    if (scrollBasedOnScrollHeight(page.chatScrollView.height)) {
-      page.chatScrollView.scrollToEdge(ScrollView.Edge.BOTTOM);
-    };
-
-
-    //send to Websocket server
-    replyToWs(text);
-    //after sending text make it empty
-    page.sendText.text = "";
   }
   else {
-    alert("Please enter something");
-  }
-}
+    var sizeOfLabelObj = sizeOfLabel(evaluatedData);
 
-function send_onReceived(text) {
-  const page = this;
-
-  var sizeOfLabelObj = sizeOfLabel(text);
-
-  if (text) {
-
-    var wsSendMessage = new chatBotReplyStructure();
-    wsSendMessage.chatBotLabel.text = text;
-
-    page.chatScrollView.layout.addChild(wsSendMessage, 'wsSendMessage', '', {
+    page.chatScrollView.layout.addChild(messageComponent, 'messageComponent', '', {
       marginTop: 15,
       marginRight: 5,
       marginLeft: 5,
@@ -182,54 +283,52 @@ function send_onReceived(text) {
       },
       backgroundColor: '#FFFFFF'
     });
-
-    //calculate scrollview height dynamic
-    heightOfChatScrollview += sizeOfLabelObj.height;
-    this.chatScrollView.layout.height = heightOfChatScrollview;
-    // placeHolderHeight -= sizeOfLabelObj.height;
-    // this.chatScrollView.layout.height = heightOfChatScrollview;
-    // placeHolder.scrollViewPlaceHolder.dispatch({
-    //   type: "updateUserStyle",
-    //   userStyle: {
-    //     height: placeHolderHeight
-    //   }
-    // });
-
-    page.layout.applyLayout();
-
-    //In order to achive samebehavior implement timeOut.
-    if (scrollBasedOnScrollHeight(page.chatScrollView.height)) {
-      setTimeout(function() {
-        page.chatScrollView.scrollToEdge(ScrollView.Edge.BOTTOM);
-      }, 200);
-
-    }
   }
-  else {
-    alert("Please enter something");
+
+  //calculate scrollview height dynamic
+  heightOfChatScrollview += sizeOfLabelObj.height;
+  this.chatScrollView.layout.height = heightOfChatScrollview;
+  // placeHolderHeight -= sizeOfLabelObj.height;
+  // this.chatScrollView.layout.height = heightOfChatScrollview;
+  // placeHolder.scrollViewPlaceHolder.dispatch({
+  //   type: "updateUserStyle",
+  //   userStyle: {
+  //     height: placeHolderHeight
+  //   }
+  // });
+
+  page.layout.applyLayout();
+
+  //In order to achive samebehavior implement timeOut.
+  if (scrollBasedOnScrollHeight(page.chatScrollView.height)) {
+    setTimeout(function() {
+      page.chatScrollView.scrollToEdge(ScrollView.Edge.BOTTOM);
+    }, 200);
+
   }
 }
 
-
-function onMessageTrigger() {
+function setOnMessageTrigger() {
   const page = this;
   myWebSocket.onMessage = function(e) {
 
-    console.log("Message received." + e.string);
+    sender = false;
     var data = e.string;
 
     if (data.search(noInclude) === -1) {
       var text = data;
       var constString = "Succeeded! I am navigating you to "
       var evaluateData = constString.concat(" ", text + " page.. ");
-      send_onReceived.call(page, evaluateData);
+      evaluatedData = evaluateData;
+      applyMessageOnScreen.call(page);
 
       //sets timer to enable to user intract with chatbot
       nativagetFoundPage(text);
     }
     else {
-      var evalateData = data.replace(noInclude, "");
-      send_onReceived.call(page, evalateData);
+      var evaluateData = data.replace(noInclude, "");
+      evaluatedData = evaluateData;
+      applyMessageOnScreen.call(page);
     }
 
     console.log("message is " + JSON.stringify(e));
