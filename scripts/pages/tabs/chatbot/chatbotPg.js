@@ -18,6 +18,11 @@ const ScrollView = require('sf-core/ui/scrollview');
 var noInclude = '_NOINCLUDE,';
 var sender;
 var evaluatedData;
+var maxWidth = Screen.width * 3 / 5;
+var heightOfChatScrollview = Screen.height * 1 / 4;
+var heightExpand = 50;
+var widthExpand = 60;
+//HelveticaNeu_bc
 
 const ChatbotPg = extend(ChatbotPgDesign)(
   // Constructor
@@ -37,7 +42,6 @@ const ChatbotPg = extend(ChatbotPgDesign)(
  * @param {Object} parameters passed from Router.go function
  */
 var myWebSocket = null;
-var heightOfChatScrollview;
 
 function onShow(superOnShow) {
   superOnShow();
@@ -54,22 +58,8 @@ function onLoad(superOnLoad) {
   superOnLoad();
 
   const page = this;
-  this.layoutHeaderBar.headerBarTitle.text = "ChatBot"
-
-
-  heightOfChatScrollview = Screen.height * 1 / 4;
+  this.layoutHeaderBar.headerBarTitle.text = "CHATBOT"
   this.chatScrollView.layout.height = heightOfChatScrollview;
-
-  // placeHolder.scrollViewPlaceHolder = new FlexLayout();
-
-  // this.chatScrollView.layout.addChild(placeHolder.scrollViewPlaceHolder, 'placeHolder', '', {
-  //   height: placeHolderHeight,
-  //   flexProps: {
-  //     positionType: "RELATIVE",
-  //     alignSelf: "FLEX_START"
-  //   },
-  //   backgroundColor: '#FFFFFF'
-  // });
 
   myWebSocket = new WebSocket({ url: "https://self-service-server-smartface.azurewebsites.net/" });
 
@@ -87,143 +77,11 @@ function onLoad(superOnLoad) {
   }.bind(page)
 }
 
-// function send_onPress() {
-//   const page = this;
-//   var text = page.sendText.text;
-//   var sizeOfLabelObj = sizeOfLabel(text);
-
-//   if (text) {
-
-//     var userSendMessage = new chatBotReplyStructure();
-//     userSendMessage.chatBotLabel.text = text;
-
-//     page.chatScrollView.layout.addChild(userSendMessage, 'newSendMessage', '', {
-//       marginTop: 15,
-//       marginRight: 5,
-//       marginLeft: 5,
-//       width: null,
-//       maxHeight: sizeOfLabelObj.height,
-//       maxWidth: sizeOfLabelObj.width,
-//       flexGrow: 1,
-//       flexProps: {
-//         flexDirection: "ROW_REVERSE",
-//         positionType: "RELATIVE",
-//         alignSelf: "FLEX_END"
-//       },
-//       backgroundColor: '#FFFFFF'
-//     });
-
-//     userSendMessage.chatBotLabel.dispatch({
-//       type: "updateUserStyle",
-//       userStyle: {
-//         textColor: "#FFFFFF",
-//         backgroundColor: "#4A90E2"
-//       }
-//     });
-
-//     userSendMessage.contentfl.dispatch({
-//       type: "updateUserStyle",
-//       userStyle: {
-//         backgroundColor: "#4A90E2"
-//       }
-//     });
-
-//     userSendMessage.messageIconImageView.dispatch({
-//       type: "updateUserStyle",
-//       userStyle: {
-//         width: 0,
-//         height: 0,
-//         visible: false
-//       }
-//     });
-
-//     //calculate scrollview height dynamic
-//     heightOfChatScrollview += sizeOfLabelObj.height;
-//     // placeHolderHeight -= sizeOfLabelObj.height;
-//     this.chatScrollView.layout.height = heightOfChatScrollview;
-//     // placeHolder.scrollViewPlaceHolder.dispatch({
-//     //   type: "updateUserStyle",
-//     //   userStyle: {
-//     //     height: placeHolderHeight
-//     //   }
-//     // });
-
-//     page.layout.applyLayout();
-
-//     if (scrollBasedOnScrollHeight(page.chatScrollView.height)) {
-//       page.chatScrollView.scrollToEdge(ScrollView.Edge.BOTTOM);
-//     };
-
-//     //send to Websocket server
-//     replyToWs(text);
-//     //after sending text make it empty
-//     page.sendText.text = "";
-//   }
-//   else {
-//     alert("Please enter something");
-//   }
-// }
-
-// function send_onReceived(text) {
-//   const page = this;
-
-//   var sizeOfLabelObj = sizeOfLabel(text);
-
-//   if (text) {
-
-//     var wsSendMessage = new chatBotReplyStructure();
-//     wsSendMessage.chatBotLabel.text = text;
-
-//     page.chatScrollView.layout.addChild(wsSendMessage, 'wsSendMessage', '', {
-//       marginTop: 15,
-//       marginRight: 5,
-//       marginLeft: 5,
-//       width: null,
-//       maxWidth: sizeOfLabelObj.width,
-//       maxHeight: sizeOfLabelObj.height,
-//       flexGrow: 1,
-//       flexProps: {
-//         flexDirection: "ROW",
-//         positionType: "RELATIVE",
-//         alignSelf: "FLEX_START",
-//       },
-//       backgroundColor: '#FFFFFF'
-//     });
-
-//     //calculate scrollview height dynamic
-//     heightOfChatScrollview += sizeOfLabelObj.height;
-//     this.chatScrollView.layout.height = heightOfChatScrollview;
-//     // placeHolderHeight -= sizeOfLabelObj.height;
-//     // this.chatScrollView.layout.height = heightOfChatScrollview;
-//     // placeHolder.scrollViewPlaceHolder.dispatch({
-//     //   type: "updateUserStyle",
-//     //   userStyle: {
-//     //     height: placeHolderHeight
-//     //   }
-//     // });
-
-//     page.layout.applyLayout();
-
-//     //In order to achive samebehavior implement timeOut.
-//     if (scrollBasedOnScrollHeight(page.chatScrollView.height)) {
-//       setTimeout(function() {
-//         page.chatScrollView.scrollToEdge(ScrollView.Edge.BOTTOM);
-//       }, 200);
-
-//     }
-//   }
-//   else {
-//     alert("Please enter something");
-//   }
-// }
-
 function applyMessageOnScreen() {
   const page = this;
-  console.log("page is " + page);
 
   var messageComponent = new chatBotReplyStructure();
   var senderText = page.sendText.text;
-  console.log("evaluatedData  + " + evaluatedData);
   var currentText = ((sender) ? senderText : evaluatedData);
   var sizeOfLabelObj = sizeOfLabel(currentText);
   messageComponent.chatBotLabel.text = currentText;
@@ -231,7 +89,7 @@ function applyMessageOnScreen() {
   if (sender) {
 
     page.chatScrollView.layout.addChild(messageComponent, 'messageComponent', '', {
-      marginTop: 15,
+      marginTop: 0,
       marginRight: 5,
       marginLeft: 5,
       width: null,
@@ -249,6 +107,7 @@ function applyMessageOnScreen() {
     messageComponent.chatBotLabel.dispatch({
       type: "updateUserStyle",
       userStyle: {
+        //  font: Font.create("HelveticaNeu_bc", 16, Font.NORMAL),
         textColor: "#FFFFFF",
         backgroundColor: "#4A90E2"
       }
@@ -277,7 +136,7 @@ function applyMessageOnScreen() {
   else {
 
     page.chatScrollView.layout.addChild(messageComponent, 'messageComponent', '', {
-      marginTop: 15,
+      marginTop: 0,
       marginRight: 5,
       marginLeft: 5,
       width: null,
@@ -294,16 +153,9 @@ function applyMessageOnScreen() {
   }
 
   //calculate scrollview height dynamic
-  heightOfChatScrollview += sizeOfLabelObj.height;
+  console.log("messageComponent height is " + Math.ceil(messageComponent.maxHeight));
+  heightOfChatScrollview += Math.ceil(messageComponent.maxHeight) ;
   this.chatScrollView.layout.height = heightOfChatScrollview;
-  // placeHolderHeight -= sizeOfLabelObj.height;
-  // this.chatScrollView.layout.height = heightOfChatScrollview;
-  // placeHolder.scrollViewPlaceHolder.dispatch({
-  //   type: "updateUserStyle",
-  //   userStyle: {
-  //     height: placeHolderHeight
-  //   }
-  // });
 
   page.layout.applyLayout();
 
@@ -384,8 +236,8 @@ function initAlerView() {
 }
 
 function sizeOfLabel(text) {
-  var sizeOfLabelObj = Font.create(Font.DEFAULT, 17, Font.NORMAL).sizeOfString(text, 250);
-  return sizeOfLabelObj = { height: sizeOfLabelObj.height + 50, width: sizeOfLabelObj.width + 60 };
+  var sizeOfLabelObj = Font.create(Font.DEFAULT, 16, Font.NORMAL).sizeOfString(text, maxWidth);
+  return sizeOfLabelObj = { height: sizeOfLabelObj.height + heightExpand, width: sizeOfLabelObj.width + widthExpand };
 }
 
 function scrollBasedOnScrollHeight(scrollHeight) {
