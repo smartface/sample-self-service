@@ -15,11 +15,7 @@ const Screen = require('sf-core/device/screen');
 const Font = require('sf-core/ui/font');
 const ScrollView = require('sf-core/ui/scrollview');
 
-
-
-
 var noInclude = '_NOINCLUDE,';
-
 
 const ChatbotPg = extend(ChatbotPgDesign)(
   // Constructor
@@ -43,31 +39,6 @@ var heightOfChatScrollview;
 
 function onShow(superOnShow) {
   superOnShow();
-
-  const page = this;
-
-  this.sendLabel.onTouch = send_onPress.bind(this);
-
-  myWebSocket.onMessage = function(e) {
-    console.log("Message received." + e.string);
-    var data = e.string;
-
-    if (data.search(noInclude) === -1) {
-      var text = data;
-      var constString = "Succeeded! I am navigating you to "
-      var evaluateData = constString.concat(" ", text + " page.. ");
-      send_onReceived.call(page, evaluateData);
-
-      //sets timer to enable to user intract with chatbot
-      nativagetFoundPage(text);
-    }
-    else {
-      var evalateData = data.replace(noInclude, "");
-      send_onReceived.call(page, evalateData);
-    }
-
-    console.log("message is " + JSON.stringify(e));
-  };
 }
 
 /**
@@ -78,8 +49,8 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
   superOnLoad();
   this.layoutHeaderBar.headerBarTitle.text = "ChatBot"
-  
-  
+
+
   heightOfChatScrollview = Screen.height * 1 / 4;
   this.chatScrollView.layout.height = heightOfChatScrollview;
 
@@ -100,21 +71,9 @@ function onLoad(superOnLoad) {
   this.layoutHeaderBar.rightItem1.height = 25;
   this.layoutHeaderBar.rightItem1.image = Image.createFromFile("images://ic_info_outline_white.png")
 
-  var inforAlertView = new AlertView({
-    title: "Ask For",
-    message: 'Pages \n -Leave Management \n -Expense Management \n -Salary \n -Employment History \n -Employee Directory \n -Leaveapprovals \n -My Company \n Or Type for keywords as leave, approval etc.'
-  });
-
-  inforAlertView.addButton({
-    index: AlertView.ButtonType.POSITIVE,
-    text: "Okey",
-    onClick: function() {
-      console.log("Okey clicked.");
-    }
-  });
-
+  this.sendLabel.onTouch = send_onPress.bind(this);
   this.layoutHeaderBar.rightItem1.onTouch = function() {
-    inforAlertView.show();
+    initAlerView().show();
   }.bind(this)
 }
 
@@ -173,7 +132,7 @@ function send_onPress() {
     //calculate scrollview height dynamic
     heightOfChatScrollview += sizeOfLabelObj.height;
     // placeHolderHeight -= sizeOfLabelObj.height;
-     this.chatScrollView.layout.height = heightOfChatScrollview;
+    this.chatScrollView.layout.height = heightOfChatScrollview;
     // placeHolder.scrollViewPlaceHolder.dispatch({
     //   type: "updateUserStyle",
     //   userStyle: {
@@ -195,15 +154,6 @@ function send_onPress() {
   }
   else {
     alert("Please enter something");
-  }
-}
-
-function scrollBasedOnScrollHeight(scrollHeight) {
-  if (heightOfChatScrollview / scrollHeight >= 1) {
-    return true;
-  }
-  else {
-    return false;
   }
 }
 
@@ -247,11 +197,12 @@ function send_onReceived(text) {
 
     page.layout.applyLayout();
 
-
+    //In order to achive samebehavior implement timeOut.
     if (scrollBasedOnScrollHeight(page.chatScrollView.height)) {
       setTimeout(function() {
         page.chatScrollView.scrollToEdge(ScrollView.Edge.BOTTOM);
       }, 200);
+
     }
   }
   else {
@@ -259,16 +210,39 @@ function send_onReceived(text) {
   }
 }
 
+
+function onMessageTrigger() {
+  const page = this;
+  myWebSocket.onMessage = function(e) {
+
+    console.log("Message received." + e.string);
+    var data = e.string;
+
+    if (data.search(noInclude) === -1) {
+      var text = data;
+      var constString = "Succeeded! I am navigating you to "
+      var evaluateData = constString.concat(" ", text + " page.. ");
+      send_onReceived.call(page, evaluateData);
+
+      //sets timer to enable to user intract with chatbot
+      nativagetFoundPage(text);
+    }
+    else {
+      var evalateData = data.replace(noInclude, "");
+      send_onReceived.call(page, evalateData);
+    }
+
+    console.log("message is " + JSON.stringify(e));
+  };
+}
+
 function replyToWs(text) {
   myWebSocket.send({ data: text });
 }
 
 function nativagetFoundPage(pageName) {
-
   PageFinder.findPage(pageName, function(tabName, index) {
-
     if (tabName !== null && index !== null) {
-
       //sets the index
       tabBar.setIndex(tabName);
       var tabPath = "tabs/" + tabName;
@@ -281,15 +255,39 @@ function nativagetFoundPage(pageName) {
         },
         delay: 2000
       });
-
     }
   });
 }
 
+function initAlerView() {
+  var inforAlertView = new AlertView({
+    title: "Ask For",
+    message: 'Pages \n -Leave Management \n -Expense Management \n -Salary \n -Employment History \n -Employee Directory \n -Leaveapprovals \n -My Company \n Or Type for keywords as leave, approval etc.'
+  });
+
+  inforAlertView.addButton({
+    index: AlertView.ButtonType.POSITIVE,
+    text: "Okey",
+    onClick: function() {
+      console.log("Okey clicked.");
+    }
+  });
+
+  return inforAlertView;
+}
+
 function sizeOfLabel(text) {
   var sizeOfLabelObj = Font.create(Font.DEFAULT, 17, Font.NORMAL).sizeOfString(text, 250);
-
   return sizeOfLabelObj = { height: sizeOfLabelObj.height + 50, width: sizeOfLabelObj.width + 60 };
+}
+
+function scrollBasedOnScrollHeight(scrollHeight) {
+  if (heightOfChatScrollview / scrollHeight >= 1) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 
