@@ -61,6 +61,11 @@ function $Flexlayout84(_super, pageInstance) {
   addChild.call(this, "horizontaldivider_1", $Flexlayout84$$Horizontaldivider_1_, pageInstance);
   addChild.call(this, "layoutFinger", $Flexlayout84$$LayoutFinger_, pageInstance);
   addChild.call(this, "horizontalDividerFingerprint", $Flexlayout84$$HorizontalDividerFingerprint_, pageInstance);
+  addChild.call(this, "layoutInstabug", $Flexlayout84$$LayoutInstabug_, pageInstance);
+  addChild.call(this, "horizontalDividerInstabug", $Flexlayout84$$HorizontalDividerInstabug_, pageInstance);
+  addChild.call(this, "layoutFabric", $Flexlayout84$$LayoutFabric_, pageInstance);
+  addChild.call(this, "horizontalDividerFabric", $Flexlayout84$$HorizontalDividerFabric_, pageInstance);
+  addChild.call(this, "layoutFirabase", $Flexlayout84$$LayoutFirabase_, pageInstance);
   addChild.call(this, "layoutAbout", $Flexlayout84$$LayoutAbout_, pageInstance);
   addChild.call(this, "txtAboutDesc", $Flexlayout84$$TxtAboutDesc_, pageInstance);
   addChild.call(this, "signoutLayout", $Flexlayout84$$SignoutLayout_, pageInstance);
@@ -370,6 +375,216 @@ $Flexlayout84$$HorizontalDividerFingerprint.$$styleContext = {
   }
 };
 const $Flexlayout84$$HorizontalDividerFingerprint_ = HorizontalDivider($Flexlayout84$$HorizontalDividerFingerprint);
+
+function $Flexlayout84$$LayoutInstabug(_super, pageInstance) {
+  _super(this);
+  addChild.call(this, "txtInstabug", $Flexlayout84$$LayoutInstabug$$TxtInstabug_, pageInstance);
+  addChild.call(this, "switchFinger", $Flexlayout84$$LayoutInstabug$$SwitchFinger_, pageInstance);
+  pageInstance.layoutInstabug = this;
+}
+$Flexlayout84$$LayoutInstabug.$$styleContext = {
+  classNames: ".flexLayout",
+  userProps: {
+    flexProps: {
+      flexDirection: "ROW",
+      alignItems: "CENTER",
+      flexGrow: null,
+      alignSelf: "STRETCH"
+    },
+    height: 60,
+    marginLeft: 10,
+    marginRight: 10,
+    width: null
+  }
+};
+const $Flexlayout84$$LayoutInstabug_ = FlexLayout($Flexlayout84$$LayoutInstabug);
+
+function $Flexlayout84$$LayoutInstabug$$TxtInstabug(_super, pageInstance) {
+  _super(this, {
+    text: "Instabug"
+  });
+  pageInstance.txtInstabug = this;
+}
+$Flexlayout84$$LayoutInstabug$$TxtInstabug.$$styleContext = {
+  classNames: ".label .label-list-item-title",
+  userProps: {
+    flexProps: {
+      flexGrow: 1
+    },
+    height: 70,
+    left: 5,
+    width: null
+  }
+};
+const $Flexlayout84$$LayoutInstabug$$TxtInstabug_ = Label($Flexlayout84$$LayoutInstabug$$TxtInstabug);
+
+function $Flexlayout84$$LayoutInstabug$$SwitchFinger(_super, pageInstance) {
+  _super(this);
+  pageInstance.switchFinger = this;
+}
+$Flexlayout84$$LayoutInstabug$$SwitchFinger.$$styleContext = {
+  classNames: ".switch",
+  userProps: {
+    minHeight: 31,
+    minWidth: 51,
+    width: null
+  }
+};
+const $Flexlayout84$$LayoutInstabug$$SwitchFinger_ = Switch($Flexlayout84$$LayoutInstabug$$SwitchFinger);
+
+function $Flexlayout84$$HorizontalDividerInstabug(_super, pageInstance) {
+  _super(this);
+  pageInstance.horizontalDividerInstabug = this;
+}
+$Flexlayout84$$HorizontalDividerInstabug.$$styleContext = {
+  classNames: ".flexLayout",
+  userProps: {
+    alpha: 1,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
+    flexProps: {
+      flexGrow: null,
+      positionType: "RELATIVE"
+    },
+    height: 1,
+    left: 0,
+    top: 0,
+    width: null
+  }
+};
+const $Flexlayout84$$HorizontalDividerInstabug_ = HorizontalDivider($Flexlayout84$$HorizontalDividerInstabug);
+
+function $Flexlayout84$$LayoutFabric(_super, pageInstance) {
+  _super(this);
+  addChild.call(this, "txtFabric", $Flexlayout84$$LayoutFabric$$TxtFabric_, pageInstance);
+  addChild.call(this, "switchFinger", $Flexlayout84$$LayoutFabric$$SwitchFinger_, pageInstance);
+  pageInstance.layoutFabric = this;
+}
+$Flexlayout84$$LayoutFabric.$$styleContext = {
+  classNames: ".flexLayout",
+  userProps: {
+    flexProps: {
+      flexDirection: "ROW",
+      alignItems: "CENTER",
+      flexGrow: null,
+      alignSelf: "STRETCH"
+    },
+    height: 60,
+    marginLeft: 10,
+    marginRight: 10,
+    width: null
+  }
+};
+const $Flexlayout84$$LayoutFabric_ = FlexLayout($Flexlayout84$$LayoutFabric);
+
+function $Flexlayout84$$LayoutFabric$$TxtFabric(_super, pageInstance) {
+  _super(this, {
+    text: "Fabric"
+  });
+  pageInstance.txtFabric = this;
+}
+$Flexlayout84$$LayoutFabric$$TxtFabric.$$styleContext = {
+  classNames: ".label .label-list-item-title",
+  userProps: {
+    flexProps: {
+      flexGrow: 1
+    },
+    height: 70,
+    left: 5,
+    width: null
+  }
+};
+const $Flexlayout84$$LayoutFabric$$TxtFabric_ = Label($Flexlayout84$$LayoutFabric$$TxtFabric);
+
+function $Flexlayout84$$LayoutFabric$$SwitchFinger(_super, pageInstance) {
+  _super(this);
+  pageInstance.switchFinger = this;
+}
+$Flexlayout84$$LayoutFabric$$SwitchFinger.$$styleContext = {
+  classNames: ".switch",
+  userProps: {
+    minHeight: 31,
+    minWidth: 51,
+    width: null
+  }
+};
+const $Flexlayout84$$LayoutFabric$$SwitchFinger_ = Switch($Flexlayout84$$LayoutFabric$$SwitchFinger);
+
+function $Flexlayout84$$HorizontalDividerFabric(_super, pageInstance) {
+  _super(this);
+  pageInstance.horizontalDividerFabric = this;
+}
+$Flexlayout84$$HorizontalDividerFabric.$$styleContext = {
+  classNames: ".flexLayout",
+  userProps: {
+    alpha: 1,
+    backgroundColor: "rgba( 255, 255, 255, 1 )",
+    flexProps: {
+      flexGrow: null,
+      positionType: "RELATIVE"
+    },
+    height: 1,
+    left: 0,
+    top: 0,
+    width: null
+  }
+};
+const $Flexlayout84$$HorizontalDividerFabric_ = HorizontalDivider($Flexlayout84$$HorizontalDividerFabric);
+
+function $Flexlayout84$$LayoutFirabase(_super, pageInstance) {
+  _super(this);
+  addChild.call(this, "txtFirebase", $Flexlayout84$$LayoutFirabase$$TxtFirebase_, pageInstance);
+  addChild.call(this, "switchFinger", $Flexlayout84$$LayoutFirabase$$SwitchFinger_, pageInstance);
+  pageInstance.layoutFirabase = this;
+}
+$Flexlayout84$$LayoutFirabase.$$styleContext = {
+  classNames: ".flexLayout",
+  userProps: {
+    flexProps: {
+      flexDirection: "ROW",
+      alignItems: "CENTER",
+      flexGrow: null,
+      alignSelf: "STRETCH"
+    },
+    height: 60,
+    marginLeft: 10,
+    marginRight: 10,
+    width: null
+  }
+};
+const $Flexlayout84$$LayoutFirabase_ = FlexLayout($Flexlayout84$$LayoutFirabase);
+
+function $Flexlayout84$$LayoutFirabase$$TxtFirebase(_super, pageInstance) {
+  _super(this, {
+    text: "Firebase"
+  });
+  pageInstance.txtFirebase = this;
+}
+$Flexlayout84$$LayoutFirabase$$TxtFirebase.$$styleContext = {
+  classNames: ".label .label-list-item-title",
+  userProps: {
+    flexProps: {
+      flexGrow: 1
+    },
+    height: 70,
+    left: 5,
+    width: null
+  }
+};
+const $Flexlayout84$$LayoutFirabase$$TxtFirebase_ = Label($Flexlayout84$$LayoutFirabase$$TxtFirebase);
+
+function $Flexlayout84$$LayoutFirabase$$SwitchFinger(_super, pageInstance) {
+  _super(this);
+  pageInstance.switchFinger = this;
+}
+$Flexlayout84$$LayoutFirabase$$SwitchFinger.$$styleContext = {
+  classNames: ".switch",
+  userProps: {
+    minHeight: 31,
+    minWidth: 51,
+    width: null
+  }
+};
+const $Flexlayout84$$LayoutFirabase$$SwitchFinger_ = Switch($Flexlayout84$$LayoutFirabase$$SwitchFinger);
 
 function $Flexlayout84$$LayoutAbout(_super, pageInstance) {
   _super(this);
