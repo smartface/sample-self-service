@@ -9,7 +9,7 @@
 					"3afe-5c59-46f8-b543",
 					"b8cc-eb19-0756-7e78",
 					"c04f-8e50-4743-001f",
-					"9227-4e03-7b6d-655a",
+					"e212-b9a7-afbc-a710",
 					"9e1b-5650-37a6-7a62"
 				],
 				"name": "chatbotPg",
@@ -148,7 +148,8 @@
 					"2081-4c4a-0f26-ea65"
 				],
 				"name": "textfl",
-				"parent": "9e1b-5650-37a6-7a62"
+				"parent": "9e1b-5650-37a6-7a62",
+				"usePageVariable": true
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -161,6 +162,7 @@
 				"marginLeft": 15,
 				"marginRight": 15,
 				"marginTop": 10,
+				"usePageVariable": true,
 				"width": null
 			}
 		},
@@ -197,24 +199,20 @@
 			}
 		},
 		{
-			"className": ".listView",
-			"id": "9227-4e03-7b6d-655a",
+			"className": ".scrollView",
+			"id": "e212-b9a7-afbc-a710",
 			"props": {
 				"children": [],
-				"itemCount": 1,
-				"name": "chatbotListview",
+				"name": "chatScrollView",
 				"parent": "1c3a-aa7f-483b-1d13",
-				"rowHeight": null,
 				"usePageVariable": true
 			},
-			"type": "ListView",
+			"type": "ScrollView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1
 				},
 				"height": null,
-				"itemCount": 1,
-				"rowHeight": null,
 				"usePageVariable": true,
 				"width": null
 			}

@@ -35,7 +35,9 @@
 					"0e5a-597b-5337-c490",
 					"220b-c892-230c-b031",
 					"eca6-3b22-68a8-aa04",
-					"4673-9f39-1b4c-f943"
+					"4673-9f39-1b4c-f943",
+					"e74f-271e-135b-fb8a",
+					"7600-f1be-5876-6394"
 				],
 				"name": "__library__",
 				"orientation": "PORTRAIT",
@@ -44,9 +46,12 @@
 			"type": "Page",
 			"userProps": {
 				"backgroundColor": "rgba( 131, 52, 52, 1 )",
-				"flexProps": {}
+				"flexProps": {},
+				"font": {
+					"size": 18
+				}
 			},
-			"version": "6.6.1"
+			"version": "6.6.4"
 		},
 		{
 			"className": ".statusBar",
@@ -311,7 +316,7 @@
 		},
 		{
 			"className": ".flexLayout .flexLayout-headerBar",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"id": "ebb9-37cc-ff1b-0314",
 			"props": {
 				"children": [
@@ -329,8 +334,8 @@
 					"positionType": "RELATIVE"
 				},
 				"height": 144,
-				"left": 3,
-				"top": 127,
+				"left": 0.5227502348811127,
+				"top": 252.27804849314137,
 				"width": 358
 			}
 		},
@@ -2029,7 +2034,7 @@
 		},
 		{
 			"className": ".flexLayout",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"id": "663a-cb47-f53e-3f29",
 			"props": {
 				"children": [
@@ -5047,6 +5052,7 @@
 		},
 		{
 			"className": ".flexLayout",
+			"hiddenComponent": true,
 			"id": "4673-9f39-1b4c-f943",
 			"props": {
 				"children": [
@@ -5060,7 +5066,9 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"flexProps": {},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
 				"height": 330,
 				"width": 360
 			}
@@ -5249,6 +5257,173 @@
 				"left": 0,
 				"top": 0,
 				"width": 360
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "e74f-271e-135b-fb8a",
+			"props": {
+				"children": [
+					"6264-0fd6-907a-44c1",
+					"7427-88ac-c5fa-28bc"
+				],
+				"id": 100,
+				"name": "chatBotReplyStructure",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"alignSelf": "FLEX_END",
+					"flexDirection": "ROW_REVERSE",
+					"positionType": "RELATIVE",
+					"alignItems": "AUTO"
+				},
+				"height": 150,
+				"id": 100,
+				"left": 0,
+				"right": 150,
+				"top": -1.851851883388701,
+				"width": 400
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "6264-0fd6-907a-44c1",
+			"props": {
+				"children": [],
+				"id": 102,
+				"name": "messageIconImageView",
+				"parent": "e74f-271e-135b-fb8a",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"alignSelf": "FLEX_END"
+				},
+				"height": 15,
+				"id": 102,
+				"image": "messageicon.png",
+				"imageFillType": "STRETCH",
+				"marginLeft": 5,
+				"marginRight": 5,
+				"usePageVariable": true,
+				"width": 15
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "7427-88ac-c5fa-28bc",
+			"props": {
+				"children": [
+					"57ef-2f77-b901-8f7e"
+				],
+				"id": 101,
+				"name": "contentfl",
+				"parent": "e74f-271e-135b-fb8a",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 230, 230, 230, 1 )",
+				"borderRadius": 10,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"id": 101,
+				"marginBottom": 3,
+				"maxWidth": 300,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "57ef-2f77-b901-8f7e",
+			"props": {
+				"children": [],
+				"id": 103,
+				"name": "chatBotLabel",
+				"parent": "7427-88ac-c5fa-28bc",
+				"text": null,
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"backgroundColor": "rgba( 230, 230, 230, 1 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 17,
+					"bold": false,
+					"italic": false,
+					"family": "Default",
+					"style": "Regular"
+				},
+				"height": null,
+				"id": 103,
+				"marginBottom": 10,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"marginTop": 10,
+				"multiline": true,
+				"text": null,
+				"textAlignment": "MIDLEFT",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "7600-f1be-5876-6394",
+			"props": {
+				"children": [],
+				"name": "userSendLabel",
+				"parent": "8123-2e26-7576-4ace",
+				"text": "deneme"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"backgroundColor": "rgba( 37, 101, 177, 1 )",
+				"borderRadius": 10,
+				"flexProps": {
+					"alignSelf": "FLEX_END",
+					"positionType": "RELATIVE"
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Arial",
+					"style": "n"
+				},
+				"height": 45,
+				"left": 21.333333720331606,
+				"multiline": true,
+				"text": "deneme",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"top": 181.33332625679347,
+				"width": 60
 			}
 		}
 	]

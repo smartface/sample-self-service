@@ -41,6 +41,8 @@ var heightOfChatScrollview;
 
 function onShow(superOnShow) {
   superOnShow();
+
+  setOnMessageTrigger.call(this);
 }
 
 /**
@@ -50,6 +52,8 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
+
+  const page = this;
   this.layoutHeaderBar.headerBarTitle.text = "ChatBot"
 
 
@@ -67,8 +71,7 @@ function onLoad(superOnLoad) {
   //   backgroundColor: '#FFFFFF'
   // });
 
-  myWebSocket = new WebSocket({ url: "https://safe-sands-45992.herokuapp.com" });
-  setOnMessageTrigger();
+  myWebSocket = new WebSocket({ url: "https://self-service-server-smartface.azurewebsites.net/" });
 
   this.layoutHeaderBar.rightItem1.width = 25;
   this.layoutHeaderBar.rightItem1.height = 25;
@@ -76,12 +79,12 @@ function onLoad(superOnLoad) {
 
   this.sendLabel.onTouch = function() {
     sender = true;
-    applyMessageOnScreen();
-  }.bind(this)
+    applyMessageOnScreen.call(page);
+  }.bind(page)
 
   this.layoutHeaderBar.rightItem1.onTouch = function() {
     initAlerView().show();
-  }.bind(this)
+  }.bind(page)
 }
 
 // function send_onPress() {
@@ -216,14 +219,16 @@ function onLoad(superOnLoad) {
 
 function applyMessageOnScreen() {
   const page = this;
+  console.log("page is " + page);
 
   var messageComponent = new chatBotReplyStructure();
+  var senderText = page.sendText.text;
+  console.log("evaluatedData  + " + evaluatedData);
+  var currentText = ((sender) ? senderText : evaluatedData);
+  var sizeOfLabelObj = sizeOfLabel(currentText);
+  messageComponent.chatBotLabel.text = currentText;
 
   if (sender) {
-
-    var text = page.sendText.text;
-    var sizeOfLabelObj = sizeOfLabel(text);
-    messageComponent.chatBotLabel.text = text;
 
     page.chatScrollView.layout.addChild(messageComponent, 'messageComponent', '', {
       marginTop: 15,
@@ -264,9 +269,12 @@ function applyMessageOnScreen() {
         visible: false
       }
     });
+
+    replyToWs(currentText);
+    //after sending text make it empty
+    page.sendText.text = "";
   }
   else {
-    var sizeOfLabelObj = sizeOfLabel(evaluatedData);
 
     page.chatScrollView.layout.addChild(messageComponent, 'messageComponent', '', {
       marginTop: 15,
