@@ -1,10 +1,7 @@
 /* globals swipeViewIndex */
 const extend = require('js-base/core/extend');
-const ChatbotPgDesign = require('ui/ui_chatbotPg');
+const ChatbotPgDesign = require('ui/ui_pgChatbot');
 const chatBotReplyStructure = require('components/ChatBotReplyStructure');
-const FlexLayout = require('sf-core/ui/flexlayout');
-const addChild = require("@smartface/contx/lib/smartface/action/addChild");
-const Color = require('sf-core/ui/color');
 const WebSocket = require('sf-core/net/websocket');
 const Router = require('sf-core/router');
 const PageFinder = require("./PageFinder");
@@ -153,7 +150,6 @@ function applyMessageOnScreen() {
   }
 
   //calculate scrollview height dynamic
-  console.log("messageComponent height is " + Math.ceil(messageComponent.maxHeight));
   heightOfChatScrollview += Math.ceil(messageComponent.maxHeight) ;
   this.chatScrollView.layout.height = heightOfChatScrollview;
 
@@ -178,7 +174,7 @@ function setOnMessageTrigger() {
     if (data.search(noInclude) === -1) {
       var text = data;
       var constString = "Succeeded! I am navigating you to "
-      var evaluateData = constString.concat(" ", text + " page.. ");
+      let evaluateData = constString.concat(" ", text + " page.. ");
       evaluatedData = evaluateData;
       applyMessageOnScreen.call(page);
 
@@ -186,12 +182,10 @@ function setOnMessageTrigger() {
       nativagetFoundPage(text);
     }
     else {
-      var evaluateData = data.replace(noInclude, "");
+      let evaluateData = data.replace(noInclude, "");
       evaluatedData = evaluateData;
       applyMessageOnScreen.call(page);
     }
-
-    console.log("message is " + JSON.stringify(e));
   };
 }
 
@@ -205,6 +199,7 @@ function nativagetFoundPage(pageName) {
       //sets the index
       tabBar.setIndex(tabName);
       var tabPath = "tabs/" + tabName;
+      console.log(" tabName " + tabName);
       swipeViewIndex.currentIndex = index;
 
       Timer.setTimeout({

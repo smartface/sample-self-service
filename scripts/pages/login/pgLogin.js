@@ -7,7 +7,7 @@ const System = require("sf-core/device/system");
 const Timer = require("sf-core/timer");
 const fingerprint = require("sf-extension-utils").fingerprint;
 const rau = require("sf-extension-utils").rau;
-const login =  require("../../lib/lgn");
+const login = require("../../lib/lgn");
 const Color = require("sf-core/ui/color");
 const ActionKeyType = require('sf-core/ui/actionkeytype');
 
@@ -38,17 +38,18 @@ function onLoad(parentOnLoad) {
 	page.passwordLayout.actionKeyType = ActionKeyType.SEND;
 
 	this.signinButton.onPress = signInAction;
-
-	page.appName.onTouchEnded = function() {
-		page.usernameLayout.innerTextbox.text = "selfservice";
-		page.passwordLayout.innerTextbox.text = "123qweASD";
-	};
 }
 
 function onShow(parentOnShow, params) {
 	parentOnShow && parentOnShow(params);
 	const page = this;
-	
+
+	page.appName.onTouch = function() {
+		console.log("in on press");
+		page.usernameLayout.innerTextbox.text = "selfservice";
+		page.passwordLayout.innerTextbox.text = "123qweASD";
+	}.bind(this);
+
 	this.usernameLayout.innerTextbox.ios.clearButtonEnabled = true;
 	this.passwordLayout.innerTextbox.ios.clearButtonEnabled = true;
 	// Reset sign in button status because if sign in animation ran it changes
@@ -131,8 +132,8 @@ function doLogin(page, username, password, callback) {
 	login.lgn({
 		username: username,
 		password: password
-	}, function(err, userData){
-		 	if (err) {
+	}, function(err, userData) {
+		if (err) {
 			alert(lang["pgLogin.invalidLogin"]);
 		}
 		callback && callback(err, userData);
