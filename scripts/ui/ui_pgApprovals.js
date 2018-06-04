@@ -15,6 +15,7 @@ const FlexLayout = extend(require('sf-core/ui/flexlayout'));
 const ImageView = extend(require('sf-core/ui/imageview'));
 const ListView = extend(require('sf-core/ui/listview'));
 const ListViewItem = extend(require('sf-core/ui/listviewitem'));
+const actionAddChild = require("@smartface/contx/lib/smartface/action/addChild");
 
 function addChild(childName, ChildClass, pageInstance) {
   this.children = this.children || {};
@@ -92,8 +93,11 @@ const $Flexlayout137$$ComingSoon_ = ImageView($Flexlayout137$$ComingSoon);
 
 function $ListView1(_super, pageInstance) {
   _super(this);
+  var itemIndex = 0;
   this.onRowCreate = function() {
-    return new ListViewItem();
+    var item = new ListViewItem();
+    this.dispatch(actionAddChild(`item${++itemIndex}`, item));
+    return item;
   };
 }
 $ListView1.$$styleContext = {

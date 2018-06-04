@@ -1,0 +1,366 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "1e65-5183-be6f-231b",
+			"props": {
+				"children": [
+					"81e2-8038-76b1-c448",
+					"5f33-195e-6cc7-11db",
+					"d931-cac1-78ec-660a"
+				],
+				"name": "itemAnnouncement",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 120,
+				"left": 4.800000190734863,
+				"top": 143.1999969482422,
+				"width": 360
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "81e2-8038-76b1-c448",
+			"props": {
+				"children": [
+					"b102-5b98-fa31-3f84",
+					"78f7-5dfa-7fd7-afdd"
+				],
+				"id": 9,
+				"name": "flexlayout284",
+				"parent": "1e65-5183-be6f-231b"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": null,
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER"
+				},
+				"height": null,
+				"id": 9,
+				"paddingBottom": null,
+				"paddingTop": null,
+				"width": 80
+			}
+		},
+		{
+			"className": ".label",
+			"id": "b102-5b98-fa31-3f84",
+			"props": {
+				"children": [],
+				"id": 12,
+				"name": "anDate",
+				"parent": "81e2-8038-76b1-c448",
+				"text": "11.02.2017",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 4,
+					"alignSelf": "STRETCH"
+				},
+				"font": {
+					"size": 14
+				},
+				"height": null,
+				"id": 12,
+				"marginTop": null,
+				"text": "11.02.2017",
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 39, 39, 49, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "78f7-5dfa-7fd7-afdd",
+			"props": {
+				"children": [
+					"1ec2-91ee-95a5-77ee"
+				],
+				"id": 10,
+				"name": "flexlayout1342",
+				"parent": "81e2-8038-76b1-c448"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 6,
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"id": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "1ec2-91ee-95a5-77ee",
+			"props": {
+				"children": [],
+				"id": 11,
+				"name": "anImage",
+				"parent": "78f7-5dfa-7fd7-afdd",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"id": 11,
+				"image": "avatar1.png",
+				"imageFillType": "ASPECTFIT",
+				"marginBottom": 5,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "5f33-195e-6cc7-11db",
+			"props": {
+				"children": [
+					"d980-bc26-2956-8e5b",
+					"cac6-1898-72bc-1cad",
+					"b45f-9105-4f2c-f4c6"
+				],
+				"id": 4,
+				"name": "flexlayout284_1",
+				"parent": "1e65-5183-be6f-231b"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": null,
+					"alignSelf": "AUTO",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER"
+				},
+				"height": null,
+				"id": 4,
+				"width": 10
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "d980-bc26-2956-8e5b",
+			"props": {
+				"children": [],
+				"id": 8,
+				"name": "flexlayout446",
+				"parent": "5f33-195e-6cc7-11db"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 242, 242, 242, 1 )",
+				"bottom": 0,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": null,
+				"id": 8,
+				"left": null,
+				"top": 0,
+				"width": 1
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "cac6-1898-72bc-1cad",
+			"props": {
+				"children": [
+					"e3d7-57a9-a42b-95e8"
+				],
+				"id": 6,
+				"name": "circleLayout",
+				"parent": "5f33-195e-6cc7-11db"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 4,
+					"alignSelf": "STRETCH",
+					"justifyContent": "CENTER"
+				},
+				"height": null,
+				"id": 6,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "e3d7-57a9-a42b-95e8",
+			"props": {
+				"children": [],
+				"id": 7,
+				"name": "circle",
+				"parent": "cac6-1898-72bc-1cad",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
+				"borderRadius": 5,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"height": 10,
+				"id": 7,
+				"usePageVariable": true,
+				"width": 10
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "b45f-9105-4f2c-f4c6",
+			"props": {
+				"children": [],
+				"id": 5,
+				"name": "flexlayout446_1",
+				"parent": "5f33-195e-6cc7-11db"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 6
+				},
+				"height": null,
+				"id": 5,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "d931-cac1-78ec-660a",
+			"props": {
+				"children": [
+					"2e63-bd7f-7262-f6e8",
+					"eff6-724b-e0b7-041c"
+				],
+				"id": 1,
+				"name": "flexlayout284_2",
+				"parent": "1e65-5183-be6f-231b"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"id": 1,
+				"marginLeft": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "2e63-bd7f-7262-f6e8",
+			"props": {
+				"children": [],
+				"id": 3,
+				"name": "anTitle",
+				"parent": "d931-cac1-78ec-660a",
+				"text": "Bath County",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 4
+				},
+				"font": {
+					"size": 14
+				},
+				"height": null,
+				"id": 3,
+				"text": "Bath County",
+				"textColor": "rgba( 39, 39, 49, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "eff6-724b-e0b7-041c",
+			"props": {
+				"children": [],
+				"id": 2,
+				"name": "anMessage",
+				"parent": "d931-cac1-78ec-660a",
+				"text": "Lorem ipsum dolor sit amet, veniam melius duo ei, ea his esse sonet, rebum tation vituperatorib",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 6
+				},
+				"font": {
+					"size": 14
+				},
+				"height": null,
+				"id": 2,
+				"multiline": true,
+				"text": "Lorem ipsum dolor sit amet, veniam melius duo ei, ea his esse sonet, rebum tation vituperatorib",
+				"textAlignment": "TOPLEFT",
+				"textColor": "rgba( 155, 155, 155, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

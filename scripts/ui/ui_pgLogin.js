@@ -12,7 +12,7 @@ const PageBase = require('sf-core/ui/page');
 const Page = extend(PageBase);
 const pageContextPatch = require('@smartface/contx/lib/smartface/pageContextPatch');
 const ImageView = extend(require('sf-core/ui/imageview'));
-const Label = extend(require('sf-core/ui/label'));
+const TextView = extend(require('sf-core/ui/textview'));
 const FlexLayout = extend(require('sf-core/ui/flexlayout'));
 const Button = extend(require('sf-core/ui/button'));
 
@@ -99,7 +99,7 @@ $AppName.$$styleContext = {
     width: null
   }
 };
-const $AppName_ = Label($AppName);
+const $AppName_ = TextView($AppName);
 
 function $InputLayout(_super, pageInstance) {
   _super(this);

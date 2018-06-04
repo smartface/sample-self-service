@@ -1,0 +1,199 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "663a-cb47-f53e-3f29",
+			"props": {
+				"children": [
+					"2bac-27bb-29a1-94a0",
+					"13cb-099d-dce6-985d",
+					"66e5-040e-cfed-aeb2",
+					"cd18-ad64-4a13-fb23",
+					"6398-1679-52af-9c95"
+				],
+				"name": "hierarchyLevel2",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignItems": "CENTER",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"height": 75,
+				"left": 3.0198021690444192,
+				"top": 207.02970901338182,
+				"width": 360
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "2bac-27bb-29a1-94a0",
+			"props": {
+				"children": [],
+				"name": "imageview8",
+				"parent": "663a-cb47-f53e-3f29"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"borderColor": "rgba( 23, 117, 208, 1 )",
+				"borderRadius": 30,
+				"borderWidth": 1,
+				"flexProps": {},
+				"height": 60,
+				"image": "myavatar.png",
+				"imageFillType": "ASPECTFIT",
+				"marginLeft": 75,
+				"width": 60
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "13cb-099d-dce6-985d",
+			"props": {
+				"children": [
+					"624c-515f-1f18-e905",
+					"2784-2b4e-3404-1f6a"
+				],
+				"name": "flexlayout510",
+				"parent": "663a-cb47-f53e-3f29"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": 60,
+				"paddingLeft": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "624c-515f-1f18-e905",
+			"props": {
+				"children": [],
+				"name": "label1140",
+				"parent": "13cb-099d-dce6-985d",
+				"text": "Anthony Bell"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {
+					"size": 18
+				},
+				"height": 30,
+				"text": "Anthony Bell",
+				"textColor": "rgba( 23, 117, 208, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "2784-2b4e-3404-1f6a",
+			"props": {
+				"children": [],
+				"name": "label1141",
+				"parent": "13cb-099d-dce6-985d",
+				"text": "Director of Sales and Marketing"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {},
+				"height": 30,
+				"text": "Director of Sales and Marketing",
+				"textColor": "rgba( 23, 117, 208, 0.5 )",
+				"width": 270
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "66e5-040e-cfed-aeb2",
+			"props": {
+				"children": [],
+				"name": "flexlayout667",
+				"parent": "663a-cb47-f53e-3f29"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": 37,
+				"left": 45,
+				"top": 0,
+				"width": 1
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "cd18-ad64-4a13-fb23",
+			"props": {
+				"children": [],
+				"name": "flexlayout707",
+				"parent": "663a-cb47-f53e-3f29"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": 1,
+				"left": 45,
+				"top": 37,
+				"width": 30
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "6398-1679-52af-9c95",
+			"props": {
+				"children": [],
+				"name": "flexlayout813",
+				"parent": "663a-cb47-f53e-3f29"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"bottom": 0,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": 8,
+				"left": 105,
+				"width": 1
+			}
+		}
+	]
+}

@@ -13,7 +13,7 @@ const Page = extend(PageBase);
 const pageContextPatch = require('@smartface/contx/lib/smartface/pageContextPatch');
 const FlexLayout = extend(require('sf-core/ui/flexlayout'));
 const ImageView = extend(require('sf-core/ui/imageview'));
-const Label = extend(require('sf-core/ui/label'));
+const TextView = extend(require('sf-core/ui/textview'));
 
 function addChild(childName, ChildClass, pageInstance) {
   this.children = this.children || {};
@@ -95,7 +95,7 @@ $MainLayout$$Label322.$$styleContext = {
     textColor: "rgba( 155, 155, 155, 1 )"
   }
 };
-const $MainLayout$$Label322_ = Label($MainLayout$$Label322);
+const $MainLayout$$Label322_ = TextView($MainLayout$$Label322);
 
 /**
  * @event onShow

@@ -1,0 +1,117 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "e9f0-d2c8-f908-88e9",
+			"props": {
+				"children": [
+					"b224-e655-d756-0989",
+					"d282-be6b-4c4c-cb7c",
+					"4bef-c14b-f1f5-b648"
+				],
+				"name": "textboxWithLine",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 60,
+				"left": 64,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"top": 554,
+				"width": 250
+			}
+		},
+		{
+			"className": ".label .label-login.small .label-textboxWithLine.normal",
+			"id": "b224-e655-d756-0989",
+			"props": {
+				"children": [],
+				"id": 100,
+				"name": "textboxInfo",
+				"parent": "e9f0-d2c8-f908-88e9",
+				"text": "",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"height": 20,
+				"id": 100,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"text": "",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".textBox",
+			"id": "d282-be6b-4c4c-cb7c",
+			"props": {
+				"children": [],
+				"id": 101,
+				"name": "innerTextbox",
+				"parent": "e9f0-d2c8-f908-88e9",
+				"text": "",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextBox",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"id": 101,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"text": "",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "4bef-c14b-f1f5-b648",
+			"props": {
+				"children": [],
+				"id": 102,
+				"name": "textboxBottomLine",
+				"parent": "e9f0-d2c8-f908-88e9",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.4,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"flexProps": {
+					"flexGrow": null
+				},
+				"height": 1,
+				"id": 102,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

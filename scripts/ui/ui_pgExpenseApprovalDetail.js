@@ -13,7 +13,7 @@ const Page = extend(PageBase);
 const pageContextPatch = require('@smartface/contx/lib/smartface/pageContextPatch');
 const FlexLayout = extend(require('sf-core/ui/flexlayout'));
 const ImageView = extend(require('sf-core/ui/imageview'));
-const Label = extend(require('sf-core/ui/label'));
+const TextView = extend(require('sf-core/ui/textview'));
 const Button = extend(require('sf-core/ui/button'));
 
 const ListItem1 = extend(require("../components/ListItem1"));
@@ -155,7 +155,7 @@ $MainLayout$$UserInformation$$Flexlayout109$$Name.$$styleContext = {
     width: null
   }
 };
-const $MainLayout$$UserInformation$$Flexlayout109$$Name_ = Label($MainLayout$$UserInformation$$Flexlayout109$$Name);
+const $MainLayout$$UserInformation$$Flexlayout109$$Name_ = TextView($MainLayout$$UserInformation$$Flexlayout109$$Name);
 
 function $MainLayout$$UserInformation$$Flexlayout109$$Position(_super, pageInstance) {
   _super(this, {
@@ -177,7 +177,7 @@ $MainLayout$$UserInformation$$Flexlayout109$$Position.$$styleContext = {
     width: null
   }
 };
-const $MainLayout$$UserInformation$$Flexlayout109$$Position_ = Label($MainLayout$$UserInformation$$Flexlayout109$$Position);
+const $MainLayout$$UserInformation$$Flexlayout109$$Position_ = TextView($MainLayout$$UserInformation$$Flexlayout109$$Position);
 
 function $MainLayout$$DetailsLayout(_super, pageInstance) {
   _super(this);
@@ -218,7 +218,7 @@ $MainLayout$$DetailsLayout$$DetailsTitle.$$styleContext = {
     width: null
   }
 };
-const $MainLayout$$DetailsLayout$$DetailsTitle_ = Label($MainLayout$$DetailsLayout$$DetailsTitle);
+const $MainLayout$$DetailsLayout$$DetailsTitle_ = TextView($MainLayout$$DetailsLayout$$DetailsTitle);
 
 function $MainLayout$$DetailsLayout$$TitleItem(_super, pageInstance) {
   _super(this);
@@ -399,7 +399,7 @@ $MainLayout$$NoteLayout$$NoteTitle.$$styleContext = {
     width: null
   }
 };
-const $MainLayout$$NoteLayout$$NoteTitle_ = Label($MainLayout$$NoteLayout$$NoteTitle);
+const $MainLayout$$NoteLayout$$NoteTitle_ = TextView($MainLayout$$NoteLayout$$NoteTitle);
 
 function $MainLayout$$NoteLayout$$Note(_super, pageInstance) {
   _super(this, {
@@ -419,7 +419,7 @@ $MainLayout$$NoteLayout$$Note.$$styleContext = {
     width: null
   }
 };
-const $MainLayout$$NoteLayout$$Note_ = Label($MainLayout$$NoteLayout$$Note);
+const $MainLayout$$NoteLayout$$Note_ = TextView($MainLayout$$NoteLayout$$Note);
 
 function $MainLayout$$FileLayout(_super, pageInstance) {
   _super(this);
@@ -457,7 +457,7 @@ $MainLayout$$FileLayout$$FileTitle.$$styleContext = {
     width: null
   }
 };
-const $MainLayout$$FileLayout$$FileTitle_ = Label($MainLayout$$FileLayout$$FileTitle);
+const $MainLayout$$FileLayout$$FileTitle_ = TextView($MainLayout$$FileLayout$$FileTitle);
 
 function $MainLayout$$FileLayout$$Imageview22(_super, pageInstance) {
   _super(this);

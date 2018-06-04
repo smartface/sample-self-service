@@ -12,7 +12,7 @@ const PageBase = require('sf-core/ui/page');
 const Page = extend(PageBase);
 const pageContextPatch = require('@smartface/contx/lib/smartface/pageContextPatch');
 const FlexLayout = extend(require('sf-core/ui/flexlayout'));
-const Label = extend(require('sf-core/ui/label'));
+const TextView = extend(require('sf-core/ui/textview'));
 const ImageView = extend(require('sf-core/ui/imageview'));
 const TextArea = extend(require('sf-core/ui/textarea'));
 
@@ -175,7 +175,7 @@ $MainContainer$$DateContainer$$StartTitle.$$styleContext = {
     width: null
   }
 };
-const $MainContainer$$DateContainer$$StartTitle_ = Label($MainContainer$$DateContainer$$StartTitle);
+const $MainContainer$$DateContainer$$StartTitle_ = TextView($MainContainer$$DateContainer$$StartTitle);
 
 function $MainContainer$$DateContainer$$Flexlayout742(_super, pageInstance) {
   _super(this);
@@ -250,7 +250,7 @@ $MainContainer$$DateContainer$$EndTitle.$$styleContext = {
     width: null
   }
 };
-const $MainContainer$$DateContainer$$EndTitle_ = Label($MainContainer$$DateContainer$$EndTitle);
+const $MainContainer$$DateContainer$$EndTitle_ = TextView($MainContainer$$DateContainer$$EndTitle);
 
 function $MainContainer$$DateContainer$$Flexlayout742_1(_super, pageInstance) {
   _super(this);
@@ -346,7 +346,7 @@ $MainContainer$$IntExtContainer$$IntExtTitle.$$styleContext = {
     width: null
   }
 };
-const $MainContainer$$IntExtContainer$$IntExtTitle_ = Label($MainContainer$$IntExtContainer$$IntExtTitle);
+const $MainContainer$$IntExtContainer$$IntExtTitle_ = TextView($MainContainer$$IntExtContainer$$IntExtTitle);
 
 function $MainContainer$$IntExtContainer$$Internal(_super, pageInstance) {
   _super(this);
@@ -467,7 +467,7 @@ $MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle.$$styleContext = {
     width: null
   }
 };
-const $MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle_ = Label($MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle);
+const $MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle_ = TextView($MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle);
 
 function $MainContainer$$NoteContainer$$Flexlayout97$$Imageview44(_super, pageInstance) {
   _super(this);
