@@ -34,7 +34,7 @@ function onLoad(parentOnLoad) {
 function wrapContentIntoScroll() {
 	this.scrollView = new ScrollView();
 	this.layout.removeChild(this.mainContainer);
-	this.scrollView.addChild(this.mainContainer, "mainContainer", ".flexlayout", {
+	this.scrollView.layout.addChild(this.mainContainer, "mainContainer", ".flexlayout", {
 		width: null,
 		backgroundColor: "#DEDEDE"
 	});

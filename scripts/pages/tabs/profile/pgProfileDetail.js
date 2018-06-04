@@ -48,7 +48,7 @@ function wrapContentIntoScroll() {
 		flexGrow: 1
 	});
 	this.layout.removeChild(this.flexlayout500);
-	this.scrollView.addChild(this.flexlayout500);
+	this.scrollView.layout.addChild(this.flexlayout500);
 	this.layout.addChild(this.scrollView);
 }
 

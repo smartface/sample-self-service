@@ -61,7 +61,7 @@ function wrapContentIntoScroll() {
 		flexGrow: 1
 	});
 	this.layout.removeChild(this.mainLayout);
-	this.scrollView.addChild(this.mainLayout, "mainLayout", ".flexlayout", {
+	this.scrollView.layout.addChild(this.mainLayout, "mainLayout", ".flexlayout", {
 		width: null,
 		height: 810
 	});
