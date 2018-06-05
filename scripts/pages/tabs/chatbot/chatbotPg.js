@@ -221,9 +221,9 @@ function initAlerView() {
 
   inforAlertView.addButton({
     index: AlertView.ButtonType.POSITIVE,
-    text: "Okey",
+    text: "OK",
     onClick: function() {
-      console.log("Okey clicked.");
+      console.log("OK clicked.");
     }
   });
 
