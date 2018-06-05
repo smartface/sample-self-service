@@ -120,8 +120,7 @@
 			"id": "92b6-6662-40df-fefb",
 			"props": {
 				"children": [
-					"ee25-de5f-6785-68ab",
-					"f8fc-d3e7-ea08-6160"
+					"ee25-de5f-6785-68ab"
 				],
 				"name": "flexlayout3",
 				"parent": "7e62-9ab2-346d-6afe"
@@ -142,11 +141,11 @@
 			"id": "9c7e-2498-aeb5-1bbc",
 			"props": {
 				"children": [
-					"81f7-6ff0-8ce4-6793",
-					"16b7-9177-0c56-7082"
+					"81f7-6ff0-8ce4-6793"
 				],
-				"name": "flexlayout3_1",
-				"parent": "7e62-9ab2-346d-6afe"
+				"name": "flexDate",
+				"parent": "7e62-9ab2-346d-6afe",
+				"usePageVariable": true
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -156,11 +155,13 @@
 					"flexGrow": 1
 				},
 				"height": null,
+				"usePageVariable": true,
 				"width": null
 			}
 		},
 		{
 			"className": ".flexLayout",
+			"hiddenComponent": false,
 			"id": "914a-a0cc-6d04-8b3a",
 			"props": {
 				"children": [
@@ -172,7 +173,11 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"height": 200,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"marginBottom": 10,
 				"marginLeft": 10,
 				"marginRight": 10,
 				"paddingBottom": 10,
@@ -266,10 +271,7 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"height": null,
+				"height": 70,
 				"width": null
 			}
 		},
@@ -326,34 +328,6 @@
 		{
 			"className": ".flexLayout",
 			"hiddenComponent": false,
-			"id": "f8fc-d3e7-ea08-6160",
-			"props": {
-				"children": [],
-				"name": "timeTypePicker",
-				"parent": "92b6-6662-40df-fefb",
-				"usePageVariable": true
-			},
-			"source": {
-				"page": "__library__",
-				"id": "33a3-5dd0-316b-b576"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"height": 45,
-				"left": 0,
-				"marginLeft": 20,
-				"top": 0,
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout",
-			"hiddenComponent": false,
 			"id": "81f7-6ff0-8ce4-6793",
 			"props": {
 				"children": [],
@@ -373,34 +347,6 @@
 				},
 				"height": 45,
 				"left": 0,
-				"top": 0,
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout",
-			"hiddenComponent": false,
-			"id": "16b7-9177-0c56-7082",
-			"props": {
-				"children": [],
-				"name": "selectTimePicker",
-				"parent": "9c7e-2498-aeb5-1bbc",
-				"usePageVariable": true
-			},
-			"source": {
-				"page": "__library__",
-				"id": "33a3-5dd0-316b-b576"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
-				"height": 45,
-				"left": 0,
-				"marginLeft": 20,
 				"top": 0,
 				"usePageVariable": true,
 				"width": null

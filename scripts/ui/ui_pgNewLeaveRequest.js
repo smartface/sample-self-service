@@ -99,7 +99,7 @@ const $Flexlayout1$$InformationTitle_ = TextView($Flexlayout1$$InformationTitle)
 function $Flexlayout1$$Flexlayout2(_super, pageInstance) {
   _super(this);
   addChild.call(this, "flexlayout3", $Flexlayout1$$Flexlayout2$$Flexlayout3_, pageInstance);
-  addChild.call(this, "flexlayout3_1", $Flexlayout1$$Flexlayout2$$Flexlayout3_1_, pageInstance);
+  addChild.call(this, "flexDate", $Flexlayout1$$Flexlayout2$$FlexDate_, pageInstance);
 }
 $Flexlayout1$$Flexlayout2.$$styleContext = {
   classNames: ".flexLayout",
@@ -117,7 +117,6 @@ const $Flexlayout1$$Flexlayout2_ = FlexLayout($Flexlayout1$$Flexlayout2);
 function $Flexlayout1$$Flexlayout2$$Flexlayout3(_super, pageInstance) {
   _super(this);
   addChild.call(this, "leaveTypePicker", $Flexlayout1$$Flexlayout2$$Flexlayout3$$LeaveTypePicker_, pageInstance);
-  addChild.call(this, "timeTypePicker", $Flexlayout1$$Flexlayout2$$Flexlayout3$$TimeTypePicker_, pageInstance);
 }
 $Flexlayout1$$Flexlayout2$$Flexlayout3.$$styleContext = {
   classNames: ".flexLayout",
@@ -152,32 +151,12 @@ $Flexlayout1$$Flexlayout2$$Flexlayout3$$LeaveTypePicker.$$styleContext = {
 };
 const $Flexlayout1$$Flexlayout2$$Flexlayout3$$LeaveTypePicker_ = PickerContainer($Flexlayout1$$Flexlayout2$$Flexlayout3$$LeaveTypePicker);
 
-function $Flexlayout1$$Flexlayout2$$Flexlayout3$$TimeTypePicker(_super, pageInstance) {
+function $Flexlayout1$$Flexlayout2$$FlexDate(_super, pageInstance) {
   _super(this);
-  pageInstance.timeTypePicker = this;
+  addChild.call(this, "selectDatePicker", $Flexlayout1$$Flexlayout2$$FlexDate$$SelectDatePicker_, pageInstance);
+  pageInstance.flexDate = this;
 }
-$Flexlayout1$$Flexlayout2$$Flexlayout3$$TimeTypePicker.$$styleContext = {
-  classNames: ".flexLayout",
-  userProps: {
-    flexProps: {
-      positionType: "RELATIVE",
-      flexGrow: 1
-    },
-    height: 45,
-    left: 0,
-    marginLeft: 20,
-    top: 0,
-    width: null
-  }
-};
-const $Flexlayout1$$Flexlayout2$$Flexlayout3$$TimeTypePicker_ = PickerContainer($Flexlayout1$$Flexlayout2$$Flexlayout3$$TimeTypePicker);
-
-function $Flexlayout1$$Flexlayout2$$Flexlayout3_1(_super, pageInstance) {
-  _super(this);
-  addChild.call(this, "selectDatePicker", $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectDatePicker_, pageInstance);
-  addChild.call(this, "selectTimePicker", $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectTimePicker_, pageInstance);
-}
-$Flexlayout1$$Flexlayout2$$Flexlayout3_1.$$styleContext = {
+$Flexlayout1$$Flexlayout2$$FlexDate.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
     flexProps: {
@@ -189,13 +168,13 @@ $Flexlayout1$$Flexlayout2$$Flexlayout3_1.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout1$$Flexlayout2$$Flexlayout3_1_ = FlexLayout($Flexlayout1$$Flexlayout2$$Flexlayout3_1);
+const $Flexlayout1$$Flexlayout2$$FlexDate_ = FlexLayout($Flexlayout1$$Flexlayout2$$FlexDate);
 
-function $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectDatePicker(_super, pageInstance) {
+function $Flexlayout1$$Flexlayout2$$FlexDate$$SelectDatePicker(_super, pageInstance) {
   _super(this);
   pageInstance.selectDatePicker = this;
 }
-$Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectDatePicker.$$styleContext = {
+$Flexlayout1$$Flexlayout2$$FlexDate$$SelectDatePicker.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
     flexProps: {
@@ -208,27 +187,7 @@ $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectDatePicker.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectDatePicker_ = PickerContainer($Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectDatePicker);
-
-function $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectTimePicker(_super, pageInstance) {
-  _super(this);
-  pageInstance.selectTimePicker = this;
-}
-$Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectTimePicker.$$styleContext = {
-  classNames: ".flexLayout",
-  userProps: {
-    flexProps: {
-      positionType: "RELATIVE",
-      flexGrow: 1
-    },
-    height: 45,
-    left: 0,
-    marginLeft: 20,
-    top: 0,
-    width: null
-  }
-};
-const $Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectTimePicker_ = PickerContainer($Flexlayout1$$Flexlayout2$$Flexlayout3_1$$SelectTimePicker);
+const $Flexlayout1$$Flexlayout2$$FlexDate$$SelectDatePicker_ = PickerContainer($Flexlayout1$$Flexlayout2$$FlexDate$$SelectDatePicker);
 
 function $Flexlayout66(_super, pageInstance) {
   _super(this);
@@ -238,7 +197,11 @@ function $Flexlayout66(_super, pageInstance) {
 $Flexlayout66.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
-    height: 200,
+    flexProps: {
+      flexGrow: 1
+    },
+    height: null,
+    marginBottom: 10,
     marginLeft: 10,
     marginRight: 10,
     paddingBottom: 10,
@@ -340,10 +303,7 @@ $BottomContainer.$$styleContext = {
   classNames: ".flexLayout",
   userProps: {
     backgroundColor: "rgba( 255, 255, 255, 0 )",
-    flexProps: {
-      flexGrow: 1
-    },
-    height: null,
+    height: 70,
     width: null
   }
 };
