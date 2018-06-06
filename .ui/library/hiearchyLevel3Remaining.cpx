@@ -1,0 +1,173 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "efa5-88f3-533e-9d2a",
+			"props": {
+				"children": [
+					"9a7f-f1be-b23b-c954",
+					"58a3-d9f7-1c81-ca95",
+					"c1de-3010-29ea-4244",
+					"1bfe-4e6f-0478-bb55"
+				],
+				"name": "hiearchyLevel3Remaining",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"alignItems": "CENTER",
+					"positionType": "RELATIVE"
+				},
+				"height": 75,
+				"left": 5,
+				"top": 360,
+				"width": 360
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "9a7f-f1be-b23b-c954",
+			"props": {
+				"children": [],
+				"name": "imageview10",
+				"parent": "efa5-88f3-533e-9d2a"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"borderColor": "rgba( 151, 151, 151, 1 )",
+				"borderRadius": 30,
+				"borderWidth": 1,
+				"flexProps": {},
+				"height": 60,
+				"image": "avatar4.png",
+				"imageFillType": "ASPECTFIT",
+				"marginLeft": 135,
+				"width": 60
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "58a3-d9f7-1c81-ca95",
+			"props": {
+				"children": [
+					"910c-9b6d-034c-737c",
+					"781e-aa9b-decb-461d"
+				],
+				"name": "flexlayout1092",
+				"parent": "efa5-88f3-533e-9d2a"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": 60,
+				"paddingLeft": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "910c-9b6d-034c-737c",
+			"props": {
+				"children": [],
+				"name": "label2378",
+				"parent": "58a3-d9f7-1c81-ca95",
+				"text": "Belly Edwards"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {
+					"size": 18
+				},
+				"height": 30,
+				"text": "Belly Edwards",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "781e-aa9b-decb-461d",
+			"props": {
+				"children": [],
+				"name": "label2379",
+				"parent": "58a3-d9f7-1c81-ca95",
+				"text": "Sales Responsible"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {},
+				"height": 30,
+				"text": "Sales Responsible",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "c1de-3010-29ea-4244",
+			"props": {
+				"children": [],
+				"name": "flexlayout1171",
+				"parent": "efa5-88f3-533e-9d2a"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": 8,
+				"left": 165,
+				"top": 0,
+				"width": 1
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "1bfe-4e6f-0478-bb55",
+			"props": {
+				"children": [],
+				"name": "flexlayout1185",
+				"parent": "efa5-88f3-533e-9d2a"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"bottom": 0,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": 8,
+				"left": 165,
+				"width": 1
+			}
+		}
+	]
+}

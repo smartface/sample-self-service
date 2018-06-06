@@ -1,0 +1,221 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "e529-c826-2662-fcf5",
+			"props": {
+				"children": [
+					"44ef-83f6-9146-5817",
+					"72ca-d037-0fb3-ddd1"
+				],
+				"name": "itemUser",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "COLUMN",
+					"alignItems": "CENTER"
+				},
+				"height": 75,
+				"left": 4,
+				"top": 56,
+				"width": 360
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "44ef-83f6-9146-5817",
+			"props": {
+				"children": [
+					"e6e5-5825-4eee-9f61",
+					"bfd4-67f7-4ee7-93c1",
+					"aff2-3084-d2d4-2f61"
+				],
+				"id": 102,
+				"name": "flexlayout160",
+				"parent": "e529-c826-2662-fcf5"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH",
+					"flexDirection": "ROW",
+					"alignItems": "CENTER"
+				},
+				"height": 40,
+				"id": 102,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "e6e5-5825-4eee-9f61",
+			"props": {
+				"children": [],
+				"id": 1023,
+				"name": "userImage",
+				"parent": "44ef-83f6-9146-5817",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {},
+				"height": 60,
+				"id": 1023,
+				"image": "avatar1.png",
+				"imageFillType": "ASPECTFIT",
+				"marginLeft": 15,
+				"usePageVariable": true,
+				"width": 60
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "bfd4-67f7-4ee7-93c1",
+			"props": {
+				"children": [
+					"b1b7-ecc0-f480-3215",
+					"bd30-86df-b2eb-8fb6"
+				],
+				"id": 1022,
+				"name": "flexlayout163",
+				"parent": "44ef-83f6-9146-5817"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": 60,
+				"id": 1022,
+				"paddingLeft": 10,
+				"paddingTop": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "b1b7-ecc0-f480-3215",
+			"props": {
+				"children": [],
+				"id": 10222,
+				"name": "userName",
+				"parent": "bfd4-67f7-4ee7-93c1",
+				"text": "Adam Stewart",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {
+					"bold": false,
+					"size": 18
+				},
+				"height": 30,
+				"id": 10222,
+				"text": "Adam Stewart",
+				"textAlignment": "BOTTOMLEFT",
+				"textColor": "rgba( 74, 74, 74, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "bd30-86df-b2eb-8fb6",
+			"props": {
+				"children": [],
+				"id": 10221,
+				"name": "userPosition",
+				"parent": "bfd4-67f7-4ee7-93c1",
+				"text": "Manager of Sales & Marketing",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {
+					"bold": false
+				},
+				"height": 30,
+				"id": 10221,
+				"text": "Manager of Sales & Marketing",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "aff2-3084-d2d4-2f61",
+			"props": {
+				"children": [],
+				"id": 1021,
+				"name": "imageview41",
+				"parent": "44ef-83f6-9146-5817"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {},
+				"height": 14,
+				"id": 1021,
+				"image": "arrow_right.png",
+				"imageFillType": "ASPECTFIT",
+				"width": 28
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "72ca-d037-0fb3-ddd1",
+			"props": {
+				"children": [],
+				"id": 101,
+				"name": "flexlayout161",
+				"parent": "e529-c826-2662-fcf5"
+			},
+			"source": {
+				"page": "__library__",
+				"id": "5ff3-3be5-c42e-e78e"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 1,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"flexGrow": null,
+					"positionType": "RELATIVE",
+					"alignSelf": "STRETCH"
+				},
+				"height": 1,
+				"id": 101,
+				"left": 0,
+				"top": 0,
+				"width": null
+			}
+		}
+	]
+}

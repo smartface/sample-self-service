@@ -1,0 +1,196 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "8f58-db73-73e6-8770",
+			"props": {
+				"children": [
+					"5966-87bc-35cc-8fe4",
+					"7f50-90bb-bc5d-5c46",
+					"4224-9a65-6e7b-9efd",
+					"0934-72a1-9967-7e72",
+					"83a0-45a1-b436-2507"
+				],
+				"name": "hierarchyLevel3First",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignItems": "CENTER",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"height": 75,
+				"left": 5,
+				"top": 285,
+				"width": 360
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "5966-87bc-35cc-8fe4",
+			"props": {
+				"children": [],
+				"name": "imageview9",
+				"parent": "8f58-db73-73e6-8770"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"borderColor": "rgba( 151, 151, 151, 1 )",
+				"borderRadius": 30,
+				"borderWidth": 1,
+				"flexProps": {},
+				"height": 60,
+				"image": "avatar3.png",
+				"imageFillType": "ASPECTFIT",
+				"marginLeft": 135,
+				"width": 60
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "7f50-90bb-bc5d-5c46",
+			"props": {
+				"children": [
+					"9774-0334-47fb-6e5e",
+					"b9f5-4f6b-2fb2-ca36"
+				],
+				"name": "flexlayout827",
+				"parent": "8f58-db73-73e6-8770"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": 60,
+				"paddingLeft": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "9774-0334-47fb-6e5e",
+			"props": {
+				"children": [],
+				"name": "label1816",
+				"parent": "7f50-90bb-bc5d-5c46",
+				"text": "Thomas Turner"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {
+					"size": 18
+				},
+				"height": 30,
+				"text": "Thomas Turner",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "b9f5-4f6b-2fb2-ca36",
+			"props": {
+				"children": [],
+				"name": "label1817",
+				"parent": "7f50-90bb-bc5d-5c46",
+				"text": "Sales Responsible"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {},
+				"height": 30,
+				"text": "Sales Responsible",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "4224-9a65-6e7b-9efd",
+			"props": {
+				"children": [],
+				"name": "flexlayout919",
+				"parent": "8f58-db73-73e6-8770"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": 37,
+				"left": 105,
+				"top": 0,
+				"width": 1
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "0934-72a1-9967-7e72",
+			"props": {
+				"children": [],
+				"name": "flexlayout933",
+				"parent": "8f58-db73-73e6-8770"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": 1,
+				"left": 105,
+				"width": 30
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "83a0-45a1-b436-2507",
+			"props": {
+				"children": [],
+				"name": "flexlayout960",
+				"parent": "8f58-db73-73e6-8770"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"bottom": 0,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": 8,
+				"left": 165,
+				"width": 1
+			}
+		}
+	]
+}

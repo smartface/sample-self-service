@@ -1,0 +1,80 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "e9e3-f777-d1de-b2d3",
+			"props": {
+				"children": [
+					"f44a-1404-06da-08ef",
+					"962c-02ca-5b63-e9b0"
+				],
+				"name": "listItemSwitch",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"alignItems": "CENTER",
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"height": 59,
+				"left": 11,
+				"marginLeft": null,
+				"top": 102,
+				"width": 326
+			}
+		},
+		{
+			"className": ".label .label-list-item-title",
+			"id": "f44a-1404-06da-08ef",
+			"props": {
+				"children": [],
+				"id": 100,
+				"name": "titleSwitch",
+				"parent": "e9e3-f777-d1de-b2d3",
+				"text": "Text"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {},
+				"height": 30,
+				"id": 100,
+				"marginLeft": 10,
+				"text": "Text",
+				"width": 120
+			}
+		},
+		{
+			"className": ".switch",
+			"id": "962c-02ca-5b63-e9b0",
+			"props": {
+				"children": [],
+				"id": 101,
+				"name": "switchItem",
+				"parent": "e9e3-f777-d1de-b2d3",
+				"toggle": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {},
+				"id": 101,
+				"marginRight": 10,
+				"minHeight": 31,
+				"minWidth": 51,
+				"width": null
+			}
+		}
+	]
+}

@@ -1,0 +1,187 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "220b-c892-230c-b031",
+			"props": {
+				"children": [
+					"9669-9f27-ae5a-d6ae",
+					"cc76-1b6b-76f0-9247"
+				],
+				"name": "itemDocument",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {},
+				"height": 75,
+				"left": 2,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"top": 151.6666717529297,
+				"width": 360
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "9669-9f27-ae5a-d6ae",
+			"props": {
+				"children": [
+					"9c21-df1f-1347-d485",
+					"3659-9e57-e4e7-93ba",
+					"f464-3c16-80a6-0315",
+					"e5ac-2897-4eef-3bd0"
+				],
+				"id": 101,
+				"name": "flexlayout276",
+				"parent": "220b-c892-230c-b031"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW",
+					"justifyContent": "CENTER",
+					"alignItems": "CENTER"
+				},
+				"height": null,
+				"id": 101,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "9c21-df1f-1347-d485",
+			"props": {
+				"children": [],
+				"id": 203,
+				"name": "itemDocumentImage",
+				"parent": "9669-9f27-ae5a-d6ae",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 30,
+				"id": 203,
+				"image": "icon_accepted.png",
+				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true,
+				"width": 30
+			}
+		},
+		{
+			"className": ".label",
+			"id": "3659-9e57-e4e7-93ba",
+			"props": {
+				"children": [],
+				"id": 202,
+				"name": "itemDocumentTitle",
+				"parent": "9669-9f27-ae5a-d6ae",
+				"text": "Passport",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": 60,
+				"id": 202,
+				"marginLeft": 10,
+				"text": "Passport",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "f464-3c16-80a6-0315",
+			"props": {
+				"children": [],
+				"id": 201,
+				"name": "imageview64",
+				"parent": "9669-9f27-ae5a-d6ae"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 14,
+				"id": 201,
+				"image": "arrow_right.png",
+				"imageFillType": "ASPECTFIT",
+				"width": 28
+			}
+		},
+		{
+			"className": ".label",
+			"id": "e5ac-2897-4eef-3bd0",
+			"props": {
+				"children": [],
+				"id": 200,
+				"name": "itemDocumentAcceptance",
+				"parent": "9669-9f27-ae5a-d6ae",
+				"text": "ACCEPTED",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"backgroundColor": "rgba( 241, 241, 241, 0.78 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"font": {
+					"size": 12
+				},
+				"height": 20,
+				"id": 200,
+				"marginRight": null,
+				"marginTop": null,
+				"right": 0,
+				"text": "ACCEPTED",
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 123, 206, 69, 1 )",
+				"top": 0,
+				"usePageVariable": true,
+				"width": 90
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "cc76-1b6b-76f0-9247",
+			"props": {
+				"children": [],
+				"id": 100,
+				"name": "flexlayout277",
+				"parent": "220b-c892-230c-b031"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 0.4 )",
+				"height": 1,
+				"id": 100,
+				"width": null
+			}
+		}
+	]
+}

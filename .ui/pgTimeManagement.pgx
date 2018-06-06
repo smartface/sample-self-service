@@ -1,0 +1,45 @@
+{
+	"components": [
+		{
+			"id": "3587-a53c-f5d1-7fa6",
+			"initialized": true,
+			"props": {
+				"children": [
+					"ad9c-9b78-6b43-dfd2",
+					"6db2-c797-63f0-098c"
+				],
+				"name": "pgTimeManagement",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "6.8.2"
+		},
+		{
+			"id": "ad9c-9b78-6b43-dfd2",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "3587-a53c-f5d1-7fa6"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"id": "6db2-c797-63f0-098c",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "3587-a53c-f5d1-7fa6",
+				"title": "pgTimeManagement"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgTimeManagement"
+			}
+		}
+	]
+}

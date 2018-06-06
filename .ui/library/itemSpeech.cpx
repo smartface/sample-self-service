@@ -1,0 +1,51 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "eca6-3b22-68a8-aa04",
+			"props": {
+				"children": [
+					"76a1-9ba7-e3e7-89a2"
+				],
+				"name": "itemSpeech",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"height": 25,
+				"left": 0,
+				"top": 0,
+				"width": 14
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "76a1-9ba7-e3e7-89a2",
+			"props": {
+				"children": [],
+				"name": "icon",
+				"parent": "eca6-3b22-68a8-aa04",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"image": "icon_microphone.png",
+				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

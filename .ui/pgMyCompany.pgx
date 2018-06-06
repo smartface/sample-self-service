@@ -1,0 +1,126 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "2c96-a374-3aee-c1f9",
+			"initialized": true,
+			"props": {
+				"children": [
+					"826f-8b44-ed26-5f45",
+					"e846-c185-ac09-5a0e",
+					"09cf-8bcc-426b-01f2",
+					"b03e-fd60-a31d-55d1"
+				],
+				"name": "pgMyCompany",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"backgroundColor": "rgba( 226, 226, 228, 1 )"
+			},
+			"version": "6.8.2"
+		},
+		{
+			"className": "",
+			"id": "826f-8b44-ed26-5f45",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "2c96-a374-3aee-c1f9"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
+			"id": "e846-c185-ac09-5a0e",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "2c96-a374-3aee-c1f9",
+				"title": "newPage001"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "newPage001",
+				"visible": false
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "b03e-fd60-a31d-55d1",
+			"props": {
+				"children": [
+					"e080-d195-4b58-b490"
+				],
+				"name": "flexlayout109",
+				"parent": "2c96-a374-3aee-c1f9"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER"
+				},
+				"height": null,
+				"left": null,
+				"marginBottom": 10,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"right": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "e080-d195-4b58-b490",
+			"props": {
+				"children": [],
+				"name": "comingSoon",
+				"parent": "b03e-fd60-a31d-55d1",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "STRETCH"
+				},
+				"height": 100,
+				"image": "coming_soon.png",
+				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-headerBar",
+			"hiddenComponent": false,
+			"id": "09cf-8bcc-426b-01f2",
+			"props": {
+				"children": [],
+				"name": "layoutHeaderBar",
+				"parent": "2c96-a374-3aee-c1f9",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"id": "ebb9-37cc-ff1b-0314"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 60,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}
