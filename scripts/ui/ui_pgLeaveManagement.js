@@ -15,7 +15,7 @@ const FlexLayout = extend(require('sf-core/ui/flexlayout'));
 const WebView = extend(require('sf-core/ui/webview'));
 const ListView = extend(require('sf-core/ui/listview'));
 const ListViewItem = extend(require('sf-core/ui/listviewitem'));
-
+const actionAddChild = require("@smartface/contx/lib/smartface/action/addChild");
 const LayoutHeaderBar = extend(require("../components/LayoutHeaderBar"));
 const TopTabBar = extend(require("../components/TopTabBar"));
 
@@ -181,8 +181,11 @@ function $ListViewContainer$$ListView(_super, pageInstance) {
   _super(this, {
     itemCount: 0
   });
+  var itemIndex = 0;
   this.onRowCreate = function() {
-    return new ListViewItem();
+    var item = new ListViewItem();
+    this.dispatch(actionAddChild(`item${++itemIndex}`, item));
+    return item;
   };
   pageInstance.listView = this;
 }
