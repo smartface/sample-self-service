@@ -17,6 +17,7 @@ const Page_ = extend(PageDesign)(
 		_super(this, params);
 		this.onShow = onShow.bind(this, this.onShow);
 		this.onLoad = onLoad.bind(this, this.onLoad);
+
 		initTexts.call(this);
 		
         this.onError = function(e){
@@ -24,6 +25,14 @@ const Page_ = extend(PageDesign)(
         }
 	}
 );
+
+
+function onLoad(parentOnLoad) {
+	parentOnLoad();
+	
+	this.ios.safeAreaLayoutMode = true;
+
+}
 
 function onShow(parentOnShow) {
 	if (typeof parentOnShow === "function") parentOnShow();

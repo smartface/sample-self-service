@@ -22,6 +22,8 @@ const Page_ = extend(PageDesign)(
 			if (typeof _superOnLoad === "function")
 				_superOnLoad.call(this);
 
+			this.ios.safeAreaLayoutMode = true;
+
 			this.headerBar.title = lang["pgSettings.pageTitle"];
 			this.headerBar.leftItemEnabled = false;
 			this.txtTheme.text = lang["pgSettings.theme"];

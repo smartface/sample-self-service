@@ -14,9 +14,12 @@ const Page_ = extend(PageDesign)(
 		this.onLoad = onLoad.bind(this, this.onLoad);
 	}
 );
-function onLoad(parentOnLoad){
+
+function onLoad(parentOnLoad) {
 	if (typeof parentOnLoad === "function") parentOnLoad();
 	wrapContentIntoScroll.call(this);
+
+	this.ios.safeAreaLayoutMode = true;
 }
 
 function onShow(detail) {
