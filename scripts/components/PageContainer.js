@@ -72,16 +72,18 @@ function initSwipeView(page) {
 }
 
 function initDotIndicator(page) {
-    page.dotIndicator = new DotIndicator();
-    page.layout.addChild(page.dotIndicator, "dotIndicator", ".flexlayout", {
-        height: 50,
-        top: (isIphoneX ? 100 : 80),
-        flexProps: {
-            alignSelf: "CENTER",
-            positionType: "ABSOLUTE"
-        }
-    });
-    page.dotIndicator.size = page.childPages.length;
+    if (page.childPages.length !== 1) {
+        page.dotIndicator = new DotIndicator();
+        page.layout.addChild(page.dotIndicator, "dotIndicator", ".flexlayout", {
+            height: 50,
+            top: (isIphoneX ? 100 : 80),
+            flexProps: {
+                alignSelf: "CENTER",
+                positionType: "ABSOLUTE"
+            }
+        });
+        page.dotIndicator.size = page.childPages.length;
+    }
     /*
     page.dotIndicator.top = 60; //System.OS === "Android" ? 40 : 60;
     page.dotIndicator.alignSelf = FlexLayout.AlignSelf.CENTER;
