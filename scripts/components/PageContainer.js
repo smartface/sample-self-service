@@ -40,11 +40,7 @@ function HRIndexConstructor(_super, params) {
         this.swipeView.swipeToIndex(swipeViewIndex.currentIndex, false);
     }.bind(this);
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> story/SafeAreaImp
 }
 
 HRIndexConstructor.$$styleContext = {
