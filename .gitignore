@@ -2,6 +2,7 @@
 .smf
 .npm
 .tmp
+.pm2/
 output/Android/*
 output/iOS/*
 output/.tmp
@@ -9,16 +10,12 @@ output/publish-error.log
 plugin/Android/*
 plugin/iOS/*
 scripts/node_modules/*
-!scripts/node_modules/library/package.json
-!scripts/node_modules/library/styler-builder.js
+scripts/node_modules/library/
 !output/Android/README.md
 !output/iOS/README.md
 !plugin/Android/README.md
 !plugin/iOS/README.md
-config/Other\ Fonts
-.ui/newPage001.pgx
 scripts/ui
-scripts/themes/*
 assets/jet
 .templates
 contxjs

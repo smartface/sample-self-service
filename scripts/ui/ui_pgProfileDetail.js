@@ -13,7 +13,7 @@ const Page = extend(PageBase);
 const pageContextPatch = require('@smartface/contx/lib/smartface/pageContextPatch');
 const FlexLayout = extend(require('sf-core/ui/flexlayout'));
 const ImageView = extend(require('sf-core/ui/imageview'));
-const Label = extend(require('sf-core/ui/label'));
+const TextView = extend(require('sf-core/ui/textview'));
 
 const LayoutHeaderBar = extend(require("../components/LayoutHeaderBar"));
 const ListItem1 = extend(require("../components/ListItem1"));
@@ -128,7 +128,7 @@ $Flexlayout1$$Label827.$$styleContext = {
     width: 200
   }
 };
-const $Flexlayout1$$Label827_ = Label($Flexlayout1$$Label827);
+const $Flexlayout1$$Label827_ = TextView($Flexlayout1$$Label827);
 
 function $Flexlayout1$$Label827_1(_super, pageInstance) {
   _super(this, {
@@ -145,7 +145,7 @@ $Flexlayout1$$Label827_1.$$styleContext = {
     width: 200
   }
 };
-const $Flexlayout1$$Label827_1_ = Label($Flexlayout1$$Label827_1);
+const $Flexlayout1$$Label827_1_ = TextView($Flexlayout1$$Label827_1);
 
 function $Flexlayout500(_super, pageInstance) {
   _super(this);
@@ -212,7 +212,7 @@ $Flexlayout500$$Qualificationcontainer$$InformationTitle.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout500$$Qualificationcontainer$$InformationTitle_ = Label($Flexlayout500$$Qualificationcontainer$$InformationTitle);
+const $Flexlayout500$$Qualificationcontainer$$InformationTitle_ = TextView($Flexlayout500$$Qualificationcontainer$$InformationTitle);
 
 function $Flexlayout500$$Qualificationcontainer$$Company(_super, pageInstance) {
   _super(this);

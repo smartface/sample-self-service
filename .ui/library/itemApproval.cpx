@@ -1,0 +1,271 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "80b9-3163-7a5f-0380",
+			"props": {
+				"children": [
+					"b1c8-0cb7-fdbc-e94e",
+					"e487-e80a-2c3f-362e",
+					"214a-c2d0-3908-bcef"
+				],
+				"name": "itemApproval",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"height": 90,
+				"left": 4,
+				"top": 145.6,
+				"width": 360
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "b1c8-0cb7-fdbc-e94e",
+			"props": {
+				"children": [
+					"f111-982b-232a-6b87",
+					"729e-78b3-0a10-c4d9",
+					"a0c6-ab34-3e20-2832"
+				],
+				"id": 30,
+				"name": "flexlayout119",
+				"parent": "80b9-3163-7a5f-0380"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "ROW",
+					"alignItems": "CENTER"
+				},
+				"height": null,
+				"id": 30,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "f111-982b-232a-6b87",
+			"props": {
+				"children": [],
+				"id": 90,
+				"name": "apUserImage",
+				"parent": "b1c8-0cb7-fdbc-e94e",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {},
+				"height": 60,
+				"id": 90,
+				"image": "avatar1.png",
+				"imageFillType": "ASPECTFIT",
+				"marginLeft": 15,
+				"usePageVariable": true,
+				"width": 60
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "729e-78b3-0a10-c4d9",
+			"props": {
+				"children": [
+					"c723-b441-8ba1-2566",
+					"ea83-64cb-16aa-88f3",
+					"f3fb-fa35-d115-4f51"
+				],
+				"id": 50,
+				"name": "flexlayout255",
+				"parent": "b1c8-0cb7-fdbc-e94e"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": 65,
+				"id": 50,
+				"marginLeft": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "c723-b441-8ba1-2566",
+			"props": {
+				"children": [],
+				"id": 80,
+				"name": "apUsername",
+				"parent": "729e-78b3-0a10-c4d9",
+				"text": "Adam Stewart",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 18
+				},
+				"height": null,
+				"id": 80,
+				"text": "Adam Stewart",
+				"textColor": "rgba( 74, 74, 74, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "ea83-64cb-16aa-88f3",
+			"props": {
+				"children": [],
+				"id": 70,
+				"name": "apPosition",
+				"parent": "729e-78b3-0a10-c4d9",
+				"text": "Manager of Sales and Marketing",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"id": 70,
+				"text": "Manager of Sales and Marketing",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "f3fb-fa35-d115-4f51",
+			"props": {
+				"children": [],
+				"id": 60,
+				"name": "apDescription",
+				"parent": "729e-78b3-0a10-c4d9",
+				"text": "Personal Leave, 10 days requested",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"id": 60,
+				"text": "Personal Leave, 10 days requested",
+				"textColor": "rgba( 74, 74, 74, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "a0c6-ab34-3e20-2832",
+			"props": {
+				"children": [],
+				"id": 40,
+				"name": "apRightArrow",
+				"parent": "b1c8-0cb7-fdbc-e94e"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {},
+				"height": 14,
+				"id": 40,
+				"image": "arrow_right.png",
+				"imageFillType": "ASPECTFIT",
+				"width": 28
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "e487-e80a-2c3f-362e",
+			"props": {
+				"children": [],
+				"id": 20,
+				"name": "flexlayout120",
+				"parent": "80b9-3163-7a5f-0380"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 0.4 )",
+				"flexProps": {},
+				"height": 1,
+				"id": 20,
+				"marginLeft": null,
+				"marginRight": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "214a-c2d0-3908-bcef",
+			"props": {
+				"children": [],
+				"id": 10,
+				"name": "approvedDate",
+				"parent": "80b9-3163-7a5f-0380",
+				"text": "1 day ago",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"backgroundColor": "rgba( 216, 216, 216, 1 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"font": {
+					"size": 12
+				},
+				"height": 20,
+				"id": 10,
+				"marginRight": null,
+				"right": 0,
+				"text": "1 day ago",
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 74, 74, 74, 1 )",
+				"top": 0,
+				"usePageVariable": true,
+				"width": 70
+			}
+		}
+	]
+}

@@ -10,9 +10,16 @@ const Page_ = extend(PageDesign)(
 		_super(this, params);
 		this._superOnShow = this.onShow;
 		this.onShow = onShow.bind(this);
+		this.onLoad = onLoad.bind(this, this.onLoad);
 		initTexts.call(this);
-    }
+	}
 );
+
+function onLoad(parentOnLoad) {
+	parentOnLoad();
+	this.ios.safeAreaLayoutMode = true;
+
+}
 
 function onShow(detail) {
 	if (typeof this._superOnShow === "function") this._superOnShow();
@@ -32,15 +39,15 @@ function initHeaderBar() {
 }
 
 function initDetail(detail) {
-		this.name.text     = detail.name;
-		this.avatar.image  = detail.image;
-		this.position.text = detail.position;
+	this.name.text = detail.name;
+	this.avatar.image = detail.image;
+	this.position.text = detail.position;
 
-		// this.txtDescription.flexGrow = (detail.isApproved)? 0 : 1;
-		// this.lblDescription.flexGrow = (detail.isApproved)? 1 : 0;
+	// this.txtDescription.flexGrow = (detail.isApproved)? 0 : 1;
+	// this.lblDescription.flexGrow = (detail.isApproved)? 1 : 0;
 
-		this.btnApprove.visible = !detail.isApproved;
-		this.btnReject.visible  = !detail.isApproved;
+	this.btnApprove.visible = !detail.isApproved;
+	this.btnReject.visible = !detail.isApproved;
 }
 
 module && (module.exports = Page_);

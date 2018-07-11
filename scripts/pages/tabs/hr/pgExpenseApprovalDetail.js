@@ -14,9 +14,12 @@ const Page_ = extend(PageDesign)(
 		this.onLoad = onLoad.bind(this, this.onLoad);
 	}
 );
-function onLoad(parentOnLoad){
+
+function onLoad(parentOnLoad) {
 	if (typeof parentOnLoad === "function") parentOnLoad();
 	wrapContentIntoScroll.call(this);
+
+	this.ios.safeAreaLayoutMode = true;
 }
 
 function onShow(detail) {
@@ -61,7 +64,7 @@ function wrapContentIntoScroll() {
 		flexGrow: 1
 	});
 	this.layout.removeChild(this.mainLayout);
-	this.scrollView.addChild(this.mainLayout, "mainLayout", ".flexlayout", {
+	this.scrollView.layout.addChild(this.mainLayout, "mainLayout", ".flexlayout", {
 		width: null,
 		height: 810
 	});

@@ -1,0 +1,76 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "e8a3-eaa5-d3b6-a28b",
+			"props": {
+				"children": [
+					"c751-77d5-04e4-4f11",
+					"2f80-d3bf-7a30-b855"
+				],
+				"name": "topTabItem",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"height": 50,
+				"left": 12,
+				"top": 250,
+				"width": 100
+			}
+		},
+		{
+			"className": ".label",
+			"id": "c751-77d5-04e4-4f11",
+			"props": {
+				"children": [],
+				"id": 100,
+				"name": "tabItemTitle",
+				"parent": "e8a3-eaa5-d3b6-a28b",
+				"text": "Label",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {},
+				"height": null,
+				"id": 100,
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "2f80-d3bf-7a30-b855",
+			"props": {
+				"children": [],
+				"id": 101,
+				"name": "tabItemBottomLine",
+				"parent": "e8a3-eaa5-d3b6-a28b"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {},
+				"height": 5,
+				"id": 101,
+				"width": null
+			}
+		}
+	]
+}

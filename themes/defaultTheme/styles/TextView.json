@@ -1,0 +1,27 @@
+{
+    ".textView": {
+        "width": 250,
+        "height": 70,
+        "touchEnabled": true,
+        "visible": true,
+        "multiline": true,
+        "backgroundColor": "#FFFFFF",
+        "alpha": 1,
+        "borderColor": "rgba(0,0,0,1)",
+        "borderWidth": 0,
+        "textAlignment": "MIDLEFT",
+        "flexProps": {
+            "alignSelf": "AUTO",
+            "positionType": "RELATIVE"
+        },
+        "&-small": {
+            "width": 100
+        },
+        "&-medium": {
+            "width": 250
+        },
+        "&-large": {
+            "width": 350
+        }
+    }
+}

@@ -12,7 +12,7 @@ const PageBase = require('sf-core/ui/page');
 const Page = extend(PageBase);
 const pageContextPatch = require('@smartface/contx/lib/smartface/pageContextPatch');
 const FlexLayout = extend(require('sf-core/ui/flexlayout'));
-const Label = extend(require('sf-core/ui/label'));
+const TextView = extend(require('sf-core/ui/textview'));
 const ImageView = extend(require('sf-core/ui/imageview'));
 const TextArea = extend(require('sf-core/ui/textarea'));
 const Button = extend(require('sf-core/ui/button'));
@@ -121,7 +121,7 @@ $MainContainer$$DetailsLayout$$DetailsTitle.$$styleContext = {
     width: null
   }
 };
-const $MainContainer$$DetailsLayout$$DetailsTitle_ = Label($MainContainer$$DetailsLayout$$DetailsTitle);
+const $MainContainer$$DetailsLayout$$DetailsTitle_ = TextView($MainContainer$$DetailsLayout$$DetailsTitle);
 
 function $MainContainer$$DetailsLayout$$TitleInput(_super, pageInstance) {
   _super(this);
@@ -287,7 +287,7 @@ $MainContainer$$NoteLayout$$Flexlayout76$$NoteTitle.$$styleContext = {
     width: null
   }
 };
-const $MainContainer$$NoteLayout$$Flexlayout76$$NoteTitle_ = Label($MainContainer$$NoteLayout$$Flexlayout76$$NoteTitle);
+const $MainContainer$$NoteLayout$$Flexlayout76$$NoteTitle_ = TextView($MainContainer$$NoteLayout$$Flexlayout76$$NoteTitle);
 
 function $MainContainer$$NoteLayout$$Flexlayout76$$Imageview17(_super, pageInstance) {
   _super(this);
@@ -386,7 +386,7 @@ $MainContainer$$FileAttachmentLayout$$Flexlayout76_1$$FileAttachmentTitle.$$styl
     width: null
   }
 };
-const $MainContainer$$FileAttachmentLayout$$Flexlayout76_1$$FileAttachmentTitle_ = Label($MainContainer$$FileAttachmentLayout$$Flexlayout76_1$$FileAttachmentTitle);
+const $MainContainer$$FileAttachmentLayout$$Flexlayout76_1$$FileAttachmentTitle_ = TextView($MainContainer$$FileAttachmentLayout$$Flexlayout76_1$$FileAttachmentTitle);
 
 function $MainContainer$$FileAttachmentLayout$$AttachmentsLayout(_super, pageInstance) {
   _super(this);

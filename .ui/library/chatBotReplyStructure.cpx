@@ -1,0 +1,136 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"id": "e74f-271e-135b-fb8a",
+			"props": {
+				"children": [
+					"6264-0fd6-907a-44c1",
+					"7427-88ac-c5fa-28bc"
+				],
+				"id": 100,
+				"name": "chatBotReplyStructure",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"alignSelf": "FLEX_END",
+					"flexDirection": "ROW_REVERSE",
+					"positionType": "RELATIVE",
+					"alignItems": "AUTO"
+				},
+				"height": 150,
+				"id": 100,
+				"left": 0,
+				"right": 150,
+				"top": -1.8518519401550293,
+				"width": 400
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "6264-0fd6-907a-44c1",
+			"props": {
+				"children": [],
+				"id": 102,
+				"name": "messageIconImageView",
+				"parent": "e74f-271e-135b-fb8a",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"alignSelf": "FLEX_END"
+				},
+				"height": 15,
+				"id": 102,
+				"image": "messageicon.png",
+				"imageFillType": "STRETCH",
+				"marginLeft": 5,
+				"marginRight": 5,
+				"usePageVariable": true,
+				"width": 15
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "7427-88ac-c5fa-28bc",
+			"props": {
+				"children": [
+					"57ef-2f77-b901-8f7e"
+				],
+				"id": 101,
+				"name": "contentfl",
+				"parent": "e74f-271e-135b-fb8a",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 230, 230, 230, 1 )",
+				"borderRadius": 10,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"id": 101,
+				"marginBottom": 3,
+				"marginTop": 10,
+				"maxWidth": 300,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "57ef-2f77-b901-8f7e",
+			"props": {
+				"children": [],
+				"id": 103,
+				"name": "chatBotLabel",
+				"parent": "7427-88ac-c5fa-28bc",
+				"text": null,
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"backgroundColor": "rgba( 230, 230, 230, 1 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 17,
+					"bold": false,
+					"italic": false,
+					"family": "HelveticaNeue",
+					"style": "n"
+				},
+				"height": null,
+				"id": 103,
+				"marginBottom": 10,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"marginTop": 10,
+				"multiline": true,
+				"text": null,
+				"textAlignment": "MIDLEFT",
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

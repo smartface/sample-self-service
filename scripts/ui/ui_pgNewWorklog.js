@@ -12,7 +12,7 @@ const PageBase = require('sf-core/ui/page');
 const Page = extend(PageBase);
 const pageContextPatch = require('@smartface/contx/lib/smartface/pageContextPatch');
 const FlexLayout = extend(require('sf-core/ui/flexlayout'));
-const Label = extend(require('sf-core/ui/label'));
+const TextView = extend(require('sf-core/ui/textview'));
 const ImageView = extend(require('sf-core/ui/imageview'));
 const TextBox = extend(require('sf-core/ui/textbox'));
 const Button = extend(require('sf-core/ui/button'));
@@ -96,7 +96,7 @@ $Flexlayout35$$Label39.$$styleContext = {
     width: 250
   }
 };
-const $Flexlayout35$$Label39_ = Label($Flexlayout35$$Label39);
+const $Flexlayout35$$Label39_ = TextView($Flexlayout35$$Label39);
 
 function $Flexlayout35$$PickerContainer(_super, pageInstance) {
   _super(this);
@@ -251,7 +251,7 @@ $Flexlayout66$$Flexlayout76$$Label85.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout66$$Flexlayout76$$Label85_ = Label($Flexlayout66$$Flexlayout76$$Label85);
+const $Flexlayout66$$Flexlayout76$$Label85_ = TextView($Flexlayout66$$Flexlayout76$$Label85);
 
 function $Flexlayout66$$Flexlayout76$$Imageview17(_super, pageInstance) {
   _super(this);

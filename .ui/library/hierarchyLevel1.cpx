@@ -1,0 +1,149 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "3f92-e587-8693-fd13",
+			"props": {
+				"children": [
+					"fbf7-5d64-ad15-6dfa",
+					"313c-4a75-1419-03ef",
+					"102b-9bb9-5cfe-6b6c"
+				],
+				"name": "hierarchyLevel1",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignItems": "CENTER",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"height": 75,
+				"left": 4.999999785691164,
+				"top": 136.12359722008867,
+				"width": 360
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "fbf7-5d64-ad15-6dfa",
+			"props": {
+				"children": [],
+				"name": "imageview7",
+				"parent": "3f92-e587-8693-fd13"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"borderColor": "rgba( 151, 151, 151, 1 )",
+				"borderRadius": 30,
+				"borderWidth": 1,
+				"flexProps": {},
+				"height": 60,
+				"image": "avatar1.png",
+				"imageFillType": "ASPECTFIT",
+				"marginLeft": 15,
+				"width": 60
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "313c-4a75-1419-03ef",
+			"props": {
+				"children": [
+					"209c-dc16-96fd-e0de",
+					"565e-02d0-f82c-b8a1"
+				],
+				"name": "flexlayout178",
+				"parent": "3f92-e587-8693-fd13"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": 60,
+				"paddingLeft": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "209c-dc16-96fd-e0de",
+			"props": {
+				"children": [],
+				"name": "label493",
+				"parent": "313c-4a75-1419-03ef",
+				"text": "Adam Stewart"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {
+					"size": 18
+				},
+				"height": 30,
+				"text": "Adam Stewart",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-value",
+			"id": "565e-02d0-f82c-b8a1",
+			"props": {
+				"children": [],
+				"name": "label494",
+				"parent": "313c-4a75-1419-03ef",
+				"text": "Manager of Sales and Marketing"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {},
+				"height": 30,
+				"text": "Manager of Sales and Marketing",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "102b-9bb9-5cfe-6b6c",
+			"props": {
+				"children": [],
+				"name": "flexlayout323",
+				"parent": "3f92-e587-8693-fd13"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"bottom": 0,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": 8,
+				"left": 45,
+				"width": 1
+			}
+		}
+	]
+}

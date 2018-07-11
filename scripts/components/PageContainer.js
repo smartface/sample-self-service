@@ -6,7 +6,10 @@ const Page = extend(require("sf-core/ui/page"));
 const SwipeView = require("sf-core/ui/swipeview");
 const System = require("sf-core/device/system");
 const pageContextPatch = require('@smartface/contx/lib/smartface/pageContextPatch');
+const Color = require('sf-core/ui/color');
+const Screen = require('sf-core/device/screen');
 
+var isIphoneX = (Screen.height === 812 && System.OS === 'iOS' ? true : false);
 
 function HRIndexConstructor(_super, params) {
     _super(this, params);
@@ -22,6 +25,8 @@ function HRIndexConstructor(_super, params) {
     this.onLoad = function() {
         typeof _superOnLoad === "function" && _superOnLoad();
         this.headerBar.visible = false;
+        this.ios.safeAreaLayoutMode = true;
+        this.layout.backgroundColor = Color.create("#45495A");
         // if (System.OS === "iOS") {
         initSwipeView(this);
         initDotIndicator(this);
@@ -34,6 +39,7 @@ function HRIndexConstructor(_super, params) {
         this.headerBar.visible = false;
         this.swipeView.swipeToIndex(swipeViewIndex.currentIndex, false);
     }.bind(this);
+
 
 }
 
@@ -69,16 +75,15 @@ function initDotIndicator(page) {
     if (page.childPages.length !== 1) {
         page.dotIndicator = new DotIndicator();
         page.layout.addChild(page.dotIndicator, "dotIndicator", ".flexlayout", {
-            top: 60,
-            height: 10,
+            height: 50,
+            top: (isIphoneX ? 100 : 80),
             flexProps: {
                 alignSelf: "CENTER",
-                positionType: "ABSOLUTE",
+                positionType: "ABSOLUTE"
             }
         });
         page.dotIndicator.size = page.childPages.length;
     }
-
     /*
     page.dotIndicator.top = 60; //System.OS === "Android" ? 40 : 60;
     page.dotIndicator.alignSelf = FlexLayout.AlignSelf.CENTER;

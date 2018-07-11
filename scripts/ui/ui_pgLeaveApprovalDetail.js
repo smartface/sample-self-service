@@ -13,7 +13,7 @@ const Page = extend(PageBase);
 const pageContextPatch = require('@smartface/contx/lib/smartface/pageContextPatch');
 const FlexLayout = extend(require('sf-core/ui/flexlayout'));
 const ImageView = extend(require('sf-core/ui/imageview'));
-const Label = extend(require('sf-core/ui/label'));
+const TextView = extend(require('sf-core/ui/textview'));
 const TextArea = extend(require('sf-core/ui/textarea'));
 const Button = extend(require('sf-core/ui/button'));
 
@@ -159,7 +159,7 @@ $MainContainer$$UserInformation$$Flexlayout1103$$Name.$$styleContext = {
     width: null
   }
 };
-const $MainContainer$$UserInformation$$Flexlayout1103$$Name_ = Label($MainContainer$$UserInformation$$Flexlayout1103$$Name);
+const $MainContainer$$UserInformation$$Flexlayout1103$$Name_ = TextView($MainContainer$$UserInformation$$Flexlayout1103$$Name);
 
 function $MainContainer$$UserInformation$$Flexlayout1103$$Position(_super, pageInstance) {
   _super(this, {
@@ -181,7 +181,7 @@ $MainContainer$$UserInformation$$Flexlayout1103$$Position.$$styleContext = {
     width: null
   }
 };
-const $MainContainer$$UserInformation$$Flexlayout1103$$Position_ = Label($MainContainer$$UserInformation$$Flexlayout1103$$Position);
+const $MainContainer$$UserInformation$$Flexlayout1103$$Position_ = TextView($MainContainer$$UserInformation$$Flexlayout1103$$Position);
 
 function $MainContainer$$UserInformation$$Flexlayout408(_super, pageInstance) {
   _super(this);
@@ -240,7 +240,7 @@ $MainContainer$$UserInformation$$Flexlayout408$$Label541.$$styleContext = {
     width: null
   }
 };
-const $MainContainer$$UserInformation$$Flexlayout408$$Label541_ = Label($MainContainer$$UserInformation$$Flexlayout408$$Label541);
+const $MainContainer$$UserInformation$$Flexlayout408$$Label541_ = TextView($MainContainer$$UserInformation$$Flexlayout408$$Label541);
 
 function $MainContainer$$Flexlayout1104(_super, pageInstance) {
   _super(this);
@@ -342,7 +342,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572);
+const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1(_super, pageInstance) {
   _super(this, {
@@ -364,7 +364,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1);
+const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1115(_super, pageInstance) {
   _super(this);
@@ -421,7 +421,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_2_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_2);
+const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_2_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_2);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1(_super, pageInstance) {
   _super(this, {
@@ -443,7 +443,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1);
+const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1(_super, pageInstance) {
   _super(this);
@@ -487,7 +487,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1.$$sty
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1);
+const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Flexlayout1114(_super, pageInstance) {
   _super(this);
@@ -527,7 +527,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1.$$style
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1);
+const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Imageview170(_super, pageInstance) {
   _super(this);
@@ -629,7 +629,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2);
+const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_1(_super, pageInstance) {
   _super(this, {
@@ -652,7 +652,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_1);
+const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2(_super, pageInstance) {
   _super(this, {
@@ -675,7 +675,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2);
+const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1(_super, pageInstance) {
   _super(this);
@@ -717,7 +717,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Labe
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_3_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_3);
+const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_3_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_3);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_1_1(_super, pageInstance) {
   _super(this, {
@@ -740,7 +740,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Labe
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_1_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_1_1);
+const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_1_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_1_1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1(_super, pageInstance) {
   _super(this, {
@@ -763,7 +763,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Labe
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1);
+const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1(_super, pageInstance) {
   _super(this);
@@ -805,7 +805,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$La
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_3_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_3_1);
+const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_3_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_3_1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_1_1_1(_super, pageInstance) {
   _super(this, {
@@ -828,7 +828,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$La
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_1_1_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_1_1_1);
+const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_1_1_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_1_1_1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1(_super, pageInstance) {
   _super(this, {
@@ -851,7 +851,7 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$La
     width: null
   }
 };
-const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1_ = Label($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1);
+const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1);
 
 function $MainContainer$$Flexlayout1104$$Imageview171(_super, pageInstance) {
   _super(this);
@@ -910,7 +910,7 @@ $MainContainer$$DescriptionLayout$$LblDescription.$$styleContext = {
     width: null
   }
 };
-const $MainContainer$$DescriptionLayout$$LblDescription_ = Label($MainContainer$$DescriptionLayout$$LblDescription);
+const $MainContainer$$DescriptionLayout$$LblDescription_ = TextView($MainContainer$$DescriptionLayout$$LblDescription);
 
 function $MainContainer$$DescriptionLayout$$TxtDescription(_super, pageInstance) {
   _super(this, {

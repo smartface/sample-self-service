@@ -21,7 +21,7 @@
 				"flexProps": {},
 				"orientation": "PORTRAIT"
 			},
-			"version": "6.6.1"
+			"version": "6.8.2"
 		},
 		{
 			"className": "",
@@ -115,7 +115,7 @@
 				"text": "START",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {},
 				"font": {},
@@ -157,7 +157,7 @@
 				"text": "END",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {},
 				"font": {},
@@ -228,7 +228,7 @@
 				"text": "LOREM IPSUM",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {},
 				"font": {},
@@ -312,7 +312,7 @@
 				"text": "NOTE",
 				"usePageVariable": true
 			},
-			"type": "Label",
+			"type": "TextView",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1
@@ -390,56 +390,6 @@
 				"top": 0,
 				"usePageVariable": true,
 				"width": null
-			}
-		},
-		{
-			"className": ".imageView",
-			"hiddenComponent": false,
-			"id": "e0a0-8ace-9495-14f9",
-			"props": {
-				"children": [],
-				"name": "rightItem2",
-				"parent": "aeec-5b83-faab-eb2c",
-				"usePageVariable": true
-			},
-			"source": {
-				"page": "__library__"
-			},
-			"type": "ImageView",
-			"userProps": {
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"flexGrow": null
-				},
-				"height": 20,
-				"imageFillType": "ASPECTFIT",
-				"usePageVariable": true,
-				"width": 20
-			}
-		},
-		{
-			"className": ".imageView",
-			"hiddenComponent": false,
-			"id": "f832-f85e-293d-f572",
-			"props": {
-				"children": [],
-				"name": "rightItem1",
-				"parent": "aeec-5b83-faab-eb2c",
-				"usePageVariable": true
-			},
-			"source": {
-				"page": "__library__"
-			},
-			"type": "ImageView",
-			"userProps": {
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"flexGrow": null
-				},
-				"height": 20,
-				"imageFillType": "ASPECTFIT",
-				"usePageVariable": true,
-				"width": 20
 			}
 		},
 		{

@@ -1,0 +1,59 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "5ff3-3be5-c42e-e78e",
+			"props": {
+				"children": [
+					"b300-c048-210a-c0fa"
+				],
+				"name": "horizontalDivider",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 1,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"flexGrow": 1,
+					"positionType": "RELATIVE"
+				},
+				"height": 1,
+				"left": 15,
+				"top": 11,
+				"width": 200
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "b300-c048-210a-c0fa",
+			"props": {
+				"children": [],
+				"id": 113,
+				"name": "flexlayout6",
+				"parent": "5ff3-3be5-c42e-e78e"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.4,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"id": 113,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"width": null
+			}
+		}
+	]
+}

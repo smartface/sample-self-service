@@ -1,0 +1,213 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": true,
+			"id": "4673-9f39-1b4c-f943",
+			"props": {
+				"children": [
+					"f174-747c-5407-a2e9"
+				],
+				"name": "hierachyfl",
+				"parent": "8123-2e26-7576-4ace"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 330,
+				"width": 360
+			}
+		},
+		{
+			"className": ".scrollView",
+			"id": "f174-747c-5407-a2e9",
+			"props": {
+				"children": [
+					"d6d4-0e23-83ef-e5e5",
+					"c829-6a10-078d-5cde",
+					"b8e4-3c69-726f-6a73",
+					"ded2-7030-c786-2610",
+					"b5c2-b9f1-955a-78db"
+				],
+				"name": "hierachyScroll",
+				"parent": "4673-9f39-1b4c-f943",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"align": "HORIZONTAL",
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"bottom": 0,
+				"flex": {},
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": null,
+				"ios": {
+					"scrollBarEnabled": true
+				},
+				"left": 0,
+				"right": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "d6d4-0e23-83ef-e5e5",
+			"props": {
+				"children": [],
+				"name": "hc_header",
+				"parent": "f174-747c-5407-a2e9",
+				"text": "ORGANISATION",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"height": 25,
+				"text": "ORGANISATION",
+				"textColor": "rgba( 23, 117, 208, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "c829-6a10-078d-5cde",
+			"props": {
+				"children": [],
+				"name": "hierarchyLevel1",
+				"parent": "f174-747c-5407-a2e9"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "hierarchyLevel1",
+				"id": "3f92-e587-8693-fd13"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"alignItems": 2,
+					"flexDirection": 2,
+					"positionType": 0
+				},
+				"flexProps": {
+					"alignItems": "CENTER",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"height": 75,
+				"left": 0,
+				"top": 0,
+				"width": 360
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "b8e4-3c69-726f-6a73",
+			"props": {
+				"children": [],
+				"name": "hierarchyLevel2",
+				"parent": "f174-747c-5407-a2e9"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "hierarchyLevel2",
+				"id": "663a-cb47-f53e-3f29"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"alignItems": 2,
+					"flexDirection": 2,
+					"positionType": 0
+				},
+				"flexProps": {
+					"alignItems": "CENTER",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"height": 75,
+				"width": 380
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "ded2-7030-c786-2610",
+			"props": {
+				"children": [],
+				"name": "hierarchyLevel3First",
+				"parent": "f174-747c-5407-a2e9"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "hierarchyLevel3First",
+				"id": "8f58-db73-73e6-8770"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"alignItems": 2,
+					"flexDirection": 2,
+					"positionType": 0
+				},
+				"flexProps": {
+					"alignItems": "CENTER",
+					"flexDirection": "ROW",
+					"positionType": "RELATIVE"
+				},
+				"height": 75,
+				"left": 0,
+				"top": 0,
+				"width": 360
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "b5c2-b9f1-955a-78db",
+			"props": {
+				"children": [],
+				"name": "hiearchyLevel3Remaining",
+				"parent": "f174-747c-5407-a2e9"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "hiearchyLevel3Remaining",
+				"id": "efa5-88f3-533e-9d2a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"flexDirection": 2,
+					"alignItems": 2,
+					"positionType": 0
+				},
+				"flexProps": {
+					"flexDirection": "ROW",
+					"alignItems": "CENTER",
+					"positionType": "RELATIVE"
+				},
+				"height": 75,
+				"left": 0,
+				"top": 0,
+				"width": 360
+			}
+		}
+	]
+}

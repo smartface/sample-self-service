@@ -12,7 +12,7 @@ const PageBase = require('sf-core/ui/page');
 const Page = extend(PageBase);
 const pageContextPatch = require('@smartface/contx/lib/smartface/pageContextPatch');
 const FlexLayout = extend(require('sf-core/ui/flexlayout'));
-const Label = extend(require('sf-core/ui/label'));
+const TextView = extend(require('sf-core/ui/textview'));
 const Switch = extend(require('sf-core/ui/switch'));
 
 const HorizontalDivider = extend(require("../components/HorizontalDivider"));
@@ -121,7 +121,7 @@ $Flexlayout84$$Flexlayout85$$TxtTheme.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout84$$Flexlayout85$$TxtTheme_ = Label($Flexlayout84$$Flexlayout85$$TxtTheme);
+const $Flexlayout84$$Flexlayout85$$TxtTheme_ = TextView($Flexlayout84$$Flexlayout85$$TxtTheme);
 
 function $Flexlayout84$$Flexlayout85$$ThemeBlueLayout(_super, pageInstance) {
   _super(this);
@@ -264,7 +264,7 @@ $Flexlayout84$$Flexlayout85_1$$TxtNotification.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout84$$Flexlayout85_1$$TxtNotification_ = Label($Flexlayout84$$Flexlayout85_1$$TxtNotification);
+const $Flexlayout84$$Flexlayout85_1$$TxtNotification_ = TextView($Flexlayout84$$Flexlayout85_1$$TxtNotification);
 
 function $Flexlayout84$$Flexlayout85_1$$Switch1(_super, pageInstance) {
   _super(this);
@@ -339,7 +339,7 @@ $Flexlayout84$$LayoutFinger$$TxtFingerPrint.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout84$$LayoutFinger$$TxtFingerPrint_ = Label($Flexlayout84$$LayoutFinger$$TxtFingerPrint);
+const $Flexlayout84$$LayoutFinger$$TxtFingerPrint_ = TextView($Flexlayout84$$LayoutFinger$$TxtFingerPrint);
 
 function $Flexlayout84$$LayoutFinger$$SwitchFinger(_super, pageInstance) {
   _super(this);
@@ -416,7 +416,7 @@ $Flexlayout84$$LayoutInstabug$$TxtInstabug.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout84$$LayoutInstabug$$TxtInstabug_ = Label($Flexlayout84$$LayoutInstabug$$TxtInstabug);
+const $Flexlayout84$$LayoutInstabug$$TxtInstabug_ = TextView($Flexlayout84$$LayoutInstabug$$TxtInstabug);
 
 function $Flexlayout84$$LayoutInstabug$$SwitchFinger(_super, pageInstance) {
   _super(this);
@@ -493,7 +493,7 @@ $Flexlayout84$$LayoutFabric$$TxtFabric.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout84$$LayoutFabric$$TxtFabric_ = Label($Flexlayout84$$LayoutFabric$$TxtFabric);
+const $Flexlayout84$$LayoutFabric$$TxtFabric_ = TextView($Flexlayout84$$LayoutFabric$$TxtFabric);
 
 function $Flexlayout84$$LayoutFabric$$SwitchFinger(_super, pageInstance) {
   _super(this);
@@ -570,7 +570,7 @@ $Flexlayout84$$LayoutFirabase$$TxtFirebase.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout84$$LayoutFirabase$$TxtFirebase_ = Label($Flexlayout84$$LayoutFirabase$$TxtFirebase);
+const $Flexlayout84$$LayoutFirabase$$TxtFirebase_ = TextView($Flexlayout84$$LayoutFirabase$$TxtFirebase);
 
 function $Flexlayout84$$LayoutFirabase$$SwitchFinger(_super, pageInstance) {
   _super(this);
@@ -626,7 +626,7 @@ $Flexlayout84$$LayoutAbout$$TxtAbout.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout84$$LayoutAbout$$TxtAbout_ = Label($Flexlayout84$$LayoutAbout$$TxtAbout);
+const $Flexlayout84$$LayoutAbout$$TxtAbout_ = TextView($Flexlayout84$$LayoutAbout$$TxtAbout);
 
 function $Flexlayout84$$LayoutAbout$$TxtNewVersion(_super, pageInstance) {
   _super(this, {
@@ -649,7 +649,7 @@ $Flexlayout84$$LayoutAbout$$TxtNewVersion.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout84$$LayoutAbout$$TxtNewVersion_ = Label($Flexlayout84$$LayoutAbout$$TxtNewVersion);
+const $Flexlayout84$$LayoutAbout$$TxtNewVersion_ = TextView($Flexlayout84$$LayoutAbout$$TxtNewVersion);
 
 function $Flexlayout84$$TxtAboutDesc(_super, pageInstance) {
   _super(this, {
@@ -673,7 +673,7 @@ $Flexlayout84$$TxtAboutDesc.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout84$$TxtAboutDesc_ = Label($Flexlayout84$$TxtAboutDesc);
+const $Flexlayout84$$TxtAboutDesc_ = TextView($Flexlayout84$$TxtAboutDesc);
 
 function $Flexlayout84$$SignoutLayout(_super, pageInstance) {
   _super(this);
@@ -738,7 +738,7 @@ $Flexlayout84$$SignoutLayout$$LblSignOut.$$styleContext = {
     width: null
   }
 };
-const $Flexlayout84$$SignoutLayout$$LblSignOut_ = Label($Flexlayout84$$SignoutLayout$$LblSignOut);
+const $Flexlayout84$$SignoutLayout$$LblSignOut_ = TextView($Flexlayout84$$SignoutLayout$$LblSignOut);
 
 /**
  * @event onShow
