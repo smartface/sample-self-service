@@ -24,9 +24,9 @@ function addChild(childName, ChildClass, pageInstance) {
   else
     this.addChild(this.children[childName]);
 }
-//constructor
+// Constructor
 function $PgMeetingRoomReservations(_super, props) {
-  // initalizes super class for this page scope
+  // Initalizes super class for this page scope
   _super(this, Object.assign({}, {
     onShow: onShow.bind(this)
   }, props || {}));
@@ -116,9 +116,8 @@ const $MainLayout$$ComingSoon_ = ImageView($MainLayout$$ComingSoon);
  * @param {Object} parameters passed from Router.go function
  */
 function onShow() {
-  //HeaderBar props
+  // HeaderBar props
   this.headerBar.title = "newPage001";
-
 }
 
-module && (module.exports = $PgMeetingRoomReservations_);
+module.exports = $PgMeetingRoomReservations_;

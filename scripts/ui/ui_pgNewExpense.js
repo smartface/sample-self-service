@@ -29,9 +29,9 @@ function addChild(childName, ChildClass, pageInstance) {
   else
     this.addChild(this.children[childName]);
 }
-//constructor
+// Constructor
 function $PgNewExpense(_super, props) {
-  // initalizes super class for this page scope
+  // Initalizes super class for this page scope
   _super(this, Object.assign({}, {
     onShow: onShow.bind(this)
   }, props || {}));
@@ -461,8 +461,8 @@ const $MainContainer$$RequestButton_ = Button($MainContainer$$RequestButton);
  * @param {Object} parameters passed from Router.go function
  */
 function onShow() {
-  //HeaderBar props
+  // HeaderBar props
 
 }
 
-module && (module.exports = $PgNewExpense_);
+module.exports = $PgNewExpense_;

@@ -28,9 +28,9 @@ function addChild(childName, ChildClass, pageInstance) {
   else
     this.addChild(this.children[childName]);
 }
-//constructor
+// Constructor
 function $PgProfileDetail(_super, props) {
-  // initalizes super class for this page scope
+  // Initalizes super class for this page scope
   _super(this, Object.assign({}, {
     onShow: onShow.bind(this)
   }, props || {}));
@@ -399,8 +399,8 @@ const $Flexlayout500$$Hierarchyfl_ = Hierachyfl($Flexlayout500$$Hierarchyfl);
  * @param {Object} parameters passed from Router.go function
  */
 function onShow() {
-  //HeaderBar props
+  // HeaderBar props
 
 }
 
-module && (module.exports = $PgProfileDetail_);
+module.exports = $PgProfileDetail_;

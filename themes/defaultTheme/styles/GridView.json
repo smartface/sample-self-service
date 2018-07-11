@@ -1,0 +1,29 @@
+{
+    ".gridView": {
+        "height": 200,
+        "width": 200,
+        "touchEnabled": true,
+        "multiline": false,
+        "rowHeight": 60,
+        "itemCount": 3,
+        "visible": true,
+        "backgroundColor": "#FFFFFF",
+        "alpha": 1,
+        "borderColor": "rgba(0,0,0,1)",
+        "borderWidth": 0,
+        "font": {},
+        "flexProps": {
+            "alignSelf": "AUTO",
+            "positionType": "RELATIVE"
+        },
+        "&-small": {
+            "width": 100
+        },
+        "&-medium": {
+            "width": 250
+        },
+        "&-large": {
+            "width": 350
+        }
+    }
+}
