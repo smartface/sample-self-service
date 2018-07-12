@@ -16,7 +16,7 @@ var noInclude = '_NOINCLUDE,';
 var sender;
 var evaluatedData;
 var maxWidth = Screen.width * 3 / 5;
-var heightOfChatScrollview = Screen.height * 1 / 4;
+var layoutHeightOfChat = 0;
 var heightExpand = 50;
 var widthExpand = 60;
 //HelveticaNeu_bc
@@ -55,45 +55,23 @@ function onLoad(superOnLoad) {
   superOnLoad();
 
   const page = this;
-  this.layoutHeaderBar.headerBarTitle.text = "CHATBOT"
-  this.chatScrollView.layout.height = heightOfChatScrollview;
+  this.layoutHeaderBar.headerBarTitle.text = "CHATBOT";
+  this.chatScrollView.layout.height = layoutHeightOfChat;
 
   myWebSocket = new WebSocket({ url: "https://self-service-server-smartface.azurewebsites.net/" });
 
   this.layoutHeaderBar.rightItem1.width = 25;
   this.layoutHeaderBar.rightItem1.height = 25;
-  this.layoutHeaderBar.rightItem1.image = Image.createFromFile("images://ic_info_outline_white.png")
+  this.layoutHeaderBar.rightItem1.image = Image.createFromFile("images://ic_info_outline_white.png");
 
   this.sendLabel.onTouch = function() {
     sender = true;
     applyMessageOnScreen.call(page);
-  }.bind(page)
+  }.bind(page);
 
   this.layoutHeaderBar.rightItem1.onTouch = function() {
     initAlerView().show();
-  }.bind(page)
-
-  page.sendText.onEditBegins = function() {
-    console.log("onEditBegins");
-    page.chatScrollView.dispatch({
-      type: "updateUserStyle",
-      userStyle: {
-        layout: { paddingTop: 200 }
-      }
-    });
-    page.chatScrollView.layout.applyLayout();
-  };
-
-  page.sendText.onEditEnds = function() {
-    console.log("onEditEnds");
-    page.chatScrollView.dispatch({
-      type: "updateUserStyle",
-      userStyle: {
-        layout: { paddingTop: 0 }
-      }
-    });
-    page.chatScrollView.layout.applyLayout();
-  };
+  }.bind(page);
 }
 
 function applyMessageOnScreen() {
@@ -106,7 +84,6 @@ function applyMessageOnScreen() {
   messageComponent.chatBotLabel.text = currentText;
 
   if (sender) {
-
     page.chatScrollView.layout.addChild(messageComponent, 'messageComponent', '', {
       marginTop: 0,
       marginRight: 5,
@@ -126,7 +103,6 @@ function applyMessageOnScreen() {
     messageComponent.chatBotLabel.dispatch({
       type: "updateUserStyle",
       userStyle: {
-        //  font: Font.create("HelveticaNeu_bc", 16, Font.NORMAL),
         textColor: "#FFFFFF",
         backgroundColor: "#4A90E2"
       }
@@ -149,11 +125,9 @@ function applyMessageOnScreen() {
     });
 
     replyToWs(currentText);
-    //after sending text make it empty
     page.sendText.text = "";
   }
   else {
-
     page.chatScrollView.layout.addChild(messageComponent, 'messageComponent', '', {
       marginTop: 0,
       marginRight: 5,
@@ -172,20 +146,25 @@ function applyMessageOnScreen() {
   }
 
   //calculate scrollview height dynamic
-  heightOfChatScrollview += Math.ceil(messageComponent.maxHeight);
-  this.chatScrollView.layout.height = heightOfChatScrollview;
+  layoutHeightOfChat += Math.ceil(messageComponent.maxHeight);
+  this.chatScrollView.layout.height = layoutHeightOfChat;
 
-  // IOS-2562
-  // this.chatScrollView.layout.applyLayout();
+  // Make sure new messages to stick to the text area
+  let chatScrollViewMarginTop = this.chatScrollView.height - layoutHeightOfChat;
+  this.chatScrollView.dispatch({
+    type: "updateUserStyle",
+    userStyle: {
+      marginTop: chatScrollViewMarginTop > 0 ? chatScrollViewMarginTop : 0
+    }
+  });
 
-  page.layout.applyLayout();
+  this.chatScrollView.layout.applyLayout();
 
   //In order to achive samebehavior implement timeOut.
   if (scrollBasedOnScrollHeight(page.chatScrollView.height)) {
     setTimeout(function() {
       page.chatScrollView.scrollToEdge(ScrollView.Edge.BOTTOM);
     }, 200);
-
   }
 }
 
@@ -261,7 +240,7 @@ function sizeOfLabel(text) {
 }
 
 function scrollBasedOnScrollHeight(scrollHeight) {
-  if (heightOfChatScrollview / scrollHeight >= 1) {
+  if (layoutHeightOfChat / scrollHeight >= 1) {
     return true;
   }
   else {

@@ -45,7 +45,6 @@ function onShow(parentOnShow, params) {
 	const page = this;
 
 	page.appName.onTouch = function() {
-		console.log("in on press");
 		page.usernameLayout.innerTextbox.text = "selfservice";
 		page.passwordLayout.innerTextbox.text = "123qweASD";
 	}.bind(this);
@@ -78,11 +77,9 @@ function onShow(parentOnShow, params) {
 					animation.stop();
 					animation.revert();
 					if (err) {
-						console.log("in revert");
 						animation.revert();
 						return;
 					}
-					console.log("after condifiton");
 					fingerprintResult && fingerprintResult.success(); //Important!
 					Router.go("tabs");
 				});
