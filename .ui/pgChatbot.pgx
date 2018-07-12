@@ -84,12 +84,33 @@
 			}
 		},
 		{
+			"className": ".scrollView",
+			"id": "e212-b9a7-afbc-a710",
+			"props": {
+				"autoSizeEnabled": true,
+				"children": [],
+				"name": "chatScrollView",
+				"parent": "1c3a-aa7f-483b-1d13",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"autoSizeEnabled": true,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
 			"className": ".flexLayout",
 			"hiddenComponent": false,
 			"id": "9e1b-5650-37a6-7a62",
 			"props": {
 				"children": [
-					"09ec-4d45-860f-d14b",
+					"f097-bc2a-180a-8120",
 					"6ff3-634d-6444-e354"
 				],
 				"name": "sendTextfl",
@@ -105,6 +126,43 @@
 				},
 				"height": 60,
 				"maxHeight": 80,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".textArea",
+			"id": "f097-bc2a-180a-8120",
+			"props": {
+				"autoWidth": 67.64481707317074,
+				"children": [],
+				"name": "sendText",
+				"parent": "9e1b-5650-37a6-7a62",
+				"text": "TextArea",
+				"usePageVariable": true
+			},
+			"type": "TextArea",
+			"userProps": {
+				"autoWidth": 67.64481707317074,
+				"borderRadius": 10,
+				"borderWidth": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 17,
+					"bold": false,
+					"italic": false,
+					"family": "HelveticaNeue"
+				},
+				"height": null,
+				"left": 0,
+				"marginBottom": 7,
+				"marginLeft": 7,
+				"marginRight": 7,
+				"marginTop": 7,
+				"textAlignment": "MIDLEFT",
+				"top": 0,
 				"usePageVariable": true,
 				"width": null
 			}
@@ -138,84 +196,6 @@
 				"textColor": "rgba( 74, 144, 226, 1 )",
 				"usePageVariable": true,
 				"width": 50
-			}
-		},
-		{
-			"className": ".flexLayout",
-			"id": "09ec-4d45-860f-d14b",
-			"props": {
-				"children": [
-					"2081-4c4a-0f26-ea65"
-				],
-				"name": "textfl",
-				"parent": "9e1b-5650-37a6-7a62",
-				"usePageVariable": true
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"borderRadius": 10,
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"height": 45,
-				"marginBottom": 7.5,
-				"marginLeft": 15,
-				"marginRight": 15,
-				"marginTop": 7.5,
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".textArea",
-			"id": "2081-4c4a-0f26-ea65",
-			"props": {
-				"children": [],
-				"name": "sendText",
-				"parent": "09ec-4d45-860f-d14b",
-				"text": "TextArea",
-				"usePageVariable": true
-			},
-			"type": "TextArea",
-			"userProps": {
-				"borderRadius": 10,
-				"borderWidth": null,
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"font": {
-					"size": 17,
-					"bold": false,
-					"italic": false,
-					"family": "HelveticaNeue"
-				},
-				"height": null,
-				"marginBottom": 7,
-				"marginLeft": 7,
-				"marginRight": 7,
-				"marginTop": 7,
-				"textAlignment": "MIDLEFT",
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".scrollView",
-			"id": "e212-b9a7-afbc-a710",
-			"props": {
-				"children": [],
-				"name": "chatScrollView",
-				"parent": "1c3a-aa7f-483b-1d13",
-				"usePageVariable": true
-			},
-			"type": "ScrollView",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"height": null,
-				"usePageVariable": true,
-				"width": null
 			}
 		}
 	]

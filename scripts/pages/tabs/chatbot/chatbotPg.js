@@ -72,6 +72,19 @@ function onLoad(superOnLoad) {
   this.layoutHeaderBar.rightItem1.onTouch = function() {
     initAlerView().show();
   }.bind(page)
+
+  page.sendText.onTouch = function() {
+    console.log("onTouch");
+    //page.chatScrollView.contentInset = { top: 500 };
+    //page.chatScrollView.layout.applyLayout();
+  };
+
+  page.sendText.onTouchEnded = function(isInside) {
+    console.log("onTouchEnded");
+    if (isInside)
+      return;
+    //page.chatScrollView.contentInset = { top: 0 };
+  };
 }
 
 function applyMessageOnScreen() {
@@ -150,8 +163,11 @@ function applyMessageOnScreen() {
   }
 
   //calculate scrollview height dynamic
-  heightOfChatScrollview += Math.ceil(messageComponent.maxHeight) ;
+  heightOfChatScrollview += Math.ceil(messageComponent.maxHeight);
   this.chatScrollView.layout.height = heightOfChatScrollview;
+
+  // IOS-2562
+  // this.chatScrollView.layout.applyLayout();
 
   page.layout.applyLayout();
 
