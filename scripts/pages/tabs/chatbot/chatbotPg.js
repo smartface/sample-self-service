@@ -73,17 +73,26 @@ function onLoad(superOnLoad) {
     initAlerView().show();
   }.bind(page)
 
-  page.sendText.onTouch = function() {
-    console.log("onTouch");
-    //page.chatScrollView.contentInset = { top: 500 };
-    //page.chatScrollView.layout.applyLayout();
+  page.sendText.onEditBegins = function() {
+    console.log("onEditBegins");
+    page.chatScrollView.dispatch({
+      type: "updateUserStyle",
+      userStyle: {
+        layout: { paddingTop: 200 }
+      }
+    });
+    page.chatScrollView.layout.applyLayout();
   };
 
-  page.sendText.onTouchEnded = function(isInside) {
-    console.log("onTouchEnded");
-    if (isInside)
-      return;
-    //page.chatScrollView.contentInset = { top: 0 };
+  page.sendText.onEditEnds = function() {
+    console.log("onEditEnds");
+    page.chatScrollView.dispatch({
+      type: "updateUserStyle",
+      userStyle: {
+        layout: { paddingTop: 0 }
+      }
+    });
+    page.chatScrollView.layout.applyLayout();
   };
 }
 
