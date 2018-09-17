@@ -54,6 +54,7 @@ const $PgExpenseApprovalDetail_ = Page($PgExpenseApprovalDetail);
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "pgExpenseApprovalDetail";
+
 }
 
 module.exports = $PgExpenseApprovalDetail_;

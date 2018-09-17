@@ -56,7 +56,9 @@ $PgMyCompany.$$styleContext = {
 const $PgMyCompany_ = Page($PgMyCompany);
 
 function $LayoutHeaderBar(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.layoutHeaderBar = this;
 }
 $LayoutHeaderBar.$$styleContext = {
@@ -74,7 +76,9 @@ $LayoutHeaderBar.$$styleContext = {
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
 
 function $Flexlayout109(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "comingSoon", $Flexlayout109$$ComingSoon_, pageInstance);
 }
 $Flexlayout109.$$styleContext = {
@@ -97,7 +101,9 @@ $Flexlayout109.$$styleContext = {
 const $Flexlayout109_ = FlexLayout($Flexlayout109);
 
 function $Flexlayout109$$ComingSoon(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.comingSoon = this;
 }
 $Flexlayout109$$ComingSoon.$$styleContext = {
@@ -122,6 +128,7 @@ const $Flexlayout109$$ComingSoon_ = ImageView($Flexlayout109$$ComingSoon);
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
+
 }
 
 module.exports = $PgMyCompany_;

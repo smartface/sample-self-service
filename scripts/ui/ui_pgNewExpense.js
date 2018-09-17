@@ -59,7 +59,8 @@ const $PgNewExpense_ = Page($PgNewExpense);
 
 function $MainContainer(_super, pageInstance) {
   _super(this, {
-    id: NaN
+    id: NaN,
+    skipDefaults: true
   });
   addChild.call(this, "detailsLayout", $MainContainer$$DetailsLayout_, pageInstance);
   addChild.call(this, "noteLayout", $MainContainer$$NoteLayout_, pageInstance);
@@ -82,7 +83,9 @@ $MainContainer.$$styleContext = {
 const $MainContainer_ = FlexLayout($MainContainer);
 
 function $MainContainer$$DetailsLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "detailsTitle", $MainContainer$$DetailsLayout$$DetailsTitle_, pageInstance);
   addChild.call(this, "titleInput", $MainContainer$$DetailsLayout$$TitleInput_, pageInstance);
   addChild.call(this, "expenseInput", $MainContainer$$DetailsLayout$$ExpenseInput_, pageInstance);
@@ -103,7 +106,8 @@ const $MainContainer$$DetailsLayout_ = FlexLayout($MainContainer$$DetailsLayout)
 
 function $MainContainer$$DetailsLayout$$DetailsTitle(_super, pageInstance) {
   _super(this, {
-    text: "DETAILS"
+    text: "DETAILS",
+    skipDefaults: true
   });
   pageInstance.detailsTitle = this;
 }
@@ -124,7 +128,9 @@ $MainContainer$$DetailsLayout$$DetailsTitle.$$styleContext = {
 const $MainContainer$$DetailsLayout$$DetailsTitle_ = TextView($MainContainer$$DetailsLayout$$DetailsTitle);
 
 function $MainContainer$$DetailsLayout$$TitleInput(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.titleInput = this;
 }
 $MainContainer$$DetailsLayout$$TitleInput.$$styleContext = {
@@ -145,7 +151,9 @@ $MainContainer$$DetailsLayout$$TitleInput.$$styleContext = {
 const $MainContainer$$DetailsLayout$$TitleInput_ = TextboxWithLine($MainContainer$$DetailsLayout$$TitleInput);
 
 function $MainContainer$$DetailsLayout$$ExpenseInput(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.expenseInput = this;
 }
 $MainContainer$$DetailsLayout$$ExpenseInput.$$styleContext = {
@@ -167,7 +175,9 @@ $MainContainer$$DetailsLayout$$ExpenseInput.$$styleContext = {
 const $MainContainer$$DetailsLayout$$ExpenseInput_ = TextboxWithLine($MainContainer$$DetailsLayout$$ExpenseInput);
 
 function $MainContainer$$DetailsLayout$$Flexlayout191(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "typePicker", $MainContainer$$DetailsLayout$$Flexlayout191$$TypePicker_, pageInstance);
   addChild.call(this, "expenseDatePicker", $MainContainer$$DetailsLayout$$Flexlayout191$$ExpenseDatePicker_, pageInstance);
 }
@@ -186,7 +196,9 @@ $MainContainer$$DetailsLayout$$Flexlayout191.$$styleContext = {
 const $MainContainer$$DetailsLayout$$Flexlayout191_ = FlexLayout($MainContainer$$DetailsLayout$$Flexlayout191);
 
 function $MainContainer$$DetailsLayout$$Flexlayout191$$TypePicker(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.typePicker = this;
 }
 $MainContainer$$DetailsLayout$$Flexlayout191$$TypePicker.$$styleContext = {
@@ -205,7 +217,9 @@ $MainContainer$$DetailsLayout$$Flexlayout191$$TypePicker.$$styleContext = {
 const $MainContainer$$DetailsLayout$$Flexlayout191$$TypePicker_ = PickerContainer($MainContainer$$DetailsLayout$$Flexlayout191$$TypePicker);
 
 function $MainContainer$$DetailsLayout$$Flexlayout191$$ExpenseDatePicker(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.expenseDatePicker = this;
 }
 $MainContainer$$DetailsLayout$$Flexlayout191$$ExpenseDatePicker.$$styleContext = {
@@ -225,7 +239,9 @@ $MainContainer$$DetailsLayout$$Flexlayout191$$ExpenseDatePicker.$$styleContext =
 const $MainContainer$$DetailsLayout$$Flexlayout191$$ExpenseDatePicker_ = PickerContainer($MainContainer$$DetailsLayout$$Flexlayout191$$ExpenseDatePicker);
 
 function $MainContainer$$NoteLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout76", $MainContainer$$NoteLayout$$Flexlayout76_, pageInstance);
   addChild.call(this, "description", $MainContainer$$NoteLayout$$Description_, pageInstance);
 }
@@ -249,7 +265,9 @@ $MainContainer$$NoteLayout.$$styleContext = {
 const $MainContainer$$NoteLayout_ = FlexLayout($MainContainer$$NoteLayout);
 
 function $MainContainer$$NoteLayout$$Flexlayout76(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "noteTitle", $MainContainer$$NoteLayout$$Flexlayout76$$NoteTitle_, pageInstance);
   addChild.call(this, "imageview17", $MainContainer$$NoteLayout$$Flexlayout76$$Imageview17_, pageInstance);
 }
@@ -269,7 +287,8 @@ const $MainContainer$$NoteLayout$$Flexlayout76_ = FlexLayout($MainContainer$$Not
 
 function $MainContainer$$NoteLayout$$Flexlayout76$$NoteTitle(_super, pageInstance) {
   _super(this, {
-    text: "NOTE"
+    text: "NOTE",
+    skipDefaults: true
   });
   pageInstance.noteTitle = this;
 }
@@ -290,7 +309,9 @@ $MainContainer$$NoteLayout$$Flexlayout76$$NoteTitle.$$styleContext = {
 const $MainContainer$$NoteLayout$$Flexlayout76$$NoteTitle_ = TextView($MainContainer$$NoteLayout$$Flexlayout76$$NoteTitle);
 
 function $MainContainer$$NoteLayout$$Flexlayout76$$Imageview17(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $MainContainer$$NoteLayout$$Flexlayout76$$Imageview17.$$styleContext = {
   classNames: ".imageView",
@@ -305,7 +326,8 @@ const $MainContainer$$NoteLayout$$Flexlayout76$$Imageview17_ = ImageView($MainCo
 
 function $MainContainer$$NoteLayout$$Description(_super, pageInstance) {
   _super(this, {
-    text: ""
+    text: "",
+    skipDefaults: true
   });
   pageInstance.description = this;
 }
@@ -325,7 +347,9 @@ $MainContainer$$NoteLayout$$Description.$$styleContext = {
 const $MainContainer$$NoteLayout$$Description_ = TextArea($MainContainer$$NoteLayout$$Description);
 
 function $MainContainer$$FileAttachmentLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout76_1", $MainContainer$$FileAttachmentLayout$$Flexlayout76_1_, pageInstance);
   addChild.call(this, "attachmentsLayout", $MainContainer$$FileAttachmentLayout$$AttachmentsLayout_, pageInstance);
 }
@@ -349,7 +373,9 @@ $MainContainer$$FileAttachmentLayout.$$styleContext = {
 const $MainContainer$$FileAttachmentLayout_ = FlexLayout($MainContainer$$FileAttachmentLayout);
 
 function $MainContainer$$FileAttachmentLayout$$Flexlayout76_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "fileAttachmentTitle", $MainContainer$$FileAttachmentLayout$$Flexlayout76_1$$FileAttachmentTitle_, pageInstance);
 }
 $MainContainer$$FileAttachmentLayout$$Flexlayout76_1.$$styleContext = {
@@ -368,7 +394,8 @@ const $MainContainer$$FileAttachmentLayout$$Flexlayout76_1_ = FlexLayout($MainCo
 
 function $MainContainer$$FileAttachmentLayout$$Flexlayout76_1$$FileAttachmentTitle(_super, pageInstance) {
   _super(this, {
-    text: "FILE ATTACHMENT"
+    text: "FILE ATTACHMENT",
+    skipDefaults: true
   });
   pageInstance.fileAttachmentTitle = this;
 }
@@ -389,7 +416,9 @@ $MainContainer$$FileAttachmentLayout$$Flexlayout76_1$$FileAttachmentTitle.$$styl
 const $MainContainer$$FileAttachmentLayout$$Flexlayout76_1$$FileAttachmentTitle_ = TextView($MainContainer$$FileAttachmentLayout$$Flexlayout76_1$$FileAttachmentTitle);
 
 function $MainContainer$$FileAttachmentLayout$$AttachmentsLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "addFile", $MainContainer$$FileAttachmentLayout$$AttachmentsLayout$$AddFile_, pageInstance);
   pageInstance.attachmentsLayout = this;
 }
@@ -410,7 +439,9 @@ $MainContainer$$FileAttachmentLayout$$AttachmentsLayout.$$styleContext = {
 const $MainContainer$$FileAttachmentLayout$$AttachmentsLayout_ = FlexLayout($MainContainer$$FileAttachmentLayout$$AttachmentsLayout);
 
 function $MainContainer$$FileAttachmentLayout$$AttachmentsLayout$$AddFile(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.addFile = this;
 }
 $MainContainer$$FileAttachmentLayout$$AttachmentsLayout$$AddFile.$$styleContext = {
@@ -435,7 +466,8 @@ const $MainContainer$$FileAttachmentLayout$$AttachmentsLayout$$AddFile_ = ItemFi
 
 function $MainContainer$$RequestButton(_super, pageInstance) {
   _super(this, {
-    text: "REQUEST"
+    text: "REQUEST",
+    skipDefaults: true
   });
   pageInstance.requestButton = this;
 }
@@ -462,6 +494,7 @@ const $MainContainer$$RequestButton_ = Button($MainContainer$$RequestButton);
  */
 function onShow() {
   // HeaderBar props
+  this.headerBar.title = null;
 
 }
 

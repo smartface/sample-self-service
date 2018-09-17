@@ -54,7 +54,9 @@ $PgSettings.$$styleContext = {
 const $PgSettings_ = Page($PgSettings);
 
 function $Flexlayout84(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout85", $Flexlayout84$$Flexlayout85_, pageInstance);
   addChild.call(this, "horizontalDivider", $Flexlayout84$$HorizontalDivider_, pageInstance);
   addChild.call(this, "flexlayout85_1", $Flexlayout84$$Flexlayout85_1_, pageInstance);
@@ -82,7 +84,9 @@ $Flexlayout84.$$styleContext = {
 const $Flexlayout84_ = FlexLayout($Flexlayout84);
 
 function $Flexlayout84$$Flexlayout85(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "txtTheme", $Flexlayout84$$Flexlayout85$$TxtTheme_, pageInstance);
   addChild.call(this, "themeBlueLayout", $Flexlayout84$$Flexlayout85$$ThemeBlueLayout_, pageInstance);
   addChild.call(this, "themePurpleLayout", $Flexlayout84$$Flexlayout85$$ThemePurpleLayout_, pageInstance);
@@ -106,7 +110,8 @@ const $Flexlayout84$$Flexlayout85_ = FlexLayout($Flexlayout84$$Flexlayout85);
 
 function $Flexlayout84$$Flexlayout85$$TxtTheme(_super, pageInstance) {
   _super(this, {
-    text: "Theme"
+    text: "Theme",
+    skipDefaults: true
   });
   pageInstance.txtTheme = this;
 }
@@ -124,7 +129,9 @@ $Flexlayout84$$Flexlayout85$$TxtTheme.$$styleContext = {
 const $Flexlayout84$$Flexlayout85$$TxtTheme_ = TextView($Flexlayout84$$Flexlayout85$$TxtTheme);
 
 function $Flexlayout84$$Flexlayout85$$ThemeBlueLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout247", $Flexlayout84$$Flexlayout85$$ThemeBlueLayout$$Flexlayout247_, pageInstance);
   pageInstance.themeBlueLayout = this;
 }
@@ -143,7 +150,9 @@ $Flexlayout84$$Flexlayout85$$ThemeBlueLayout.$$styleContext = {
 const $Flexlayout84$$Flexlayout85$$ThemeBlueLayout_ = FlexLayout($Flexlayout84$$Flexlayout85$$ThemeBlueLayout);
 
 function $Flexlayout84$$Flexlayout85$$ThemeBlueLayout$$Flexlayout247(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout84$$Flexlayout85$$ThemeBlueLayout$$Flexlayout247.$$styleContext = {
   classNames: ".flexLayout",
@@ -165,7 +174,9 @@ $Flexlayout84$$Flexlayout85$$ThemeBlueLayout$$Flexlayout247.$$styleContext = {
 const $Flexlayout84$$Flexlayout85$$ThemeBlueLayout$$Flexlayout247_ = FlexLayout($Flexlayout84$$Flexlayout85$$ThemeBlueLayout$$Flexlayout247);
 
 function $Flexlayout84$$Flexlayout85$$ThemePurpleLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout247_1", $Flexlayout84$$Flexlayout85$$ThemePurpleLayout$$Flexlayout247_1_, pageInstance);
   pageInstance.themePurpleLayout = this;
 }
@@ -184,7 +195,9 @@ $Flexlayout84$$Flexlayout85$$ThemePurpleLayout.$$styleContext = {
 const $Flexlayout84$$Flexlayout85$$ThemePurpleLayout_ = FlexLayout($Flexlayout84$$Flexlayout85$$ThemePurpleLayout);
 
 function $Flexlayout84$$Flexlayout85$$ThemePurpleLayout$$Flexlayout247_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout84$$Flexlayout85$$ThemePurpleLayout$$Flexlayout247_1.$$styleContext = {
   classNames: ".flexLayout",
@@ -206,7 +219,9 @@ $Flexlayout84$$Flexlayout85$$ThemePurpleLayout$$Flexlayout247_1.$$styleContext =
 const $Flexlayout84$$Flexlayout85$$ThemePurpleLayout$$Flexlayout247_1_ = FlexLayout($Flexlayout84$$Flexlayout85$$ThemePurpleLayout$$Flexlayout247_1);
 
 function $Flexlayout84$$HorizontalDivider(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout84$$HorizontalDivider.$$styleContext = {
   classNames: ".flexLayout",
@@ -226,7 +241,9 @@ $Flexlayout84$$HorizontalDivider.$$styleContext = {
 const $Flexlayout84$$HorizontalDivider_ = HorizontalDivider($Flexlayout84$$HorizontalDivider);
 
 function $Flexlayout84$$Flexlayout85_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "txtNotification", $Flexlayout84$$Flexlayout85_1$$TxtNotification_, pageInstance);
   addChild.call(this, "switch1", $Flexlayout84$$Flexlayout85_1$$Switch1_, pageInstance);
 }
@@ -249,7 +266,8 @@ const $Flexlayout84$$Flexlayout85_1_ = FlexLayout($Flexlayout84$$Flexlayout85_1)
 
 function $Flexlayout84$$Flexlayout85_1$$TxtNotification(_super, pageInstance) {
   _super(this, {
-    text: "Notification"
+    text: "Notification",
+    skipDefaults: true
   });
   pageInstance.txtNotification = this;
 }
@@ -267,7 +285,9 @@ $Flexlayout84$$Flexlayout85_1$$TxtNotification.$$styleContext = {
 const $Flexlayout84$$Flexlayout85_1$$TxtNotification_ = TextView($Flexlayout84$$Flexlayout85_1$$TxtNotification);
 
 function $Flexlayout84$$Flexlayout85_1$$Switch1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout84$$Flexlayout85_1$$Switch1.$$styleContext = {
   classNames: ".switch",
@@ -280,7 +300,9 @@ $Flexlayout84$$Flexlayout85_1$$Switch1.$$styleContext = {
 const $Flexlayout84$$Flexlayout85_1$$Switch1_ = Switch($Flexlayout84$$Flexlayout85_1$$Switch1);
 
 function $Flexlayout84$$Horizontaldivider_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout84$$Horizontaldivider_1.$$styleContext = {
   classNames: ".flexLayout",
@@ -300,7 +322,9 @@ $Flexlayout84$$Horizontaldivider_1.$$styleContext = {
 const $Flexlayout84$$Horizontaldivider_1_ = HorizontalDivider($Flexlayout84$$Horizontaldivider_1);
 
 function $Flexlayout84$$LayoutFinger(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "txtFingerPrint", $Flexlayout84$$LayoutFinger$$TxtFingerPrint_, pageInstance);
   addChild.call(this, "switchFinger", $Flexlayout84$$LayoutFinger$$SwitchFinger_, pageInstance);
   pageInstance.layoutFinger = this;
@@ -324,7 +348,8 @@ const $Flexlayout84$$LayoutFinger_ = FlexLayout($Flexlayout84$$LayoutFinger);
 
 function $Flexlayout84$$LayoutFinger$$TxtFingerPrint(_super, pageInstance) {
   _super(this, {
-    text: "FingerPrint"
+    text: "FingerPrint",
+    skipDefaults: true
   });
   pageInstance.txtFingerPrint = this;
 }
@@ -342,7 +367,9 @@ $Flexlayout84$$LayoutFinger$$TxtFingerPrint.$$styleContext = {
 const $Flexlayout84$$LayoutFinger$$TxtFingerPrint_ = TextView($Flexlayout84$$LayoutFinger$$TxtFingerPrint);
 
 function $Flexlayout84$$LayoutFinger$$SwitchFinger(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.switchFinger = this;
 }
 $Flexlayout84$$LayoutFinger$$SwitchFinger.$$styleContext = {
@@ -356,7 +383,9 @@ $Flexlayout84$$LayoutFinger$$SwitchFinger.$$styleContext = {
 const $Flexlayout84$$LayoutFinger$$SwitchFinger_ = Switch($Flexlayout84$$LayoutFinger$$SwitchFinger);
 
 function $Flexlayout84$$HorizontalDividerFingerprint(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.horizontalDividerFingerprint = this;
 }
 $Flexlayout84$$HorizontalDividerFingerprint.$$styleContext = {
@@ -377,7 +406,9 @@ $Flexlayout84$$HorizontalDividerFingerprint.$$styleContext = {
 const $Flexlayout84$$HorizontalDividerFingerprint_ = HorizontalDivider($Flexlayout84$$HorizontalDividerFingerprint);
 
 function $Flexlayout84$$LayoutInstabug(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "txtInstabug", $Flexlayout84$$LayoutInstabug$$TxtInstabug_, pageInstance);
   addChild.call(this, "switchFinger", $Flexlayout84$$LayoutInstabug$$SwitchFinger_, pageInstance);
   pageInstance.layoutInstabug = this;
@@ -401,7 +432,8 @@ const $Flexlayout84$$LayoutInstabug_ = FlexLayout($Flexlayout84$$LayoutInstabug)
 
 function $Flexlayout84$$LayoutInstabug$$TxtInstabug(_super, pageInstance) {
   _super(this, {
-    text: "Instabug"
+    text: "Instabug",
+    skipDefaults: true
   });
   pageInstance.txtInstabug = this;
 }
@@ -419,7 +451,9 @@ $Flexlayout84$$LayoutInstabug$$TxtInstabug.$$styleContext = {
 const $Flexlayout84$$LayoutInstabug$$TxtInstabug_ = TextView($Flexlayout84$$LayoutInstabug$$TxtInstabug);
 
 function $Flexlayout84$$LayoutInstabug$$SwitchFinger(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.switchFinger = this;
 }
 $Flexlayout84$$LayoutInstabug$$SwitchFinger.$$styleContext = {
@@ -433,7 +467,9 @@ $Flexlayout84$$LayoutInstabug$$SwitchFinger.$$styleContext = {
 const $Flexlayout84$$LayoutInstabug$$SwitchFinger_ = Switch($Flexlayout84$$LayoutInstabug$$SwitchFinger);
 
 function $Flexlayout84$$HorizontalDividerInstabug(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.horizontalDividerInstabug = this;
 }
 $Flexlayout84$$HorizontalDividerInstabug.$$styleContext = {
@@ -454,7 +490,9 @@ $Flexlayout84$$HorizontalDividerInstabug.$$styleContext = {
 const $Flexlayout84$$HorizontalDividerInstabug_ = HorizontalDivider($Flexlayout84$$HorizontalDividerInstabug);
 
 function $Flexlayout84$$LayoutFabric(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "txtFabric", $Flexlayout84$$LayoutFabric$$TxtFabric_, pageInstance);
   addChild.call(this, "switchFinger", $Flexlayout84$$LayoutFabric$$SwitchFinger_, pageInstance);
   pageInstance.layoutFabric = this;
@@ -478,7 +516,8 @@ const $Flexlayout84$$LayoutFabric_ = FlexLayout($Flexlayout84$$LayoutFabric);
 
 function $Flexlayout84$$LayoutFabric$$TxtFabric(_super, pageInstance) {
   _super(this, {
-    text: "Fabric"
+    text: "Fabric",
+    skipDefaults: true
   });
   pageInstance.txtFabric = this;
 }
@@ -496,7 +535,9 @@ $Flexlayout84$$LayoutFabric$$TxtFabric.$$styleContext = {
 const $Flexlayout84$$LayoutFabric$$TxtFabric_ = TextView($Flexlayout84$$LayoutFabric$$TxtFabric);
 
 function $Flexlayout84$$LayoutFabric$$SwitchFinger(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.switchFinger = this;
 }
 $Flexlayout84$$LayoutFabric$$SwitchFinger.$$styleContext = {
@@ -510,7 +551,9 @@ $Flexlayout84$$LayoutFabric$$SwitchFinger.$$styleContext = {
 const $Flexlayout84$$LayoutFabric$$SwitchFinger_ = Switch($Flexlayout84$$LayoutFabric$$SwitchFinger);
 
 function $Flexlayout84$$HorizontalDividerFabric(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.horizontalDividerFabric = this;
 }
 $Flexlayout84$$HorizontalDividerFabric.$$styleContext = {
@@ -531,7 +574,9 @@ $Flexlayout84$$HorizontalDividerFabric.$$styleContext = {
 const $Flexlayout84$$HorizontalDividerFabric_ = HorizontalDivider($Flexlayout84$$HorizontalDividerFabric);
 
 function $Flexlayout84$$LayoutFirabase(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "txtFirebase", $Flexlayout84$$LayoutFirabase$$TxtFirebase_, pageInstance);
   addChild.call(this, "switchFinger", $Flexlayout84$$LayoutFirabase$$SwitchFinger_, pageInstance);
   pageInstance.layoutFirabase = this;
@@ -555,7 +600,8 @@ const $Flexlayout84$$LayoutFirabase_ = FlexLayout($Flexlayout84$$LayoutFirabase)
 
 function $Flexlayout84$$LayoutFirabase$$TxtFirebase(_super, pageInstance) {
   _super(this, {
-    text: "Firebase"
+    text: "Firebase",
+    skipDefaults: true
   });
   pageInstance.txtFirebase = this;
 }
@@ -573,7 +619,9 @@ $Flexlayout84$$LayoutFirabase$$TxtFirebase.$$styleContext = {
 const $Flexlayout84$$LayoutFirabase$$TxtFirebase_ = TextView($Flexlayout84$$LayoutFirabase$$TxtFirebase);
 
 function $Flexlayout84$$LayoutFirabase$$SwitchFinger(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.switchFinger = this;
 }
 $Flexlayout84$$LayoutFirabase$$SwitchFinger.$$styleContext = {
@@ -587,7 +635,9 @@ $Flexlayout84$$LayoutFirabase$$SwitchFinger.$$styleContext = {
 const $Flexlayout84$$LayoutFirabase$$SwitchFinger_ = Switch($Flexlayout84$$LayoutFirabase$$SwitchFinger);
 
 function $Flexlayout84$$LayoutAbout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "txtAbout", $Flexlayout84$$LayoutAbout$$TxtAbout_, pageInstance);
   addChild.call(this, "txtNewVersion", $Flexlayout84$$LayoutAbout$$TxtNewVersion_, pageInstance);
   pageInstance.layoutAbout = this;
@@ -611,7 +661,8 @@ const $Flexlayout84$$LayoutAbout_ = FlexLayout($Flexlayout84$$LayoutAbout);
 
 function $Flexlayout84$$LayoutAbout$$TxtAbout(_super, pageInstance) {
   _super(this, {
-    text: "About"
+    text: "About",
+    skipDefaults: true
   });
   pageInstance.txtAbout = this;
 }
@@ -630,7 +681,8 @@ const $Flexlayout84$$LayoutAbout$$TxtAbout_ = TextView($Flexlayout84$$LayoutAbou
 
 function $Flexlayout84$$LayoutAbout$$TxtNewVersion(_super, pageInstance) {
   _super(this, {
-    text: "New Version Avaliable!"
+    text: "New Version Avaliable!",
+    skipDefaults: true
   });
   pageInstance.txtNewVersion = this;
 }
@@ -653,7 +705,8 @@ const $Flexlayout84$$LayoutAbout$$TxtNewVersion_ = TextView($Flexlayout84$$Layou
 
 function $Flexlayout84$$TxtAboutDesc(_super, pageInstance) {
   _super(this, {
-    text: ""
+    text: "",
+    skipDefaults: true
   });
   pageInstance.txtAboutDesc = this;
 }
@@ -676,7 +729,9 @@ $Flexlayout84$$TxtAboutDesc.$$styleContext = {
 const $Flexlayout84$$TxtAboutDesc_ = TextView($Flexlayout84$$TxtAboutDesc);
 
 function $Flexlayout84$$SignoutLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout731", $Flexlayout84$$SignoutLayout$$Flexlayout731_, pageInstance);
   addChild.call(this, "lblSignOut", $Flexlayout84$$SignoutLayout$$LblSignOut_, pageInstance);
   pageInstance.signoutLayout = this;
@@ -701,7 +756,9 @@ $Flexlayout84$$SignoutLayout.$$styleContext = {
 const $Flexlayout84$$SignoutLayout_ = FlexLayout($Flexlayout84$$SignoutLayout);
 
 function $Flexlayout84$$SignoutLayout$$Flexlayout731(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout84$$SignoutLayout$$Flexlayout731.$$styleContext = {
   classNames: ".flexLayout",
@@ -722,7 +779,8 @@ const $Flexlayout84$$SignoutLayout$$Flexlayout731_ = HorizontalDivider($Flexlayo
 
 function $Flexlayout84$$SignoutLayout$$LblSignOut(_super, pageInstance) {
   _super(this, {
-    text: "Sign out"
+    text: "Sign out",
+    skipDefaults: true
   });
   pageInstance.lblSignOut = this;
 }
@@ -748,6 +806,7 @@ const $Flexlayout84$$SignoutLayout$$LblSignOut_ = TextView($Flexlayout84$$Signou
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "Settings";
+
 }
 
 module.exports = $PgSettings_;

@@ -61,7 +61,9 @@ $PgOutOfOffice.$$styleContext = {
 const $PgOutOfOffice_ = Page($PgOutOfOffice);
 
 function $LayoutHeaderBar(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.layoutHeaderBar = this;
 }
 $LayoutHeaderBar.$$styleContext = {
@@ -79,7 +81,9 @@ $LayoutHeaderBar.$$styleContext = {
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
 
 function $MainContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout48", $MainContainer$$Flexlayout48_, pageInstance);
   addChild.call(this, "dateContainer", $MainContainer$$DateContainer_, pageInstance);
   addChild.call(this, "intExtContainer", $MainContainer$$IntExtContainer_, pageInstance);
@@ -102,7 +106,9 @@ $MainContainer.$$styleContext = {
 const $MainContainer_ = FlexLayout($MainContainer);
 
 function $MainContainer$$Flexlayout48(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "outOfOffice", $MainContainer$$Flexlayout48$$OutOfOffice_, pageInstance);
 }
 $MainContainer$$Flexlayout48.$$styleContext = {
@@ -117,7 +123,9 @@ $MainContainer$$Flexlayout48.$$styleContext = {
 const $MainContainer$$Flexlayout48_ = FlexLayout($MainContainer$$Flexlayout48);
 
 function $MainContainer$$Flexlayout48$$OutOfOffice(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.outOfOffice = this;
 }
 $MainContainer$$Flexlayout48$$OutOfOffice.$$styleContext = {
@@ -139,7 +147,9 @@ $MainContainer$$Flexlayout48$$OutOfOffice.$$styleContext = {
 const $MainContainer$$Flexlayout48$$OutOfOffice_ = ListItemSwitch($MainContainer$$Flexlayout48$$OutOfOffice);
 
 function $MainContainer$$DateContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "startTitle", $MainContainer$$DateContainer$$StartTitle_, pageInstance);
   addChild.call(this, "flexlayout742", $MainContainer$$DateContainer$$Flexlayout742_, pageInstance);
   addChild.call(this, "endTitle", $MainContainer$$DateContainer$$EndTitle_, pageInstance);
@@ -163,7 +173,8 @@ const $MainContainer$$DateContainer_ = FlexLayout($MainContainer$$DateContainer)
 
 function $MainContainer$$DateContainer$$StartTitle(_super, pageInstance) {
   _super(this, {
-    text: "START"
+    text: "START",
+    skipDefaults: true
   });
   pageInstance.startTitle = this;
 }
@@ -178,7 +189,9 @@ $MainContainer$$DateContainer$$StartTitle.$$styleContext = {
 const $MainContainer$$DateContainer$$StartTitle_ = TextView($MainContainer$$DateContainer$$StartTitle);
 
 function $MainContainer$$DateContainer$$Flexlayout742(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "startDatePicker", $MainContainer$$DateContainer$$Flexlayout742$$StartDatePicker_, pageInstance);
   addChild.call(this, "startTimePicker", $MainContainer$$DateContainer$$Flexlayout742$$StartTimePicker_, pageInstance);
 }
@@ -197,7 +210,9 @@ $MainContainer$$DateContainer$$Flexlayout742.$$styleContext = {
 const $MainContainer$$DateContainer$$Flexlayout742_ = FlexLayout($MainContainer$$DateContainer$$Flexlayout742);
 
 function $MainContainer$$DateContainer$$Flexlayout742$$StartDatePicker(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.startDatePicker = this;
 }
 $MainContainer$$DateContainer$$Flexlayout742$$StartDatePicker.$$styleContext = {
@@ -216,7 +231,9 @@ $MainContainer$$DateContainer$$Flexlayout742$$StartDatePicker.$$styleContext = {
 const $MainContainer$$DateContainer$$Flexlayout742$$StartDatePicker_ = PickerContainer($MainContainer$$DateContainer$$Flexlayout742$$StartDatePicker);
 
 function $MainContainer$$DateContainer$$Flexlayout742$$StartTimePicker(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.startTimePicker = this;
 }
 $MainContainer$$DateContainer$$Flexlayout742$$StartTimePicker.$$styleContext = {
@@ -236,7 +253,8 @@ const $MainContainer$$DateContainer$$Flexlayout742$$StartTimePicker_ = PickerCon
 
 function $MainContainer$$DateContainer$$EndTitle(_super, pageInstance) {
   _super(this, {
-    text: "END"
+    text: "END",
+    skipDefaults: true
   });
   pageInstance.endTitle = this;
 }
@@ -253,7 +271,9 @@ $MainContainer$$DateContainer$$EndTitle.$$styleContext = {
 const $MainContainer$$DateContainer$$EndTitle_ = TextView($MainContainer$$DateContainer$$EndTitle);
 
 function $MainContainer$$DateContainer$$Flexlayout742_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "endDatePicker", $MainContainer$$DateContainer$$Flexlayout742_1$$EndDatePicker_, pageInstance);
   addChild.call(this, "endTimePicker", $MainContainer$$DateContainer$$Flexlayout742_1$$EndTimePicker_, pageInstance);
 }
@@ -272,7 +292,9 @@ $MainContainer$$DateContainer$$Flexlayout742_1.$$styleContext = {
 const $MainContainer$$DateContainer$$Flexlayout742_1_ = FlexLayout($MainContainer$$DateContainer$$Flexlayout742_1);
 
 function $MainContainer$$DateContainer$$Flexlayout742_1$$EndDatePicker(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.endDatePicker = this;
 }
 $MainContainer$$DateContainer$$Flexlayout742_1$$EndDatePicker.$$styleContext = {
@@ -291,7 +313,9 @@ $MainContainer$$DateContainer$$Flexlayout742_1$$EndDatePicker.$$styleContext = {
 const $MainContainer$$DateContainer$$Flexlayout742_1$$EndDatePicker_ = PickerContainer($MainContainer$$DateContainer$$Flexlayout742_1$$EndDatePicker);
 
 function $MainContainer$$DateContainer$$Flexlayout742_1$$EndTimePicker(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.endTimePicker = this;
 }
 $MainContainer$$DateContainer$$Flexlayout742_1$$EndTimePicker.$$styleContext = {
@@ -310,7 +334,9 @@ $MainContainer$$DateContainer$$Flexlayout742_1$$EndTimePicker.$$styleContext = {
 const $MainContainer$$DateContainer$$Flexlayout742_1$$EndTimePicker_ = PickerContainer($MainContainer$$DateContainer$$Flexlayout742_1$$EndTimePicker);
 
 function $MainContainer$$IntExtContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "intExtTitle", $MainContainer$$IntExtContainer$$IntExtTitle_, pageInstance);
   addChild.call(this, "internal", $MainContainer$$IntExtContainer$$Internal_, pageInstance);
   addChild.call(this, "horizontalDivider", $MainContainer$$IntExtContainer$$HorizontalDivider_, pageInstance);
@@ -334,7 +360,8 @@ const $MainContainer$$IntExtContainer_ = FlexLayout($MainContainer$$IntExtContai
 
 function $MainContainer$$IntExtContainer$$IntExtTitle(_super, pageInstance) {
   _super(this, {
-    text: "LOREM IPSUM"
+    text: "LOREM IPSUM",
+    skipDefaults: true
   });
   pageInstance.intExtTitle = this;
 }
@@ -349,7 +376,9 @@ $MainContainer$$IntExtContainer$$IntExtTitle.$$styleContext = {
 const $MainContainer$$IntExtContainer$$IntExtTitle_ = TextView($MainContainer$$IntExtContainer$$IntExtTitle);
 
 function $MainContainer$$IntExtContainer$$Internal(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.internal = this;
 }
 $MainContainer$$IntExtContainer$$Internal.$$styleContext = {
@@ -371,7 +400,9 @@ $MainContainer$$IntExtContainer$$Internal.$$styleContext = {
 const $MainContainer$$IntExtContainer$$Internal_ = ListItemSwitch($MainContainer$$IntExtContainer$$Internal);
 
 function $MainContainer$$IntExtContainer$$HorizontalDivider(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $MainContainer$$IntExtContainer$$HorizontalDivider.$$styleContext = {
   classNames: ".flexLayout",
@@ -391,7 +422,9 @@ $MainContainer$$IntExtContainer$$HorizontalDivider.$$styleContext = {
 const $MainContainer$$IntExtContainer$$HorizontalDivider_ = HorizontalDivider($MainContainer$$IntExtContainer$$HorizontalDivider);
 
 function $MainContainer$$IntExtContainer$$External(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.external = this;
 }
 $MainContainer$$IntExtContainer$$External.$$styleContext = {
@@ -413,7 +446,9 @@ $MainContainer$$IntExtContainer$$External.$$styleContext = {
 const $MainContainer$$IntExtContainer$$External_ = ListItemSwitch($MainContainer$$IntExtContainer$$External);
 
 function $MainContainer$$NoteContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout97", $MainContainer$$NoteContainer$$Flexlayout97_, pageInstance);
   addChild.call(this, "description", $MainContainer$$NoteContainer$$Description_, pageInstance);
 }
@@ -434,7 +469,9 @@ $MainContainer$$NoteContainer.$$styleContext = {
 const $MainContainer$$NoteContainer_ = FlexLayout($MainContainer$$NoteContainer);
 
 function $MainContainer$$NoteContainer$$Flexlayout97(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "noteTitle", $MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle_, pageInstance);
   addChild.call(this, "imageview44", $MainContainer$$NoteContainer$$Flexlayout97$$Imageview44_, pageInstance);
 }
@@ -452,7 +489,8 @@ const $MainContainer$$NoteContainer$$Flexlayout97_ = FlexLayout($MainContainer$$
 
 function $MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle(_super, pageInstance) {
   _super(this, {
-    text: "NOTE"
+    text: "NOTE",
+    skipDefaults: true
   });
   pageInstance.noteTitle = this;
 }
@@ -470,7 +508,9 @@ $MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle.$$styleContext = {
 const $MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle_ = TextView($MainContainer$$NoteContainer$$Flexlayout97$$NoteTitle);
 
 function $MainContainer$$NoteContainer$$Flexlayout97$$Imageview44(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $MainContainer$$NoteContainer$$Flexlayout97$$Imageview44.$$styleContext = {
   classNames: ".imageView",
@@ -485,7 +525,8 @@ const $MainContainer$$NoteContainer$$Flexlayout97$$Imageview44_ = ImageView($Mai
 
 function $MainContainer$$NoteContainer$$Description(_super, pageInstance) {
   _super(this, {
-    text: ""
+    text: "",
+    skipDefaults: true
   });
   pageInstance.description = this;
 }
@@ -513,6 +554,7 @@ const $MainContainer$$NoteContainer$$Description_ = TextArea($MainContainer$$Not
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
+
 }
 
 module.exports = $PgOutOfOffice_;

@@ -54,7 +54,9 @@ $PgMeetingRoomReservations.$$styleContext = {
 const $PgMeetingRoomReservations_ = Page($PgMeetingRoomReservations);
 
 function $LayoutHeaderBar(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.layoutHeaderBar = this;
 }
 $LayoutHeaderBar.$$styleContext = {
@@ -72,7 +74,9 @@ $LayoutHeaderBar.$$styleContext = {
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
 
 function $MainLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "comingSoon", $MainLayout$$ComingSoon_, pageInstance);
   pageInstance.mainLayout = this;
 }
@@ -93,7 +97,9 @@ $MainLayout.$$styleContext = {
 const $MainLayout_ = FlexLayout($MainLayout);
 
 function $MainLayout$$ComingSoon(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.comingSoon = this;
 }
 $MainLayout$$ComingSoon.$$styleContext = {
@@ -118,6 +124,7 @@ const $MainLayout$$ComingSoon_ = ImageView($MainLayout$$ComingSoon);
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
+
 }
 
 module.exports = $PgMeetingRoomReservations_;

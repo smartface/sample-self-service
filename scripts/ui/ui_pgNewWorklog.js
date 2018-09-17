@@ -58,7 +58,9 @@ $PgNewWorklog.$$styleContext = {
 const $PgNewWorklog_ = Page($PgNewWorklog);
 
 function $Flexlayout35(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "label39", $Flexlayout35$$Label39_, pageInstance);
   addChild.call(this, "pickerContainer", $Flexlayout35$$PickerContainer_, pageInstance);
   addChild.call(this, "pickercontainer_1", $Flexlayout35$$Pickercontainer_1_, pageInstance);
@@ -82,7 +84,8 @@ const $Flexlayout35_ = FlexLayout($Flexlayout35);
 
 function $Flexlayout35$$Label39(_super, pageInstance) {
   _super(this, {
-    text: "WORK INFO"
+    text: "WORK INFO",
+    skipDefaults: true
   });
 }
 $Flexlayout35$$Label39.$$styleContext = {
@@ -99,7 +102,9 @@ $Flexlayout35$$Label39.$$styleContext = {
 const $Flexlayout35$$Label39_ = TextView($Flexlayout35$$Label39);
 
 function $Flexlayout35$$PickerContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout35$$PickerContainer.$$styleContext = {
   classNames: ".flexLayout",
@@ -118,7 +123,9 @@ $Flexlayout35$$PickerContainer.$$styleContext = {
 const $Flexlayout35$$PickerContainer_ = PickerContainer($Flexlayout35$$PickerContainer);
 
 function $Flexlayout35$$Pickercontainer_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout35$$Pickercontainer_1.$$styleContext = {
   classNames: ".flexLayout",
@@ -136,7 +143,9 @@ $Flexlayout35$$Pickercontainer_1.$$styleContext = {
 const $Flexlayout35$$Pickercontainer_1_ = PickerContainer($Flexlayout35$$Pickercontainer_1);
 
 function $Flexlayout35$$Flexlayout51(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout52", $Flexlayout35$$Flexlayout51$$Flexlayout52_, pageInstance);
   addChild.call(this, "flexlayout52_1", $Flexlayout35$$Flexlayout51$$Flexlayout52_1_, pageInstance);
 }
@@ -153,7 +162,9 @@ $Flexlayout35$$Flexlayout51.$$styleContext = {
 const $Flexlayout35$$Flexlayout51_ = FlexLayout($Flexlayout35$$Flexlayout51);
 
 function $Flexlayout35$$Flexlayout51$$Flexlayout52(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout35$$Flexlayout51$$Flexlayout52.$$styleContext = {
   classNames: ".flexLayout",
@@ -171,7 +182,9 @@ $Flexlayout35$$Flexlayout51$$Flexlayout52.$$styleContext = {
 const $Flexlayout35$$Flexlayout51$$Flexlayout52_ = PickerContainer($Flexlayout35$$Flexlayout51$$Flexlayout52);
 
 function $Flexlayout35$$Flexlayout51$$Flexlayout52_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout35$$Flexlayout51$$Flexlayout52_1.$$styleContext = {
   classNames: ".flexLayout",
@@ -190,7 +203,9 @@ $Flexlayout35$$Flexlayout51$$Flexlayout52_1.$$styleContext = {
 const $Flexlayout35$$Flexlayout51$$Flexlayout52_1_ = PickerContainer($Flexlayout35$$Flexlayout51$$Flexlayout52_1);
 
 function $Flexlayout66(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout76", $Flexlayout66$$Flexlayout76_, pageInstance);
   addChild.call(this, "textbox1", $Flexlayout66$$Textbox1_, pageInstance);
 }
@@ -214,7 +229,9 @@ $Flexlayout66.$$styleContext = {
 const $Flexlayout66_ = FlexLayout($Flexlayout66);
 
 function $Flexlayout66$$Flexlayout76(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "label85", $Flexlayout66$$Flexlayout76$$Label85_, pageInstance);
   addChild.call(this, "imageview17", $Flexlayout66$$Flexlayout76$$Imageview17_, pageInstance);
 }
@@ -234,7 +251,8 @@ const $Flexlayout66$$Flexlayout76_ = FlexLayout($Flexlayout66$$Flexlayout76);
 
 function $Flexlayout66$$Flexlayout76$$Label85(_super, pageInstance) {
   _super(this, {
-    text: "DESCRIPTION"
+    text: "DESCRIPTION",
+    skipDefaults: true
   });
 }
 $Flexlayout66$$Flexlayout76$$Label85.$$styleContext = {
@@ -254,7 +272,9 @@ $Flexlayout66$$Flexlayout76$$Label85.$$styleContext = {
 const $Flexlayout66$$Flexlayout76$$Label85_ = TextView($Flexlayout66$$Flexlayout76$$Label85);
 
 function $Flexlayout66$$Flexlayout76$$Imageview17(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout66$$Flexlayout76$$Imageview17.$$styleContext = {
   classNames: ".imageView",
@@ -269,7 +289,8 @@ const $Flexlayout66$$Flexlayout76$$Imageview17_ = ImageView($Flexlayout66$$Flexl
 
 function $Flexlayout66$$Textbox1(_super, pageInstance) {
   _super(this, {
-    text: "Description"
+    text: "Description",
+    skipDefaults: true
   });
 }
 $Flexlayout66$$Textbox1.$$styleContext = {
@@ -291,7 +312,8 @@ const $Flexlayout66$$Textbox1_ = TextBox($Flexlayout66$$Textbox1);
 
 function $Button1(_super, pageInstance) {
   _super(this, {
-    text: "SUBMIT"
+    text: "SUBMIT",
+    skipDefaults: true
   });
 }
 $Button1.$$styleContext = {
@@ -319,6 +341,7 @@ const $Button1_ = Button($Button1);
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "NEW WORK LOG";
+
 }
 
 module.exports = $PgNewWorklog_;

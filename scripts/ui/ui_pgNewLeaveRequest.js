@@ -56,7 +56,9 @@ $PgNewLeaveRequest.$$styleContext = {
 const $PgNewLeaveRequest_ = Page($PgNewLeaveRequest);
 
 function $Flexlayout1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "informationTitle", $Flexlayout1$$InformationTitle_, pageInstance);
   addChild.call(this, "flexlayout2", $Flexlayout1$$Flexlayout2_, pageInstance);
 }
@@ -79,7 +81,8 @@ const $Flexlayout1_ = FlexLayout($Flexlayout1);
 
 function $Flexlayout1$$InformationTitle(_super, pageInstance) {
   _super(this, {
-    text: "WORK INFORMATION"
+    text: "WORK INFORMATION",
+    skipDefaults: true
   });
   pageInstance.informationTitle = this;
 }
@@ -97,7 +100,9 @@ $Flexlayout1$$InformationTitle.$$styleContext = {
 const $Flexlayout1$$InformationTitle_ = TextView($Flexlayout1$$InformationTitle);
 
 function $Flexlayout1$$Flexlayout2(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexType", $Flexlayout1$$Flexlayout2$$FlexType_, pageInstance);
   addChild.call(this, "flexDate", $Flexlayout1$$Flexlayout2$$FlexDate_, pageInstance);
 }
@@ -115,7 +120,9 @@ $Flexlayout1$$Flexlayout2.$$styleContext = {
 const $Flexlayout1$$Flexlayout2_ = FlexLayout($Flexlayout1$$Flexlayout2);
 
 function $Flexlayout1$$Flexlayout2$$FlexType(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "leaveTypePicker", $Flexlayout1$$Flexlayout2$$FlexType$$LeaveTypePicker_, pageInstance);
   pageInstance.flexType = this;
 }
@@ -134,7 +141,9 @@ $Flexlayout1$$Flexlayout2$$FlexType.$$styleContext = {
 const $Flexlayout1$$Flexlayout2$$FlexType_ = FlexLayout($Flexlayout1$$Flexlayout2$$FlexType);
 
 function $Flexlayout1$$Flexlayout2$$FlexType$$LeaveTypePicker(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.leaveTypePicker = this;
 }
 $Flexlayout1$$Flexlayout2$$FlexType$$LeaveTypePicker.$$styleContext = {
@@ -153,7 +162,9 @@ $Flexlayout1$$Flexlayout2$$FlexType$$LeaveTypePicker.$$styleContext = {
 const $Flexlayout1$$Flexlayout2$$FlexType$$LeaveTypePicker_ = PickerContainer($Flexlayout1$$Flexlayout2$$FlexType$$LeaveTypePicker);
 
 function $Flexlayout1$$Flexlayout2$$FlexDate(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "selectDatePicker", $Flexlayout1$$Flexlayout2$$FlexDate$$SelectDatePicker_, pageInstance);
   pageInstance.flexDate = this;
 }
@@ -172,7 +183,9 @@ $Flexlayout1$$Flexlayout2$$FlexDate.$$styleContext = {
 const $Flexlayout1$$Flexlayout2$$FlexDate_ = FlexLayout($Flexlayout1$$Flexlayout2$$FlexDate);
 
 function $Flexlayout1$$Flexlayout2$$FlexDate$$SelectDatePicker(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.selectDatePicker = this;
 }
 $Flexlayout1$$Flexlayout2$$FlexDate$$SelectDatePicker.$$styleContext = {
@@ -191,7 +204,9 @@ $Flexlayout1$$Flexlayout2$$FlexDate$$SelectDatePicker.$$styleContext = {
 const $Flexlayout1$$Flexlayout2$$FlexDate$$SelectDatePicker_ = PickerContainer($Flexlayout1$$Flexlayout2$$FlexDate$$SelectDatePicker);
 
 function $Flexlayout66(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout76", $Flexlayout66$$Flexlayout76_, pageInstance);
   addChild.call(this, "flexLayout1", $Flexlayout66$$FlexLayout1_, pageInstance);
 }
@@ -215,7 +230,9 @@ $Flexlayout66.$$styleContext = {
 const $Flexlayout66_ = FlexLayout($Flexlayout66);
 
 function $Flexlayout66$$Flexlayout76(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "label85", $Flexlayout66$$Flexlayout76$$Label85_, pageInstance);
   addChild.call(this, "itemSpeech", $Flexlayout66$$Flexlayout76$$ItemSpeech_, pageInstance);
 }
@@ -235,7 +252,8 @@ const $Flexlayout66$$Flexlayout76_ = FlexLayout($Flexlayout66$$Flexlayout76);
 
 function $Flexlayout66$$Flexlayout76$$Label85(_super, pageInstance) {
   _super(this, {
-    text: "DESCRIPTION"
+    text: "DESCRIPTION",
+    skipDefaults: true
   });
 }
 $Flexlayout66$$Flexlayout76$$Label85.$$styleContext = {
@@ -255,7 +273,9 @@ $Flexlayout66$$Flexlayout76$$Label85.$$styleContext = {
 const $Flexlayout66$$Flexlayout76$$Label85_ = TextView($Flexlayout66$$Flexlayout76$$Label85);
 
 function $Flexlayout66$$Flexlayout76$$ItemSpeech(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.itemSpeech = this;
 }
 $Flexlayout66$$Flexlayout76$$ItemSpeech.$$styleContext = {
@@ -274,7 +294,9 @@ $Flexlayout66$$Flexlayout76$$ItemSpeech.$$styleContext = {
 const $Flexlayout66$$Flexlayout76$$ItemSpeech_ = ItemSpeech($Flexlayout66$$Flexlayout76$$ItemSpeech);
 
 function $Flexlayout66$$FlexLayout1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "textbox1", $Flexlayout66$$FlexLayout1$$Textbox1_, pageInstance);
 }
 $Flexlayout66$$FlexLayout1.$$styleContext = {
@@ -293,7 +315,8 @@ const $Flexlayout66$$FlexLayout1_ = FlexLayout($Flexlayout66$$FlexLayout1);
 
 function $Flexlayout66$$FlexLayout1$$Textbox1(_super, pageInstance) {
   _super(this, {
-    text: ""
+    text: "",
+    skipDefaults: true
   });
   pageInstance.textbox1 = this;
 }
@@ -319,7 +342,9 @@ $Flexlayout66$$FlexLayout1$$Textbox1.$$styleContext = {
 const $Flexlayout66$$FlexLayout1$$Textbox1_ = TextArea($Flexlayout66$$FlexLayout1$$Textbox1);
 
 function $BottomContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "btnRequest", $BottomContainer$$BtnRequest_, pageInstance);
 }
 $BottomContainer.$$styleContext = {
@@ -334,7 +359,8 @@ const $BottomContainer_ = FlexLayout($BottomContainer);
 
 function $BottomContainer$$BtnRequest(_super, pageInstance) {
   _super(this, {
-    text: "REQUEST"
+    text: "REQUEST",
+    skipDefaults: true
   });
   pageInstance.btnRequest = this;
 }
@@ -360,6 +386,7 @@ const $BottomContainer$$BtnRequest_ = Button($BottomContainer$$BtnRequest);
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "LEAVE REQUEST";
+
 }
 
 module.exports = $PgNewLeaveRequest_;

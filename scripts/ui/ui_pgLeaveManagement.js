@@ -60,7 +60,9 @@ $PgLeaveManagement.$$styleContext = {
 const $PgLeaveManagement_ = Page($PgLeaveManagement);
 
 function $LayoutHeaderBar(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.layoutHeaderBar = this;
 }
 $LayoutHeaderBar.$$styleContext = {
@@ -78,7 +80,9 @@ $LayoutHeaderBar.$$styleContext = {
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
 
 function $Flexlayout1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout30", $Flexlayout1$$Flexlayout30_, pageInstance);
   addChild.call(this, "topTabBar", $Flexlayout1$$TopTabBar_, pageInstance);
 }
@@ -95,7 +99,9 @@ $Flexlayout1.$$styleContext = {
 const $Flexlayout1_ = FlexLayout($Flexlayout1);
 
 function $Flexlayout1$$Flexlayout30(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "wvChart", $Flexlayout1$$Flexlayout30$$WvChart_, pageInstance);
 }
 $Flexlayout1$$Flexlayout30.$$styleContext = {
@@ -115,7 +121,9 @@ $Flexlayout1$$Flexlayout30.$$styleContext = {
 const $Flexlayout1$$Flexlayout30_ = FlexLayout($Flexlayout1$$Flexlayout30);
 
 function $Flexlayout1$$Flexlayout30$$WvChart(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.wvChart = this;
 }
 $Flexlayout1$$Flexlayout30$$WvChart.$$styleContext = {
@@ -132,7 +140,9 @@ $Flexlayout1$$Flexlayout30$$WvChart.$$styleContext = {
 const $Flexlayout1$$Flexlayout30$$WvChart_ = WebView($Flexlayout1$$Flexlayout30$$WvChart);
 
 function $Flexlayout1$$TopTabBar(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.topTabBar = this;
 }
 $Flexlayout1$$TopTabBar.$$styleContext = {
@@ -157,7 +167,9 @@ $Flexlayout1$$TopTabBar.$$styleContext = {
 const $Flexlayout1$$TopTabBar_ = TopTabBar($Flexlayout1$$TopTabBar);
 
 function $ListViewContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "listView", $ListViewContainer$$ListView_, pageInstance);
   pageInstance.listViewContainer = this;
 }
@@ -179,7 +191,8 @@ const $ListViewContainer_ = FlexLayout($ListViewContainer);
 
 function $ListViewContainer$$ListView(_super, pageInstance) {
   _super(this, {
-    itemCount: 0
+    itemCount: 0,
+    skipDefaults: true
   });
   var itemIndex = 0;
   this.onRowCreate = function() {
@@ -210,6 +223,7 @@ const $ListViewContainer$$ListView_ = ListView($ListViewContainer$$ListView);
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
+
 }
 
 module.exports = $PgLeaveManagement_;

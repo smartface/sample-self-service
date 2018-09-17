@@ -50,7 +50,9 @@ $PgDocumentDetail.$$styleContext = {
 const $PgDocumentDetail_ = Page($PgDocumentDetail);
 
 function $MainLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "imageview42", $MainLayout$$Imageview42_, pageInstance);
   addChild.call(this, "label322", $MainLayout$$Label322_, pageInstance);
   pageInstance.mainLayout = this;
@@ -69,7 +71,9 @@ $MainLayout.$$styleContext = {
 const $MainLayout_ = FlexLayout($MainLayout);
 
 function $MainLayout$$Imageview42(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $MainLayout$$Imageview42.$$styleContext = {
   classNames: ".imageView",
@@ -84,7 +88,8 @@ const $MainLayout$$Imageview42_ = ImageView($MainLayout$$Imageview42);
 
 function $MainLayout$$Label322(_super, pageInstance) {
   _super(this, {
-    text: "Please Upload Your Document"
+    text: "Please Upload Your Document",
+    skipDefaults: true
   });
 }
 $MainLayout$$Label322.$$styleContext = {
@@ -105,6 +110,7 @@ const $MainLayout$$Label322_ = TextView($MainLayout$$Label322);
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
+
 }
 
 module.exports = $PgDocumentDetail_;
