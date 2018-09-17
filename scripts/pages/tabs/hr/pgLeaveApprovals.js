@@ -100,7 +100,7 @@ function initListView() {
 	}.bind(this);
 
 	this.listView.onRowSelected = function(listviewItem, index) {
-		Router.go("tabs/approvals/leaveApprovalDetail", this.data[index]);
+		Router.go("tabs/hr/leaveApprovalDetail", this.data[index]);
 	}.bind(this);
 }
 
