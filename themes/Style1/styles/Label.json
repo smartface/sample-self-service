@@ -1,180 +1,187 @@
 {
-  ".label": {
-    "width": 250,
-    "height": 70,
-    "touchEnabled": true,
-    "text": "Label",
-    "visible": true,
-    "multiline": false,
-    "backgroundColor": "#FFFFFF",
-    "alpha": 1,
-    "borderColor": "rgba(0,0,0,1)",
-    "borderWidth": 0,
-    "textColor": "#4A4A4A",
-    "textAlignment": "MIDLEFT",
-    "font": {
-      "size": 16,
-      "bold": false,
-      "italic": false,
-      "family": "Lato"
-    },
-    "flexProps": {
-      "alignSelf": "AUTO",
-      "positionType": "RELATIVE"
-    },
-    "&-small": {
-      "width": 100
-    },
-    "&-medium": {
-      "width": 250
-    },
-    "&-large": {
-      "width": 350
-    },
-    "&-warning": {
-      "backgroundColor": "#9F6000"
-    },
-    "&-error": {
-      "backgroundColor": "#D8000C"
-    },
-    "&-success": {
-      "backgroundColor": "#4F8A10"
-    },
-    "&-item-document-accepted": {
-      "textColor": "#4F8A10",
-      "text": "ACCEPTED"
-    },
-    "&-item-document-rejected": {
-      "textColor": "#D8000C",
-      "text": "REJECTED"
-    },
-    "&-item-document-upload": {
-      "textColor": "#D9D8D8",
-      "text": "UPLOAD"
-    },
-    "&-list-item-header": {
-      "textColor": "#1775D0",
-      "font": {
-          "size": 16
-      }
-    },
-    "&-list-item-title": {
-      "textColor": "#4A4A4A",
-      "font": {
-          "size": 14
-      }
-    },
-    "&-list-item-value": {
-      "textColor": "#9B9B9B",
-      "font": {
-          "size": 14
-      }
-    },
-    "&-approve-item-active": {
-      "textColor": "#E7C355",
-      "font": {
-          "size": 12
-      }
-    },
-    "&-approve-item-inactive": {
-      "textColor": "#D0D0D4",
-      "font": {
-          "size": 12
-      }
-    },
-    "&-edit-item-active": {
-      "textColor": "#9F9F9F",
-      "font": {
-          "size": 12
-      }
-    },
-    "&-edit-item-inactive": {
-      "textColor": "#D0D0D4",
-      "font": {
-          "size": 12
-      }
-    },
-    "&-delete-item-active": {
-      "textColor": "#D0021B",
-      "font": {
-          "size": 12
-      }
-    },
-    "&-delete-item-inactive": {
-      "textColor": "#D0D0D4",
-      "font": {
-          "size": 12
-      }
-    },
-    "&-login": {
-      "textColor": "#FFFFFF",
-      "backgroundColor": "#00FFFFFF",
-      ".info": {
-        "alpha": 0.69
-      },
-      ".small": {
-        "font": {
-          "size": 14
-        }
-      },
-      ".large": {
-        "font": {
-          "size": 30
-        }
-      }
-    },
-    "&-textboxInfo": {
-      "alpha": 0.69,
-      "height": 20,
-      "backgroundColor": "#00FFFFFF",
-      ".normal": {
-        "textColor": "#FFFFFF"
-      },
-      ".error": {
-        "textColor": "#F22613"
-      }
-    },
-    "&-textboxInfoDark": {
-      "alpha": 0.69,
-      "height": 20,
-      "backgroundColor": "#00FFFFFF",
-      ".normal": {
-        "textColor": "#000000"
-      },
-      ".error": {
-        "textColor": "#F22613"
-      }
-    },
-    "&-overview-title": {
-      "textColor": "#DADBDE",
-      "backgroundColor": "#00FFFFFF",
-      "textAlignment": "MIDCENTER"
-    },
-    "&-leaveRequestListItem": {
-      "&-approve": {
-        "&-active": {
-          "textColor": "#E7C355"
-        },
-        "&-inactive": {
-          "textColor": "#D0D0D4"
-        }
-      },
-      "&-edit": {
-        "&-active": {
-          "textColor": "#9F9F9F"
-        },
-        "&-inactive": {
-          "textColor": "#D0D0D4"
-        }
-      },
-      "&-delete": {
-        "&-active": {
-          "textColor": "#D0021B"
-        },
-        "&-inactive": {
-          "textColor": "#D0D0D4"
-        }
-      }
-    }
-  }
+	".label": {
+		"width": 250,
+		"height": 70,
+		"touchEnabled": true,
+		"text": "Label",
+		"visible": true,
+		"multiline": false,
+		"backgroundColor": "#FFFFFF",
+		"alpha": 1,
+		"borderColor": "rgba(0,0,0,1)",
+		"borderWidth": 0,
+		"textColor": "#4A4A4A",
+		"textAlignment": "MIDLEFT",
+		"font": {
+			"size": 16,
+			"bold": false,
+			"italic": false,
+			"family": "Lato"
+		},
+		"flexProps": {
+			"alignSelf": "AUTO",
+			"positionType": "RELATIVE"
+		},
+		"&-small": {
+			"width": 100
+		},
+		"&-medium": {
+			"width": 250
+		},
+		"&-large": {
+			"width": 350
+		},
+		"&-warning": {
+			"backgroundColor": "#9F6000"
+		},
+		"&-error": {
+			"backgroundColor": "#D8000C"
+		},
+		"&-success": {
+			"backgroundColor": "#4F8A10"
+		},
+		"&-item-document-accepted": {
+			"textColor": "#4F8A10",
+			"text": "ACCEPTED"
+		},
+		"&-item-document-rejected": {
+			"textColor": "#D8000C",
+			"text": "REJECTED"
+		},
+		"&-item-document-upload": {
+			"textColor": "#D9D8D8",
+			"text": "UPLOAD"
+		},
+		"&-list-item-header": {
+			"textColor": "#1775D0",
+			"font": {
+				"size": 16
+			}
+		},
+		"&-list-item-title": {
+			"textColor": "#4A4A4A",
+			"font": {
+				"size": 14
+			}
+		},
+		"&-list-item-value": {
+			"textColor": "#9B9B9B",
+			"font": {
+				"size": 14
+			}
+		},
+		"&-approve-item-active": {
+			"textColor": "#E7C355",
+			"font": {
+				"size": 12
+			}
+		},
+		"&-approve-item-inactive": {
+			"textColor": "#D0D0D4",
+			"font": {
+				"size": 12
+			}
+		},
+		"&-edit-item-active": {
+			"textColor": "#9F9F9F",
+			"font": {
+				"size": 12
+			}
+		},
+		"&-edit-item-inactive": {
+			"textColor": "#D0D0D4",
+			"font": {
+				"size": 12
+			}
+		},
+		"&-delete-item-active": {
+			"textColor": "#D0021B",
+			"font": {
+				"size": 12
+			}
+		},
+		"&-delete-item-inactive": {
+			"textColor": "#D0D0D4",
+			"font": {
+				"size": 12
+			}
+		},
+		"&-login": {
+			"textColor": "#FFFFFF",
+			"backgroundColor": "#00FFFFFF",
+			".info": {
+				"alpha": 0.69
+			},
+			".small": {
+				"font": {
+					"size": 14
+				},
+				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+			},
+			".large": {
+				"font": {
+					"size": 30
+				},
+				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+			}
+		},
+		"&-textboxInfo": {
+			"alpha": 0.69,
+			"height": 20,
+			"backgroundColor": "#00FFFFFF",
+			".normal": {
+				"textColor": "#FFFFFF"
+			},
+			".error": {
+				"textColor": "#F22613"
+			}
+		},
+		"&-textboxInfoDark": {
+			"alpha": 0.69,
+			"height": 20,
+			"backgroundColor": "#00FFFFFF",
+			".normal": {
+				"textColor": "#000000"
+			},
+			".error": {
+				"textColor": "#F22613"
+			}
+		},
+		"&-overview-title": {
+			"textColor": "#DADBDE",
+			"backgroundColor": "#00FFFFFF",
+			"textAlignment": "MIDCENTER"
+		},
+		"&-leaveRequestListItem": {
+			"&-approve": {
+				"&-active": {
+					"textColor": "#E7C355"
+				},
+				"&-inactive": {
+					"textColor": "#D0D0D4"
+				}
+			},
+			"&-edit": {
+				"&-active": {
+					"textColor": "#9F9F9F"
+				},
+				"&-inactive": {
+					"textColor": "#D0D0D4"
+				}
+			},
+			"&-delete": {
+				"&-active": {
+					"textColor": "#D0021B"
+				},
+				"&-inactive": {
+					"textColor": "#D0D0D4"
+				}
+			}
+		},
+		"&-overview": {
+			"&-title": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+			}
+		}
+	}
 }

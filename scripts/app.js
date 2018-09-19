@@ -18,10 +18,9 @@ Application.onUnhandledError = function(e) {
 };
 
 require("./theme");
-
+require("sf-extension-utils");
 const Router = require("sf-core/ui/router");
 const Navigator = require("sf-core/ui/navigator");
-
 var navigator = new Navigator();
 navigator.add("pgLogin", "pages/login/pgLogin");
 navigator.go("pgLogin");
