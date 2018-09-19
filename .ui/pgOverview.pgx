@@ -52,6 +52,32 @@
 		},
 		{
 			"className": ".flexLayout .flexLayout-headerBar",
+			"hiddenComponent": false,
+			"id": "c161-8044-59fe-a36b",
+			"props": {
+				"children": [],
+				"name": "layoutHeaderBar",
+				"parent": "6d10-f9f8-4017-8331",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"id": "ebb9-37cc-ff1b-0314"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 92,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-headerBar",
 			"id": "113b-c0a8-6a8e-a772",
 			"props": {
 				"children": [
@@ -70,6 +96,66 @@
 				},
 				"height": 170,
 				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "bd08-9797-fdb6-2eb8",
+			"props": {
+				"children": [],
+				"name": "imageview111",
+				"parent": "113b-c0a8-6a8e-a772"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {},
+				"height": 85,
+				"image": "myavatar.png",
+				"imageFillType": "ASPECTFIT",
+				"marginBottom": 5,
+				"width": 85
+			}
+		},
+		{
+			"className": ".label .label-overview-title",
+			"id": "d897-e32d-c90f-4321",
+			"props": {
+				"children": [],
+				"name": "label827",
+				"parent": "113b-c0a8-6a8e-a772",
+				"text": "Anthony Bell"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {
+					"bold": false,
+					"size": 18
+				},
+				"height": 25,
+				"text": "Anthony Bell",
+				"width": 200
+			}
+		},
+		{
+			"className": ".label .label-overview-title",
+			"id": "de7e-c150-444a-ae53",
+			"props": {
+				"children": [],
+				"name": "label827_1",
+				"parent": "113b-c0a8-6a8e-a772",
+				"text": "Director of Sales & Marketing"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {
+					"size": 14
+				},
+				"height": 25,
+				"html": "Director of Sales &amp; Marketing",
+				"text": "Director of Sales & Marketing",
+				"width": 200
 			}
 		},
 		{
@@ -148,169 +234,6 @@
 				"text": "QUALIFICATION",
 				"usePageVariable": true,
 				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout",
-			"id": "698a-8d00-3bd3-8e8b",
-			"props": {
-				"children": [
-					"257c-67bc-cbcb-4c8c",
-					"ec18-e457-815a-1a4b",
-					"5c23-92ac-d308-f2e9",
-					"5a21-15a7-22c8-539f"
-				],
-				"name": "salarycontainer",
-				"parent": "e8d0-9359-14b6-6fba"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {},
-				"height": 120,
-				"left": null,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"marginTop": 10,
-				"paddingBottom": 10,
-				"paddingLeft": 10,
-				"paddingRight": 10,
-				"paddingTop": 10,
-				"right": null,
-				"top": null,
-				"width": null
-			}
-		},
-		{
-			"className": ".label .label-list-item-header",
-			"id": "257c-67bc-cbcb-4c8c",
-			"props": {
-				"children": [],
-				"name": "salaryTitle",
-				"parent": "698a-8d00-3bd3-8e8b",
-				"text": "SALARY",
-				"usePageVariable": true
-			},
-			"type": "TextView",
-			"userProps": {
-				"flexProps": {},
-				"font": {
-					"size": 16
-				},
-				"height": 25,
-				"text": "SALARY",
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout",
-			"id": "c39d-63b8-c1a0-d22d",
-			"props": {
-				"children": [
-					"48c5-efe5-0d9b-d5a6",
-					"86d6-07aa-33c7-b5cf",
-					"6bbf-8ec5-2043-e729",
-					"cb12-3666-c6ee-65d0",
-					"811c-a4dd-6dfd-c2da",
-					"bfcf-ad59-4da3-68ae"
-				],
-				"name": "qualificationcontainer_1",
-				"parent": "e8d0-9359-14b6-6fba"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {},
-				"height": 170,
-				"left": null,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"marginTop": 10,
-				"paddingBottom": 10,
-				"paddingLeft": 10,
-				"paddingRight": 10,
-				"paddingTop": 10,
-				"right": null,
-				"top": null,
-				"width": null
-			}
-		},
-		{
-			"className": ".label .label-list-item-header",
-			"id": "48c5-efe5-0d9b-d5a6",
-			"props": {
-				"children": [],
-				"name": "label536_2",
-				"parent": "c39d-63b8-c1a0-d22d",
-				"text": "PERFORMANCE OBJECTIVE"
-			},
-			"type": "TextView",
-			"userProps": {
-				"flexProps": {},
-				"font": {
-					"size": 16
-				},
-				"height": 25,
-				"text": "PERFORMANCE OBJECTIVE",
-				"width": null
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "bd08-9797-fdb6-2eb8",
-			"props": {
-				"children": [],
-				"name": "imageview111",
-				"parent": "113b-c0a8-6a8e-a772"
-			},
-			"type": "ImageView",
-			"userProps": {
-				"flexProps": {},
-				"height": 85,
-				"image": "myavatar.png",
-				"imageFillType": "ASPECTFIT",
-				"marginBottom": 5,
-				"width": 85
-			}
-		},
-		{
-			"className": ".label .label-overview-title",
-			"id": "d897-e32d-c90f-4321",
-			"props": {
-				"children": [],
-				"name": "label827",
-				"parent": "113b-c0a8-6a8e-a772",
-				"text": "Anthony Bell"
-			},
-			"type": "TextView",
-			"userProps": {
-				"flexProps": {},
-				"font": {
-					"bold": false,
-					"size": 18
-				},
-				"height": 25,
-				"text": "Anthony Bell",
-				"width": 200
-			}
-		},
-		{
-			"className": ".label .label-overview-title",
-			"id": "de7e-c150-444a-ae53",
-			"props": {
-				"children": [],
-				"name": "label827_1",
-				"parent": "113b-c0a8-6a8e-a772",
-				"text": "Director of Sales & Marketing"
-			},
-			"type": "TextView",
-			"userProps": {
-				"flexProps": {},
-				"font": {
-					"size": 14
-				},
-				"height": 25,
-				"text": "Director of Sales & Marketing",
-				"width": 200
 			}
 		},
 		{
@@ -463,6 +386,58 @@
 		},
 		{
 			"className": ".flexLayout",
+			"id": "698a-8d00-3bd3-8e8b",
+			"props": {
+				"children": [
+					"257c-67bc-cbcb-4c8c",
+					"ec18-e457-815a-1a4b",
+					"5c23-92ac-d308-f2e9",
+					"5a21-15a7-22c8-539f"
+				],
+				"name": "salarycontainer",
+				"parent": "e8d0-9359-14b6-6fba"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {},
+				"height": 120,
+				"left": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"marginTop": 10,
+				"paddingBottom": 10,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"paddingTop": 10,
+				"right": null,
+				"top": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-header",
+			"id": "257c-67bc-cbcb-4c8c",
+			"props": {
+				"children": [],
+				"name": "salaryTitle",
+				"parent": "698a-8d00-3bd3-8e8b",
+				"text": "SALARY",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {
+					"size": 16
+				},
+				"height": 25,
+				"text": "SALARY",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
 			"hiddenComponent": false,
 			"id": "ec18-e457-815a-1a4b",
 			"props": {
@@ -547,6 +522,58 @@
 				"marginTop": null,
 				"top": 0,
 				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "c39d-63b8-c1a0-d22d",
+			"props": {
+				"children": [
+					"48c5-efe5-0d9b-d5a6",
+					"86d6-07aa-33c7-b5cf",
+					"6bbf-8ec5-2043-e729",
+					"cb12-3666-c6ee-65d0",
+					"811c-a4dd-6dfd-c2da",
+					"bfcf-ad59-4da3-68ae"
+				],
+				"name": "qualificationcontainer_1",
+				"parent": "e8d0-9359-14b6-6fba"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {},
+				"height": 170,
+				"left": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"marginTop": 10,
+				"paddingBottom": 10,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"paddingTop": 10,
+				"right": null,
+				"top": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".label .label-list-item-header",
+			"id": "48c5-efe5-0d9b-d5a6",
+			"props": {
+				"children": [],
+				"name": "label536_2",
+				"parent": "c39d-63b8-c1a0-d22d",
+				"text": "PERFORMANCE OBJECTIVE"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {
+					"size": 16
+				},
+				"height": 25,
+				"text": "PERFORMANCE OBJECTIVE",
 				"width": null
 			}
 		},
@@ -693,32 +720,6 @@
 				"height": 35,
 				"left": 0,
 				"marginTop": null,
-				"top": 0,
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout .flexLayout-headerBar",
-			"hiddenComponent": false,
-			"id": "c161-8044-59fe-a36b",
-			"props": {
-				"children": [],
-				"name": "layoutHeaderBar",
-				"parent": "6d10-f9f8-4017-8331",
-				"usePageVariable": true
-			},
-			"source": {
-				"page": "__library__",
-				"id": "ebb9-37cc-ff1b-0314"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"height": 92,
-				"left": 0,
 				"top": 0,
 				"usePageVariable": true,
 				"width": null
