@@ -28,8 +28,8 @@ exports.load = function load() {
     global.tabBar = new BottomTabBar();
     global.tabBar.children = {};
     var profileNavigator = new Navigator();
-    profileNavigator.add("index", require("./pages/tabs/profile"));
-    profileNavigator.add("profileDetail", require("./pages/tabs/profile/pgProfileDetail"));
+    profileNavigator.add("index", "pages/tabs/profile");
+    profileNavigator.add("profileDetail", "pages/tabs/profile/pgProfileDetail");
     profileNavigator.go("index");
     global.tabBar.children["profile"] = new TabBarItem({
         title: lang["tab.profile"],
@@ -38,11 +38,11 @@ exports.load = function load() {
     });
 
     var hrNavigator = new Navigator();
-    hrNavigator.add("index", require("./pages/tabs/hr"));
-    hrNavigator.add("newExpense", require("./pages/tabs/hr/pgNewExpense"));
-    hrNavigator.add("newLeaveRequest", require("./pages/tabs/hr/pgNewLeaveRequest"));
-    hrNavigator.add("leaveApprovalDetail", require("./pages/tabs/hr/pgLeaveApprovalDetail"));
-    hrNavigator.add("expenseApprovalDetail", require("./pages/tabs/hr/pgExpenseApprovalDetail"));
+    hrNavigator.add("index", "pages/tabs/hr");
+    hrNavigator.add("newExpense", "pages/tabs/hr/pgNewExpense");
+    hrNavigator.add("newLeaveRequest", "pages/tabs/hr/pgNewLeaveRequest");
+    hrNavigator.add("leaveApprovalDetail", "pages/tabs/hr/pgLeaveApprovalDetail");
+    hrNavigator.add("expenseApprovalDetail", "pages/tabs/hr/pgExpenseApprovalDetail");
     hrNavigator.go("index");
     global.tabBar.children["hr"] = new TabBarItem({
         title: lang["tab.HR"],
@@ -51,8 +51,8 @@ exports.load = function load() {
     });
 
     var chatbotNavigator = new Navigator();
-    chatbotNavigator.add("index", require("./pages/tabs/chatbot"));
-    chatbotNavigator.add("chatbotPg", require("./pages/tabs/chatbot/chatbotPg"));
+    chatbotNavigator.add("index", "pages/tabs/chatbot");
+    chatbotNavigator.add("chatbotPg", "pages/tabs/chatbot/chatbotPg");
     chatbotNavigator.go("index");
 
     global.tabBar.children["chatbot"] = new TabBarItem({
@@ -62,8 +62,8 @@ exports.load = function load() {
     })
 
     var myCompanyNavigator = new Navigator();
-    myCompanyNavigator.add("index", require("./pages/tabs/myCompany"));
-    myCompanyNavigator.add("documentDetail", require("./pages/tabs/myCompany/pgDocumentDetail"));
+    myCompanyNavigator.add("index", "pages/tabs/myCompany");
+    myCompanyNavigator.add("documentDetail", "pages/tabs/myCompany/pgDocumentDetail");
     myCompanyNavigator.go("index");
     global.tabBar.children["myCompany"] = new TabBarItem({
         title: lang["tab.myCompany"],
@@ -72,7 +72,7 @@ exports.load = function load() {
     });
 
     var settingsNavigator = new Navigator();
-    settingsNavigator.add("index", require("./pages/tabs/settings/pgSettings"));
+    settingsNavigator.add("index", "pages/tabs/settings/pgSettings");
     settingsNavigator.go("index");
     global.tabBar.children["settings"] = new TabBarItem({
         title: lang["tab.settings"],

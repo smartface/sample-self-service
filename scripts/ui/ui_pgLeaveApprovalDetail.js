@@ -52,7 +52,9 @@ $PgLeaveApprovalDetail.$$styleContext = {
 const $PgLeaveApprovalDetail_ = Page($PgLeaveApprovalDetail);
 
 function $MainContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "userInformation", $MainContainer$$UserInformation_, pageInstance);
   addChild.call(this, "flexlayout1104", $MainContainer$$Flexlayout1104_, pageInstance);
   addChild.call(this, "descriptionLayout", $MainContainer$$DescriptionLayout_, pageInstance);
@@ -82,7 +84,9 @@ $MainContainer.$$styleContext = {
 const $MainContainer_ = FlexLayout($MainContainer);
 
 function $MainContainer$$UserInformation(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "avatar", $MainContainer$$UserInformation$$Avatar_, pageInstance);
   addChild.call(this, "flexlayout1103", $MainContainer$$UserInformation$$Flexlayout1103_, pageInstance);
   addChild.call(this, "flexlayout408", $MainContainer$$UserInformation$$Flexlayout408_, pageInstance);
@@ -105,7 +109,9 @@ $MainContainer$$UserInformation.$$styleContext = {
 const $MainContainer$$UserInformation_ = FlexLayout($MainContainer$$UserInformation);
 
 function $MainContainer$$UserInformation$$Avatar(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.avatar = this;
 }
 $MainContainer$$UserInformation$$Avatar.$$styleContext = {
@@ -122,7 +128,9 @@ $MainContainer$$UserInformation$$Avatar.$$styleContext = {
 const $MainContainer$$UserInformation$$Avatar_ = ImageView($MainContainer$$UserInformation$$Avatar);
 
 function $MainContainer$$UserInformation$$Flexlayout1103(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "name", $MainContainer$$UserInformation$$Flexlayout1103$$Name_, pageInstance);
   addChild.call(this, "position", $MainContainer$$UserInformation$$Flexlayout1103$$Position_, pageInstance);
 }
@@ -141,7 +149,8 @@ const $MainContainer$$UserInformation$$Flexlayout1103_ = FlexLayout($MainContain
 
 function $MainContainer$$UserInformation$$Flexlayout1103$$Name(_super, pageInstance) {
   _super(this, {
-    text: "Adam Stewart"
+    text: "Adam Stewart",
+    skipDefaults: true
   });
   pageInstance.name = this;
 }
@@ -163,7 +172,8 @@ const $MainContainer$$UserInformation$$Flexlayout1103$$Name_ = TextView($MainCon
 
 function $MainContainer$$UserInformation$$Flexlayout1103$$Position(_super, pageInstance) {
   _super(this, {
-    text: "Manager of S&M"
+    text: "Manager of S&M",
+    skipDefaults: true
   });
   pageInstance.position = this;
 }
@@ -184,7 +194,9 @@ $MainContainer$$UserInformation$$Flexlayout1103$$Position.$$styleContext = {
 const $MainContainer$$UserInformation$$Flexlayout1103$$Position_ = TextView($MainContainer$$UserInformation$$Flexlayout1103$$Position);
 
 function $MainContainer$$UserInformation$$Flexlayout408(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "imageview66", $MainContainer$$UserInformation$$Flexlayout408$$Imageview66_, pageInstance);
   addChild.call(this, "label541", $MainContainer$$UserInformation$$Flexlayout408$$Label541_, pageInstance);
 }
@@ -203,7 +215,9 @@ $MainContainer$$UserInformation$$Flexlayout408.$$styleContext = {
 const $MainContainer$$UserInformation$$Flexlayout408_ = FlexLayout($MainContainer$$UserInformation$$Flexlayout408);
 
 function $MainContainer$$UserInformation$$Flexlayout408$$Imageview66(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $MainContainer$$UserInformation$$Flexlayout408$$Imageview66.$$styleContext = {
   classNames: ".imageView",
@@ -222,7 +236,8 @@ const $MainContainer$$UserInformation$$Flexlayout408$$Imageview66_ = ImageView($
 
 function $MainContainer$$UserInformation$$Flexlayout408$$Label541(_super, pageInstance) {
   _super(this, {
-    text: "Sick Leave"
+    text: "Sick Leave",
+    skipDefaults: true
   });
 }
 $MainContainer$$UserInformation$$Flexlayout408$$Label541.$$styleContext = {
@@ -243,7 +258,9 @@ $MainContainer$$UserInformation$$Flexlayout408$$Label541.$$styleContext = {
 const $MainContainer$$UserInformation$$Flexlayout408$$Label541_ = TextView($MainContainer$$UserInformation$$Flexlayout408$$Label541);
 
 function $MainContainer$$Flexlayout1104(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout1105", $MainContainer$$Flexlayout1104$$Flexlayout1105_, pageInstance);
   addChild.call(this, "flexlayout1106", $MainContainer$$Flexlayout1104$$Flexlayout1106_, pageInstance);
   addChild.call(this, "imageview171", $MainContainer$$Flexlayout1104$$Imageview171_, pageInstance);
@@ -266,7 +283,9 @@ $MainContainer$$Flexlayout1104.$$styleContext = {
 const $MainContainer$$Flexlayout1104_ = FlexLayout($MainContainer$$Flexlayout1104);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout1108", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_, pageInstance);
   addChild.call(this, "flexlayout1108_1", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1_, pageInstance);
   addChild.call(this, "imageview170", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Imageview170_, pageInstance);
@@ -285,7 +304,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105.$$styleContext = {
 const $MainContainer$$Flexlayout1104$$Flexlayout1105_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1105);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout1111", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_, pageInstance);
   addChild.call(this, "flexlayout1115", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1115_, pageInstance);
   addChild.call(this, "flexlayout1111_2", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2_, pageInstance);
@@ -304,7 +325,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108.$$styleContext = 
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "label1572", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_, pageInstance);
   addChild.call(this, "label1572_1", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1_, pageInstance);
 }
@@ -326,7 +349,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572(_super, pageInstance) {
   _super(this, {
-    text: "9:30"
+    text: "9:30",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572.$$styleContext = {
@@ -346,7 +370,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1(_super, pageInstance) {
   _super(this, {
-    text: "Start Time"
+    text: "Start Time",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1.$$styleContext = {
@@ -367,7 +392,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111$$Label1572_1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1115(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1115.$$styleContext = {
   classNames: ".flexLayout",
@@ -383,7 +410,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1115.$
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1115_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1115);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "label1572_2", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_2_, pageInstance);
   addChild.call(this, "label1572_1_1", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1_, pageInstance);
 }
@@ -405,7 +434,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_2(_super, pageInstance) {
   _super(this, {
-    text: "12:30"
+    text: "12:30",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_2.$$styleContext = {
@@ -425,7 +455,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1(_super, pageInstance) {
   _super(this, {
-    text: "End Time"
+    text: "End Time",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1.$$styleContext = {
@@ -446,7 +477,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108$$Flexlayout1111_2$$Label1572_1_1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "label1_1", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1_, pageInstance);
   addChild.call(this, "flexlayout1114", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Flexlayout1114_, pageInstance);
   addChild.call(this, "label1", $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_, pageInstance);
@@ -466,7 +499,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1_ = FlexLa
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1(_super, pageInstance) {
   _super(this, {
-    text: "MAY 19, 2017"
+    text: "MAY 19, 2017",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1.$$styleContext = {
@@ -490,7 +524,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1.$$sty
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Flexlayout1114(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Flexlayout1114.$$styleContext = {
   classNames: ".flexLayout",
@@ -507,7 +543,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Flexlayo
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1(_super, pageInstance) {
   _super(this, {
-    text: "MAY 24, 2017"
+    text: "MAY 24, 2017",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1.$$styleContext = {
@@ -530,7 +567,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1.$$style
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1105$$Flexlayout1108_1$$Label1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1105$$Imageview170(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1105$$Imageview170.$$styleContext = {
   classNames: ".imageView",
@@ -549,7 +588,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1105$$Imageview170.$$styleContext = {
 const $MainContainer$$Flexlayout1104$$Flexlayout1105$$Imageview170_ = ImageView($MainContainer$$Flexlayout1104$$Flexlayout1105$$Imageview170);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout1", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1_, pageInstance);
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1106.$$styleContext = {
@@ -566,7 +607,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106.$$styleContext = {
 const $MainContainer$$Flexlayout1104$$Flexlayout1106_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1106);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "flexlayout2", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_, pageInstance);
   addChild.call(this, "flexlayout2_1", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_, pageInstance);
   addChild.call(this, "flexlayout2_1_1", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1_, pageInstance);
@@ -590,7 +633,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1.$$styleContext = {
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1_ = FlexLayout($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "label2", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_, pageInstance);
   addChild.call(this, "label2_1", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_1_, pageInstance);
   addChild.call(this, "label2_2", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2_, pageInstance);
@@ -610,7 +655,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_ 
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2(_super, pageInstance) {
   _super(this, {
-    text: "19"
+    text: "19",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2.$$styleContext = {
@@ -633,7 +679,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_1(_super, pageInstance) {
   _super(this, {
-    text: "Days"
+    text: "Days",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_1.$$styleContext = {
@@ -656,7 +703,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2(_super, pageInstance) {
   _super(this, {
-    text: "TOTAL"
+    text: "TOTAL",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2.$$styleContext = {
@@ -678,7 +726,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2$$Label2_2);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "label2_3", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_3_, pageInstance);
   addChild.call(this, "label2_1_1", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_1_1_, pageInstance);
   addChild.call(this, "label2_2_1", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1_, pageInstance);
@@ -698,7 +748,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_3(_super, pageInstance) {
   _super(this, {
-    text: "5"
+    text: "5",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_3.$$styleContext = {
@@ -721,7 +772,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_1_1(_super, pageInstance) {
   _super(this, {
-    text: "Days"
+    text: "Days",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_1_1.$$styleContext = {
@@ -744,7 +796,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1(_super, pageInstance) {
   _super(this, {
-    text: "REQUESTED"
+    text: "REQUESTED",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1.$$styleContext = {
@@ -766,7 +819,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Labe
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1$$Label2_2_1);
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "label2_3_1", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_3_1_, pageInstance);
   addChild.call(this, "label2_1_1_1", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_1_1_1_, pageInstance);
   addChild.call(this, "label2_2_1_1", $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1_, pageInstance);
@@ -786,7 +841,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_3_1(_super, pageInstance) {
   _super(this, {
-    text: "14"
+    text: "14",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_3_1.$$styleContext = {
@@ -809,7 +865,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_1_1_1(_super, pageInstance) {
   _super(this, {
-    text: "Days"
+    text: "Days",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_1_1_1.$$styleContext = {
@@ -832,7 +889,8 @@ const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1
 
 function $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1(_super, pageInstance) {
   _super(this, {
-    text: "REMAINS"
+    text: "REMAINS",
+    skipDefaults: true
   });
 }
 $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1.$$styleContext = {
@@ -854,7 +912,9 @@ $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$La
 const $MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1_ = TextView($MainContainer$$Flexlayout1104$$Flexlayout1106$$Flexlayout1$$Flexlayout2_1_1$$Label2_2_1_1);
 
 function $MainContainer$$Flexlayout1104$$Imageview171(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $MainContainer$$Flexlayout1104$$Imageview171.$$styleContext = {
   classNames: ".imageView",
@@ -873,7 +933,9 @@ $MainContainer$$Flexlayout1104$$Imageview171.$$styleContext = {
 const $MainContainer$$Flexlayout1104$$Imageview171_ = ImageView($MainContainer$$Flexlayout1104$$Imageview171);
 
 function $MainContainer$$DescriptionLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "lblDescription", $MainContainer$$DescriptionLayout$$LblDescription_, pageInstance);
   addChild.call(this, "txtDescription", $MainContainer$$DescriptionLayout$$TxtDescription_, pageInstance);
 }
@@ -896,7 +958,8 @@ const $MainContainer$$DescriptionLayout_ = FlexLayout($MainContainer$$Descriptio
 
 function $MainContainer$$DescriptionLayout$$LblDescription(_super, pageInstance) {
   _super(this, {
-    text: "Description"
+    text: "Description",
+    skipDefaults: true
   });
   pageInstance.lblDescription = this;
 }
@@ -914,7 +977,8 @@ const $MainContainer$$DescriptionLayout$$LblDescription_ = TextView($MainContain
 
 function $MainContainer$$DescriptionLayout$$TxtDescription(_super, pageInstance) {
   _super(this, {
-    text: ""
+    text: "",
+    skipDefaults: true
   });
   pageInstance.txtDescription = this;
 }
@@ -937,7 +1001,9 @@ $MainContainer$$DescriptionLayout$$TxtDescription.$$styleContext = {
 const $MainContainer$$DescriptionLayout$$TxtDescription_ = TextArea($MainContainer$$DescriptionLayout$$TxtDescription);
 
 function $MainContainer$$ButtonsLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "btnReject", $MainContainer$$ButtonsLayout$$BtnReject_, pageInstance);
   addChild.call(this, "flexlayout3", $MainContainer$$ButtonsLayout$$Flexlayout3_, pageInstance);
   addChild.call(this, "btnApprove", $MainContainer$$ButtonsLayout$$BtnApprove_, pageInstance);
@@ -959,7 +1025,8 @@ const $MainContainer$$ButtonsLayout_ = FlexLayout($MainContainer$$ButtonsLayout)
 
 function $MainContainer$$ButtonsLayout$$BtnReject(_super, pageInstance) {
   _super(this, {
-    text: "REJECT"
+    text: "REJECT",
+    skipDefaults: true
   });
   pageInstance.btnReject = this;
 }
@@ -977,7 +1044,9 @@ $MainContainer$$ButtonsLayout$$BtnReject.$$styleContext = {
 const $MainContainer$$ButtonsLayout$$BtnReject_ = Button($MainContainer$$ButtonsLayout$$BtnReject);
 
 function $MainContainer$$ButtonsLayout$$Flexlayout3(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $MainContainer$$ButtonsLayout$$Flexlayout3.$$styleContext = {
   classNames: ".flexLayout",
@@ -994,7 +1063,8 @@ const $MainContainer$$ButtonsLayout$$Flexlayout3_ = FlexLayout($MainContainer$$B
 
 function $MainContainer$$ButtonsLayout$$BtnApprove(_super, pageInstance) {
   _super(this, {
-    text: "APPROVE"
+    text: "APPROVE",
+    skipDefaults: true
   });
   pageInstance.btnApprove = this;
 }
@@ -1019,6 +1089,7 @@ const $MainContainer$$ButtonsLayout$$BtnApprove_ = Button($MainContainer$$Button
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
+
 }
 
 module.exports = $PgLeaveApprovalDetail_;

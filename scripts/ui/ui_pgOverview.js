@@ -58,7 +58,9 @@ $PgOverview.$$styleContext = {
 const $PgOverview_ = Page($PgOverview);
 
 function $LayoutHeaderBar(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.layoutHeaderBar = this;
 }
 $LayoutHeaderBar.$$styleContext = {
@@ -76,7 +78,9 @@ $LayoutHeaderBar.$$styleContext = {
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
 
 function $Flexlayout1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "imageview111", $Flexlayout1$$Imageview111_, pageInstance);
   addChild.call(this, "label827", $Flexlayout1$$Label827_, pageInstance);
   addChild.call(this, "label827_1", $Flexlayout1$$Label827_1_, pageInstance);
@@ -95,7 +99,9 @@ $Flexlayout1.$$styleContext = {
 const $Flexlayout1_ = FlexLayout($Flexlayout1);
 
 function $Flexlayout1$$Imageview111(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout1$$Imageview111.$$styleContext = {
   classNames: ".imageView",
@@ -111,7 +117,8 @@ const $Flexlayout1$$Imageview111_ = ImageView($Flexlayout1$$Imageview111);
 
 function $Flexlayout1$$Label827(_super, pageInstance) {
   _super(this, {
-    text: "Anthony Bell"
+    text: "Anthony Bell",
+    skipDefaults: true
   });
 }
 $Flexlayout1$$Label827.$$styleContext = {
@@ -129,7 +136,8 @@ const $Flexlayout1$$Label827_ = TextView($Flexlayout1$$Label827);
 
 function $Flexlayout1$$Label827_1(_super, pageInstance) {
   _super(this, {
-    text: "Director of Sales & Marketing"
+    text: "Director of Sales & Marketing",
+    skipDefaults: true
   });
 }
 $Flexlayout1$$Label827_1.$$styleContext = {
@@ -145,7 +153,9 @@ $Flexlayout1$$Label827_1.$$styleContext = {
 const $Flexlayout1$$Label827_1_ = TextView($Flexlayout1$$Label827_1);
 
 function $Flexlayout500(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "qualificationcontainer", $Flexlayout500$$Qualificationcontainer_, pageInstance);
   addChild.call(this, "salarycontainer", $Flexlayout500$$Salarycontainer_, pageInstance);
   addChild.call(this, "qualificationcontainer_1", $Flexlayout500$$Qualificationcontainer_1_, pageInstance);
@@ -165,7 +175,9 @@ $Flexlayout500.$$styleContext = {
 const $Flexlayout500_ = FlexLayout($Flexlayout500);
 
 function $Flexlayout500$$Qualificationcontainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "qualificationTitle", $Flexlayout500$$Qualificationcontainer$$QualificationTitle_, pageInstance);
   addChild.call(this, "containerType", $Flexlayout500$$Qualificationcontainer$$ContainerType_, pageInstance);
   addChild.call(this, "horizontalDivider", $Flexlayout500$$Qualificationcontainer$$HorizontalDivider_, pageInstance);
@@ -194,7 +206,8 @@ const $Flexlayout500$$Qualificationcontainer_ = FlexLayout($Flexlayout500$$Quali
 
 function $Flexlayout500$$Qualificationcontainer$$QualificationTitle(_super, pageInstance) {
   _super(this, {
-    text: "QUALIFICATION"
+    text: "QUALIFICATION",
+    skipDefaults: true
   });
   pageInstance.qualificationTitle = this;
 }
@@ -211,7 +224,9 @@ $Flexlayout500$$Qualificationcontainer$$QualificationTitle.$$styleContext = {
 const $Flexlayout500$$Qualificationcontainer$$QualificationTitle_ = TextView($Flexlayout500$$Qualificationcontainer$$QualificationTitle);
 
 function $Flexlayout500$$Qualificationcontainer$$ContainerType(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.containerType = this;
 }
 $Flexlayout500$$Qualificationcontainer$$ContainerType.$$styleContext = {
@@ -232,7 +247,9 @@ $Flexlayout500$$Qualificationcontainer$$ContainerType.$$styleContext = {
 const $Flexlayout500$$Qualificationcontainer$$ContainerType_ = ListItem1($Flexlayout500$$Qualificationcontainer$$ContainerType);
 
 function $Flexlayout500$$Qualificationcontainer$$HorizontalDivider(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout500$$Qualificationcontainer$$HorizontalDivider.$$styleContext = {
   classNames: ".flexLayout",
@@ -255,7 +272,9 @@ $Flexlayout500$$Qualificationcontainer$$HorizontalDivider.$$styleContext = {
 const $Flexlayout500$$Qualificationcontainer$$HorizontalDivider_ = HorizontalDivider($Flexlayout500$$Qualificationcontainer$$HorizontalDivider);
 
 function $Flexlayout500$$Qualificationcontainer$$ContainerTitle(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.containerTitle = this;
 }
 $Flexlayout500$$Qualificationcontainer$$ContainerTitle.$$styleContext = {
@@ -277,7 +296,9 @@ $Flexlayout500$$Qualificationcontainer$$ContainerTitle.$$styleContext = {
 const $Flexlayout500$$Qualificationcontainer$$ContainerTitle_ = ListItem1($Flexlayout500$$Qualificationcontainer$$ContainerTitle);
 
 function $Flexlayout500$$Qualificationcontainer$$Horizontaldivider_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout500$$Qualificationcontainer$$Horizontaldivider_1.$$styleContext = {
   classNames: ".flexLayout",
@@ -299,7 +320,9 @@ $Flexlayout500$$Qualificationcontainer$$Horizontaldivider_1.$$styleContext = {
 const $Flexlayout500$$Qualificationcontainer$$Horizontaldivider_1_ = HorizontalDivider($Flexlayout500$$Qualificationcontainer$$Horizontaldivider_1);
 
 function $Flexlayout500$$Qualificationcontainer$$ContainerAwardedDate(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.containerAwardedDate = this;
 }
 $Flexlayout500$$Qualificationcontainer$$ContainerAwardedDate.$$styleContext = {
@@ -321,7 +344,9 @@ $Flexlayout500$$Qualificationcontainer$$ContainerAwardedDate.$$styleContext = {
 const $Flexlayout500$$Qualificationcontainer$$ContainerAwardedDate_ = ListItem1($Flexlayout500$$Qualificationcontainer$$ContainerAwardedDate);
 
 function $Flexlayout500$$Salarycontainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "salaryTitle", $Flexlayout500$$Salarycontainer$$SalaryTitle_, pageInstance);
   addChild.call(this, "containerBasic", $Flexlayout500$$Salarycontainer$$ContainerBasic_, pageInstance);
   addChild.call(this, "horizontaldivider_2", $Flexlayout500$$Salarycontainer$$Horizontaldivider_2_, pageInstance);
@@ -348,7 +373,8 @@ const $Flexlayout500$$Salarycontainer_ = FlexLayout($Flexlayout500$$Salarycontai
 
 function $Flexlayout500$$Salarycontainer$$SalaryTitle(_super, pageInstance) {
   _super(this, {
-    text: "SALARY"
+    text: "SALARY",
+    skipDefaults: true
   });
   pageInstance.salaryTitle = this;
 }
@@ -365,7 +391,9 @@ $Flexlayout500$$Salarycontainer$$SalaryTitle.$$styleContext = {
 const $Flexlayout500$$Salarycontainer$$SalaryTitle_ = TextView($Flexlayout500$$Salarycontainer$$SalaryTitle);
 
 function $Flexlayout500$$Salarycontainer$$ContainerBasic(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.containerBasic = this;
 }
 $Flexlayout500$$Salarycontainer$$ContainerBasic.$$styleContext = {
@@ -386,7 +414,9 @@ $Flexlayout500$$Salarycontainer$$ContainerBasic.$$styleContext = {
 const $Flexlayout500$$Salarycontainer$$ContainerBasic_ = ListItem1($Flexlayout500$$Salarycontainer$$ContainerBasic);
 
 function $Flexlayout500$$Salarycontainer$$Horizontaldivider_2(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout500$$Salarycontainer$$Horizontaldivider_2.$$styleContext = {
   classNames: ".flexLayout",
@@ -409,7 +439,9 @@ $Flexlayout500$$Salarycontainer$$Horizontaldivider_2.$$styleContext = {
 const $Flexlayout500$$Salarycontainer$$Horizontaldivider_2_ = HorizontalDivider($Flexlayout500$$Salarycontainer$$Horizontaldivider_2);
 
 function $Flexlayout500$$Salarycontainer$$ContainerVariable(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.containerVariable = this;
 }
 $Flexlayout500$$Salarycontainer$$ContainerVariable.$$styleContext = {
@@ -431,7 +463,9 @@ $Flexlayout500$$Salarycontainer$$ContainerVariable.$$styleContext = {
 const $Flexlayout500$$Salarycontainer$$ContainerVariable_ = ListItem1($Flexlayout500$$Salarycontainer$$ContainerVariable);
 
 function $Flexlayout500$$Qualificationcontainer_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "label536_2", $Flexlayout500$$Qualificationcontainer_1$$Label536_2_, pageInstance);
   addChild.call(this, "objectiveContainer", $Flexlayout500$$Qualificationcontainer_1$$ObjectiveContainer_, pageInstance);
   addChild.call(this, "horizontaldivider_3", $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_3_, pageInstance);
@@ -460,7 +494,8 @@ const $Flexlayout500$$Qualificationcontainer_1_ = FlexLayout($Flexlayout500$$Qua
 
 function $Flexlayout500$$Qualificationcontainer_1$$Label536_2(_super, pageInstance) {
   _super(this, {
-    text: "PERFORMANCE OBJECTIVE"
+    text: "PERFORMANCE OBJECTIVE",
+    skipDefaults: true
   });
 }
 $Flexlayout500$$Qualificationcontainer_1$$Label536_2.$$styleContext = {
@@ -476,7 +511,9 @@ $Flexlayout500$$Qualificationcontainer_1$$Label536_2.$$styleContext = {
 const $Flexlayout500$$Qualificationcontainer_1$$Label536_2_ = TextView($Flexlayout500$$Qualificationcontainer_1$$Label536_2);
 
 function $Flexlayout500$$Qualificationcontainer_1$$ObjectiveContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.objectiveContainer = this;
 }
 $Flexlayout500$$Qualificationcontainer_1$$ObjectiveContainer.$$styleContext = {
@@ -497,7 +534,9 @@ $Flexlayout500$$Qualificationcontainer_1$$ObjectiveContainer.$$styleContext = {
 const $Flexlayout500$$Qualificationcontainer_1$$ObjectiveContainer_ = ListItem1($Flexlayout500$$Qualificationcontainer_1$$ObjectiveContainer);
 
 function $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_3(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_3.$$styleContext = {
   classNames: ".flexLayout",
@@ -520,7 +559,9 @@ $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_3.$$styleContext = {
 const $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_3_ = HorizontalDivider($Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_3);
 
 function $Flexlayout500$$Qualificationcontainer_1$$DueDateContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.dueDateContainer = this;
 }
 $Flexlayout500$$Qualificationcontainer_1$$DueDateContainer.$$styleContext = {
@@ -542,7 +583,9 @@ $Flexlayout500$$Qualificationcontainer_1$$DueDateContainer.$$styleContext = {
 const $Flexlayout500$$Qualificationcontainer_1$$DueDateContainer_ = ListItem1($Flexlayout500$$Qualificationcontainer_1$$DueDateContainer);
 
 function $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_1_1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_1_1.$$styleContext = {
   classNames: ".flexLayout",
@@ -564,7 +607,9 @@ $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_1_1.$$styleContext =
 const $Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_1_1_ = HorizontalDivider($Flexlayout500$$Qualificationcontainer_1$$Horizontaldivider_1_1);
 
 function $Flexlayout500$$Qualificationcontainer_1$$ResultContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.resultContainer = this;
 }
 $Flexlayout500$$Qualificationcontainer_1$$ResultContainer.$$styleContext = {
@@ -593,6 +638,7 @@ const $Flexlayout500$$Qualificationcontainer_1$$ResultContainer_ = ListItem1($Fl
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
+
 }
 
 module.exports = $PgOverview_;

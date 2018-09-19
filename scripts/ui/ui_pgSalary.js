@@ -59,7 +59,9 @@ $PgSalary.$$styleContext = {
 const $PgSalary_ = Page($PgSalary);
 
 function $LayoutHeaderBar(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.layoutHeaderBar = this;
 }
 $LayoutHeaderBar.$$styleContext = {
@@ -78,7 +80,9 @@ $LayoutHeaderBar.$$styleContext = {
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
 
 function $Flexlayout1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "wvChart", $Flexlayout1$$WvChart_, pageInstance);
 }
 $Flexlayout1.$$styleContext = {
@@ -91,7 +95,9 @@ $Flexlayout1.$$styleContext = {
 const $Flexlayout1_ = FlexLayout($Flexlayout1);
 
 function $Flexlayout1$$WvChart(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.wvChart = this;
 }
 $Flexlayout1$$WvChart.$$styleContext = {
@@ -107,7 +113,9 @@ $Flexlayout1$$WvChart.$$styleContext = {
 const $Flexlayout1$$WvChart_ = WebView($Flexlayout1$$WvChart);
 
 function $ListViewContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "listView", $ListViewContainer$$ListView_, pageInstance);
   pageInstance.listViewContainer = this;
 }
@@ -126,7 +134,9 @@ $ListViewContainer.$$styleContext = {
 const $ListViewContainer_ = FlexLayout($ListViewContainer);
 
 function $ListViewContainer$$ListView(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   var itemIndex = 0;
   this.onRowCreate = function() {
     var item = new ListViewItem();
@@ -155,6 +165,7 @@ const $ListViewContainer$$ListView_ = ListView($ListViewContainer$$ListView);
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
+
 }
 
 module.exports = $PgSalary_;

@@ -58,7 +58,9 @@ $PgExpenseApprovals.$$styleContext = {
 const $PgExpenseApprovals_ = Page($PgExpenseApprovals);
 
 function $LayoutHeaderBar(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.layoutHeaderBar = this;
 }
 $LayoutHeaderBar.$$styleContext = {
@@ -76,7 +78,9 @@ $LayoutHeaderBar.$$styleContext = {
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
 
 function $TopTabBar(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.topTabBar = this;
 }
 $TopTabBar.$$styleContext = {
@@ -101,7 +105,9 @@ $TopTabBar.$$styleContext = {
 const $TopTabBar_ = TopTabBar($TopTabBar);
 
 function $Flexlayout1102(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Flexlayout1102.$$styleContext = {
   classNames: ".flexLayout",
@@ -116,7 +122,9 @@ $Flexlayout1102.$$styleContext = {
 const $Flexlayout1102_ = FlexLayout($Flexlayout1102);
 
 function $ListViewContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "listView", $ListViewContainer$$ListView_, pageInstance);
   pageInstance.listViewContainer = this;
 }
@@ -140,7 +148,8 @@ const $ListViewContainer_ = FlexLayout($ListViewContainer);
 
 function $ListViewContainer$$ListView(_super, pageInstance) {
   _super(this, {
-    itemCount: 0
+    itemCount: 0,
+    skipDefaults: true
   });
   var itemIndex = 0;
   this.onRowCreate = function() {
@@ -171,6 +180,7 @@ const $ListViewContainer$$ListView_ = ListView($ListViewContainer$$ListView);
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
+
 }
 
 module.exports = $PgExpenseApprovals_;

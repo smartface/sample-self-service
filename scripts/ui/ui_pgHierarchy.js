@@ -57,7 +57,9 @@ $PgHierarchy.$$styleContext = {
 const $PgHierarchy_ = Page($PgHierarchy);
 
 function $LayoutHeaderBar(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.layoutHeaderBar = this;
 }
 $LayoutHeaderBar.$$styleContext = {
@@ -75,7 +77,9 @@ $LayoutHeaderBar.$$styleContext = {
 const $LayoutHeaderBar_ = LayoutHeaderBar($LayoutHeaderBar);
 
 function $ListViewContainer(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "listView", $ListViewContainer$$ListView_, pageInstance);
   pageInstance.listViewContainer = this;
 }
@@ -95,7 +99,9 @@ $ListViewContainer.$$styleContext = {
 const $ListViewContainer_ = FlexLayout($ListViewContainer);
 
 function $ListViewContainer$$ListView(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   var itemIndex = 0;
   this.onRowCreate = function() {
     var item = new ListViewItem();
@@ -124,6 +130,7 @@ const $ListViewContainer$$ListView_ = ListView($ListViewContainer$$ListView);
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "HIERARCHY";
+
 }
 
 module.exports = $PgHierarchy_;

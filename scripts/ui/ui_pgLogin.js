@@ -61,7 +61,9 @@ $PgLogin.$$styleContext = {
 const $PgLogin_ = Page($PgLogin);
 
 function $Imageview156(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
 }
 $Imageview156.$$styleContext = {
   classNames: ".imageView",
@@ -83,7 +85,8 @@ const $Imageview156_ = ImageView($Imageview156);
 
 function $AppName(_super, pageInstance) {
   _super(this, {
-    text: "EMPLOYEE\nSELF SERVICE"
+    text: "EMPLOYEE\nSELF SERVICE",
+    skipDefaults: true
   });
   pageInstance.appName = this;
 }
@@ -102,7 +105,9 @@ $AppName.$$styleContext = {
 const $AppName_ = TextView($AppName);
 
 function $InputLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "usernameLayout", $InputLayout$$UsernameLayout_, pageInstance);
   addChild.call(this, "passwordLayout", $InputLayout$$PasswordLayout_, pageInstance);
 }
@@ -122,7 +127,9 @@ $InputLayout.$$styleContext = {
 const $InputLayout_ = FlexLayout($InputLayout);
 
 function $InputLayout$$UsernameLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.usernameLayout = this;
 }
 $InputLayout$$UsernameLayout.$$styleContext = {
@@ -142,7 +149,9 @@ $InputLayout$$UsernameLayout.$$styleContext = {
 const $InputLayout$$UsernameLayout_ = TextboxWithLine($InputLayout$$UsernameLayout);
 
 function $InputLayout$$PasswordLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.passwordLayout = this;
 }
 $InputLayout$$PasswordLayout.$$styleContext = {
@@ -162,7 +171,9 @@ $InputLayout$$PasswordLayout.$$styleContext = {
 const $InputLayout$$PasswordLayout_ = TextboxWithLine($InputLayout$$PasswordLayout);
 
 function $ButtonLayout(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "loadingImageView", $ButtonLayout$$LoadingImageView_, pageInstance);
   addChild.call(this, "signinButton", $ButtonLayout$$SigninButton_, pageInstance);
   pageInstance.buttonLayout = this;
@@ -183,7 +194,9 @@ $ButtonLayout.$$styleContext = {
 const $ButtonLayout_ = FlexLayout($ButtonLayout);
 
 function $ButtonLayout$$LoadingImageView(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.loadingImageView = this;
 }
 $ButtonLayout$$LoadingImageView.$$styleContext = {
@@ -203,7 +216,8 @@ const $ButtonLayout$$LoadingImageView_ = ImageView($ButtonLayout$$LoadingImageVi
 
 function $ButtonLayout$$SigninButton(_super, pageInstance) {
   _super(this, {
-    text: "SIGN IN"
+    text: "SIGN IN",
+    skipDefaults: true
   });
   pageInstance.signinButton = this;
 }
@@ -228,6 +242,7 @@ const $ButtonLayout$$SigninButton_ = Button($ButtonLayout$$SigninButton);
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
+
 }
 
 module.exports = $PgLogin_;

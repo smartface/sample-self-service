@@ -57,7 +57,9 @@ $PgApprovals.$$styleContext = {
 const $PgApprovals_ = Page($PgApprovals);
 
 function $Flexlayout137(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   addChild.call(this, "comingSoon", $Flexlayout137$$ComingSoon_, pageInstance);
 }
 $Flexlayout137.$$styleContext = {
@@ -78,7 +80,9 @@ $Flexlayout137.$$styleContext = {
 const $Flexlayout137_ = FlexLayout($Flexlayout137);
 
 function $Flexlayout137$$ComingSoon(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   pageInstance.comingSoon = this;
 }
 $Flexlayout137$$ComingSoon.$$styleContext = {
@@ -92,7 +96,9 @@ $Flexlayout137$$ComingSoon.$$styleContext = {
 const $Flexlayout137$$ComingSoon_ = ImageView($Flexlayout137$$ComingSoon);
 
 function $ListView1(_super, pageInstance) {
-  _super(this);
+  _super(this, {
+    skipDefaults: true
+  });
   var itemIndex = 0;
   this.onRowCreate = function() {
     var item = new ListViewItem();
@@ -114,6 +120,7 @@ const $ListView1_ = ListView($ListView1);
 function onShow() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
+
 }
 
 module.exports = $PgApprovals_;
