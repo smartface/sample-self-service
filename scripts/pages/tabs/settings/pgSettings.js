@@ -5,9 +5,9 @@ const Application = require("sf-core/application");
 const Data = require("sf-core/data");
 const PageDesign = require("../../../ui/ui_pgSettings");
 const Router = require("sf-core/ui/router");
-const fingerprint = require("sf-extension-utils").fingerprint;
+const fingerprint = require("sf-extension-utils/lib/fingerprint");
 const System = require('sf-core/device/system');
-const rau = require("sf-extension-utils").rau;
+const rau = require("sf-extension-utils/lib/rau");
 
 const Page_ = extend(PageDesign)(
 	// Constructor

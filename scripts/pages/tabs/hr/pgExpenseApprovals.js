@@ -92,7 +92,7 @@ function initListView() {
 	}.bind(this);
 
 	this.listView.onRowSelected = function(listviewItem, index) {
-		Router.go("tabs/approvals/expenseApprovalDetail", this.data[index]);
+		// Router.go("tabs/hr/expenseApprovalDetail", this.data[index]);
 	}.bind(this);
 }
 

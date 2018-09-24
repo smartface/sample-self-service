@@ -82,7 +82,9 @@ function onLoad(parentOnLoad) {
 	myCalendar.changeCalendar("en","gregorian",{});
 	var selectedDate;
 	myCalendar.onRangeSelectionComplete = function(startDate,endDate){
+		console.log("111!!");
 	  selectedDate = startDate.date.day + "/" +  startDate.date.month + "/" + startDate.date.year + " - " + endDate.date.day + "/" +  endDate.date.month + "/" + endDate.date.year
+		console.log("selectedDate : " + selectedDate);
 	}
 	const newMonthLabelColorStyle = {
 	  ".calendar":{

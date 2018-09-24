@@ -63,8 +63,11 @@ function wrapContentIntoScroll() {
 	this.scrollView = new ScrollView({
 		flexGrow: 1
 	});
-	this.layout.removeChild(this.mainLayout);
-	this.scrollView.layout.addChild(this.mainLayout, "mainLayout", ".flexlayout", {
+	const FlexLayout = require('sf-core/ui/flexlayout');
+	var mainLayout = new FlexLayout({
+		flexGrow: 1
+	});
+	this.scrollView.layout.addChild(mainLayout, "mainLayout", ".flexlayout", {
 		width: null,
 		height: 810
 	});

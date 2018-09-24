@@ -292,8 +292,14 @@ function $Flexlayout84$$Flexlayout85_1$$Switch1(_super, pageInstance) {
 $Flexlayout84$$Flexlayout85_1$$Switch1.$$styleContext = {
   classNames: ".switch",
   userProps: {
+    android: {
+      toggleOffColor: "rgba( 255, 255, 255, 0 )"
+    },
     minHeight: 31,
     minWidth: 51,
+    thumbOffColor: "rgba( 228, 164, 220, 1 )",
+    thumbOnColor: "rgba( 208, 23, 133, 1 )",
+    toggleOnColor: "rgba( 227, 192, 233, 1 )",
     width: null
   }
 };
@@ -375,8 +381,14 @@ function $Flexlayout84$$LayoutFinger$$SwitchFinger(_super, pageInstance) {
 $Flexlayout84$$LayoutFinger$$SwitchFinger.$$styleContext = {
   classNames: ".switch",
   userProps: {
+    android: {
+      toggleOffColor: "rgba( 255, 255, 255, 0 )"
+    },
     minHeight: 31,
     minWidth: 51,
+    thumbOffColor: "rgba( 228, 164, 220, 1 )",
+    thumbOnColor: "rgba( 208, 23, 133, 1 )",
+    toggleOnColor: "rgba( 227, 192, 233, 1 )",
     width: null
   }
 };
@@ -459,8 +471,14 @@ function $Flexlayout84$$LayoutInstabug$$SwitchFinger(_super, pageInstance) {
 $Flexlayout84$$LayoutInstabug$$SwitchFinger.$$styleContext = {
   classNames: ".switch",
   userProps: {
+    android: {
+      toggleOffColor: "rgba( 255, 255, 255, 0 )"
+    },
     minHeight: 31,
     minWidth: 51,
+    thumbOffColor: "rgba( 228, 164, 220, 1 )",
+    thumbOnColor: "rgba( 208, 23, 133, 1 )",
+    toggleOnColor: "rgba( 227, 192, 233, 1 )",
     width: null
   }
 };
@@ -543,8 +561,14 @@ function $Flexlayout84$$LayoutFabric$$SwitchFinger(_super, pageInstance) {
 $Flexlayout84$$LayoutFabric$$SwitchFinger.$$styleContext = {
   classNames: ".switch",
   userProps: {
+    android: {
+      toggleOffColor: "rgba( 255, 255, 255, 0 )"
+    },
     minHeight: 31,
     minWidth: 51,
+    thumbOffColor: "rgba( 228, 164, 220, 1 )",
+    thumbOnColor: "rgba( 208, 23, 133, 1 )",
+    toggleOnColor: "rgba( 227, 192, 233, 1 )",
     width: null
   }
 };
@@ -627,8 +651,14 @@ function $Flexlayout84$$LayoutFirabase$$SwitchFinger(_super, pageInstance) {
 $Flexlayout84$$LayoutFirabase$$SwitchFinger.$$styleContext = {
   classNames: ".switch",
   userProps: {
+    android: {
+      toggleOffColor: "rgba( 255, 255, 255, 0 )"
+    },
     minHeight: 31,
     minWidth: 51,
+    thumbOffColor: "rgba( 228, 164, 220, 1 )",
+    thumbOnColor: "rgba( 208, 23, 133, 1 )",
+    toggleOnColor: "rgba( 227, 192, 233, 1 )",
     width: null
   }
 };
