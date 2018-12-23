@@ -47,7 +47,7 @@ const router = Router.of({
                             path: "/pages/tabs/profile/index",
                             build: (router, route) => {
                                 let Profile = require("pages/tabs/profile/index");
-                                return new Profile();
+                                return new Profile(router);
                             }
                         })
                         // Route.of({
@@ -69,7 +69,7 @@ const router = Router.of({
                             path: "/pages/tabs/hr/index",
                             build: (router, route) => {
                                 let HR = require("pages/tabs/hr/index");
-                                return new HR();
+                                return new HR(router);
                             }
                         })
                         // Route.of({
@@ -112,7 +112,7 @@ const router = Router.of({
                             path: "/pages/tabs/myCompany/index",
                             build: (router, route) => {
                                 let MyCompany = require("pages/tabs/myCompany/index");
-                                return new MyCompany();
+                                return new MyCompany(router);
                             }
                         })
                         // Route.of({
@@ -133,26 +133,26 @@ const router = Router.of({
                             path: "/pages/tabs/chatbot/index",
                             build: (router, route) => {
                                 let Chatbot = require("pages/tabs/chatbot/index");
-                                return new Chatbot();
+                                return new Chatbot(router);
                             }
                         }),
                     ]
                 }),
-                StackRouter.of({
-                    path: "/pages/tabs/settings",
-                    to: "/pages/tabs/settings/pgSettings",
-                    headerBarParams: () => ({ visible: true }),
-                    routes: [
-                        Route.of({
-                            path: "/pages/tabs/settings/pgSettings",
-                            build: (router, route) => {
-                                console.log("build setting")
-                                let Settings = require("pages/tabs/settings/pgSettings");
-                                 console.log("build setting 2")
-                                return new Settings();
-                            }
-                        }),
-                    ]
+                Route.of({
+                    path: "/pages/tabs/settings/pgSettings",
+                    build: (router, route) => {
+                        try {
+                            console.log("build setting")
+
+                            let Settings = require("pages/tabs/settings/pgSettings");
+                            console.log("build setting 2")
+                            return new Settings(router);
+
+                        }
+                        catch(e){
+                            console.log("error reason:"+e)
+                        }
+                    }
                 })
             ]
         })
