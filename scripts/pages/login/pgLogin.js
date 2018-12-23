@@ -2,7 +2,6 @@
 const extend = require("js-base/core/extend");
 const Animator = require("sf-core/ui/animator");
 const Image = require("sf-core/ui/image");
-const Router = require("sf-core/router");
 const System = require("sf-core/device/system");
 const Timer = require("sf-core/timer");
 const fingerprint = require("sf-extension-utils/lib/fingerprint");
@@ -14,9 +13,9 @@ const PageDesign = require("../../ui/ui_pgLogin");
 
 const Page_ = extend(PageDesign)(
 	// Constructor
-	function(_super, params) {
+	function(_super,router) {
 		// Initalizes super class for this page scope
-		_super(this, params);
+		_super(this);
 		this.onLoad = onLoad.bind(this, this.onLoad);
 		this.onShow = onShow.bind(this, this.onShow);
 	}
@@ -39,10 +38,9 @@ function onLoad(parentOnLoad) {
 	this.signinButton.onPress = signInAction;
 }
 
-function onShow(parentOnShow, params) {
-	parentOnShow && parentOnShow(params);
+function onShow(parentOnShow, router) {
+	parentOnShow && parentOnShow();
 	const page = this;
-
 	page.appName.onTouch = function() {
 		page.usernameLayout.innerTextbox.text = "selfservice";
 		page.passwordLayout.innerTextbox.text = "123qweASD";
@@ -80,7 +78,7 @@ function onShow(parentOnShow, params) {
 						return;
 					}
 					fingerprintResult && fingerprintResult.success(); //Important!
-					Router.go("tabs");
+					page.router.push("/pages/tabs/profile/pgOverview");
 				});
 			});
 		}

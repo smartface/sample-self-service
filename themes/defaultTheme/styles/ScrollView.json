@@ -9,8 +9,7 @@
 		"borderColor": "rgba(0,0,0,1)",
 		"borderWidth": 0,
 		"scrollBarEnabled": true,
-		"align": "HORIZONTAL",
-		"font": {},
+		"align": "VERTICAL",
 		"flexProps": {
 			"alignSelf": "AUTO",
 			"direction": "INHERIT",
@@ -20,6 +19,21 @@
 			"flexWrap": "NOWRAP",
 			"flexDirection": "COLUMN",
 			"positionType": "RELATIVE"
+		},
+		"layout": {
+			"flexProps": {
+				"direction": "INHERIT",
+				"alignContent": "STRETCH",
+				"alignItems": "STRETCH",
+				"justifyContent": "FLEX_START",
+				"flexWrap": "NOWRAP",
+				"flexDirection": "COLUMN"
+			},
+			"visible": true,
+			"backgroundColor": "rgba(1, 1, 1, 0)",
+			"alpha": 1,
+			"borderColor": "rgba(0,0,0,1)",
+			"borderWidth": 0
 		},
 		"&-small": {
 			"width": 100

@@ -9,9 +9,6 @@ const Router = require("sf-core/ui/router");
 const Data = require('sf-core/data');
 const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
 
-
-
-
 BottomTabBar.$$styleContext = {
     classNames: ".bottomtabbar",
     userProps: {}
