@@ -254,5 +254,5 @@ SMF.i18n.defineLanguage('tr', {
 	"useFingerprintTitle": "Parmak izi kullan",
 	"useFingerprintMessage": "Gelecekteki oturum açmalarında parmak izi kullanmak ister misin?",
 	"scanFingerprintTitle": "Parmak izi ile oturum aç",
-	"scanFingerprintMessage": "Parmağını tarat",
+	"scanFingerprintMessage": "Parmağını tarat"
 });
