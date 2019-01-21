@@ -31,17 +31,23 @@ SMF.i18n = {
 				}
 				// In case default options did not work, pick the first one.
 				this.switchLanguage(languageCodes[0]);
-			} else {
+			}
+			else {
 				this.switchLanguage(this.defaultLang);
 			}
 		}
-		this.currentLang = languageCode;
-		global.lang = this.languageKV[languageCode];
+		else {
+			this.currentLang = languageCode;
+			global.lang = this.languageKV[languageCode]
+		}
 	}
 };
 
 require('i18n/en.js');
+
 require('i18n/tr.js');
+
 require('i18n/ar.js');
+
 
 SMF.i18n.switchLanguage(Device.language);
