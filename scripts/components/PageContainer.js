@@ -17,7 +17,7 @@ function HRIndexConstructor(_super, params) {
     if (!this.childPages) this.childPages = [];
     this.children = {};
 
-    this.children["statusBar"] = this.statusBar;
+    this.children["statusBar"] = this.statusBar || {};
     this.children["headerBar"] = this.headerBar;
     pageContextPatch(this, "pageContainer");
     var _superOnLoad = this.onLoad;
