@@ -6,7 +6,7 @@ const ItemApproval = require("components/ItemApproval");
 const ListViewItem = require("sf-core/ui/listviewitem");
 const expenseManagement = require('../../../model/expense-management');
 const PageDesign = require("../../../ui/ui_pgExpenseApprovals");
-// const Router = require("sf-core/router");
+const Router = require("../../../router/index");
 const addChild = require("@smartface/contx/lib/smartface/action/addChild");
 const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 var loadingIndicator = DialogsLib.createLoadingDialog();
@@ -92,7 +92,7 @@ function initListView() {
 	}.bind(this);
 
 	this.listView.onRowSelected = function(listviewItem, index) {
-		// Router.go("tabs/hr/expenseApprovalDetail", this.data[index]);
+		Router.push("/tabs/hr/expenseApprovalDetail", this.data[index]);
 	}.bind(this);
 }
 

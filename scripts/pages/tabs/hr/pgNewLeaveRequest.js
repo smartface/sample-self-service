@@ -2,9 +2,8 @@
 const extend = require('js-base/core/extend');
 const Color = require('sf-core/ui/color');
 const PageDesign = require("../../../ui/ui_pgNewLeaveRequest");
-// const Router = require("sf-core/router");
+const Router = require("../../../router/index");
 const Dialog = require('sf-core/ui/dialog');
-const FlexLayout = require('sf-core/ui/flexlayout');
 const Screen = require('sf-core/device/screen');
 const Calendar = require("@smartface/sf-component-calendar/components/Calendar");
 const Button = require('sf-core/ui/button');
@@ -64,7 +63,7 @@ function onLoad(parentOnLoad) {
     });
     var okCallback = function(e) {
     	self.leaveTypePicker.pickerText.text = items[e.index];
-    }
+    };
     var cancelCallback = function() {};
         
 	var self = this;
@@ -73,7 +72,7 @@ function onLoad(parentOnLoad) {
 	
 	var margin = 30;
 	const myCalendar = new Calendar();
-	myCalendar.left = margin
+	myCalendar.left = margin;
 	var height = Screen.width - margin*2;
 	myCalendar.width = Screen.width - margin*2;
 	myCalendar.height = height;
@@ -83,9 +82,9 @@ function onLoad(parentOnLoad) {
 	var selectedDate;
 	myCalendar.onRangeSelectionComplete = function(startDate,endDate){
 		console.log("111!!");
-	  selectedDate = startDate.date.day + "/" +  startDate.date.month + "/" + startDate.date.year + " - " + endDate.date.day + "/" +  endDate.date.month + "/" + endDate.date.year
+	  selectedDate = startDate.date.day + "/" +  startDate.date.month + "/" + startDate.date.year + " - " + endDate.date.day + "/" +  endDate.date.month + "/" + endDate.date.year;
 		console.log("selectedDate : " + selectedDate);
-	}
+	};
 	const newMonthLabelColorStyle = {
 	  ".calendar":{
 	    ".header":{
@@ -109,7 +108,7 @@ function onLoad(parentOnLoad) {
     
     var buttonSelect = new Button();
     buttonSelect.height = 60;
-    buttonSelect.width = Screen.width - margin*2;;
+    buttonSelect.width = Screen.width - margin*2;
     buttonSelect.left = margin;
     buttonSelect.text = lang["pgNewLeaveRequest.selectDate"];
     buttonSelect.top = top + height - 10;
@@ -122,12 +121,12 @@ function onLoad(parentOnLoad) {
     		self.selectDatePicker.pickerText.text = "";
     	}
     	myDialog.hide();
-    }
+    };
     myDialog.layout.addChild(buttonSelect);
     
     var buttonCancel= new Button();
     buttonCancel.height = 60;
-    buttonCancel.width = Screen.width - margin*2;;
+    buttonCancel.width = Screen.width - margin*2;
     buttonCancel.left = margin;
     buttonCancel.text = lang["cancel"];
     buttonCancel.top = top + height + - 5;
@@ -152,9 +151,7 @@ function onLoad(parentOnLoad) {
 function initTexts() {
 	this.informationTitle.text = lang["pgNewLeaveRequest.workInformation"];
 	this.leaveTypePicker.pickerTitle.text = lang["pgNewLeaveRequest.leaveType"];
-	// this.timeTypePicker.pickerTitle.text = lang["pgNewLeaveRequest.timeType"];
 	this.selectDatePicker.pickerTitle.text = lang["pgNewLeaveRequest.selectDate"];
-	// this.selectTimePicker.pickerTitle.text = lang["pgNewLeaveRequest.selectTime"];
 }
 
 module && (module.exports = Page_);

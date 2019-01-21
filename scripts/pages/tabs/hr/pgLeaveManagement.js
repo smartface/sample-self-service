@@ -6,15 +6,13 @@ const Image = require("sf-core/ui/image");
 const ItemLeaveManagement = require('../../../components/ItemLeaveManagement');
 const leaveManagement = require("../../../model/leave-management");
 const PageDesign = require("../../../ui/ui_pgLeaveManagement");
-// const Router = require("sf-core/router");
+const Router = require("../../../router");
 const JET = require('sf-extension-oracle-jet');
-const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const color2Hex = require("../../../lib/color2Hex");
 const mixinDeep = require('mixin-deep');
 const addChild = require("@smartface/contx/lib/smartface/action/addChild");
-const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 const createSFCoreProp = require("@smartface/contx/lib/smartface/sfCorePropFactory").createSFCoreProp;
-var loadingIndicator = DialogsLib.createLoadingDialog();
+var loadingIndicator = DialogsLib.createLoadingDialog();  
 
 const Page_ = extend(PageDesign)(
     // Constructor
@@ -169,7 +167,7 @@ function initHeaderBar() {
     this.layoutHeaderBar.setRightItem1({
         image: Image.createFromFile("images://icon_header_add.png"),
         onPress: function() {
-            Router.go("tabs/hr/newLeaveRequest");
+            Router.push("/tabs/hr/newLeaveRequest");
         }
     });
 }

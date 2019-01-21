@@ -1,7 +1,4 @@
-const System = require('sf-core/device/system');
-const HeaderBarItem = require('sf-core/ui/headerbaritem');
-const Router = require("sf-core/ui/router");
-const Image = require('sf-core/ui/image');
+const Router = require("router");
 const Color = require('sf-core/ui/color');
 
 module.exports = applyDefaultBackAction;
@@ -29,18 +26,6 @@ function applyDefaultBackAction(page, backAction, styleSelection) {
     };
     var selectedStyle = style[styleSelection || "LIGHT"];
 
-    //if (System.OS === "iOS") { //default android will do the trick;
-    //    var leftItem = new HeaderBarItem({
-    //        title: "",
-    //        onPress: function() {
-    //            backAction();
-    //        },
-    //        image: Image.createFromFile(selectedStyle.imageName),
-    //        color: Color.WHITE
-    //    });
-    //    page.headerBar.leftItem = leftItem;
-    //    page.headerBar.setLeftItem(leftItem);
-    //}
     page.headerBar.itemColor = selectedStyle.textColor;
     if (page.headerBar.ios)
         page.headerBar.ios.itemColor = selectedStyle.textColor;
@@ -56,6 +41,6 @@ function defaultGoBack(pageName) {
         Router.goBack();
     }
     else {
-        Router.goBack(pageName);
+        Router.push(`/`+pageName);
     }
 }

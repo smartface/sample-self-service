@@ -6,9 +6,10 @@ const ScrollView = require("sf-core/ui/scrollview");
 
 const Page_ = extend(PageDesign)(
 	// Constructor
-	function(_super, params) {
+	function(_super, router, routeData) {
 		// Initalizes super class for this page scope
-		_super(this, params);
+		_super(this, router, routeData);
+		this.routeData = routeData;
 		this._superOnShow = this.onShow;
 		this.onShow = onShow.bind(this);
 		this.onLoad = onLoad.bind(this, this.onLoad);
@@ -23,6 +24,7 @@ function onLoad(parentOnLoad) {
 }
 
 function onShow(detail) {
+	detail = this.routeData;
 	if (typeof this._superOnShow === "function") this._superOnShow();
 	initHeaderBar.call(this);
 	initTexts.call(this, detail);

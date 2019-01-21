@@ -6,7 +6,7 @@ const ItemApproval = require("components/ItemApproval");
 const ListViewItem = require("sf-core/ui/listviewitem");
 const leaveManagement = require('../../../model/leave-management');
 const PageDesign = require("../../../ui/ui_pgLeaveApprovals");
-// const Router = require("sf-core/router");
+const Router = require("../../../router/index");
 const addChild = require("@smartface/contx/lib/smartface/action/addChild");
 const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
 const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
@@ -100,7 +100,7 @@ function initListView() {
 	}.bind(this);
 
 	this.listView.onRowSelected = function(listviewItem, index) {
-		Router.go("tabs/hr/leaveApprovalDetail", this.data[index]);
+		Router.push("/tabs/hr/leaveApprovalDetail", this.data[index]);
 	}.bind(this);
 }
 

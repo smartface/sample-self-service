@@ -6,7 +6,6 @@ const System = require("sf-core/device/system");
 const Timer = require("sf-core/timer");
 const fingerprint = require("sf-extension-utils/lib/fingerprint");
 const login = require("../../lib/lgn");
-const Color = require("sf-core/ui/color");
 const ActionKeyType = require('sf-core/ui/actionkeytype');
 const rau = require("sf-extension-utils/lib/rau");
 const PageDesign = require("../../ui/ui_pgLogin");
@@ -16,6 +15,7 @@ const Page_ = extend(PageDesign)(
 	function(_super,router) {
 		// Initalizes super class for this page scope
 		_super(this);
+		this.router = router;
 		this.onLoad = onLoad.bind(this, this.onLoad);
 		this.onShow = onShow.bind(this, this.onShow);
 	}
@@ -78,7 +78,7 @@ function onShow(parentOnShow, router) {
 						return;
 					}
 					fingerprintResult && fingerprintResult.success(); //Important!
-					page.router.push("/pages/tabs/profile/pgOverview");
+					page.router.push("/tabs/profile/index");
 				});
 			});
 		}

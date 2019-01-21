@@ -3,7 +3,7 @@ const extend = require('js-base/core/extend');
 const ChatbotPgDesign = require('ui/ui_pgChatbot');
 const chatBotReplyStructure = require('components/ChatBotReplyStructure');
 const WebSocket = require('sf-core/net/websocket');
-// const Router = require('sf-core/router');
+const Router = require('../../../router/index');
 const PageFinder = require("./PageFinder");
 const Timer = require("sf-core/timer");
 const Image = require('sf-core/ui/image');
@@ -202,14 +202,14 @@ function nativagetFoundPage(pageName) {
     if (tabName !== null && index !== null) {
       //sets the index
       tabBar.setIndex(tabName);
-      var tabPath = "tabs/" + tabName;
+      var tabPath = "/tabs/" + tabName;
       console.log(" tabName " + tabName);
       swipeViewIndex.currentIndex = index;
 
       Timer.setTimeout({
         task: () => {
           //navigates the desired page
-          Router.go(tabPath)
+          Router.push(tabPath)
         },
         delay: 2000
       });

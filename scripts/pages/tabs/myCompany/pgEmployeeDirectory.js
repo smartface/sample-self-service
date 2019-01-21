@@ -2,14 +2,11 @@
 const extend = require('js-base/core/extend');
 const Image = require("sf-core/ui/image");
 const ListViewItem = require('sf-core/ui/listviewitem');
-// const Router = require("sf-core/router");
 const user = require('../../../model/user');
 const PageDesign = require("../../../ui/ui_pgEmployeeDirectory");
 const ItemUser = require('../../../components/ItemUser');
 const DialogsLib = require("lib/ui/dialogs");
 const addChild = require("@smartface/contx/lib/smartface/action/addChild");
-const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
-
 var loadingIndicator = DialogsLib.createLoadingDialog();
 
 const Page_ = extend(PageDesign)(

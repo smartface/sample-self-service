@@ -8,7 +8,6 @@ const ItemFile = require("components/ItemFile");
 const Multimedia = require("sf-core/device/multimedia");
 const PageDesign = require("../../../ui/ui_pgNewExpense");
 const Picker = require("sf-core/ui/picker");
-// const Router = require("sf-core/router");
 const ScrollView = require("sf-core/ui/scrollview");
 const ImageView = require('sf-core/ui/imageview');
 

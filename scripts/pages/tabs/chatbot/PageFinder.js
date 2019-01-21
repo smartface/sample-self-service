@@ -19,7 +19,7 @@ exports.findPage = function(pageName, callback) {
    var foundTab = allPages[i];
    var foundTabLength = foundTab.length - 1;
    var tabName = foundTab[foundTabLength];
-
+console.log("tabName"+tabName)
 
    callback(tabName, foundPageIndex);
   }

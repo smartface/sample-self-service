@@ -8,7 +8,7 @@ const ItemExpense = require('../../../components/ItemExpense');
 const ListViewItem = require('sf-core/ui/listviewitem');
 const expenseMangement = require("../../../model/expense-management");
 const PageDesign = require("../../../ui/ui_pgExpanseManagement");
-// const Router = require("sf-core/router");
+const Router = require("../../../router");
 const System = require("sf-core/device/system");
 const addChild = require("@smartface/contx/lib/smartface/action/addChild");
 const removeChildren = require("@smartface/contx/lib/smartface/action/removeChildren");
@@ -130,7 +130,7 @@ function initFloatingMenu() {
 }
 
 function addNewExpense(type) {
-  Router.go("tabs/hr/newExpense");
+  Router.push("/tabs/hr/newExpense");
 }
 
 module && (module.exports = Page_);

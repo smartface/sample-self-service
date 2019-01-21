@@ -7,13 +7,13 @@ const PageDesign = require("../../../ui/ui_pgSettings");
 const fingerprint = require("sf-extension-utils/lib/fingerprint");
 const System = require('sf-core/device/system');
 const rau = require("sf-extension-utils/lib/rau");
-
 const Page_ = extend(PageDesign)(
 	// Constructor
-	function(_super, params, router) {
+	function(_super, router) {
 		// Initalizes super class for this page scope
-		_super(this, params, router);
-		this.router = router;
+		_super(this);
+		this.router = router ; 
+		const page = this;
 		var _superOnLoad = this.onLoad;
 		var _superOnShow = this.onShow;
 
@@ -36,7 +36,7 @@ const Page_ = extend(PageDesign)(
 			initCurrentTheme.call(this);
 		};
 
-		this.onShow = function(router) {
+		this.onShow = function() {
 
 			if (typeof _superOnShow === "function") _superOnShow.call(this);
 
@@ -55,19 +55,7 @@ const Page_ = extend(PageDesign)(
 			Data.setBooleanVariable("isUserAuthenticated", false);
 			Data.setStringVariable("userName", null);
 			Data.setStringVariable("password", null);
-
-			if (System.OS === "Android") {
-				// Router.go("login/pgLogin"); // TODO: remove after AND-2900
-			}
-			else {
-				try {
-					router.goBack();
-				}
-				catch (e) {
-					console.log("im a error" + e)
-				}
-				// Router.goBack("login");
-			}
+			page.router.push("/login/pgLogin");
 		};
 	}
 );
@@ -108,7 +96,6 @@ function changeTheme(themeName) {
 }
 
 function initCurrentTheme() {
-	// if (Data.getStringVariable("theme") !== "Style1") {
 
 	this.themeBlueLayout.dispatch({
 		type: "updateUserStyle",
@@ -122,7 +109,7 @@ function initCurrentTheme() {
 			borderWidth: Data.getStringVariable("theme") == "Style2" ? 1 : 0
 		}
 	});
-	// }
+
 }
 
 function initFingerPrint() {

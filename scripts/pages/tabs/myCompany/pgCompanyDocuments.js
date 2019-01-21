@@ -1,7 +1,7 @@
 /*globals lang*/
 const extend = require('js-base/core/extend');
 const ListViewItem = require('sf-core/ui/listviewitem');
-// const Router = require("sf-core/router");
+const Router = require("../../../router/index");
 const companyDocuments = require('../../../model/company-documents');
 const PageDesign = require("../../../ui/ui_pgCompanyDocuments");
 const ItemDocument = require('../../../components/ItemDocument');
@@ -96,7 +96,7 @@ function initListView(data) {
             item && (item.data = data[index]);
         },
         onRowSelected() {
-            Router.go("tabs/myCompany/documentDetail");
+            Router.push("/tabs/myCompany/documentDetail");
         }
     };
 }
