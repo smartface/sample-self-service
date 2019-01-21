@@ -1,23 +1,19 @@
 {
-	".scrollView": {
+	".shimmerFlexLayout": {
 		"height": 200,
 		"width": 200,
 		"touchEnabled": true,
 		"visible": true,
 		"backgroundColor": "#FFFFFF",
 		"alpha": 1,
+		"baseAlpha": 1,
+		"pauseDuration": 400,
+		"shimmeringDirection": "RIGHT",
 		"borderColor": "rgba(0,0,0,1)",
 		"borderWidth": 0,
-		"scrollBarEnabled": true,
-		"align": "VERTICAL",
+		"font": {},
 		"flexProps": {
 			"alignSelf": "AUTO",
-			"direction": "INHERIT",
-			"alignContent": "STRETCH",
-			"alignItems": "STRETCH",
-			"justifyContent": "FLEX_START",
-			"flexWrap": "NOWRAP",
-			"flexDirection": "COLUMN",
 			"positionType": "RELATIVE"
 		},
 		"layout": {
@@ -28,12 +24,18 @@
 				"justifyContent": "FLEX_START",
 				"flexWrap": "NOWRAP",
 				"flexDirection": "COLUMN"
-			},
-			"visible": true,
-			"backgroundColor": "rgba(1, 1, 1, 0)",
-			"alpha": 1,
-			"borderColor": "rgba(0,0,0,1)",
-			"borderWidth": 0
+			}
+		},
+		"ios": {
+			"animationAlpha": 0.5,
+			"beginFadeDuration": 100,
+			"endFadeDuration": 300,
+			"speed": 230
+
+		},
+		"android": {
+			"highlightAlpha": 0.5,
+			"highlightLength": 1
 		},
 		"&-small": {
 			"width": 100

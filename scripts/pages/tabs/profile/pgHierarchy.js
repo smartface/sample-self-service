@@ -1,7 +1,6 @@
 /* globals lang */
 const extend = require('js-base/core/extend');
 const ListViewItem = require('sf-core/ui/listviewitem');
-const Router = require("sf-core/router");
 const user = require('../../../model/user');
 const PageDesign = require("../../../ui/ui_pgHierarchy");
 const ItemUser = require('../../../components/ItemUser');
@@ -65,7 +64,7 @@ function initListView(listView, data) {
     };
 
     listView.onRowSelected = function() {
-        Router.go("tabs/profile/profileDetail");
+        this.router.push("tabs/profile/profileDetail");
     };
 }
 

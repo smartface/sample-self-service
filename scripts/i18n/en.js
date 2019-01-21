@@ -254,6 +254,6 @@ SMF.i18n.defineLanguage('en', {
 	"useFingerprintTitle": "Use Fingerprint",
 	"useFingerprintMessage": "Would you like to use fingerprint login on your future logins?",
 	"scanFingerprintTitle": "Login with fingerprint",
-	"scanFingerprintMessage": "Scan your finger",
+	"scanFingerprintMessage": "Scan your finger"
 	
 });

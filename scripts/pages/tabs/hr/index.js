@@ -8,7 +8,7 @@ const HRIndex = extend(PageContainer)(
                 require("./pgExpenseManagement"),
                 require("./pgOutOfOffice"),
                 require("./pgLeaveApprovals"),
-                require("./pgExpenseApprovals"),
+                require("./pgExpenseApprovals")
             ];
         _super(this, params);
     }
