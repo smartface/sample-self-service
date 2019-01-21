@@ -31,10 +31,10 @@ function addChild(childName, ChildClass, pageInstance) {
 function $PgOverview(_super, props) {
   // Initalizes super class for this page scope
   _super(this, Object.assign({}, {
-    onShow: onShow.bind(this)
+    onLoad: onLoad.bind(this)
   }, props || {}));
   this.children = {};
-  this.children["statusBar"] = this.statusBar;
+  this.children["statusBar"] = {};
   this.children["headerBar"] = this.headerBar;
   addChild.call(this, "layoutHeaderBar", $LayoutHeaderBar_, this);
   addChild.call(this, "flexlayout1", $Flexlayout1_, this);
@@ -631,11 +631,10 @@ $Flexlayout500$$Qualificationcontainer_1$$ResultContainer.$$styleContext = {
 const $Flexlayout500$$Qualificationcontainer_1$$ResultContainer_ = ListItem1($Flexlayout500$$Qualificationcontainer_1$$ResultContainer);
 
 /**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- * @param {Object} parameters passed from Router.go function
+ * @event onLoad
+ * This event is called once when page is created. You can create views and add them to page in this callback.
  */
-function onShow() {
+function onLoad() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
 

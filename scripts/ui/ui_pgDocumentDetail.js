@@ -27,10 +27,10 @@ function addChild(childName, ChildClass, pageInstance) {
 function $PgDocumentDetail(_super, props) {
   // Initalizes super class for this page scope
   _super(this, Object.assign({}, {
-    onShow: onShow.bind(this)
+    onLoad: onLoad.bind(this)
   }, props || {}));
   this.children = {};
-  this.children["statusBar"] = this.statusBar;
+  this.children["statusBar"] = {};
   this.children["headerBar"] = this.headerBar;
   addChild.call(this, "mainLayout", $MainLayout_, this);
   pageContextPatch(this, "pgDocumentDetail");
@@ -103,11 +103,10 @@ $MainLayout$$Label322.$$styleContext = {
 const $MainLayout$$Label322_ = TextView($MainLayout$$Label322);
 
 /**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- * @param {Object} parameters passed from Router.go function
+ * @event onLoad
+ * This event is called once when page is created. You can create views and add them to page in this callback.
  */
-function onShow() {
+function onLoad() {
   // HeaderBar props
   this.headerBar.title = "newPage001";
 

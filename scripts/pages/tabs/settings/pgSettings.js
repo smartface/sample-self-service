@@ -4,17 +4,16 @@ const AlertView = require("sf-core/ui/alertview");
 const Application = require("sf-core/application");
 const Data = require("sf-core/data");
 const PageDesign = require("../../../ui/ui_pgSettings");
-const Router = require("sf-core/ui/router");
 const fingerprint = require("sf-extension-utils/lib/fingerprint");
 const System = require('sf-core/device/system');
 const rau = require("sf-extension-utils/lib/rau");
 
 const Page_ = extend(PageDesign)(
 	// Constructor
-	function(_super, params) {
+	function(_super, params, router) {
 		// Initalizes super class for this page scope
-		_super(this, params);
-
+		_super(this, params, router);
+		this.router = router;
 		var _superOnLoad = this.onLoad;
 		var _superOnShow = this.onShow;
 
@@ -37,7 +36,8 @@ const Page_ = extend(PageDesign)(
 			initCurrentTheme.call(this);
 		};
 
-		this.onShow = function() {
+		this.onShow = function(router) {
+
 			if (typeof _superOnShow === "function") _superOnShow.call(this);
 
 			initNewVersionButton.call(this);
@@ -57,10 +57,16 @@ const Page_ = extend(PageDesign)(
 			Data.setStringVariable("password", null);
 
 			if (System.OS === "Android") {
-				Router.go("login/pgLogin"); // TODO: remove after AND-2900
+				// Router.go("login/pgLogin"); // TODO: remove after AND-2900
 			}
 			else {
-				Router.goBack("login");
+				try {
+					router.goBack();
+				}
+				catch (e) {
+					console.log("im a error" + e)
+				}
+				// Router.goBack("login");
 			}
 		};
 	}
