@@ -30,6 +30,7 @@ function onLoad(parentOnLoad) {
 	parentOnLoad();
 	
 	this.ios.safeAreaLayoutMode = true;
+	console.log(this.router)
 
 }
 
@@ -72,12 +73,12 @@ function onLoad(parentOnLoad) {
 	
 	var margin = 30;
 	const myCalendar = new Calendar();
-	myCalendar.left = margin;
+	myCalendar.marginLeft = margin;
 	var height = Screen.width - margin*2;
 	myCalendar.width = Screen.width - margin*2;
 	myCalendar.height = height;
 	var top = (Screen.height - (Screen.width - margin*2))/3;
-	myCalendar.top = top;
+	myCalendar.marginTop = top;
 	myCalendar.changeCalendar("en","gregorian",{});
 	var selectedDate;
 	myCalendar.onRangeSelectionComplete = function(startDate,endDate){

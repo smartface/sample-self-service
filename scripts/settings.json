@@ -2,15 +2,25 @@
 	"config": {
 		"theme": {
 			"currentTheme": "Style1",
+			"baseTheme": "baseTheme",
 			"themes": [
 				"Style1",
 				"Style2",
+				"baseTheme",
 				"defaultTheme",
 				"self-serviceTheme",
 				"workspaceTheme"
-			],
-			"baseTheme": "self-serviceTheme"
+			]
 		},
-		"version": "6.13.0"
+		"paths": {
+			"pgxFolder": ".ui",
+			"uiFolder": "scripts/ui",
+			"pagesFolder": "scripts/pages",
+			"libraryUiFolder": "scripts/node_modules/library",
+			"libraryUserFolder": "scripts/components",
+			"themesFolder": "themes",
+			"themesDistFolder": "scripts/themes"
+		},
+		"version": "6.15.0"
 	}
 }
