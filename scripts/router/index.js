@@ -1,3 +1,4 @@
+const System = require("sf-core/device/system");
 const {
     NativeRouter: Router,
     NativeStackRouter: StackRouter,
@@ -6,9 +7,19 @@ const {
 } = require("@smartface/router");
 const Color = require("sf-core/ui/color");
 const Image = require("sf-core/ui/image");
+const buildExtender = require("sf-extension-utils/lib/router/buildExtender");
 BottomTabBarRouter.$$styleContext = {
     classNames: ".bottomtabbar",
     userProps: {}
+};
+const backClose = require("sf-extension-utils/lib/router/back-close");
+const backArrowImage = Image.createFromFile("images://back.png");
+backClose.setDefaultBackStyle({ image: backArrowImage });
+backClose.dissmissBuilder = (match, routeData, router, pageInstance, pageProps, route) => {
+    return {
+        image: System.OS === "Android" && backArrowImage,
+        position: "left"
+    };
 };
 const router = exports = module.exports = Router.of({
     path: "/",
@@ -44,24 +55,24 @@ const router = exports = module.exports = Router.of({
                     routes: [
                         Route.of({
                             path: "/tabs/profile/index",
-                            build: (router, route) => {
-                                let Profile = require("pages/tabs/profile/index");
-                                return new Profile(router);
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/profile/index",
+                                headerBarStyle: { visible: true }
+                            })
                         }),
                         Route.of({
                             path: "/tabs/profile/pgSalary",
-                            build: (router, route) => {
-                                let Salary = require("pages/tabs/profile/pgSalary");
-                                return new Salary(router);
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/profile/pgSalary",
+                                headerBarStyle: { visible: true }
+                            })
                         }),
                         Route.of({
                             path: "/tabs/profile/pgEmploymentHistory",
-                            build: (router, route) => {
-                                let EmploymentHistory = require("pages/tabs/profile/pgEmploymentHistory");
-                                return new EmploymentHistory(router);
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/profile/pgEmploymentHistory",
+                                headerBarStyle: { visible: true }
+                            })
                         })
                     ]
                 }),
@@ -72,59 +83,59 @@ const router = exports = module.exports = Router.of({
                     routes: [
                         Route.of({
                             path: "/tabs/hr/index",
-                            build: (router, route) => {
-                                let HR = require("pages/tabs/hr/index");
-                                return new HR(router);
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/hr/index",
+                                headerBarStyle: { visible: true }
+                            })
                         }),
                         Route.of({
                             path: "/tabs/hr/newLeaveRequest",
-                            build: (router, route) => {
-                                let newLeaveRequest = require("pages/tabs/hr/pgNewLeaveRequest");
-                                return new newLeaveRequest();
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/hr/pgNewLeaveRequest",
+                                headerBarStyle: { visible: true }
+                            })
                         }),
                         Route.of({
                             path: "/tabs/hr/pgOutOfOffice",
-                            build: (router, route) => {
-                                let OutOfOffice = require("pages/tabs/hr/pgOutOfOffice");
-                                return new OutOfOffice();
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/hr/pgOutOfOffice",
+                                headerBarStyle: { visible: true }
+                            })
                         }),
                         Route.of({
                             path: "/tabs/hr/newExpense",
-                            build: (router, route) => {
-                                let NewExpense = require("pages/tabs/myCompany/pgNewExpense");
-                                return new NewExpense();
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/hr/pgNewExpense",
+                                headerBarStyle: { visible: true }
+                            })
                         }),
                         Route.of({
                             path: "/tabs/hr/expenseApprovalDetail",
-                            build: (router, route) => {
-                                let ExpenseApprovals = require("pages/tabs/hr/pgExpenseApprovals");
-                                return new ExpenseApprovals();
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/hr/pgExpenseApprovals",
+                                headerBarStyle: { visible: true }
+                            })
                         }),
                         Route.of({
                             path: "/tabs/hr/leaveApprovalDetail",
-                            build: (router, route) => {
-                                let LeaveApprovalDetail = require("pages/tabs/hr/pgLeaveApprovalDetail");
-                                return new LeaveApprovalDetail();
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/hr/pgLeaveApprovalDetail",
+                                headerBarStyle: { visible: true }
+                            })
                         }),
                         Route.of({
                             path: "/tabs/hr/pgLeaveManagement",
-                            build: (router, route) => {
-                                let LeaveManagement = require("pages/tabs/hr/pgLeaveManagement");
-                                return new LeaveManagement();
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/hr/ipgLeaveManagementndex",
+                                headerBarStyle: { visible: true }
+                            })
                         }),
                         Route.of({
                             path: "/tabs/hr/pgExpenseManagement",
-                            build: (router, route) => {
-                                let ExpenseManagement = require("pages/tabs/hr/pgExpenseManagement");
-                                return new ExpenseManagement();
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/hr/pgExpenseManagement",
+                                headerBarStyle: { visible: true }
+                            })
                         })
                     ]
                 }),
@@ -135,33 +146,33 @@ const router = exports = module.exports = Router.of({
                     routes: [
                         Route.of({
                             path: "/tabs/myCompany/index",
-                            build: (router, route) => {
-                                let MyCompany = require("pages/tabs/myCompany/index");
-                                return new MyCompany(router);
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/myCompany/index",
+                                headerBarStyle: { visible: true }
+                            })
                         }),
                         Route.of({
                             path: "/tabs/myCompany/documentDetail",
-                            build: (router, route) => {
-                                let DocumentDetail = require("pages/tabs/myCompany/pgDocumentDetail");
-                                return new DocumentDetail(router);
-                            }
+                            build: buildExtender({
+                                pageName: "tabs/myCompany/pgDocumentDetail",
+                                headerBarStyle: { visible: true }
+                            })
                         })
                     ]
                 }),
                 Route.of({
                     path: "/tabs/chatbot/index",
-                    build: (router, route) => {
-                        let Chatbot = require("pages/tabs/chatbot/index");
-                        return new Chatbot(router);
-                    }
+                    build: buildExtender({
+                        pageName: "tabs/chatbot/index",
+                        headerBarStyle: { visible: true }
+                    })
                 }),
                 Route.of({
                     path: "/tabs/settings/pgSettings",
-                    build: (router, route) => {
-                        let Settings = require("pages/tabs/settings/pgSettings");
-                        return new Settings(router);
-                    }
+                    build: buildExtender({
+                        pageName: "tabs/settings/pgSettings",
+                        headerBarStyle: { visible: true }
+                    })
                 })
             ]
         })

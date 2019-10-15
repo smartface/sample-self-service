@@ -41,7 +41,7 @@ function onShow(parentOnShow) {
 	this.itemSpeech.page = this;
 	this.itemSpeech.inputField = this.textbox1;
 	this.btnRequest.onPress = function() {
-		Router.goBack();
+		this.router.dismiss()
 	};
 }
 
