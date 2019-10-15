@@ -4,6 +4,7 @@
 			"className": ".flexLayout",
 			"hiddenComponent": true,
 			"id": "3e69-6f6d-af2d-0ab2",
+			"initialized": true,
 			"props": {
 				"children": [
 					"1a47-daef-aff4-0924",
@@ -23,12 +24,11 @@
 					"positionType": "RELATIVE",
 					"alignItems": "CENTER"
 				},
-				"height": 59,
+				"height": 59.000002543131515,
 				"left": 12,
 				"top": 23,
-				"width": 326
-			},
-			"initialized": true
+				"width": 326.00001017252606
+			}
 		},
 		{
 			"className": ".label .label-list-item-title",
@@ -64,7 +64,9 @@
 			"className": ".label .label-list-item-value",
 			"id": "24d9-53ec-5dad-991a",
 			"props": {
+				"autoWidth": 35.546875,
 				"children": [],
+				"html": "Value",
 				"id": 111,
 				"name": "value",
 				"parent": "3e69-6f6d-af2d-0ab2",
@@ -76,11 +78,13 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoWidth": 35.546875,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
 				},
 				"height": null,
+				"html": "Value",
 				"id": 111,
 				"marginRight": 10,
 				"text": "Value",

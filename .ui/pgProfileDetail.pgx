@@ -54,6 +54,32 @@
 		},
 		{
 			"className": ".flexLayout .flexLayout-headerBar",
+			"hiddenComponent": false,
+			"id": "3fa1-efb5-9c85-da07",
+			"props": {
+				"children": [],
+				"name": "layoutHeaderBar",
+				"parent": "1857-e2e9-357d-41ad",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"id": "ebb9-37cc-ff1b-0314"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 92,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout .flexLayout-headerBar",
 			"id": "1184-c199-048c-bdcd",
 			"props": {
 				"children": [
@@ -72,6 +98,73 @@
 				},
 				"height": 170,
 				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "c80a-c4d0-a121-a716",
+			"props": {
+				"children": [],
+				"name": "imageview111",
+				"parent": "1184-c199-048c-bdcd"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {},
+				"height": 85,
+				"image": "myavatar.png",
+				"imageFillType": "ASPECTFIT",
+				"marginBottom": 5,
+				"width": 85
+			}
+		},
+		{
+			"className": ".label .label-overview-title",
+			"id": "4e3c-f2d4-2687-2dfc",
+			"props": {
+				"children": [],
+				"html": "Anthony Bell",
+				"name": "label827",
+				"parent": "1184-c199-048c-bdcd",
+				"text": "Anthony Bell",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {
+					"bold": false,
+					"size": 18
+				},
+				"height": 25,
+				"html": "Anthony Bell",
+				"text": "Anthony Bell",
+				"usePageVariable": true,
+				"width": 200
+			}
+		},
+		{
+			"className": ".label .label-overview-title",
+			"id": "c803-a717-2606-30b7",
+			"props": {
+				"children": [],
+				"html": "Director of Sales &amp; Marketing",
+				"name": "label827_1",
+				"parent": "1184-c199-048c-bdcd",
+				"text": "Director of Sales & Marketing",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {},
+				"font": {
+					"size": 14
+				},
+				"height": 25,
+				"html": "Director of Sales &amp; Marketing",
+				"text": "Director of Sales & Marketing",
+				"usePageVariable": true,
+				"width": 200
 			}
 		},
 		{
@@ -135,6 +228,7 @@
 			"className": ".label .label-list-item-header",
 			"id": "2a76-00b8-f212-fe61",
 			"props": {
+				"autoHeight": 20,
 				"children": [],
 				"name": "informationTitle",
 				"parent": "14b6-948b-2e17-f270",
@@ -143,6 +237,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 20,
 				"flexProps": {},
 				"font": {
 					"size": 16
@@ -151,65 +246,6 @@
 				"text": "INFORMATION",
 				"usePageVariable": true,
 				"width": null
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "c80a-c4d0-a121-a716",
-			"props": {
-				"children": [],
-				"name": "imageview111",
-				"parent": "1184-c199-048c-bdcd"
-			},
-			"type": "ImageView",
-			"userProps": {
-				"flexProps": {},
-				"height": 85,
-				"image": "myavatar.png",
-				"imageFillType": "ASPECTFIT",
-				"marginBottom": 5,
-				"width": 85
-			}
-		},
-		{
-			"className": ".label .label-overview-title",
-			"id": "4e3c-f2d4-2687-2dfc",
-			"props": {
-				"children": [],
-				"name": "label827",
-				"parent": "1184-c199-048c-bdcd",
-				"text": "Anthony Bell"
-			},
-			"type": "TextView",
-			"userProps": {
-				"flexProps": {},
-				"font": {
-					"bold": false,
-					"size": 18
-				},
-				"height": 25,
-				"text": "Anthony Bell",
-				"width": 200
-			}
-		},
-		{
-			"className": ".label .label-overview-title",
-			"id": "c803-a717-2606-30b7",
-			"props": {
-				"children": [],
-				"name": "label827_1",
-				"parent": "1184-c199-048c-bdcd",
-				"text": "Director of Sales & Marketing"
-			},
-			"type": "TextView",
-			"userProps": {
-				"flexProps": {},
-				"font": {
-					"size": 14
-				},
-				"height": 25,
-				"text": "Director of Sales & Marketing",
-				"width": 200
 			}
 		},
 		{
@@ -414,32 +450,6 @@
 				"height": 35,
 				"left": 0,
 				"marginTop": null,
-				"top": 0,
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout .flexLayout-headerBar",
-			"hiddenComponent": false,
-			"id": "3fa1-efb5-9c85-da07",
-			"props": {
-				"children": [],
-				"name": "layoutHeaderBar",
-				"parent": "1857-e2e9-357d-41ad",
-				"usePageVariable": true
-			},
-			"source": {
-				"page": "__library__",
-				"id": "ebb9-37cc-ff1b-0314"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"height": 92,
-				"left": 0,
 				"top": 0,
 				"usePageVariable": true,
 				"width": null

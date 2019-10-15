@@ -11,6 +11,8 @@ const PickerContainer = extend(PickerContainerDesign)(
 		// initalizes super class for this scope
 		_super(this, props || PickerContainerDesign.defaults );
 		this.pageName = pageName;
+		this.pickerTitle.scrollEnabled = false;
+		this.pickerText.scrollEnabled = false;
 	}
 );
 

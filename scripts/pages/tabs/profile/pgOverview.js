@@ -20,6 +20,8 @@ const Page_ = extend(PageDesign)(
 function onShow(parentOnShow) {
 	parentOnShow();
 	swipeViewIndex.currentIndex = 0;
+	this.label827.scrollEnabled = false;
+	this.label827_1.scrollEnabled = false;
 }
 
 function onLoad(superOnLoad) {

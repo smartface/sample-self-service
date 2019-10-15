@@ -4,6 +4,7 @@
 			"className": ".flexLayout .flexLayout-headerBar",
 			"hiddenComponent": false,
 			"id": "ebb9-37cc-ff1b-0314",
+			"initialized": true,
 			"props": {
 				"children": [
 					"26ed-c790-32dc-3796"
@@ -23,8 +24,7 @@
 				"left": 0.5227502348811127,
 				"top": 252.27804849314137,
 				"width": 358
-			},
-			"initialized": true
+			}
 		},
 		{
 			"className": ".flexLayout",
@@ -36,7 +36,8 @@
 					"2375-104c-2ff4-74dc"
 				],
 				"name": "flexlayout118",
-				"parent": "ebb9-37cc-ff1b-0314"
+				"parent": "ebb9-37cc-ff1b-0314",
+				"usePageVariable": true
 			},
 			"source": {
 				"page": "__library__"
@@ -50,6 +51,7 @@
 				"height": 40,
 				"marginTop": null,
 				"top": 20,
+				"usePageVariable": true,
 				"width": null
 			}
 		},
@@ -80,8 +82,9 @@
 			"className": ".label",
 			"id": "4e9e-fe20-482e-0576",
 			"props": {
-				"autoWidth": 60,
+				"autoWidth": 39.036458333333336,
 				"children": [],
+				"html": "Label",
 				"name": "headerBarTitle",
 				"parent": "26ed-c790-32dc-3796",
 				"text": "Label",
@@ -92,13 +95,15 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoWidth": 60,
+				"autoWidth": 39.036458333333336,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 2
 				},
 				"font": {},
 				"height": null,
+				"html": "Label",
+				"text": "Label",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true,

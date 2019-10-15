@@ -4,6 +4,7 @@ const ChatbotPgDesign = require('ui/ui_pgChatbot');
 const chatBotReplyStructure = require('components/ChatBotReplyStructure');
 const WebSocket = require('sf-core/net/websocket');
 const PageFinder = require("./PageFinder");
+const Router = require("router/index");
 const Timer = require("sf-core/timer");
 const Image = require('sf-core/ui/image');
 const AlertView = require('sf-core/ui/alertview');
@@ -29,6 +30,7 @@ const ChatbotPg = extend(ChatbotPgDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+    console.warn(Router)
   });
 
 /**
@@ -182,7 +184,7 @@ function setOnMessageTrigger() {
       applyMessageOnScreen.call(page);
 
       //sets timer to enable to user intract with chatbot
-      nativagetFoundPage(text).call(page);
+      nativagetFoundPage(text);
     }
     else {
       let evaluateData = data.replace(noInclude, "");
@@ -208,8 +210,9 @@ function nativagetFoundPage(pageName) {
       Timer.setTimeout({
         task: () => {
           //navigates the desired page
-          console.log("tabPath"+tabPath)
-          this.router.push(tabPath)
+          console.log("tabPath" + tabPath)
+          console.info(this)
+          Router.push(tabPath)
         },
         delay: 2000
       });

@@ -78,97 +78,6 @@
 		},
 		{
 			"className": ".flexLayout",
-			"id": "8dc6-9b2a-0368-a75e",
-			"props": {
-				"children": [
-					"8961-fcb4-32ca-5fdb",
-					"fb12-e32b-7245-cf47"
-				],
-				"name": "noteLayout",
-				"parent": "e326-47f6-f135-75c3"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": null
-				},
-				"height": 150,
-				"marginBottom": 10,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"paddingBottom": 10,
-				"paddingLeft": 15,
-				"paddingRight": 15,
-				"paddingTop": 10,
-				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout",
-			"id": "8961-fcb4-32ca-5fdb",
-			"props": {
-				"children": [
-					"6e68-775e-fcb9-223f",
-					"cabf-646c-0ad6-23db"
-				],
-				"name": "flexlayout76",
-				"parent": "8dc6-9b2a-0368-a75e"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexDirection": "ROW",
-					"alignItems": "CENTER"
-				},
-				"height": 30,
-				"marginBottom": 5,
-				"width": null
-			}
-		},
-		{
-			"className": ".label",
-			"id": "6e68-775e-fcb9-223f",
-			"props": {
-				"children": [],
-				"name": "noteTitle",
-				"parent": "8961-fcb4-32ca-5fdb",
-				"text": "NOTE",
-				"usePageVariable": true
-			},
-			"type": "TextView",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "STRETCH"
-				},
-				"font": {
-					"size": 16
-				},
-				"height": null,
-				"text": "NOTE",
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "cabf-646c-0ad6-23db",
-			"props": {
-				"children": [],
-				"name": "imageview17",
-				"parent": "8961-fcb4-32ca-5fdb"
-			},
-			"type": "ImageView",
-			"userProps": {
-				"flexProps": {},
-				"height": 25,
-				"image": "icon_microphone.png",
-				"imageFillType": "ASPECTFIT",
-				"width": 14
-			}
-		},
-		{
-			"className": ".flexLayout",
 			"id": "327a-0d1c-1646-7b63",
 			"props": {
 				"children": [
@@ -197,6 +106,7 @@
 			"className": ".label",
 			"id": "3dae-8373-b0bd-740e",
 			"props": {
+				"autoHeight": 20,
 				"children": [],
 				"name": "detailsTitle",
 				"parent": "327a-0d1c-1646-7b63",
@@ -205,6 +115,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 20,
 				"flexProps": {},
 				"font": {
 					"size": 16
@@ -215,6 +126,65 @@
 				"marginTop": 5,
 				"text": "DETAILS",
 				"top": null,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "357a-4436-2fb2-eeb3",
+			"props": {
+				"children": [],
+				"name": "titleInput",
+				"parent": "327a-0d1c-1646-7b63",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"id": "e9f0-d2c8-f908-88e9"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 60,
+				"left": null,
+				"marginTop": 10,
+				"top": null,
+				"usePageVariable": true,
+				"visible": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "be30-6d97-084e-b5e4",
+			"props": {
+				"children": [],
+				"name": "expenseInput",
+				"parent": "327a-0d1c-1646-7b63",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"id": "e9f0-d2c8-f908-88e9"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 60,
+				"left": 0,
+				"marginTop": 5,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"top": 0,
 				"usePageVariable": true,
 				"width": null
 			}
@@ -238,153 +208,6 @@
 				},
 				"height": 50,
 				"marginTop": 5,
-				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout",
-			"id": "b5bf-2208-82b3-2d2c",
-			"props": {
-				"children": [
-					"0e16-1951-2954-07e9",
-					"53e4-c9f0-1372-1210"
-				],
-				"name": "fileAttachmentLayout",
-				"parent": "e326-47f6-f135-75c3"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": null
-				},
-				"height": 150,
-				"marginBottom": null,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"paddingBottom": 10,
-				"paddingLeft": 15,
-				"paddingRight": 15,
-				"paddingTop": 10,
-				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout",
-			"id": "0e16-1951-2954-07e9",
-			"props": {
-				"children": [
-					"5f30-0fa9-ec3d-76e6"
-				],
-				"name": "flexlayout76_1",
-				"parent": "b5bf-2208-82b3-2d2c"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexDirection": "ROW",
-					"alignItems": "CENTER"
-				},
-				"height": 30,
-				"marginBottom": 5,
-				"width": null
-			}
-		},
-		{
-			"className": ".label",
-			"id": "5f30-0fa9-ec3d-76e6",
-			"props": {
-				"children": [],
-				"name": "fileAttachmentTitle",
-				"parent": "0e16-1951-2954-07e9",
-				"text": "FILE ATTACHMENT",
-				"usePageVariable": true
-			},
-			"type": "TextView",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "STRETCH"
-				},
-				"font": {
-					"size": 16
-				},
-				"height": null,
-				"text": "FILE ATTACHMENT",
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout",
-			"id": "53e4-c9f0-1372-1210",
-			"props": {
-				"children": [
-					"7420-4ebd-a958-26a2"
-				],
-				"name": "attachmentsLayout",
-				"parent": "b5bf-2208-82b3-2d2c",
-				"usePageVariable": true
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1,
-					"alignItems": "CENTER",
-					"justifyContent": "FLEX_START",
-					"flexDirection": "ROW"
-				},
-				"height": null,
-				"paddingLeft": null,
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".button",
-			"id": "0b70-8cd7-7776-ae2a",
-			"props": {
-				"children": [],
-				"name": "requestButton",
-				"parent": "e326-47f6-f135-75c3",
-				"text": "REQUEST",
-				"usePageVariable": true
-			},
-			"type": "Button",
-			"userProps": {
-				"flexProps": {
-					"alignSelf": "STRETCH"
-				},
-				"font": {},
-				"height": 60,
-				"marginLeft": 10,
-				"marginRight": 10,
-				"text": "REQUEST",
-				"top": 10,
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".textArea",
-			"id": "fb12-e32b-7245-cf47",
-			"props": {
-				"children": [],
-				"name": "description",
-				"parent": "8dc6-9b2a-0368-a75e",
-				"text": null,
-				"usePageVariable": true
-			},
-			"type": "TextArea",
-			"userProps": {
-				"borderColor": "rgba( 203, 204, 208, 1 )",
-				"borderWidth": 0.5,
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"height": null,
-				"text": null,
-				"textAlignment": "TOPLEFT",
-				"usePageVariable": true,
 				"width": null
 			}
 		},
@@ -445,6 +268,223 @@
 		},
 		{
 			"className": ".flexLayout",
+			"id": "8dc6-9b2a-0368-a75e",
+			"props": {
+				"children": [
+					"8961-fcb4-32ca-5fdb",
+					"fb12-e32b-7245-cf47"
+				],
+				"name": "noteLayout",
+				"parent": "e326-47f6-f135-75c3"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": null
+				},
+				"height": 150,
+				"marginBottom": 10,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"paddingBottom": 10,
+				"paddingLeft": 15,
+				"paddingRight": 15,
+				"paddingTop": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "8961-fcb4-32ca-5fdb",
+			"props": {
+				"children": [
+					"6e68-775e-fcb9-223f",
+					"cabf-646c-0ad6-23db"
+				],
+				"name": "flexlayout76",
+				"parent": "8dc6-9b2a-0368-a75e"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"alignItems": "CENTER"
+				},
+				"height": 30,
+				"marginBottom": 5,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "6e68-775e-fcb9-223f",
+			"props": {
+				"autoWidth": 44.86979166666667,
+				"children": [],
+				"name": "noteTitle",
+				"parent": "8961-fcb4-32ca-5fdb",
+				"text": "NOTE",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoWidth": 44.86979166666667,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				},
+				"font": {
+					"size": 16
+				},
+				"height": null,
+				"text": "NOTE",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "cabf-646c-0ad6-23db",
+			"props": {
+				"children": [],
+				"name": "imageview17",
+				"parent": "8961-fcb4-32ca-5fdb"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {},
+				"height": 25,
+				"image": "icon_microphone.png",
+				"imageFillType": "ASPECTFIT",
+				"width": 14
+			}
+		},
+		{
+			"className": ".textArea",
+			"id": "fb12-e32b-7245-cf47",
+			"props": {
+				"children": [],
+				"name": "description",
+				"parent": "8dc6-9b2a-0368-a75e",
+				"text": null,
+				"usePageVariable": true
+			},
+			"type": "TextArea",
+			"userProps": {
+				"borderColor": "rgba( 203, 204, 208, 1 )",
+				"borderWidth": 0.5,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"text": null,
+				"textAlignment": "TOPLEFT",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "b5bf-2208-82b3-2d2c",
+			"props": {
+				"children": [
+					"0e16-1951-2954-07e9",
+					"53e4-c9f0-1372-1210"
+				],
+				"name": "fileAttachmentLayout",
+				"parent": "e326-47f6-f135-75c3"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": null
+				},
+				"height": 150,
+				"marginBottom": null,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"paddingBottom": 10,
+				"paddingLeft": 15,
+				"paddingRight": 15,
+				"paddingTop": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "0e16-1951-2954-07e9",
+			"props": {
+				"children": [
+					"5f30-0fa9-ec3d-76e6"
+				],
+				"name": "flexlayout76_1",
+				"parent": "b5bf-2208-82b3-2d2c"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"alignItems": "CENTER"
+				},
+				"height": 30,
+				"marginBottom": 5,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "5f30-0fa9-ec3d-76e6",
+			"props": {
+				"autoWidth": 142.890625,
+				"children": [],
+				"name": "fileAttachmentTitle",
+				"parent": "0e16-1951-2954-07e9",
+				"text": "FILE ATTACHMENT",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoWidth": 142.890625,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				},
+				"font": {
+					"size": 16
+				},
+				"height": null,
+				"text": "FILE ATTACHMENT",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "53e4-c9f0-1372-1210",
+			"props": {
+				"children": [
+					"7420-4ebd-a958-26a2"
+				],
+				"name": "attachmentsLayout",
+				"parent": "b5bf-2208-82b3-2d2c",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"alignItems": "CENTER",
+					"justifyContent": "FLEX_START",
+					"flexDirection": "ROW"
+				},
+				"height": null,
+				"paddingLeft": null,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
 			"hiddenComponent": false,
 			"id": "7420-4ebd-a958-26a2",
 			"props": {
@@ -476,60 +516,28 @@
 			}
 		},
 		{
-			"className": ".flexLayout",
-			"hiddenComponent": false,
-			"id": "357a-4436-2fb2-eeb3",
+			"className": ".button",
+			"id": "0b70-8cd7-7776-ae2a",
 			"props": {
+				"autoHeight": 20,
 				"children": [],
-				"name": "titleInput",
-				"parent": "327a-0d1c-1646-7b63",
+				"name": "requestButton",
+				"parent": "e326-47f6-f135-75c3",
+				"text": "REQUEST",
 				"usePageVariable": true
 			},
-			"source": {
-				"page": "__library__",
-				"id": "e9f0-d2c8-f908-88e9"
-			},
-			"type": "FlexLayout",
+			"type": "Button",
 			"userProps": {
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"autoHeight": 20,
 				"flexProps": {
-					"positionType": "RELATIVE"
+					"alignSelf": "STRETCH"
 				},
-				"height": 50,
-				"left": null,
-				"marginTop": 10,
-				"top": null,
-				"usePageVariable": true,
-				"visible": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout",
-			"hiddenComponent": false,
-			"id": "be30-6d97-084e-b5e4",
-			"props": {
-				"children": [],
-				"name": "expenseInput",
-				"parent": "327a-0d1c-1646-7b63",
-				"usePageVariable": true
-			},
-			"source": {
-				"page": "__library__",
-				"id": "e9f0-d2c8-f908-88e9"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"height": 50,
-				"left": 0,
-				"marginTop": 5,
-				"paddingLeft": null,
-				"paddingRight": null,
-				"top": 0,
+				"font": {},
+				"height": 60,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"text": "REQUEST",
+				"top": 10,
 				"usePageVariable": true,
 				"width": null
 			}

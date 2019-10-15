@@ -11,6 +11,7 @@ const ListItem1_ = extend(ListItem1)(
 		// initalizes super class for this scope
 		_super(this, props || ListItem1.defaults );
 		this.pageName = pageName;
+		this.value.scrollEnabled = false;
 	}
 	
 );

@@ -11,6 +11,7 @@ const LayoutHeaderBar_ = extend(LayoutHeaderBar)(
 		// initalizes super class for this scope
 		_super(this, props || LayoutHeaderBar.defaults );
 		this.pageName = pageName;
+		this.headerBarTitle.scrollEnabled = false;
 		
 		this.setRightItem1 = function(params) {
 			this.rightItem1.image = params.image;

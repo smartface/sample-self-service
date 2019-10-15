@@ -1,3 +1,4 @@
+const Application = require("sf-core/application");
 const System = require("sf-core/device/system");
 const {
     NativeRouter: Router,
@@ -40,6 +41,12 @@ const router = exports = module.exports = Router.of({
                 itemColor: { normal: Color.create("#9C9DA6"), selected: Color.create("#00B9FF") },
                 backgroundColor: Color.create("#EAEAEB"),
             }),
+            onTabChangedByUser: (router, /* @type ChangeEvent*/ event) => {
+                console.log("Tab is changed", event.prevTabIndex, event.tabIndex);
+                if (!(Router.getActiveRouter().homeRoute) && event.prevTabIndex === event.tabIndex) {
+                    Router.getActiveRouter().goBacktoHome();
+                }
+            },
             items: [
                 { title: global.lang["tab.profile"], icon: Image.createFromFile("images://icon_tab_profile.png") },
                 { title: global.lang["tab.HR"], icon: Image.createFromFile("images://icon_tab_hr.png") },
@@ -57,125 +64,200 @@ const router = exports = module.exports = Router.of({
                             path: "/tabs/profile/index",
                             build: buildExtender({
                                 pageName: "tabs/profile/index",
-                                headerBarStyle: { visible: true }
-                            })
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         }),
                         Route.of({
                             path: "/tabs/profile/pgSalary",
                             build: buildExtender({
                                 pageName: "tabs/profile/pgSalary",
-                                headerBarStyle: { visible: true }
-                            })
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         }),
                         Route.of({
                             path: "/tabs/profile/pgEmploymentHistory",
                             build: buildExtender({
                                 pageName: "tabs/profile/pgEmploymentHistory",
-                                headerBarStyle: { visible: true }
-                            })
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         })
                     ]
                 }),
                 StackRouter.of({
                     path: "/tabs/hr",
                     to: "/tabs/hr/index",
-                    headerBarParams: () => ({ visible: true }),
+                    headerBarParams: () => ({ visible: false }),
                     routes: [
                         Route.of({
                             path: "/tabs/hr/index",
                             build: buildExtender({
                                 pageName: "tabs/hr/index",
-                                headerBarStyle: { visible: true }
-                            })
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         }),
                         Route.of({
                             path: "/tabs/hr/newLeaveRequest",
                             build: buildExtender({
                                 pageName: "tabs/hr/pgNewLeaveRequest",
                                 headerBarStyle: { visible: true }
-                            })
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         }),
                         Route.of({
                             path: "/tabs/hr/pgOutOfOffice",
                             build: buildExtender({
                                 pageName: "tabs/hr/pgOutOfOffice",
-                                headerBarStyle: { visible: true }
-                            })
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         }),
                         Route.of({
                             path: "/tabs/hr/newExpense",
                             build: buildExtender({
                                 pageName: "tabs/hr/pgNewExpense",
-                                headerBarStyle: { visible: true }
-                            })
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         }),
                         Route.of({
                             path: "/tabs/hr/expenseApprovalDetail",
                             build: buildExtender({
                                 pageName: "tabs/hr/pgExpenseApprovals",
-                                headerBarStyle: { visible: true }
-                            })
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         }),
                         Route.of({
                             path: "/tabs/hr/leaveApprovalDetail",
                             build: buildExtender({
                                 pageName: "tabs/hr/pgLeaveApprovalDetail",
-                                headerBarStyle: { visible: true }
-                            })
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         }),
                         Route.of({
                             path: "/tabs/hr/pgLeaveManagement",
                             build: buildExtender({
                                 pageName: "tabs/hr/ipgLeaveManagementndex",
-                                headerBarStyle: { visible: true }
-                            })
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         }),
                         Route.of({
                             path: "/tabs/hr/pgExpenseManagement",
                             build: buildExtender({
                                 pageName: "tabs/hr/pgExpenseManagement",
-                                headerBarStyle: { visible: true }
-                            })
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         })
                     ]
                 }),
                 StackRouter.of({
                     path: "/tabs/myCompany",
                     to: "/tabs/myCompany/index",
-                    headerBarParams: () => ({ visible: true }),
+                    headerBarParams: () => ({ visible: false }),
                     routes: [
                         Route.of({
                             path: "/tabs/myCompany/index",
                             build: buildExtender({
                                 pageName: "tabs/myCompany/index",
-                                headerBarStyle: { visible: true }
-                            })
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         }),
                         Route.of({
                             path: "/tabs/myCompany/documentDetail",
                             build: buildExtender({
                                 pageName: "tabs/myCompany/pgDocumentDetail",
                                 headerBarStyle: { visible: true }
-                            })
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
                         })
                     ]
                 }),
-                Route.of({
-                    path: "/tabs/chatbot/index",
-                    build: buildExtender({
-                        pageName: "tabs/chatbot/index",
-                        headerBarStyle: { visible: true }
-                    })
+                StackRouter.of({
+                    path: "/tabs/chatbot",
+                    to: "/tabs/chatbot/index",
+                    headerBarParams: () => ({ visible: true }),
+                    routes: [
+                        Route.of({
+                            path: "/tabs/chatbot/index",
+                            build: buildExtender({
+                                pageName: "tabs/chatbot/index",
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
+                        }),
+                        Route.of({
+                            path: "/tabs/chatbot/chatbotPg",
+                            build: buildExtender({
+                                pageName: "tabs/chatbot/chatbotPg",
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
+                        })
+                    ]
                 }),
-                Route.of({
-                    path: "/tabs/settings/pgSettings",
-                    build: buildExtender({
-                        pageName: "tabs/settings/pgSettings",
-                        headerBarStyle: { visible: true }
-                    })
-                })
+                StackRouter.of({
+                    path: "/tabs/settings",
+                    to: "/tabs/settings/pgSettings",
+                    headerBarParams: () => ({ visible: true }),
+                    routes: [
+                        Route.of({
+                            path: "/tabs/settings/pgSettings",
+                            build: buildExtender({
+                                pageName: "tabs/settings/pgSettings",
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
+                        })
+                    ]
+                }),
+
             ]
         })
     ]
 });
 router.push("/login/pgLogin");
+
+
+function routeEnterProcess() {
+    Application.hideKeyboard();
+}

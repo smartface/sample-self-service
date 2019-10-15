@@ -2,8 +2,9 @@
 	"components": [
 		{
 			"className": ".flexLayout",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"id": "e9f0-d2c8-f908-88e9",
+			"initialized": true,
 			"props": {
 				"children": [
 					"b224-e655-d756-0989",
@@ -28,8 +29,7 @@
 				"paddingRight": null,
 				"top": 554,
 				"width": 250
-			},
-			"initialized": true
+			}
 		},
 		{
 			"className": ".label .label-login.small .label-textboxWithLine.normal",
@@ -60,11 +60,11 @@
 			"className": ".textBox",
 			"id": "d282-be6b-4c4c-cb7c",
 			"props": {
+				"autoHeight": 20,
 				"children": [],
 				"id": 101,
 				"name": "innerTextbox",
 				"parent": "e9f0-d2c8-f908-88e9",
-				"text": "",
 				"usePageVariable": true
 			},
 			"source": {
@@ -72,6 +72,7 @@
 			},
 			"type": "TextBox",
 			"userProps": {
+				"autoHeight": 20,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 1
@@ -80,7 +81,6 @@
 				"id": 101,
 				"marginLeft": 10,
 				"marginRight": 10,
-				"text": "",
 				"textColor": "rgba( 255, 255, 255, 1 )",
 				"usePageVariable": true,
 				"width": null

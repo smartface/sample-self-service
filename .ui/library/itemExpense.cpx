@@ -2,8 +2,9 @@
 	"components": [
 		{
 			"className": ".flexLayout",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"id": "27dd-4e32-f90f-819c",
+			"initialized": true,
 			"props": {
 				"children": [
 					"c744-fd6e-5beb-d61d",
@@ -25,8 +26,7 @@
 				"left": 16,
 				"top": 343.6666666666667,
 				"width": 342
-			},
-			"initialized": true
+			}
 		},
 		{
 			"className": ".flexLayout",
@@ -115,6 +115,7 @@
 			"className": ".label .label-list-item-value",
 			"id": "5cd0-2e1b-e718-168c",
 			"props": {
+				"autoHeight": 26.666666666666668,
 				"children": [],
 				"id": 1052,
 				"name": "expenseAmount",
@@ -127,6 +128,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 26.666666666666668,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"flexProps": {
 					"flexGrow": 1
@@ -147,6 +149,7 @@
 			"className": ".label .label-list-item-value",
 			"id": "f7d1-616e-3447-5e22",
 			"props": {
+				"autoHeight": 18.333333333333336,
 				"children": [],
 				"id": 1051,
 				"name": "expenseType",
@@ -159,6 +162,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 18.333333333333336,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -203,6 +207,7 @@
 			"className": ".label .label-list-item-value",
 			"id": "4df0-958b-8865-b6f5",
 			"props": {
+				"autoHeight": 18.333333333333336,
 				"children": [],
 				"id": 1042,
 				"name": "expenseId",
@@ -215,6 +220,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 18.333333333333336,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -234,6 +240,7 @@
 			"className": ".label .label-list-item-value",
 			"id": "1b1b-077f-a09c-aa3f",
 			"props": {
+				"autoHeight": 18.333333333333336,
 				"children": [],
 				"id": 1041,
 				"name": "expenseDate",
@@ -246,6 +253,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"autoHeight": 18.333333333333336,
 				"flexProps": {
 					"flexGrow": 1
 				},

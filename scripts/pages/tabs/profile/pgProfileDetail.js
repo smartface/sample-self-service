@@ -13,10 +13,12 @@ const Page_ = extend(PageDesign)(
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 	});
-	
-	function onShow(parentOnShow) {
-    parentOnShow();
-    swipeViewIndex.currentIndex = 4;
+
+function onShow(parentOnShow) {
+	parentOnShow();
+	swipeViewIndex.currentIndex = 4;
+	this.label827.scrollEnabled = false;
+	this.label827_1.scrollEnabled = false;
 }
 
 function initTexts() {
