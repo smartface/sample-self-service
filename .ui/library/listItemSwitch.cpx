@@ -2,7 +2,7 @@
 	"components": [
 		{
 			"className": ".flexLayout",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"id": "e9e3-f777-d1de-b2d3",
 			"initialized": true,
 			"props": {
@@ -62,18 +62,25 @@
 				"id": 101,
 				"name": "switchItem",
 				"parent": "e9e3-f777-d1de-b2d3",
-				"toggle": true
+				"toggle": false
 			},
 			"source": {
 				"page": "__library__"
 			},
 			"type": "Switch",
 			"userProps": {
+				"android": {
+					"toggleOffColor": "rgba( 255, 255, 255, 1 )"
+				},
 				"flexProps": {},
 				"id": 101,
 				"marginRight": 10,
 				"minHeight": 31,
 				"minWidth": 51,
+				"thumbOffColor": "rgba( 208, 23, 133, 1 )",
+				"thumbOnColor": "rgba( 208, 23, 133, 1 )",
+				"toggle": false,
+				"toggleOnColor": "rgba( 228, 164, 220, 1 )",
 				"width": null
 			}
 		}

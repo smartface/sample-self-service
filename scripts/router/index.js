@@ -151,7 +151,7 @@ const router = exports = module.exports = Router.of({
                             path: "/tabs/hr/leaveApprovalDetail",
                             build: buildExtender({
                                 pageName: "tabs/hr/pgLeaveApprovalDetail",
-                                headerBarStyle: { visible: false }
+                                headerBarStyle: { visible: true }
                             }),
                             routeDidEnter: () => {
                                 routeEnterProcess();
@@ -160,7 +160,7 @@ const router = exports = module.exports = Router.of({
                         Route.of({
                             path: "/tabs/hr/pgLeaveManagement",
                             build: buildExtender({
-                                pageName: "tabs/hr/ipgLeaveManagementndex",
+                                pageName: "tabs/hr/pgLeaveManagement",
                                 headerBarStyle: { visible: false }
                             }),
                             routeDidEnter: () => {
@@ -242,7 +242,7 @@ const router = exports = module.exports = Router.of({
                             path: "/tabs/settings/pgSettings",
                             build: buildExtender({
                                 pageName: "tabs/settings/pgSettings",
-                                headerBarStyle: { visible: false }
+                                headerBarStyle: { visible: true }
                             }),
                             routeDidEnter: () => {
                                 routeEnterProcess();

@@ -1,71 +1,71 @@
 {
-  ".imageView": {
-    "width": 200,
-    "height": 200,
-    "touchEnabled": true,
-    "visible": true,
-    "imageFillType": "NORMAL",
-    "backgroundColor": "rgba(0,0,0,0)",
-    "alpha": 1,
-    "borderColor": "rgba(0,0,0,1)",
-    "borderWidth": 0,
-    "font": {},
-    "flexProps": {
-      "alignSelf": "AUTO",
-      "positionType": "RELATIVE"
-    },
-    "&-small": {
-      "width": 100
-    },
-    "&-medium": {
-      "width": 250
-    },
-    "&-large": {
-      "width": 350
-    },
-    "&-warning": {
-      "backgroundColor": "#9F6000"
-    },
-    "&-error": {
-      "backgroundColor": "#D8000C"
-    },
-    "&-success": {
-      "backgroundColor": "#4F8A10"
-    },
-    "&-item-document-accepted": {
-      "image": "icon_accepted.png"
-    },
-    "&-item-document-upload": {
-      "image": "icon_waiting.png"
-    },
-    "&-item-document-rejected": {
-      "image": "icon_rejected.png"
-    },
-    "&-leaveRequestListItem": {
-      "&-approve": {
-        "&-active": {
-          "image": "icon_approve_active.png"
-        },
-        "&-inactive": {
-          "image": "icon_approve_inactive.png"
-        }
-      },
-      "&-edit": {
-        "&-active": {
-          "image": "icon_edit_active.png"
-        },
-        "&-inactive": {
-          "image": "icon_edit_inactive.png"
-        }
-      },
-      "&-delete": {
-        "&-active": {
-          "image": "icon_delete.png"
-        },
-        "&-inactive": {
-          "image": "icon_delete.png"
-        }
-      }
-    }
-  }
+	".imageView": {
+		"width": 200,
+		"height": 200,
+		"touchEnabled": true,
+		"visible": true,
+		"imageFillType": "NORMAL",
+		"backgroundColor": "rgba(0,0,0,0)",
+		"alpha": 1,
+		"borderColor": "rgba(0,0,0,1)",
+		"borderWidth": 0,
+		"font": {},
+		"flexProps": {
+			"alignSelf": "CENTER",
+			"positionType": "RELATIVE"
+		},
+		"&-small": {
+			"width": 100
+		},
+		"&-medium": {
+			"width": 250
+		},
+		"&-large": {
+			"width": 350
+		},
+		"&-warning": {
+			"backgroundColor": "#9F6000"
+		},
+		"&-error": {
+			"backgroundColor": "#D8000C"
+		},
+		"&-success": {
+			"backgroundColor": "#4F8A10"
+		},
+		"&-item-document-accepted": {
+			"image": "icon_accepted.png"
+		},
+		"&-item-document-upload": {
+			"image": "icon_waiting.png"
+		},
+		"&-item-document-rejected": {
+			"image": "icon_rejected.png"
+		},
+		"&-leaveRequestListItem": {
+			"&-approve": {
+				"&-active": {
+					"image": "icon_approve_active.png"
+				},
+				"&-inactive": {
+					"image": "icon_approve_inactive.png"
+				}
+			},
+			"&-edit": {
+				"&-active": {
+					"image": "icon_edit_active.png"
+				},
+				"&-inactive": {
+					"image": "icon_edit_inactive.png"
+				}
+			},
+			"&-delete": {
+				"&-active": {
+					"image": "icon_delete.png"
+				},
+				"&-inactive": {
+					"image": "icon_delete.png"
+				}
+			}
+		}
+	}
 }

@@ -41,7 +41,7 @@ function onShow(parentOnShow) {
 	this.itemSpeech.page = this;
 	this.itemSpeech.inputField = this.textbox1;
 	this.btnRequest.onPress = function() {
-		this.router.dismiss()
+		alert("Your request is recorded.")
 	};
 }
 
@@ -86,14 +86,9 @@ function onLoad(parentOnLoad) {
 		selectedDate = startDate.date.day + "/" + startDate.date.month + "/" + startDate.date.year + " - " + endDate.date.day + "/" + endDate.date.month + "/" + endDate.date.year;
 		console.log("selectedDate : " + selectedDate);
 	};
-	// myCalendar.onDaySelect = function(selectedDate) {
-	// 	try{
-	// 	alert(selectedDate.date.day + "/" + selectedDate.date.month + "/" + selectedDate.date.year);}
-	// 	catch(e){
-	// 		console.error(JSON.stringify(e))
-	// 	}
-	// 	alert("selectedDate : " + JSON.stringify(selectedDate.day));
-	// };
+	myCalendar.onDaySelect = function(date) {
+		selectedDate = date[0].date.day + "/" + date[0].date.month + "/" + date[0].date.year;
+	};
 	const newMonthLabelColorStyle = {
 		".calendar": {
 			".header": {

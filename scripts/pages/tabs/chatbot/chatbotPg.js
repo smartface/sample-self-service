@@ -1,3 +1,4 @@
+const System = require("sf-core/device/system");
 /* globals swipeViewIndex */
 const extend = require('js-base/core/extend');
 const ChatbotPgDesign = require('ui/ui_pgChatbot');
@@ -63,12 +64,16 @@ function onLoad(superOnLoad) {
 
   this.layoutHeaderBar.rightItem1.width = 25;
   this.layoutHeaderBar.rightItem1.height = 25;
+
   this.layoutHeaderBar.rightItem1.image = Image.createFromFile("images://ic_info_outline_white.png");
 
   this.sendLabel.onTouch = function() {
-    sender = true;
-    applyMessageOnScreen.call(page);
+    if (this.sendText.text.length !== 0) {
+      sender = true;
+      applyMessageOnScreen.call(page);
+    }
   }.bind(page);
+
 
   this.layoutHeaderBar.rightItem1.onTouch = function() {
     initAlerView().show();
@@ -214,7 +219,7 @@ function nativagetFoundPage(pageName) {
           console.info(this)
           Router.push(tabPath)
         },
-        delay: 2000
+        delay: 200
       });
     }
   });
