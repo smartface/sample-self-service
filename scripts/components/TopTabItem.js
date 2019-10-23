@@ -11,6 +11,7 @@ const TopTabItem = extend(TopTabItemDesign)(
 		// initalizes super class for this scope
 		_super(this, props || TopTabItemDesign.defaults );
 		this.pageName = pageName;
+		this.tabItemTitle.scrollEnabled = false;
 	}
 	
 );
