@@ -92,6 +92,7 @@ function initListView() {
 	}.bind(this);
 
 	this.listView.onRowSelected = function(listviewItem, index) {
+		console.log(this.data[index])
 		// Router.push("/tabs/hr/expenseApprovalDetail", this.data[index]);
 	}.bind(this);
 }

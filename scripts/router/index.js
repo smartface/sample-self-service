@@ -138,9 +138,19 @@ const router = exports = module.exports = Router.of({
                             }
                         }),
                         Route.of({
-                            path: "/tabs/hr/expenseApprovalDetail",
+                            path: "/tabs/hr/pgExpenseApprovals",
                             build: buildExtender({
                                 pageName: "tabs/hr/pgExpenseApprovals",
+                                headerBarStyle: { visible: false }
+                            }),
+                            routeDidEnter: () => {
+                                routeEnterProcess();
+                            }
+                        }),
+                        Route.of({
+                            path: "/tabs/hr/expenseApprovalDetail",
+                            build: buildExtender({
+                                pageName: "tabs/hr/pgExpenseApprovalDetail",
                                 headerBarStyle: { visible: false }
                             }),
                             routeDidEnter: () => {

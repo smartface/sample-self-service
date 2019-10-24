@@ -8,10 +8,9 @@ const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super, router, routeData) {
 		// Initalizes super class for this page scope
-		_super(this, router, routeData);
-		this.routeData = routeData;
+		_super(this);
 		this._superOnShow = this.onShow;
-		this.onShow = onShow.bind(this);
+		this.onShow = onShow.bind(this, this.onShow);
 		this.onLoad = onLoad.bind(this, this.onLoad);
 	}
 );
@@ -23,11 +22,12 @@ function onLoad(parentOnLoad) {
 	this.ios.safeAreaLayoutMode = true;
 }
 
-function onShow(detail) {
-	detail = this.routeData;
+function onShow() {
+	console.log("onShow")
+	console.info(this.routeData)
 	if (typeof this._superOnShow === "function") this._superOnShow();
 	initHeaderBar.call(this);
-	initTexts.call(this, detail);
+	initTexts.call(this, this.routeData);
 }
 
 function initTexts(detail) {
