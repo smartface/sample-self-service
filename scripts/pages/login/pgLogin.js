@@ -10,6 +10,7 @@ const ActionKeyType = require('sf-core/ui/actionkeytype');
 const rau = require("sf-extension-utils/lib/rau");
 const PageDesign = require("../../ui/ui_pgLogin");
 
+
 const Page_ = extend(PageDesign)(
 	// Constructor
 	function(_super,router) {

@@ -9,7 +9,8 @@
 					"ec8b-eb9a-46d9-a134",
 					"d6d3-a112-c8bf-d1a8",
 					"7488-d8c2-c9ba-fab9",
-					"c2ba-c550-320a-37e4"
+					"c2ba-c550-320a-37e4",
+					"fc7d-da7d-8e38-c061"
 				],
 				"name": "pgAnnouncement",
 				"orientation": "PORTRAIT",
@@ -50,6 +51,32 @@
 			}
 		},
 		{
+			"className": ".flexLayout .flexLayout-headerBar",
+			"hiddenComponent": false,
+			"id": "7488-d8c2-c9ba-fab9",
+			"props": {
+				"children": [],
+				"name": "layoutHeaderBar",
+				"parent": "79d4-068d-65be-483e",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"id": "ebb9-37cc-ff1b-0314"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 92,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
 			"className": ".flexLayout",
 			"id": "c2ba-c550-320a-37e4",
 			"props": {
@@ -79,6 +106,7 @@
 			"id": "0ef9-1756-19da-ca8a",
 			"props": {
 				"children": [],
+				"itemCount": 0,
 				"name": "listView",
 				"parent": "c2ba-c550-320a-37e4",
 				"usePageVariable": true
@@ -97,29 +125,17 @@
 			}
 		},
 		{
-			"className": ".flexLayout .flexLayout-headerBar",
-			"hiddenComponent": false,
-			"id": "7488-d8c2-c9ba-fab9",
+			"className": ".switch",
+			"id": "fc7d-da7d-8e38-c061",
 			"props": {
 				"children": [],
-				"name": "layoutHeaderBar",
+				"name": "switch1",
 				"parent": "79d4-068d-65be-483e",
-				"usePageVariable": true
+				"toggle": true
 			},
-			"source": {
-				"page": "__library__",
-				"id": "ebb9-37cc-ff1b-0314"
-			},
-			"type": "FlexLayout",
+			"type": "Switch",
 			"userProps": {
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"height": 92,
-				"left": 0,
-				"top": 0,
-				"usePageVariable": true,
-				"width": null
+				"toggle": true
 			}
 		}
 	]
